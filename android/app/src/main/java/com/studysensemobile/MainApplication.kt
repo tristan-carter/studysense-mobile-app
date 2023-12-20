@@ -1,4 +1,4 @@
-package com.studysensemobile
+package app.studysense.StudySense
 
 import android.app.Application
 import com.facebook.react.PackageList
