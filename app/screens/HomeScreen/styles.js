@@ -112,6 +112,7 @@ export default StyleSheet.create({
         fontSize: 20,
         marginBottom: 10,
         fontFamily: 'Lato-Bold',
+        fontWeight: '600',
         color: colours.subtitletext,
     },
     inputContainer: {
@@ -236,6 +237,7 @@ export default StyleSheet.create({
         color: colours.backgroundColour, 
         fontSize: 26, 
         fontFamily: 'Lato-Bold',
+        fontWeight: '600',
     },
     noSetsSubText: {
         color: '#F5EEE9', 
@@ -259,15 +261,15 @@ export default StyleSheet.create({
         display: 'flex',
     },
     dropdown: {
-        height: 50,
-        paddingHorizontal: 16,
+        height: 10,
+        paddingHorizontal: 10,
         marginLeft: 'auto',
     },
     dropdownLabel: {
-        backgroundColor: 'white',
         zIndex: 999,
         fontSize: 16,
         fontFamily: 'Lato',
-        color: colours.subtitletext,
+        color: colours.darkPrimary,
+        fontWeight: '500',
       },
 })
