@@ -1,0 +1,89 @@
+import React from 'react';
+import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
+
+import { useSelector } from 'react-redux';
+
+import styles from './styles';
+import colours from '../../../config/colours';
+import donutChartComponent from './RevisionComponents/DonutChart';
+
+// 0 - Not Learned : 1 - Learning : 2 - Partially Learned : 3 - Learned
+const RevisionOptionsList = [
+    {
+        key: 0,
+        title: 'Smart Study',
+        description: 'Your personal study companion',
+        icon: require('../../../assets/StudySmartRevisionIcon.png'),
+    },
+    {
+        key: 1,
+        title: 'Refresher',
+        description: 'Recall and reinforce challenging concepts quickly',
+        icon: require('../../../assets/RefresherRevisionIcon.png'),
+    },
+    {
+        key: 2,
+        title: 'Test',
+        description: 'Written based questions, best for reviewing knowledge',
+        icon: require('../../../assets/TestRevisionIcon.png'),
+    },
+    {
+        key: 3,
+        title: 'Flashcards',
+        description: 'Learn and retain knowledge with flashcards',
+        icon: require('../../../assets/DefaultSetIcon.png'),
+    },
+];
+
+/*
+    {
+        key: 4,
+        title: 'Games',
+        description: 'Learn while having fun with educational games',
+        icon: require('../../../assets/GamesRevisionIcon.png'),
+    },
+*/
+
+function RevisionOptions({ navigation }) {
+    const user = useSelector((state) => state.user);
+    const currentFolderId = user.currentFolder;
+    const currentSetId = user.currentSet;
+    var currentSet = null;
+    if (currentFolderId!=null) {
+        currentSet = user.data.folders.filter((folder) => folder.id === currentFolderId)[0].sets.filter((set) => set.id === currentSetId)[0];
+    }
+    else {
+        currentSet = user.data.sets.filter((set) => set.id === currentSetId)[0];
+    }
+
+    if (currentSet==null) {
+        return (
+            <View style={styles.container}>
+                <Text style={styles.subtitleText}>Study Options</Text>
+                <Text style={styles.subtitleText}>No set selected</Text>
+            </View>
+        );
+    }
+    
+    return (
+        /*<ScrollView contentContainerStyle={{alignItems: 'center'}} style={styles.container}>*/
+            <View style={styles.container}>
+                <Text style={styles.subtitleText}>Study Options</Text>
+                {donutChartComponent(currentSet.cards)}
+                <View style={styles.revisionOptionsContainer}>
+                    {RevisionOptionsList.map((revisionOption, index) => (
+                        <TouchableOpacity style={styles.revisionOption} key={revisionOption.key} onPress={()=>navigation.push(revisionOption.title, {set: currentSet})}>
+                            <Image style={styles.revisionOptionIcon} source={revisionOption.icon} />
+                            <View style={styles.revisionOptionsTextContainer}>
+                                <Text style={styles.revisionOptionTitle}>{revisionOption.title}</Text>
+                                <Text style={styles.revisionOptionDescription}>{revisionOption.description}</Text>
+                            </View>
+                        </TouchableOpacity>
+                    ))}
+                </View>
+            </View>
+        /*</ScrollView>*/
+    );
+}
+
+export default RevisionOptions;
