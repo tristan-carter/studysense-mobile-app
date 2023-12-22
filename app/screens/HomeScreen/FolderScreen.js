@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View } from 'react-native';
 
-import Icon from 'react-native-ionicons'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from '../../config/colours.js';
 
 import ScrollData from './ScrollData.js';

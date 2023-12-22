@@ -23,7 +23,7 @@ header: ({ navigation, route, options }) => {
   return <MyHeader title={title} style={options.headerStyle}/>;
 };
 
-import Icon from 'react-native-ionicons'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from './app/config/colours';
 
 // screens
@@ -43,7 +43,7 @@ const AddFileIconButton = ({ onPress }) => {
   return(
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <TouchableOpacity onPress={onPress}>
-        <Icon name={'add-circle-outline'} size={35} color={'darkgrey'} />
+        <Ionicons name={"add-circle-outline"} size={35} color={'darkgrey'} />
       </TouchableOpacity>
     </View>
   )
@@ -271,7 +271,7 @@ function HomeTabs(props) {
             iconName = focused ? 'bulb' : 'bulb-outline';
           }
 
-          return <Icon name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'darkgray',
@@ -327,10 +327,6 @@ export default function WrappedApp() {
   }, []);
 
   const state = useSelector((state) => state.user);
-  console.log("state.loading: " + state.loading);
-  console.log("stageLoggedIn: " + stateLoggedIn);
-  console.log("isLoading: " + isLoading)
-  console.log("state.data: " + state.data)
   if (isLoading || state.loading || state.loading === undefined || (state.data == null && stateLoggedIn)) {	
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF9F5' }}>

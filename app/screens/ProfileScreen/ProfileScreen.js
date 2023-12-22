@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity } from 'react-native';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
+import auth from "@react-native-firebase/auth";
+
 import { useSelector } from 'react-redux';
 
 import Svg, { Path } from "react-native-svg";

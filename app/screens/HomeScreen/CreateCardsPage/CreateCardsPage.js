@@ -5,7 +5,7 @@ import { Alert } from 'react-native';
 
 import { useDispatch } from 'react-redux';
 
-import Icon from 'react-native-ionicons'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from '../../../config/colours';
 
 import styles from './styles';
@@ -166,7 +166,7 @@ function CreateCardsPage (props) {
                 </View>
             </View>
             <TouchableOpacity onPress={()=>deleteCard(item.id)}>
-                <Icon name={'close-circle-outline'} size={30} color={'#FF4242'} />
+                <Ionicons name={'close-circle-outline'} size={30} color={'#FF4242'} />
             </TouchableOpacity>
         </View>
     );
@@ -185,7 +185,7 @@ function CreateCardsPage (props) {
                     <View style={styles.divider} />
                     <TouchableOpacity style={[styles.button, {backgroundColor: colours.blue}]} onPress={addCard}>
                         <Text style={[styles.buttonText, {color: colours.backgroundColour}]}>Add Card</Text>
-                        <Icon name={'add-circle-outline'} size={40} color={colours.backgroundColour} />
+                        <Ionicons name={'add-circle-outline'} size={40} color={colours.backgroundColour} />
                     </TouchableOpacity>
                     <FlatList
                         ref={flatListRef}

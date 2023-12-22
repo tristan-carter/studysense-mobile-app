@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, TouchableOpacity, Modal, TextInput, Switch, ActivityIndicator, SafeAreaView, KeyboardAvoidingView } from 'react-native';
 import { Configuration, OpenAIApi } from "openai";
 //import axios from 'axios';
-import Icon from 'react-native-ionicons'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from '.././styles.js';
 import colours from '../../../config/colours.js';
@@ -106,7 +106,7 @@ export function SmartSetModal ({ setShowModal, showModal, handleCreate, generate
                         onPress={() => setShowModal(false)}
                         style={{ position: 'absolute', top: 10, right: 10 }}
                         >
-                            <Icon name={'close-circle-outline'} size={30} color={'#FF4242'} />
+                            <Ionicons name={'close-circle-outline'} size={30} color={'#FF4242'} />
                         </TouchableOpacity>
                         <Text style={styles.modalTitle}>Generate Smart Set</Text>
                         {currentStep == 0 ? (

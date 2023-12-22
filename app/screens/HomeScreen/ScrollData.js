@@ -7,7 +7,7 @@ import { Text, View, TouchableOpacity, Image, TouchableWithoutFeedback, Alert } 
 import { Dropdown } from 'react-native-element-dropdown';
 
 import styles from './styles.js';
-import Icon from 'react-native-ionicons'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from '../../config/colours.js';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -186,12 +186,12 @@ export default function ScrollData(props) {
                 }
               }}
               renderLeftIcon={() => (
-                <Icon name="ellipsis-vertical" color={colours.secondarytext} size={30} />
+                <Ionicons name="ellipsis-vertical" color={colours.secondarytext} size={30} />
               )}
             />
           
           {//item.isFolder && (
-            //<Icon name="folder" style={{ alignSelf: 'flex-end', marginLeft: 'auto' }} color={colours.secondarytext} size={40} />
+            //<Ionicons name="folder" style={{ alignSelf: 'flex-end', marginLeft: 'auto' }} color={colours.secondarytext} size={40} />
           //)
         }
         </View>
@@ -217,7 +217,7 @@ export default function ScrollData(props) {
           }}
         >
           <View style={styles.scrollDataIconContainer}>
-            <Icon name="create-outline" color={colours.text} size={20} />
+            <Ionicons name="create-outline" color={colours.text} size={20} />
           </View>
           <Text style={styles.scrollDataButtonText}>Edit</Text>
         </TouchableOpacity>
@@ -227,7 +227,7 @@ export default function ScrollData(props) {
           onPress={()=>confirmDeleteRow(rowMap, data.item.id, data.item.name, data.item.isFolder)}
         >
           <View style={styles.scrollDataIconContainer}>
-            <Icon name="close" color={colours.text} size={20} />
+            <Ionicons name="close" color={colours.text} size={20} />
           </View>
           <Text style={styles.scrollDataButtonText}>Delete</Text>
         </TouchableOpacity>

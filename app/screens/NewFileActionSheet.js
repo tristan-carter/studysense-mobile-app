@@ -1,4 +1,6 @@
-import ActionSheet from "react-native-actions-sheet";
+import ActionSheet, { SheetManager } from "react-native-actions-sheet";
+import React from "react";
+import { Button } from "react-native";
 
 function NewFileActionSheet() {
     sheetId = "NewFileActionSheet";
