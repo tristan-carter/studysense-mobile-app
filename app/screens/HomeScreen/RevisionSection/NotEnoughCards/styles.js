@@ -16,7 +16,7 @@ export default StyleSheet.create({
     },
     title: {
         fontSize: 24,
-        fontWeight: 'bold',
+        fontWeight: 'Bold', fontWeight: '600',
         marginBottom: 10,
         textAlign: 'center',
         color: colours.subtitletext,
@@ -36,6 +36,6 @@ export default StyleSheet.create({
     buttonText: {
         color: colours.white,
         fontSize: 18,
-        fontWeight: 'bold',
+        fontWeight: 'Bold', fontWeight: '600',
     },
 });

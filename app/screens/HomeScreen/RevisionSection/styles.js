@@ -11,7 +11,7 @@ export default StyleSheet.create({
     },
     subtitleText: {
         fontSize: 20,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
         marginBottom: 23,
     },
@@ -49,7 +49,7 @@ export default StyleSheet.create({
         alignItems: 'flex-start',
     },
     revisionOptionTitle: {
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         fontSize: 21,
         color: colours.primarytext,
     },
@@ -65,7 +65,7 @@ export default StyleSheet.create({
     },
     title: {
         fontSize: 24,
-        fontWeight: 'bold',
+        fontWeight: 'Bold', fontWeight: '600',
         marginBottom: 10,
         textAlign: 'center',
         color: colours.subtitletext,
@@ -85,7 +85,7 @@ export default StyleSheet.create({
     buttonText: {
         color: colours.white,
         fontSize: 18,
-        fontWeight: 'bold',
+        fontWeight: 'Bold', fontWeight: '600',
     },
     restartContainer: {
         flex: 1,

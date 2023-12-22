@@ -1,44 +1,44 @@
 import ActionSheet, { SheetManager } from "react-native-actions-sheet";
 import React from "react";
-import { Button } from "react-native";
-import colours from '../config/colours';
+import { Pressable, Text } from "react-native";
+import styles from './styles'; // assuming styles.js is in the same directory
 
 function NewFileActionSheet() {
-    sheetId = "NewFileActionSheet";
+    const sheetId = "NewFileActionSheet";
     return (
       <ActionSheet id={sheetId}>
-        <Button
-        title="New Set"
-        style={{marginBottom: 10}}
-        color={colours.darkPrimary}
+        <Pressable
         onPress={() => {
             SheetManager.hide(sheetId, {
                 payload: "NewSet",
             });
         }}
-        />
-        <Button
-        title="New Folder"
-        style={{marginBottom: 10, }}
-        color={colours.darkPrimary}
+        style={styles.newFileActionSheetPressable}
+        >
+            <Text style={styles.newFileActionSheetText}>New Set</Text>
+        </Pressable>
+        <Pressable
         onPress={() => {
             SheetManager.hide(sheetId, {
                 payload: "NewFolder",
             });
         }}
-        />
-        <Button
-        title="Cancel"
-        style={{marginBottom: 10}}
-        color={colours.darkgray}
+        style={styles.newFileActionSheetPressable}
+        >
+            <Text style={styles.newFileActionSheetText}>New Folder</Text>
+        </Pressable>
+        <Pressable
         onPress={() => {
             SheetManager.hide(sheetId, {
                 payload: "Cancel",
             });
         }}
-        />
+        style={styles.newFileActionSheetPressable}
+        >
+            <Text style={styles.newFileActionSheetTextCancel}>Cancel</Text>
+        </Pressable>
       </ActionSheet>
     );
-  }
-   
-  export default NewFileActionSheet;
+}
+
+export default NewFileActionSheet;

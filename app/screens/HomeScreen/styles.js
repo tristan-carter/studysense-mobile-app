@@ -111,7 +111,7 @@ export default StyleSheet.create({
     modalTitle: {
         fontSize: 20,
         marginBottom: 10,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         fontWeight: '600',
         color: colours.subtitletext,
     },
@@ -236,7 +236,7 @@ export default StyleSheet.create({
     noSetsTitleText: {
         color: colours.backgroundColour, 
         fontSize: 26, 
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         fontWeight: '600',
     },
     noSetsSubText: {
@@ -262,14 +262,19 @@ export default StyleSheet.create({
     },
     dropdown: {
         height: 10,
-        paddingHorizontal: 10,
+        paddingHorizontal: 12,
         marginLeft: 'auto',
     },
     dropdownLabel: {
         zIndex: 999,
-        fontSize: 16,
+        fontSize: 17,
         fontFamily: 'Lato',
         color: colours.darkPrimary,
         fontWeight: '500',
-      },
+    },
+    dropdownIcon: {
+        zIndex: 999,
+        marginLeft: 5,
+        marginTop: 2,
+    },
 })

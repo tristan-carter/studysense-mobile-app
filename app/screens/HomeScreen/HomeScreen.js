@@ -27,7 +27,7 @@ import Games from './RevisionSection/Games';
 
 const LogoTitle = () => (
   <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-    {/*<Text style={{ color: colours.titletext, fontSize: 26, fontWeight: 'bold', fontFamily: 'AvenirNext-Heavy' }}>RevisionRocks</Text>*/}
+    {/*<Text style={{ color: colours.titletext, fontSize: 26, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'AvenirNext-Heavy' }}>RevisionRocks</Text>*/}
     <Image
       source={require('../../assets/StudySenseLogoLongTransparent.png')}
       style={{
@@ -104,7 +104,7 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible:false,
         title: currentFolderName,
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           beforeRemove: () => {
@@ -116,7 +116,7 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>),
         headerBackTitleVisible:false,
         title: currentSetName,
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' }, 
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' }, 
         headerStyle: { height: 83, backgroundColor: colours.titlebackground}})}
         listeners={{
           focus: () => {
@@ -133,7 +133,7 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
@@ -146,7 +146,7 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
@@ -164,7 +164,7 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
@@ -182,7 +182,7 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
@@ -200,7 +200,7 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
@@ -218,7 +218,7 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {

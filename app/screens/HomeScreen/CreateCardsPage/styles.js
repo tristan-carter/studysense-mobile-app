@@ -11,7 +11,7 @@ export default StyleSheet.create({
     },
     subtitleText: {
         fontSize: 20,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
         marginBottom: 23,
     },
@@ -34,7 +34,7 @@ export default StyleSheet.create({
     },
     buttonText: {
         fontSize: 21,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
     },
     divider: {
         height: 1.5,

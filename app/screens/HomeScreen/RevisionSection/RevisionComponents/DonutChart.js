@@ -129,7 +129,7 @@ const donutChartComponent = (cards) => {
             borderWidth: 1,
             borderColor: `rgba(0, 0, 0, 0.02)`,
           }}>
-          <Text style={{color: colours.primarytext, fontSize: 16, fontFamily: 'Lato-Bold'}}>
+          <Text style={{color: colours.primarytext, fontSize: 16, fontFamily: 'Lato-Bold', fontWeight: '600'}}>
             Smart Study Progress
           </Text>
           <View style={{marginTop: 15, marginBottom: 3, alignItems: 'center'}}>
@@ -145,7 +145,7 @@ const donutChartComponent = (cards) => {
                 return (
                   <View style={{justifyContent: 'center', alignItems: 'center'}}>
                     <Text
-                      style={{fontSize: 22, color: colours.subtitletext, fontFamily: 'Lato-Bold'}}>
+                      style={{fontSize: 22, color: colours.subtitletext, fontFamily: 'Lato-Bold', fontWeight: '600'}}>
                       {donutCenterValue === null ? "No Cards" : donutCenterValue + "%"}
                     </Text>
                     <Text style={{fontSize: 14, color: colours.subtitletext, fontFamily: 'Lato'}}>{donutCenterName}</Text>

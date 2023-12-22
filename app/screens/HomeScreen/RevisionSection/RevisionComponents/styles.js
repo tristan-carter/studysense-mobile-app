@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     subtitleText: {
         fontSize: 20,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
         marginBottom: 10,
     },
@@ -131,7 +131,7 @@ export default StyleSheet.create({
     modalTitle: {
         fontSize: 20,
         marginBottom: 10,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
     },
     modalTextContainer: {
@@ -206,7 +206,7 @@ export default StyleSheet.create({
     },
     roundReviewCorrectText: {
         fontSize: 18,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
     },
     inspirationalQuoteContainer: {
@@ -247,7 +247,7 @@ export default StyleSheet.create({
     nextRoundButtonText: {
         color: colours.white,
         fontSize: 21,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
     },
 
     // Flashcard Styles
@@ -282,7 +282,7 @@ export default StyleSheet.create({
      },
      flashcardTitleText: {
         fontSize: 24,
-        fontFamily: 'Lato-Bold',
+        fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
         marginBottom: 10,
         width: '100%',

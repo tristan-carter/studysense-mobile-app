@@ -140,7 +140,7 @@ export default function ScrollData(props) {
           <View style={{flexDirection: 'column', gap: 4}}>
             <Text numberOfLines={1} style={{
               paddingRight: 50,
-              fontFamily: 'Lato-Bold',
+              fontFamily: 'Lato-Bold', fontWeight: '600',
               fontSize: 21,
               color: colours.primarytext,
               overflow: 'hidden',
@@ -157,11 +157,11 @@ export default function ScrollData(props) {
             </Text>
           </View>
             <Dropdown
-              style={[styles.dropdown, isFocus && { paddingHorizontal: 20 }]}
+              style={[styles.dropdown, isFocus && { paddingHorizontal: 50 }]}
               placeholderStyle={styles.placeholderStyle}
               selectedTextStyle={styles.selectedTextStyle}
               itemTextStyle={styles.dropdownLabel}
-              iconStyle={styles.iconStyle}
+              iconStyle={styles.dropdownIcon}
               data={[
                 { label: 'Edit', value: 'edit' },
                 { label: 'Delete', value: 'delete' },
@@ -185,11 +185,10 @@ export default function ScrollData(props) {
                   confirmDeleteRow(currentRowMap.current, item.id, item.name, item.isFolder);
                 }
               }}
-              renderLeftIcon={() => (
-                <Ionicons name="ellipsis-vertical" color={colours.secondarytext} size={30} />
-              )}
             />
-          
+            {/*renderLeftIcon={() => (
+              <Ionicons name="ellipsis-vertical" color={colours.secondarytext} size={30} />
+            }*/}
           {//item.isFolder && (
             //<Ionicons name="folder" style={{ alignSelf: 'flex-end', marginLeft: 'auto' }} color={colours.secondarytext} size={40} />
           //)
@@ -257,7 +256,7 @@ export default function ScrollData(props) {
 
   const renderSectionHeader=({ section }) => (
     (section.data.length > 0 &&
-      <Text style={{ paddingVertical: 5, fontFamily: 'Lato-Bold', color: colours.subtitletext, fontSize: 20}}>{section.title}</Text>
+      <Text style={{ paddingVertical: 5, fontFamily: 'Lato-Bold', fontWeight: '600', color: colours.subtitletext, fontSize: 20}}>{section.title}</Text>
       )
     );
   

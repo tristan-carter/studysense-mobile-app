@@ -11,7 +11,7 @@ export default StyleSheet.create({
     },
     title: {
       fontSize: 24,
-      fontFamily: 'Lato-Bold',
+      fontFamily: 'Lato-Bold', fontWeight: '600',
       color: colours.subtitletext,
     },
     text: {
