@@ -31,9 +31,9 @@ const LogoTitle = () => (
     <Image
       source={require('../../assets/StudySenseLogoLongTransparent.png')}
       style={{
-        bottom: 6,
-        width: 180,
-        height: 50,
+        bottom: 0,
+        width: 190,
+        height: 55,
       }}
       alt='Image Failed To Load'
     />
@@ -95,7 +95,7 @@ function HomeScreen() {
       <Stack.Screen name="HomePage" component={HomePage} 
         options={{
           headerShown: true,
-          headerStyle: { height: 83, backgroundColor: colours.titlebackground },
+          headerStyle: { height: 90, backgroundColor: colours.titlebackground },
           headerTitle: () => <LogoTitle />,
         }}
       /> 
@@ -104,8 +104,8 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible:false,
         title: currentFolderName,
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           beforeRemove: () => {
             dispatch(setCurrentFolder(null));
@@ -116,8 +116,8 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>),
         headerBackTitleVisible:false,
         title: currentSetName,
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' }, 
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground}})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600', alignSelf: 'flex-start' }, 
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -133,8 +133,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -146,8 +146,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -164,8 +164,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -182,8 +182,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -200,8 +200,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -218,8 +218,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 30, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));

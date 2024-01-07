@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import styles from './styles';
 import colours from '../../../config/colours';
 import donutChartComponent from './RevisionComponents/DonutChart';
+import NotEnoughCards from './NotEnoughCards/NotEnoughCards.js';
 
 // 0 - Not Learned : 1 - Learning : 2 - Partially Learned : 3 - Learned
 const RevisionOptionsList = [
@@ -66,23 +67,27 @@ function RevisionOptions({ navigation }) {
     }
     
     return (
-        /*<ScrollView contentContainerStyle={{alignItems: 'center'}} style={styles.container}>*/
-            <View style={styles.container}>
-                <Text style={styles.subtitleText}>Study Options</Text>
-                {donutChartComponent(currentSet.cards)}
-                <View style={styles.revisionOptionsContainer}>
-                    {RevisionOptionsList.map((revisionOption, index) => (
-                        <TouchableOpacity style={styles.revisionOption} key={revisionOption.key} onPress={()=>navigation.push(revisionOption.title, {set: currentSet})}>
-                            <Image style={styles.revisionOptionIcon} source={revisionOption.icon} />
-                            <View style={styles.revisionOptionsTextContainer}>
-                                <Text style={styles.revisionOptionTitle}>{revisionOption.title}</Text>
-                                <Text style={styles.revisionOptionDescription}>{revisionOption.description}</Text>
-                            </View>
-                        </TouchableOpacity>
-                    ))}
+        currentSet.cards.length > 1 ? (
+            /*<ScrollView contentContainerStyle={{alignItems: 'center'}} style={styles.container}>*/
+                <View style={styles.container}>
+                    <Text style={styles.subtitleText}>Study Options</Text>
+                    {donutChartComponent(currentSet.cards)}
+                    <View style={styles.revisionOptionsContainer}>
+                        {RevisionOptionsList.map((revisionOption, index) => (
+                            <TouchableOpacity style={styles.revisionOption} key={revisionOption.key} onPress={()=>navigation.push(revisionOption.title, {set: currentSet})}>
+                                <Image style={styles.revisionOptionIcon} source={revisionOption.icon} />
+                                <View style={styles.revisionOptionsTextContainer}>
+                                    <Text style={styles.revisionOptionTitle}>{revisionOption.title}</Text>
+                                    <Text style={styles.revisionOptionDescription}>{revisionOption.description}</Text>
+                                </View>
+                            </TouchableOpacity>
+                        ))}
+                    </View>
                 </View>
-            </View>
-        /*</ScrollView>*/
+            /*</ScrollView>*/
+        ) : (
+            <NotEnoughCards set={currentSet} minCards={1} studyType={"a study"} />
+        )
     );
 }
 

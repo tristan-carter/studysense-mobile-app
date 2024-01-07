@@ -62,10 +62,10 @@ function ProfileScreen({ navigation }) {
   return (
       <Stack.Navigator>
           <Stack.Screen name="Profile" component={ProfilePage}
-          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false, headerTitleStyle: { color: colours.titletext, fontSize: 26, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'Lato-Bold', fontWeight: '600' }, headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false, headerTitleStyle: { color: colours.titletext, fontSize: 28, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'Lato-Bold', fontWeight: '600' }, headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
           />
           <Stack.Screen name="Settings" component={SettingsPage} 
-          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false,  headerTitleStyle: { color: colours.titletext, fontSize: 26, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'Lato-Bold', fontWeight: '600' }, headerStyle: { height: 83, backgroundColor: colours.titlebackground }})}
+          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false,  headerTitleStyle: { color: colours.titletext, fontSize: 28, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'Lato-Bold', fontWeight: '600' }, headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
         />
       </Stack.Navigator>
   );

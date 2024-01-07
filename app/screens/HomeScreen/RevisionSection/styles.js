@@ -4,7 +4,6 @@ import colours from '../../../config/colours.js';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        paddingVerticle: 5,
         paddingHorizontal: 18,
         backgroundColor: colours.backgroundColour,
         alignItems: 'center',
@@ -13,7 +12,7 @@ export default StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Lato-Bold', fontWeight: '600',
         color: colours.subtitletext,
-        marginBottom: 23,
+        marginBottom: 11,
     },
     revisionOptionsContainer: {
         marginTop: 10,
