@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
 
-import { View, Image, KeyboardAvoidingView } from 'react-native';
+import { View, Image, Dimensions } from 'react-native';
 
 import colours from '../../config/colours'
 import styles from './styles';
@@ -71,6 +71,8 @@ function HomePage() {
 const Stack = createStackNavigator();
 
 function HomeScreen() {
+  const screenHeight = Dimensions.get('window').height;
+
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
   const currentFolder = user.currentFolder;
@@ -116,8 +118,8 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>),
         headerBackTitleVisible:false,
         title: currentSetName,
-        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600', alignSelf: 'flex-start' }, 
-        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
+        headerTitleStyle: { color: colours.titletext, fontSize: screenHeight <= 700 ? 28 : 28, fontFamily: 'Lato-Bold', fontWeight: '600', alignSelf: 'flex-start' }, 
+        headerStyle: { height: screenHeight <= 700 ? 65 : 90, backgroundColor: colours.titlebackground }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));

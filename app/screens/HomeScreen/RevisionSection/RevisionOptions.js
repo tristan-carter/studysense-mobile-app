@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
 
 import { useSelector } from 'react-redux';
 
@@ -7,6 +7,7 @@ import styles from './styles';
 import colours from '../../../config/colours';
 import donutChartComponent from './RevisionComponents/DonutChart';
 import NotEnoughCards from './NotEnoughCards/NotEnoughCards.js';
+
 
 // 0 - Not Learned : 1 - Learning : 2 - Partially Learned : 3 - Learned
 const RevisionOptionsList = [
@@ -46,6 +47,8 @@ const RevisionOptionsList = [
 */
 
 function RevisionOptions({ navigation }) {
+    const screenHeight = Dimensions.get('window').height;
+
     const user = useSelector((state) => state.user);
     const currentFolderId = user.currentFolder;
     const currentSetId = user.currentSet;
@@ -69,8 +72,8 @@ function RevisionOptions({ navigation }) {
     return (
         currentSet.cards.length > 1 ? (
             /*<ScrollView contentContainerStyle={{alignItems: 'center'}} style={styles.container}>*/
-                <View style={styles.container}>
-                    <Text style={styles.subtitleText}>Study Options</Text>
+                <View style={[styles.container, {paddingHorizontal: 18}]}>
+                    <Text style={[styles.subtitleText, {marginBottom: 11}]}>Study Options</Text>
                     {donutChartComponent(currentSet.cards)}
                     <View style={styles.revisionOptionsContainer}>
                         {RevisionOptionsList.map((revisionOption, index) => (
@@ -78,7 +81,7 @@ function RevisionOptions({ navigation }) {
                                 <Image style={styles.revisionOptionIcon} source={revisionOption.icon} />
                                 <View style={styles.revisionOptionsTextContainer}>
                                     <Text style={styles.revisionOptionTitle}>{revisionOption.title}</Text>
-                                    <Text style={styles.revisionOptionDescription}>{revisionOption.description}</Text>
+                                    <Text style={styles.revisionOptionDescription} numberOfLines={2}>{revisionOption.description}</Text>
                                 </View>
                             </TouchableOpacity>
                         ))}

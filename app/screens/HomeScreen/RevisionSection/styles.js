@@ -42,6 +42,8 @@ export default StyleSheet.create({
     },
     revisionOptionsTextContainer: {
         display: 'flex',
+        flex: 1,
+        width: '100%',
         flexDirection: 'column',
         justifyContent: 'center',
         gap: 4,
