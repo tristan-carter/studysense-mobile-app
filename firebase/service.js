@@ -87,8 +87,8 @@ export const deleteAccount = createAsyncThunk(
 );
 
 export const saveSharedSet = createAsyncThunk(
-    'user/saveSharedSet',
-    async ([setCode, sharingSet]) => {
+  'user/saveSharedSet',
+  async ([setCode, sharingSet]) => {
     const userId = auth().currentUser.uid;
     const dbRef = firebase.app().database('https://studysense-29d39-default-rtdb.europe-west1.firebasedatabase.app').ref(`sharedSets/${userId}/${setCode}`);
     try {

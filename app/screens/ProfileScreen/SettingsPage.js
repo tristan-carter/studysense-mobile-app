@@ -13,7 +13,7 @@ import ComingSoonScreen from '../ComingSoonScreen';
 
 const resetPassword = (setShowModal, informationToShow) => {
   auth()
-  .sendPasswordResetEmail(auth.currentUser.email)
+  .sendPasswordResetEmail(auth().currentUser.email)
   .then(() => {
     informationToShow.current = "An email has been sent to your email address. Please follow the instructions in the email to reset your password.";
     setShowModal(true);
