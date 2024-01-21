@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-import { View, Text, TouchableOpacity, Modal, Image, TextInput, KeyboardAvoidingView, Alert, Clipboard, Switch, SafeAreaView } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, Image, TextInput, KeyboardAvoidingView, Alert, Switch, SafeAreaView } from 'react-native';
 
+import { Clipboard } from '@react-native-clipboard/clipboard';
 import styles from '.././styles.js';
 
 const brainIcon = require('../../../assets/StudySmartRevisionIcon.png');
@@ -89,7 +90,14 @@ export function CreateFileModal ({
                                 setShowImportModal(true);
                                 setShowModal(false);
                                 if (importingSet.current && importingSet.current.length > 1) {
-                                    Alert.alert("Already Imported A Set", "You can only import one set, by importing a new set you will override the current imported set, to not override it press cancel on the importset modal.", () => {});
+                                    Alert.alert("Already Imported A Set", 
+                                    "You can only import one set, by importing a new set you will override the current imported set, to not override it press cancel on the importset modal.", 
+                                    [
+                                        {
+                                            text: "Go Back",
+                                            onPress: () => {},
+                                        },
+                                    ]);
                                 }
                                 }}>
                                 <Image style={{ width: 45, height: 45 }} source={importIcon} />
@@ -103,16 +111,37 @@ export function CreateFileModal ({
                         {editOrCreate == "Edit" && !creatingFolder ?
                         <>
                             <View style={styles.divider} />
-                            <TouchableOpacity style={styles.importButton} onPress={()=>{
-                                if (!isPrivate) {
-                                    Alert.alert("SetCode Copied To Clipboard", "Send to someone so they can to import it! To use a code click on import set while creating a set.", () => {
-                                        Clipboard.setString(setCode);
-                                        dispatch(saveSharedSet([saveSharedSetSetCode, set]));
-                                    });
-                                } else {
-                                    Alert.alert("Set Is Private", "Unprivate this set in order to be able to share it.", () => {});
-                                }
-                            }}>
+                            <TouchableOpacity
+                                style={styles.importButton}
+                                onPress={() => {
+                                    if (!isPrivate) {
+                                    Alert.alert(
+                                        "SetCode Copied To Clipboard",
+                                        "Send to someone so they can to import it! To use a code click on import set while creating a set.",
+                                        [
+                                            {
+                                                text: "Ok",
+                                                onPress: () => {
+                                                Clipboard.setString(setCode);
+                                                dispatch(saveSharedSet([saveSharedSetSetCode, set]));
+                                                },
+                                            },
+                                        ]
+                                    );
+                                    } else {
+                                    Alert.alert(
+                                        "Set Is Private",
+                                        "Unprivate this set in order to be able to share it.",
+                                        [
+                                            {
+                                                text: "Go Back",
+                                                onPress: () => {},
+                                            },
+                                        ]
+                                    );
+                                    }
+                                }}
+                                >
                                 <Image style={{ width: 45, height: 45 }} source={shareIcon} />
                                 <View style={{ marginLeft: 8, flex: 1}}>
                                     <Text style={styles.importButtonText}>Share Set</Text>
