@@ -204,7 +204,7 @@ export default function ScrollData(props) {
       <View style={styles.scrollDataButtonContainer}>
         <View style={{flex: 1}}/>
         <TouchableOpacity
-          style={[styles.scrollDataButton, { backgroundColor: colours.blue }, { marginRight: 0.5 }]}
+          style={[styles.scrollDataButton, { backgroundColor: colours.blue, marginRight: 0.5 }]}
           onPress={() => {
             editingSet.current = data.item; 
             editingId.current = data.item.id; 
@@ -222,7 +222,7 @@ export default function ScrollData(props) {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={[styles.scrollDataButton, { backgroundColor: '#FF4242' }]}
+          style={[styles.scrollDataButton, { backgroundColor: '#FF4242', marginRight: 2 }]}
           onPress={()=>confirmDeleteRow(rowMap, data.item.id, data.item.name, data.item.isFolder)}
         >
           <View style={styles.scrollDataIconContainer}>

@@ -39,7 +39,7 @@ export function CreateFileModal ({
             visible={showModal}
             onRequestClose={() => setShowModal(false)}
         >
-            <KeyboardAvoidingView style={styles.modalContainer}>
+            <View style={styles.modalContainer}>
                 <SafeAreaView style={styles.modalSubContainer}>
                     <View style={styles.modalContent}>
                         <Text style={styles.modalTitle}>{editOrCreate == "Edit" ? "Edit" : "New"} {setOrFolderText}</Text>
@@ -152,7 +152,7 @@ export function CreateFileModal ({
                         }
                     </View>
                 </SafeAreaView>
-            </KeyboardAvoidingView>
+            </View>
         </Modal>
     )
 }

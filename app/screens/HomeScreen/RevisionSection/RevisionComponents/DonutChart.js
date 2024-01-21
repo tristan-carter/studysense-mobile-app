@@ -134,7 +134,7 @@ const donutChartComponent = (cards) => {
           <Text style={{color: colours.primarytext, fontSize: 16, fontFamily: 'Lato-Bold', fontWeight: '600'}}>
             Smart Study Progress
           </Text>
-          { screenHeight <= 700 ? (<></>) : (
+          { screenHeight <= 800 ? (<></>) : (
             <View style={{marginTop: 0, marginBottom: 3, alignItems: 'center'}}>
               <PieChart
                 data={pieData}

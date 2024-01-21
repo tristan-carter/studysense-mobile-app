@@ -39,7 +39,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
     }, []);
     
     return (
-        <KeyboardAvoidingView
+        <View
         style={styles.container}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         >
@@ -99,7 +99,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                     </Svg>
                 </TouchableOpacity>
             </View>
-        </KeyboardAvoidingView>
+        </View>
     );
 }
 

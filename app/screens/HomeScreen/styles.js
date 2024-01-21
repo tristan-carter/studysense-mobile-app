@@ -17,7 +17,6 @@ export default StyleSheet.create({
         height: 70,
         gap: 12,
         alignSelf: 'stretch',
-
         shadowColor: '#8D5742', 
         shadowOffset: {width: -1, height: 2},
         shadowOpacity: 0.07,
@@ -27,6 +26,7 @@ export default StyleSheet.create({
         flex: 1,
         paddingLeft: 2.8,
         marginVertical: 5.5,
+        maxHeight: 70,
         flexDirection: 'row',
         alignItems: 'center',
     },
@@ -37,7 +37,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 5,
-        height: '100%',
+        height: '95%',
     },
     scrollDataIconContainer: {
         marginBottom: 5,
