@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { View, Text, TouchableOpacity, Switch, Modal, TextInput, Alert } from 'react-native';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setLoggedIn, setUser, deleteAccountData } from '../../../firebase/userSlice';
+import { setLoggedIn, setUser, deleteAccountData, saveUser } from '../../../firebase/userSlice';
 
 import auth from "@react-native-firebase/auth";
 import { firebase } from "@react-native-firebase/database";
@@ -25,14 +25,14 @@ const resetPassword = (setShowModal, informationToShow) => {
 }
 
 const changeEmail = (newEmail, setShowModal, informationToShow, user, dispatch) => {
-  if (newEmail.current === "") {
+  if (newEmail === "") {
     alert("Please enter a valid new email address.");
     return;
   }
-  auth().updateEmail(auth().currentUser, newEmail.current).then(() => {
+  auth().currentUser.updateEmail(newEmail).then(() => {
     //updates email in database
-    user.email = newEmail.current;
-    saveUserData(user);
+    const updatedUserData = { ...user.data, email: newEmail };
+    dispatch(saveUser(updatedUserData));
 
     informationToShow.current = "Your email has been changed successfully.";
     setShowModal(true);
@@ -187,7 +187,7 @@ const SettingsPage = () => {
           </View>
           <TouchableOpacity
             style={styles.createButton}
-            onPress={()=>{setShowEmailModal(false); changeEmail(newEmail, setShowInformationModal, informationToShow, user, dispatch)}}
+            onPress={()=>{setShowEmailModal(false); changeEmail(newEmail.current, setShowInformationModal, informationToShow, user, dispatch)}}
           >
             <Text style={styles.createButtonText}>Done</Text>
           </TouchableOpacity>
