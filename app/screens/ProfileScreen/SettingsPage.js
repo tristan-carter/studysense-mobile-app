@@ -66,10 +66,10 @@ const deleteAccount = (dispatch) => {
         text: "Confirm",
         onPress: () => {
           // delete user from auth and leaves them in database so recovery of account is possible
-          dispatch(setLoggedIn(false));
           const userId = auth().currentUser.uid;
-          dispatch(deleteAccountData(userId));
-          auth().deleteUser(auth().currentUser).then(() => {
+          auth().currentUser.delete().then(() => {
+            dispatch(setLoggedIn(false));
+            dispatch(deleteAccountData(userId));
             console.log("User deleted successfully.")
           }).catch((error) => {
             const errorMessage = error.message;
