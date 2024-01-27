@@ -1,10 +1,10 @@
 import React from 'react';
 import ComingSoonScreen from '../ComingSoonScreen';
 
-function TipsScreen({ navigation }) {
+function InstaSetsScreen({ navigation }) {
     return (
         <ComingSoonScreen />
     );
 }
 
-export default TipsScreen;
+export default InstaSetsScreen;

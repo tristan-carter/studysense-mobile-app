@@ -1,10 +1,10 @@
 import React from 'react';
 import ComingSoonScreen from '../ComingSoonScreen';
 
-function TimetableScreen({ navigation }) {
+function StudySessionsScreen({ navigation }) {
     return (
         <ComingSoonScreen />
     );
 }
 
-export default TimetableScreen;
+export default StudySessionsScreen;

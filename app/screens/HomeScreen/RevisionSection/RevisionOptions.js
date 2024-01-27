@@ -14,25 +14,25 @@ const RevisionOptionsList = [
     {
         key: 0,
         title: 'Smart Study',
-        description: 'Your personal study companion',
+        description: 'Mixing multiple choice questions and written questions',
         icon: require('../../../assets/StudySmartRevisionIcon.png'),
     },
     {
         key: 1,
         title: 'Refresher',
-        description: 'Recall and reinforce challenging concepts quickly',
+        description: 'Study cards you get wrong most often',
         icon: require('../../../assets/RefresherRevisionIcon.png'),
     },
     {
         key: 2,
         title: 'Test',
-        description: 'Written based questions, best for reviewing knowledge',
+        description: 'Only written questions, best for reviewing knowledge',
         icon: require('../../../assets/TestRevisionIcon.png'),
     },
     {
         key: 3,
         title: 'Flashcards',
-        description: 'Learn and retain knowledge with flashcards',
+        description: 'Effective for more detailed terms and definitions',
         icon: require('../../../assets/DefaultSetIcon.png'),
     },
 ];

@@ -11,7 +11,6 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { saveUser, fetchSharedSetData, setBottomNavShown, setCreatingNewSetFromNoSets } from './firebase/userSlice';
 import { addFolder } from './firebase/foldersSlice';
-import { fetchSharedSet } from './firebase/service';
 //import { Configuration, OpenAIApi } from "openai";
 
 import { useNavigation } from '@react-navigation/native';
@@ -27,7 +26,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from './app/config/colours';
 
 // screens
-import { LoginScreen, RegistrationScreen, HomeScreen, TimetableScreen, ProfileScreen, TipsScreen } from './app/screens';
+import { LoginScreen, RegistrationScreen, HomeScreen, InstaSetsScreen, ProfileScreen, StudySessionsScreen } from './app/screens';
 import { CreateFileModal } from './app/screens/HomeScreen/Modals/CreateFileModal';
 import { useAuthentication } from './firebase/useAuthentication';
 import { SmartSetModal } from './app/screens/HomeScreen/Modals/SmartSetModal';
@@ -263,12 +262,12 @@ function HomeTabs(props) {
 
           if (route.name === 'Home') {
             iconName = focused ? 'home' : 'home-outline';
-          } else if (route.name === 'Timetable') {
-            iconName = focused ? 'calendar' : 'calendar-outline';
+          } else if (route.name === 'InstaSets') {
+            iconName = focused ? 'albums' : 'albums-outline';
           } else if (route.name === 'ProfileScreen') {
             iconName = focused ? 'person' : 'person-outline';
-          } else if (route.name === 'Tips') {
-            iconName = focused ? 'bulb' : 'bulb-outline';
+          } else if (route.name === 'StudySessions') {
+            iconName = focused ? 'timer' : 'timer-outline';
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -278,14 +277,14 @@ function HomeTabs(props) {
       })}
       >
         { isBottomNavShown ? (<Tab.Screen name="Home" options={{tabBarShowLabel: false}} component={HomeScreen}/>) : (<Tab.Screen name="Home" options={{tabBarShowLabel: false, tabBarStyle: { display: 'none' }}} component={HomeScreen}/>)}
-        {/*<Tab.Screen name="Timetable" options={{tabBarShowLabel: false}} component={TimetableScreen} />*/}
+        <Tab.Screen name="InstaSets" options={{tabBarShowLabel: false}} component={InstaSetsScreen} />
         <Tab.Screen name="AddFile"
           component={ButtonScreen}
           options={({navigation})=> ({
             tabBarButton:props => <AddFileIconButton onPress={showActionSheet}/>
           })}
         />
-        {/*<Tab.Screen name="Tips" options={{tabBarShowLabel: false}} component={TipsScreen} />*/}
+        <Tab.Screen name="StudySessions" options={{tabBarShowLabel: false}} component={StudySessionsScreen} />
         <Tab.Screen name="ProfileScreen" options={{tabBarShowLabel: false}} component={ProfileScreen} />
       </Tab.Navigator>
     </>
