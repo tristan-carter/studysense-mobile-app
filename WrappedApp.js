@@ -277,14 +277,14 @@ function HomeTabs(props) {
       })}
       >
         { isBottomNavShown ? (<Tab.Screen name="Home" options={{tabBarShowLabel: false}} component={HomeScreen}/>) : (<Tab.Screen name="Home" options={{tabBarShowLabel: false, tabBarStyle: { display: 'none' }}} component={HomeScreen}/>)}
-        <Tab.Screen name="InstaSets" options={{tabBarShowLabel: false}} component={InstaSetsScreen} />
+        {/*<Tab.Screen name="InstaSets" options={{tabBarShowLabel: false}} component={InstaSetsScreen} />*/}
         <Tab.Screen name="AddFile"
           component={ButtonScreen}
           options={({navigation})=> ({
             tabBarButton:props => <AddFileIconButton onPress={showActionSheet}/>
           })}
         />
-        <Tab.Screen name="StudySessions" options={{tabBarShowLabel: false}} component={StudySessionsScreen} />
+        {/*<Tab.Screen name="StudySessions" options={{tabBarShowLabel: false}} component={StudySessionsScreen} />*/}
         <Tab.Screen name="ProfileScreen" options={{tabBarShowLabel: false}} component={ProfileScreen} />
       </Tab.Navigator>
     </>
