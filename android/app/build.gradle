@@ -81,8 +81,9 @@ android {
         applicationId "app.studysense.StudySense"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "2.0"
+        resConfigs "en", "fr"
     }
     signingConfigs {
         debug {
