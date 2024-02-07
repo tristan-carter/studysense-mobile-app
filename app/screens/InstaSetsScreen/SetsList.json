@@ -1,0 +1,163 @@
+{
+    "studylevel": [
+        {
+            "title": "A Level",
+            "examboards": [
+
+            ]
+        },
+        {
+            "title": "GCSE",
+            "examboards": [
+                {
+                    "title": "AQA",
+                    "subjects": [
+                        {
+                            "title": "Maths",
+                            "topics": []
+                        },
+                        {
+                            "title": "Geography",
+                            "topics": []
+                        },
+                        {
+                            "title": "History",
+                            "topics": []
+                        },
+                        {
+                            "title": "Religious Studies",
+                            "topics": []
+                        },
+                        {
+                            "title": "French",
+                            "topics": []
+                        },
+                        {
+                            "title": "Spanish",
+                            "topics": []
+                        },
+                        {
+                            "title": "German",
+                            "topics": []
+                        },
+                        {
+                            "title": "Biology (Combined Science)",
+                            "topics": []
+                        },
+                        {
+                            "title": "Chemistry (Combined Science)",
+                            "topics": []
+                        },
+                        {
+                            "title": "Physics (Combined Science)",
+                            "topics": []
+                        },
+                        {
+                            "title": "Biology",
+                            "topics": [
+                                {
+                                    "title": "The Cell",
+                                    "cards": [
+                                        {
+                                            "term": "What are the two types of cells?",
+                                            "definition": "Eukaryotic (plant and animal) and Prokaryotic (bacteria)"
+                                        },
+                                        {
+                                            "term": "What are the differences between eukaryotic and prokaryotic cells?",
+                                            "definition": "Prokaryotic cells are much smaller than eukaryotic cells. Eukaryotic cells contain membrance bound-organelles and a nucleus containing genetic material which prokaryotes don't have"
+                                        },
+                                        {
+                                            "term": "What is the prokaryotic cell wall composed of?",
+                                            "definition": "Peptidoglycan"
+                                        },
+                                        {
+                                            "term": "How is genetic information stored in a prokaryotic cell?",
+                                            "definition": "Found free within the cyoplasm as a chromosomal DNA (single large loop of circular DNA) and as plasmids"
+                                        },
+                                        {
+                                            "term": "What are plasmids?",
+                                            "definition": "Small, circular pieces of DNA that are separate from the chromosomal DNA, also contain genes for things like antibiotic resistance"
+                                        },
+                                        {
+                                            "term": "What is an order of magnitude?",
+                                            "definition": "A power to the base 10 that is used to quantify and compare size"
+                                        },
+                                        {
+                                            "term": "What is a micrometer (µm)?",
+                                            "definition": "1 x 10^(-6) metres"
+                                        },
+                                        {
+                                            "term": "What is a nanoemeter (nm)?",
+                                            "definition": "1 x 10^(-9) metres"
+                                        },
+                                        {
+                                            "term": "List the components of plant cells",
+                                            "definition": "Nucleus, cytoplasm, cell membrane, cell wall, mitochondria, ribosomes, chloroplasts, permanent vacuole"
+                                        },
+                                        {
+                                            "term": "List the components of animal cells",
+                                            "definition": "Nucleus, cytoplasm, cell membrane, mitochondria, ribosomes"
+                                        },
+
+                                        {
+                                            "term": "Nucleus",
+                                            "definition": "Contains genetic material that controls the activities of the cell"
+                                        },
+                                        {
+                                            "term": "Cytoplasm",
+                                            "definition": "Jellylike substance where most of the chemical reactions happen. It contains enzymes which control these chemical reactions"
+                                        },
+                                        {
+                                            "term": "Cell membrane",
+                                            "definition": "Holds the cell together and controls what goes in and out"
+                                        },
+                                        {
+                                            "term": "Cell wall",
+                                            "definition": "Strengthens and provides support to the cell, made of cellulose"
+                                        },
+                                        {
+                                            "term": "Mitochondria",
+                                            "definition": "Where most of the reactions for aerobic respiration take place. Respiration releases energy that the cell needs to work"
+                                        },
+                                        {
+                                            "term": "Ribosomes",
+                                            "definition": "Where protein synthesis happens"
+                                        },
+                                        {
+                                            "term": "Chloroplasts",
+                                            "definition": "Contain chlorophyll, which absorbs light energy for photosynthesis"
+                                        },
+                                        {
+                                            "term": "Permanent vacuole",
+                                            "definition": "Filled with cell sap to help keep the cell turgid"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Chemistry",
+                            "topics": []
+                        },
+                        {
+                            "title": "Physics",
+                            "topics": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Edexcel",
+                    "subjects": [
+
+                    ]
+                },
+                {
+                    "title": "OCR",
+                    "subjects": [
+
+                    ]
+                }
+            ]
+        }
+    ]
+}
