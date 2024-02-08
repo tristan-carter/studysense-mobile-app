@@ -9,8 +9,6 @@ import { firebase } from "@react-native-firebase/database";
 
 import styles from './styles';
 
-import ComingSoonScreen from '../ComingSoonScreen';
-
 const resetPassword = (setShowModal, informationToShow) => {
   auth()
   .sendPasswordResetEmail(auth().currentUser.email)
