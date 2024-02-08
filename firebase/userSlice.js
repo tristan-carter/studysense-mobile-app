@@ -38,7 +38,7 @@ export const deleteAccountData = createAsyncThunk('user/deleteAccountData', asyn
         await dispatch(deleteAccount(userId));
     } catch (error) {
         alert(error.message);
-        console.log("Error deleting account")
+        console.log("Error Deleting Account")
         console.log(error.message)
         throw error;
     }
@@ -48,6 +48,7 @@ export const fetchSharedSetData = createAsyncThunk('user/fetchSharedSetData', as
     console.log("Fetching Shared Set...")
     try {
         const sharedSetData = await dispatch(fetchSharedSet(setCode));
+        console.log(sharedSetData)
         return sharedSetData;
     } catch (error) {
         alert(error.message);

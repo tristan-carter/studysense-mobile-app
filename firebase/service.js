@@ -41,6 +41,7 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
           .then(snapshot => {
               if (snapshot.exists()) {
                   const userData = snapshot.val();
+                  console.log("Fetched UserData Successfully.")
                   resolve(userData);
               } else {
                   console.log("No data available");
@@ -61,7 +62,7 @@ export const saveUserData = createAsyncThunk(
       const dbRef = firebase.app().database('https://studysense-29d39-default-rtdb.europe-west1.firebasedatabase.app').ref(`users/${userId}`);
       try {
           await dbRef.set(userData);
-          console.log("Data saved successfully.")
+          console.log("UserData saved successfully.")
           return userData;
         } catch (error) {
           console.error("Error saving data:", error);
@@ -93,7 +94,7 @@ export const saveSharedSet = createAsyncThunk(
     const dbRef = firebase.app().database('https://studysense-29d39-default-rtdb.europe-west1.firebasedatabase.app').ref(`sharedSets/${userId}/${setCode}`);
     try {
         await dbRef.set(sharingSet);
-        console.log("Data saved successfully.")
+        console.log("SharedSetData saved successfully.")
         return setCode;
       } catch (error) {
         console.error("Error saving data:", error);
@@ -105,17 +106,19 @@ export const saveSharedSet = createAsyncThunk(
 export const fetchSharedSet = createAsyncThunk(
     'user/fetchSharedSet',
     async ([setCode, userId]) => {
-      const dbRef = firebase.app().database('https://studysense-29d39-default-rtdb.europe-west1.firebasedatabase.app').ref(`sharedSets/${userId}/${setCode}`);
-      await dbRef.once()
-      .then(snapshot => {
-        if (snapshot.exists()) {
-            const sharedSet = snapshot.val();
-            console.log("Fetched SharedSetData Successfully.")
-            return sharedSet;
-        } else {
-            console.log("No data available");
-            return null;
-        }
+      return new Promise((resolve, reject) => {
+        const dbRef = firebase.app().database('https://studysense-29d39-default-rtdb.europe-west1.firebasedatabase.app').ref(`sharedSets/${userId}/${setCode}`);
+        dbRef.once('value')
+        .then(snapshot => {
+          if (snapshot.exists()) {
+              const sharedSet = snapshot.val();
+              console.log("Fetched SharedSetData Successfully.")
+              resolve(sharedSet);
+          } else {
+              console.log("No data available");
+              resolve(null);
+          }
+      })
     });
 });
 
