@@ -104,31 +104,31 @@ export default function LoginScreen({navigation}) {
             visible={showResetPasswordModal}
             onRequestClose={() => setShowResetPasswordModal(false)}
             >
-            <View style={styles.modalContainer}>
-                <View style={styles.modalContent}>
-                <Text style={styles.modalText}>Reset Password</Text>
-                <View style={styles.inputContainer}>
-                    <Text style={styles.inputLabel}>Account Email</Text>
-                    <TextInput
-                        multiline={true}
-                        style={styles.textInput} defaultValue={""} placeholder={"studysense@hotmail.com"} placeholderTextColor={'rgba(0, 0, 0, 0.48)'}
-                        onChangeText={(text) => {emailToSendTo.current=text}}
-                    />
-                </View>
-                <TouchableOpacity
-                    style={styles.createButton}
-                    onPress={()=>{setShowResetPasswordModal(false); resetPassword()}}
-                >
-                    <Text style={styles.createButtonText}>Reset</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.cancelButton}
-                    onPress={()=>setShowResetPasswordModal(false)}
-                >
-                    <Text style={styles.cancelButtonText}>Cancel</Text>
+                <View style={styles.modalContainer}>
+                    <View style={styles.modalContent}>
+                    <Text style={styles.modalText}>Reset Password</Text>
+                    <View style={styles.inputContainer}>
+                        <Text style={styles.inputLabel}>Account Email</Text>
+                        <TextInput
+                            multiline={true}
+                            style={styles.textInput} defaultValue={""} placeholder={"studysense@hotmail.com"} placeholderTextColor={'rgba(0, 0, 0, 0.48)'}
+                            onChangeText={(text) => {emailToSendTo.current=text}}
+                        />
+                    </View>
+                    <TouchableOpacity
+                        style={styles.createButton}
+                        onPress={()=>{setShowResetPasswordModal(false); resetPassword()}}
+                    >
+                        <Text style={styles.createButtonText}>Reset</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity
+                        style={styles.cancelButton}
+                        onPress={()=>setShowResetPasswordModal(false)}
+                    >
+                        <Text style={styles.cancelButtonText}>Cancel</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-            </View>
             </Modal>
         </>
     )

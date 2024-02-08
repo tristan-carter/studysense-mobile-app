@@ -33,6 +33,9 @@ import { SmartSetModal } from './app/screens/HomeScreen/Modals/SmartSetModal';
 import { SetImportModal } from './app/screens/HomeScreen/Modals/SetImportModal';
 import { SheetManager } from 'react-native-actions-sheet';
 
+import {PermissionsAndroid} from 'react-native';
+PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
