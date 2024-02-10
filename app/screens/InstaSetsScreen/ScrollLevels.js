@@ -18,8 +18,6 @@ import { CreateFileModal } from '../HomeScreen/Modals/CreateFileModal.js';
 
 import SetsList from './SetsList.json';
 
-const CreateFirstSetIcon = require('../../assets/CreateFirstSetIcon.png')
-
 export default function ScrollLevels(props) {
   const [levels, setLevels] = useState([]);
   const navigation = props.navigation;
@@ -37,7 +35,7 @@ export default function ScrollLevels(props) {
         keyExtractor={(item) => item.title}
         renderItem={({ item }) => {
           return (
-            <TouchableWithoutFeedback
+            <TouchableOpacity
               onPress={() => {
                 navigation.push('ExamBoardPage', { Item: item })
               }}
@@ -58,7 +56,7 @@ export default function ScrollLevels(props) {
                   </Text>
                 </View>
               </View>
-            </TouchableWithoutFeedback>
+            </TouchableOpacity>
           );
         }}
       />

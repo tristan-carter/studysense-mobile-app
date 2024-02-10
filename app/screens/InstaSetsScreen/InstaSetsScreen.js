@@ -11,7 +11,8 @@ import colours from '../../config/colours'
 import styles from './styles';
 
 import ScrollLevels from './ScrollLevels.js';
-import ExamBoardPagePage from './ExamBoardPage.js';
+import ExamBoardPage from './ExamBoardPage.js';
+import SubjectsScroll from './SubjectsScroll.js';
 
 import Svg, { Path } from "react-native-svg";
 
@@ -67,14 +68,29 @@ function InstaSetsScreen() {
         }}
       /> 
 
-      <Stack.Screen name="ExamBoardPage" component={ExamBoardPagePage} options={({route}) => ({
+      <Stack.Screen name="ExamBoardPage" component={ExamBoardPage} options={({route}) => ({
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible: false,
         title: "InstaSets",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
-    />
-        
+      />
+
+      <Stack.Screen name="SubjectsScroll" component={SubjectsScroll} options={({route}) => ({
+        headerBackImage:()=>(<SVGBackButton/>), 
+        headerBackTitleVisible: false,
+        title: "InstaSets",
+        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+      />
+      
+      <Stack.Screen name="TopicsSelection" component={TopicsSelection} options={({route}) => ({
+          headerBackImage:()=>(<SVGBackButton/>), 
+          headerBackTitleVisible: false,
+          title: "InstaSets",
+          headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+      />
     </Stack.Navigator>
   )
 }

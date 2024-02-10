@@ -56,82 +56,2135 @@
                             "title": "Biology",
                             "topics": [
                                 {
-                                    "title": "The Cell",
+                                    "title": "Cell Biology(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Eukaryotic cells",
+                                            "definition": "Cells with a membrane-bound nucleus and organelles; found in plants and animals."
+                                        },
+                                        {
+                                            "term": "Prokaryotic cells",
+                                            "definition": "Cells lacking a membrane-bound nucleus and organelles; found in bacteria."
+                                        },
+                                        {
+                                            "term": "Differences between eukaryotic and prokaryotic cells",
+                                            "definition": "Prokaryotic cells are smaller; eukaryotic cells have membrane-bound organelles and a nucleus containing genetic material."
+                                        },
+                                        {
+                                            "term": "Difference in magnitude between human hair (100 um) and HIV virus (100 nm)",
+                                            "definition": "Human hair: 100 um = 10^-4 m; HIV virus: 100 nm = 10^-7 m; Difference = 10^(-4 - (-7)) = 10^3 = 1000."
+                                        },
+                                        {
+                                            "term": "Components of both plant and animal cells",
+                                            "definition": "Nucleus, cytoplasm, cell membrane, mitochondria, ribosomes."
+                                        },
+                                        {
+                                            "term": "Additional cell components found in plant cells",
+                                            "definition": "Chloroplasts, permanent vacuole, cell wall."
+                                        },
+                                        {
+                                            "term": "Function of the nucleus",
+                                            "definition": "Aside from storing genetic information, it controls cellular activities."
+                                        },
+                                        {
+                                            "term": "Structure of the cytoplasm",
+                                            "definition": "Fluid component of the cell containing organelles, enzymes, and dissolved ions and nutrients."
+                                        },
+                                        {
+                                            "term": "Function of the cytoplasm",
+                                            "definition": "It serves as the site of cellular reactions (e.g., first stage of respiration) and as a transport medium."
+                                        },
+                                        {
+                                            "term": "Function of the cell membrane",
+                                            "definition": "Controls the entry and exit of materials into and out of the cell."
+                                        },
+                                        {
+                                            "term": "Function of the mitochondria",
+                                            "definition": "Site of later stages of aerobic respiration, producing ATP."
+                                        },
+                                        {
+                                            "term": "Function of the ribosomes",
+                                            "definition": "Joins amino acids in a specific order during translation for protein synthesis."
+                                        },
+                                        {
+                                            "term": "Plant cell wall composition",
+                                            "definition": "Made of cellulose."
+                                        },
+                                        {
+                                            "term": "Function of the plant cell wall",
+                                            "definition": "Provides strength and prevents the cell from bursting when water enters by osmosis."
+                                        },
+                                        {
+                                            "term": "Content of the permanent vacuole",
+                                            "definition": "Contains cell sap (a solution of salts, sugars, and organic acids)."
+                                        },
+                                        {
+                                            "term": "Function of the permanent vacuole",
+                                            "definition": "Supports the cell, maintaining its turgidity."
+                                        },
+                                        {
+                                            "term": "Function of chloroplasts",
+                                            "definition": "Site of photosynthesis."
+                                        },
+                                        {
+                                            "term": "Adaptations of sperm cells in animals",
+                                            "definition": "Haploid nucleus, tail for movement, mitochondria for energy, acrosome containing enzymes to digest egg cell membrane."
+                                        },
+                                        {
+                                            "term": "Adaptations of nerve cells in animals",
+                                            "definition": "Long axon for transmission, dendrites for receiving impulses, myelin sheath for insulation and faster transmission."
+                                        },
+                                        {
+                                            "term": "Adaptations of muscle cells",
+                                            "definition": "Protein filament arrangement for contraction, mitochondria for energy, merged cells for synchronous contraction."
+                                        },
+                                        {
+                                            "term": "Adaptations of root hair cells in plants",
+                                            "definition": "Large surface area, thin walls."
+                                        },
+                                        {
+                                            "term": "Adaptations of xylem cells in plants",
+                                            "definition": "No upper or lower margins, thick woody side walls."
+                                        },
+                                        {
+                                            "term": "Adaptations of phloem cells in plants",
+                                            "definition": "Sieve plates for transport, companion cells for energy provision."
+                                        },
+                                        {
+                                            "term": "Storage of genetic information in prokaryotic cells",
+                                            "definition": "Chromosomal DNA and plasmid DNA found free within the cytoplasm."
+                                        },
+                                        {
+                                            "term": "Definition of cell differentiation",
+                                            "definition": "The process by which cells become specialized."
+                                        },
+                                        {
+                                            "term": "Importance of cell differentiation",
+                                            "definition": "Allows for the production of different tissues and organs, performing various vital functions in the body."
+                                        },
+                                        {
+                                            "term": "Stage in life cycle when most animal cells differentiate",
+                                            "definition": "Early in their life cycle."
+                                        },
+                                        {
+                                            "term": "Duration of ability to differentiate in plant cells",
+                                            "definition": "Throughout their entire life cycle."
+                                        },
+                                        {
+                                            "term": "Purpose of cell division in mature animals",
+                                            "definition": "Repair and replacement of cells."
+                                        },
+                                        {
+                                            "term": "Changes during cell differentiation",
+                                            "definition": "Cells acquire different sub-cellular structures to enable specific functions."
+                                        },
+                                        {
+                                            "term": "Definition of magnification",
+                                            "definition": "The number of times an image appears larger than the real object."
+                                        },
+                                        {
+                                            "term": "Definition of resolution",
+                                            "definition": "The smallest distance between two distinguishable objects."
+                                        },
+                                        {
+                                            "term": "Functioning of light microscopes",
+                                            "definition": "Passes light through a specimen, allowing observation."
+                                        },
+                                        {
+                                            "term": "Advantages of light microscopes",
+                                            "definition": "Inexpensive, easy to use, portable, can observe both dead and living specimens."
+                                        },
+                                        {
+                                            "term": "Disadvantage of light microscopes",
+                                            "definition": "Limited resolution."
+                                        },
+                                        {
+                                            "term": "Functioning of electron microscopes",
+                                            "definition": "Uses a beam of electrons focused by magnets to produce an image."
+                                        },
+                                        {
+                                            "term": "Types of electron microscopes",
+                                            "definition": "Transmission electron microscope (TEM) and scanning electron microscope (SEM)."
+                                        },
+                                        {
+                                            "term": "Advantage of electron microscopes",
+                                            "definition": "Greater magnification and resolution."
+                                        },
+                                        {
+                                            "term": "Reason electron microscopes have greater magnification and resolution",
+                                            "definition": "They use electrons with shorter wavelengths than light."
+                                        },
+                                        {
+                                            "term": "Impact of electron microscopes on understanding cells",
+                                            "definition": "Allows observation of sub-cellular structures and enhances understanding of structure-function relationships."
+                                        },
+                                        {
+                                            "term": "Disadvantages of electron microscopes",
+                                            "definition": "Expensive, less portable, require training, observe only dead specimens."
+                                        },
+                                        {
+                                            "term": "Calculation of magnification",
+                                            "definition": "Magnification = size of image / size of real object."
+                                        },
+                                        {
+                                            "term": "Definition of standard form",
+                                            "definition": "A way of expressing numbers as a figure between 1 and 10 multiplied by a power of 10."
+                                        },
+                                        {
+                                            "term": "0.005 in standard form",
+                                            "definition": "5 x 10^-3."
+                                        },
+                                        {
+                                            "term": "Definition of order of magnitude",
+                                            "definition": "A power of 10 used to quantify and compare size."
+                                        },
+                                        {
+                                            "term": "10382 in standard form",
+                                            "definition": "1.0382 x 10^4."
+                                        },
+                                        {
+                                            "term": "How bacteria multiply",
+                                            "definition": "Binary fission (simple cell division)."
+                                        },
+                                        {
+                                            "term": "Frequency of bacterial multiplication",
+                                            "definition": "Once every 20 minutes if enough nutrients and suitable temperature are available."
+                                        },
+                                        {
+                                            "term": "Ways bacteria can be grown",
+                                            "definition": "Nutrient broth solution and colonies on an agar gel plate."
+                                        },
+                                        {
+                                            "term": "Nutrients in a nutrient broth solution",
+                                            "definition": "Includes nitrogen for protein synthesis, carbohydrates for energy, and other minerals."
+                                        },
+                                        {
+                                            "term": "Purpose of uncontaminated cultures of microorganisms",
+                                            "definition": "For investigating disinfectant and antibiotic action."
+                                        },
+                                        {
+                                            "term": "Preparation of uncontaminated culture using aseptic technique",
+                                            "definition": "Includes using sterilized Petri dishes, sterilizing inoculating loops, and storing cultures upside down to prevent contamination."
+                                        },
+                                        {
+                                            "term": "Reason for sterilizing Petri dishes and culture media",
+                                            "definition": "To kill any bacteria already present."
+                                        },
+                                        {
+                                            "term": "Purpose of sterilizing inoculating loops",
+                                            "definition": "To kill any bacteria present on the loop."
+                                        },
+                                        {
+                                            "term": "Reason for securing Petri dish lids with adhesive tape and storing them upside down",
+                                            "definition": "To prevent airborne bacteria contamination and to prevent condensation from dripping onto colonies."
+                                        },
+                                        {
+                                            "term": "Definition of centimetre (cm)",
+                                            "definition": "1 x 10^-2 meters."
+                                        },
+                                        {
+                                            "term": "Reason for incubating cultures at 25°C in school laboratories",
+                                            "definition": "To inhibit the growth of harmful pathogens."
+                                        },
+                                        {
+                                            "term": "Formula for calculating cross-sectional area of a bacterial colony",
+                                            "definition": "Area = πr^2."
+                                        },
+                                        {
+                                            "term": "Calculation of number of bacteria after a certain time period",
+                                            "definition": "Number of bacteria = Initial bacteria count x 2^(time period/mean division time)."
+                                        },
+                                        {
+                                            "term": "Number of bacteria after 3 hours for a population dividing every 15 minutes and starting with 5 bacteria",
+                                            "definition": "20480 or 2.048 x 10^4."
+                                        },
+                                        {
+                                            "term": "Definition of millimetre (mm)",
+                                            "definition": "1 x 10^-3 meters."
+                                        },
+                                        {
+                                            "term": "Definition of micrometre (um)",
+                                            "definition": "1 x 10^-6 meters."
+                                        },
+                                        {
+                                            "term": "Definition of nanometre (nm)",
+                                            "definition": "1 x 10^-9 meters."
+                                        },
+                                        {
+                                            "term": "Composition of chromosomes",
+                                            "definition": "Consist of DNA molecules combined with proteins, containing genes for protein synthesis."
+                                        },
+                                        {
+                                            "term": "Definition of gene",
+                                            "definition": "A section of DNA that codes for a protein."
+                                        },
+                                        {
+                                            "term": "Definition of stem cell",
+                                            "definition": "An unspecialized cell capable of differentiating into other cell types and self-renewal."
+                                        },
+                                        {
+                                            "term": "Function of stem cells in embryos",
+                                            "definition": "Embryonic stem cells can differentiate into various cell types, potentially treating conditions like paralysis and diabetes."
+                                        },
+                                        {
+                                            "term": "Function of stem cells in adult bone marrow",
+                                            "definition": "Adult stem cells can differentiate into different cell types, replenishing dead or damaged tissues."
+                                        },
+                                        {
+                                            "term": "Function of stem cells in plant meristems",
+                                            "definition": "Meristem stem cells can differentiate into any plant cell type, ensuring continuous growth and repair."
+                                        },
+                                        {
+                                            "term": "Definition of therapeutic cloning",
+                                            "definition": "Producing an embryo with the same genetic makeup as the patient for potential treatment using stem cells."
+                                        },
+                                        {
+                                            "term": "Advantages of cloning plants using meristem stem cells",
+                                            "definition": "Prevents extinction of rare plants, produces large numbers of desirable plants, and creates identical plants for research."
+                                        },
+                                        {
+                                            "term": "Issues associated with the use of stem cells",
+                                            "definition": "Ethical concerns, slow and costly therapy development, risk of viral infections, and potential immune rejection."
+                                        },
+                                        {
+                                            "term": "Number of chromosomes in human body cells",
+                                            "definition": "46 chromosomes."
+                                        },
+                                        {
+                                            "term": "Number of chromosomes in gametes",
+                                            "definition": "23 chromosomes."
+                                        },
+                                        {
+                                            "term": "Arrangement of chromosomes in the nucleus of a body cell",
+                                            "definition": "Arranged in pairs, forming 23 pairs."
+                                        },
+                                        {
+                                            "term": "Main stages of the cell cycle",
+                                            "definition": "Replication of DNA and organelle synthesis, mitosis, and cell division."
+                                        },
+                                        {
+                                            "term": "Importance of mitosis",
+                                            "definition": "Produces genetically identical cells for growth and repair."
+                                        },
+                                        {
+                                            "term": "Description of the first stage of the cell cycle",
+                                            "definition": "Cells grow, replicate DNA, and synthesize organelles."
+                                        },
+                                        {
+                                            "term": "Description of the second stage of the cell cycle",
+                                            "definition": "Chromosomes separate, and the nucleus divides."
+                                        },
+                                        {
+                                            "term": "Description of the third stage of the cell cycle",
+                                            "definition": "Cytoplasm and cell membrane divide, producing two identical daughter cells."
+                                        },
+                                        {
+                                            "term": "Definition of diffusion",
+                                            "definition": "Net movement of particles from higher to lower concentration."
+                                        },
+                                        {
+                                            "term": "Factors affecting the rate of diffusion",
+                                            "definition": "Concentration gradient, temperature, and surface area."
+                                        },
+                                        {
+                                            "term": "Possible outcome when an animal cell is placed in a hypotonic solution",
+                                            "definition": "Cell may burst due to water intake."
+                                        },
+                                        {
+                                            "term": "Possible outcome when an animal cell is placed in a hypertonic solution",
+                                            "definition": "Cell may shrivel up due to water loss."
+                                        },
+                                        {
+                                            "term": "Mechanism of maintaining rigidity in plant leaves and stems",
+                                            "definition": "Turgor pressure from water intake, pressing cytoplasm against cell wall."
+                                        },
+                                        {
+                                            "term": "Possible outcome when a plant cell is placed in a hypertonic solution",
+                                            "definition": "Water moves out, causing cell to shrink and membrane to detach from cell wall."
+                                        },
+                                        {
+                                            "term": "Definition of active transport",
+                                            "definition": "Movement of molecules against concentration gradient, requiring energy."
+                                        },
+                                        {
+                                            "term": "Use of active transport in plant root hair cells",
+                                            "definition": "Absorbing mineral ions from dilute soil solutions."
+                                        },
+                                        {
+                                            "term": "Use of active transport in absorbing digestion products",
+                                            "definition": "Moving glucose from gut to blood, aiding its transport to tissues for energy."
+                                        },
+                                        {
+                                            "term": "Examples of substances transported by diffusion in lungs and kidneys",
+                                            "definition": "Oxygen and carbon dioxide in lungs, urea in kidneys."
+                                        },
+                                        {
+                                            "term": "Adaptations of single-celled organisms for diffusion",
+                                            "definition": "Large surface area to volume ratio."
+                                        },
+                                        {
+                                            "term": "Calculation of surface area to volume ratio",
+                                            "definition": "Surface Area: Volume = Number of Sides x (Side Length x Side Width) / (Length x Width x Depth)."
+                                        },
+                                        {
+                                            "term": "Factors increasing the effectiveness of gas exchange surfaces",
+                                            "definition": "Large surface area, thin membrane, efficient blood supply, and ventilation."
+                                        },
+                                        {
+                                            "term": "Definition of osmosis",
+                                            "definition": "Movement of water from dilute to concentrated solution through a semi-permeable membrane."
+                                        },
+                                        {
+                                            "term": "Meaning of a solution being isotonic to a cell",
+                                            "definition": "Concentration of external solution equals that of internal solution."
+                                        },
+                                        {
+                                            "term": "Meaning of a solution being hypertonic to a cell",
+                                            "definition": "Concentration of external solution is higher than internal solution."
+                                        },
+                                        {
+                                            "term": "Meaning of a solution being hypotonic to a cell",
+                                            "definition": "Concentration of external solution is lower than internal solution."
+                                        }
+                                    ]  
+                                },
+                                {
+                                    "title": "Organisation(paper 1)",
                                     "cards": [
                                         {
-                                            "term": "What are the two types of cells?",
-                                            "definition": "Eukaryotic (plant and animal) and Prokaryotic (bacteria)"
+                                            "term": "Cell",
+                                            "definition": "The basic building block of a living organism."
                                         },
                                         {
-                                            "term": "What are the differences between eukaryotic and prokaryotic cells?",
-                                            "definition": "Prokaryotic cells are much smaller than eukaryotic cells. Eukaryotic cells contain membrance bound-organelles and a nucleus containing genetic material which prokaryotes don't have"
+                                            "term": "Tissue",
+                                            "definition": "A group of cells with a similar structure and function working together. For example, muscular tissue contracts to bring about movement."
                                         },
                                         {
-                                            "term": "What is the prokaryotic cell wall composed of?",
-                                            "definition": "Peptidoglycan"
+                                            "term": "Organ",
+                                            "definition": "A collection of tissues working together to perform a specific function. For example, the stomach contains glandular, muscular, and epithelial tissues."
                                         },
                                         {
-                                            "term": "How is genetic information stored in a prokaryotic cell?",
-                                            "definition": "Found free within the cyoplasm as a chromosomal DNA (single large loop of circular DNA) and as plasmids"
+                                            "term": "Organ System",
+                                            "definition": "A group of organs working together to perform specific functions. For example, the digestive system contains organs such as the stomach, the small intestine, and the large intestine."
                                         },
                                         {
-                                            "term": "What are plasmids?",
-                                            "definition": "Small, circular pieces of DNA that are separate from the chromosomal DNA, also contain genes for things like antibiotic resistance"
+                                            "term": "Main Function of the Digestive System",
+                                            "definition": "To digest food and absorb the nutrients obtained from digestion."
                                         },
                                         {
-                                            "term": "What is an order of magnitude?",
-                                            "definition": "A power to the base 10 that is used to quantify and compare size"
+                                            "term": "Role of the Pancreas and the Salivary Gland in the Digestive System",
+                                            "definition": "The pancreas and the salivary gland are glands which produce digestive juices containing enzymes."
                                         },
                                         {
-                                            "term": "What is a micrometer (µm)?",
-                                            "definition": "1 x 10^(-6) metres"
+                                            "term": "Lock and Key Hypothesis of Enzyme Function",
+                                            "definition": "The shape of the enzyme active site and the substrate are complementary, so they can bind together to form an enzyme-substrate complex."
                                         },
                                         {
-                                            "term": "What is a nanoemeter (nm)?",
-                                            "definition": "1 x 10^(-9) metres"
+                                            "term": "Effect of Temperature on Enzyme Action",
+                                            "definition": "Up to a certain point, increasing temperature increases enzyme action, as molecules have a higher kinetic energy. Above a certain temperature, the shape of the active site is altered, and the enzyme becomes denatured, so it can no longer catalyze the reaction. The optimum temperature is around 37°C."
                                         },
                                         {
-                                            "term": "List the components of plant cells",
-                                            "definition": "Nucleus, cytoplasm, cell membrane, cell wall, mitochondria, ribosomes, chloroplasts, permanent vacuole"
+                                            "term": "Effect of pH on Enzyme Function",
+                                            "definition": "The optimum pH for most enzymes is 7 (apart from proteases in the stomach). If the pH is too extreme, the shape of the active site may be altered, and the enzyme may no longer work."
                                         },
                                         {
-                                            "term": "List the components of animal cells",
-                                            "definition": "Nucleus, cytoplasm, cell membrane, mitochondria, ribosomes"
-                                        },
-
-                                        {
-                                            "term": "Nucleus",
-                                            "definition": "Contains genetic material that controls the activities of the cell"
+                                            "term": "Locations of Carbohydrases, Proteases, and Lipases Production in the Body",
+                                            "definition": "Carbohydrases: amylase - salivary gland and pancreas; maltase - small intestine. Proteases: pepsin - stomach; others - pancreas and small intestine. Lipases: pancreas and small intestine."
                                         },
                                         {
-                                            "term": "Cytoplasm",
-                                            "definition": "Jellylike substance where most of the chemical reactions happen. It contains enzymes which control these chemical reactions"
+                                            "term": "Role of Carbohydrases in the Digestive System",
+                                            "definition": "Carbohydrases break down carbohydrates into monosaccharides and disaccharides. Amylase breaks down starch into maltose, and maltase breaks down maltose into glucose."
                                         },
                                         {
-                                            "term": "Cell membrane",
-                                            "definition": "Holds the cell together and controls what goes in and out"
+                                            "term": "Role of Proteases in the Digestive System",
+                                            "definition": "Proteases break down proteins into amino acids."
                                         },
                                         {
-                                            "term": "Cell wall",
-                                            "definition": "Strengthens and provides support to the cell, made of cellulose"
+                                            "term": "Role of Lipases in the Digestive System",
+                                            "definition": "Lipases break down lipids into fatty acids and glycerol."
                                         },
                                         {
-                                            "term": "Mitochondria",
-                                            "definition": "Where most of the reactions for aerobic respiration take place. Respiration releases energy that the cell needs to work"
+                                            "term": "Utilization of Digestive Products",
+                                            "definition": "They are used to build bigger molecules such as carbohydrates and proteins. Glucose is used as a substrate in respiration."
                                         },
                                         {
-                                            "term": "Ribosomes",
-                                            "definition": "Where protein synthesis happens"
+                                            "term": "Location of Bile Production and Storage in the Body",
+                                            "definition": "Bile is made by the liver and stored in the gallbladder."
                                         },
                                         {
-                                            "term": "Chloroplasts",
-                                            "definition": "Contain chlorophyll, which absorbs light energy for photosynthesis"
+                                            "term": "Role of Bile in the Digestive System",
+                                            "definition": "Bile is an alkaline substance which neutralizes the hydrochloric acid secreted by the stomach. Bile emulsifies lipids to form droplets, increasing the surface area for the lipase enzyme to work on."
                                         },
                                         {
-                                            "term": "Permanent vacuole",
-                                            "definition": "Filled with cell sap to help keep the cell turgid"
+                                            "term": "Role of the Stomach in the Digestive System",
+                                            "definition": "The stomach produces hydrochloric acid, which kills any bacteria present and provides the optimum acidic pH for the protease enzyme to function."
+                                        },
+                                        {
+                                            "term": "Heart",
+                                            "definition": "An organ that pumps blood around the body."
+                                        },
+                                        {
+                                            "term": "Purpose of the Circulatory System",
+                                            "definition": "Carries oxygen and other useful substances to bodily tissues, and removes waste substances."
+                                        },
+                                        {
+                                            "term": "Function of the Double Circulatory System",
+                                            "definition": "One pathway carries blood from the heart to the lungs - where the gaseous exchange of oxygen and carbon dioxide takes place. Another pathway carries blood from the heart to the tissues."
+                                        },
+                                        {
+                                            "term": "Destination of Blood Pumped by the Right Ventricle",
+                                            "definition": "The lungs."
+                                        },
+                                        {
+                                            "term": "Destination of Blood Pumped by the Left Ventricle",
+                                            "definition": "Body tissues."
+                                        },
+                                        {
+                                            "term": "Importance of the Double Circulatory System",
+                                            "definition": "It makes the circulatory system more efficient - for example, oxygenated blood can be pumped around the body at a higher pressure by the left ventricle."
+                                        },
+                                        {
+                                            "term": "Number of Chambers in the Heart and Their Names",
+                                            "definition": "4 - right atrium, right ventricle, left atrium, left ventricle."
+                                        },
+                                        {
+                                            "term": "Reason for the Thicker Wall of the Left Ventricle",
+                                            "definition": "The left ventricle has to pump blood at a higher pressure around the whole body."
+                                        },
+                                        {
+                                            "term": "Four Main Blood Vessels Associated with the Heart",
+                                            "definition": "Aorta (left) - carries oxygenated blood from the heart to the body. Pulmonary vein (left) - carries oxygenated blood from the lungs to the heart. Vena cava (right) - carries deoxygenated blood from the body to the heart. Pulmonary artery (right) - carries deoxygenated blood from the heart to the lungs."
+                                        },
+                                        {
+                                            "term": "Purpose of Valves in the Heart",
+                                            "definition": "Prevent the backflow of blood."
+                                        },
+                                        {
+                                            "term": "Role of the Small Intestine in the Digestive System",
+                                            "definition": "The small intestine is the site where soluble food molecules are absorbed into the bloodstream."
+                                        },
+                                        {
+                                            "term": "Purpose of Coronary Arteries",
+                                            "definition": "Coronary arteries supply the heart muscle with oxygenated blood."
+                                        },
+                                        {
+                                            "term": "Process of Blood Flow Through the Heart",
+                                            "definition": "Blood enters the right atrium via the vena cava, and the left atrium via the pulmonary vein. The atria contract, forcing blood into the ventricles and causing valves to shut. After the ventricles contract, blood in the right ventricle enters the pulmonary artery (to the lungs) and blood in the left ventricle enters the aorta (to the body)."
+                                        },
+                                        {
+                                            "term": "Approximate Value of the Natural Resting Heart Rate",
+                                            "definition": "70 beats per minute."
+                                        },
+                                        {
+                                            "term": "Control of Heart Rate",
+                                            "definition": "Heart rate is controlled by a group of cells in the right atrium which act as a pacemaker. They release waves of electrical activity which cause the heart muscle to contract."
+                                        },
+                                        {
+                                            "term": "Treatment of Abnormal Heart Rhythm",
+                                            "definition": "Irregular heart rhythms can be treated using an artificial pacemaker, which sends out electrical signals to correct the heart's rhythm."
+                                        },
+                                        {
+                                            "term": "Three Types of Blood Vessel in the Body",
+                                            "definition": "Arteries, Veins, Capillaries."
+                                        },
+                                        {
+                                            "term": "Arteries Adaptations for Function",
+                                            "definition": "Thick muscle layer adds strength to resist high pressure. Thick elastic layer allows arteries to stretch and recoil - to withstand high pressure."
+                                        },
+                                        {
+                                            "term": "Veins Adaptations for Function",
+                                            "definition": "Wide lumen enables low pressure. Valves prevent backflow of blood."
+                                        },
+                                        {
+                                            "term": "Capillaries Adaptations for Function",
+                                            "definition": "Walls are one cell thick - short diffusion path. Permeable walls - substances can diffuse across. Narrow lumen - blood moves slowly - more time for diffusion."
+                                        },
+                                        {
+                                            "term": "Calculation of Blood Flow Rate",
+                                            "definition": "Volume of blood / number of minutes."
+                                        },
+                                        {
+                                            "term": "Role of the Liver in the Digestive System",
+                                            "definition": "Produces bile (stored in the gallbladder) which emulsifies lipids and allows the lipase enzyme to work more efficiently."
+                                        },
+                                        {
+                                            "term": "Location of the Lungs in the Body",
+                                            "definition": "The lungs are located in the thorax (within the chest). They are protected by the ribcage and separated from the rest of the abdomen by the diaphragm."
+                                        },
+                                        {
+                                            "term": "Tissues Making up the Gas Exchange System",
+                                            "definition": "Trachea, Intercostal muscles, Bronchi, Bronchioles, Alveoli, Diaphragm."
+                                        },
+                                        {
+                                            "term": "Ventilation of Lungs by Intercostal Muscles",
+                                            "definition": "Intercostal muscles contract, ribcage moves upwards and outwards, diaphragm flattens and volume of the chest increases, increased volume results in decreased pressure, air is drawn into lungs down pressure gradient. The inverse occurs when air moves out of the lungs."
+                                        },
+                                        {
+                                            "term": "Gas Exchange at the Alveoli",
+                                            "definition": "Oxygen diffuses from the alveoli into the capillary bloodstream down its concentration gradient. Carbon dioxide diffuses from the capillary into the alveoli down its concentration gradient."
+                                        },
+                                        {
+                                            "term": "Adaptations of Alveoli for Gas Exchange",
+                                            "definition": "Small and arranged in clusters - larger surface area. Rich blood supply - maintains concentration gradient. Thin alveolar wall - short diffusion pathway."
+                                        },
+                                        {
+                                            "term": "Calculation of Breathing Rate",
+                                            "definition": "Number of breaths / number of minutes."
+                                        },
+                                        {
+                                            "term": "Substance Carrying Components of Blood",
+                                            "definition": "Plasma."
+                                        },
+                                        {
+                                            "term": "Substances Transported by Plasma",
+                                            "definition": "Red blood cells, White blood cells, Platelets, Carbon dioxide, Urea, Products of digestion."
+                                        },
+                                        {
+                                            "term": "Plasma",
+                                            "definition": "A yellow liquid within blood that transports substances around the body."
+                                        },
+                                        {
+                                            "term": "Purpose of Red Blood Cells in Blood",
+                                            "definition": "Transport of oxygen around the body."
+                                        },
+                                        {
+                                            "term": "Role of the Large Intestine in the Digestive System",
+                                            "definition": "Absorbs water from undigested food, producing faeces."
+                                        },
+                                        {
+                                            "term": "Adaptations of Red Blood Cells for Their Function",
+                                            "definition": "Biconcave shape - increased surface area to volume ratio. No nucleus - more room for haemoglobin to bind to oxygen. Contain haemoglobin - binds to oxygen."
+                                        },
+                                        {
+                                            "term": "Purpose of White Blood Cells in Blood",
+                                            "definition": "They form part of the immune system, which protects the body from invading pathogens."
+                                        },
+                                        {
+                                            "term": "Adaptations of White Blood Cells for Their Function",
+                                            "definition": "Have a nucleus - contains DNA which codes for proteins. Can produce antibodies. Can produce antitoxins. Can engulf and digest pathogens (phagocytosis)."
+                                        },
+                                        {
+                                            "term": "Purpose of Platelets in Blood",
+                                            "definition": "Platelets are small cell fragments which aid the clotting of blood at the site of a wound."
+                                        },
+                                        {
+                                            "term": "Importance of Platelets' Function",
+                                            "definition": "Platelets aid in the process of blood clotting (conversion of fibrinogen to fibrin). As a result, red blood cells are trapped in the fibrin network, forming a clot which prevents excessive bleeding. Scab formation (after the clot has dried) prevents bacteria from entering the wound."
+                                        },
+                                        {
+                                            "term": "Coronary Heart Disease",
+                                            "definition": "Coronary heart disease occurs when the coronary arteries that supply the heart muscle become blocked with a buildup of fatty material. This restricts the supply of oxygen to the heart, possibly leading to a heart attack or death."
+                                        },
+                                        {
+                                            "term": "Stent",
+                                            "definition": "A metal mesh tube inserted into a blocked artery to keep it open, typically inflated using a balloon and later removed to allow blood flow."
+                                        },
+                                        {
+                                            "term": "Advantages of Stents",
+                                            "definition": "Insertion can be carried out without general anesthesia, quick recovery time, lower risk of a heart attack."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Stents",
+                                            "definition": "Risk of postoperative infection, risk of blood clots at the site of the stent."
+                                        },
+                                        {
+                                            "term": "Statins",
+                                            "definition": "Drugs that reduce LDL (bad) cholesterol levels, thus lowering the risk of coronary heart disease."
+                                        },
+                                        {
+                                            "term": "Advantages of Statins",
+                                            "definition": "Reduce risk of strokes, coronary heart disease, and heart attacks, increase level of HDL (good) cholesterol."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Statins",
+                                            "definition": "Need to be taken continuously, may have side effects, effect may not be immediate."
+                                        },
+                                        {
+                                            "term": "Enzymes in the Digestive System",
+                                            "definition": "Biological catalysts that speed up the breakdown of food without being used up."
+                                        },
+                                        {
+                                            "term": "Heart Bypass Surgery",
+                                            "definition": "Surgery where blocked coronary arteries are replaced with sections of veins taken from other parts of the body."
+                                        },
+                                        {
+                                            "term": "Consequences of Leaky Heart Valves",
+                                            "definition": "Blood flows in the wrong direction, causing the heart to become less efficient, leading to breathlessness and potential fatality."
+                                        },
+                                        {
+                                            "term": "Types of Valves to Replace Leaky Valves",
+                                            "definition": "Mechanical valves (made of metal or polymers) and biological valves (taken from animals or humans)."
+                                        },
+                                        {
+                                            "term": "Advantages of Mechanical Valves",
+                                            "definition": "Last for a very long time."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Mechanical Valves",
+                                            "definition": "Need to take medication to prevent blood clotting around the valve."
+                                        },
+                                        {
+                                            "term": "Advantages of Biological Valves",
+                                            "definition": "Work very well without the need for medication."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Biological Valves",
+                                            "definition": "Only last 12-15 years."
+                                        },
+                                        {
+                                            "term": "Purpose of an Artificial Heart",
+                                            "definition": "To support a patient's heart while they await a suitable donor heart."
+                                        },
+                                        {
+                                            "term": "Advantages of Artificial Hearts",
+                                            "definition": "Less likely to be rejected by the immune system, allows damaged heart to rest and recover."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Artificial Hearts",
+                                            "definition": "Risk of infection due to surgery, risk of blood clots, need to take blood-thinning drugs."
+                                        },
+                                        {
+                                            "term": "Health",
+                                            "definition": "The state of physical and mental wellbeing."
+                                        },
+                                        {
+                                            "term": "Communicable Disease",
+                                            "definition": "A disease caused by a pathogen that can be transmitted from one person to another, e.g., the flu."
+                                        },
+                                        {
+                                            "term": "Non-Communicable Disease",
+                                            "definition": "A disease that cannot be transmitted from person to person, e.g., cancer."
+                                        },
+                                        {
+                                            "term": "Role of Enzymes in Metabolism",
+                                            "definition": "Enzymes catalyze metabolic reactions such as building larger molecules, changing one molecule to another, and breaking down larger molecules into smaller ones."
+                                        },
+                                        {
+                                            "term": "Adaptation of Epidermal Tissue",
+                                            "definition": "Epidermal tissue covers the plant with a waxy cuticle to reduce water loss from the leaf surface."
+                                        },
+                                        {
+                                            "term": "Adaptation of Palisade Mesophyll Tissue",
+                                            "definition": "Contains many chloroplasts to facilitate rapid photosynthesis."
+                                        },
+                                        {
+                                            "term": "Translocation",
+                                            "definition": "The movement of dissolved sugars from the leaves to other parts of the plant."
+                                        },
+                                        {
+                                            "term": "Transpiration",
+                                            "definition": "The evaporation of water vapor from the surface of a plant."
+                                        },
+                                        {
+                                            "term": "Mechanism of Transpiration",
+                                            "definition": "Water evaporates from the leaf surface via stomata, then cohesion and tension pull water up the xylem, creating a continuous transpiration stream."
+                                        },
+                                        {
+                                            "term": "Effect of Temperature on Transpiration",
+                                            "definition": "Increasing temperature increases the rate of transpiration due to higher evaporation and diffusion of water."
+                                        },
+                                        {
+                                            "term": "Effect of Humidity on Transpiration",
+                                            "definition": "Increasing humidity decreases the rate of transpiration due to reduced water vapor concentration gradient."
+                                        },
+                                        {
+                                            "term": "Effect of Wind Speed on Transpiration",
+                                            "definition": "Increasing wind speed increases the rate of transpiration by lowering the water vapor concentration outside the leaf."
+                                        },
+                                        {
+                                            "term": "Effect of Light Intensity on Transpiration",
+                                            "definition": "Increasing light intensity increases the rate of transpiration by opening more stomata, allowing for increased evaporation."
+                                        },
+                                        {
+                                            "term": "Adaptation of Spongy Mesophyll Tissue",
+                                            "definition": "Contains many air spaces for gas exchange."
+                                        },
+                                        {
+                                            "term": "Adaptation of Xylem Tissue",
+                                            "definition": "Made of dead cells forming a hollow tube, strengthened by lignin, with bordered pits for specific mineral transport."
+                                        },
+                                        {
+                                            "term": "Adaptation of Phloem Tissue",
+                                            "definition": "Made of elongated living cells with sieve plates for efficient transport, especially in sieve tube cells."
+                                        },
+                                        {
+                                            "term": "Adaptation of Meristem Tissue",
+                                            "definition": "Contains stem cells capable of differentiating into various cell types, facilitating plant growth."
+                                        },
+                                        {
+                                            "term": "Tissues in the Leaf Organ",
+                                            "definition": "Epidermis, palisade mesophyll, spongy mesophyll, xylem, phloem, guard cells."
+                                        },
+                                        {
+                                            "term": "Function of Guard Cells",
+                                            "definition": "Control the opening and closing of stomata according to the plant's water content."
+                                        },
+                                        {
+                                            "term": "Adaptation of Stomata",
+                                            "definition": "Allows control of gaseous exchange and water loss, with more stomata on the cooler, shaded side and controlled by guard cells."
+                                        },
+                                        {
+                                            "term": "Adaptation of Root Hair Cells",
+                                            "definition": "Maximize absorption with a large surface area and contain many mitochondria for energy release."
+                                        }
+                                    ]                                
+                                },
+                                {
+                                    "title": "Infection and Response(paper 1)",
+                                    "cards": [
+                                        {
+                                            "term": "Communicable disease",
+                                            "definition": "A disease caused by a pathogen which can be passed between animals or plants e.g. flu."
+                                        },
+                                        {
+                                            "term": "Pathogen",
+                                            "definition": "A disease-causing microorganism e.g. bacteria."
+                                        },
+                                        {
+                                            "term": "Tobacco mosaic virus",
+                                            "definition": "A plant pathogen which causes leaf discoloration when cells are damaged. Affected areas cannot photosynthesize, reducing the crop yield. As there is no treatment, farmers grow TMV-resistant crop strains to avoid infection."
+                                        },
+                                        {
+                                            "term": "How is tobacco mosaic virus spread?",
+                                            "definition": "Contact between infected and healthy plants. Insects may act as vectors which transfer the virus between different plants."
+                                        },
+                                        {
+                                            "term": "Salmonella",
+                                            "definition": "A type of bacteria found in raw meat, poultry, and eggs. If they enter the body via food poisoning, they can affect natural gut bacteria."
+                                        },
+                                        {
+                                            "term": "Symptoms of salmonella food poisoning",
+                                            "definition": "Fever, abdominal cramping, vomiting, diarrhea. May be fatal in very young or elderly populations due to the risk of dehydration."
+                                        },
+                                        {
+                                            "term": "How can the spread of salmonella be limited?",
+                                            "definition": "Vaccinating animals intended for consumption, keeping raw meat away from cooked meat, disinfecting hands and surfaces after contact with raw meat, thoroughly cooking meat."
+                                        },
+                                        {
+                                            "term": "Gonorrhea",
+                                            "definition": "A sexually transmitted bacterial infection caused by unprotected sex with an infected individual. Early symptoms include yellow/green discharge from genitals and painful urination, although it may be symptomless. Its spread can be controlled through the use of antibiotics (no longer penicillin as many strains are resistant) and using condoms."
+                                        },
+                                        {
+                                            "term": "Rose black spot",
+                                            "definition": "A fungal disease which causes purple or black spots to develop on rose leaves. It reduces the area of the leaf which is available for photosynthesis and causes leaves to turn yellow and drop prematurely."
+                                        },
+                                        {
+                                            "term": "How is the rose black spot fungus spread?",
+                                            "definition": "Fungal spores are spread by the wind and in water."
+                                        },
+                                        {
+                                            "term": "How do bacteria cause disease?",
+                                            "definition": "Once inside the body, they divide rapidly by binary fission. They kill cells and produce harmful toxins."
+                                        },
+                                        {
+                                            "term": "How can the rose black spot fungus be treated?",
+                                            "definition": "Using fungicides, destroying infected leaves."
+                                        },
+                                        {
+                                            "term": "Malaria",
+                                            "definition": "Malaria is a disease caused by protist pathogens. The disease is carried from host to host by mosquitoes, and the protists enter the human bloodstream when they feed. Symptoms include fever and shaking, and it may also be fatal in some cases."
+                                        },
+                                        {
+                                            "term": "How does the skin prevent pathogens from entering the body?",
+                                            "definition": "Acts as a physical barrier. Scab formation after the skin is cut/wounded. Antimicrobial secretions which can kill pathogens. Healthy skin flora compete with pathogens and act as an additional barrier."
+                                        },
+                                        {
+                                            "term": "How does the respiratory system prevent pathogens from entering the body?",
+                                            "definition": "Nose - has hairs and mucus which trap pathogens. Trachea and bronchi - have mucus that traps pathogens. Ciliated cells move mucus to the mouth so it can be swallowed."
+                                        },
+                                        {
+                                            "term": "How does the stomach prevent pathogens from infecting the body?",
+                                            "definition": "Secretes hydrochloric acid - kills any pathogens present."
+                                        },
+                                        {
+                                            "term": "How does phagocytosis protect us against disease?",
+                                            "definition": "White blood cells (phagocytes) ingest and destroy pathogens so they cannot infect more cells."
+                                        },
+                                        {
+                                            "term": "How does antibody production protect us against disease?",
+                                            "definition": "White blood cells produce antibodies which are complementary to a specific antigen on a pathogen. The binding of antibodies to antigens causes pathogens to clump together, making them easier to destroy. In the case of a second infection, the correct antibodies can be produced rapidly, preventing the person from getting the same disease again."
+                                        },
+                                        {
+                                            "term": "How does antitoxin production protect us against disease?",
+                                            "definition": "Antitoxins bind to toxins released by pathogens and neutralize them."
+                                        },
+                                        {
+                                            "term": "Vaccination",
+                                            "definition": "Contains a dead or inactivated form of the pathogen which stimulates white blood cells to produce complementary antibodies to the pathogen. In the case of a second infection, memory cells can rapidly produce the correct antibodies and prevent illness."
+                                        },
+                                        {
+                                            "term": "How do viruses cause disease?",
+                                            "definition": "They invade and reproduce inside living body cells, leading to cell damage."
+                                        },
+                                        {
+                                            "term": "Herd immunity",
+                                            "definition": "If a sufficiently high proportion of a population are immune to a disease (especially through vaccination), the spread of this disease will be limited."
+                                        },
+                                        {
+                                            "term": "Advantages of vaccinations",
+                                            "definition": "They have eradicated many deadly diseases e.g. smallpox. Many epidemics can be prevented by vaccinations. Herd immunity protects those who cannot have vaccinations."
+                                        },
+                                        {
+                                            "term": "Disadvantages of vaccinations",
+                                            "definition": "Not guaranteed to work - might not protect against multiple strains of a pathogen. May be side effects or adverse reactions."
+                                        },
+                                        {
+                                            "term": "Drugs used to cure some bacterial diseases",
+                                            "definition": "Antibiotics - they can kill bacterial pathogens inside the body."
+                                        },
+                                        {
+                                            "term": "How do antibiotics work?",
+                                            "definition": "Antibiotics e.g. penicillin kill bacterial pathogens inside the body, but do not kill human cells. While some antibiotics kill a wide range of bacteria, it is important that the right antibiotic is used for specific bacteria."
+                                        },
+                                        {
+                                            "term": "Why can antibiotics not be used to treat viral diseases?",
+                                            "definition": "Antibiotics have no effect on viral pathogens as they live inside the host’s (human) cells. Therefore, it is difficult to design drugs that would kill the virus and not destroy human cells at the same time."
+                                        },
+                                        {
+                                            "term": "Antibiotic resistance",
+                                            "definition": "Antibiotic resistance occurs when mutations lead to individual bacteria being resistant to an antibiotic. These bacteria are able to survive, reproduce, and pass on their alleles, leading to a greater proportion of antibiotic-resistant bacteria. This is concerning as some types of bacteria are becoming resistant to all known antibiotics, so the diseases that they cause cannot be cured."
+                                        },
+                                        {
+                                            "term": "How can we prevent antibiotic resistance?",
+                                            "definition": "Avoid overuse and unnecessary use of antibiotics - e.g. antibiotics are often used for viral infections. Finish antibiotic courses - to ensure all bacteria is killed."
+                                        },
+                                        {
+                                            "term": "Effect of painkillers on infectious diseases",
+                                            "definition": "Painkillers can only treat the symptoms but do not kill pathogens."
+                                        },
+                                        {
+                                            "term": "Heart drug digitalis extracted from which plant?",
+                                            "definition": "Foxgloves"
+                                        },
+                                        {
+                                            "term": "Ways in which pathogens can be spread",
+                                            "definition": "By air (flu, tuberculosis, and the common cold are spread by droplet infection). By water (fungal spores in water spread plant diseases). By direct contact (common in plant diseases and sexually transmitted infections)."
+                                        },
+                                        {
+                                            "term": "Painkiller originates from a compound found in willow bark",
+                                            "definition": "Aspirin"
+                                        },
+                                        {
+                                            "term": "Antibiotic discovered by Alexander Fleming from a type of mould",
+                                            "definition": "Penicillin"
+                                        },
+                                        {
+                                            "term": "Four qualities of a good medicine",
+                                            "definition": "Effective, safe, stable, able to be taken in and removed easily"
+                                        },
+                                        {
+                                            "term": "Three main factors tested for when developing new drugs",
+                                            "definition": "Toxicity, efficacy, dose"
+                                        },
+                                        {
+                                            "term": "How is preclinical testing carried out?",
+                                            "definition": "In a laboratory - uses cells, tissues, and live animals"
+                                        },
+                                        {
+                                            "term": "How is clinical testing carried out?",
+                                            "definition": "Uses healthy volunteers and patients. Firstly, the drug is tested at a low dose on healthy people - then tested on patients and on a larger scale to find the optimum dose. Often, one group receives a placebo (not the test drug) and the other group receives the actual drug, in order to assess its efficacy."
+                                        },
+                                        {
+                                            "term": "Difference between a single-blind and a double-blind trial",
+                                            "definition": "In a single-blind trial, only the doctor knows whether the patient is receiving the drug or the placebo. In a double-blind trial, neither the patient nor the doctor knows. Double-blind trials help remove bias on the part of the doctor."
+                                        },
+                                        {
+                                            "term": "Ways in which the spread of pathogens can be reduced",
+                                            "definition": "Hygiene - handwashing, disinfectants, tissues. Reducing contact with infected individuals - quarantine. Removing vectors - use of pesticides and insecticides, removal of habitats. Vaccination."
+                                        },
+                                        {
+                                            "term": "Importance of preventing the spread of viral diseases",
+                                            "definition": "Scientists have not yet developed cures for many viral diseases."
+                                        },
+                                        {
+                                            "term": "Measles",
+                                            "definition": "Measles is a serious viral disease that can cause blindness and brain damage. The main symptoms are a fever and a red skin rash."
+                                        },
+                                        {
+                                            "term": "Monoclonal antibodies (mAbs)",
+                                            "definition": "Antibodies that are clones from one parent cell. Specific to one type of antigen."
+                                        },
+                                        {
+                                            "term": "How are monoclonal antibodies produced?",
+                                            "definition": "Specific antigen injected into an animal (e.g. mouse). B-lymphocytes producing complementary antibodies extracted. B-lymphocytes fuse with myeloma cells to form hybridoma cells - these cells can divide and produce antibody. Hybridoma cells cultured. Monoclonal antibodies collected and purified."
+                                        },
+                                        {
+                                            "term": "Why can monoclonal antibodies be used to target cancer cells?",
+                                            "definition": "Cancer cells have specific antigens called ‘tumor markers’ on their membranes. mAbs are specific to one type of antigen so can be targeted to ‘tumor markers’ without damaging other cells."
+                                        },
+                                        {
+                                            "term": "How can monoclonal antibodies be used to diagnose cancer?",
+                                            "definition": "mAbs tagged to a radioactive substance. mAbs injected into the patient’s bloodstream. mAbs bind to ‘tumor markers’ on cancer cells. Emitted radiation is detected using a specialized scanner enabling doctors to determine the location of cancer cells."
+                                        },
+                                        {
+                                            "term": "How can monoclonal antibodies be used to target drugs to cancer cells?",
+                                            "definition": "mAbs attached to an anti-cancer drug. mAbs injected into the patient’s bloodstream. mAbs bind to ‘tumor markers’ on cancer cells. Anti-cancer drug destroys cancer cells."
+                                        },
+                                        {
+                                            "term": "Why are cancer treatments that use monoclonal antibodies favored over traditional treatments?",
+                                            "definition": "Radiotherapy and chemotherapy target rapidly dividing cells. Healthy cells (e.g. hair follicle cells, bone marrow cells) are damaged as a consequence, producing unpleasant side effects. mAbs only target cancer cells, reducing damage to normal cells."
+                                        },
+                                        {
+                                            "term": "How can monoclonal antibodies be used to locate blood clots?",
+                                            "definition": "mAbs tagged to a radioactive substance. mAbs target and bind to specific proteins in blood clots. Radiation emitted by mAbs is detected, enabling the location of blood clots to be identified."
+                                        },
+                                        {
+                                            "term": "Uses of monoclonal antibodies",
+                                            "definition": "Detection of pathogens, location of cancer cells and blood clots, treatment of cancer, used in pregnancy test kits."
+                                        },
+                                        {
+                                            "term": "Myeloma cells",
+                                            "definition": "Type of tumor cell"
+                                        },
+                                        {
+                                            "term": "What do pregnancy kits test for?",
+                                            "definition": "hCG in urine"
+                                        },
+                                        {
+                                            "term": "What does a pregnancy test consist of?",
+                                            "definition": "A stick containing monoclonal antibodies (mAbs) specific to hCG: mAbs attached to a blue bead (free to move), mAbs fixed to the test stick."
+                                        },
+                                        {
+                                            "term": "What happens to the test stick if a woman is pregnant?",
+                                            "definition": "hCG in urine binds to mAbs attached to a blue bead. Fixed mAbs bind to hCG. mAbs with hCG diffuse up the dipstick. Blue line forms. mAbs fixed to the stick bind to hCG. Blue line forms."
+                                        },
+                                        {
+                                            "term": "What happens to the test stick if the pathogen is not present?",
+                                            "definition": "No hCG in urine so a blue line is not formed."
+                                        },
+                                        {
+                                            "term": "Advantage of using monoclonal antibodies to test for pathogens",
+                                            "definition": "Specific to one particular antigen, very accurate, quick results"
+                                        },
+                                        {
+                                            "term": "How do aphids cause damage to plants?",
+                                            "definition": "They use their sharp mouthparts to extract sap from the plant phloem, weakening the plant. They are also vectors who can transfer pathogens from diseased plants to healthy plants."
+                                        },
+                                        {
+                                            "term": "How can we reduce the number of aphids?",
+                                            "definition": "Chemical pesticides, biological pest control - using ladybirds"
+                                        },
+                                        {
+                                            "term": "Why do plants need a good supply of nitrate ions?",
+                                            "definition": "Nitrate ions are required to convert sugars into proteins which are required for the plant to grow. As a result, the growth of the plant will be stunted if there is not an adequate supply of nitrates."
+                                        },
+                                        {
+                                            "term": "Why do plants need a good supply of magnesium ions?",
+                                            "definition": "Magnesium ions are required to synthesize chlorophyll, which absorbs light energy during photosynthesis. As a result, the leaves cannot photosynthesize properly and they turn yellow (chlorosis)."
+                                        },
+                                        {
+                                            "term": "Symptoms of disease in plants",
+                                            "definition": "Stunted growth (lack of nitrate ions), spotted leaves (e.g. rose black spot fungus), decay/rotting, growths, malformation of stems/leaves, discoloration, presence of pests"
+                                        },
+                                        {
+                                            "term": "Ways in which plant disease can be identified",
+                                            "definition": "Reference to a gardening website or manual, laboratory testing, monoclonal antibody test kits"
+                                        },
+                                        {
+                                            "term": "Examples of physical defense responses used by plants",
+                                            "definition": "Cellulose cell walls, tough waxy cuticle on leaves, outside layer on stems/bark on trees, leaf fall"
+                                        },
+                                        {
+                                            "term": "Examples of chemical defense responses used by plants",
+                                            "definition": "Antibacterial chemicals, poisons"
+                                        },
+                                        {
+                                            "term": "Examples of mechanical defense responses used by plants",
+                                            "definition": "Thorns and hairs to deter animals, leaves that droop/curl on contact, mimicry to trick animals"
+                                        }
+                                    ]                                                                   
+                                },
+                                {
+                                    "title": "Bioenergetics(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Photosynthesis",
+                                            "definition": "The process by which plants synthesise glucose using light energy from the Sun. Light energy is converted into chemical energy."
+                                        },
+                                        {
+                                            "term": "Where does photosynthesis take place?",
+                                            "definition": "Within chloroplasts in leaf palisade cells. They contain chlorophyll, a pigment which absorbs light energy."
+                                        },
+                                        {
+                                            "term": "How does the amount of chlorophyll affect the rate of photosynthesis?",
+                                            "definition": "Decreasing the amount of chlorophyll (e.g. due to a lack of magnesium) decreases the rate of photosynthesis as chlorophyll is required to absorb light energy."
+                                        },
+                                        {
+                                            "term": "What is a limiting factor?",
+                                            "definition": "An environmental factor which can restrict the rate of photosynthesis e.g. light intensity."
+                                        },
+                                        {
+                                            "term": "Explain how you can calculate the rate of photosynthesis by measuring oxygen production",
+                                            "definition": "Set up bubble potometer apparatus (pondweed in a sealed tube of water, attached to a capillary tube and a gas syringe). Oxygen gas produced causes the bubble in the capillary tube to move. The distance moved by the bubble is used to calculate the volume of oxygen produced."
+                                        },
+                                        {
+                                            "term": "How can farmers use their knowledge of limiting factors to increase their profits? (higher)",
+                                            "definition": "They can control temperature, light intensity, and CO2 concentration to achieve the fastest possible rate of photosynthesis, leading to a greater yield."
+                                        },
+                                        {
+                                            "term": "State the law which describes the relationship between the distance of a light source from a plant and light intensity (higher)",
+                                            "definition": "Inverse square law - light intensity ∝ 1 / distance²"
+                                        },
+                                        {
+                                            "term": "State 5 uses of the glucose produced during photosynthesis",
+                                            "definition": "Respiration, Starch for storage, Cellulose for strength, Amino acid and protein synthesis (combined with nitrates), Lipids for energy storage in seeds"
+                                        },
+                                        {
+                                            "term": "State the equations for photosynthesis (word and symbol)",
+                                            "definition": "Word: carbon dioxide + water → glucose + oxygen\nSymbol: 6CO2 + 6H2O → C6H12O6 + 6O2"
+                                        },
+                                        {
+                                            "term": "Is photosynthesis an endothermic or exothermic reaction, and why?",
+                                            "definition": "Endothermic - energy is transferred from the environment to chloroplasts by light."
+                                        },
+                                        {
+                                            "term": "How can you show that a plant gives off oxygen during photosynthesis?",
+                                            "definition": "Using a water plant (e.g. Elodea), collect gas bubbles produced during photosynthesis. The gas will relight a glowing splint as it contains oxygen."
+                                        },
+                                        {
+                                            "term": "Give examples of leaf adaptations which maximise the rate of photosynthesis",
+                                            "definition": "Broad leaves - maximise surface area. Thin leaves - short diffusion distance. Chlorophyll present - trap light energy. Veins - transport water to leaves via xylem, remove photosynthesis products via phloem. Air spaces - allow CO2 to enter and O2 to leave. Guard cells - control opening of stomata for gaseous exchange and prevent water loss."
+                                        },
+                                        {
+                                            "term": "What are the four main factors that affect the rate of photosynthesis?",
+                                            "definition": "Temperature, Light intensity, Carbon dioxide concentration, Amount of chlorophyll"
+                                        },
+                                        {
+                                            "term": "How does temperature affect the rate of photosynthesis?",
+                                            "definition": "Increasing the temperature increases the rate of photosynthesis as the kinetic energy of particles is increased. The rate decreases past a certain temperature as enzymes become denatured."
+                                        },
+                                        {
+                                            "term": "How does light intensity affect the rate of photosynthesis?",
+                                            "definition": "Increasing the light intensity increases the rate of photosynthesis until another factor becomes limiting."
+                                        },
+                                        {
+                                            "term": "How does carbon dioxide concentration affect the rate of photosynthesis?",
+                                            "definition": "Increasing the carbon dioxide concentration increases the rate of photosynthesis (until another factor becomes limiting) as CO2 is required to make glucose."
+                                        },
+                                        {
+                                            "term": "What is aerobic respiration?",
+                                            "definition": "An exothermic reaction in which glucose reacts with oxygen to release energy which can be used by cells."
+                                        },
+                                        {
+                                            "term": "What are the equations for aerobic respiration? (word and symbol)",
+                                            "definition": "Word: Glucose + oxygen → carbon dioxide + water (+energy)\nSymbol: C6H12O6 + 6O2 → 6CO2 + 6H2O (+energy)"
+                                        },
+                                        {
+                                            "term": "What is the equation for fermentation?",
+                                            "definition": "Glucose → ethanol + carbon dioxide (+energy)"
+                                        },
+                                        {
+                                            "term": "Why is the fermentation reaction important?",
+                                            "definition": "It is used in the production of bread and alcoholic drinks."
+                                        },
+                                        {
+                                            "term": "What are the differences between aerobic and anaerobic respiration?",
+                                            "definition": "Aerobic requires oxygen; anaerobic does not. Aerobic produces CO2 and water; anaerobic produces lactic acid or ethanol + CO2. Aerobic transfers a greater amount of energy."
+                                        },
+                                        {
+                                            "term": "How do muscles store glucose?",
+                                            "definition": "As glycogen"
+                                        },
+                                        {
+                                            "term": "What changes take place when muscular activity increases in the body?",
+                                            "definition": "Heart rate increases and arteries dilate - increases flow of oxygenated blood to muscles. Breathing rate increases and breathing is deeper - increases the rate of gaseous exchange. Stored glycogen is converted back into glucose."
+                                        },
+                                        {
+                                            "term": "How is lactic acid transported away from the muscles? (higher)",
+                                            "definition": "Blood flow through the muscles transports lactic acid to the liver, where it is oxidised back to glucose."
+                                        },
+                                        {
+                                            "term": "What is metabolism?",
+                                            "definition": "The sum of all the reactions that take place in a cell or an organism."
+                                        },
+                                        {
+                                            "term": "How do cells use the energy transferred by respiration?",
+                                            "definition": "To continuously carry out enzyme-controlled processes which lead to the synthesis of new molecules."
+                                        },
+                                        {
+                                            "term": "Give examples of metabolic reactions",
+                                            "definition": "Glucose into starch/glycogen/cellulose, Glycerol and fatty acids into lipids, Glucose and nitrate ions into amino acids, Photosynthesis, Respiration, Breakdown of excess proteins into urea"
+                                        },
+                                        {
+                                            "term": "Where does aerobic respiration take place?",
+                                            "definition": "In the mitochondria"
+                                        },
+                                        {
+                                            "term": "Why do organisms require the energy released by respiration?",
+                                            "definition": "Synthesis of larger molecules, Muscle contraction, Maintenance of body temperature, Active transport"
+                                        },
+                                        {
+                                            "term": "What is anaerobic respiration?",
+                                            "definition": "An exothermic reaction in which glucose is broken down to release energy in the absence of oxygen."
+                                        },
+                                        {
+                                            "term": "What is the equation for anaerobic respiration?",
+                                            "definition": "Glucose → lactic acid (+energy)"
+                                        },
+                                        {
+                                            "term": "Why is anaerobic respiration less efficient than aerobic respiration?",
+                                            "definition": "Glucose is not completely broken down, so less energy is transferred."
+                                        },
+                                        {
+                                            "term": "Why can anaerobic respiration lead to muscle fatigue?",
+                                            "definition": "Lactic acid (product of anaerobic respiration) builds up in muscles, preventing efficient contraction."
+                                        },
+                                        {
+                                            "term": "What is an oxygen debt?",
+                                            "definition": "The amount of oxygen needed to convert lactic acid back into glucose after anaerobic respiration."
+                                        },
+                                        {
+                                            "term": "What is fermentation?",
+                                            "definition": "A type of anaerobic respiration that occurs in yeast cells."
+                                        }
+                                    ]                        
+                                },                                {
+                                    "title": "Homeostasis and Response(paper 2)",
+                                    "cards": 
+                                    [
+                                        {
+                                            "term": "Homeostasis",
+                                            "definition": "The maintenance of a constant internal environment in order to maintain optimum conditions for enzyme and cellular function."
+                                        },
+                                        {
+                                            "term": "Examples of conditions maintained by homeostasis in the body",
+                                            "definition": "Blood glucose concentration, Body temperature, Water levels"
+                                        },
+                                        {
+                                            "term": "Two types of responses used in body control systems",
+                                            "definition": "Nervous and chemical"
+                                        },
+                                        {
+                                            "term": "Components of all control systems",
+                                            "definition": "Receptors, Coordination centres, Effectors"
+                                        },
+                                        {
+                                            "term": "Function of a receptor",
+                                            "definition": "Detect changes in the environment (stimuli)."
+                                        },
+                                        {
+                                            "term": "Function of a coordination centre",
+                                            "definition": "Obtain and process information from receptors."
+                                        },
+                                        {
+                                            "term": "Function of an effector",
+                                            "definition": "Bring about responses to stimuli."
+                                        },
+                                        {
+                                            "term": "Function of the nervous system",
+                                            "definition": "Allows the body to react to its surroundings and coordinate an appropriate response."
+                                        },
+                                        {
+                                            "term": "How a stimulus leads to a response being carried out by the body",
+                                            "definition": "Stimulus is converted into an electrical impulse by the receptors. The electrical impulse passes along sensory neurons to the central nervous system (CNS). The CNS coordinates an appropriate response and an electrical impulse is sent along motor neurons to the effector, which carries out the response."
+                                        },
+                                        {
+                                            "term": "Why investigation and treatment of the brain is difficult (biology only) (higher only)",
+                                            "definition": "The brain is a complex and delicate organ. It's easily damaged and destroyed. Certain membranes prevent drugs from reaching the brain. The exact function of each part of the brain is not known."
+                                        },
+                                        {
+                                            "term": "Methods used by scientists to determine brain function (biology only) (higher only)",
+                                            "definition": "Studying patients with brain damage, Electrical stimulation of the brain, MRI scans"
+                                        },
+                                        {
+                                            "term": "Stimuli receptors of the eye are sensitive to (biology only)",
+                                            "definition": "Light intensity and color"
+                                        },
+                                        {
+                                            "term": "Two main functions of structures found within the eye (biology only)",
+                                            "definition": "Focusing on near or distant objects - accommodation, Adaptation to dim light"
+                                        },
+                                        {
+                                            "term": "Structure and function of the retina (biology only)",
+                                            "definition": "The retina is a light-sensitive layer found at the back of the eye. Light stimulates the retinal cells, resulting in impulses being sent to the brain."
+                                        },
+                                        {
+                                            "term": "Structure and function of the optic nerve (biology only)",
+                                            "definition": "The optic nerve connects the eye and the brain. It carries impulses to the brain so that an image can be visualized."
+                                        },
+                                        {
+                                            "term": "Structure and function of the sclera (biology only)",
+                                            "definition": "The sclera is the tough outer layer of the eye which protects its internal structures."
+                                        },
+                                        {
+                                            "term": "Structure and function of the cornea (biology only)",
+                                            "definition": "The cornea is the curved transparent layer at the front of the eye. It lets light into the eye and allows light to be focused onto the retina."
+                                        },
+                                        {
+                                            "term": "Structure and function of the iris (biology only)",
+                                            "definition": "The iris is a muscle which controls the size of the pupil by contracting or relaxing. This allows the eye to adjust to bright and dim lighting."
+                                        },
+                                        {
+                                            "term": "Structure and function of the ciliary muscles and suspensory ligaments (biology only)",
+                                            "definition": "The ciliary muscles and suspensory ligaments hold the lens in place and control its shape."
+                                        },
+                                        {
+                                            "term": "Sequence of events describing how the nervous system works",
+                                            "definition": "Stimulus -> receptor -> coordinator -> effector -> response"
+                                        },
+                                        {
+                                            "term": "How the iris alters the size of the pupil in bright and dim light (biology only)",
+                                            "definition": "Bright light: circular muscles contract and radial muscles relax - makes pupil smaller to avoid retinal damage. Dim light: circular muscles relax and radial muscles contract - makes pupil larger so more light can enter the eye."
+                                        },
+                                        {
+                                            "term": "Accommodation (biology only)",
+                                            "definition": "Alteration of the lens’ shape in order to focus on near or distant objects."
+                                        },
+                                        {
+                                            "term": "How the eye focuses on a nearby object (biology only)",
+                                            "definition": "Ciliary muscles contract, Suspensory ligaments loosen, Lens becomes thicker and more curved - light rays are refracted strongly."
+                                        },
+                                        {
+                                            "term": "How the eye focuses on a far away object (biology only)",
+                                            "definition": "Ciliary muscles relax, Suspensory ligaments tighten, Lens becomes thinner - light rays are refracted weakly."
+                                        },
+                                        {
+                                            "term": "Myopia (biology only)",
+                                            "definition": "Myopia (short-sightedness) usually occurs when the lens of the eye is too curved. As a result, light is focused in front of the retina so images appear blurry."
+                                        },
+                                        {
+                                            "term": "How myopia can be treated (biology only)",
+                                            "definition": "Myopia can be treated using glasses with a concave lens, which spreads out light rays so they can be focused on the retina."
+                                        },
+                                        {
+                                            "term": "Hyperopia (biology only)",
+                                            "definition": "Hyperopia (long-sightedness) usually occurs when the lens of the eye is too flat. As a result, light is focused behind the retina so images appear out of focus."
+                                        },
+                                        {
+                                            "term": "How hyperopia can be treated (biology only)",
+                                            "definition": "Hyperopia can be treated using glasses with a convex lens, which brings the light rays together so they can be focused on the retina."
+                                        },
+                                        {
+                                            "term": "Two types of contact lenses (biology only)",
+                                            "definition": "Hard - rigid material, last a long time, must be kept sterile. Soft - flexible material, last for a shorter time, more comfortable."
+                                        },
+                                        {
+                                            "term": "Laser eye surgery (biology only)",
+                                            "definition": "The use of lasers to fix visual defects in adults. To treat myopia, lasers reduce the thickness of the cornea so light is refracted less strongly. To treat hyperopia, lasers alter the curvature of the cornea so that light is refracted correctly."
+                                        },
+                                        {
+                                            "term": "Reflex action",
+                                            "definition": "An automatic and rapid response which does not involve any conscious input from the brain."
+                                        },
+                                        {
+                                            "term": "How replacement lenses can be used to treat visual defects (biology only)",
+                                            "definition": "A replacement lens can either be implanted into the eye (along with the natural lens) or it may replace the natural lens altogether. Risks of lens replacement include retinal damage, cataracts, and infections."
+                                    
+                                    
+                                        },
+                                        {
+                                            "term": "Risks of lens replacement (biology only)",
+                                            "definition": "Risks of lens replacement include retinal damage, cataracts, and infections."
+                                        },
+                                        {
+                                            "term": "Where body temperature is controlled in the body (biology only)",
+                                            "definition": "Body temperature is controlled by the thermoregulatory center in the hypothalamus of the brain."
+                                        },
+                                        {
+                                            "term": "How temperature is monitored by the body (biology only)",
+                                            "definition": "Thermoregulatory center has receptors sensitive to blood temperature. Skin has receptors sensitive to skin temperature - sends impulses to thermoregulatory center."
+                                        },
+                                        {
+                                            "term": "Physiological changes when body temperature is too high (biology only)",
+                                            "definition": "Vasodilation - blood vessels near the surface of the skin dilate - more heat is radiated away. Sweating - evaporation of water takes away heat energy from the surface of the skin."
+                                        },
+                                        {
+                                            "term": "Physiological changes when body temperature is too low (biology only)",
+                                            "definition": "Vasoconstriction - blood vessels near the surface of the skin constrict - less heat radiated away. Shivering - respiration allows muscles to contract. It is an exothermic process, so heat energy is released. Sweating stops."
+                                        },
+                                        {
+                                            "term": "Importance of reflex actions",
+                                            "definition": "Reflex actions aid survival by preventing harm to the body."
+                                        },
+                                        {
+                                            "term": "How a reflex action occurs via a reflex arc",
+                                            "definition": "The stimulus is detected by a receptor. An electrical impulse passes along a sensory neurone to the spinal cord (part of the CNS). At a synapse between a sensory neurone and a relay neurone, a chemical diffuses across the gap and stimulates a new impulse which passes along the relay neurone. The same process occurs at a synapse between a relay neurone and a motor neurone. At the effector, an appropriate response is carried out."
+                                        },
+                                        {
+                                            "term": "Difference between a reflex pathway and a conscious pathway",
+                                            "definition": "Within a reflex pathway, the coordination center is a relay neurone found in the spinal cord/unconscious parts of the brain. In a conscious pathway, the coordination center is in the conscious part of the brain."
+                                        },
+                                        {
+                                            "term": "Function of the cerebral cortex (biology only)",
+                                            "definition": "Controls consciousness, intelligence, memory, and language."
+                                        },
+                                        {
+                                            "term": "Function of the cerebellum (biology only)",
+                                            "definition": "Controls muscular coordination."
+                                        },
+                                        {
+                                            "term": "Function of the medulla (biology only)",
+                                            "definition": "Controls unconscious activities eg. breathing, heart rate."
+                                        },
+                                        {
+                                            "term": "Name of the body’s coordination system involving hormones",
+                                            "definition": "The endocrine system"
+                                        },
+                                        {
+                                            "term": "Hormone",
+                                            "definition": "A chemical messenger secreted by a gland. It travels in the blood to a target organ, where it causes a response."
+                                        },
+                                        {
+                                            "term": "Type of organ secretes hormones",
+                                            "definition": "Glands"
+                                        },
+                                        {
+                                            "term": "Gland that controls many other glands in the body",
+                                            "definition": "The pituitary gland"
+                                        },
+                                        {
+                                            "term": "Role of LH in the menstrual cycle (higher only)",
+                                            "definition": "LH is produced in the pituitary gland as a result of estrogen. Its release triggers ovulation."
+                                        },
+                                        {
+                                            "term": "Role of progesterone in the menstrual cycle (higher only)",
+                                            "definition": "Progesterone is secreted from the follicle of the ovary. It sustains the uterus lining and inhibits FSH and LH."
+                                        },
+                                        {
+                                            "term": "Contraception",
+                                            "definition": "Refers to any method of preventing pregnancy."
+                                        },
+                                        {
+                                            "term": "Two types of oral contraceptives",
+                                            "definition": "Combined contraceptive pill (contains estrogen and progesterone), Mini pill (contains only progesterone)."
+                                        },
+                                        {
+                                            "term": "How contraceptive pill prevents pregnancy",
+                                            "definition": "Inhibits FSH - eggs do not mature, Prevents the development of the uterus lining - eggs cannot implant, Increases the thickness of cervical mucus - immobilizes sperm cells."
+                                        },
+                                        {
+                                            "term": "Contraceptive patch",
+                                            "definition": "Contains both estrogen and progesterone. It is a patch that is placed onto the skin for 3 days at a time."
+                                        },
+                                        {
+                                            "term": "Contraceptive implant",
+                                            "definition": "A small rod inserted under the skin which continuously releases the hormone progesterone - lasts for 3 years."
+                                        },
+                                        {
+                                            "term": "Contraceptive injection",
+                                            "definition": "An injection containing the hormone progesterone - lasts for approximately 3 months."
+                                        },
+                                        {
+                                            "term": "IUS",
+                                            "definition": "The IUS (intrauterine system) is a small plastic device that is inserted into the uterus. It releases progesterone which thickens cervical mucus and prevents the build-up of the uterine lining."
+                                        },
+                                        {
+                                            "term": "IUD",
+                                            "definition": "The IUD (intrauterine device) is a small copper-containing device inserted into the uterus, which prevents the implantation of embryos."
+                                        },
+                                        {
+                                            "term": "Spermicide",
+                                            "definition": "A chemical that kills or immobilizes sperm cells - however, they are not very effective, and work better when combined with barrier methods."
+                                        },
+                                        {
+                                            "term": "Barrier method of contraception",
+                                            "definition": "Involves a physical separation between the sperm and the egg. They include: Condoms - thin sheath worn on the penis or inside the vagina - protects against STIs but may tear/break. Diaphragms - a thin cap placed over the cervix - prevent entry of sperm."
+                                        },
+                                        {
+                                            "term": "Surgical methods of contraception",
+                                            "definition": "Sterilization - in males, the sperm ducts are tied (vasectomy) and in females, the oviducts are tied."
+                                        },
+                                        {
+                                            "term": "Abstinence",
+                                            "definition": "The practice of not having sex, which also avoids pregnancy. Some people abstain from sex around the time of ovulation - this is known as the rhythm method, but it is quite unreliable."
+                                        },
+                                        {
+                                            "term": "How fertility drugs increase the chance of pregnancy (higher only)",
+                                            "definition": "Many fertility drugs contain FSH - which stimulates estrogen production and the maturation of eggs in the ovary. They also contain LH which triggers ovulation."
+                                        },
+                                        {
+                                            "term": "IVF (higher only)",
+                                            "definition": "IVF (in vitro fertilization) is a type of fertility treatment: Mother is given FSH and LH - stimulates maturation of eggs and ovulation. Eggs are fertilized using sperm in a laboratory - develop into embryos. 1 or 2 embryos are inserted into the mother’s womb."
+                                        },
+                                        {
+                                            "term": "Tropism (biology only)",
+                                            "definition": "A tropism is the response of a plant to a specific stimulus."
+                                        },
+                                        {
+                                            "term": "Phototropism (biology only)",
+                                            "definition": "Phototropism is the response of a plant's shoot or root to light."
+                                        },
+                                        {
+                                            "term": "Uses of ethene",
+                                            "definition": "Control of food ripening in the food industry - allows fruit to be ripened just before they are sold."
+                                        },
+                                        {
+                                            "term": "Uses of gibberellins",
+                                            "definition": "Termination of seed dormancy, Promotion of flowering, Increase of fruit size"
+                                        },
+                                        {
+                                            "term": "Gravitropism (biology only)",
+                                            "definition": "Gravitropism is the response of a plant's shoot or root to gravity."
+                                        },
+                                        {
+                                            "term": "Auxin (biology only)",
+                                            "definition": "Auxin is a hormone which controls the growth of a plant’s shoots and roots. When auxin is unevenly distributed in a growing plant, the rate of growth will also be unequal."
+                                        },
+                                        {
+                                            "term": "How plant shoots show positive phototropism (biology only)",
+                                            "definition": "One side of the shoot is in the light, causing auxin to move to the shaded side. At the shaded side, the cells are stimulated to grow - the shoot bends towards the light. As a result, photosynthesis can occur at a faster rate."
+                                        },
+                                        {
+                                            "term": "How plant shoots show negative gravitropism (biology only)",
+                                            "definition": "In a horizontal shoot, auxin accumulates in the lower side due to gravity. Cells on the lower side of the shoot grow more, causing the shoot to bend away from the direction of gravity. As a result, more light is usually available for photosynthesis."
+                                        },
+                                        {
+                                            "term": "How plant roots show positive gravitropism (biology only)",
+                                            "definition": "In a horizontal root, auxin accumulates in the lower side, causing cells to grow less. The root bends in the direction of gravity. As a result, more water and nutrients are available to the plant roots."
+                                        },
+                                        {
+                                            "term": "Gibberellins",
+                                            "definition": "Gibberellins are a type of plant hormone involved in seed germination."
+                                        },
+                                        {
+                                            "term": "Ethene",
+                                            "definition": "Ethene is a type of plant hormone involved in cell division and ripening."
+                                        },
+                                        {
+                                            "term": "Uses of auxins",
+                                            "definition": "Weedkillers - auxin causes cells to grow at a rapid rate, causing plant death. Rooting powder - auxin causes new plant to grow very quickly. Tissue culture - auxin promotes growth of roots and shoots."
                                         }
                                     ]
+                                },
+                                {
+                                    "title": "Inheritance, Variation and Evolution(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Sexual reproduction",
+                                            "definition": "Type of reproduction involving the production of gametes by meiosis. A gamete from each parent fuses to form a zygote. Genetic information from each gamete is mixed so the resulting zygote is unique."
+                                        },
+                                        {
+                                            "term": "Gametes",
+                                            "definition": "Sex cells (Sperm cells and egg cells in animals, pollen and egg cells in flowering plants). Haploid (half the number of chromosomes)."
+                                        },
+                                        {
+                                            "term": "Asexual reproduction",
+                                            "definition": "Type of reproduction involving mitosis only. Produces genetically identical offspring known as daughter cells."
+                                        },
+                                        {
+                                            "term": "Advantages of asexual reproduction",
+                                            "definition": "1. Only one parent is required.\n2. Lots of offspring can be produced in a short period of time, enabling the rapid colonisation of an area and reducing competition from other species.\n3. Requires less energy and time as do not need a mate."
+                                        },
+                                        {
+                                            "term": "Disadvantage of asexual reproduction",
+                                            "definition": "No genetic variation (except from spontaneous mutations) reducing the probability of a species being able to adapt to environmental change."
+                                        },
+                                        {
+                                            "term": "Circumstances in which malarial parasites reproduce sexually and asexually",
+                                            "definition": "Sexual reproduction in the mosquito. Asexual reproduction in the human host."
+                                        },
+                                        {
+                                            "term": "DNA",
+                                            "definition": "A double-stranded polymer of nucleotides, wound to form a double helix. The genetic material of the cell found in its nucleus."
+                                        },
+                                        {
+                                            "term": "Genome",
+                                            "definition": "The entire genetic material of an organism."
+                                        },
+                                        {
+                                            "term": "Importance of understanding the human genome",
+                                            "definition": "1. The whole human genome has been studied and is important for the development of medicine in the future.\n2. Searching for genes linked to different types of disease.\n3. Understanding and treating inherited disorders.\n4. Tracing human migration patterns from the past."
+                                        },
+                                        {
+                                            "term": "Chromosome",
+                                            "definition": "A long, coiled molecule of DNA that carries genetic information in the form of genes."
+                                        },
+                                        {
+                                            "term": "Meiosis",
+                                            "definition": "Form of cell division involved in the formation of gametes (non-identical haploid cells) in reproductive organs. Chromosome number is halved. Involves two divisions."
+                                        },
+                                        {
+                                            "term": "Number of chromosomes in human body cells",
+                                            "definition": "46 chromosomes (23 pairs)"
+                                        },
+                                        {
+                                            "term": "Number of chromosomes in human gametes",
+                                            "definition": "23 chromosomes"
+                                        },
+                                        {
+                                            "term": "Gene",
+                                            "definition": "A small section of DNA that codes for a specific sequence of amino acids which undergo polymerisation to form a protein."
+                                        },
+                                        {
+                                            "term": "Monomers of DNA",
+                                            "definition": "Nucleotides"
+                                        },
+                                        {
+                                            "term": "Composition of DNA nucleotides",
+                                            "definition": "Common sugar, Phosphate group, One of four bases: A, T, C, or G"
+                                        },
+                                        {
+                                            "term": "Full names of the four bases found in nucleotides",
+                                            "definition": "Adenine, Thymine, Cytosine, Guanine"
+                                        },
+                                        {
+                                            "term": "Interaction of nucleotides to form DNA molecule",
+                                            "definition": "Sugar and phosphate molecules join to form a sugar-phosphate backbone in each DNA strand. Base connected to each sugar. Complementary base pairs (A pairs with T, C pairs with G) joined by weak hydrogen bonds."
+                                        },
+                                        {
+                                            "term": "Process of a gene coding for a protein",
+                                            "definition": "A sequence of three bases in a gene forms a triplet. Each triplet codes for an amino acid. The order of amino acids determines the structure (i.e. how it will fold) and function of protein formed."
+                                        },
+                                        {
+                                            "term": "Importance of the folding of amino acids in proteins such as enzymes",
+                                            "definition": "The folding of amino acids determines the shape of the active site which must be highly specific to the shape of its substrate."
+                                        },
+                                        {
+                                            "term": "Protein synthesis",
+                                            "definition": "The formation of a protein from a gene."
+                                        },
+                                        {
+                                            "term": "Prior process to meiosis",
+                                            "definition": "Interphase - copies of genetic information are made during this process."
+                                        },
+                                        {
+                                            "term": "Two stages of protein synthesis",
+                                            "definition": "1. Transcription\n2. Translation"
+                                        },
+                                        {
+                                            "term": "Transcription",
+                                            "definition": "The formation of mRNA from a DNA template."
+                                        },
+                                        {
+                                            "term": "Outline of transcription",
+                                            "definition": "1. DNA double helix unwinds.\n2. RNA polymerase binds to a specific base sequence of non-coding DNA in front of a gene and moves along the DNA strand.\n3. RNA polymerase joins free RNA nucleotides to complementary bases on the coding DNA strand.\n4. mRNA formation complete. mRNA detaches and leaves the nucleus."
+                                        },
+                                        {
+                                            "term": "Translation",
+                                            "definition": "A ribosome joins amino acids in a specific order dictated by mRNA to form a protein."
+                                        },
+                                        {
+                                            "term": "Outline of translation",
+                                            "definition": "1. mRNA attaches to a ribosome.\n2. Ribosome reads the mRNA bases in triplets. Each triplet codes for one amino acid which is brought to the ribosome by a tRNA molecule (carrier molecule).\n3. A polypeptide chain is formed from the sequence of amino acids which join together."
+                                        },
+                                        {
+                                            "term": "Mutation",
+                                            "definition": "A random change in the base sequence of DNA which results mostly in no change to the protein coded for, or genetic variants of the protein (slight alteration but appearance and function remain). Mutations occur continuously."
+                                        },
+                                        {
+                                            "term": "Effect of a gene mutation in coding DNA",
+                                            "definition": "If a mutation changes the amino acid sequence, protein structure and function may change (an enzyme may no longer fit its substrate binding site or a structural protein may lose its strength). If a mutation does not change the amino acid sequence, there is no effect on protein structure or function."
+                                        },
+                                        {
+                                            "term": "Non-coding DNA",
+                                            "definition": "DNA which does not code for a protein but instead controls gene expression."
+                                        },
+                                        {
+                                            "term": "Effect of a gene mutation in non-coding DNA",
+                                            "definition": "Gene expression may be altered, affecting protein production and the resulting phenotype."
+                                        },
+                                        {
+                                            "term": "Alleles",
+                                            "definition": "Different versions of the same gene."
+                                        },
+                                        {
+                                            "term": "First stage of meiosis",
+                                            "definition": "1. Chromosome pairs line up along the cell equator.\n2. The pair of chromosomes are pulled apart so one chromosome is in each cell."
+                                        },
+                                        {
+                                            "term": "Second stage of meiosis",
+                                            "definition": "1. Chromosomes line up again in each cell.\n2. Arms of the chromosomes are pulled apart."
+                                        },
+                                        {
+                                            "term": "Importance of the random alignment of chromosomes during meiosis",
+                                            "definition": "Genetic variation increases as the chromosomes from each parent are randomly assorted into gametes."
+                                        },
+                                        {
+                                            "term": "Structure of DNA in a chromosome",
+                                            "definition": "Long double helix strands are wound around proteins called histones. The histones and DNA wind around each other to form chromatin."
+                                        },
+                                        {
+                                            "term": "Chromatid",
+                                            "definition": "Two identical strands formed by the replication of a chromosome during interphase."
+                                        },
+                                        {
+                                            "term": "Formation of a homologous pair of chromosomes",
+                                            "definition": "One chromosome is from the mother and one from the father, and they have the same genes at the same loci but can have different alleles of those genes."
+                                        },
+                                        {
+                                            "term": "Importance of homologous chromosomes",
+                                            "definition": "They carry the same genes but potentially different alleles so can cause variation in the offspring."
+                                        },
+                                        {
+                                            "term": "Cell division",
+                                            "definition": "The process by which a parent cell divides into two or more daughter cells."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Ecology(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Levels of organisation in an ecosystem",
+                                            "definition": "Individual, population, community, ecosystem."
+                                        },
+                                        {
+                                            "term": "Ecosystem",
+                                            "definition": "The interaction between the living components and non-living components."
+                                        },
+                                        {
+                                            "term": "Reason light intensity affects an ecosystem",
+                                            "definition": "Different species of plants may have different optimum light intensities for growth."
+                                        },
+                                        {
+                                            "term": "Reason temperature affects an ecosystem",
+                                            "definition": "Different species of plants and animals may have different optimum temperatures for growth and survival."
+                                        },
+                                        {
+                                            "term": "Effect of soil pH on an ecosystem",
+                                            "definition": "Certain plants may grow better in either alkaline or acidic soil. Soil pH may affect the appearance of the plant, e.g., color of hydrangea."
+                                        },
+                                        {
+                                            "term": "Effect of moisture level on an ecosystem",
+                                            "definition": "Many plants cannot survive in waterlogged soil as their roots cannot respire. Certain plants are adapted to high moisture levels."
+                                        },
+                                        {
+                                            "term": "Effect of wind intensity on an ecosystem",
+                                            "definition": "Plant seeds are more likely to germinate in locations with lower wind intensity, which may also attract animals that depend on the plant to live nearby."
+                                        },
+                                        {
+                                            "term": "Effect of soil mineral content on an ecosystem",
+                                            "definition": "Most plants require a high level of soil minerals to grow well."
+                                        },
+                                        {
+                                            "term": "Example of plants adapted to low soil mineral content",
+                                            "definition": "Carnivorous plants catch insects to compensate for the low level of soil mineral content."
+                                        },
+                                        {
+                                            "term": "Effect of carbon dioxide concentration on an ecosystem",
+                                            "definition": "Higher carbon dioxide concentration leads to more plant growth."
+                                        },
+                                        {
+                                            "term": "Effect of oxygen concentration on an ecosystem",
+                                            "definition": "Aquatic animals cannot survive in areas with low oxygen concentration."
+                                        },
+                                        {
+                                            "term": "Biotic factors affecting an ecosystem",
+                                            "definition": "Food, New predators, New pathogens, Competition."
+                                        },
+                                        {
+                                            "term": "Factors that plants may compete for",
+                                            "definition": "Light, Space, Water, Mineral ions from soil."
+                                        },
+                                        {
+                                            "term": "Adaptations",
+                                            "definition": "Features that enable organisms to survive in their living environment."
+                                        },
+                                        {
+                                            "term": "Organisms living in extreme environments",
+                                            "definition": "Extremophiles."
+                                        },
+                                        {
+                                            "term": "Examples of extreme living environments",
+                                            "definition": "High temperature, High pressure, High salt concentration."
+                                        },
+                                        {
+                                            "term": "Example of where extremophile bacteria can be found",
+                                            "definition": "In deep sea vents."
+                                        },
+                                        {
+                                            "term": "Factors that animals might compete for",
+                                            "definition": "Food, Mates, Territory."
+                                        },
+                                        {
+                                            "term": "Intraspecific competition",
+                                            "definition": "Competition within a species."
+                                        },
+                                        {
+                                            "term": "Interspecific competition",
+                                            "definition": "Competition between different species."
+                                        },
+                                        {
+                                            "term": "Interdependence",
+                                            "definition": "Different species in an ecosystem depend on each other for various resources; if one species is removed, the whole community may be affected."
+                                        },
+                                        {
+                                            "term": "Stable community",
+                                            "definition": "A community in which all the biotic factors (the different species) and all abiotic factors are balanced so that population sizes remain relatively constant."
+                                        },
+                                        {
+                                            "term": "Abiotic factors",
+                                            "definition": "Non-living factors."
+                                        },
+                                        {
+                                            "term": "Abiotic factors that may affect an ecosystem",
+                                            "definition": "Light intensity, Temperature, Moisture, Soil pH and mineral content, Wind intensity and direction, Carbon dioxide level, Oxygen level."
+                                        },
+                                        {
+                                            "term": "Population",
+                                            "definition": "A species that occupies the same habitat."
+                                        },
+                                        {
+                                            "term": "Habitat",
+                                            "definition": "The place in which an organism lives."
+                                        },
+                                        {
+                                            "term": "Types of organisms that are primary producers",
+                                            "definition": "Photosynthetic organisms like green plants and algae that trap energy from the sun."
+                                        },
+                                        {
+                                            "term": "Primary consumer",
+                                            "definition": "An organism that feeds on producers."
+                                        },
+                                        {
+                                            "term": "Secondary consumer",
+                                            "definition": "An organism that feeds on primary consumers."
+                                        },
+                                        {
+                                            "term": "Tertiary consumer",
+                                            "definition": "An organism that feeds on secondary consumers."
+                                        },
+                                        {
+                                            "term": "Predator",
+                                            "definition": "A consumer that kills and eats other animals."
+                                        },
+                                        {
+                                            "term": "Prey",
+                                            "definition": "An animal that is killed and eaten by another animal."
+                                        },
+                                        {
+                                            "term": "Pattern of predators and prey in a stable community",
+                                            "definition": "The numbers of predators and prey rise and fall in cycles."
+                                        },
+                                        {
+                                            "term": "Reason producers are the first trophic level",
+                                            "definition": "Producers provide all biomass for the food chain (production of glucose via photosynthesis). The rest of the food chain involves the transfer of this biomass."
+                                        },
+                                        {
+                                            "term": "Apparatus used to measure the abundance and distribution of organisms in an area",
+                                            "definition": "Quadrat."
+                                        },
+                                        {
+                                            "term": "Apparatus used to study the distribution of organisms across a gradient",
+                                            "definition": "Belt transect."
+                                        },
+                                        {
+                                            "term": "Community",
+                                            "definition": "Populations of different species interacting."
+                                        },
+                                        {
+                                            "term": "Mean (in terms of organism abundance)",
+                                            "definition": "The average number of organisms."
+                                        },
+                                        {
+                                            "term": "Calculation of arithmetic mean",
+                                            "definition": "Sum of each number of each organism divided by the total number of each type of organism."
+                                        },
+                                        {
+                                            "term": "Mode (in terms of organism abundance)",
+                                            "definition": "The most populous organism."
+                                        },
+                                        {
+                                            "term": "Median (in terms of organism abundance)",
+                                            "definition": "The organism that represents the middle value when the numbers of each organism are arranged from lowest to highest."
+                                        },
+                                        {
+                                            "term": "How materials cycle through living and non-living components of an ecosystem",
+                                            "definition": "Organisms take in elements from their surroundings e.g. soil, air. Elements are converted to complex molecules which become biomass. Elements are transferred along food chains. Elements are returned to the environment during excretion and decomposition of dead organisms."
+                                        },
+                                        {
+                                            "term": "Molecules cycled through ecosystems",
+                                            "definition": "Oxygen, carbon dioxide, and water."
+                                        },
+                                        {
+                                            "term": "Carbon cycle",
+                                            "definition": "Plants fix carbon dioxide into organic molecules during photosynthesis. The organic carbon-containing molecules are passed onto organisms that eat the plants. Carbon dioxide is released back into the atmosphere by respiration from animals and plants. Burning fossil fuels also releases carbon dioxide into the atmosphere."
+                                        },
+                                        {
+                                            "term": "Importance of the carbon cycle",
+                                            "definition": "Carbon-containing molecules such as glucose are important for living organisms to grow and provide energy for vital functions within cells."
+                                        },
+                                        {
+                                            "term": "Water cycle",
+                                            "definition": "Water from lakes and oceans evaporates. The evaporated water condenses into clouds and returns to earth as precipitation. The water from precipitation is useful for life on land. The water then returns to rivers and oceans through surface runoff."
+                                        },
+                                        {
+                                            "term": "Importance of the water cycle",
+                                            "definition": "Living organisms require water, and the water cycle provides organisms on land with a continuous supply of water."
+                                        },
+                                        {
+                                            "term": "Ecosystem",
+                                            "definition": "The interactions between the biotic and abiotic factors in an area."
+                                        },
+                                        {
+                                            "term": "Importance of microorganisms for cycling materials through an ecosystem",
+                                            "definition": "Microorganisms (bacteria and fungi) return carbon to the environment by releasing carbon dioxide through respiration while they decompose dead matter. The decomposition of dead matter in soil returns mineral ions to the environment for other organisms to use e.g. plants use mineral ions for growth."
+                                        },
+                                        {
+                                            "term": "Decomposition (biology only)",
+                                            "definition": "The breakdown of dead materials into simpler organic matter."
+                                        },
+                                        {
+                                            "term": "How decomposers break down dead matter (biology only)",
+                                            "definition": "Decomposers release enzymes which catalyze the breakdown of dead material into smaller molecules."
+                                        },
+                                        {
+                                            "term": "Types of decomposition (biology only)",
+                                            "definition": "Aerobic decomposition (with oxygen), Anaerobic decomposition (without oxygen)."
+                                        },
+                                        {
+                                            "term": "Factors affecting the rate of decomposition (biology only)",
+                                            "definition": "Oxygen availability, Temperature, Water content."
+                                        },
+                                        {
+                                            "term": "Importance of oxygen for decomposition (biology only)",
+                                            "definition": "Most decomposers require oxygen for aerobic respiration."
+                                        },
+                                        {
+                                            "term": "Effect of oxygen availability on the rate of decomposition (biology only)",
+                                            "definition": "As oxygen levels increase, the rate of decomposition increases. As oxygen levels decrease, the rate of decomposition decreases."
+                                        },
+                                        {
+                                            "term": "Why decomposition can occur in the absence of oxygen (biology only)",
+                                            "definition": "Some decomposers respire anaerobically. However, the rate of decomposition is slower as anaerobic respiration produces less energy."
+                                        },
+                                        {
+                                            "term": "Effect of soil water content on the rate of decomposition (biology only)",
+                                            "definition": "Decomposers require water to survive. In moist conditions, the rate of decomposition is high. In waterlogged soils, there is little oxygen for respiration, so the rate of decomposition decreases."
+                                        },
+                                        {
+                                            "term": "Why decomposition requires water (biology only)",
+                                            "definition": "Water is required for the secretion of enzymes and absorption of dissolved molecules."
+                                        },
+                                        {
+                                            "term": "Food chains",
+                                            "definition": "Food chains show the feeding relationships of different organisms and the flow of energy between the organisms."
+                                        },
+                                        {
+                                            "term": "Effect of temperature on the rate of decomposition (biology only)",
+                                            "definition": "Decomposers release enzymes: Rate is highest at 50°C (optimum temperature for enzymes). Lower temperatures result in slower enzyme activity, decreasing the rate. High temperatures cause enzymes to denature, stopping decomposition."
+                                        },
+                                        {
+                                            "term": "Calculation of rate of change for decay of biological material (biology only)",
+                                            "definition": "Rate of change = Change in value / Change in time, where value is a measurable variable associated with the decay of the material."
+                                        },
+                                        {
+                                            "term": "Compost (biology only)",
+                                            "definition": "The nutrient-rich product of the rapid decay of waste biological material (dead plants and animal waste) in optimum conditions set by gardeners and farmers."
+                                        },
+                                        {
+                                            "term": "Use of compost (biology only)",
+                                            "definition": "Used as natural fertilizer to promote growth of crops or garden plants."
+                                        },
+                                        {
+                                            "term": "Biogas generators (biology only)",
+                                            "definition": "Biogas generators provide methane gas for fuel through anaerobic decomposition that occurs in animal waste."
+                                        },
+                                        {
+                                            "term": "How environmental conditions affect communities (biology only)",
+                                            "definition": "Environmental conditions e.g. temperature, soil pH, light intensity affect the abundance and distribution of organisms within communities. For example, rising global temperatures have been linked to the extinction of frog species (their thin skin makes them more vulnerable to temperature changes)."
+                                        },
+                                        {
+                                            "term": "How different temperatures affect communities",
+                                            "definition": "If the temperature is too low, growth will be slower as organisms will use more energy to stay warm. If the temperature is too high, organisms can die, and water will become limited as evaporation increases."
+                                        },
+                                        {
+                                            "term": "Effect of changes in water levels on ecosystems",
+                                            "definition": "Animals may have to migrate to find water. Melting ice caps may destroy the habitats of some animals (either animals living in icy regions or by sea level rise)."
+                                        },
+                                        {
+                                            "term": "Effect of atmospheric gases on ecosystems",
+                                            "definition": "Some organisms cannot survive when certain gases are present. Polluted water can cause illness to animals that drink it."
+                                        },
+                                        {
+                                            "term": "Detrimental impacts of sulfur dioxide on the environment",
+                                            "definition": "Formed when fossil fuels containing impurities are burnt. Sulfur dioxide can dissolve in water to form acid rain which can erode buildings and pollute water sources."
+                                        },
+                                        {
+                                            "term": "Biomass",
+                                            "definition": "The total mass of living material."
+                                        },
+                                        {
+                                            "term": "Detrimental impacts of carbon monoxide on the environment",
+                                            "definition": "Carbon monoxide is formed from the incomplete combustion of fossil fuels. It binds irreversibly to hemoglobin which prevents it from carrying oxygen. Too much exposure can cause unconsciousness and death."
+                                        },
+                                        {
+                                            "term": "Greenhouse gases",
+                                            "definition": "Water vapor, Carbon dioxide, Nitrous oxide, Methane, CFCs."
+                                        },
+                                        {
+                                            "term": "Human activities contributing to greenhouse gases",
+                                            "definition": "Burning fossil fuels, Deforestation, Large-scale livestock farming."
+                                        },
+                                        {
+                                            "term": "How greenhouse gases lead to global warming",
+                                            "definition": "Greenhouse gases allow heat from the sun to enter the atmosphere. The gases act as a ‘blanket’ and trap the heat in the atmosphere."
+                                        },
+                                        {
+                                            "term": "Negative consequences of global warming",
+                                            "definition": "Sea level rise caused by melting icebergs, Disrupted farming and agriculture, Increased spread of diseases in warmer climates, Extinction of species."
+                                        },
+                                        {
+                                            "term": "Trophic levels",
+                                            "definition": "The stages in a food chain."
+                                        },
+                                        {
+                                    
+                                    
+                                            "term": "Arrows in a food chain",
+                                            "definition": "The direction of biomass transfer."
+                                        },
+                                        {
+                                            "term": "Simple food chain",
+                                            "definition": "producer → primary consumer → secondary consumer → tertiary consumer."
+                                        },
+                                        {
+                                            "term": "Producer",
+                                            "definition": "An organism that makes its own food."
+                                        },
+                                        {
+                                            "term": "Biodiversity",
+                                            "definition": "The variety of the different species on earth or within an ecosystem."
+                                        },
+                                        {
+                                            "term": "Importance of biodiversity",
+                                            "definition": "To maintain the stability of an ecosystem."
+                                        },
+                                        {
+                                            "term": "Reasons for destruction of peat bogs",
+                                            "definition": "To produce compost to increase food production."
+                                        },
+                                        {
+                                            "term": "Contribution of peat bogs to the greenhouse effect",
+                                            "definition": "Peat bogs are stores of carbon (carbon sinks), and burning them releases a large volume of carbon dioxide into the atmosphere."
+                                        },
+                                        {
+                                            "term": "Reasons for large-scale deforestation",
+                                            "definition": "To provide land for cattle or rice fields, To grow crops to produce biofuels."
+                                        },
+                                        {
+                                            "term": "Greenhouse effect",
+                                            "definition": "Greenhouse gases trap energy from the Sun as heat in the atmosphere, keeping the temperature on earth suitable for life."
+                                        },
+                                        {
+                                            "term": "Cause of global warming",
+                                            "definition": "The increase in levels of greenhouse gases e.g. carbon dioxide and methane, causing the temperature on earth to increase."
+                                        },
+                                        {
+                                            "term": "Harmful effects of deforestation",
+                                            "definition": "Destruction of many animals’ habitats, Releases large amounts of greenhouse gases."
+                                        },
+                                        {
+                                            "term": "Consequences of global warming",
+                                            "definition": "Rising sea levels, Melting polar ice caps, Changing weather patterns, Migration of animals to find suitable habitats, Tropical diseases becoming more common, Extinction of species."
+                                        },
+                                        {
+                                            "term": "Steps taken to maintain biodiversity",
+                                            "definition": "Breeding programs for endangered species, Protection and rebuilding habitats, Replanting field margins and hedgerows, Reduce deforestation, Reduce carbon dioxide emissions, Recycling rather than disposing in landfills."
+                                        },
+                                        {
+                                            "term": "Purpose of replanting hedgerows and field margins",
+                                            "definition": "There is higher biodiversity in the margins than the fields that they surround."
+                                        },
+                                        {
+                                            "term": "How biodiversity ensures the stability of an ecosystem",
+                                            "definition": "It reduces the dependence on particular species for resources e.g. food and shelter, so that even if one species is removed other species can still survive."
+                                        },
+                                        {
+                                            "term": "Reasons for increased human consumption of resources and waste production",
+                                            "definition": "Rapid rise in human population, Increase in standard of living."
+                                        },
+                                        {
+                                            "term": "Pollution",
+                                            "definition": "Air, Land, Water."
+                                        },
+                                        {
+                                            "term": "Examples of water pollutants",
+                                            "definition": "Sewage, Fertilizer, Chemicals."
+                                        },
+                                        {
+                                            "term": "Eutrophication",
+                                            "definition": "Fertilizer from farms pollutes the water, causing excessive algae growth, depleting the oxygen in the water, causing other plants and animals to die. Dead plants are decomposed by bacteria and the oxygen level decreases further."
+                                        },
+                                        {
+                                            "term": "Examples of air pollutants",
+                                            "definition": "Smoke, Acidic gases."
+                                        },
+                                        {
+                                            "term": "Examples of land pollutants",
+                                            "definition": "Landfill waste, Chemicals."
+                                        },
+                                        {
+                                            "term": "Human activities reducing land available for animals and plants",
+                                            "definition": "Building, Farming, Quarrying, Disposing of waste."
+                                        },
+                                        {
+                                            "term": "What do food chains show?",
+                                            "definition": "It describes the feeding relationships between organisms and the resultant stages of biomass transfer."
+                                        },
+                                        {
+                                            "term": "Trophic levels",
+                                            "definition": "The stages in a food chain"
+                                        },
+                                        {
+                                            "term": "Reason for using dry mass in biomass",
+                                            "definition": "Because the wet mass varies as the volume of water in the organism varies."
+                                        },
+                                        {
+                                            "term": "Calculation of biomass transfer efficiency",
+                                            "definition": "Efficiency = (energy transferred / total energy available) x 100."
+                                        },
+                                        {
+                                            "term": "Percentage of light energy for photosynthesis transferred by producers",
+                                            "definition": "1%"
+                                        },
+                                        {
+                                            "term": "Percentage of biomass transferred between trophic levels",
+                                            "definition": "Approximately 10%"
+                                        },
+                                        {
+                                            "term": "Reasons for biomass transfer inefficiency",
+                                            "definition": "Energy is lost through: Egestion (removal of faeces), Excretion (removal of waste products e.g. urine containing urea and water), Respiration (loss of carbon dioxide and water) in which large amounts of glucose are used, The production of inedible bones and shells."
+                                        },
+                                        {
+                                            "term": "Effect of biomass transfer efficiency on trophic levels",
+                                            "definition": "The less efficient the transfers, the fewer trophic levels and the fewer organisms in higher trophic levels."
+                                        },
+                                        {
+                                            "term": "Biomass pyramid",
+                                            "definition": "A pyramid that shows the total dry mass of organisms at each trophic level Trophic level 1 is at the bottom of the pyramid"
+                                        },
+                                        {
+                                            "term": "Pyramid of numbers",
+                                            "definition": "A pyramid of numbers shows the number of organisms at each trophic level"
+                                        },
+                                        {
+                                            "term": "Producer in a pyramid of biomass",
+                                            "definition": "D is the producer"
+                                        },
+                                        {
+                                            "term": "Explanation for a pyramid of numbers not being pyramid-shaped",
+                                            "definition": "Pyramids of numbers don't take size and mass of organisms into account."
+                                        },
+                                        {
+                                            "term": "Representation of trophic levels",
+                                            "definition": "Trophic levels are represented by numbers, starting from 1. After 1, trophic levels are numbered according to how far along the organism is in the food chain."
+                                        },
+                                        {
+                                            "term": "Calculation of biomass transfer efficiency",
+                                            "definition": "Efficiency = (energy transferred / total energy available) x 100. Total energy available = 800 kJ + 4000 kJ = 4800 kJ Energy transferred = 800 kJ 800/4800 x 100 = 16.67%"
+                                        },
+                                        {
+                                            "term": "Trophic level 1",
+                                            "definition": "Plants and algae which make their own food (through photosynthesis) - called producers."
+                                        },
+                                        {
+                                            "term": "Trophic level 2",
+                                            "definition": "Herbivores which eat producers - called primary consumers."
+                                        },
+                                        {
+                                            "term": "Trophic level 3",
+                                            "definition": "Carnivores that eat herbivores - called secondary consumers."
+                                        },
+                                        {
+                                            "term": "Trophic level 4",
+                                            "definition": "Carnivores that eat other carnivores - called tertiary consumers."
+                                        }
+                                    ]                            
                                 }
                             ]
                         },

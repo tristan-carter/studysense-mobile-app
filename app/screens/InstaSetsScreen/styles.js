@@ -192,4 +192,8 @@ export default StyleSheet.create({
         fontSize: 12,
         fontFamily: 'Lato',
     },
+    checkbox: {
+        alignSelf: "center",
+        color: colours.primary,
+    },
 })

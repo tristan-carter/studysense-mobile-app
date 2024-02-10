@@ -8,23 +8,24 @@ import styles from './styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from '../../config/colours.js';
 
-export default function ExamBoardPage(props) {
-  const examBoards = props.route.params.Item.examboards;
+import { CreateFileModal } from '../HomeScreen/Modals/CreateFileModal.js';
+
+export default function SubjectsScroll(props) {
+  const subjects = props.route.params.Item.subjects;
   const navigation = props.navigation;
-  const Level = props.route.params.Item;
-  const iconPath = require('../../assets/ReadyMadeSetsExamBoardIcon.png');
+  const iconPath = require('../../assets/CreateFirstSetIcon.png');
 
   return (
     <View style={{ backgroundColor: colours.backgroundColour, flex: 1, justifyContent: "center", paddingHorizontal: 13}}>
-      <Text style={[styles.subtitleText, {marginBottom: 11}]}>Choose your exam board</Text>
+      <Text style={[styles.subtitleText, {marginBottom: 11}]}>Choose a subject</Text>
       <FlatList
-        data={examBoards}
+        data={subjects}
         keyExtractor={(item) => item.title}
         renderItem={({ item }) => {
           return (
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('ReadyMadeSetsSubject', { Item: item, Level: Level });
+                navigation.navigate('TopicsSelection', {Item: item});
               }}
             >
               <View
