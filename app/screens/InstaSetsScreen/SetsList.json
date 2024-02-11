@@ -21,14 +21,6 @@
                             "topics": []
                         },
                         {
-                            "title": "History",
-                            "topics": []
-                        },
-                        {
-                            "title": "Religious Studies",
-                            "topics": []
-                        },
-                        {
                             "title": "French",
                             "topics": []
                         },
@@ -2190,7 +2182,1192 @@
                         },
                         {
                             "title": "Chemistry",
-                            "topics": []
+                            "topics": [
+                                {
+                                    "title": "Atomic Structure and the Periodic Table(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Atom",
+                                            "definition": "The smallest part of an element that can exist."
+                                        },
+                                        {
+                                            "term": "Element",
+                                            "definition": "A substance consisting of only one type of atom."
+                                        },
+                                        {
+                                            "term": "How are elements listed and approximately how many are there?",
+                                            "definition": "They are listed in the periodic table; there are approximately 100."
+                                        },
+                                        {
+                                            "term": "Groups in which elements can be classified based on their properties",
+                                            "definition": "Metals and non-metals."
+                                        },
+                                        {
+                                            "term": "New substances formed when elements combine through chemical reactions",
+                                            "definition": "Compounds."
+                                        },
+                                        {
+                                            "term": "Compound",
+                                            "definition": "Two or more elements combined chemically in fixed proportions which can be represented by formulae."
+                                        },
+                                        {
+                                            "term": "Do compounds have the same properties as their constituent elements?",
+                                            "definition": "No, they have different properties."
+                                        },
+                                        {
+                                            "term": "Mixture",
+                                            "definition": "A combination of two or more elements or compounds not chemically combined together; it does have the same chemical properties."
+                                        },
+                                        {
+                                            "term": "Methods through which mixtures can be separated",
+                                            "definition": "Filtration, crystallisation, simple distillation, fractional distillation, and chromatography; they do not involve chemical reactions."
+                                        },
+                                        {
+                                            "term": "Simple distillation",
+                                            "definition": "Used to separate liquid from a solution by boiling off the liquid, condensing it, and collecting it, allowing the pure liquid to be retained."
+                                        },
+                                        {
+                                            "term": "Crystallisation/Evaporation",
+                                            "definition": "Technique for separation of a solid dissolved in a solvent; involves heating the solution until all the solvent evaporates or allowing the solution to cool to induce crystallization."
+                                        },
+                                        {
+                                            "term": "Fractional distillation",
+                                            "definition": "Technique for separation of a mixture of liquids based on their different boiling points, utilizing a fractionating column."
+                                        },
+                                        {
+                                            "term": "Filtration",
+                                            "definition": "Used to separate an insoluble solid suspended in a liquid by passing the mixture through a filter paper, where the solid is retained while the filtrate passes through."
+                                        },
+                                        {
+                                            "term": "Chromatography",
+                                            "definition": "Used to separate a mixture of substances dissolved in a solvent based on differences in their affinity for the solvent; in paper chromatography, substances are separated as the solvent moves through the paper."
+                                        },
+                                        {
+                                            "term": "Separating funnel",
+                                            "definition": "Apparatus used for separating immiscible liquids by allowing them to form distinct layers based on their densities, which can then be run off separately."
+                                        },
+                                        {
+                                            "term": "Plum-pudding model",
+                                            "definition": "Model of the atom depicting a ball of positive charge with negative electrons embedded within it."
+                                        },
+                                        {
+                                            "term": "Bohr/nuclear model",
+                                            "definition": "Model suggesting that electrons orbit the nucleus at specific distances, derived from alpha scattering experiments."
+                                        },
+                                        {
+                                            "term": "Small positive particles discovered in the nucleus",
+                                            "definition": "Protons."
+                                        },
+                                        {
+                                            "term": "Evidence provided by James Chadwick's work",
+                                            "definition": "The existence of neutrons in the nucleus."
+                                        },
+                                        {
+                                            "term": "Structure of an atom",
+                                            "definition": "A small central nucleus (made up of protons and neutrons) surrounded by electrons."
+                                        },
+                                        {
+                                            "term": "Relative masses and charges of proton, neutron, and electron",
+                                            "definition": "Masses: 1, 1, very small; Charges: 1, 0, -1 (respectively)."
+                                        },
+                                        {
+                                            "term": "Why atoms are electrically neutral",
+                                            "definition": "They have the same number of electrons and protons."
+                                        },
+                                        {
+                                            "term": "Radius of an atom",
+                                            "definition": "Approximately 0.1 nanometers (nm)."
+                                        },
+                                        {
+                                            "term": "Radius of a nucleus compared to that of an atom",
+                                            "definition": "Nucleus: approximately 1 x 10^-15 meters, which is about 1/10000 of the size of an atom."
+                                        },
+                                        {
+                                            "term": "Name given to the number of protons in the nucleus",
+                                            "definition": "Atomic number."
+                                        },
+                                        {
+                                            "term": "Particle found in the nucleus of atoms of the same element",
+                                            "definition": "Protons."
+                                        },
+                                        {
+                                            "term": "Majority of mass of an atom located",
+                                            "definition": "In the nucleus."
+                                        },
+                                        {
+                                            "term": "Mass number",
+                                            "definition": "The total number of protons and neutrons in an atom."
+                                        },
+                                        {
+                                            "term": "Calculation of number of neutrons using mass number and atomic number",
+                                            "definition": "Subtract the atomic number from the mass number."
+                                        },
+                                        {
+                                            "term": "Isotope",
+                                            "definition": "Atoms of the same element (same proton number) that have a different number of neutrons; they have the same chemical properties due to the same electronic structure."
+                                        },
+                                        {
+                                            "term": "Relative atomic mass",
+                                            "definition": "The average mass value which considers the mass and abundance of isotopes of an element, on a scale where the mass of C-12 is 12."
+                                        },
+                                        {
+                                            "term": "Configurations of He, Be, F, Na, Ca (respectively)",
+                                            "definition": "2; 2,2; 2,7; 2,8,1; 2,8,8,2."
+                                        },
+                                        {
+                                            "term": "Ions",
+                                            "definition": "Charged particles formed when atoms lose (positive ions) or gain (negative ions) electrons."
+                                        },
+                                        {
+                                            "term": "Comparison of properties between Metals and Non-metals",
+                                            "definition": "Property: Metals - Non-metals; Boiling/melting point: High - Low; Conductivity: Heat and electricity - Don't conduct heat, electricity (with exception of graphite); Appearance: Shiny - Dull; Malleability: Yes - Brittle; Density: High - Low; Oxides: Basic - Acidic."
+                                        },
+                                        {
+                                            "term": "Formation when a metal reacts with a non-metal",
+                                            "definition": "An ionic compound (made of positive and negative ions)."
+                                        },
+                                        {
+                                            "term": "Formation when a non-metal reacts with a non-metal",
+                                            "definition": "A molecular compound containing covalently bonded atoms; atoms share electrons instead of transferring them."
+                                        },
+                                        {
+                                            "term": "Explanation of solute, solvent, solution, miscible, immiscible, soluble, insoluble",
+                                            "definition": "Solute: Substance dissolved in a solvent; Solvent: Substance in which the solute is dissolved; Solution: Homogeneous mixture of solute and solvent; Miscible: Substances that mix together (liquids); Immiscible: Substances that do not mix (liquids); Soluble: Able to dissolve in a solvent; Insoluble: Unable to dissolve in a solvent."
+                                        },
+                                        {
+                                            "term": "Columns of the periodic table",
+                                            "definition": "Groups."
+                                        },
+                                        {
+                                            "term": "Rows of the periodic table",
+                                            "definition": "Periods."
+                                        },
+                                        {
+                                            "term": "Similarity of elements in the same group",
+                                            "definition": "They may have similar chemical properties, as they have the same number of outer shell electrons."
+                                        },
+                                        {
+                                            "term": "Difference in energy levels between elements of the same period",
+                                            "definition": "They have the same number of energy levels."
+                                        },
+                                        {
+                                            "term": "Occupation of available energy levels by electrons in an atom",
+                                            "definition": "The lowest available energy level."
+                                        },
+                                        {
+                                            "term": "Common name for Group 0 elements",
+                                            "definition": "The noble gases."
+                                        },
+                                        {
+                                            "term": "Reason for the periodic table being periodic",
+                                            "definition": "Similar properties of elements occur at regular intervals."
+                                        },
+                                        {
+                                            "term": "Effect of elements in the same group having the same number of electrons in their outer shell",
+                                            "definition": "They have similar chemical properties."
+                                        },
+                                        {
+                                            "term": "Difference in shells between elements in the same period",
+                                            "definition": "They have the same number of shells."
+                                        },
+                                        {
+                                            "term": "Change in shell number down a group",
+                                            "definition": "The number of shells increases."
+                                        },
+                                        {
+                                            "term": "Reason for elements being placed in inappropriate groups in early periodic tables",
+                                            "definition": "Strict order of atomic weights was followed."
+                                        },
+                                        {
+                                            "term": "Knowledge that allowed explanation for inaccuracies in early periodic tables",
+                                            "definition": "Isotopes."
+                                        },
+                                        {
+                                            "term": "Action taken by Mendeleev to overcome problems with the periodic table",
+                                            "definition": "Leaving gaps and adjusting the order based on atomic weights."
+                                        },
+                                        {
+                                            "term": "Majority of elements",
+                                            "definition": "Metals."
+                                        },
+                                        {
+                                            "term": "Elements forming positive ions",
+                                            "definition": "Metals."
+                                        },
+                                        {
+                                            "term": "Elements not forming positive ions",
+                                            "definition": "Non-metals."
+                                        },
+                                        {
+                                            "term": "Common name for Group 1 elements",
+                                            "definition": "The alkali metals."
+                                        },
+                                        {
+                                            "term": "Characteristics of Alkali Metals",
+                                            "definition": "All have one electron in their outer shell; have low density; are stored under oil (to prevent reactions with oxygen or water); are soft (can be cut with knife)."
+                                        },
+                                        {
+                                            "term": "Reaction of Group 1 elements with non-metals",
+                                            "definition": "Formation of ionic compounds which are soluble white solids, sharing similarity due to all having one electron in their outer shell."
+                                        },
+                                        {
+                                            "term": "Reaction of Group 1 elements with water",
+                                            "definition": "Release of hydrogen and formation of hydroxides, resulting in alkaline solutions; reactions are vigorous, with fizzing and movement on the water surface."
+                                        },
+                                        {
+                                            "term": "Change in reactivity moving down Group 1",
+                                            "definition": "Reactivity increases as atoms get larger and the distance between the nucleus and the outer electrons increases, reducing attraction from the nucleus and making it easier to lose electrons."
+                                        },
+                                        {
+                                            "term": "Characteristics of Group 7",
+                                            "definition": "- 7 electrons in outer shell; - Coloured vapours; - Diatomic molecules; - Formation of ionic salts with metals; - Formation of molecular compounds with non-metals."
+                                        },
+                                        {
+                                            "term": "Group 7 elements and states of matter of molecules they form",
+                                            "definition": "- Fluorine, F: Pale yellow gas. - Chlorine, Cl: Pale green gas. - Bromine, Br: Dark brown liquid. - Iodine, I: Grey solid."
+                                        },
+                                        {
+                                            "term": "Changes in Group 7 moving down the group",
+                                            "definition": "- Higher relative molecular mass; - Higher melting and boiling points; - Decreased reactivity, less easily gaining electrons."
+                                        },
+                                        {
+                                            "term": "Colour change seen in reactions of halogens",
+                                            "definition": "When chlorine reacts with sodium bromide: Orange color of bromine appears; When chlorine/bromine reacts with sodium iodide: Brown color of iodine appears."
+                                        },
+                                        {
+                                            "term": "Trend in reactivity of halogens in displacement reactions",
+                                            "definition": "Reactivity decreases down the group, as larger atoms have weaker attraction to incoming electrons."
+                                        },
+                                        {
+                                            "term": "Comparison between Group 1 metals and Transition metals",
+                                            "definition": "Both are heat and electricity conductors, shiny when polished, and form ionic compounds with non-metals. Transition metals have higher densities, higher melting points, are less reactive, and harder than Group 1 metals."
+                                        },
+                                        {
+                                            "term": "Common characteristics of Transition metals",
+                                            "definition": "- Ions with different charges; - Coloured compounds; - Catalytic properties."
+                                        },
+                                        {
+                                            "term": "Catalyst",
+                                            "definition": "A substance that increases the rate of a chemical reaction without being consumed in the process."
+                                        },
+                                        {
+                                            "term": "Flame colours observed when Group 1 metals burn in oxygen",
+                                            "definition": "Crimson-red for lithium (Li), Yellow-orange for sodium (Na), Lilac for potassium (K)."
+                                        },
+                                        {
+                                            "term": "Properties of Noble gases and trend down the group",
+                                            "definition": "Non-metals, gases, low boiling points, unreactive due to full outer shells; boiling point increases down the group as atoms get heavier."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Bonding, Structure and the Properties of Matter(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Ionic bonding",
+                                            "definition": "Ionic bonding is the electrostatic attraction between positive and negative ions. It is a relatively strong attraction."
+                                        },
+                                        {
+                                            "term": "How are ionic compounds held together?",
+                                            "definition": "They are held together in a giant lattice. It's a regular structure that extends in all directions in a substance. Electrostatic attraction between positive and negative ions holds the structure together."
+                                        },
+                                        {
+                                            "term": "Properties of ionic substances",
+                                            "definition": "High melting and boiling point (strong electrostatic forces between oppositely charged ions). Do not conduct electricity when solid (ions in fixed positions). Conduct when molten or dissolved in water - ions are free to move."
+                                        },
+                                        {
+                                            "term": "Examples of positive ions and negative ions",
+                                            "definition": "Positive: Na+, Mg2+, Al3+, Ca2+, Rb+. Negative: Cl-, Br-, SO4^2-, NO3-, OH- (chloride, bromide, sulfate, nitrate, hydroxide). Ionic compounds are electrically neutral, i.e. positive and negative charges balance each other."
+                                        },
+                                        {
+                                            "term": "How are ionic compounds formed? (MgO case)",
+                                            "definition": "Reaction of a metal with a non-metal. Electron transfer occurs - metal gives away its outer shell electrons to non-metal. Mg is in Group II, so has 2 available outer shell electrons. O is in Group VI, so can accept 2 electrons to get a full outer shell configuration. Mg becomes Mg2+ and O becomes O2- (oxide)."
+                                        },
+                                        {
+                                            "term": "Covalent bond",
+                                            "definition": "Covalent bond is a shared pair of electrons between two atoms."
+                                        },
+                                        {
+                                            "term": "Structure and properties of simple molecular covalent substances",
+                                            "definition": "Do not conduct electricity (no ions). Small molecules. Weak intermolecular forces, therefore: Low melting and boiling points."
+                                        },
+                                        {
+                                            "term": "Change in intermolecular forces as the mass/size of the molecule increases",
+                                            "definition": "They increase. That causes melting/boiling points to increase as well (more energy needed to overcome these forces)."
+                                        },
+                                        {
+                                            "term": "Polymers and thermosoftening polymers",
+                                            "definition": "Polymers are very large molecules (>100s, 1000s of atoms) with atoms linked by covalent bonds. Thermosoftening polymers melt/soften when heated. There are no bonds between polymer chains. Strong intermolecular forces ensure that the structure is solid at room temperature. These forces are overcome with heating - polymer melts."
+                                        },
+                                        {
+                                            "term": "Giant covalent substances and examples",
+                                            "definition": "Solids, atoms covalently bonded together in a giant lattice. High melting/boiling points – strong covalent bonds. Mostly don't conduct electricity (no delocalised electrons). Examples: Diamond, graphite, silicon dioxide."
+                                        },
+                                        {
+                                            "term": "Properties of allotropes of carbon",
+                                            "definition": "Diamond: Four strong covalent bonds for each carbon atom. Very hard (Strong bonds). Very high melting point (strong bonds). Does not conduct (no delocalised electrons). Graphite: Three covalent bonds for each carbon atom. Fullerenes: Hollow shaped molecules, based on hexagonal rings but may have 5/7-carbon rings. Nanotubes: Layers of hexagonal rings – cylindrical fullerene with high length to diameter ratio. Layers free to slide as weak intermolecular forces between layers; soft, can be used as a lubricant. Conduct thermal and electricity due to one delocalised electron per each carbon atom. High tensile strength (strong bonds). Conductivity (delocalised electrons). Graphene: A single layer of graphite."
+                                        },
+                                        {
+                                            "term": "Metallic bonding",
+                                            "definition": "Forces of attraction between delocalised electrons and nuclei of metal ions."
+                                        },
+                                        {
+                                            "term": "Properties of metals",
+                                            "definition": "High melting/boiling points (strong forces of attraction). Good conductors of heat and electricity (delocalised electrons). Malleable, soft (layers of atoms can slide over each other whilst maintaining the attraction forces)."
+                                        },
+                                        {
+                                            "term": "Alloys and why they are harder than pure metals",
+                                            "definition": "Alloys: Mixtures of metal with other elements, usually metals. Different sizes of atoms distort the layers, so they can't slide over each other, therefore alloys are harder than pure metals."
+                                        },
+                                        {
+                                            "term": "Diamond, sand, and graphite conductivities",
+                                            "definition": "Diamond and sand: Poor conductivity because electrons can't move. Graphite: Good conductivity as free delocalised electrons."
+                                        },
+                                        {
+                                            "term": "Limitations of the simple model",
+                                            "definition": "There are no forces between spheres and atoms, molecules, and ions are solid spheres – this is not true."
+                                        },
+                                        {
+                                            "term": "Energy needed to change state",
+                                            "definition": "The amount of energy needed to change state from solid to liquid or liquid to gas depends on the strength of the forces between the particles of the substance. The nature of the particles involved depends on the type of bonding and the structure of the substance. The stronger the forces between the particles, the higher the melting point and boiling point of the substance."
+                                        },
+                                        {
+                                            "term": "Melting and boiling points of pure substances vs. mixtures",
+                                            "definition": "A pure substance will melt or boil at a fixed temperature. A mixture will melt over a range of temperatures."
+                                        },
+                                        {
+                                            "term": "Three states of matter",
+                                            "definition": "Solid, liquid, and gas."
+                                        },
+                                        {
+                                            "term": "Nanoscience",
+                                            "definition": "Science that studies particles that are 1 - 100nm in size."
+                                        },
+                                        {
+                                            "term": "Uses of nanoparticles",
+                                            "definition": "Medicine (drug delivery systems), electronics, deodorants, sun creams (better skin coverage and more effective protection against cell damage)."
+                                        },
+                                        {
+                                            "term": "Fine and coarse particles",
+                                            "definition": "Fine particles (soot), 100-2500 nm diameter. Coarse particles (dust), 2500-10^7 nm diameter."
+                                        },
+                                        {
+                                            "term": "Properties of nanoparticles compared to bulk materials",
+                                            "definition": "Nanoparticles have properties different from those for the same materials in bulk due to their high surface area to volume ratio."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Quantitative Chemistry(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Law of conservation of mass",
+                                            "definition": "The law of conservation of mass states that no atoms are lost or made during a chemical reaction so the mass of the products equals the mass of the reactants."
+                                        },
+                                        {
+                                            "term": "Balanced equation of magnesium reacting with hydrochloric acid",
+                                            "definition": "Mg + 2 HCl -> MgCl2 + H2"
+                                        },
+                                        {
+                                            "term": "Relative atomic mass (RAM)",
+                                            "definition": "Average mass of atoms in an element taking into account masses and abundance of its isotopes, relative to 12C."
+                                        },
+                                        {
+                                            "term": "Relative formula mass (RFM)",
+                                            "definition": "Sum of RAM's of all atoms in the formula."
+                                        },
+                                        {
+                                            "term": "Relative formula mass of CaF2",
+                                            "definition": "40 + 19 + 19 = 78"
+                                        },
+                                        {
+                                            "term": "Relative formula mass of C6H12O6",
+                                            "definition": "(12 x 6) + (1 x 12) + (16 x 6) = 180"
+                                        },
+                                        {
+                                            "term": "Explanation for why carbon dioxide and water escape from the test tube",
+                                            "definition": "They are both gases."
+                                        },
+                                        {
+                                            "term": "Calculation of mean of magnesium produced",
+                                            "definition": "(3.34 + 3.5 + 3.2) / 3 = 3.3"
+                                        },
+                                        {
+                                            "term": "Avogadro's constant",
+                                            "definition": "The number of atoms, molecules, or ions in a mole of a given substance. The value of the constant is 6.02 x 10^23."
+                                        },
+                                        {
+                                            "term": "Formula linking mass, molecular mass, and moles",
+                                            "definition": "Mass = Mr x Moles"
+                                        },
+                                        {
+                                            "term": "Mass of 20 moles of calcium carbonate, CaCO3",
+                                            "definition": "100 x 20 = 2000 g"
+                                        },
+                                        {
+                                            "term": "Amount of carbon dioxide in moles in 0.32 g of carbon dioxide",
+                                            "definition": "0.32 / 44 = 0.007 moles"
+                                        },
+                                        {
+                                            "term": "Mass of nitrogen needed to form 6.8 tonnes of ammonia",
+                                            "definition": "5.6 tonnes"
+                                        },
+                                        {
+                                            "term": "Limiting reactant",
+                                            "definition": "The reactant that is completely used up in a chemical reaction, limiting the amount of products."
+                                        },
+                                        {
+                                            "term": "Amount of oxygen given off from 40.8 g of hydrogen peroxide",
+                                            "definition": "19.2 g"
+                                        },
+                                        {
+                                            "term": "Formula linking concentration, mole/mass, and volume",
+                                            "definition": "Concentration (g per dm^3) = Mass (g) / Volume (dm^3)"
+                                        },
+                                        {
+                                            "term": "Concentration of sodium hydroxide solution in mol/dm^3",
+                                            "definition": "1.61 mol/dm^3"
+                                        },
+                                        {
+                                            "term": "Molar volume of a gas at room temperature and pressure",
+                                            "definition": "1 mole of a gas at room temperature and pressure occupies 24 dm^3."
+                                        },
+                                        {
+                                            "term": "Titration",
+                                            "definition": "A technique for finding the concentration of a solution by reacting a known volume of this solution with a solution of known concentration."
+                                        },
+                                        {
+                                            "term": "Steps for conducting a titration",
+                                            "definition": "1. Rinse the pipette with a solution of unknown concentration. Use the pipette to measure out the known volume of this solution.\n2. Add an indicator.\n3. Rinse the burette with a solution of known concentration. Discard the liquid. Use a burette to gradually add the solution of known concentration.\n4. When the indicator changes color (at the end point), record the volume added.\n5. Ensure concordant volume results.\n6. Perform suitable calculations to find the concentration."
+                                        },
+                                        {
+                                            "term": "Reasons why it's not always possible to obtain the theoretical amount of product in a chemical reaction",
+                                            "definition": "1. The reaction may not go to completion because it is reversible.\n2. Some of the product may be lost when it is separated from the reaction mixture.\n3. Some of the reactants may react in ways different from the expected reaction (side reactions may occur)."
+                                        },
+                                        {
+                                            "term": "Percentage yield of a product in a chemical reaction",
+                                            "definition": "% Yield = (Actual mass of a product / Maximum theoretical mass of product) x 100%"
+                                        },
+                                        {
+                                            "term": "Calculation of percentage yield from given data",
+                                            "definition": "See calculation steps."
+                                        },
+                                        {
+                                            "term": "Percentage yield of NH3 if 40.5 g NH3 is produced from 20.0 mol H2 and excess N2",
+                                            "definition": "17.8%"
+                                        },
+                                        {
+                                            "term": "Atom economy",
+                                            "definition": "A measure of the amount of starting materials that end up as useful products. It is a ratio of the relative formula mass of the desired product to the sum of relative formula masses of reactants."
+                                        },
+                                        {
+                                            "term": "Comparison of atom economies of two reactions",
+                                            "definition": "Reaction II has a better atom economy (88.2%)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Chemical Changes(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Oxidation",
+                                            "definition": "When a substance gains oxygen"
+                                        },
+                                        {
+                                            "term": "Reduction",
+                                            "definition": "When a substance loses oxygen"
+                                        },
+                                        {
+                                            "term": "Reactivity series of metals",
+                                            "definition": "The series shows the metals in order of their reactivity. Metals above H in reactivity series react with acid to produce H2. The more reactive the metal is, the quicker and more violent reaction with acid occurs. Metals below H don’t react with acids. Not all metals above H react with water - mostly Group I and II metals. Aluminium is the borderline case."
+                                        },
+                                        {
+                                            "term": "Displacement reaction",
+                                            "definition": "A reaction where a more reactive metal displaces a less reactive metal from a compound"
+                                        },
+                                        {
+                                            "term": "Unreactive metals found in Earth",
+                                            "definition": "In their natural state"
+                                        },
+                                        {
+                                            "term": "Extraction of metals less reactive than carbon",
+                                            "definition": "Reduction with carbon. Carbon displaces the metal in a metal oxide - gets oxidised to carbon oxides. Metal from the metal oxide gets reduced to the pure metal."
+                                        },
+                                        {
+                                            "term": "Extraction of metals more reactive than carbon",
+                                            "definition": "By electrolysis"
+                                        },
+                                        {
+                                            "term": "Definition of oxidation and reduction in terms of electron transfer",
+                                            "definition": "Oxidation – loss of electrons. Reduction – gain of electrons."
+                                        },
+                                        {
+                                            "term": "General equation for a reaction between metals and acids",
+                                            "definition": "Metal + acid → salt + hydrogen. Redox reaction, also a displacement reaction."
+                                        },
+                                        {
+                                            "term": "Metals in the reactivity series that will react with acid",
+                                            "definition": "Those above hydrogen"
+                                        },
+                                        {
+                                            "term": "General equation for a neutralisation reaction",
+                                            "definition": "Base + acid → salt + water"
+                                        },
+                                        {
+                                            "term": "General equation for the reaction between metal carbonate and acid",
+                                            "definition": "Metal carbonate + acid → salt + water + carbon dioxide"
+                                        },
+                                        {
+                                            "term": "General equation for the reaction between metal oxides and acids",
+                                            "definition": "Metal oxide + acid → salt + water"
+                                        },
+                                        {
+                                            "term": "Double Displacement Reaction",
+                                            "definition": "A reaction where both oxidation and reduction occurs"
+                                        },
+                                        {
+                                            "term": "Explanation of oxidation and reduction in terms of electron transfer in magnesium reacting with hydrochloric acid",
+                                            "definition": "Magnesium has lost electrons and thus has been oxidised (Mg to Mg2+). The hydrogen in HCl has gained electrons and thus has been reduced (H+ to H2)."
+                                        },
+                                        {
+                                            "term": "Formation of a soluble salt",
+                                            "definition": "React the excess acid with some insoluble chemical (e.g. metal oxide), filter off the leftovers, crystallise the product"
+                                        },
+                                        {
+                                            "term": "What acids and alkalis produce in aqueous solutions",
+                                            "definition": "Acids produce hydrogen ions, alkalis produce hydroxide ions"
+                                        },
+                                        {
+                                            "term": "Definition of bases, acids, and alkalis",
+                                            "definition": "Bases are compounds that neutralise acids, acids produce hydrogen ions in aqueous solutions, alkalis are soluble bases - produce hydroxide ions in aqueous solutions"
+                                        },
+                                        {
+                                            "term": "pH scale and what a pH of 7 shows",
+                                            "definition": "The measure of acidity/alkalinity of a solution; neutral solution"
+                                        },
+                                        {
+                                            "term": "General equation for a neutralisation reaction in a short, ionic form",
+                                            "definition": "H+ + OH- → H2O"
+                                        },
+                                        {
+                                            "term": "Definition of strong acid and weak acid",
+                                            "definition": "Strong acid is completely ionised in aqueous solution; weak acid is only partially ionised in aqueous solution"
+                                        },
+                                        {
+                                            "term": "Effect of increasing concentration of H+ on pH",
+                                            "definition": "The pH decreases"
+                                        },
+                                        {
+                                            "term": "Definition of concentrated acid and diluted acid",
+                                            "definition": "Concentrated acid has more moles of acid per unit volume than dilute. It is not the same as strong and weak acid. Concentration refers to whether the acid is completely ionised in water (strong) or only partially (weak)."
+                                        },
+                                        {
+                                            "term": "Change in hydrogen ion concentration as pH decreases by one unit",
+                                            "definition": "Increases by a factor of 10"
+                                        },
+                                        {
+                                            "term": "Names of salts: LiNO3, K2CO3, MgBr2, BaSO4",
+                                            "definition": "Lithium nitrate, Potassium carbonate, Magnesium bromide, Barium sulfate"
+                                        },
+                                        {
+                                            "term": "Electrolysis",
+                                            "definition": "The passing of an electric current through ionic substances that are molten or in solution to break them down into elements; ions are discharged (they lose/gain electrons) at electrodes to produce these"
+                                        },
+                                        {
+                                            "term": "Electrolyte",
+                                            "definition": "The liquid/solution which conducts electricity"
+                                        },
+                                        {
+                                            "term": "Cathode and anode",
+                                            "definition": "Cathode is the negative electrode, anode is the positive electrode"
+                                        },
+                                        {
+                                            "term": "Occurrence at the cathode and anode during electrolysis",
+                                            "definition": "Reduction occurs at the cathode. Oxidation occurs at the anode."
+                                        },
+                                        {
+                                            "term": "Element discharged at the cathode in aqueous electrolysis",
+                                            "definition": "The less reactive element discharges at the cathode. Hydrogen is produced unless there is a less reactive metal, in which case the said metal is produced. Oxygen is produced at the anode unless the solution contains halide ions, in which case halogen molecules are produced."
+                                        },
+                                        {
+                                            "term": "Manufacturing of aluminium and why it is expensive",
+                                            "definition": "Aluminium is made through the electrolysis of aluminium oxide and cryolite. Lots of energy is needed to produce the current in electrolysis which makes this process expensive."
+                                        },
+                                        {
+                                            "term": "Half equations in the extraction of aluminium",
+                                            "definition": "Al3+ + 3e- → Al (cathode), 2O2- → O2 + 4e- (anode). Oxygen reacts with C of the anode producing CO2."
+                                        },
+                                        {
+                                            "term": "Use of cryolite in manufacturing of aluminium",
+                                            "definition": "It lowers the melting point of aluminium oxide, reducing energy costs"
+                                        },
+                                        {
+                                            "term": "Half equations in electrolysis of aqueous Na2SO4",
+                                            "definition": "2H2O + 2e- → H2 (cathode), 4OH- → 2H2O + O2 + 4e-(anode)"
+                                        },
+                                        {
+                                            "term": "Half equations in electrolysis of molten and aqueous KCl",
+                                            "definition": "K+ + e- → K (cathode), 2Cl- → Cl2 + 2e- (anode), 2H2O + 2e- → H2 (cathode), 2Cl- → Cl2 + 2e- (anode), respectively"
+                                        },
+                                        {
+                                            "term": "Half equations in electrolysis of aqueous CuBr2",
+                                            "definition": "Cu2+ + 2e- → Cu (cathode), 2Br- → Br2 + 2e- (anode)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Energy Changes(paper 1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Conservation of energy principle",
+                                            "definition": "Energy is conserved in chemical reactions. The amount of energy in the universe at the end of a chemical reaction is the same as before the reaction takes place."
+                                        },
+                                        {
+                                            "term": "Exothermic reaction",
+                                            "definition": "A reaction where energy is transferred to the surroundings so that the surroundings temperature increases � combustion, oxidation reactions and neutralisation (acid + alkali) reactions. Negative sign of energy change."
+                                        },
+                                        {
+                                            "term": "Endothermic reaction",
+                                            "definition": "A reaction where energy is taken in from the surroundings so the surroundings temperature decreases � thermal decomposition, reaction of citric acid and sodium hydrogencarbonate. Positive sign of energy change."
+                                        },
+                                        {
+                                            "term": "Activation energy",
+                                            "definition": "Minimum amount of energy that particles need to react."
+                                        },
+                                        {
+                                            "term": "Reaction profile",
+                                            "definition": "Reaction profile is a graph which shows the relative energies of reactants and product, as well as activation energy of the reaction."
+                                        },
+                                        {
+                                            "term": "Chemical reaction in terms of bond energies",
+                                            "definition": "Energy is supplied to break bonds and energy is released when bonds are made; exothermic � energy released from forming bonds is greater than that needed to break the bonds; endothermic � energy needed to break bonds is greater than energy released making them."
+                                        },
+                                        {
+                                            "term": "Equation to find enthalpy change in terms of bond energies",
+                                            "definition": "Energy of reaction = sum of bonds broken � sum of bonds made."
+                                        },
+                                        {
+                                            "term": "Cell",
+                                            "definition": "A cell is composed of two electrodes dipped in an electrolyte solution. It produces electricity from a chemical reaction."
+                                        },
+                                        {
+                                            "term": "Battery",
+                                            "definition": "A battery consists of two or more cells connected in series."
+                                        },
+                                        {
+                                            "term": "Determinants of voltage obtained from a cell",
+                                            "definition": "Identities of metals used as electrodes and the identity and concentration of an electrolyte."
+                                        },
+                                        {
+                                            "term": "Advantages and disadvantages of using cells and batteries",
+                                            "definition": "(+) more or less cheap, some are rechargeable, a convenient source of electrical energy; (-) harmful chemicals."
+                                        },
+                                        {
+                                            "term": "Rechargeable and non-rechargeable cells",
+                                            "definition": "Rechargeable � chemical reactions are reversed when an external current is supplied; Non-rechargeable � reactants are used up, cannot be recharged."
+                                        },
+                                        {
+                                            "term": "Fuel cell",
+                                            "definition": "Fuel cells are supplied by fuel and oxygen to oxidise the fuel to generate electricity."
+                                        },
+                                        {
+                                            "term": "Overall reaction in a hydrogen fuel cell and half equations",
+                                            "definition": "Cathode: 2 H2 � 4H+ + 4e-, Anode: O2 + 4H+ + 4e- � 2 H2O; Overall: 2 H2 + O2 � 2 H2O."
+                                        },
+                                        {
+                                            "term": "Advantages and disadvantages of hydrogen fuel cells",
+                                            "definition": "Advantages: no pollutants, no recharging; Disadvantages: flammable, H2 difficult to store, fossil fuel production, toxic chemicals, expensive production of H2 by electrolysis."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "The Rate and Extent of Chemical Change(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Rate of reaction calculation",
+                                            "definition": "Rate of reaction = amount (e.g. grams, cm³) of reactant used or product formed divided by time. Rate of reaction (mol/s) = Moles of reactant used or product formed divided by time."
+                                        },
+                                        {
+                                            "term": "Units for rate of reaction",
+                                            "definition": "Various units for rate of reaction include g/s, cm³/s, or mol/s. Generally, rate of reaction is expressed as mass/time, volume/time, or moles/time."
+                                        },
+                                        {
+                                            "term": "Three common ways of measuring rate of reaction",
+                                            "definition": "1. Loss in mass of reactants\n2. Volume of gas produced\n3. Time for a solution to become opaque"
+                                        },
+                                        {
+                                            "term": "Measuring rate by monitoring mass loss",
+                                            "definition": "Place the reaction flask on a balance. Record the decrease in mass in time intervals. Plot a graph of mass vs time."
+                                        },
+                                        {
+                                            "term": "Measuring rate by monitoring volume of a gas",
+                                            "definition": "Connect a gas syringe to a reaction flask and measure the volume of gas formed in time intervals. Plot a graph of volume vs time."
+                                        },
+                                        {
+                                            "term": "Measuring rate by monitoring the disappearance of a cross",
+                                            "definition": "Take a piece of paper, mark a cross (X) on it, and place the reaction flask on the cross. Mix the reagents and measure how long it takes for a cloudy mixture to conceal the cross."
+                                        },
+                                        {
+                                            "term": "Finding rate of reaction at a specific time from a graph",
+                                            "definition": "Pick a point corresponding to the time 't' on the graph. Find the tangent to the curve at this point. The tangent represents the rate of reaction at that time. The steeper the tangent line, the faster the rate."
+                                        },
+                                        {
+                                            "term": "Factors affecting the rate of a chemical reaction",
+                                            "definition": "1. Concentration of reactants\n2. Pressure of gases (volume)\n3. Surface area\n4. Temperature\n5. Catalysts"
+                                        },
+                                        {
+                                            "term": "Collision theory",
+                                            "definition": "Chemical reactions occur only when reacting particles collide with sufficient energy (equal to or greater than activation energy)."
+                                        },
+                                        {
+                                            "term": "Effect of increasing temperature on rate of reaction",
+                                            "definition": "Increasing temperature leads to faster reaction rates due to higher kinetic energy of particles, resulting in more energetic collisions and increased collision frequency."
+                                        },
+                                        {
+                                            "term": "Effect of increasing concentration on rate of reaction",
+                                            "definition": "Increasing concentration of reactants leads to faster reaction rates due to more frequent collisions."
+                                        },
+                                        {
+                                            "term": "Effect of increasing pressure of a gas on rate of reaction",
+                                            "definition": "Increasing pressure of reacting gases (or decreasing volume) increases the frequency of collisions, thus increasing the rate of reaction. Note: Volume and pressure are inversely proportional."
+                                        },
+                                        {
+                                            "term": "Effect of increasing surface area on rate of reaction",
+                                            "definition": "Increasing surface area of solid reactants leads to faster reaction rates by increasing the frequency of collisions. Smaller pieces have greater surface area."
+                                        },
+                                        {
+                                            "term": "Catalyst",
+                                            "definition": "A substance that increases the rate of a chemical reaction by providing an alternative pathway with lower activation energy. It remains unchanged at the end of the reaction."
+                                        },
+                                        {
+                                            "term": "Enzyme",
+                                            "definition": "A biological molecule that acts as a catalyst in biological systems."
+                                        },
+                                        {
+                                            "term": "Reversible reaction",
+                                            "definition": "A reaction where the products can react to produce the original reactants."
+                                        },
+                                        {
+                                            "term": "Dynamic equilibrium",
+                                            "definition": "In a closed system, when the forward and reverse reactions occur at the same rate and the concentrations of reactants and products remain constant."
+                                        },
+                                        {
+                                            "term": "Le Chatelier's Principle",
+                                            "definition": "If a system at equilibrium experiences a change in conditions, it will shift to counteract that change and restore a new equilibrium."
+                                        },
+                                        {
+                                            "term": "Effect of changing concentration on equilibrium position",
+                                            "definition": "Changing the concentration of reactants or products shifts the equilibrium position until a new equilibrium is reached. Increasing reactant concentration favors product formation, and vice versa."
+                                        },
+                                        {
+                                            "term": "Effect of changing temperature on equilibrium position",
+                                            "definition": "Increasing temperature favors the formation of products in an endothermic reaction and decreases product formation in an exothermic reaction."
+                                        },
+                                        {
+                                            "term": "Effect of changing pressure on equilibrium position",
+                                            "definition": "Increasing pressure shifts the equilibrium towards the side with fewer gas molecules, while decreasing pressure shifts it towards the side with more gas molecules."
+                                        },
+                                        {
+                                            "term": "Effect of catalyst on equilibrium position",
+                                            "definition": "Catalysts have no effect on the position of equilibrium as they speed up both forward and backward reactions equally, leading to faster attainment of equilibrium."
+                                        }
+                                    ]  
+                                },
+                                {
+                                    "title": "Organic Chemistry(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Crude oil",
+                                            "definition": "A mixture of compounds; a fossil fuel consisting of the remains of ancient biomass. It is a finite resource and cannot be replaced as it is used up."
+                                        },
+                                        {
+                                            "term": "Hydrocarbon",
+                                            "definition": "A compound made up exclusively of hydrogen and carbon atoms."
+                                        },
+                                        {
+                                            "term": "Alkanes",
+                                            "definition": "Saturated hydrocarbons of a general formula CHₙ."
+                                        },
+                                        {
+                                            "term": "Homologous series",
+                                            "definition": "Series of compounds with the same general formula, same functional groups, and similar chemical properties."
+                                        },
+                                        {
+                                            "term": "Combustion of hydrocarbons",
+                                            "definition": "Exothermic reaction occurring when hydrocarbons are reacted with oxygen. Complete combustion produces carbon dioxide and water, while incomplete combustion produces carbon or carbon monoxide and water."
+                                        },
+                                        {
+                                            "term": "Physical properties of alkanes",
+                                            "definition": "First few in the series are gases, then change to liquids, then to solids. Boiling points and viscosity generally increase as molecules get bigger. Volatility and flammability decrease as molecules get bigger. Alkanes exhibit poor reactivity."
+                                        },
+                                        {
+                                            "term": "Fractional distillation of crude oil",
+                                            "definition": "Process where crude oil is heated and vaporized, then vapor rises up a fractionating column. The column has varying temperatures, causing hydrocarbons to condense at different heights based on their boiling points. This separates crude oil into fractions of different sizes."
+                                        },
+                                        {
+                                            "term": "Cracking",
+                                            "definition": "Process where large hydrocarbons are thermally broken down into smaller and useful molecules."
+                                        },
+                                        {
+                                            "term": "Type of reaction for cracking",
+                                            "definition": "Thermal decomposition."
+                                        },
+                                        {
+                                            "term": "Conditions for cracking",
+                                            "definition": "Reactant heated to vapor, passed over a hot catalyst (catalytic cracking) or heated to vapor, mixed with steam, and heated to high temperatures (steam cracking)."
+                                        },
+                                        {
+                                            "term": "Uses of products from cracking",
+                                            "definition": "The products, alkanes and alkenes, are used as polymers and starting materials for synthesis."
+                                        },
+                                        {
+                                            "term": "Alkene",
+                                            "definition": "Unsaturated hydrocarbon containing a C=C bond, with a general formula of CHₙ."
+                                        },
+                                        {
+                                            "term": "Test for alkenes",
+                                            "definition": "Addition of bromine water, resulting in a color change from orange to colorless."
+                                        },
+                                        {
+                                            "term": "Combustion of alkenes",
+                                            "definition": "They burn with smoky flames due to incomplete combustion."
+                                        },
+                                        {
+                                            "term": "Addition reactions of alkenes",
+                                            "definition": "Atoms add across the carbon-carbon double bond, converting it into a single carbon-carbon bond. Examples include hydrogenation, hydration, and addition of halogens."
+                                        },
+                                        {
+                                            "term": "Alcohol",
+                                            "definition": "An organic compound that contains an -OH functional group."
+                                        },
+                                        {
+                                            "term": "Characteristics of methanol, ethanol, propanol, and butanol",
+                                            "definition": "Dissolve in water to form a neutral solution, react with sodium to form hydrogen, burn in oxygen, react with carboxylic acids in the presence of an acid catalyst to form esters."
+                                        },
+                                        {
+                                            "term": "Oxidation of alcohols",
+                                            "definition": "Leads to the formation of carboxylic acids."
+                                        },
+                                        {
+                                            "term": "Uses of alcohols",
+                                            "definition": "Fuels, solvents, and drinks."
+                                        },
+                                        {
+                                            "term": "Conditions for fermentation of glucose and reaction equation",
+                                            "definition": "30 degrees Celsius, aqueous solution of glucose, absence of air, yeast added. Equation: C₆H₁₂O₆ > 2 CH₃CH₂OH + 2 CO₂."
+                                        },
+                                        {
+                                            "term": "Carboxylic acids",
+                                            "definition": "Organic compounds containing a COOH functional group."
+                                        },
+                                        {
+                                            "term": "Characteristics of carboxylic acids",
+                                            "definition": "Dissolve in water to form an acidic solution, react with metal carbonates to form carbon dioxide, react with alcohols in the presence of an acid catalyst to produce esters, react with metals to give off hydrogen gas."
+                                        },
+                                        {
+                                            "term": "Type of acid for carboxylic acid",
+                                            "definition": "Weak acid."
+                                        },
+                                        {
+                                            "term": "Reason for weak acidity of carboxylic acids",
+                                            "definition": "They are partially dissociated in water, thus their pH in solution is not as low as a solution of a strong acid of the same concentration."
+                                        },
+                                        {
+                                            "term": "Ester and its formation",
+                                            "definition": "An organic compound containing a -COO- functional group, formed from carboxylic acid and alcohol in the presence of a sulfuric acid catalyst. Esters often have a fruity smell."
+                                        },
+                                        {
+                                            "term": "Polymer",
+                                            "definition": "A long chain molecule made by lots of smaller molecules joining together."
+                                        },
+                                        {
+                                            "term": "Formation of polymers containing C=C bond",
+                                            "definition": "C=C bonds open up, and many smaller molecules (monomers) join together to form a chain (a polymer). This process is called 'addition polymerization'."
+                                        },
+                                        {
+                                            "term": "Examples of addition polymers and uses",
+                                            "definition": "Polyethene - plastic bags, (Poly)tetrafluoroethene (PTFE) - teflon surfaces for use in non-stick kitchenware, (Poly)chloroethene (polyvinylchloride, PVC) - water pipes."
+                                        },
+                                        {
+                                            "term": "Repeating unit of a polymer",
+                                            "definition": "The smallest structure which, upon numerous translations, yields the structure of the polymer. In addition polymers, to draw it, take a monomer, change C=C to C-C, and show additional single bonds extending away from these carbons."
+                                        },
+                                        {
+                                            "term": "Condensation polymer",
+                                            "definition": "A polymer made in condensation polymerization. In this reaction, many molecules join together, forming the polymer and releasing a small molecule (e.g., H₂O, HCl). Examples include polyesters and polyamides."
+                                        },
+                                        {
+                                            "term": "Amide bond",
+                                            "definition": "Similar to the ester bond, with O replaced by N, e.g., (C=O)-NH₂. It contains the C=O group."
+                                        },
+                                        {
+                                            "term": "Amino acid",
+                                            "definition": "An organic compound that contains both a carboxylic acid functionality (COOH) and an amine functional group (NH₂)."
+                                        },
+                                        {
+                                            "term": "Formation of proteins from amino acids and polypeptides",
+                                            "definition": "By numerous condensation polymerization reactions; proteins are polymers made of amino acids (monomers). Polypeptides are also made by condensation polymerization of amino acids but are shorter than proteins. Proteins are products of many polypeptide chains bonded together."
+                                        },
+                                        {
+                                            "term": "Carbohydrates",
+                                            "definition": "Organic molecules made of C, H, and O, biologically relevant such as starch and cellulose. They are polymers made of glucose monomers, with differing structures depending on how the glucose molecules are joined."
+                                        },
+                                        {
+                                            "term": "DNA",
+                                            "definition": "Material that makes up chromosomes, cell structures that store genetic information. DNA is made of two polymer chains held together in a double helix, each chain composed of four different monomers - nucleotides."
+                                        }
+                                    ]   
+                                },
+                                {
+                                    "title": "Chemical Analysis(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "pure substance",
+                                            "definition": "A single element or compound, not mixed with any other substance."
+                                        },
+                                        {
+                                            "term": "formulation",
+                                            "definition": "A mixture of compounds in measured quantities designed as a useful product. Examples include fuels, cleaning agents, paints, medicines, alloys, fertilizers, and foods."
+                                        },
+                                        {
+                                            "term": "paper chromatography",
+                                            "definition": "A technique in which a start line is drawn near the bottom of the paper, the mixture is spotted on the line, paper is hung on a rod and placed in a beaker filled with solvent. The solvent travels up the paper, separating the components based on their affinities. The stationary phase is the paper, and the mobile phase is the solvent."
+                                        },
+                                        {
+                                            "term": "R. (Rf) value",
+                                            "definition": "Distance moved by the spot divided by distance moved by the solvent."
+                                        },
+                                        {
+                                            "term": "R. value of 0.85",
+                                            "definition": "Indicates that the compound has a higher affinity for the solvent than for the paper."
+                                        },
+                                        {
+                                            "term": "tests for hydrogen, oxygen, carbon dioxide, and chlorine",
+                                            "definition": "Hydrogen: Pop with burning splint. Oxygen: Glowing splint relights. Carbon dioxide: Turns limewater milky. Chlorine: Bleaches damp litmus paper and makes it white."
+                                        },
+                                        {
+                                            "term": "flame test results",
+                                            "definition": "Lithium compounds produce a crimson red flame. Sodium compounds produce a yellow flame. Potassium compounds produce a lilac flame. Calcium compounds produce an orange red flame. Copper compounds produce a green flame."
+                                        },
+                                        {
+                                            "term": "sodium hydroxide test results",
+                                            "definition": "Copper(II) forms a blue precipitate. Iron(II) forms a dirty green precipitate. Iron(III) forms a brown precipitate. Aluminum, Calcium, and Magnesium form white precipitates, but only Aluminum dissolves in excess NaOH to form a colorless solution."
+                                        },
+                                        {
+                                            "term": "test for carbonate anions",
+                                            "definition": "Add dilute acid, e.g., HCl. Observing fizzing indicates the release of CO2. Example reaction: Na2CO3 + 2 HCl → 2 NaCl + H2O + CO2"
+                                        },
+                                        {
+                                            "term": "sulfate tests",
+                                            "definition": "Add a solution containing Ba2+ cations, e.g., BaCl2. A white precipitate of BaSO4 forms. Example reaction: K2SO4 + BaCl2 → 2 KCl + BaSO4. This test can also be thought of as a test for barium (II); adding sulfates results in a white precipitate."
+                                        },
+                                        {
+                                            "term": "silver nitrate tests",
+                                            "definition": "Add a solution of AgNO3 (acidified with HNO3). Chlorides form a white precipitate (AgCl). Bromides form a cream precipitate (AgBr). Iodides form a yellow precipitate (AgI)."
+                                        },
+                                        {
+                                            "term": "instrumental methods",
+                                            "definition": "Accurate, sensitive, and rapid methods useful when the amount of sample is very small."
+                                        },
+                                        {
+                                            "term": "flame emission spectroscopy",
+                                            "definition": "An instrumental method used for identifying metal ions in solution or measuring their concentration. A spectroscope measures the exact wavelength of the light emitted by a metal ion, allowing for definite identification. Concentrations are found by measuring the intensity of light emitted."
+                                        },
+                                        {
+                                            "term": "cations and anions",
+                                            "definition": "Cations are positive ions, and anions are negative ions."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Chemistry of the Atmosphere(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Proportions of gases in the modern atmosphere",
+                                            "definition": "Around 80% of N2, 20% of O2, small quantities of CO2, H2O, and noble gases"
+                                        },
+                                        {
+                                            "term": "Description of Earth's early atmosphere and formation",
+                                            "definition": "The Earth was hot when it was formed. There was significant volcanic activity, and gases released from these volcanoes included CO2, N2, CH4, NH3, H2O."
+                                        },
+                                        {
+                                            "term": "Increase of oxygen in the atmosphere",
+                                            "definition": "Algae and plants produced atmospheric O2 by photosynthesis, gradually increasing O2 levels as more plants produced more oxygen."
+                                        },
+                                        {
+                                            "term": "Decrease of carbon dioxide in the atmosphere",
+                                            "definition": "Some CO2 dissolved in oceans forming insoluble carbonates, or taken in by animals for their skeletons, eventually becoming part of sedimentary rock. Some CO2 used in photosynthesis to produce oxygen."
+                                        },
+                                        {
+                                            "term": "Greenhouse effect and greenhouse gases",
+                                            "definition": "Greenhouse gases in the atmosphere maintain temperatures on Earth by allowing short wavelength radiation from the sun to pass through but absorbing outgoing long wavelength radiation, causing a temperature increase. Examples include water vapor, carbon dioxide, and methane."
+                                        },
+                                        {
+                                            "term": "Necessity of the greenhouse effect for life",
+                                            "definition": "The greenhouse effect is necessary to maintain Earth's temperatures at levels suitable for life. Without it, the Earth would be too cold."
+                                        },
+                                        {
+                                            "term": "Human activities leading to an increase in greenhouse gases",
+                                            "definition": "Carbon dioxide emissions from combustion and deforestation, methane emissions from increased farming and decomposition in landfills."
+                                        },
+                                        {
+                                            "term": "Potential effects of global climate change",
+                                            "definition": "Sea level rise causing flooding and coastal erosion, more frequent and severe storms, changes in rainfall patterns, temperature and water stress for humans and wildlife, changes in food-producing capacity, and shifts in wildlife distribution."
+                                        },
+                                        {
+                                            "term": "Definition of carbon footprint",
+                                            "definition": "The total amount of carbon dioxide and other greenhouse gases emitted over the full life cycle of a product, service, or event."
+                                        },
+                                        {
+                                            "term": "Actions to reduce a carbon footprint",
+                                            "definition": "Increased use of alternative energy, energy conservation, carbon capture and storage, carbon taxes and licenses, carbon offsetting including tree planting, and achieving carbon neutrality."
+                                        },
+                                        {
+                                            "term": "Problems of reducing the carbon footprint",
+                                            "definition": "Scientific disagreement, lack of public information and education, resistance to lifestyle changes, economic considerations, and incomplete international cooperation."
+                                        },
+                                        {
+                                            "term": "Advantages of complete combustion",
+                                            "definition": "Less soot produced, more heat released per gram of fuel, no production of poisonous carbon monoxide."
+                                        },
+                                        {
+                                            "term": "Pollution caused by combustion",
+                                            "definition": "Gases released include carbon dioxide, water vapor, carbon monoxide, sulfur dioxide, oxides of nitrogen. Solid particles and unburned hydrocarbons may also be released, forming particulates in the atmosphere."
+                                        },
+                                        {
+                                            "term": "Issues regarding sulfur dioxide and oxides of nitrogen",
+                                            "definition": "Cause respiratory problems in humans and contribute to acid rain, which damages plants and buildings."
+                                        },
+                                        {
+                                            "term": "Problems caused by particulates",
+                                            "definition": "Particulates such as carbon particles contribute to global dimming by reducing sunlight reaching the Earth's surface, and they cause health problems due to lung damage in humans."
+                                        }
+                                    ]  
+                                },
+                                {
+                                    "title": "Using Resources(paper 2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Sustainable development",
+                                            "definition": "Development that meets the needs of current generations without compromising the ability of future generations to meet their own needs."
+                                        },
+                                        {
+                                            "term": "Potable water production in the UK",
+                                            "definition": "Choosing an appropriate source of fresh water, passing the water through filter beds to remove any solids, and sterilizing to kill microbes."
+                                        },
+                                        {
+                                            "term": "Sterilising agents for potable water",
+                                            "definition": "Chlorine, ozone, or ultraviolet light. Chlorine requires careful monitoring due to its toxicity. Ultraviolet light avoids adding chemicals but is more expensive."
+                                        },
+                                        {
+                                            "term": "Desalination",
+                                            "definition": "Process carried out by distillation or using membranes such as reverse osmosis, requiring large amounts of energy."
+                                        },
+                                        {
+                                            "term": "Reverse osmosis",
+                                            "definition": "Process where seawater is passed through a membrane allowing only water molecules, requiring high pressure and significant energy."
+                                        },
+                                        {
+                                            "term": "Wastewater production and treatment",
+                                            "definition": "Urban lifestyles and industrial processes produce wastewater, requiring treatment to remove organic matter and harmful microbes."
+                                        },
+                                        {
+                                            "term": "Processes involved in sewage treatment",
+                                            "definition": "Includes screening and grit removal, sedimentation to produce sewage sludge and effluent, anaerobic digestion of sewage sludge, and aerobic biological treatment of effluent."
+                                        },
+                                        {
+                                            "term": "Disadvantages avoided by new mining methods",
+                                            "definition": "Avoids digging, moving, and disposing of large amounts of rock associated with traditional mining."
+                                        },
+                                        {
+                                            "term": "Phytomining",
+                                            "definition": "Method using plants to absorb metal compounds from soil, harvested and burned to produce ash containing metal compounds."
+                                        },
+                                        {
+                                            "term": "Bioleaching",
+                                            "definition": "Utilizes bacteria to produce leachate solutions containing metal compounds."
+                                        },
+                                        {
+                                            "term": "Advantage and disadvantage of new mining methods",
+                                            "definition": "Less energy consumption than traditional methods, can work on low concentration ores, but slower process."
+                                        },
+                                        {
+                                            "term": "Stages of Life Cycle Assessments (LCAs)",
+                                            "definition": "Assessing environmental impact at stages including extracting and processing raw materials, manufacturing and packaging, use and operation during its lifetime, and disposal."
+                                        },
+                                        {
+                                            "term": "Methods to reduce resource use",
+                                            "definition": "End user reduction, reuse, and recycling of materials to minimize resource use, energy consumption, waste, and environmental impacts."
+                                        },
+                                        {
+                                            "term": "Advantages and disadvantages of recycling",
+                                            "definition": "Advantages include less pollution, conservation of energy, less waste, landfill reduction, and local employment. Disadvantages include collection, transport issues, and difficulty in separating materials."
+                                        },
+                                        {
+                                            "term": "Corrosion prevention methods",
+                                            "definition": "Corrosion prevented by applying barriers like coatings (greasing, painting, electroplating) to stop contact with air or water."
+                                        },
+                                        {
+                                            "term": "Sacrificial protection",
+                                            "definition": "Uses a more reactive metal to corrode instead of the less reactive metal. For example, zinc used to galvanize iron."
+                                        },
+                                        {
+                                            "term": "Alloys",
+                                            "definition": "Mixtures of metals, including bronze, brass, gold alloys, aluminium-magnesium alloys, and various steels."
+                                        },
+                                        {
+                                            "term": "Determinants of polymer properties",
+                                            "definition": "Properties depend on the monomers used and the conditions of production."
+                                        },
+                                        {
+                                            "term": "Structures of thermosoftening and thermosetting polymers",
+                                            "definition": "Thermosetting polymers have strong cross-links and don't melt. Thermosoftening polymers have weak intermolecular forces, soften on heating, and can be remoulded."
+                                        },
+                                        {
+                                            "term": "Glass production",
+                                            "definition": "Soda-lime glass made by heating sand, sodium carbonate, and limestone. Borosilicate glass, made from sand and boron trioxide, melts at higher temperatures."
+                                        },
+                                        {
+                                            "term": "Clay ceramics production",
+                                            "definition": "Made by shaping wet clay and heating in a furnace, used for pottery and bricks."
+                                        },
+                                        {
+                                            "term": "Formation of composites",
+                                            "definition": "Fibres or fragments of one material surrounded by a binder/matrix material, used in materials like fibreglass."
+                                        },
+                                        {
+                                            "term": "Key stages of the Haber process",
+                                            "definition": "Involves passing purified H2 and N2 gases over Fe catalyst at high temperature and pressure, reaction to form ammonia, liquefaction and removal of ammonia, and recycling of remaining gases. Ammonia used for fertilisers."
+                                        },
+                                        {
+                                            "term": "Compromise in the Haber process conditions",
+                                            "definition": "Conditions are a compromise between rate and yield due to the exothermic nature of the reaction. Temperature and pressure are optimized to balance yield and cost."
+                                        },
+                                        {
+                                            "term": "Uses of compounds of nitrogen, phosphorus, and potassium",
+                                            "definition": "Used as fertilisers to improve agricultural productivity, often combined in NPK fertilisers."
+                                        },
+                                        {
+                                            "term": "Industrial production of NPK fertilisers",
+                                            "definition": "Manufactured using ammonia to produce ammonium salts, reacting with acids to produce desired compounds."
+                                        },
+                                        {
+                                            "term": "Utilisation of phosphate rock in fertiliser production",
+                                            "definition": "Phosphate rock reacted with acids to produce phosphoric acid and various salts, essential for fertiliser production."
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "title": "Physics",
