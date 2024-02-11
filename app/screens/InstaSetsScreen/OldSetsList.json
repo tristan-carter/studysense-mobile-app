@@ -1,0 +1,76 @@
+{
+    "studylevels": [
+        {
+            "title": "A Level",
+            "examboards": [
+
+            ]
+        },
+        {
+            "title": "GCSE",
+            "examboards": [
+                {
+                    "title": "AQA",
+                    "subjects": [
+                        {
+                            "title": "Maths",
+                            "topics": []
+                        },
+                        {
+                            "title": "Geography",
+                            "topics": []
+                        },
+                        {
+                            "title": "French",
+                            "topics": []
+                        },
+                        {
+                            "title": "Spanish",
+                            "topics": []
+                        },
+                        {
+                            "title": "German",
+                            "topics": []
+                        },
+                        {
+                            "title": "Biology (Combined Science)",
+                            "topics": []
+                        },
+                        {
+                            "title": "Chemistry (Combined Science)",
+                            "topics": []
+                        },
+                        {
+                            "title": "Physics (Combined Science)",
+                            "topics": []
+                        },
+                        {
+                            "title": "Biology",
+                            "topics": []
+                        },
+                        {
+                            "title": "Chemistry",
+                            "topics": []
+                        },
+                        {
+                            "title": "Physics",
+                            "topics": []
+                        }
+                    ]
+                },
+                {
+                    "title": "Edexcel",
+                    "subjects": [
+
+                    ]
+                },
+                {
+                    "title": "OCR",
+                    "subjects": [
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

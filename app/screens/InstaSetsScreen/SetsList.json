@@ -8,44 +8,13 @@
         },
         {
             "title": "GCSE",
-            "examboards": [
+            "subjects": [
                 {
-                    "title": "AQA",
-                    "subjects": [
+                    "title": "Biology",
+                    "examboards": [
                         {
-                            "title": "Maths",
-                            "topics": []
-                        },
-                        {
-                            "title": "Geography",
-                            "topics": []
-                        },
-                        {
-                            "title": "French",
-                            "topics": []
-                        },
-                        {
-                            "title": "Spanish",
-                            "topics": []
-                        },
-                        {
-                            "title": "German",
-                            "topics": []
-                        },
-                        {
-                            "title": "Biology (Combined Science)",
-                            "topics": []
-                        },
-                        {
-                            "title": "Chemistry (Combined Science)",
-                            "topics": []
-                        },
-                        {
-                            "title": "Physics (Combined Science)",
-                            "topics": []
-                        },
-                        {
-                            "title": "Biology",
+                            "title": "AQA",
+                            "setname": "AQA GCSE Biology",
                             "topics": [
                                 {
                                     "title": "Cell Biology(paper 1)",
@@ -2179,9 +2148,15 @@
                                     ]                            
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "title": "Chemistry",
+                    "examboards": [
                         {
-                            "title": "Chemistry",
+                            "title": "AQA",
+                            "setname": "AQA GCSE Chemistry",
                             "topics": [
                                 {
                                     "title": "Atomic Structure and the Periodic Table(paper 1)",
@@ -3368,9 +3343,15 @@
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "title": "Physics",
+                    "examboards": [
                         {
-                            "title": "Physics",
+                            "title": "AQA",
+                            "setname": "AQA GCSE Physics",
                             "topics": [
                                 {
                                     "title": "Energy(paper 1)",
@@ -5108,18 +5089,6 @@
                                 }
                             ]
                         }
-                    ]
-                },
-                {
-                    "title": "Edexcel",
-                    "subjects": [
-
-                    ]
-                },
-                {
-                    "title": "OCR",
-                    "subjects": [
-
                     ]
                 }
             ]
