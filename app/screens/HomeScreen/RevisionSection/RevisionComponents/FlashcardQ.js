@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, KeyboardAvoidingView, TouchableOpacity, Image } from 'react-native';
 import { useSharedValue, useAnimatedStyle, interpolate, withTiming } from 'react-native-reanimated';
 import Animated from 'react-native-reanimated';
@@ -14,8 +14,10 @@ import Svg, { Path, G, Circle } from "react-native-svg";
 function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress }) {
     useEffect(() => {
         spin.value = 0;
+        setCardFlippedYet(false);
     }, [question, answer, gotQCorrect]);
     const spin = useSharedValue(0);
+    const [cardFlippedYet, setCardFlippedYet] = useState(false);
     const frontAnimatedStyle = useAnimatedStyle(() => {
         const spinVal = interpolate(spin.value, [0, 1], [0, 180]);
         return {
@@ -40,7 +42,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
     
     return (
         <View
-        style={styles.container}
+        style={[styles.container, { justifyContent: 'flex-start'}]}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         >
             <Text style={styles.subtitleText}>Smart Study</Text>
@@ -48,9 +50,18 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                 <View style={[styles.progressBarFiller, { width: `${progress * 100}%` }]} />
             </View>
             <TouchableOpacity
-            style={{ flex: 1, paddingVertical: 40, width: '100%', justifyContent: 'center', alignItems: 'center', marginTop: 50 }}
-            onPress={() => (spin.value = spin.value ? 0 : 1)}
-            >
+            style={{ 
+                flex: 1,
+                paddingVertical: 40,
+                width: '100%',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginTop: 50
+            }}
+            onPress={() => {
+                spin.value = spin.value ? 0 : 1
+                setCardFlippedYet(true);
+            }}>
                 <Animated.View style={[styles.flashcardFront, frontAnimatedStyle]}>
                     <Text style={styles.flashcardTitleText}>Front</Text>
                     <Text style={styles.question}>{question}</Text>
@@ -60,9 +71,21 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                     <Text style={styles.question}>{answer}</Text>
                 </Animated.View>
             </TouchableOpacity>
-            <View style={{ marginBottom: 50, flexDirection: 'row', width: '100%', justifyContent: 'space-evenly' }}>
-                <TouchableOpacity style={{marginRight: 15, padding: 20}} onPress={() => setGotQCorrect({correct: false, answer: "Incorrect"})}>
-                    {/*<Image style={styles.gotQCorrectImage} source={incorrectIcon} />*/}
+
+            <View style={{
+                marginBottom: 50,
+                flexDirection: 'row',
+                width: '100%',
+                justifyContent: 'space-evenly',
+                opacity: cardFlippedYet ? 1 : 0,
+            }}>
+                <TouchableOpacity 
+                style={{marginRight: 15, padding: 20}} 
+                onPress={() => {
+                    setGotQCorrect({correct: true, answer: "Incorrect"});
+                    setCardFlippedYet(false);
+                    spin.value = 0;
+                }}>
                     <Svg
                         width="100px"
                         height="110px"
@@ -79,7 +102,13 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                         />
                     </Svg>
                 </TouchableOpacity>
-                <TouchableOpacity style={{marginLeft: 15, padding: 20}} onPress={() => setGotQCorrect({correct: true, answer: "Correct"})}>
+                <TouchableOpacity
+                style={{marginLeft: 15, padding: 20}}
+                onPress={() => {
+                    setGotQCorrect({correct: true, answer: "Correct"});
+                    setCardFlippedYet(false);
+                    spin.value = 0;
+                }}>
                     <Svg
                         width="110px"
                         height="110px"

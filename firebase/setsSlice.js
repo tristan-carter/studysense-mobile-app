@@ -25,7 +25,7 @@ export const addSet = createAsyncThunk(
         answerWithTerm: false,
         answerWithDefinition: true,
       },
-      flascardOptions: {
+      flashcardOptions: {
         answerWithTerm: false,
         answerWithDefinition: true,
       },

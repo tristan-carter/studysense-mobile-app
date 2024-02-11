@@ -25,7 +25,7 @@ export default function SubjectsScroll(props) {
           return (
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('TopicsSelection', {Item: item});
+                navigation.navigate('ExamBoardPage', {Item: item});
               }}
             >
               <View

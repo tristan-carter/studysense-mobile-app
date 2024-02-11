@@ -37,7 +37,7 @@ export default function ScrollLevels(props) {
           return (
             <TouchableOpacity
               onPress={() => {
-                navigation.push('ExamBoardPage', { Item: item })
+                navigation.push('SubjectsScroll', { Item: item })
               }}
             >
               <View

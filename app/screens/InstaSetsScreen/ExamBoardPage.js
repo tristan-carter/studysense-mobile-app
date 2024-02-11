@@ -24,7 +24,7 @@ export default function ExamBoardPage(props) {
           return (
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('ReadyMadeSetsSubject', { Item: item, Level: Level });
+                navigation.navigate('TopicsSelection', { Item: item });
               }}
             >
               <View

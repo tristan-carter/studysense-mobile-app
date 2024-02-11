@@ -45,6 +45,27 @@ export default StyleSheet.create({
         padding: 5,
         height: '95%',
     },
+    scrollDataTopicButton: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderRadius: 13,
+        backgroundColor: colours.secondary,
+        borderWidth: 1.5,
+        borderColor: `rgba(0, 0, 0, 0.02)`,
+        marginVertical: 5.5,
+        paddingVertical: 9,
+        paddingLeft: 16,
+        paddingRight: 4,
+        gap: 8,
+        alignSelf: 'stretch',
+        shadowColor: '#8D5742', 
+        shadowOffset: {width: -1, height: 2},
+        shadowOpacity: 0.07,
+        shadowRadius: 3,
+        flex: 1,
+    },
+
     scrollDataIconContainer: {
         marginBottom: 5,
     },
@@ -171,10 +192,6 @@ export default StyleSheet.create({
         fontSize: 16,
         fontFamily: 'Lato',
     },
-    divider: {
-        height: 1,
-        backgroundColor: '#ccc',
-    },
     generateButton: {
         backgroundColor: colours.purple,
         padding: 8,
@@ -192,8 +209,31 @@ export default StyleSheet.create({
         fontSize: 12,
         fontFamily: 'Lato',
     },
-    checkbox: {
-        alignSelf: "center",
-        color: colours.primary,
+    button: {
+        width: '100%',
+        marginHorizontal: 5,
+        height: 50,
+        gap: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 13,
+        borderWidth: 2,
+        borderColor: `rgba(0, 0, 0, 0.03)`,
+        flexDirection: 'row',
+
+        shadowColor: '#171717', 
+        shadowOffset: {width: -2, height: 4},
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+    },
+    buttonText: {
+        fontSize: 21,
+        fontFamily: 'Lato-Bold', fontWeight: '600',
+    },
+    divider: {
+        height: 1.5,
+        backgroundColor: '#ccc',
+        width: '100%',
+        marginVertical: 8,
     },
 })

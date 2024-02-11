@@ -14,10 +14,10 @@
                     "examboards": [
                         {
                             "title": "AQA",
-                            "setname": "AQA GCSE Biology",
+                            "setname": "Biology AQA GCSE ",
                             "topics": [
                                 {
-                                    "title": "Cell Biology(paper 1)",
+                                    "title": "Cell Biology (paper1)",
                                     "cards":
                                     [
                                         {
@@ -411,7 +411,7 @@
                                     ]  
                                 },
                                 {
-                                    "title": "Organisation(paper 1)",
+                                    "title": "Organisation (paper1)",
                                     "cards": [
                                         {
                                             "term": "Cell",
@@ -792,7 +792,7 @@
                                     ]                                
                                 },
                                 {
-                                    "title": "Infection and Response(paper 1)",
+                                    "title": "Infection and Response (paper1)",
                                     "cards": [
                                         {
                                             "term": "Communicable disease",
@@ -1057,7 +1057,7 @@
                                     ]                                                                   
                                 },
                                 {
-                                    "title": "Bioenergetics(paper 1)",
+                                    "title": "Bioenergetics (paper1)",
                                     "cards":
                                     [
                                         {
@@ -1202,7 +1202,7 @@
                                         }
                                     ]                        
                                 },                                {
-                                    "title": "Homeostasis and Response(paper 2)",
+                                    "title": "Homeostasis and Response (paper2)",
                                     "cards": 
                                     [
                                         {
@@ -1510,7 +1510,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Inheritance, Variation and Evolution(paper 2)",
+                                    "title": "Inheritance, Variation and Evolution (paper2)",
                                     "cards":
                                     [
                                         {
@@ -1676,7 +1676,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Ecology(paper 2)",
+                                    "title": "Ecology (paper2)",
                                     "cards":
                                     [
                                         {
@@ -2156,10 +2156,10 @@
                     "examboards": [
                         {
                             "title": "AQA",
-                            "setname": "AQA GCSE Chemistry",
+                            "setname": "Chemistry AQA GCSE ",
                             "topics": [
                                 {
-                                    "title": "Atomic Structure and the Periodic Table(paper 1)",
+                                    "title": "Atomic Structure and the Periodic Table (paper1)",
                                     "cards":
                                     [
                                         {
@@ -2437,7 +2437,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Bonding, Structure and the Properties of Matter(paper 1)",
+                                    "title": "Bonding, Structure and the Properties of Matter (paper1)",
                                     "cards":
                                     [
                                         {
@@ -2535,7 +2535,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Quantitative Chemistry(paper 1)",
+                                    "title": "Quantitative Chemistry (paper1)",
                                     "cards":
                                     [
                                         {
@@ -2645,7 +2645,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Chemical Changes(paper 1)",
+                                    "title": "Chemical Changes (paper1)",
                                     "cards":
                                     [
                                         {
@@ -2795,7 +2795,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Energy Changes(paper 1)",
+                                    "title": "Energy Changes (paper1)",
                                     "cards":
                                     [
                                         {
@@ -2861,7 +2861,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "The Rate and Extent of Chemical Change(paper 2)",
+                                    "title": "The Rate and Extent of Chemical Change (paper2)",
                                     "cards":
                                     [
                                         {
@@ -2955,7 +2955,7 @@
                                     ]  
                                 },
                                 {
-                                    "title": "Organic Chemistry(paper 2)",
+                                    "title": "Organic Chemistry (paper2)",
                                     "cards":
                                     [
                                         {
@@ -3101,7 +3101,7 @@
                                     ]   
                                 },
                                 {
-                                    "title": "Chemical Analysis(paper 2)",
+                                    "title": "Chemical Analysis (paper2)",
                                     "cards":
                                     [
                                         {
@@ -3163,7 +3163,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Chemistry of the Atmosphere(paper 2)",
+                                    "title": "Chemistry of the Atmosphere (paper2)",
                                     "cards":
                                     [
                                         {
@@ -3229,7 +3229,7 @@
                                     ]  
                                 },
                                 {
-                                    "title": "Using Resources(paper 2)",
+                                    "title": "Using Resources (paper2)",
                                     "cards":
                                     [
                                         {
@@ -3351,10 +3351,10 @@
                     "examboards": [
                         {
                             "title": "AQA",
-                            "setname": "AQA GCSE Physics",
+                            "setname": "Physics AQA GCSE ",
                             "topics": [
                                 {
-                                    "title": "Energy(paper 1)",
+                                    "title": "Energy (paper1)",
                                     "cards":
                                     [
                                         {
@@ -3528,7 +3528,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Electricity(paper 1)",
+                                    "title": "Electricity (paper1)",
                                     "cards": 
                                     [
                                         {
@@ -3766,7 +3766,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Particle model of matter(paper 1)",
+                                    "title": "Particle model of matter (paper1)",
                                     "cards":
                                     [
                                         {
@@ -3908,7 +3908,7 @@
                                     ]     
                                 },
                                 {
-                                    "title": "Atomic Structure(paper 1)",
+                                    "title": "Atomic Structure (paper1)",
                                     "cards":
                                     [
                                         {
@@ -4190,7 +4190,7 @@
                                     ] 
                                 },
                                 {
-                                    "title": "Forces(paper 2)",
+                                    "title": "Forces (paper2)",
                                     "cards":
                                     [
                                         {
@@ -4558,7 +4558,7 @@
                                     ]     
                                 },
                                 {
-                                    "title": "Waves(paper 2)",
+                                    "title": "Waves (paper2)",
                                     "cards":
                                     [
                                         {
@@ -4788,7 +4788,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Magnetism and Electromagnetism(paper 2)",
+                                    "title": "Magnetism and Electromagnetism (paper2)",
                                     "cards":
                                     [
                                         {
@@ -4962,7 +4962,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "Space physics(paper 2)",
+                                    "title": "Space physics (paper2)",
                                     "cards":
                                     [
                                         {

@@ -13,6 +13,7 @@ import styles from './styles';
 import ScrollLevels from './ScrollLevels.js';
 import ExamBoardPage from './ExamBoardPage.js';
 import SubjectsScroll from './SubjectsScroll.js';
+import TopicsSelection from './TopicSelection.js';
 
 import Svg, { Path } from "react-native-svg";
 
