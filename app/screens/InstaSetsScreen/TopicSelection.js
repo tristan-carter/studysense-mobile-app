@@ -109,7 +109,11 @@ export default function TopicSelection(props) {
           var selectedTopics = [];
           for (let i = 0; i < selectionTopics.length; i++) {
             if (selectionTopics[i].selected) {
-              selectedTopics.push(selectionTopics[i]);
+              const topic = {
+                title: selectionTopics[i].title,
+                cards: selectionTopics[i].cards,
+              }
+              selectedTopics.push(topic);
             }
           }
           if (selectedTopics.length === 0) {

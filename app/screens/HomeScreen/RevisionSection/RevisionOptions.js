@@ -31,7 +31,7 @@ const RevisionOptionsList = [
     },
     {
         key: 3,
-        title: 'Flashcards',
+        title: 'Smart Flashcards',
         description: 'Effective for more detailed terms and definitions',
         icon: require('../../../assets/DefaultSetIcon.png'),
     },

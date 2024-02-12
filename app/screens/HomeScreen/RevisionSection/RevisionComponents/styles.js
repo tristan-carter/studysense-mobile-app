@@ -242,7 +242,7 @@ export default StyleSheet.create({
         borderWidth: 2,
         borderColor: `rgba(0, 0, 0, 0.03)`,
         flexDirection: 'row',
-        backgroundColor: colours.primary,
+        backgroundColor: colours.darkPrimary,
     },
     nextRoundButtonText: {
         color: colours.white,

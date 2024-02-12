@@ -197,7 +197,7 @@ function HomeScreen() {
           },
         }}
       />
-      <Stack.Screen name="Flashcards" component={Flashcards} options={({route}) => ({
+      <Stack.Screen name="Smart Flashcards" component={Flashcards} options={({route}) => ({
         headerBackImage:()=>(<SVGBackButton/>),
         gestureEnabled: false,
         headerBackTitleVisible:false,

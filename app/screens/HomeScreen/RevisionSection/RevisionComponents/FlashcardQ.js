@@ -52,11 +52,11 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
             <TouchableOpacity
             style={{ 
                 flex: 1,
-                paddingVertical: 40,
+                paddingVertical: 30,
                 width: '100%',
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginTop: 50
+                marginTop: 0
             }}
             onPress={() => {
                 spin.value = spin.value ? 0 : 1

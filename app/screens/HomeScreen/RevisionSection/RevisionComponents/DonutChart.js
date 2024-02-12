@@ -93,7 +93,7 @@ const donutChartComponent = (cards) => {
     const levelCounts = countLevels(cards);
 
     const pieData = [
-        { name: "Not Learned", value: levelCounts[0], color: colours.notLearned },
+        { name: "Not Learnt", value: levelCounts[0], color: colours.notLearned },
         { name: "Learning", value: levelCounts[1], color: colours.learning },
         { name: "Partially Learned", value: levelCounts[2], color: colours.partiallyLearned },
         { name: "Learned", value: levelCounts[3], color: colours.learned },
