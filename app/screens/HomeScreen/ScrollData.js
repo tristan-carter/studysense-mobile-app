@@ -124,77 +124,77 @@ export default function ScrollData(props) {
     const [isFocus, setIsFocus] = useState(false);
       return(
         <TouchableWithoutFeedback
-        onPress={() => {
-          item.isFolder
-            ? dispatch(setCurrentFolder(item.id))
-            : dispatch(setCurrentSet(item.id));
-          item.isFolder
-            ? navigation.push('FolderPage', { Item: item })
-            : navigation.push('RevisionOptions', { Item: item });
-        }}
-      >
-        <View
-          style={styles.scrollDataItemButton}
+          onPress={() => {
+            item.isFolder
+              ? dispatch(setCurrentFolder(item.id))
+              : dispatch(setCurrentSet(item.id));
+            item.isFolder
+              ? navigation.push('FolderPage', { Item: item })
+              : navigation.push('RevisionOptions', { Item: item });
+          }}
         >
-          <Image style={{ width: 45, height: 45 }} source={imagePath} />
-          <View style={{flexDirection: 'column', gap: 4}}>
-            <Text numberOfLines={1} style={{
-              paddingRight: 50,
-              fontFamily: 'Lato-Bold', fontWeight: '600',
-              fontSize: 21,
-              color: colours.primarytext,
-              overflow: 'hidden',
-            }}>
-              {item.name}
-            </Text>
-            <Text numberOfLines={1} style={{
-                fontFamily: 'Lato',
-                fontSize: 13,
-                color: colours.secondarytext,
+          <View
+            style={styles.scrollDataItemButton}
+          >
+            <Image style={{ width: 40, height: 40 }} source={imagePath} />
+            <View style={{flexDirection: 'column', gap: 4}}>
+              <Text numberOfLines={1} style={{
+                paddingRight: 50,
+                fontFamily: 'Lato-Bold', fontWeight: 'normal',
+                fontSize: 19,
+                color: colours.black,
                 overflow: 'hidden',
-            }}>
-              {item.isFolder ? item.sets.length - 1 + ' sets' : item.cards.length - 1 + ' cards'}
-            </Text>
+              }}>
+                {item.name}
+              </Text>
+              <Text numberOfLines={1} style={{
+                  fontFamily: 'Lato',
+                  fontSize: 13,
+                  color: colours.secondarytext,
+                  overflow: 'hidden',
+              }}>
+                {item.isFolder ? item.sets.length - 1 + ' sets' : item.cards.length - 1 + ' cards'}
+              </Text>
+            </View>
+              <Dropdown
+                style={[styles.dropdown, isFocus && { paddingHorizontal: 50 }]}
+                placeholderStyle={styles.placeholderStyle}
+                selectedTextStyle={styles.selectedTextStyle}
+                itemTextStyle={styles.dropdownLabel}
+                iconStyle={styles.dropdownIcon}
+                data={[
+                  { label: 'Edit', value: 'edit' },
+                  { label: 'Delete', value: 'delete' },
+                ]}
+                maxHeight={150}
+                labelField="label"
+                valueField="value"
+                onFocus={() => setIsFocus(true)}
+                onBlur={() => setIsFocus(false)}
+                onChange={value => {
+                  setIsFocus(false);
+                  if (value.value == 'edit') {
+                    editingSet.current = item;
+                    editingId.current = item.id;
+                    editingCards.current = item.cards;
+                    newName.current = item.name;
+                    setIsPrivate(item.isPrivate);
+                    setEditingFolder(item.isFolder);
+                    setShowModal(true);
+                  } else if (value.value == 'delete') {
+                    confirmDeleteRow(currentRowMap.current, item.id, item.name, item.isFolder);
+                  }
+                }}
+              />
+              {/*renderLeftIcon={() => (
+                <Ionicons name="ellipsis-vertical" color={colours.secondarytext} size={30} />
+              }*/}
+            {//item.isFolder && (
+              //<Ionicons name="folder" style={{ alignSelf: 'flex-end', marginLeft: 'auto' }} color={colours.secondarytext} size={40} />
+            //)
+          }
           </View>
-            <Dropdown
-              style={[styles.dropdown, isFocus && { paddingHorizontal: 50 }]}
-              placeholderStyle={styles.placeholderStyle}
-              selectedTextStyle={styles.selectedTextStyle}
-              itemTextStyle={styles.dropdownLabel}
-              iconStyle={styles.dropdownIcon}
-              data={[
-                { label: 'Edit', value: 'edit' },
-                { label: 'Delete', value: 'delete' },
-              ]}
-              maxHeight={150}
-              labelField="label"
-              valueField="value"
-              onFocus={() => setIsFocus(true)}
-              onBlur={() => setIsFocus(false)}
-              onChange={value => {
-                setIsFocus(false);
-                if (value.value == 'edit') {
-                  editingSet.current = item;
-                  editingId.current = item.id;
-                  editingCards.current = item.cards;
-                  newName.current = item.name;
-                  setIsPrivate(item.isPrivate);
-                  setEditingFolder(item.isFolder);
-                  setShowModal(true);
-                } else if (value.value == 'delete') {
-                  confirmDeleteRow(currentRowMap.current, item.id, item.name, item.isFolder);
-                }
-              }}
-            />
-            {/*renderLeftIcon={() => (
-              <Ionicons name="ellipsis-vertical" color={colours.secondarytext} size={30} />
-            }*/}
-          {//item.isFolder && (
-            //<Ionicons name="folder" style={{ alignSelf: 'flex-end', marginLeft: 'auto' }} color={colours.secondarytext} size={40} />
-          //)
-        }
-        </View>
-      </TouchableWithoutFeedback>  
+        </TouchableWithoutFeedback>  
       )
     }
   
@@ -239,7 +239,7 @@ export default function ScrollData(props) {
       <View style={styles.noSetsUpperSection}>
         <Image style={{ 
           width: 70, 
-          height: 70,
+          height: 75,
         }} source={CreateFirstSetIcon} />
         <View style={styles.noSetsTextContainer}>
           <Text style={styles.noSetsTitleText}>Create your first set!</Text>

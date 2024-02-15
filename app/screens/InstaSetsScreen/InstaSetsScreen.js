@@ -65,7 +65,7 @@ function InstaSetsScreen() {
           headerShown: true,
           title: "InstaSets",
           headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground },
+          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 
 
@@ -74,7 +74,7 @@ function InstaSetsScreen() {
         headerBackTitleVisible: false,
         title: "InstaSets",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
 
       <Stack.Screen name="SubjectsScroll" component={SubjectsScroll} options={({route}) => ({
@@ -82,7 +82,7 @@ function InstaSetsScreen() {
         headerBackTitleVisible: false,
         title: "InstaSets",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
       
       <Stack.Screen name="TopicsSelection" component={TopicsSelection} options={({route}) => ({
@@ -90,7 +90,7 @@ function InstaSetsScreen() {
           headerBackTitleVisible: false,
           title: "InstaSets",
           headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
     </Stack.Navigator>
   )

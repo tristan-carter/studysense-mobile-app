@@ -97,7 +97,7 @@ function HomeScreen() {
       <Stack.Screen name="HomePage" component={HomePage} 
         options={{
           headerShown: true,
-          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground },
+          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
           headerTitle: () => <LogoTitle />,
         }}
       /> 
@@ -107,7 +107,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: currentFolderName,
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           beforeRemove: () => {
             dispatch(setCurrentFolder(null));
@@ -119,7 +119,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: currentSetName,
         headerTitleStyle: { color: colours.titletext, fontSize: screenHeight <= 700 ? 28 : 28, fontFamily: 'Lato-Bold', fontWeight: '600', alignSelf: 'flex-start' }, 
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -136,7 +136,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -149,7 +149,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -167,7 +167,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -185,7 +185,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -203,7 +203,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
@@ -221,7 +221,7 @@ function HomeScreen() {
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 90, backgroundColor: colours.titlebackground }})}
+        headerStyle: { height: 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));

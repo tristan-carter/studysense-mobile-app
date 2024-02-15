@@ -167,7 +167,7 @@ export default function TopicSelection(props) {
                   fontFamily: 'Lato-SemiBold',
                   fontWeight: '600',
                   fontSize: 20,
-                  color: colours.secondarytext,
+                  color: colours.black,
                   display: 'flex',
                 }}>
                   {item.title}

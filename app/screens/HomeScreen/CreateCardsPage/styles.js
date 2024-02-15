@@ -27,7 +27,8 @@ export default StyleSheet.create({
         borderColor: `rgba(0, 0, 0, 0.03)`,
         flexDirection: 'row',
 
-        shadowColor: '#171717', 
+        shadowColor: '#D0D0D0',
+        elevation: 5,
         shadowOffset: {width: -2, height: 4},
         shadowOpacity: 0.2,
         shadowRadius: 5,
@@ -56,7 +57,7 @@ export default StyleSheet.create({
         alignItems: 'flex-start',
         justifyContent: 'center',
         borderRadius: 13,
-        backgroundColor: colours.secondary,
+        backgroundColor: colours.backgroundAccent,
         flexDirection: 'row',
         display: 'flex',
         gap: 2,

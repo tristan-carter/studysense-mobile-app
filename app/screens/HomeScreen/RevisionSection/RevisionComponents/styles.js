@@ -62,7 +62,7 @@ export default StyleSheet.create({
         borderRadius: 8,
         minHeight: 50,
         justifyContent: 'center',
-        backgroundColor: colours.secondary,
+        backgroundColor: colours.backgroundAccent,
     },
     optionText: {
         width: '100%',
@@ -100,7 +100,7 @@ export default StyleSheet.create({
         borderRadius: 10,
     },
     submitButton: {
-        backgroundColor: colours.primary,
+        backgroundColor: colours.darkPrimary,
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -154,7 +154,7 @@ export default StyleSheet.create({
         flex: 1,
     },
     modalButton: {
-        backgroundColor: colours.primary,
+        backgroundColor: colours.darkPrimary,
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -259,12 +259,13 @@ export default StyleSheet.create({
         backfaceVisibility: "hidden",
         position: "absolute",
         alignItems: "flex-start",
-        shadowColor: colours.black,
         shadowOffset: {
             width: 0,
             height: 10,
         },
         shadowOpacity: 0.2,
+        shadowColor: '#D0D0D0',
+        elevation: 5,
      },
      flashcardBack: {
         width: '82%',
@@ -273,12 +274,13 @@ export default StyleSheet.create({
         padding: 20,
         backfaceVisibility: "hidden",
         alignItems: "flex-start",
-        shadowColor: colours.black,
         shadowOffset: {
             width: 0,
             height: 10,
         },
         shadowOpacity: 0.2,
+        shadowColor: '#D0D0D0',
+        elevation: 5,
      },
      flashcardTitleText: {
         fontSize: 24,

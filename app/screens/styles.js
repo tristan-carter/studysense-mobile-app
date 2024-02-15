@@ -12,7 +12,7 @@ const styles = {
     newFileActionSheetTextCancel: {
         fontWeight: '600',
         fontSize: 20,
-        color: colours.subtitletext,
+        color: colours.secondarytext,
     },
 };
 

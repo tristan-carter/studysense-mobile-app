@@ -257,7 +257,6 @@ function HomeTabs(props) {
       backBehavior='history'
       headerShown={false}
       screenOptions={({ route }) => ({
-        tabBarStyle: {backgroundColor: colours.bottomBarBackground},
         headerShown: false,
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
