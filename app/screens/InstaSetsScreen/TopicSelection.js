@@ -22,6 +22,8 @@ export default function TopicSelection(props) {
   const topics = Subject.topics;
   const navigation = props.navigation;
   const selectionTopics = []
+  var setHasPapers = false;
+  var paperSelectionTopics = [];
 
   const handleSetImport = (selectedTopics) => {
     const importedCards = []
@@ -77,11 +79,28 @@ export default function TopicSelection(props) {
 
   for (let i = 0; i < topics.length; i++) {
     const [isSelected, setSelection] = useState(true);
+    title = topics[i].title;
+
+    if (title.includes("1")) {
+      setHasPapers = true;
+    }
+
+    paper = ""
+    if (setHasPapers) {
+      for (let i = 0; i < 8; i++) {
+        if (title.includes(i)) {
+          paper = i
+          break
+        }
+      }
+    }
+
     selectionTopics.push({
-      title: topics[i].title,
+      title: title.substring(0, title.indexOf("(")),
       selected: isSelected,
       setSelection: setSelection,
       cards: topics[i].cards,
+      paper: paper,
     });
   }
 
@@ -90,6 +109,26 @@ export default function TopicSelection(props) {
     if (!selectionTopics[i].selected) {
       allSelected = false;
       break;
+    }
+  }
+
+  if (setHasPapers) {
+    highestPaper = 0;
+    for (let i = 1; i < selectionTopics.length; i++) {
+      if (selectionTopics[i].paper > highestPaper) {
+        highestPaper = selectionTopics[i].paper;
+      }
+    }
+    for (let i = 1; i <= highestPaper; i++) {
+      paperSelectionTopics.push({
+        title: "Paper " + (i),
+        isPaperLabel: true,
+      });
+      for (let j = 0; j < selectionTopics.length; j++) {
+        if (selectionTopics[j].paper == i) {
+          paperSelectionTopics.push(selectionTopics[j]);
+        }
+      }
     }
   }
 
@@ -146,34 +185,48 @@ export default function TopicSelection(props) {
       </TouchableOpacity>
 
       <FlatList
-        data={selectionTopics}
+        data={setHasPapers ? paperSelectionTopics : selectionTopics}
         keyExtractor={(item) => item.title}
         style={{width: '100%', marginTop: 10}}
         renderItem={({ item }) => {
           return (
-            <View
-              style={styles.scrollDataTopicButton}
-            >
-              <CheckBox
-                value={item.selected}
-                onValueChange={() => {
+            item.isPaperLabel ? (
+              <Text style={{
+                fontFamily: 'Lato-SemiBold',
+                fontWeight: '600',
+                fontSize: 20,
+                color: colours.black,
+                display: 'flex',
+                marginBottom: 10,
+              }}>{item.title}</Text>
+            ) : (
+              <TouchableOpacity
+                style={styles.scrollDataTopicButton}
+                onPress={() => {
                   item.setSelection(!item.selected);
                 }}
-                tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
-              />
-              <View style={{flexDirection: 'column', flex: 1}}>
-                <Text style={{
-                  paddingRight: 12,
-                  fontFamily: 'Lato-SemiBold',
-                  fontWeight: '600',
-                  fontSize: 20,
-                  color: colours.black,
-                  display: 'flex',
-                }}>
-                  {item.title}
-                </Text>
-              </View>
-            </View>
+              >
+                <CheckBox
+                  value={item.selected}
+                  onValueChange={() => {
+                    item.setSelection(!item.selected);
+                  }}
+                  tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
+                />
+                <View style={{flexDirection: 'column', flex: 1}}>
+                  <Text style={{
+                    paddingRight: 12,
+                    fontFamily: 'Lato-SemiBold',
+                    fontWeight: '600',
+                    fontSize: 20,
+                    color: colours.black,
+                    display: 'flex',
+                  }}>
+                    {item.title}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            )
           );
         }}
       />

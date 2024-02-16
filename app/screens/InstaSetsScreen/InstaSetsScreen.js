@@ -45,15 +45,12 @@ const SVGBackButton = (props) => (
     >
       <Path d="M19 12H5M12 19l-7-7 7-7" />
     </Svg>
-  )
+)
 
 const Stack = createStackNavigator();
 
 function InstaSetsScreen() {
   const screenHeight = Dimensions.get('window').height;
-
-  const dispatch = useDispatch();
-  const user = useSelector((state) => state.user);
   return(
     <Stack.Navigator initialRouteName='InstaSetsPage'
     screenOptions={{
