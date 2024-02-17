@@ -1,17 +1,70 @@
-import React from 'react';
-import { View, Dimensions } from 'react-native';
-
+import React, { useState, useRef } from 'react';
+import { View, Dimensions, TouchableOpacity, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
+import CheckBox from '@react-native-community/checkbox';
 
 import styles from './styles';
 import colours from '../../config/colours'
 
 function StudySessionsPage({ navigation }) {
-    return (
-        <View style={styles.container}>
-            
+  const currentSession = useRef({
+    title: "Studying",
+    length: 30,
+    breakLength: 5,
+    date: null,
+    focusMode: false,
+  })
+  const [focusMode, setFocusMode] = useState(false);
+  return (
+      <View style={styles.container}>
+        <View style={styles.currentSessionView}>
+          <View style={styles.currentSessionTextContainer}>
+            <Text style={styles.currentSessionTitle}>session name: {currentSession.current.title}</Text>
+            <TouchableOpacity
+            style={styles.currentSessionEditButton}
+            onPress={()=>{
+              
+            }}>
+              <Text style={styles.currentSessionEditText}>Edit</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.currentSessionTextContainer}>
+            <Text style={styles.currentSessionText}>session length: {currentSession.current.length}</Text>
+            <TouchableOpacity
+            style={styles.currentSessionEditButton}
+            onPress={()=>{
+              
+            }}>
+              <Text style={styles.currentSessionEditText}>Edit</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.currentSessionTextContainer}>
+            <Text style={styles.currentSessionText}>breakLength: {currentSession.current.breakLength}</Text>
+            <TouchableOpacity
+            style={styles.currentSessionEditButton}
+            onPress={()=>{
+
+            }}>
+              <Text style={styles.currentSessionEditText}>Edit</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={[styles.currentSessionTextContainer, {gap: 4}]}>
+              <Text style={styles.currentSessionText}>focus mode: </Text>
+              <CheckBox
+                value={focusMode}
+                onValueChange={() => {
+                  currentSession.current.focusMode = !focusMode;
+                  setFocusMode(!focusMode);
+                }}
+                tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
+              />
+          </View>
         </View>
-    );
+      </View>
+  );
 }
 
 const SVGBackButton = (props) => (
