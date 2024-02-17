@@ -10743,6 +10743,2180 @@
                                     ]   
                                 }
                             ]
+                        },
+                        {
+                            "title": "Edexcel",
+                            "setname": "Physics Edexcel GCSE",
+                            "topics": [
+                                {
+                                    "title": "Motion and Forces (paper1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Scalar quantity",
+                                            "definition": "A quantity that only has a magnitude"
+                                        },
+                                        {
+                                            "term": "Vector quantity",
+                                            "definition": "A quantity that has both a magnitude and an associated direction."
+                                        },
+                                        {
+                                            "term": "How can a vector quantity be drawn and what does it show?",
+                                            "definition": "Using vector arrows."
+                                        },
+                                        {
+                                            "term": "How do vector arrows represent vectors?",
+                                            "definition": "The length of the arrow represents the magnitude. The arrow points in the associated direction."
+                                        },
+                                        {
+                                            "term": "Examples of vector quantities",
+                                            "definition": "1. Velocity\n2. Displacement\n3. Force"
+                                        },
+                                        {
+                                            "term": "Examples of scalar quantities",
+                                            "definition": "Temperature\nTime\nMass\nSpeed\nDistance\nEnergy"
+                                        },
+                                        {
+                                            "term": "Velocity",
+                                            "definition": "The speed of an object in a specific direction."
+                                        },
+                                        {
+                                            "term": "Equation for average speed, distance, and time",
+                                            "definition": "average speed = distance / time"
+                                        },
+                                        {
+                                            "term": "Gradient of the line on a distance/time graph",
+                                            "definition": "The speed."
+                                        },
+                                        {
+                                            "term": "Gradient of the line on a displacement/time graph",
+                                            "definition": "The velocity."
+                                        },
+                                        {
+                                            "term": "Calculating speed at a given time from a distance-time graph for an accelerating object",
+                                            "definition": "Draw a tangent to the curve at the required time. Calculate the gradient of the tangent."
+                                        },
+                                        {
+                                            "term": "Equation for average acceleration of an object",
+                                            "definition": "Acceleration = (Change in Velocity)/(Time Taken). Units: Acceleration (m/s²), Velocity (m/s), Time (s)"
+                                        },
+                                        {
+                                            "term": "Equation relating final velocity with initial velocity, displacement, and acceleration",
+                                            "definition": "v² = u² + 2as"
+                                        },
+                                        {
+                                            "term": "Calculating distance travelled from a velocity-time graph",
+                                            "definition": "It is equal to the area under the graph."
+                                        },
+                                        {
+                                            "term": "Gradient of a velocity/time graph",
+                                            "definition": "The acceleration."
+                                        },
+                                        {
+                                            "term": "Typical value for the speed of sound",
+                                            "definition": "330 m/s"
+                                        },
+                                        {
+                                            "term": "Typical value for human walking speed",
+                                            "definition": "1.5 m/s"
+                                        },
+                                        {
+                                            "term": "Typical value for human running speed",
+                                            "definition": "3 m/s"
+                                        },
+                                        {
+                                            "term": "Typical value for human cycling speed",
+                                            "definition": "6 m/s"
+                                        },
+                                        {
+                                            "term": "Approximate value for the acceleration of an object in free fall near the Earth's surface",
+                                            "definition": "10 m/s²"
+                                        },
+                                        {
+                                            "term": "Resultant force",
+                                            "definition": "The single force that is equivalent to all the other forces acting on a given object."
+                                        },
+                                        {
+                                            "term": "Newton's first law for a stationary object",
+                                            "definition": "If the resultant force on a stationary object is zero, the object will remain at rest."
+                                        },
+                                        {
+                                            "term": "Newton's first law for a moving object",
+                                            "definition": "If the resultant force on a moving object is zero, the object will remain at constant velocity (same speed in same direction)."
+                                        },
+                                        {
+                                            "term": "Newton's Second Law equation",
+                                            "definition": "Resultant force = Mass x Acceleration. F = ma"
+                                        },
+                                        {
+                                            "term": "Newton’s Second Law in words",
+                                            "definition": "An object's acceleration is directly proportional to the resultant force acting on it and inversely proportional to its mass."
+                                        },
+                                        {
+                                            "term": "Weight",
+                                            "definition": "The force that acts on an object due to gravity and the object's mass."
+                                        },
+                                        {
+                                            "term": "Quantities weight depends on",
+                                            "definition": "Weight = mass x gravitational field strength. The object's mass, The gravitational field strength at the given position in the field."
+                                        },
+                                        {
+                                            "term": "Unit used for weight",
+                                            "definition": "The Newton (N)."
+                                        },
+                                        {
+                                            "term": "Unit used for gravitational field strength",
+                                            "definition": "N/kg"
+                                        },
+                                        {
+                                            "term": "Equipment used to measure an object's weight",
+                                            "definition": "A calibrated spring-balance or newton-meter."
+                                        },
+                                        {
+                                            "term": "Can an object traveling at a constant speed not have a constant velocity?",
+                                            "definition": "Yes, when the object is changing direction; for example, moving in a circle."
+                                        },
+                                        {
+                                            "term": "Why does an object traveling at a constant speed in a circle not have a constant velocity?",
+                                            "definition": "Speed is a scalar quantity. Velocity is a vector quantity which means it can only be constant if the direction is constant. In circular motion, the direction is continuously changing, so velocity is constantly changing."
+                                        },
+                                        {
+                                            "term": "Resultant force acting on an object moving in a circle",
+                                            "definition": "Centripetal force, acts towards the centre of the circle."
+                                        },
+                                        {
+                                            "term": "Inertial mass",
+                                            "definition": "A measure of how difficult it is to change a given object's velocity. It's the ratio of force over acceleration."
+                                        },
+                                        {
+                                            "term": "Newton's Third Law",
+                                            "definition": "Whenever two objects interact, the forces that they exert on each other are always equal and opposite."
+                                        },
+                                        {
+                                            "term": "Equation for calculating momentum",
+                                            "definition": "Momentum = Mass x Velocity."
+                                        },
+                                        {
+                                            "term": "Unit used for momentum",
+                                            "definition": "kgm/s (kilogram metres per second)"
+                                        },
+                                        {
+                                            "term": "Momentum before and after a collision in a closed system",
+                                            "definition": "The total momentum before and after are equal."
+                                        },
+                                        {
+                                            "term": "Equation linking change in momentum, force, and time",
+                                            "definition": "Force x Time = Change in Momentum. FΔt = Δmv"
+                                        },
+                                        {
+                                            "term": "How to measure human reaction times",
+                                            "definition": "Using the ruler drop test. Person A and B hold each end of a ruler with the 0 cm mark at the bottom. Person A drops the ruler without telling person B. Person B catches it. The distance traveled corresponds to their reaction time."
+                                        },
+                                        {
+                                            "term": "Importance of having the 0cm mark at the bottom in measuring reaction times",
+                                            "definition": "So you can obtain the distance directly without having to calculate it; otherwise, a zero error would need to be accounted for."
+                                        },
+                                        {
+                                            "term": "Stopping distance of a vehicle",
+                                            "definition": "The sum of thinking distance and braking distance."
+                                        },
+                                        {
+                                            "term": "Typical range of values for human reaction time",
+                                            "definition": "0.2 seconds - 0.9 seconds"
+                                        },
+                                        {
+                                            "term": "Factors affecting a driver’s reaction time",
+                                            "definition": "1. Tiredness\n2. Drugs\n3. Alcohol"
+                                        },
+                                        {
+                                            "term": "Factors affecting braking distance",
+                                            "definition": "1. Adverse (wet/icy) road conditions\n2. Poor tyre/brake conditions"
+                                        },
+                                        {
+                                            "term": "Energy transfers when a car applies its brakes",
+                                            "definition": "Work is done by the friction force between the brakes and wheel. Kinetic energy of the wheel is converted to heat and is dissipated to the surroundings through the brake discs."
+                                        },
+                                        {
+                                            "term": "Relation between velocity increase and braking force applied to stop a car in a given distance",
+                                            "definition": "The braking force must also be increased."
+                                        },
+                                        {
+                                            "term": "Consequences of a vehicle undergoing very large decelerations",
+                                            "definition": "1. Kinetic energy converted to heat is very high causing brakes to overheat.\n2. Loss of control of the vehicle."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Conservation of Energy (paper1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Equation for gravity potential energy",
+                                            "definition": "mgh (Mass x Gravitational Field Strength x Height) Energy (J), Mass(kg), Gravitational Field Strength (N/kg), Height (m)"
+                                        },
+                                        {
+                                            "term": "Equation for kinetic energy",
+                                            "definition": "0.5 x Mass x (Velocity)^2 Energy (J), Mass(kg), Velocity(m/s)"
+                                        },
+                                        {
+                                            "term": "Conservation of energy",
+                                            "definition": "The total amount of energy in a closed system remains constant. Energy cannot be made or destroyed but can change from one form to another."
+                                        },
+                                        {
+                                            "term": "Energy changes when a ball is thrown upwards and returns",
+                                            "definition": "Upwards: KE is converted to GPE; Peak: Maximum GPE, zero KE; Downwards: GPE is converted to KE. KE (Kinetic Energy), GPE (Gravitational Potential Energy)"
+                                        },
+                                        {
+                                            "term": "Changes in total energy of a kicked ball",
+                                            "definition": "The total energy of the system remains constant due to the conservation of energy."
+                                        },
+                                        {
+                                            "term": "Energy changes in a filament light-bulb",
+                                            "definition": "Electrical energy is transferred into light and heat energy. Light is a useful energy form, heat is waste energy."
+                                        },
+                                        {
+                                            "term": "Energy transfers for a bungee jumper",
+                                            "definition": "When falling, the GPE is converted to KE of jumper; As the cord tightens, KE is converted and stored as Elastic Potential Energy (EPE); At lowest point, the jumper's initial GPE equals the EPE stored in the cord."
+                                        },
+                                        {
+                                            "term": "Why a bungee jumper slows down when the cord stretches",
+                                            "definition": "Kinetic energy decreases since it is converted to elastic potential energy. Since KE is proportional to velocity, as KE decreases, so does velocity."
+                                        },
+                                        {
+                                            "term": "Waste energy",
+                                            "definition": "The energy that is not used by the device for its desired purpose, or not converted into the desired form."
+                                        },
+                                        {
+                                            "term": "Equations to calculate efficiency",
+                                            "definition": "1. Useful Output Energy / Total Input Energy; 2. Useful Power Output / Total Power Output"
+                                        },
+                                        {
+                                            "term": "Consequence of high thermal conductivity",
+                                            "definition": "The rate of energy transfer through the material is higher than for a material with a lower thermal conductivity."
+                                        },
+                                        {
+                                            "term": "Thermal conductivity of double-glazed windows",
+                                            "definition": "Lower, meaning less energy transfers through them."
+                                        },
+                                        {
+                                            "term": "Methods of reducing heat loss in a building",
+                                            "definition": "1. Double glazing; 2. Loft and wall insulation; 3. Thicker walls."
+                                        },
+                                        {
+                                            "term": "Reducing unwanted energy transfer in a mechanical system",
+                                            "definition": "Reduce friction by lubricating moving parts."
+                                        },
+                                        {
+                                            "term": "Increasing efficiency of a system",
+                                            "definition": "1. Reducing waste output (by lubrication, thermal insulation etc.); 2. Recycling waste output (e.g., recycling thermal waste energy as input energy)."
+                                        },
+                                        {
+                                            "term": "Renewable energy resource",
+                                            "definition": "An energy source which can be replenished as it is being used up."
+                                        },
+                                        {
+                                            "term": "Examples of renewable energy resources",
+                                            "definition": "1. Wind Energy; 2. Hydro-Electricity; 3. Tidal Energy; 4. Solar Energy"
+                                        },
+                                        {
+                                            "term": "Example of a non-renewable energy resource",
+                                            "definition": "Fossil fuels (e.g., coal, oil, and gas)."
+                                        },
+                                        {
+                                            "term": "Advantages of generating power using gas rather than coal",
+                                            "definition": "Flexible Generation: Gas power stations have short start-up times so can be switched on/off more readily. Lower emissions of carbon dioxide."
+                                        },
+                                        {
+                                            "term": "Disadvantages of using renewable energy resources to generate power",
+                                            "definition": "Output often determined by external factors (like wind speed), so supply is uncertain. Renewable fuels often produce less energy per kg (so are less economical)."
+                                        },
+                                        {
+                                            "term": "Environmental impacts of burning fossil fuels",
+                                            "definition": "Carbon Dioxide contributes to the greenhouse effect, and causes global warming. Sulphur Dioxide leads to acid rain, which can damage buildings and crops."
+                                        },
+                                        {
+                                            "term": "Advantages of fossil fuels as an energy resource",
+                                            "definition": "1. Reliable: Not dependent on external factors so can generate power anytime; 2. Produce large amounts of energy per kg; 3. Still relatively abundant, so cost-effective."
+                                        },
+                                        {
+                                            "term": "Advantages of nuclear power",
+                                            "definition": "1. Very large amounts of energy per kg of fuel; 2. No greenhouse gases released, so doesn't contribute to climate change; 3. Low fuel costs."
+                                        },
+                                        {
+                                            "term": "Disadvantages of nuclear power",
+                                            "definition": "1. Produces nuclear waste which is harmful to humans & must be safely stored for centuries; 2. Non-Renewable energy source; 3. Risk of nuclear accidents, which have fatal consequences on humans and the environment."
+                                        },
+                                        {
+                                            "term": "Social factors in energy production",
+                                            "definition": "Visual Pollution, Sound Pollution (both of these are disadvantages of wind farms)."
+                                        },
+                                        {
+                                            "term": "How hydroelectric power produces energy",
+                                            "definition": "Rainwater collects behind a dam. When this water is released, it is used to turn a turbine. This turbine turns a generator which produces electricity."
+                                        },
+                                        {
+                                            "term": "Disadvantages of using biofuels",
+                                            "definition": "When plants are burned/decay they release CO2. In order to grow biofuels, you need to destroy land: Habitat destruction, CO2 released when plants are cleared (for example, if they are burned). Growing biofuels reduces the land available for food crops."
+                                        },
+                                        {
+                                            "term": "Advantages of tidal energy sources",
+                                            "definition": "No greenhouse gases. Fairly reliable - tides occur twice a day. Cheap to run as tides are natural, so free."
+                                        },
+                                        {
+                                            "term": "Disadvantages of hydroelectric power",
+                                            "definition": "The dam may cause flooding. It can cost a lot to install the required infrastructure."
+                                        },
+                                        {
+                                            "term": "Advantages of solar panels",
+                                            "definition": "They don't cause harm to the environment. They are a renewable resource. They can be used in remote areas where other types of energy are less accessible."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Waves (paper1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Waves transfer energy and information but do not transfer matter.",
+                                            "definition": "A fundamental property of waves where they propagate energy without moving the medium itself."
+                                        },
+                                        {
+                                            "term": "What are the two types of waves?",
+                                            "definition": "1. Transverse\n2. Longitudinal"
+                                        },
+                                        {
+                                            "term": "What is a transverse wave?",
+                                            "definition": "A wave in which the oscillations are perpendicular to the direction of energy transfer."
+                                        },
+                                        {
+                                            "term": "What is a longitudinal wave?",
+                                            "definition": "A wave in which the oscillations are parallel to the direction of energy transfer."
+                                        },
+                                        {
+                                            "term": "Give two examples of transverse waves.",
+                                            "definition": "1. Electromagnetic waves\n2. Seismic s-waves"
+                                        },
+                                        {
+                                            "term": "Give two examples of longitudinal waves.",
+                                            "definition": "1. Sound waves\n2. Seismic p-waves"
+                                        },
+                                        {
+                                            "term": "What are the two parts of a longitudinal wave called?",
+                                            "definition": "Compressions and rarefactions."
+                                        },
+                                        {
+                                            "term": "What are the two parts of a transverse wave called?",
+                                            "definition": "Peaks and troughs."
+                                        },
+                                        {
+                                            "term": "What is a wave’s amplitude?",
+                                            "definition": "The maximum displacement of a point on a wave from its undisturbed position."
+                                        },
+                                        {
+                                            "term": "What is wavelength?",
+                                            "definition": "The distance from a point on a wave to the same position on the adjacent wave. Most commonly peak to peak or trough to trough."
+                                        },
+                                        {
+                                            "term": "What is the frequency of a wave?",
+                                            "definition": "The number of waves that pass a given point each second."
+                                        },
+                                        {
+                                            "term": "What is the unit used for frequency?",
+                                            "definition": "Hertz, Hz"
+                                        },
+                                        {
+                                            "term": "What is meant by a frequency of 200Hz?",
+                                            "definition": "200 waves pass a given point each second."
+                                        },
+                                        {
+                                            "term": "What is wave speed?",
+                                            "definition": "The speed at which energy is transferred through a medium."
+                                        },
+                                        {
+                                            "term": "What does a wave transfer?",
+                                            "definition": "Energy."
+                                        },
+                                        {
+                                            "term": "What is wave velocity?",
+                                            "definition": "Wave velocity (measured in metres per second) is equal to the product of the wavelength and frequency of the wave."
+                                        },
+                                        {
+                                            "term": "State the equation used to calculate wave speed. Give appropriate units.",
+                                            "definition": "Wave Speed = Frequency x Wavelength\nSpeed (m/s), Frequency (Hz), Wavelength (m)"
+                                        },
+                                        {
+                                            "term": "What is meant by the period of the wave?",
+                                            "definition": "The length of time it takes for one full wave to pass through a point."
+                                        },
+                                        {
+                                            "term": "What word is used to describe when a wave bounces off a surface?",
+                                            "definition": "Reflection."
+                                        },
+                                        {
+                                            "term": "What is the normal (in terms of reflection and refraction)?",
+                                            "definition": "A vertical imaginary line which is perpendicular to the boundary."
+                                        },
+                                        {
+                                            "term": "What occurs when light is reflected off a boundary?",
+                                            "definition": "It bounces off a smooth flat surface so that the angle of incidence (the angle it comes in at) is the same as the angle of reflection (the angle it leaves at)."
+                                        },
+                                        {
+                                            "term": "What is refraction?",
+                                            "definition": "Refraction is the change in speed of a wave as it reaches a boundary between two media, usually resulting in a change in direction (if it enters at an angle)."
+                                        },
+                                        {
+                                            "term": "What occurs when light is refracted at a boundary?",
+                                            "definition": "The light changes speed and direction in the new medium. If the new medium is more dense, the light will travel slower and bend towards the normal. If the new medium is less dense, the light will travel faster and bend away from the normal."
+                                        },
+                                        {
+                                            "term": "When entering a denser material, light waves...",
+                                            "definition": "...slow down and bend towards the normal."
+                                        },
+                                        {
+                                            "term": "When entering a less dense material, light waves...",
+                                            "definition": "...speed up and bend away from the normal."
+                                        },
+                                        {
+                                            "term": "How can refraction be measured?",
+                                            "definition": "The angle of incidence, i, and angle of refraction, r, can be measured and compared. All angles are measured relative to the normal."
+                                        },
+                                        {
+                                            "term": "What are the effects of absorption of different wavelengths of waves in different mediums? (Higher)",
+                                            "definition": "Some materials behave differently depending on the wavelength. An example is glass which will transmit visible light, but reflect UV light."
+                                        },
+                                        {
+                                            "term": "How do sound waves travel through a solid? (Higher)",
+                                            "definition": "The particles in the solid vibrate and transfer kinetic energy through the material."
+                                        },
+                                        {
+                                            "term": "How does the human ear work? (Higher)",
+                                            "definition": "The outer ear collects the sound which travels into the ear. The sound waves cause the eardrum to vibrate at the same frequency. This is amplified by three ossicles (small bones). This causes the hair in the cochlea to vibrate. The cochlea converts the vibrations into electrical signals. The signals are passed to brain through the auditory nerve. The brain converts the electrical signals into sound."
+                                        },
+                                        {
+                                            "term": "What is the frequency range of human hearing? (Higher)",
+                                            "definition": "20 Hz - 20kHz (1kHz = 1000 Hz)"
+                                        },
+                                        {
+                                            "term": "What is an ultrasound wave? (Higher)",
+                                            "definition": "A sound wave with a frequency greater than 20,000 Hz."
+                                        },
+                                        {
+                                            "term": "What is sound of frequencies less than 20Hz called? (Higher)",
+                                            "definition": "Infrasound."
+                                        },
+                                        {
+                                            "term": "What natural event causes seismic waves to be produced? What types are produced? (Higher)",
+                                            "definition": "Earthquakes. They produce both P-waves and S-waves."
+                                        },
+                                        {
+                                            "term": "Are P waves transverse or longitudinal? (Higher)",
+                                            "definition": "Longitudinal."
+                                        },
+                                        {
+                                            "term": "Are S waves transverse or longitudinal? (Higher)",
+                                            "definition": "Transverse."
+                                        },
+                                        {
+                                            "term": "State a difference between the mediums that P-waves and S-waves can travel through. (Higher)",
+                                            "definition": "P-waves travel through both solids and liquids. S-waves only travel through solids (not liquids)."
+                                        },
+                                        {
+                                            "term": "What is the significance of P and S waves? (Higher)",
+                                            "definition": "They provide evidence that the Earth has a liquid core; only P waves produced by an earthquake can be detected on the other side of the globe."
+                                        },
+                                        {
+                                            "term": "What technique is used to detect objects in deep water and measure water depth? (Higher)",
+                                            "definition": "Echo sounding. High frequency sound waves are emitted, reflected and detected. Time difference between emission and detection, alongside wave speed, are used to calculate distances."
+                                        },
+                                        {
+                                            "term": "How does sonar work? (Higher)",
+                                            "definition": "When ultrasound waves are emitted they reflect off boundaries and their echoes are detected. The speed of the ultrasound is known and also the time it takes to detect the echoes. The equation distance=speed x time is used to find the distance travelled. The distance travelled is halved to give the distance between emitter and boundary (as the wave had to travel there and back."
+                                        },
+                                        {
+                                            "term": "How does foetal scanning work? (Higher)",
+                                            "definition": "An ultrasound wave is sent into the patient's body. It passes through the body and reflects off the organs and tissue. The device then uses the reflected ultrasound waves to produce an image of the foetus. Ultrasound is safe and therefore does not damage cells."
+                                        }
+                                    ]   
+                                },
+                                {
+                                    "title": "Light and Electromagnetic Spectrum (paper1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "total internal reflection",
+                                            "definition": "When light is completely reflected back at a boundary between two mediums. It occurs when light meets a less dense medium at an angle of incidence larger than the critical angle."
+                                        },
+                                        {
+                                            "term": "critical angle",
+                                            "definition": "The angle of incidence which causes the angle of reflection to be 90 degrees."
+                                        },
+                                        {
+                                            "term": "colour of visible light waves",
+                                            "definition": "The wavelength and frequency of the light waves."
+                                        },
+                                        {
+                                            "term": "colour of visible light with highest frequency",
+                                            "definition": "Blue."
+                                        },
+                                        {
+                                            "term": "colour of visible light with largest wavelength",
+                                            "definition": "Red."
+                                        },
+                                        {
+                                            "term": "specular reflection",
+                                            "definition": "Rays are reflected from a smooth surface in a single direction."
+                                        },
+                                        {
+                                            "term": "diffuse reflection",
+                                            "definition": "Reflection from a rough surface which causes scattering."
+                                        },
+                                        {
+                                            "term": "red colour filter",
+                                            "definition": "A red filter absorbs all wavelengths of light other than those in the red range of the spectrum. This means only red light passes through the filter."
+                                        },
+                                        {
+                                            "term": "opaque",
+                                            "definition": "Not see-through."
+                                        },
+                                        {
+                                            "term": "governs the colour of an opaque object",
+                                            "definition": "Different objects reflect different wavelengths of light by different amounts. The wavelengths that are most strongly reflected determine the colour."
+                                        },
+                                        {
+                                            "term": "unreflected wavelengths by an opaque object",
+                                            "definition": "Any wavelengths that aren't reflected are absorbed by the object."
+                                        },
+                                        {
+                                            "term": "colour of an object with all wavelengths reflected equally",
+                                            "definition": "White."
+                                        },
+                                        {
+                                            "term": "colour of an object with all wavelengths absorbed",
+                                            "definition": "Black."
+                                        },
+                                        {
+                                            "term": "types of waves electromagnetic waves are",
+                                            "definition": "Transverse."
+                                        },
+                                        {
+                                            "term": "what electromagnetic waves transfer",
+                                            "definition": "Energy (not matter)."
+                                        },
+                                        {
+                                            "term": "type of spectrum electromagnetic waves form",
+                                            "definition": "A continuous spectrum."
+                                        },
+                                        {
+                                            "term": "order of electromagnetic spectrum in increasing wavelength",
+                                            "definition": "Gamma, X Ray, UV, Visible, Infrared, Microwaves, Radio."
+                                        },
+                                        {
+                                            "term": "highest frequency electromagnetic wave",
+                                            "definition": "Gamma waves."
+                                        },
+                                        {
+                                            "term": "highest energy electromagnetic wave",
+                                            "definition": "Gamma waves."
+                                        },
+                                        {
+                                            "term": "properties shared by all electromagnetic waves",
+                                            "definition": "They are all transverse waves. They all travel at the same speed (3x10^8 m/s). They can travel through a vacuum."
+                                        },
+                                        {
+                                            "term": "range of frequencies of electromagnetic waves detectable by the human eye",
+                                            "definition": "400-700 nanometres."
+                                        },
+                                        {
+                                            "term": "difference in speeds of EM radiation in vacuum and air",
+                                            "definition": "Electromagnetic waves all travel at the same speed in a vacuum and in air."
+                                        },
+                                        {
+                                            "term": "what can happen when radiation strikes an object",
+                                            "definition": "It can be transmitted, reflected, or absorbed."
+                                        },
+                                        {
+                                            "term": "what all bodies (objects) emit and absorb",
+                                            "definition": "Infrared radiation."
+                                        },
+                                        {
+                                            "term": "quantity of infrared radiation emitted by an object with increasing temperature",
+                                            "definition": "The hotter the object, the more infrared radiation it will emit."
+                                        },
+                                        {
+                                            "term": "type of radiation emitted by an object with increasing temperature",
+                                            "definition": "The hotter the body the shorter the wavelength of radiation released (e.g., X rays and gamma rays)."
+                                        },
+                                        {
+                                            "term": "requirement for a body to be at a constant temperature",
+                                            "definition": "The body would need to emit radiation at the same rate it absorbs it - it needs to radiate at the same average power that it absorbs."
+                                        },
+                                        {
+                                            "term": "intensity",
+                                            "definition": "The power transferred per unit area; it is a measure of the energy transferred by a wave."
+                                        },
+                                        {
+                                            "term": "effect of average power radiated less than absorbed by an object",
+                                            "definition": "The temperature of the object will decrease."
+                                        },
+                                        {
+                                            "term": "rates of emission and absorption for a body increasing in temperature",
+                                            "definition": "The body is absorbing radiation faster than it is emitting it."
+                                        },
+                                        {
+                                            "term": "factors affecting the temperature of the Earth",
+                                            "definition": "1. The Earth's rate of absorption and emission of radiation. 2. The amount of reflection of radiation into space."
+                                        },
+                                        {
+                                            "term": "how the Earth's atmosphere affects radiation",
+                                            "definition": "The atmosphere largely absorbs or reflects radiation from the sun, preventing it from reaching Earth. Some radiation, however, is allowed to pass through and warms the earth."
+                                        },
+                                        {
+                                            "term": "fate of radiation emitted from the Earth",
+                                            "definition": "It is absorbed and re-emitted in all directions by greenhouse gases, resulting in the greenhouse effect which warms the earth."
+                                        },
+                                        {
+                                            "term": "waves produced by oscillations in an electrical circuit",
+                                            "definition": "Radio waves."
+                                        },
+                                        {
+                                            "term": "how radio waves create an alternating current in a circuit",
+                                            "definition": "When radio waves are absorbed, they can induce oscillations in a circuit with the same frequency as the waves themselves."
+                                        },
+                                        {
+                                            "term": "origin of gamma rays",
+                                            "definition": "They originate from changes in the nuclei of atoms."
+                                        },
+                                        {
+                                            "term": "health effects of ultraviolet waves",
+                                            "definition": "They can cause the skin to age prematurely. They can increase the risk of developing skin cancer."
+                                        },
+                                        {
+                                            "term": "health effects of X-rays and Gamma rays",
+                                            "definition": "They are ionizing radiation so can cause mutations in genes. They can lead to increased risk of developing various cancers."
+                                        },
+                                        {
+                                            "term": "health effects of infrared rays",
+                                            "definition": "Infrared waves can cause burns to skin/tissue."
+                                        },
+                                        {
+                                            "term": "effect of electromagnetic radiation on electron arrangement in atoms",
+                                            "definition": "Absorption or emission of electromagnetic radiation can cause electron arrangement to change. (It can remove electrons from the atom or move electrons further from the nucleus)."
+                                        },
+                                        {
+                                            "term": "how atoms become ions",
+                                            "definition": "By losing an outer electron."
+                                        },
+                                        {
+                                            "term": "effects of body cells absorbing radiation",
+                                            "definition": "Large amounts can damage cells. Smaller amounts cause mutation, causing cells to divide rapidly, which can lead to cancer."
+                                        },
+                                        {
+                                            "term": "use of radio waves",
+                                            "definition": "Communications, because radio waves are long wavelength and can travel long distances without losing quality."
+                                        },
+                                        {
+                                            "term": "use of microwaves",
+                                            "definition": "Cooking, as microwaves are absorbed by and heat fat/water in foods."
+                                        },
+                                        {
+                                            "term": "uses of infrared radiation",
+                                            "definition": "Cooking food (as it transfers thermal energy), infrared cameras, short-range communication."
+                                        },
+                                        {
+                                            "term": "uses of UV radiation",
+                                            "definition": "Sterilization, as it kills bacteria, energy-efficient lamps, as it radiates low heat but high energy, and sun tanning, etc."
+                                        },
+                                        {
+                                            "term": "uses of X rays",
+                                            "definition": "Medical imaging and treatment, because they are very high energy and can easily penetrate body tissues."
+                                        },
+                                        {
+                                            "term": "uses of gamma rays",
+                                            "definition": "Gamma rays are used in medical treatments, such as radiotherapy in the treatment of cancer."
+                                        },
+                                        {
+                                            "term": "most dangerous waves of the EM spectrum and why",
+                                            "definition": "Gamma and X rays, as they have the highest energy."
+                                        }
+                                    ]      
+                                },
+                                {
+                                    "title": "Radioactivity (paper1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Approximation for the radius of an atom",
+                                            "definition": "1x10^-10 metres"
+                                        },
+                                        {
+                                            "term": "Three subatomic constituents of an atom",
+                                            "definition": "1. Proton\n2. Neutron\n3. Electron"
+                                        },
+                                        {
+                                            "term": "Where most of the mass of an atom is concentrated",
+                                            "definition": "In the nucleus."
+                                        },
+                                        {
+                                            "term": "Approximate proportion of the total radius of an atom that is the radius of the nucleus",
+                                            "definition": "1/10,000"
+                                        },
+                                        {
+                                            "term": "Arrangement of protons, neutrons, and electrons in an atom",
+                                            "definition": "Protons and neutrons are found in the atom's nucleus. Electrons are found in discrete energy levels around the nucleus."
+                                        },
+                                        {
+                                            "term": "Type of charge the nucleus of an atom has and why",
+                                            "definition": "Positive charge. The nucleus contains protons, which have a positive charge, and neutrons, which have no charge."
+                                        },
+                                        {
+                                            "term": "Two ways an atom's electron arrangement can be changed",
+                                            "definition": "1. Absorbing electromagnetic radiation\n2. Emitting electromagnetic radiation"
+                                        },
+                                        {
+                                            "term": "Change in an atom's electron arrangement when it absorbs EM radiation",
+                                            "definition": "Electrons move to higher energy levels, away from the nucleus."
+                                        },
+                                        {
+                                            "term": "Change in an atom's electron arrangement when it emits EM radiation",
+                                            "definition": "Electrons move to a lower energy level, towards the nucleus."
+                                        },
+                                        {
+                                            "term": "How the ratio of electrons to protons in an atom results in no overall charge",
+                                            "definition": "The number of protons is equal to the number of electrons. Protons and electrons have equal and opposite charges, so the charges cancel."
+                                        },
+                                        {
+                                            "term": "What all forms of the same element have in common",
+                                            "definition": "The number of protons."
+                                        },
+                                        {
+                                            "term": "Name given to the number of protons in an atom",
+                                            "definition": "Atomic Number"
+                                        },
+                                        {
+                                            "term": "Atom's mass number",
+                                            "definition": "The total number of protons and neutrons in the atom."
+                                        },
+                                        {
+                                            "term": "Isotope of an atom",
+                                            "definition": "An atom of an element that has a different number of neutrons but the same number of protons."
+                                        },
+                                        {
+                                            "term": "Property that differs between isotopes of an element",
+                                            "definition": "The mass of the atom."
+                                        },
+                                        {
+                                            "term": "How atoms turn into positive ions",
+                                            "definition": "They lose one or more of their outer electrons. Electrons are negatively charged, so the resultant charge of the atom is positive."
+                                        },
+                                        {
+                                            "term": "Relative masses of a proton, neutron, and electron",
+                                            "definition": "1 - proton\n1 - neutron\n1/1850 - electron"
+                                        },
+                                        {
+                                            "term": "Relative charge of a proton",
+                                            "definition": "+1"
+                                        },
+                                        {
+                                            "term": "Relative charge of an electron",
+                                            "definition": "-1"
+                                        },
+                                        {
+                                            "term": "Four types of nuclear radiation",
+                                            "definition": "1. Alpha particles\n2. Beta particles\n3. Gamma rays\n4. Neutrons"
+                                        },
+                                        {
+                                            "term": "Meaning of background radiation",
+                                            "definition": "Radiation that is always present. It is in very small amounts and so not harmful."
+                                        },
+                                        {
+                                            "term": "Four sources of background radiation",
+                                            "definition": "1. Rocks\n2. Cosmic rays from space\n3. Nuclear weapon testing\n4. Nuclear accidents"
+                                        },
+                                        {
+                                            "term": "Ways to measure background radiation",
+                                            "definition": "1. Photographic film\n2. Geiger-Muller counter"
+                                        },
+                                        {
+                                            "term": "How photographic film is used to measure radiation",
+                                            "definition": "A photographic film turns dark when it absorbs radiation. This is useful for people who work on radiation as the more radiation they are exposed to, the darker the film becomes. Therefore, the workers know when they have been exposed to too much radiation."
+                                        },
+                                        {
+                                            "term": "How Geiger-Muller tubes are used to measure radiation",
+                                            "definition": "When the Geiger-Muller tube absorbs radiation, it produces a pulse, which a machine uses to count the amount of radiation. The frequency of the pulse depends on how much radiation is present. A high frequency would mean the tube is absorbing a large amount of radiation."
+                                        },
+                                        {
+                                            "term": "Constituents of an alpha particle",
+                                            "definition": "Two protons and two neutrons. It is the same as a helium nucleus."
+                                        },
+                                        {
+                                            "term": "Range of an alpha particle through air",
+                                            "definition": "A few centimeters (normally in the range of 2-10cm)."
+                                        },
+                                        {
+                                            "term": "What blocks beta radiation",
+                                            "definition": "A thin sheet of aluminum. Several meters of air."
+                                        },
+                                        {
+                                            "term": "What blocks gamma radiation",
+                                            "definition": "Several centimeters of lead. A few meters of concrete."
+                                        },
+                                        {
+                                            "term": "Type of radiation most ionizing",
+                                            "definition": "Alpha radiation."
+                                        },
+                                        {
+                                            "term": "Type of radiation least ionizing",
+                                            "definition": "Gamma radiation."
+                                        },
+                                        {
+                                            "term": "Effect of gamma emission on the mass/charge of an atom",
+                                            "definition": "Both mass and charge remain unchanged."
+                                        },
+                                        {
+                                            "term": "Plum-pudding model of the atom",
+                                            "definition": "A sphere of positive charge, with the negatively charged electrons distributed evenly throughout it."
+                                        },
+                                        {
+                                            "term": "Belief about the atom prior to the discovery of the electron",
+                                            "definition": "The atom was believed to be indivisible."
+                                        },
+                                        {
+                                            "term": "Experiment that led to the plum-pudding model being discarded",
+                                            "definition": "Rutherford's alpha-Scattering experiment."
+                                        },
+                                        {
+                                            "term": "Currently accepted model of the atom",
+                                            "definition": "The Bohr model."
+                                        },
+                                        {
+                                            "term": "Description of Rutherford's experiment",
+                                            "definition": "Alpha particles (charge +2) were fired at a thin sheet of gold foil. Most particles went straight through. Some particles were deflected by small angles (< 90°). A few particles were deflected by large angles (> 90°)."
+                                        },
+                                        {
+                                            "term": "Conclusions of Rutherford's experiment",
+                                            "definition": "Most of an atom is empty space. The nucleus has a positive charge. Most of the mass is concentrated in the nucleus."
+                                        },
+                                        {
+                                            "term": "Process of beta plus decay",
+                                            "definition": "A proton turns into a neutron and a positron (in order to conserve charge)."
+                                        },
+                                        {
+                                            "term": "Process when a neutron changes into a proton and an electron",
+                                            "definition": "Beta minus decay."
+                                        },
+                                        {
+                                            "term": "Changes in atomic number and mass number during alpha decay",
+                                            "definition": "The atomic number decreases by 2. The mass number decreases by 4. A new element is made since the atomic number has changed."
+                                        },
+                                        {
+                                            "term": "Effects of beta minus decay on the mass number and atomic number of an atom",
+                                            "definition": "The mass number stays the same as the total number of neutrons and protons hasn't changed (one has just turned into the other). The atomic number increases since there is one more proton."
+                                        },
+                                        {
+                                            "term": "Definition of the activity of an unstable nucleus",
+                                            "definition": "Activity is the rate at which a source of unstable nuclei decays."
+                                        },
+                                        {
+                                            "term": "Unit of radioactive activity",
+                                            "definition": "Becquerel (Bq)"
+                                        },
+                                        {
+                                            "term": "Definition of count-rate",
+                                            "definition": "The number of radioactive decays per second for a radioactive source."
+                                        },
+                                        {
+                                            "term": "Example of a detector that may be used to measure count-rate",
+                                            "definition": "Geiger-Muller tube"
+                                        },
+                                        {
+                                            "term": "Nature of radioactive decay",
+                                            "definition": "Random. Which nuclei decays and when is determined only by chance. It is impossible to predict which nuclei will decay and when."
+                                        },
+                                        {
+                                            "term": "Definition of the half-life of a radioactive isotope",
+                                            "definition": "The time it takes for the number of unstable nuclei in a substance to halve. The time it takes for the count rate from a sample to fall to half its initial level."
+                                        },
+                                        {
+                                            "term": "Example uses of radioactivity",
+                                            "definition": "Household fire alarms (smoke). Irradiating food. Sterilization of equipment. Tracing and gauging thicknesses of materials. Diagnosis and treatment of cancer."
+                                        },
+                                        {
+                                            "term": "How a household fire alarm works with radioactivity",
+                                            "definition": "A radioactive substance is in the alarm which emits alpha radiation. The emitted alpha particle ionizes the air in the detector and causes a current to flow between the plates. When smoke interferes with the radiation, the air is no longer ionized and so no current can flow. This reduction in current flow triggers the alarm."
+                                        },
+                                        {
+                                            "term": "Two uses of nuclear radiation in medicine",
+                                            "definition": "1. Examining of internal organs\n2. Radiotherapy in the treatment of cancer"
+                                        },
+                                        {
+                                            "term": "Role of beta radiation in tracers",
+                                            "definition": "The tracer is inserted in your body and targets a specific part of the body. The radioactive substance in the tracer releases beta radiation which can be detected by external machines."
+                                        },
+                                        {
+                                            "term": "How beta radiation is used to determine thickness",
+                                            "definition": "A beta source is placed above the material and a detector is placed below it. If there is an increase in radiation detected by the detector, too much radiation is passing through the material, and so it is too thin. If there is a decrease in radiation detected, then the material blocks too much radiation, and so it is too thick."
+                                        },
+                                        {
+                                            "term": "Why ionizing radiation is dangerous",
+                                            "definition": "It can damage tissue and kill cells. It can cause cell mutations."
+                                        },
+                                        {
+                                            "term": "Consequence of cell mutation",
+                                            "definition": "Cancer."
+                                        },
+                                        {
+                                            "term": "Precautions people should take when using ionizing radiation",
+                                            "definition": "Avoid handling the source directly (use tongs). Wear radiation protective clothing. Keep the radiation in lead containers to reduce the amount of radiation that can escape. Keep exposure time to a minimum."
+                                        },
+                                        {
+                                            "term": "Whether a long half-life or a short half-life makes a source more dangerous",
+                                            "definition": "If it has a long half-life then it would remain highly radioactive for longer, therefore making it more dangerous."
+                                        },
+                                        {
+                                            "term": "Precautions taken to reduce harm for doctors and patients using ionizing radiation",
+                                            "definition": "Only a small dose is given to the patient so they are not exposed to too much. The radiation used has a short half-life so it won't remain highly radioactive for long. This reduces the risk to the doctors using it as well as the patient. Doctors and patients (when applicable) wear protective clothing."
+                                        },
+                                        {
+                                            "term": "Definition of radioactive contamination",
+                                            "definition": "The presence of unwanted radioactive nuclei on other materials."
+                                        },
+                                        {
+                                            "term": "Definition of irradiation",
+                                            "definition": "The process of exposing a material to nuclear radiation. The material does not become radioactive."
+                                        },
+                                        {
+                                            "term": "How a radioactive tracer is used in medicine",
+                                            "definition": "The tracer is placed inside the body (it can be in a drink, eaten or injected). The tracer releases gamma radiation which is detected by a detector which moves around the body. This can then be used to produce a picture of the patient's body."
+                                        },
+                                        {
+                                            "term": "How a PET scanner works",
+                                            "definition": "PET (positron emission tomography) uses a tracer, which is injected into the patient's body. The scanner detects the gamma rays which are released by the tracer. Multiple images are taken and this is used to form a 3D image of the patient's body."
+                                        },
+                                        {
+                                            "term": "Importance of where isotopes used in PET scanners are produced",
+                                            "definition": "They must be produced near the hospital because the isotopes used have a short half-life so must be used soon after production."
+                                        },
+                                        {
+                                            "term": "Advantages of nuclear power for generating electricity",
+                                            "definition": "Nuclear fuels do not produce carbon dioxide. The fuel is readily available, so would reduce strain on the fossil fuel supplies. Less nuclear fuel has to be used to produce the same amount of energy as burning fossil fuel. Does not contribute to global warming."
+                                        },
+                                        {
+                                            "term": "Disadvantages of nuclear power for generating electricity",
+                                            "definition": "Unpopular - the public perceive nuclear power as very dangerous. Security risks as the radioactive substances can be useful for terrorists. Expensive to commission and decommission the stations - which may be bad for a country's economy. The radioactive waste can be difficult to dispose of and will remain radioactive for many years - which can be dangerous to humans and the environment. Risk of nuclear accidents."
+                                        },
+                                        {
+                                            "term": "Definition of nuclear fission",
+                                            "definition": "The splitting of large, unstable nuclei to form smaller more stable nuclei (+ the emission of spare neutrons)."
+                                        },
+                                        {
+                                            "term": "What usually needs to happen to induce fission",
+                                            "definition": "The unstable nuclei must absorb a neutron. Spontaneous fission (where no neutron absorption occurs) is rare."
+                                        },
+                                        {
+                                            "term": "Components of the core of a nuclear reactor",
+                                    
+                                    
+                                            "definition": "1. Fuel rods\n2. Control rods\n3. Moderator"
+                                        },
+                                        {
+                                            "term": "Process during a chain reaction in a nuclear reactor",
+                                            "definition": "An unstable nucleus absorbs a neutron. The nucleus undergoes fission and releases 2 or 3 further neutrons. These induce more fission, which results in a chain reaction."
+                                        },
+                                        {
+                                            "term": "Consequence of an uncontrolled chain reaction",
+                                            "definition": "The rate of fission events becomes too high and results in the production of too much energy. This can lead to a nuclear explosion."
+                                        },
+                                        {
+                                            "term": "How the chain reaction in a fission reactor is kept under control",
+                                            "definition": "Control rods are positioned in between the fuel rods. The rate of fission is controlled by moving these rods up and down. The lower the rods are inserted, the slower the rate of fission."
+                                        },
+                                        {
+                                            "term": "Role of the moderator in a nuclear reactor",
+                                            "definition": "To slow down the neutrons so they are travelling at speeds which allow them to be absorbed by fissile nuclei and cause fission."
+                                        },
+                                        {
+                                            "term": "How electricity is produced in a nuclear power station",
+                                            "definition": "The reactions release thermal energy. The thermal energy is used to boil water and then produce steam. This steam is then used to turn a turbine which starts the generator."
+                                        },
+                                        {
+                                            "term": "Definition of nuclear fusion",
+                                            "definition": "When two light nuclei join to produce a heavier nucleus and release energy."
+                                        },
+                                        {
+                                            "term": "Isotopes of hydrogen commonly used in nuclear fusion",
+                                            "definition": "Deuterium and Tritium"
+                                        },
+                                        {
+                                            "term": "Which releases more energy, nuclear fission or nuclear fusion",
+                                            "definition": "Nuclear fusion."
+                                        },
+                                        {
+                                            "term": "Difficulty of generating energy through nuclear fusion",
+                                            "definition": "Fusion requires very high temperatures which in itself requires large quantities of energy. Currently, the production of fusion results in a net loss of energy."
+                                        },
+                                        {
+                                            "term": "Example of where fusion occurs",
+                                            "definition": "In the sun - stars use fusion as their energy source."
+                                        },
+                                        {
+                                            "term": "Reason why nuclear fusion requires so much energy",
+                                            "definition": "This is because both nuclei are positive therefore a lot of energy is required to overcome the electrostatic repulsion between the two nuclei."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Astronomy (paper1)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Why does your weight vary across planets?",
+                                            "definition": "Your weight is dependent on g, since weight = mass x g. The gravitational field strength (g) of a planet varies depending on the size of the planet. This means that your weight will also vary."
+                                        },
+                                        {
+                                            "term": "What is gravitational field strength on Earth?",
+                                            "definition": "Approximately 10 N/kg."
+                                        },
+                                        {
+                                            "term": "What does our solar system consist of?",
+                                            "definition": "The sun (our star), 8 Planets (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune), The planet's natural satellites (i.e., the moon), Dwarf planets, Comets and asteroids."
+                                        },
+                                        {
+                                            "term": "Name the planets in order, starting with the closest to the sun.",
+                                            "definition": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+                                        },
+                                        {
+                                            "term": "What did Ptolemy suggest about the universe?",
+                                            "definition": "That the earth was at the center."
+                                        },
+                                        {
+                                            "term": "What did Copernicus suggest about the universe?",
+                                            "definition": "That the sun is at the center and the planets orbit it."
+                                        },
+                                        {
+                                            "term": "What did Galileo contribute to theories about the universe?",
+                                            "definition": "He used telescopes to support Copernicus' suggestions about the sun and suggested that moons orbit planets."
+                                        },
+                                        {
+                                            "term": "Describe the orbits of moons, planets, comets, and artificial satellites.",
+                                            "definition": "They orbit in an elliptical shape."
+                                        },
+                                        {
+                                            "term": "Explain why for a stable orbit, the radius of orbit must change if the speed changes.",
+                                            "definition": "At higher speeds, the object requires a greater centripetal force. For a greater centripetal force, the gravitational force must increase. This is achieved by the radius of the orbit being reduced."
+                                        },
+                                        {
+                                            "term": "Explain how the force of gravity acting on a satellite affects its speed and velocity.",
+                                            "definition": "The force can alter its velocity since the direction is continually changing. It can't cause a change of speed since there is no force component in the direction of motion."
+                                        },
+                                        {
+                                            "term": "Describe the Steady State theory.",
+                                            "definition": "The Steady State theory says that the universe has always existed but is expanding and creating matter to counteract the loss in density."
+                                        },
+                                        {
+                                            "term": "Describe the Big Bang theory.",
+                                            "definition": "The Big Bang theory states that the universe expanded from a very small dense point about 14 billion years ago."
+                                        },
+                                        {
+                                            "term": "What is red-shift?",
+                                            "definition": "A perceived increase in the wavelength of light due to the source moving away from the observer."
+                                        },
+                                        {
+                                            "term": "What does red-shift provide evidence for?",
+                                            "definition": "The universe is expanding. This supports the Big Bang theory."
+                                        },
+                                        {
+                                            "term": "What does the Big Bang theory suggest?",
+                                            "definition": "The entire universe started from a very small, hot and dense region in space."
+                                        },
+                                        {
+                                            "term": "Compare the observed red-shift of two galaxies, one further away than the other.",
+                                            "definition": "The galaxy that is further away is traveling faster. The observed red-shift is greater the further away it is."
+                                        },
+                                        {
+                                            "term": "What did scientists observe to provide evidence that the universe is expanding at an ever faster rate?",
+                                            "definition": "They observed supernovae, which suggested that galaxies are moving away at an ever faster rate."
+                                        },
+                                        {
+                                            "term": "Prior to observations of supernovae, what was believed about the rate of expansion of the universe and why?",
+                                            "definition": "The rate of expansion was expected to occur more slowly. It was thought that gravitational forces would cause this slowing down."
+                                        },
+                                        {
+                                            "term": "What does CMBR stand for?",
+                                            "definition": "Cosmic Microwave Background Radiation."
+                                        },
+                                        {
+                                            "term": "What does CMBR provide further evidence for?",
+                                            "definition": "The Big Bang Theory. It is believed that CMBR originates from radiation produced in the big bang."
+                                        },
+                                        {
+                                            "term": "How does the existence of CMBR support the expansion of the universe?",
+                                            "definition": "It is thought that gamma radiation was released in the Big Bang. The expansion of the universe has stretched this radiation, resulting in the microwave radiation present today."
+                                        },
+                                        {
+                                            "term": "What factor determines the type of lifecycle a star undergoes?",
+                                            "definition": "The size of the star."
+                                        },
+                                        {
+                                            "term": "Which two phases do all stars of the same or greater size than the sun undergo?",
+                                            "definition": "1. Protostar phase, 2. Main sequence phase."
+                                        },
+                                        {
+                                            "term": "What do stars like the sun become at the end of their life-cycle?",
+                                            "definition": "A black dwarf."
+                                        },
+                                        {
+                                            "term": "What two things can stars much bigger than the sun become at the end of their lifecycle?",
+                                            "definition": "1. Neutron star, 2. Black hole."
+                                        },
+                                        {
+                                            "term": "What two phases do stars of similar size to the sun go through between being a main sequence star and a black dwarf?",
+                                            "definition": "1. Red giant, 2. White dwarf."
+                                        },
+                                        {
+                                            "term": "What two phases do stars of greater size than the sun go through between being a main sequence star and a neutron star/black hole?",
+                                            "definition": "1. Red supergiant, 2. Supernova."
+                                        },
+                                        {
+                                            "term": "Describe the transition of the star from the nebula stage to the main sequence.",
+                                            "definition": "The nebula increases in size until it is pulled in due to its gravity, causing gravitational potential energy to turn into kinetic energy. The collisions between particles cause this kinetic energy to turn into thermal energy. Eventually, the nebula will become dense and hot enough to begin fusion."
+                                        },
+                                        {
+                                            "term": "What occurs when a star transitions to the main sequence star?",
+                                            "definition": "The fusion in the star releases energy. This energy balances out with the gravitational potential energy leaving the star. The star is in equilibrium so will not collapse due to gravity or expand due to radioactive behavior. It is stable."
+                                        },
+                                        {
+                                            "term": "What happens when a star transitions to the red giant stage?",
+                                            "definition": "Once all of the hydrogen fuel has been used up, the star begins to fuse helium and other larger nuclei. This causes the star to expand and become a red giant."
+                                        },
+                                        {
+                                            "term": "How does a red giant become a white dwarf?",
+                                            "definition": "Once all reactions have taken place, the star's gravity pulls in all of its mass, making a small, dense white dwarf. This will cool down to form a black dwarf."
+                                        },
+                                        {
+                                            "term": "Why are telescopes located outside the Earth's atmosphere?",
+                                            "definition": "The Earth's atmosphere absorbs many electromagnetic waves, making it difficult to detect certain waves. Light pollution can make some images less clear. Telescopes in space can operate both night and day."
+                                        },
+                                        {
+                                            "term": "What is the disadvantage of telescopes located outside the Earth's atmosphere?",
+                                            "definition": "They are difficult to maintain as they have to be repaired in space (or brought down, which is unreasonably expensive)."
+                                        },
+                                        {
+                                            "term": "What are the disadvantages of optical telescopes?",
+                                            "definition": "They can only be used at night when the sky is clear. They can't be used when the weather is cloudy etc."
+                                        },
+                                        {
+                                            "term": "Evaluate the use of radio telescopes.",
+                                            "definition": "They are not weather dependent; for example, radio waves are not blocked by clouds so can be used in the rain. They are usually large and expensive."
+                                        }
+                                    ]      
+                                },
+                                {
+                                    "title": "Energy: Forces Doing Work (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Law of energy conservation",
+                                            "definition": "Energy cannot be created or destroyed (it can only be transferred into different forms)."
+                                        },
+                                        {
+                                            "term": "Energy changes in ball thrown upwards and then returns to starting position",
+                                            "definition": "Upwards: KE is converted to GPE\nPeak: Maximum GPE, zero KE\nDownwards: GPE is converted to KE\nKE (Kinetic Energy), GPE (Gravitational Potential Energy)"
+                                        },
+                                        {
+                                            "term": "Changes in total energy of a kicked ball",
+                                            "definition": "The total energy of the system remains constant due to the conservation of energy."
+                                        },
+                                        {
+                                            "term": "Energy changes in a filament light-bulb",
+                                            "definition": "Electrical energy is transferred into light and heat energy\nLight is a useful energy form, heat is waste energy"
+                                        },
+                                        {
+                                            "term": "Energy transfers for a bungee jumper",
+                                            "definition": "When falling, the GPE is converted to KE of jumper\nAs the cord tightens, KE is converted and stored as Elastic Potential Energy (EPE)\nAt lowest point, the jumper’s initial GPE equals the EPE stored in the cord"
+                                        },
+                                        {
+                                            "term": "Reason for bungee jumper slowing down when cord begins to stretch",
+                                            "definition": "Kinetic energy decreases since it is converted to elastic potential energy\nSince KE is proportional to velocity, as KE decreases, so does velocity."
+                                        },
+                                        {
+                                            "term": "Energy changes in a power station",
+                                            "definition": "Heat energy released in the reaction heats water to make steam\nSteam moves the turbine, converting kinetic energy\nKinetic energy turns the generator\nElectrical energy as the generator generates electricity"
+                                        },
+                                        {
+                                            "term": "Ways energy of a system can be changed",
+                                            "definition": "Through work done by forces\nThrough electrical input\nThrough heating"
+                                        },
+                                        {
+                                            "term": "How energy can be changed through work done by forces",
+                                            "definition": "A force which moves an object (kinetic energy) causes work to be done over a distance."
+                                        },
+                                        {
+                                            "term": "Equation for work done on an object",
+                                            "definition": "Work done (J) = force (N) x distance (m)\nW = Fd"
+                                        },
+                                        {
+                                            "term": "Reason why wasteful mechanical processes cause a rise in temperature of the surroundings",
+                                            "definition": "They cause energy to be transferred by heating the surroundings."
+                                        },
+                                        {
+                                            "term": "Equation for kinetic energy and its units",
+                                            "definition": "Energy = 1/2 x Mass x (Velocity)^2\nEnergy (J), Mass(kg), Velocity(m/s)"
+                                        },
+                                        {
+                                            "term": "Equation for gravitational potential energy and its units",
+                                            "definition": "Energy = Mass x Gravitational Field Strength x Height\nEnergy (J), Mass(kg), Gravitational Field Strength (N/kg), Height (m)"
+                                        },
+                                        {
+                                            "term": "Definition of 'Power'",
+                                            "definition": "The rate at which energy is transferred (or rate at which work is done)."
+                                        },
+                                        {
+                                            "term": "Two equations for power and their units",
+                                            "definition": "power = energy transferred / time\npower = work done / time\nEnergy (J), Work Done (J), Time (s)"
+                                        },
+                                        {
+                                            "term": "Unit of power",
+                                            "definition": "Watt (W)"
+                                        },
+                                        {
+                                            "term": "One Watt equivalent to",
+                                            "definition": "1 Joule per second (J/s)."
+                                        },
+                                        {
+                                            "term": "Meaning of a power rating of 10W for an electrical device",
+                                            "definition": "It converts 10 Joules of energy every second."
+                                        },
+                                        {
+                                            "term": "Motor A vs. Motor B in terms of power dissipation",
+                                            "definition": "Motor A dissipates the most power. The energy transferred is the same but the time taken is less (P=E/t)."
+                                        },
+                                        {
+                                            "term": "Definition of efficiency",
+                                            "definition": "The proportion of energy that is converted usefully, rather than wasted/dissipated."
+                                        },
+                                        {
+                                            "term": "Calculation of efficiency",
+                                            "definition": "Efficiency = useful energy out / total energy in"
+                                        },
+                                        {
+                                            "term": "Units of efficiency",
+                                            "definition": "Efficiency is a ratio so has no units, but it can be expressed as a percentage."
+                                        }
+                                    ] 
+                                },
+                                {
+                                    "title": "Forces and their Effects (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "What is a force?",
+                                            "definition": "A push or pull acting on an object due to an interaction with another object."
+                                        },
+                                        {
+                                            "term": "What are the two categories that all forces can be split into?",
+                                            "definition": "1. Contact forces (objects touching)\n2. Non-contact forces (objects separated)"
+                                        },
+                                        {
+                                            "term": "Give three examples of contact forces.",
+                                            "definition": "1. Friction\n2. Air resistance\n3. Tension"
+                                        },
+                                        {
+                                            "term": "Give three examples of non-contact forces.",
+                                            "definition": "1. Gravitational forces\n2. Electrostatic forces\n3. Magnetic forces"
+                                        },
+                                        {
+                                            "term": "Is force a vector or a scalar quantity? Why?",
+                                            "definition": "Vector\nIt has both magnitude and direction"
+                                        },
+                                        {
+                                            "term": "What is a scalar quantity?",
+                                            "definition": "A quantity that only has a magnitude\nA quantity that isn't direction dependent"
+                                        },
+                                        {
+                                            "term": "What is a vector quantity?",
+                                            "definition": "A quantity that has both magnitude and direction."
+                                        },
+                                        {
+                                            "term": "Give three examples of vector quantities.",
+                                            "definition": "1. Velocity\n2. Displacement\n3. Force"
+                                        },
+                                        {
+                                            "term": "Give examples of scalar quantities.",
+                                            "definition": "Temperature\nTime\nMass\nSpeed\nDistance\nEnergy"
+                                        },
+                                        {
+                                            "term": "How are vectors represented? (Higher)",
+                                            "definition": "Vector arrows\nLength indicates magnitude\nArrow indicates direction"
+                                        },
+                                        {
+                                            "term": "How can you calculate the resultant magnitude and direction of forces using a scale drawing? (Higher)",
+                                            "definition": "Draw the component forces as scaled arrows, joined tip-to-tail\nDraw a line connecting the two open ends.\nMeasure the length of this line and convert into the magnitude.\nMeasure the angle between the resultant line and the vertical/horizontal to find the direction."
+                                        },
+                                        {
+                                            "term": "What is an alternative name for the turning effect of a force?",
+                                            "definition": "A moment."
+                                        },
+                                        {
+                                            "term": "State the equation used to calculate the moment of a force. Give appropriate units.",
+                                            "definition": "Moment of force = Force x Distance\nMoment (Nm), Force (N), Distance (m)"
+                                        },
+                                        {
+                                            "term": "What distance measurement is used when calculating a moment?",
+                                            "definition": "The perpendicular distance from the pivot to the line of action of the force."
+                                        },
+                                        {
+                                            "term": "If an object is in equilibrium, what can be said about the moments acting on the object?",
+                                            "definition": "The clockwise moments are equal to the anticlockwise moments."
+                                        },
+                                        {
+                                            "term": "How do levers make use of moments?",
+                                            "definition": "They increase the perpendicular distance of the force from the pivot, so decrease the force needed to produce the same moment."
+                                        },
+                                        {
+                                            "term": "Will this object rotate? If so in which direction?",
+                                            "definition": "No. The clockwise and anticlockwise moments are equal, therefore the object remains in equilibrium."
+                                        },
+                                        {
+                                            "term": "How does lubricating levers/gears improve efficiency?",
+                                            "definition": "There is less resistance; less energy Is wasted/dissipated (as heat) overcoming frictional forces."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Electricity and Circuits (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "What three subatomic components make up an atom?",
+                                            "definition": "Electrons, Protons, Neutrons"
+                                        },
+                                        {
+                                            "term": "Describe the structure of an atom",
+                                            "definition": "Neutrons and protons in the nucleus, Electrons surrounding the nucleus in shells"
+                                        },
+                                        {
+                                            "term": "An atom contains two types of charged particles, name both of them and state their charges.",
+                                            "definition": "Proton (+1), Electron (-1)"
+                                        },
+                                        {
+                                            "term": "In a closed circuit, if there is a potential difference in the circuit there will also be a...",
+                                            "definition": "Current"
+                                        },
+                                        {
+                                            "term": "How is current defined?",
+                                            "definition": "As the rate of flow of charge (or electrons) around a circuit."
+                                        },
+                                        {
+                                            "term": "What are the units of charge?",
+                                            "definition": "Coulombs, C."
+                                        },
+                                        {
+                                            "term": "What are the two ways that a component can be connected in a circuit?",
+                                            "definition": "1. Series (Same loop), 2. Parallel (adjacent loop)"
+                                        },
+                                        {
+                                            "term": "Voltage is also Known as ....",
+                                            "definition": "Potential difference"
+                                        },
+                                        {
+                                            "term": "How does the potential difference across two components vary when connected in series and parallel?",
+                                            "definition": "In a series circuit the total P.D is shared between each component. In a parallel circuit the P.D across each component is the same."
+                                        },
+                                        {
+                                            "term": "If two resistors are connected in parallel, what can be said about their combined total resistance?",
+                                            "definition": "Their total resistance is less than the smallest of the two individual resistances."
+                                        },
+                                        {
+                                            "term": "If two resistors are connected in series, what can be said about their total resistance?",
+                                            "definition": "Their total combined resistance is equal to the sum of the two individual resistances."
+                                        },
+                                        {
+                                            "term": "Where must a voltmeter be placed in a circuit?",
+                                            "definition": "In parallel with the component that is being measured."
+                                        },
+                                        {
+                                            "term": "Give an equation relating potential difference with energy transferred and charge.",
+                                            "definition": "Potential difference (V) = energy transferred (J) / charge (C)"
+                                        },
+                                        {
+                                            "term": "A volt can also be described as a...",
+                                            "definition": "Joule per coulomb"
+                                        },
+                                        {
+                                            "term": "What is an electric current?",
+                                            "definition": "The rate of flow of charge."
+                                        },
+                                        {
+                                            "term": "State the equation linking charge, current and time. Give the units for the quantities involved.",
+                                            "definition": "Q=I*t Charge (Coulombs), Current (Amperes), Time (Seconds)"
+                                        },
+                                        {
+                                            "term": "What can be said about the value of current at any point in a single closed loop?",
+                                            "definition": "Current is the same at all points in a closed loop."
+                                        },
+                                        {
+                                            "term": "What two factors does the current in a circuit depend on?",
+                                            "definition": "1. Potential Difference (V), 2. Resistance (R)"
+                                        },
+                                        {
+                                            "term": "What equation should be used to calculate potential difference if current and resistance are known? State the units for all 3 quantities.",
+                                            "definition": "V=IR Potential Difference (V), Current (A), Resistance (Ω)"
+                                        },
+                                        {
+                                            "term": "What is an ammeter and where must it be connected in a circuit?",
+                                            "definition": "An ammeter measures current. It is placed in series with the component it is required to measure."
+                                        },
+                                        {
+                                            "term": "What happens when current reaches a junction in a circuit?",
+                                            "definition": "Current is conserved; the total current remains the same and is split between the two branches."
+                                        },
+                                        {
+                                            "term": "How does resistance affect current in a circuit?",
+                                            "definition": "As the total resistance of a circuit increases, the current flowing through the circuit decreases."
+                                        },
+                                        {
+                                            "term": "How can the current in a circuit be varied?",
+                                            "definition": "Using a variable resistor."
+                                        },
+                                        {
+                                            "term": "Give the equation linking current with resistance",
+                                            "definition": "p.d. (V) = current (A) x resistance (Ω) V=IR"
+                                        },
+                                        {
+                                            "term": "How is total resistance affected by two resistors in series?",
+                                            "definition": "The total resistance increases; it is equal to the sum of the two resistors."
+                                        },
+                                        {
+                                            "term": "How is total resistance affected by two resistors in parallel?",
+                                            "definition": "The total resistance decreases; It is less than the resistance of the resistor with the lowest resistance."
+                                        },
+                                        {
+                                            "term": "What is an 'Ohmic Conductor'? State the condition required.",
+                                            "definition": "A conductor for which current and potential difference are directly proportional, Resistance remains constant as current changes, Temperature must be constant"
+                                        },
+                                        {
+                                            "term": "List four components for which resistance is not constant as current changes.",
+                                            "definition": "1. Filament lamps, 2. Diodes, 3. Thermistors, 4. Light Dependant Resistors (LDRs)"
+                                        },
+                                        {
+                                            "term": "What happens to the resistance of a filament lamp as the temperature increases? Why?",
+                                            "definition": "Resistance increases, Metal ions have more kinetic energy, so vibrate more, colliding more frequently with electrons as they flow through the metal. This creates more resistance to current flow."
+                                        },
+                                        {
+                                            "term": "What is different about current flow through a diode?",
+                                            "definition": "The current only flows in one direction, Resistance is very high in the other direction, preventing current flow."
+                                        },
+                                        {
+                                            "term": "State what happens to the resistance of a thermistor as temperature increases.",
+                                            "definition": "The thermistor’s resistance decreases."
+                                        },
+                                        {
+                                            "term": "Give two examples of when a thermistor may be used.",
+                                            "definition": "1. In a thermostat to turn a heater on below a certain temperature, 2. In a freezer to turn on a cooler when the temperature becomes too high"
+                                        },
+                                        {
+                                            "term": "State what happens to the resistance of an LDR as light intensity decreases.",
+                                            "definition": "The LDR’s resistance increases."
+                                        },
+                                        {
+                                            "term": "Give an application for a LDR.",
+                                            "definition": "Street lamps or night lights. When light levels drop (at night), resistance increases and the light gains sufficient current to turn on."
+                                        },
+                                        {
+                                            "term": "How do diodes work?",
+                                            "definition": "A diode only allows current to flow in one direction. If current is flowing the right way, the resistance is large for small voltages (up until about 0.6V), but then at higher voltages becomes very small."
+                                        },
+                                        {
+                                            "term": "What electrical component does this graph represent?",
+                                            "definition": "Diode"
+                                        },
+                                        {
+                                            "term": "What factors affect the energy transferred when charge flows through a component?",
+                                            "definition": "Amount of charge, The potential difference across the component"
+                                        },
+                                        {
+                                            "term": "Give an equation linking energy, current and p.d., giving all SI units",
+                                            "definition": "energy (J) = p.d. (V) x current (A) x time (s) E = VIt"
+                                        },
+                                        {
+                                            "term": "Define potential difference in terms of charge.",
+                                            "definition": "The work done per unit charge."
+                                        },
+                                        {
+                                            "term": "Give an equation relating potential difference to charge",
+                                            "definition": "energy transferred (J) = charge (C) x p.d. (V) E=QV"
+                                        },
+                                        {
+                                            "term": "When an electrical current flows through a resistor why does it heat up?",
+                                            "definition": "There are collisions between the electrons and the ions in the resistor’s lattice. This causes a transfer of kinetic energy into thermal energy, which is released into the surroundings."
+                                        },
+                                        {
+                                            "term": "How is total resistance affected by two resistors in series?",
+                                            "definition": "The total resistance increases; it is equal to the sum of the two resistors."
+                                        },
+                                        {
+                                            "term": "What are some advantages of the heating effect?",
+                                            "definition": "It is useful for appliances such as toasters or electrical fires, where the heat is the desired product."
+                                        },
+                                        {
+                                            "term": "What are some advantages and disadvantages of the heating effect?",
+                                            "definition": "The loss of energy as heat energy can make an appliance inefficient. If an appliance overheats it can catch fire or overheat, which could ruin the device or injure the user."
+                                        },
+                                        {
+                                            "term": "The energy transferred per second is also known as...",
+                                            "definition": "Power"
+                                        },
+                                        {
+                                            "term": "Define power",
+                                            "definition": "The rate of energy transfer, or the rate at which work is done."
+                                        },
+                                        {
+                                            "term": "What are the units of power?",
+                                            "definition": "Watts, W."
+                                        },
+                                        {
+                                            "term": "Give an equation linking power without p.d., giving all SI units",
+                                            "definition": "power (W) = current? (A) x resistance (Ω) P=IR"
+                                        },
+                                        {
+                                            "term": "Give equations linking power and resistance, including all SI units",
+                                            "definition": "power (W) = current? (A) x resistance (Ω) P=IR power (W) = p.d.? (V) + resistance (Ω) P=V^2/R"
+                                        },
+                                        {
+                                            "term": "What does DC mean?",
+                                            "definition": "Direct Current. This is current which takes a constant value."
+                                        },
+                                        {
+                                            "term": "Is mains electricity an AC supply or a DC supply? What do each of these stand for?",
+                                            "definition": "Mains electricity is an AC supply."
+                                        },
+                                        {
+                                            "term": "What is meant by the frequency of a supply?",
+                                            "definition": "This is the rate at which an AC current changes."
+                                        },
+                                        {
+                                            "term": "What is the frequency and voltage of the UK mains electricity supply?",
+                                            "definition": "Frequency: 50 Hz, Voltage: 230V"
+                                        },
+                                        {
+                                            "term": "What type of current do batteries and cells supply?",
+                                            "definition": "Direct current."
+                                        },
+                                        {
+                                            "term": "What is the power rating of an appliance?",
+                                            "definition": "It shows how much energy a device converts per second."
+                                        },
+                                        {
+                                            "term": "What wires does a typical appliance have?",
+                                            "definition": "1. Live wire, 2. Neutral wire, 3. Earth wire"
+                                        },
+                                        {
+                                            "term": "What colour is the live wire?",
+                                            "definition": "Brown"
+                                        },
+                                        {
+                                            "term": "What colour is the neutral wire?",
+                                            "definition": "Blue"
+                                        },
+                                        {
+                                            "term": "What colour is the earth wire?",
+                                            "definition": "Green and yellow (striped)"
+                                        },
+                                        {
+                                            "term": "Explain when the Earth wire does and doesn't carry a current.",
+                                            "definition": "Under normal circumstances, no current flows through the Earth wire. Current flows when a fault occurs in the appliance (such as a surge or the casing becoming live)."
+                                        },
+                                        {
+                                            "term": "What potential is the neutral wire at?",
+                                            "definition": "0 Volts"
+                                        },
+                                        {
+                                            "term": "State the potential difference between the live and earth wires.",
+                                            "definition": "230 Volts"
+                                        },
+                                        {
+                                            "term": "What is the purpose of the neutral wire?",
+                                            "definition": "To complete the circuit by connecting the appliance back to the mains supply."
+                                        },
+                                        {
+                                            "term": "For metal appliances, where is the Earth wire connected to? Why?",
+                                            "definition": "Earth wire is connected to the metal casing of the appliance. If live wire becomes touches the casing, the current will flow through the Earth wire, preventing electrocution."
+                                        },
+                                        {
+                                            "term": "How does a fuse wire stop the device from getting damaged?",
+                                            "definition": "When the current becomes too high the fuse wire will melt and break, therefore stopping current from flowing to the appliance and preventing damage."
+                                        },
+                                        {
+                                            "term": "Why is it important to connect a fuse or switch to the live wire?",
+                                            "definition": "When the switch is turned off, or when the fuse breaks, it will break the circuit and stop current running through the wire. This provides a method to stop current flowing into the appliance."
+                                        },
+                                        {
+                                            "term": "Why is it dangerous to have a connection between the earth wires and the live wire?",
+                                            "definition": "In can result in a current surge, causing electrical shocks."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Static Electricity (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "What can happen when insulating materials are rubbed together?",
+                                            "definition": "They can become (statically) electrically charged."
+                                        },
+                                        {
+                                            "term": "Why can insulators become electrically charged when rubbed together?",
+                                            "definition": "Electrons transfer from one material onto the other. The material gaining electrons becomes negatively charged. The material losing electrons becomes equally positively charged."
+                                        },
+                                        {
+                                            "term": "What would happen when two electrically charged objects are brought close together?",
+                                            "definition": "They exert a force on each other."
+                                        },
+                                        {
+                                            "term": "What happens when two identically charged objects are brought close together?",
+                                            "definition": "They exert a repulsive force on each other and repel."
+                                        },
+                                        {
+                                            "term": "What happens when two oppositely charged objects are brought close together?",
+                                            "definition": "They exert an attractive force on each other and attract."
+                                        },
+                                        {
+                                            "term": "Give an example of a non-contact force.",
+                                            "definition": "The repulsive or attractive force acting between two electrically charged objects."
+                                        },
+                                        {
+                                            "term": "Why do we feel an electric shock?",
+                                            "definition": "When an object builds up an electrostatic charge, it needs to be ‘earthed’ via a conductor. Electrons flow to/from the earth to balance the charge. This can also occur if you touch a charged object whilst you are earthed. If earthing occurs through a person/animal, it causes an electric shock."
+                                        },
+                                        {
+                                            "term": "Why does lightning occur?",
+                                            "definition": "Clouds can build up an electrostatic charge. When this charge becomes large enough, the clouds discharge via the air to the earth. This is known as lightning."
+                                        },
+                                        {
+                                            "term": "Why does a charged balloon stick to the wall?",
+                                            "definition": "When a positively charged balloon is placed next to a wall, the positive charges near the balloon get repelled to other parts of the wall. This leaves an area of the wall with a negative charge, which attracts the positively charged balloon towards the wall, making the balloon stick. (The inverse occurs with a negatively charged balloon)."
+                                        },
+                                        {
+                                            "term": "How does earthing remove excess charge?",
+                                            "definition": "It provides a path with a low resistance for the electrons to flow either from the device or towards the device to reduce the charge build up."
+                                        },
+                                        {
+                                            "term": "How does static electricity cause danger when fuelling cars?",
+                                            "definition": "Static charge can build up due to the friction between the pipes and the fuel. When the charge builds up, a spark may be discharged. The spark could start a fire if it reacts with the flammable fuel. This is resolved by earthing the vehicle and pump."
+                                        },
+                                        {
+                                            "term": "What is an electric field?",
+                                            "definition": "A region where an electric charge will experience a non-contact force."
+                                        },
+                                        {
+                                            "term": "What direction do the field lines in an electric field point?",
+                                            "definition": "In the direction that a positive charge would move (experience a force)."
+                                        },
+                                        {
+                                            "term": "Describe the appearance of electric field lines in a parallel field.",
+                                            "definition": "Straight lines, which are parallel to each other and point from the positive plate to the negative plate. At the edges, the lines are partially curved."
+                                        },
+                                        {
+                                            "term": "How can you use electric fields to explain static electricity?",
+                                            "definition": "The object that is statically charged will generate an electric field. This field attracts the electrons on other objects causing a flow of charge resulting in sparks."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Magnetism and the Motor Effect (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "At which part of a magnet are the magnetic forces strongest?",
+                                            "definition": "The poles of the magnet."
+                                        },
+                                        {
+                                            "term": "What happens when two magnets are brought close to each other?",
+                                            "definition": "They exert a force on each other."
+                                        },
+                                        {
+                                            "term": "What type of force is exerted if two like poles of a magnet are brought near each other?",
+                                            "definition": "A repulsive, non-contact force."
+                                        },
+                                        {
+                                            "term": "What type of force is exerted if two unlike poles of a magnet are brought near each other?",
+                                            "definition": "An attractive, non-contact force."
+                                        },
+                                        {
+                                            "term": "What is a magnetic field?",
+                                            "definition": "The region surrounding a magnet where another magnet or magnetic material experiences a non-contact force."
+                                        },
+                                        {
+                                            "term": "What is the difference between a permanent magnet and an induced magnet?",
+                                            "definition": "A permanent magnet produces its own magnetic field. An induced magnet becomes magnetic when placed in a magnetic field."
+                                        },
+                                        {
+                                            "term": "What type of force does induced magnetism always cause?",
+                                            "definition": "A force of attraction."
+                                        },
+                                        {
+                                            "term": "What is the effect when an induced magnet is removed from a magnetic field?",
+                                            "definition": "The induced magnet loses most/all of its magnetism."
+                                        },
+                                        {
+                                            "term": "Give four examples of magnetic materials.",
+                                            "definition": "1. Iron\n2. Steel\n3. Cobalt\n4. Nickel"
+                                        },
+                                        {
+                                            "term": "What can always be said about the force between a magnet and a magnetic material?",
+                                            "definition": "It is always attractive."
+                                        },
+                                        {
+                                            "term": "How does the strength of a magnetic field alter as you move further away from the magnet producing it?",
+                                            "definition": "The magnetic field strength decreases the further you move away."
+                                        },
+                                        {
+                                            "term": "In what direction does a magnetic field point?",
+                                            "definition": "In the direction of the force that a north pole would experience if placed in the field. From the north seeking pole to the south seeking pole of a magnet."
+                                        },
+                                        {
+                                            "term": "What does a magnetic compass contain?",
+                                            "definition": "A small bar magnet that points in the direction of the Earth's magnetic field."
+                                        },
+                                        {
+                                            "term": "What is produced when current flows through a conducting wire?",
+                                            "definition": "A magnetic field is produced around the wire."
+                                        },
+                                        {
+                                            "term": "What determines the strength of the magnetic field around a current-carrying wire?",
+                                            "definition": "The magnitude of the current flowing through the wire."
+                                        },
+                                        {
+                                            "term": "Does a high concentration of field lines mean the field is strong or weak?",
+                                            "definition": "Strong."
+                                        },
+                                        {
+                                            "term": "True or false: magnetic field lines never cross each other?",
+                                            "definition": "True; they never cross, touch or overlap."
+                                        },
+                                        {
+                                            "term": "How is a plotting compass used to map out a magnetic field?",
+                                            "definition": "Place a compass (containing a needle magnet) on a piece of paper near the field. Draw an arrow in the direction the compass points. Repeat at different points on the paper. Join the arrows to make a complete field pattern."
+                                        },
+                                        {
+                                            "term": "What is a solenoid?",
+                                            "definition": "A coil of wire which when current passes through creates a strong magnetic field."
+                                        },
+                                        {
+                                            "term": "Describe the magnetic field found inside a solenoid.",
+                                            "definition": "Strong and uniform."
+                                        },
+                                        {
+                                            "term": "Is the field on the outside of a solenoid strong or weak? And why?",
+                                            "definition": "Weak. The fields from each coil cancel out, making the outside field weak."
+                                        },
+                                        {
+                                            "term": "What is an electromagnet?",
+                                            "definition": "A solenoid with an added iron core. Adding the iron core increases the strength of the magnetic field."
+                                        },
+                                        {
+                                            "term": "What is the motor effect? (Higher)",
+                                            "definition": "When a force is exerted between a magnetic field and a current-carrying conductor placed in that field."
+                                        },
+                                        {
+                                            "term": "What rule is used to determine the force produced by the motor effect? (Higher)",
+                                            "definition": "Fleming's Left-Hand Rule"
+                                        },
+                                        {
+                                            "term": "When using Fleming's left hand rule what does the forefinger represent? (Higher)",
+                                            "definition": "The forefinger points in the direction of the magnetic field."
+                                        },
+                                        {
+                                            "term": "When using Fleming's left hand rule what does the second finger represent? (Higher)",
+                                            "definition": "The second finger points in the direction of current flow in the conductor."
+                                        },
+                                        {
+                                            "term": "When using Fleming's left hand rule what does the thumb represent? (Higher)",
+                                            "definition": "The thumb points in the direction of the force produced by the motor effect."
+                                        },
+                                        {
+                                            "term": "What factors affect the size of the force on a current-carrying wire in a magnetic field? (Higher)",
+                                            "definition": "The magnitude of the current flowing through the conductor. The strength of the magnetic field that the conductor is placed in."
+                                        },
+                                        {
+                                            "term": "If the direction of current in a current-carrying wire placed in a uniform magnetic field is reversed, what happens to the force? (Higher)",
+                                            "definition": "The direction of the force is reversed."
+                                        },
+                                        {
+                                            "term": "If the strength of the current in a current-carrying wire placed in a uniform magnetic field is increased, what happens to the force? (Higher)",
+                                            "definition": "The strength of the force is increased."
+                                        },
+                                        {
+                                            "term": "Give the equation linking force, magnetic flux density, current and length (Higher)",
+                                            "definition": "force (N) = magnetic flux density (T) x current (A) x length (m). F = BIL"
+                                        },
+                                        {
+                                            "term": "What criteria must be met for the equation linking force, magnetic flux density, current and length to hold? (Higher)",
+                                            "definition": "The conductor must be at right-angles to the magnetic field it is placed in."
+                                        },
+                                        {
+                                            "term": "What is the unit used for magnetic flux density? (Higher)",
+                                            "definition": "Tesla, T"
+                                        },
+                                        {
+                                            "term": "If the current and the magnetic field are parallel to each other, which direction would the force act in? (Higher)",
+                                            "definition": "No force will act."
+                                        },
+                                        {
+                                            "term": "How does an electric motor work? (Higher)",
+                                            "definition": "A coil of wire, carrying a current, is placed in a magnetic field. The forces on the two sides perpendicular to the field experience forces in opposite directions. This causes a rotational effect."
+                                        },
+                                        {
+                                            "term": "How are electric motors kept rotating? (Higher)",
+                                    
+                                    
+                                            "definition": "A split ring commutator is used. This switches the current direction every half turn, which ensures that the coil keeps spinning."
+                                        }
+                                    ]                
+                                },
+                                {
+                                    "title": "Electromagnetic Induction (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "What happens when an electrical conductor moves relative to a magnetic field? (Higher)",
+                                            "definition": "A voltage (potential difference) is induced across the conductor."
+                                        },
+                                        {
+                                            "term": "What happens to an electrical conductor when there is a change to the magnetic field that it is placed in? (Higher)",
+                                            "definition": "The voltage (potential difference) is also changed."
+                                        },
+                                        {
+                                            "term": "How do you produce an electric current using a magnet and a conductor on a small-scale? (Higher)",
+                                            "definition": "Once a voltage is induced, if there is a complete circuit, a current will also be induced."
+                                        },
+                                        {
+                                            "term": "How is electrical current produced on a large-scale? (Higher)",
+                                            "definition": "An electromagnet is rotated around a coil."
+                                        },
+                                        {
+                                            "term": "What factors affect the size of an induced voltage? (Higher)",
+                                            "definition": "The number of turns on the coil of wire, how strong the magnetic field is, the speed of the movement."
+                                        },
+                                        {
+                                            "term": "What is the requirement for an induced potential difference to cause a current flow? (Higher)",
+                                            "definition": "The conductor must form a closed loop or be part of a complete circuit."
+                                        },
+                                        {
+                                            "term": "What can be said about the direction of the magnetic field produced by an induced current? (Higher)",
+                                            "definition": "The direction of the field is such that it opposes the change that induced the current. This change is either the movement of the conductor or a change to the field."
+                                        },
+                                        {
+                                            "term": "What are two ways that the generator effect is used to generate different types of current? (Higher)",
+                                            "definition": "In an alternator to produce alternating-current, in a dynamo to produce direct-current."
+                                        },
+                                        {
+                                            "term": "How does a dynamo generate current? (Higher)",
+                                            "definition": "A coil of wire rotates inside a magnetic field. A commutator is used to ensure it continues rotating in the same direction, therefore keeping the current flowing in the same direction (d.c. current)."
+                                        },
+                                        {
+                                            "term": "How is electromagnetic induction used in alternators to generate alternating current? (Higher)",
+                                            "definition": "A coil of wire rotates in a magnetic field. The end of this coil is connected to slip rings which will cause the current to change direction while rotating. This means a.c is produced."
+                                        },
+                                        {
+                                            "term": "What electromagnetic effect does a microphone take advantage of and how? (Higher)",
+                                            "definition": "The generator effect. It converts the pressure variations in sound waves into alternating current."
+                                        },
+                                        {
+                                            "term": "How do loudspeakers make use of the motor effect? (Higher)",
+                                            "definition": "The motor effect is used to convert variations in the current of an electrical circuit into the pressure variations which produce audible sound."
+                                        },
+                                        {
+                                            "term": "Explain how a loudspeaker works. (Higher)",
+                                            "definition": "A cone wrapped in wire is connected to an a.c power supply and is placed in a permanent magnetic field. When current flows through the wire, it creates a magnetic field which interacts with the permanent field. This produces a force which causes the cone to vibrate, producing sound."
+                                        },
+                                        {
+                                            "term": "How is the pitch of the sound from a loudspeaker changed? (Higher)",
+                                            "definition": "The frequency of the a.c current is altered. This creates a different frequency of vibration in the cone."
+                                        },
+                                        {
+                                            "term": "How do microphones convert sound into electrical signals? (Higher)",
+                                            "definition": "Sound produces pressure variations which cause the diaphragm to vibrate. A coil of wire is connected to the diaphragm, so as the diaphragm moves, the coil also moves. Movement in a magnetic field = a p.d. is induced. As there is a complete circuit, a current is also created."
+                                        },
+                                        {
+                                            "term": "Describe the makeup of a basic transformer. (Higher)",
+                                            "definition": "A primary coil and a secondary coil of wire wrapped around an iron core."
+                                        },
+                                        {
+                                            "term": "Why is iron used as the core for a transformer? (Higher)",
+                                            "definition": "It is easily magnetized."
+                                        },
+                                        {
+                                            "term": "Explain how a transformer works. (Higher)",
+                                            "definition": "An alternating current flows through the primary coil. This induces a changing magnetic field in the core. This changing magnetic field induces an emf, which produces a current in the secondary coil."
+                                        },
+                                        {
+                                            "term": "Why must the current flowing through the primary coil of a transformer be alternating? (Higher)",
+                                            "definition": "For current to be induced in the secondary coil, the magnetic field in the core must be continuously changing. For the magnetic field to be changing, the current in the primary coil must be alternating."
+                                        },
+                                        {
+                                            "term": "What can be said about the electrical power input and output of a 100% efficient transformer? (Higher)",
+                                            "definition": "The electrical power input is equal to the electrical power output."
+                                        },
+                                        {
+                                            "term": "State the power equation for transformers with a 100% efficiency (using voltage and current).",
+                                            "definition": "Vp x Ip = Vs x Is"
+                                        },
+                                        {
+                                            "term": "On a step-down transformer, does the secondary coil have more or fewer turns? (Higher)",
+                                            "definition": "The secondary coil has fewer turns."
+                                        },
+                                        {
+                                            "term": "What is an advantage of a step-down transformer in the national grid?",
+                                            "definition": "It means that the voltage can be reduced to a value safe enough to be used in houses."
+                                        },
+                                        {
+                                            "term": "Why is it important to have step-up transformers in the national grid?",
+                                            "definition": "It can increase efficiency. For the same power, a higher voltage will lead to a lower current (P=VxI). The lower the current, the less energy that is lost. Used for transmission across power lines."
+                                        },
+                                        {
+                                            "term": "How does a step-up transformer work? (Higher)",
+                                            "definition": "The primary coil has fewer turns. An a.c. current produced a magnetic field in the primary coil. The iron core passes the magnetic field to the secondary coil. The magnetic field induces a higher voltage in the secondary coil. Power is conserved, so this produces a lower current."
+                                        },
+                                        {
+                                            "term": "Where are step-up and step-down transformers used in the national grid?",
+                                            "definition": "Step-up transformers are used at power stations, whilst step-down transformers are used domestically."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Particle Model (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "Density",
+                                            "definition": "The mass per unit volume of a material. Density (kg/m³) = Mass (kg) / Volume (m³)"
+                                        },
+                                        {
+                                            "term": "State of matter",
+                                            "definition": "A form in which matter can exist, based on the particle arrangement in a substance."
+                                        },
+                                        {
+                                            "term": "States of matter in order of density",
+                                            "definition": "Least dense: Gas, Liquid, Most dense: Solid"
+                                        },
+                                        {
+                                            "term": "Kinetic theory of liquids",
+                                            "definition": "The particles have some kinetic energy. They are free to move and can move around in random directions at very slow speeds."
+                                        },
+                                        {
+                                            "term": "Movement of particles in a solid",
+                                            "definition": "The particles vibrate around a fixed position as they do not have enough kinetic energy to move freely."
+                                        },
+                                        {
+                                            "term": "Structure of particles in a gas",
+                                            "definition": "Particles in a gas have almost no forces between them therefore they are completely free to move, and move at high speeds in random directions."
+                                        },
+                                        {
+                                            "term": "Conserved property during a change of state",
+                                            "definition": "Mass"
+                                        },
+                                        {
+                                            "term": "Difference between change of state and chemical change",
+                                            "definition": "In a change of state, the material can return to having its previous properties if the change is reversed."
+                                        },
+                                        {
+                                            "term": "Internal energy of a substance",
+                                            "definition": "The energy stored by the particles. The sum of the total kinetic and potential energies that make up the system."
+                                        },
+                                        {
+                                            "term": "Effects of heating a substance",
+                                            "definition": "1. Raise its temperature\n2. Change the state of the substance"
+                                        },
+                                        {
+                                            "term": "Factors determining temperature change of a system",
+                                            "definition": "1. Mass of substance being heated\n2. Type of material (Specific heat capacity)\n3. Energy inputted into the system"
+                                        },
+                                        {
+                                            "term": "Sublimation",
+                                            "definition": "When a solid turns directly into a gas."
+                                        },
+                                        {
+                                            "term": "Difference between physical and chemical changes",
+                                            "definition": "Physical changes can be reversed. Chemical changes cannot be easily reversed."
+                                        },
+                                        {
+                                            "term": "Effect of heating on change of state",
+                                            "definition": "Heating matter gives particles more potential energy. This energy is used to break the bonds of attraction, leading to a change of state."
+                                        },
+                                        {
+                                            "term": "Effect of heating on temperature increase",
+                                            "definition": "It increases the amount of thermal energy in that substance. It also gives the particles more kinetic energy, meaning they move faster and their temperature increases."
+                                        },
+                                        {
+                                            "term": "Equation for calculating energy change when a substance is heated",
+                                            "definition": "ΔE = mcΔT (Energy in Joules, Mass in kilograms, Specific Heat Capacity in J/kg/°C, Temperature change in °C)"
+                                        },
+                                        {
+                                            "term": "Specific heat capacity",
+                                            "definition": "The amount of energy needed to increase the temperature of 1kg of a substance by 1°C."
+                                        },
+                                        {
+                                            "term": "Specific latent heat",
+                                            "definition": "The amount of energy needed to change the state of 1kg of a substance with no change in temperature."
+                                        },
+                                        {
+                                            "term": "Equation for energy required to change state",
+                                            "definition": "Energy (J) = Mass (kg) x Specific latent heat (J/kg). E = mL"
+                                        },
+                                        {
+                                            "term": "Pressure of a gas in terms of particle motion",
+                                            "definition": "The particles move in random directions. When they collide with the walls of a container they exert a force which acts at a right angle to the container, causing pressure."
+                                        },
+                                        {
+                                            "term": "Equation for pressure",
+                                            "definition": "Pressure (Pa) = Force (N) / Area (m²). P = F/A"
+                                        },
+                                        {
+                                            "term": "Factor affecting average kinetic energy of gas molecules",
+                                            "definition": "The temperature of the gas. The higher the temperature, the higher the average kinetic energy of the molecules."
+                                        },
+                                        {
+                                            "term": "Effect of increasing temperature on gas pressure at constant volume",
+                                            "definition": "Gas pressure will increase as the temperature increases."
+                                        },
+                                        {
+                                            "term": "Explanation for pressure increase with temperature increase at constant volume",
+                                            "definition": "1. Kinetic energy of molecules increases\n2. Collisions between molecules become more frequent\n3. Greater rate of change of momentum\n4. Greater force and therefore pressure"
+                                        },
+                                        {
+                                            "term": "Rate of collisions comparison for gases at different pressures",
+                                            "definition": "There are more collisions per second in gas A than in gas B. The rate of collisions is higher in A."
+                                        },
+                                        {
+                                            "term": "Force exerted by gas pressure on container walls",
+                                            "definition": "The net force acts at right-angles to each surface of the container. The force increases as pressure increases."
+                                        },
+                                        {
+                                            "term": "Effect of increasing volume on gas pressure",
+                                            "definition": "Molecules become more spread out so rate of collision decreases. Rate of change of momentum decreases, and so force exerted on container decreases, resulting in a lower pressure."
+                                        },
+                                        {
+                                            "term": "Unit for pressure",
+                                            "definition": "Pascal (Pa)"
+                                        },
+                                        {
+                                            "term": "Effect of doing work on a gas",
+                                            "definition": "It increases the internal energy of the gas. This can also lead to an increase of temperature."
+                                        },
+                                        {
+                                            "term": "Absolute zero",
+                                            "definition": "-273 °C. Particles have no kinetic energy and do not move."
+                                        },
+                                        {
+                                            "term": "Equation for pressure/volume for a gas with fixed mass and constant temperature",
+                                            "definition": "P1 × V1 = P2 × V2"
+                                        },
+                                        {
+                                            "term": "Explanation for temperature increase in bike pump when pumped",
+                                            "definition": "Work is done on a gas when it is compressed. Doing work on a gas increases its internal energy, so increases the average kinetic energy of the molecules. Temperature increases with an increase of average kinetic energy."
+                                        }
+                                    ]       
+                                },
+                                {
+                                    "title": "Forces and Matter (paper2)",
+                                    "cards":
+                                    [
+                                        {
+                                            "term": "How many forces are required to compress, bend or stretch an object?",
+                                            "definition": "More than one; it takes multiple forces (in different directions) to deform an object."
+                                        },
+                                        {
+                                            "term": "Explain the relationship between the force applied and the extension of an elastic object.",
+                                            "definition": "The extension is directly proportional to the force applied, provided that the limit of proportionality is not exceeded."
+                                        },
+                                        {
+                                            "term": "What is meant by an inelastic (plastic) deformation?",
+                                            "definition": "A deformation which results in the object being permanently changed. The object doesn't return to its original shape when the force is removed."
+                                        },
+                                        {
+                                            "term": "State the equation relating force, spring constant and extension. Give appropriate units.",
+                                            "definition": "Force = Spring Constant x Extension. Force (N), Spring Constant (N/m), Extension (m)."
+                                        },
+                                        {
+                                            "term": "What type of energy is stored in a spring when it is stretched?",
+                                            "definition": "Elastic potential energy."
+                                        },
+                                        {
+                                            "term": "What can extension be replaced with in the equation for spring force?",
+                                            "definition": "Compression."
+                                        },
+                                        {
+                                            "term": "Differentiate between elastic and inelastic distortion.",
+                                            "definition": "An elastic distortion is a temporary change. The object reverts to its original shape once the forces are removed. An inelastic distortion leads to a permanent change in shape. It is irreversible."
+                                        },
+                                        {
+                                            "term": "How can you calculate the work done/stored in stretching a spring?",
+                                            "definition": "Energy (J) = % x Spring constant (N/m) x Extension? (m7). E = %kx?"
+                                        },
+                                        {
+                                            "term": "When is there a linear relationship between force and extension?",
+                                            "definition": "When an object is deforming elastically; when it has not yet reached the limit of proportionality."
+                                        },
+                                        {
+                                            "term": "When is there a nonlinear relationship between force and extension?",
+                                            "definition": "When the limit of proportionality has been exceeded, and the object is undergoing plastic deformation."
+                                        },
+                                        {
+                                            "term": "What is meant by the term 'fluid'?",
+                                            "definition": "A liquid or a gas."
+                                        },
+                                        {
+                                            "term": "In any fluid, at what angle do the forces due to pressure act on a given surface?",
+                                            "definition": "At right angles (normal to) the surface."
+                                        },
+                                        {
+                                            "term": "State the equation used to calculate pressure. Give appropriate units.",
+                                            "definition": "Pressure (Pa) = Force (N) / Area (m7?). P=F/A"
+                                        },
+                                        {
+                                            "term": "Why does atmospheric pressure vary with the height above the earth's surface?",
+                                            "definition": "The number of air molecules decreases the higher you go. This means that the weight of air above a point decreases, meaning the pressure also decreases."
+                                        },
+                                        {
+                                            "term": "True or False? The pressure in a fluid is determined by the fluid and the atmospheric pressure.",
+                                            "definition": "True"
+                                        },
+                                        {
+                                            "term": "What direction does pressure act in?",
+                                            "definition": "All directions."
+                                        },
+                                        {
+                                            "term": "How does pressure in fluids increase with depth? (Higher)",
+                                            "definition": "As the depth increases the mass of the liquid above the point also increases. This means that the force produced by that mass also increases. Since the force has increased whilst the area has remained constant, the pressure will increase."
+                                        },
+                                        {
+                                            "term": "Why does pressure in fluids increase with density? (Higher)",
+                                            "definition": "As density increases there are more particles in a given volume of the liquid, hence the weight of the liquid is increased. This means that the force of liquid above a certain point is larger. Since the force has increased, the pressure must also increase."
+                                        },
+                                        {
+                                            "term": "What equation shows the magnitude of pressure in liquids at different depths? (Higher)",
+                                            "definition": "Pressure (Pa) = Column height (m) x density (kg/m?) x gravitational field strength (N/kg). P = ρgh"
+                                        },
+                                        {
+                                            "term": "Why are objects in a fluid subject to an upthrust? (Higher)",
+                                            "definition": "When an object is submerged in fluid, it experiences a higher pressure below it than it does on top of it. This leads to an upwards force called upthrust."
+                                        },
+                                        {
+                                            "term": "Why is the magnitude of the upthrust felt by an object? (Higher)",
+                                            "definition": "Upthrust is equal to the weight of fluid displaced by the object."
+                                        },
+                                        {
+                                            "term": "How can you determine if an object will sink or float? (Higher)",
+                                            "definition": "If the upthrust is greater than the weight of the object, it will float. If the weight is the greater force, it will sink."
+                                        },
+                                        {
+                                            "term": "Explain why an object with a density more than that of water would never float. (Higher)",
+                                            "definition": "Upthrust is equal to the weight of the displaced fluid. If the density of the object is high, there would not be enough volume displaced to produce an upthrust larger than the object's weight. This means that it will sink."
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
