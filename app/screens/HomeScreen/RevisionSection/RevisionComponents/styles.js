@@ -24,7 +24,7 @@ export default StyleSheet.create({
     },
     progressBarFiller: {
         height: 10,
-        backgroundColor: colours.darkPrimary,
+        backgroundColor: colours.primary,
         borderRadius: 5,
     },
     questioningContainer: {
@@ -100,7 +100,7 @@ export default StyleSheet.create({
         borderRadius: 10,
     },
     submitButton: {
-        backgroundColor: colours.darkPrimary,
+        backgroundColor: colours.primary,
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -154,7 +154,7 @@ export default StyleSheet.create({
         flex: 1,
     },
     modalButton: {
-        backgroundColor: colours.darkPrimary,
+        backgroundColor: colours.primary,
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -167,7 +167,7 @@ export default StyleSheet.create({
         fontFamily: 'Lato',
     },
     changeGotQCorrectButton: {
-        backgroundColor: '#14AAFF',
+        backgroundColor: colours.blue,
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -242,7 +242,7 @@ export default StyleSheet.create({
         borderWidth: 2,
         borderColor: `rgba(0, 0, 0, 0.03)`,
         flexDirection: 'row',
-        backgroundColor: colours.darkPrimary,
+        backgroundColor: colours.primary,
     },
     nextRoundButtonText: {
         color: colours.white,
@@ -264,7 +264,7 @@ export default StyleSheet.create({
             height: 10,
         },
         shadowOpacity: 0.2,
-        shadowColor: '#D0D0D0',
+        shadowColor: colours.shadowColour,
         elevation: 5,
      },
      flashcardBack: {
@@ -279,7 +279,7 @@ export default StyleSheet.create({
             height: 10,
         },
         shadowOpacity: 0.2,
-        shadowColor: '#D0D0D0',
+        shadowColor: colours.shadowColour,
         elevation: 5,
      },
      flashcardTitleText: {

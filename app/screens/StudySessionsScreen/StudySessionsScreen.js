@@ -15,6 +15,8 @@ function StudySessionsPage({ navigation }) {
     focusMode: false,
   })
   const [focusMode, setFocusMode] = useState(false);
+
+  
   return (
       <View style={styles.container}>
         <View style={styles.currentSessionView}>
@@ -41,7 +43,7 @@ function StudySessionsPage({ navigation }) {
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>breakLength: {currentSession.current.breakLength}</Text>
+            <Text style={styles.currentSessionText}>break length: {currentSession.current.breakLength}</Text>
             <TouchableOpacity
             style={styles.currentSessionEditButton}
             onPress={()=>{
@@ -62,6 +64,43 @@ function StudySessionsPage({ navigation }) {
                 tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
               />
           </View>
+        </View>
+
+        <TouchableOpacity
+          style={styles.button}
+          onPress={()=>{
+
+          }}>
+          <Text
+            style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
+          >Start Session</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[styles.button, {backgroundColor: colours.blue}]}
+          onPress={()=>{
+
+          }}>
+          <Text
+            style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
+          >View Milestones</Text>
+        </TouchableOpacity>
+
+        <View style={styles.currentSessionView}>
+          <Text style={styles.currentSessionTitle}>Hours Studied</Text>
+          
+          <Text
+            style={styles.currentSessionText}
+          >today: {}</Text>
+          <Text
+            style={styles.currentSessionText}
+          >this week: {}</Text>
+          <Text
+            style={styles.currentSessionText}
+          >this month: {}</Text>
+          <Text
+            style={styles.currentSessionText}
+          >this year: {}</Text>
         </View>
       </View>
   );

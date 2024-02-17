@@ -143,7 +143,7 @@ export default function TopicSelection(props) {
     }}>
       <Text style={[styles.subtitleText, {marginBottom: 11}]}>Choose topics for {Subject.setname}</Text>
       <TouchableOpacity
-        style={[styles.button, {backgroundColor: colours.darkPrimary}]}
+        style={[styles.button, {backgroundColor: colours.primary}]}
         onPress={() => {
           var selectedTopics = [];
           for (let i = 0; i < selectionTopics.length; i++) {
@@ -211,7 +211,7 @@ export default function TopicSelection(props) {
                   onValueChange={() => {
                     item.setSelection(!item.selected);
                   }}
-                  tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
+                  tintColors={{true: colours.primary, false: colours.incorrectRed}}
                 />
                 <View style={{flexDirection: 'column', flex: 1}}>
                   <Text style={{

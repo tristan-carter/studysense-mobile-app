@@ -38,7 +38,7 @@ export default StyleSheet.create({
         shadowOffset: {width: -1, height: 2},
         shadowOpacity: 0.01,
         shadowRadius: 3,
-        shadowColor: '#D0D0D0',
+        shadowColor: colours.shadowColour,
         elevation: 6,
     },
     revisionOptionIcon: {

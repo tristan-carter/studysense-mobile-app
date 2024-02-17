@@ -27,7 +27,7 @@ export default StyleSheet.create({
         borderColor: `rgba(0, 0, 0, 0.03)`,
         flexDirection: 'row',
 
-        shadowColor: '#D0D0D0',
+        shadowColor: colours.shadowColour,
         elevation: 5,
         shadowOffset: {width: -2, height: 4},
         shadowOpacity: 0.2,

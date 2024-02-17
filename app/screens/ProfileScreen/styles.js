@@ -20,7 +20,7 @@ export default StyleSheet.create({
       color: colours.subtitletext,
     },
     settingsButton: {
-      backgroundColor: colours.darkPrimary,
+      backgroundColor: colours.primary,
       paddingVertical: 10,
       paddingHorizontal: 20,
       borderRadius: 5,
@@ -37,7 +37,7 @@ export default StyleSheet.create({
       fontFamily: 'Lato',
     },
     button: {
-      backgroundColor: colours.darkPrimary,
+      backgroundColor: colours.primary,
       paddingVertical: 10,
       paddingHorizontal: 20,
       borderRadius: 5,

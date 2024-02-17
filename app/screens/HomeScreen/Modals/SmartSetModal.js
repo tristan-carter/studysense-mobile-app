@@ -127,7 +127,7 @@ export function SmartSetModal ({ setShowModal, showModal, handleCreate, generate
                                 <View style={styles.inputContainer}>
                                     <Text style={styles.inputLabel}>Vocab Set</Text>
                                     <Switch
-                                        trackColor={{false: colours.darkgray, true: colours.darkPrimary}}
+                                        trackColor={{false: colours.darkgray, true: colours.primary}}
                                         thumbColor={colours.background}
                                         ios_backgroundColor={colours.darkgray}
                                         onValueChange={(value) => setIsVocabSet(value)}

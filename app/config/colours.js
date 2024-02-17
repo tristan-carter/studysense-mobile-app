@@ -1,7 +1,7 @@
 export default {
-    primary: '#FF9E77',
+    primary: '#ED7C5A',
     //darkPrimary: '#EC7856',
-    darkPrimary: '#ED7C5A',
+    darkPrimary: '#E95F35',
     primarytext: "#FF4500",
     secondary: '#FFE9DC',
 
@@ -32,6 +32,9 @@ export default {
     incorrectRed: '#FF7777',
 
     oldBackgroundColour: '#FFF9F5',
+
+    shadowColour: '#D0D0D0',
+    shadowDarkColour: '#737373',
 }
 //dark-#8D5742
 //#FF9E77

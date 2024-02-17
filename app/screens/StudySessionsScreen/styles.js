@@ -4,7 +4,7 @@ const styles = {
         flex: 1,
         backgroundColor: colours.backgroundColour,
         alignItems: 'center',
-        paddingHorizontal: 15,
+        paddingHorizontal: 25,
         gap: 18,
     },
     currentSessionView: {
@@ -18,10 +18,10 @@ const styles = {
         flexDirection: 'column',
         gap: 6,
         shadowOffset: {width: -2, height: 2},
-        shadowOpacity: 0.03,
+        shadowOpacity: 0.3,
         shadowRadius: 3,
-        shadowColor: '#D0D0D0',
-        elevation: 5,
+        shadowColor: colours.shadowDarkColour,
+        elevation: 8,
     },
     currentSessionTextContainer: {
         display: 'flex',
@@ -53,6 +53,26 @@ const styles = {
         fontSize: 14,
         fontFamily: 'Lato-Regular',
         color: colours.secondarytext,
+    },
+
+    button: {
+        backgroundColor: colours.primary,
+        padding: 8,
+        borderRadius: 11,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        
+        shadowOffset: {width: -2, height: 4},
+        shadowOpacity: 0.3,
+        shadowRadius: 3,
+        shadowColor: colours.shadowDarkColour,
+        elevation: 8,
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: 18,
+        fontFamily: 'Lato',
     },
 }
 export default styles;

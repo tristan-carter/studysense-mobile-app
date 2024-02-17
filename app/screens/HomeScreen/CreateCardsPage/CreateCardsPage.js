@@ -179,7 +179,7 @@ function CreateCardsPage (props) {
         >
             <View style={styles.container}>
                     <Text style={styles.subtitleText}>{editOrCreate} Cards</Text>
-                    <TouchableOpacity style={[styles.button, {backgroundColor: colours.darkPrimary}]} onPress={handleDoneSet}>
+                    <TouchableOpacity style={[styles.button, {backgroundColor: colours.primary}]} onPress={handleDoneSet}>
                         <Text style={[styles.buttonText, {color: colours.white}]}>Done</Text>
                     </TouchableOpacity>
                     <View style={styles.divider} />
