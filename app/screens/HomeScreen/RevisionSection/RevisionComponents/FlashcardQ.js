@@ -82,7 +82,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                 <TouchableOpacity 
                 style={{marginRight: 15, padding: 20}} 
                 onPress={() => {
-                    setGotQCorrect({correct: true, answer: "Incorrect"});
+                    setGotQCorrect({correct: false, answer: "Incorrect"});
                     setCardFlippedYet(false);
                     spin.value = 0;
                 }}>

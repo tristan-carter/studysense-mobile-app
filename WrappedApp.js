@@ -269,7 +269,8 @@ function HomeTabs(props) {
           } else if (route.name === 'ProfileScreen') {
             iconName = focused ? 'person' : 'person-outline';
           } else if (route.name === 'StudySessions') {
-            iconName = focused ? 'timer' : 'timer-outline';
+            //iconName = focused ? 'timer' : 'timer-outline';
+            iconName = focused ? 'school' : 'school-outline';
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;

@@ -2,6 +2,9 @@ import React, { useState, useRef } from 'react';
 import { View, Dimensions, TouchableOpacity, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import CheckBox from '@react-native-community/checkbox';
+import { BarChart } from "react-native-gifted-charts";
+
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 import colours from '../../config/colours'
@@ -16,44 +19,49 @@ function StudySessionsPage({ navigation }) {
   })
   const [focusMode, setFocusMode] = useState(false);
 
-  
+  const barData = [
+    {value: 80, label: 'M'},
+    {value: 100, label: 'T', frontColor: colours.primary},
+    {value: 120, label: 'W', frontColor: colours.primary},
+    {value: 60, label: 'T'},
+    {value: 100, label: 'F', frontColor: colours.primary},
+    {value: 1, label: 'S'},
+    {value: 1, label: 'S'},
+];
   return (
       <View style={styles.container}>
         <View style={styles.currentSessionView}>
           <View style={styles.currentSessionTextContainer}>
             <Text style={styles.currentSessionTitle}>session name: {currentSession.current.title}</Text>
             <TouchableOpacity
-            style={styles.currentSessionEditButton}
             onPress={()=>{
               
             }}>
-              <Text style={styles.currentSessionEditText}>Edit</Text>
+              <Ionicons name="create-outline" size={23} color={colours.darkgray} />
             </TouchableOpacity>
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>session length: {currentSession.current.length}</Text>
+            <Text style={styles.currentSessionText}>session length: {currentSession.current.length} mins</Text>
             <TouchableOpacity
-            style={styles.currentSessionEditButton}
             onPress={()=>{
               
             }}>
-              <Text style={styles.currentSessionEditText}>Edit</Text>
+              <Ionicons name="create-outline" size={23} color={colours.darkgray} />
             </TouchableOpacity>
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>break length: {currentSession.current.breakLength}</Text>
+            <Text style={styles.currentSessionText}>break length: {currentSession.current.breakLength} mins</Text>
             <TouchableOpacity
-            style={styles.currentSessionEditButton}
             onPress={()=>{
-
+              
             }}>
-              <Text style={styles.currentSessionEditText}>Edit</Text>
+              <Ionicons name="create-outline" size={23} color={colours.darkgray} />
             </TouchableOpacity>
           </View>
 
-          <View style={[styles.currentSessionTextContainer, {gap: 4}]}>
+          <View style={[styles.currentSessionTextContainer, {gap: 0}]}>
               <Text style={styles.currentSessionText}>focus mode: </Text>
               <CheckBox
                 value={focusMode}
@@ -66,6 +74,29 @@ function StudySessionsPage({ navigation }) {
           </View>
         </View>
 
+        <BarChart
+          barWidth={23}
+          noOfSections={120/30}
+          barBorderRadius={4}
+          frontColor="lightgray"
+          data={barData}
+          yAxisThickness={0}
+          xAxisThickness={0}
+          maxValue={120}
+
+          hideRules
+          showReferenceLine1
+          referenceLine1Position={90}
+          referenceLine1Config={{
+            color: 'gray',
+            dashWidth: 2,
+            dashGap: 3,
+            dashThickness: 2,
+          }}
+          
+          yAxisStep={30}
+        />
+        
         <TouchableOpacity
           style={styles.button}
           onPress={()=>{
@@ -75,7 +106,7 @@ function StudySessionsPage({ navigation }) {
             style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
           >Start Session</Text>
         </TouchableOpacity>
-
+          
         <TouchableOpacity
           style={[styles.button, {backgroundColor: colours.blue}]}
           onPress={()=>{
@@ -83,24 +114,24 @@ function StudySessionsPage({ navigation }) {
           }}>
           <Text
             style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
-          >View Milestones</Text>
+          >Set New Goal</Text>
         </TouchableOpacity>
 
         <View style={styles.currentSessionView}>
-          <Text style={styles.currentSessionTitle}>Hours Studied</Text>
+          <Text style={styles.currentSessionTitle}>You've Studied</Text>
           
           <Text
             style={styles.currentSessionText}
-          >today: {}</Text>
+          >today: {30} mins</Text>
           <Text
             style={styles.currentSessionText}
-          >this week: {}</Text>
+          >this week: {}13hrs 50 mins</Text>
           <Text
             style={styles.currentSessionText}
-          >this month: {}</Text>
+          >this month: {}2 days 17hrs</Text>
           <Text
             style={styles.currentSessionText}
-          >this year: {}</Text>
+          >this year: {}1 week 5 days</Text>
         </View>
       </View>
   );
