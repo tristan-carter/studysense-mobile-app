@@ -6,7 +6,7 @@ import { saveUser } from '../../../../firebase/userSlice';
 
 import styles from './styles';
 import colours from '../../../config/colours';
-import ComingSoonScreen from '../../ComingSoonScreen';
+import ComingSoonScreen from '../../StudySessionsScreen/ComingSoonScreen.js';
 import FlashcardQ from './RevisionComponents/FlashcardQ';
 
 import MultipleChoiceQ from './RevisionComponents/MultipleChoiceQ';

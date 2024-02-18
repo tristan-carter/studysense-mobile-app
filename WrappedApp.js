@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 // external packages
+import { firebase } from "@react-native-firebase/database";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -196,18 +197,32 @@ function HomeTabs(props) {
     }
   }, [state.creatingNewSetFromNoSets]);
 
+  const startTime = useRef(Date.now());
   useEffect(() => {
     const subscription = AppState.addEventListener('change', nextAppState => {
-      if (data && (nextAppState === 'background')) {
-        const currentTimeStamp = Date.now();
+      const currentTimeStamp = Date.now();
+      const timeSpent = Math.floor((currentTimeStamp - startTime.current) / 1000 );
+      const userId = firebase.auth().currentUser.uid;
+      /*if (data && (nextAppState === 'background')) {
+        updateTotalTimeSpent(userId, timeSpent);
         if (currentTimeStamp - lastSavedTimestamp.current >= 5000) {
           dispatch(saveUser("current"));
           lastSavedTimestamp.current = currentTimeStamp;
         }
-      } else if (nextAppState === 'active' && !data) {
-        //dispatch(fetchUser());
-      }
+      }*/
 
+      if (appState.current.match(/inactive|background/) && nextAppState === 'active') {
+        // App has come to the foreground, update session start time
+        startTime.current = Date.now();
+      } else if (appState.current === 'active' && nextAppState.match(/inactive|background/)) {
+        // App has gone to the background, update total time spent
+        console.log("updating time spent");
+        updateTotalTimeSpent(userId, timeSpent);
+        if (currentTimeStamp - lastSavedTimestamp.current >= 5000) {
+          dispatch(saveUser("current"));
+          lastSavedTimestamp.current = currentTimeStamp;
+        }
+      }
       appState.current = nextAppState;
       setAppStateVisible(appState.current);
     });
@@ -216,6 +231,16 @@ function HomeTabs(props) {
       subscription.remove();
     };
   }, []);
+
+  const updateTotalTimeSpent = (userId, timeSpent) => {
+    console.log(timeSpent)
+    firebase.database().ref(`timeRecords/${userId}`).transaction((totalTime) => {
+      if (totalTime == null) {
+        return timeSpent;
+      }
+      return (totalTime || 0) + timeSpent;
+    });
+  };
 
   return(
     <>
@@ -333,9 +358,7 @@ export default function WrappedApp() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF9F5' }}>
         <Image source={require('./app/assets/StudySenseAppLogo.png')} style={{ width: '80%', aspectRatio: 1/1, height: undefined }}/>
-        {
         <ActivityIndicator size="large" color={colours.primary} />
-        }
       </View>
     )
   }

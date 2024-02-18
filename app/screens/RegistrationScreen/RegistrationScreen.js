@@ -39,17 +39,28 @@ export default function RegistrationScreen({navigation}) {
                     id: uid,
                     username: username,
                     email: email,
+
                     accountCreatedOnApp: true,
+                    accountCreatedOnAndroid: true,
                     accountCreationDateTime: new Date().toString(),
                     settings: {
                         downloadSetsToUseOffline: true,
                         accountType: "default",
                     },
+                    accountDeleted: false,
+
                     folders: ["null"],
                     sets: ["null"],
-                    accountDeleted: false,
+
                     following: ["null"],
                     followers: ["null"],
+
+                    studySessions: ["null"],
+                    studySessionsGoals: {
+                        daily: 0,
+                        weekly: 0,
+                        monthly: 0,
+                    },
                   };
                 const analytics = getAnalytics();
                 logEvent(analytics, 'sign_up', {

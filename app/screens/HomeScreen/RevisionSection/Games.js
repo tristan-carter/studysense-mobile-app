@@ -7,7 +7,7 @@ import { PieChart } from "react-native-gifted-charts";
 
 import styles from './styles';
 import colours from '../../../config/colours';
-import ComingSoonScreen from '../../ComingSoonScreen';
+import ComingSoonScreen from '../../StudySessionsScreen/ComingSoonScreen';
 
 function Games({ navigation }) {
     const dispatch = useDispatch();
