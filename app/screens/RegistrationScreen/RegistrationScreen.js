@@ -55,12 +55,18 @@ export default function RegistrationScreen({navigation}) {
                     following: ["null"],
                     followers: ["null"],
 
-                    studySessions: ["null"],
+                    pastStudySessions: ["null"],
                     studySessionsGoals: {
-                        daily: 0,
+                        daily: 60,
                         weekly: 0,
                         monthly: 0,
                     },
+                    currentSessionPreset: {
+                        length: 30,
+                        breakLength: 5,
+                        name: "Studying",
+                        focusMode: false,
+                    }
                   };
                 const analytics = getAnalytics();
                 logEvent(analytics, 'sign_up', {

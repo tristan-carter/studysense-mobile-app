@@ -13,7 +13,6 @@ import styles from './styles';
 import colours from '../../config/colours';
 
 import SettingsPage from './SettingsPage';
-import ComingSoonScreen from '../StudySessionsScreen/ComingSoonScreen';
 
 const SVGBackButton = (props) => (
     <Svg

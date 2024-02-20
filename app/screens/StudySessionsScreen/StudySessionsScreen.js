@@ -1,8 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { View, Dimensions, TouchableOpacity, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import CheckBox from '@react-native-community/checkbox';
 import { BarChart } from "react-native-gifted-charts";
+
+import { useDispatch, useSelector } from 'react-redux';
+import { setCurrentSession, saveUser } from '../../../firebase/userSlice';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -10,29 +13,119 @@ import styles from './styles';
 import colours from '../../config/colours'
 
 function StudySessionsPage({ navigation }) {
-  const currentSession = useRef({
-    title: "Studying",
-    length: 30,
-    breakLength: 5,
-    date: null,
-    focusMode: false,
-  })
-  const [focusMode, setFocusMode] = useState(false);
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state.user);
+  const data = state.data;
 
-  const barData = [
-    {value: 80, label: 'M'},
-    {value: 100, label: 'T', frontColor: colours.primary},
-    {value: 120, label: 'W', frontColor: colours.primary},
-    {value: 60, label: 'T'},
-    {value: 100, label: 'F', frontColor: colours.primary},
-    {value: 1, label: 'S'},
-    {value: 1, label: 'S'},
-];
+  if (data.currentSessionPreset == null) {
+    dispatch(saveUser({
+      ...data,
+      pastStudySessions: ["null"],
+      currentSessionPreset: {
+        length: 30,
+        breakLength: 5,
+        name: "Studying",
+        focusMode: false,
+      },
+    }));
+  }
+
+  const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
+
+  useEffect(() => {
+    dispatch(setCurrentSession({
+      name: data.currentSessionPreset.name,
+      length: data.currentSessionPreset.length,
+      breakLength: data.currentSessionPreset.breakLength,
+      focusMode: data.currentSessionPreset.focusMode,
+      startTime: null,
+      completed: false,
+    }));
+  }, []);
+
+  const currentSession = state.currentSession;
+
+  function getDayLabel(date) {
+    const days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+    return days[date.getDay()];
+  }
+
+  function getPastStudySessionsForLast7Days() {
+    /*const now = Date.now();
+    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+
+    // Get last 7 days of sessions
+    const past7DaysSessions = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay);
+
+    const sessionsList = [];
+    past7DaysSessions.forEach(session => {
+        const dayLabel = getDayLabel(new Date(session.date));
+        const existingDay = sessionsList.find(item => item.label === dayLabel);
+        if (existingDay) {
+            existingDay.value += session.length;
+        } else {
+            sessionsList.push({ label: dayLabel, value: session.length });
+        }
+    });*/
+
+    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+    const today = new Date();
+    const past7DaysSessions = [];
+
+    data.pastStudySessions.forEach(session => {
+        if (today - session.date <= 7 * oneDay) {
+            past7DaysSessions.push(session);
+        }
+    });
+
+    const sessionsList = {
+        'M': 0,
+        'T': 0,
+        'W': 0,
+        'T': 0,
+        'F': 0,
+        'S': 0,
+        'S': 0,
+    };
+
+    // Populate sessionsList with study session lengths for each day
+    past7DaysSessions.forEach(session => {
+        const dayLabel = getDayLabel(new Date(session.date));
+        sessionsList[dayLabel] += session.length;
+    });
+
+    return sessionsList;
+  }
+
+  function getPastSessionsFormatted() {
+    sessionsList = getPastStudySessionsForLast7Days();
+    console.log(sessionsList)
+    for (let i = 0; i < sessionsList.length; i++) {
+      if (sessionsList[i].value > data.studySessionsGoals.daily) {
+        sessionsList[i].frontColor = colours.primary;
+      }
+      else if (sessionsList[i].value == 0) {
+        sessionsList[i].value = 1;
+      }
+    }
+  }
+
+  const barData = getPastSessionsFormatted();
+
+  /*const barData = [
+    {value: 0, label: 'M'},
+    {value: 0, label: 'T', frontColor: colours.primary},
+    {value: 0, label: 'W', frontColor: colours.primary},
+    {value: 0, label: 'T'},
+    {value: 0, label: 'F', frontColor: colours.primary},
+    {value: 0, label: 'S'},
+    {value: 0, label: 'S'},
+  ];*/
   return (
       <View style={styles.container}>
         <View style={styles.currentSessionView}>
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionTitle}>session name: {currentSession.current.title}</Text>
+            <Text style={styles.currentSessionTitle}>session name: {currentSession.name}</Text>
             <TouchableOpacity
             onPress={()=>{
               
@@ -42,7 +135,7 @@ function StudySessionsPage({ navigation }) {
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>session length: {currentSession.current.length} mins</Text>
+            <Text style={styles.currentSessionText}>session length: {currentSession.length} mins</Text>
             <TouchableOpacity
             onPress={()=>{
               
@@ -52,7 +145,7 @@ function StudySessionsPage({ navigation }) {
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>break length: {currentSession.current.breakLength} mins</Text>
+            <Text style={styles.currentSessionText}>break length: {currentSession.breakLength} mins</Text>
             <TouchableOpacity
             onPress={()=>{
               
@@ -64,10 +157,13 @@ function StudySessionsPage({ navigation }) {
           <View style={[styles.currentSessionTextContainer, {gap: 0}]}>
               <Text style={styles.currentSessionText}>focus mode: </Text>
               <CheckBox
-                value={focusMode}
+                value={focus}
                 onValueChange={() => {
-                  currentSession.current.focusMode = !focusMode;
-                  setFocusMode(!focusMode);
+                  setFocus(!focus);
+                  dispatch(setCurrentSession({
+                    ...currentSession,
+                    focusMode: !focus,
+                  }));
                 }}
                 tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
               />

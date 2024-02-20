@@ -67,6 +67,14 @@ const userSlice = createSlice({
         loggedIn: false,
         bottomNavShown: true,
         creatingNewSetFromNoSets: false,
+        currentSession: {
+            name: null,
+            length: null,
+            breakLength: null,
+            startTime: null,
+            completed: null,
+            focusMode: null,
+        },
     },
   reducers: {
     setBottomNavShown: (state, action) => {
@@ -93,6 +101,9 @@ const userSlice = createSlice({
     setCurrentSet: (state, action) => {
       state.currentSet = action.payload;
     },
+    setCurrentSession: (state, action) => {
+      state.currentSession = action.payload;
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -124,5 +135,5 @@ const userSlice = createSlice({
   },
 });
 
-export const { setUser, setBottomNavShown, setCreatingNewSetFromNoSets, setLoading, setError, setLoggedIn, setCurrentFolder, setCurrentSet } = userSlice.actions;
+export const { setUser, setBottomNavShown, setCreatingNewSetFromNoSets, setLoading, setError, setLoggedIn, setCurrentFolder, setCurrentSet, setCurrentSession } = userSlice.actions;
 export default userSlice.reducer;

@@ -23,7 +23,6 @@ import SmartStudy from './RevisionSection/SmartStudy';
 import Test from './RevisionSection/Test';
 import Refresher from './RevisionSection/Refresher';
 import Flashcards from './RevisionSection/Flashcards';
-import Games from './RevisionSection/Games';
 
 const LogoTitle = () => (
   <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -204,24 +203,6 @@ function HomeScreen() {
         title: route.params?.set.name || "Unknown Set",
         headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
-        listeners={{
-          focus: () => {
-            dispatch(setBottomNavShown(false));
-            //dispatch(editSet({setId: route.params?.set.id, editedValues:  {lastRevised: new Date()}}));
-          },
-          beforeRemove: () => {
-            dispatch(setBottomNavShown(true));
-            //dispatch(editSet({setId: route.params?.set.id, editedValues:  {lastRevised: new Date()}}));
-          },
-        }}
-      />
-      <Stack.Screen name="Games" component={Games} options={({route}) => ({
-        headerBackImage:()=>(<SVGBackButton/>),
-        gestureEnabled: false,
-        headerBackTitleVisible:false,
-        title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-        headerStyle: { height: 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
             dispatch(setBottomNavShown(false));
