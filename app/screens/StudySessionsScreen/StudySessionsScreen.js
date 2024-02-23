@@ -102,6 +102,23 @@ function StudySessionsPage({ navigation }) {
   }
 
   const barData = getPastSessionsFormatted();
+
+  // calculate the total time studied today, this week, this month, this year
+  const now = Date.now();
+  const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+
+  var totalToday = data.pastStudySessions.filter(session => now - session.date < oneDay).reduce((acc, session) => acc + session.value, 0);
+  var totalThisWeek = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay).reduce((acc, session) => acc + session.value, 0);;
+  var totalThisMonth = data.pastStudySessions.filter(session => now - session.date < 30 * oneDay).reduce((acc, session) => acc + session.value, 0);
+  var totalThisYear = data.pastStudySessions.filter(session => now - session.date < 365 * oneDay).reduce((acc, session) => acc + session.value, 0);
+
+  // divide by 60 to get hours and rounds to 3 significant figures but without trailing zeros
+  totalToday = (totalToday / 60).toFixed(3).replace(/\.?0*$/, '');
+  totalThisWeek = (totalThisWeek / 60).toFixed(3).replace(/\.?0*$/, '');
+  totalThisMonth = (totalThisMonth / 60).toFixed(3).replace(/\.?0*$/, '');
+  totalThisYear = (totalThisYear / 60).toFixed(3).replace(/\.?0*$/, '');
+
+
   return (
       <View style={styles.container}>
         <View style={styles.currentSessionView}>
@@ -199,16 +216,16 @@ function StudySessionsPage({ navigation }) {
           
           <Text
             style={styles.currentSessionText}
-          >today: {30} mins</Text>
+          >today: {totalToday} hours</Text>
           <Text
             style={styles.currentSessionText}
-          >this week: {}13hrs 50 mins</Text>
+          >this week: {totalThisWeek} hours</Text>
           <Text
             style={styles.currentSessionText}
-          >this month: {}2 days 17hrs</Text>
+          >this month: {totalThisMonth} hours</Text>
           <Text
             style={styles.currentSessionText}
-          >this year: {}1 week 5 days</Text>
+          >this year: {totalThisYear} hours</Text>
         </View>
       </View>
   );
