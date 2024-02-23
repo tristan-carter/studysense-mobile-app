@@ -57,8 +57,8 @@ export default function RegistrationScreen({navigation}) {
 
                     pastStudySessions: ["null"],
                     studySessionsGoals: {
-                        daily: 60,
-                        weekly: 0,
+                        daily: 120,
+                        weekly: 840,
                         monthly: 0,
                     },
                     currentSessionPreset: {

@@ -27,6 +27,12 @@ function StudySessionsPage({ navigation }) {
         name: "Studying",
         focusMode: false,
       },
+      studySessionsGoals: {
+        daily: 120,
+        weekly: 840,
+        monthly: 0,
+        yearly: 0,
+      },
     }));
   }
 
@@ -50,48 +56,33 @@ function StudySessionsPage({ navigation }) {
     return days[date.getDay()];
   }
 
+  function getLast7Days() {
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const today = new Date();
+    const last7Days = [];
+  
+    for (let i = 0; i < 7; i++) {
+      const day = new Date(today);
+      day.setDate(today.getDate() - i);
+      last7Days.unshift(days[day.getDay()].charAt(0).toUpperCase());
+    }
+  
+    return last7Days;
+  }
+
   function getPastStudySessionsForLast7Days() {
-    /*const now = Date.now();
+    const now = Date.now();
     const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
 
     // Get last 7 days of sessions
+    const last7Days = getLast7Days();
     const past7DaysSessions = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay);
 
-    const sessionsList = [];
+    const sessionsList = last7Days.map(day => ({ label: day, value: 0 }));
     past7DaysSessions.forEach(session => {
         const dayLabel = getDayLabel(new Date(session.date));
         const existingDay = sessionsList.find(item => item.label === dayLabel);
-        if (existingDay) {
-            existingDay.value += session.length;
-        } else {
-            sessionsList.push({ label: dayLabel, value: session.length });
-        }
-    });*/
-
-    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
-    const today = new Date();
-    const past7DaysSessions = [];
-
-    data.pastStudySessions.forEach(session => {
-        if (today - session.date <= 7 * oneDay) {
-            past7DaysSessions.push(session);
-        }
-    });
-
-    const sessionsList = {
-        'M': 0,
-        'T': 0,
-        'W': 0,
-        'T': 0,
-        'F': 0,
-        'S': 0,
-        'S': 0,
-    };
-
-    // Populate sessionsList with study session lengths for each day
-    past7DaysSessions.forEach(session => {
-        const dayLabel = getDayLabel(new Date(session.date));
-        sessionsList[dayLabel] += session.length;
+        existingDay.value += session.length;
     });
 
     return sessionsList;
@@ -99,7 +90,6 @@ function StudySessionsPage({ navigation }) {
 
   function getPastSessionsFormatted() {
     sessionsList = getPastStudySessionsForLast7Days();
-    console.log(sessionsList)
     for (let i = 0; i < sessionsList.length; i++) {
       if (sessionsList[i].value > data.studySessionsGoals.daily) {
         sessionsList[i].frontColor = colours.primary;
@@ -108,19 +98,10 @@ function StudySessionsPage({ navigation }) {
         sessionsList[i].value = 1;
       }
     }
+    return sessionsList;
   }
 
   const barData = getPastSessionsFormatted();
-
-  /*const barData = [
-    {value: 0, label: 'M'},
-    {value: 0, label: 'T', frontColor: colours.primary},
-    {value: 0, label: 'W', frontColor: colours.primary},
-    {value: 0, label: 'T'},
-    {value: 0, label: 'F', frontColor: colours.primary},
-    {value: 0, label: 'S'},
-    {value: 0, label: 'S'},
-  ];*/
   return (
       <View style={styles.container}>
         <View style={styles.currentSessionView}>
