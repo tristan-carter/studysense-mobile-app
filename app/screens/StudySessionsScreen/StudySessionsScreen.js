@@ -5,7 +5,7 @@ import CheckBox from '@react-native-community/checkbox';
 import { BarChart } from "react-native-gifted-charts";
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setCurrentSession, saveUser } from '../../../firebase/userSlice';
+import { setCurrentSession, saveUser, setUser } from '../../../firebase/userSlice';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -34,6 +34,22 @@ function StudySessionsPage({ navigation }) {
         yearly: 0,
       },
     }));
+    dispatch(setUser({
+      ...data,
+      pastStudySessions: ["null"],
+      currentSessionPreset: {
+        length: 30,
+        breakLength: 5,
+        name: "Studying",
+        focusMode: false,
+      },
+      studySessionsGoals: {
+        daily: 120,
+        weekly: 840,
+        monthly: 0,
+        yearly: 0,
+      },
+    }))
   }
 
   const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
@@ -73,7 +89,7 @@ function StudySessionsPage({ navigation }) {
   function getPastStudySessionsForLast7Days() {
     const now = Date.now();
     const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
-
+0
     // Get last 7 days of sessions
     const last7Days = getLast7Days();
     const past7DaysSessions = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay);
