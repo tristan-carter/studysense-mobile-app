@@ -68,10 +68,10 @@ const userSlice = createSlice({
         bottomNavShown: true,
         creatingNewSetFromNoSets: false,
         currentSession: {
-            name: null,
             length: null,
             breakLength: null,
             startTime: null,
+            inSession: false,
             completed: null,
             focusMode: null,
         },

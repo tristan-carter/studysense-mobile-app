@@ -172,31 +172,28 @@ const SettingsPage = () => {
       visible={showEmailModal}
       onRequestClose={() => setShowEmailModal(false)}
       >
-      <View style={styles.modalContainer}>
-        <View style={styles.modalContent}>
-          <Text style={styles.modalText}>Change Email</Text>
-          <View style={styles.inputContainer}>
-              <Text style={styles.inputLabel}>New Email</Text>
-              <TextInput
-                  multiline={true}
-                  style={styles.textInput} defaultValue={newEmail.current} placeholder={"studysense@hotmail.com"} placeholderTextColor={'rgba(0, 0, 0, 0.48)'}
-                  onChangeText={(text) => {newEmail.current=text}}
-              />
-          </View>
-          <TouchableOpacity
-            style={styles.createButton}
-            onPress={()=>{setShowEmailModal(false); changeEmail(newEmail.current, setShowInformationModal, informationToShow, user, dispatch)}}
-          >
-            <Text style={styles.createButtonText}>Done</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.cancelButton}
-            onPress={()=>setShowEmailModal(false)}
-          >
-            <Text style={styles.cancelButtonText}>Cancel</Text>
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalText}>Change Email</Text>
+                <TextInput
+                    multiline={true}
+                    style={styles.textInput} defaultValue={newEmail.current} placeholder={"studysense@hotmail.com"} placeholderTextColor={'rgba(0, 0, 0, 0.48)'}
+                    onChangeText={(text) => {newEmail.current=text}}
+                />
+            <TouchableOpacity
+              style={styles.createButton}
+              onPress={()=>{setShowEmailModal(false); changeEmail(newEmail.current, setShowInformationModal, informationToShow, user, dispatch)}}
+            >
+              <Text style={styles.createButtonText}>Done</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.cancelButton}
+              onPress={()=>setShowEmailModal(false)}
+            >
+              <Text style={styles.cancelButtonText}>Cancel</Text>
+              </TouchableOpacity>
+          </View>
         </View>
-      </View>
       </Modal>
     </>
   );

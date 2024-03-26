@@ -64,7 +64,6 @@ export default function RegistrationScreen({navigation}) {
                     currentSessionPreset: {
                         length: 30,
                         breakLength: 5,
-                        name: "Studying",
                         focusMode: false,
                     }
                   };
