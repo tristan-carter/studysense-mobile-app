@@ -357,25 +357,6 @@ function StudySessionsPage({ navigation }) {
   );
 }
 
-const SVGBackButton = (props) => (
-    <Svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={44}
-      height={44}
-      left={8}
-      top={8}
-      fill="none"
-      stroke="salmon"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={3}
-      className="feather feather-arrow-left"
-      {...props}
-    >
-      <Path d="M19 12H5M12 19l-7-7 7-7" />
-    </Svg>
-)
-
 const Stack = createStackNavigator();
 
 function StudySessionsScreen({ navigation }) {
