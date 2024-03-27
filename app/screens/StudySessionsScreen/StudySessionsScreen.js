@@ -207,15 +207,17 @@ function StudySessionsPage({ navigation }) {
           style={styles.button}
           onPress={()=>{
             dispatch(setCurrentSession({
-              ...currentSession,
               length: data.currentSessionPreset.length,
               breakLength: data.currentSessionPreset.breakLength,
               focusMode: data.currentSessionPreset.focusMode,
               startTime: Date.now(),
-              inSession: true,
-              completed: false,
+
+              hasFinishedSession: false,
+              hasClaimedSession: false,
+
+              hasFinishedBreak: false,
+              hasClaimedBreak: false,
             }));
-            navigation.navigate('DuringStudySession');
           }}>
           <Text
             style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
@@ -360,9 +362,10 @@ function StudySessionsPage({ navigation }) {
 const Stack = createStackNavigator();
 
 function StudySessionsScreen({ navigation }) {
+    const user = useSelector((state) => state.user.data);
     const screenHeight = Dimensions.get('window').height;
-
-    const inSession = useSelector((state) => state.user.currentSession.inSession);
+    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+    const inSession = user.currentSession != null && !user.currentSession.hasFinishedSession
     return(
       <Stack.Navigator initialRouteName='InstaSetsPage'
       screenOptions={{
