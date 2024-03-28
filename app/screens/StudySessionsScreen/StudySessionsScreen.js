@@ -171,10 +171,24 @@ function StudySessionsPage({ navigation }) {
                 value={focus}
                 onValueChange={() => {
                   setFocus(!focus);
-                  dispatch(setCurrentSession({
-                    ...currentSession,
-                    focusMode: !focus,
-                  }));
+                  if (data.currentSessionPreset.focusMode != null) {
+                    dispatch(setUser({
+                      ...data,
+                      currentSessionPreset: {
+                        ...data.currentSessionPreset,
+                        focusMode: !focus,
+                      }
+                    }));
+                  } else {
+                    dispatch(setUser({
+                      ...data,
+                      currentSessionPreset: {
+                        ...data.currentSessionPreset,
+                        focusMode: true,
+                      }
+                    }));
+                  
+                  }
                 }}
                 tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
               />
@@ -218,6 +232,7 @@ function StudySessionsPage({ navigation }) {
               hasFinishedBreak: false,
               hasClaimedBreak: false,
             }));
+            dispatch(saveUser("current"));
           }}>
           <Text
             style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
@@ -367,7 +382,7 @@ function StudySessionsScreen({ navigation }) {
     const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
     const inSession = user.currentSession != null && !user.currentSession.hasFinishedSession
     return(
-      <Stack.Navigator initialRouteName='InstaSetsPage'
+      <Stack.Navigator initialRouteName='StudySessionsMainPage'
       screenOptions={{
         headerShadowVisible: false,
       }}
@@ -382,7 +397,7 @@ function StudySessionsScreen({ navigation }) {
           }}
         />
         ) : (
-        <Stack.Screen name="InstaSetsPage" component={StudySessionsPage} 
+        <Stack.Screen name="StudySessionsMainPage" component={StudySessionsPage} 
           options={{
             headerShown: true,
             title: "Study Sessions",

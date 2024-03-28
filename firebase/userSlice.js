@@ -70,10 +70,10 @@ const userSlice = createSlice({
     },
   reducers: {
     setBottomNavShown: (state, action) => {
-        state.bottomNavShown = action.payload;
+      state.bottomNavShown = action.payload;
     },
     setCreatingNewSetFromNoSets: (state, action) => {
-        state.creatingNewSetFromNoSets = action.payload;
+      state.creatingNewSetFromNoSets = action.payload;
     },
     setLoggedIn: (state, action) => {
       state.loggedIn = action.payload;
@@ -95,8 +95,6 @@ const userSlice = createSlice({
     },
     setCurrentSession: (state, action) => {
       state.data.currentSession = action.payload;
-      // saves the current session to the user data
-      saveUser("current");
     }
   },
   extraReducers: (builder) => {

@@ -29,7 +29,8 @@ export default {
     notLearned: '#D9D9D9',
 
     correctGreen: '#77FFA6',
-    incorrectRed: '#FF7777',
+    //incorrectRed: '#FF7777', old red
+    incorrectRed: '#FF4444',
 
     oldBackgroundColour: '#FFF9F5',
 

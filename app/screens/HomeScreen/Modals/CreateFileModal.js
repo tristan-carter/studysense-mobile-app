@@ -122,8 +122,8 @@ export function CreateFileModal ({
                                             {
                                                 text: "Ok",
                                                 onPress: () => {
-                                                Clipboard.setString(setCode);
-                                                dispatch(saveSharedSet([saveSharedSetSetCode, set]));
+                                                    Clipboard.setString(setCode);
+                                                    dispatch(saveSharedSet([saveSharedSetSetCode, set]));
                                                 },
                                             },
                                         ]
@@ -135,7 +135,6 @@ export function CreateFileModal ({
                                         [
                                             {
                                                 text: "Go Back",
-                                                onPress: () => {},
                                             },
                                         ]
                                     );
