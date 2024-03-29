@@ -31,7 +31,7 @@ function StudySessionsPage({ navigation }) {
       setTimeLeft(newTimeLeft);
     }, 10000); // updates every 10 seconds
     return () => clearInterval(intervalId);
-  }, []);
+  }, [currentSession]);
   return (
     <>
       <View style={[styles.container, {

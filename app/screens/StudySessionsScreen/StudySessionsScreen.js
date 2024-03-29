@@ -446,7 +446,7 @@ function StudySessionsScreen({ navigation }) {
 
           ) : (
 
-            !breakFinished ? (
+            breakFinished ? (
               <Stack.Screen name="ClaimStudySessionBreak" component={ClaimStudySessionBreak} 
                 options={{
                   headerShown: true,

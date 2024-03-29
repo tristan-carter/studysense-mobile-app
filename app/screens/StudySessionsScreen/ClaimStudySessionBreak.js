@@ -53,7 +53,7 @@ function StudySessionsPage({ navigation }) {
         <View style={styles.duringSessionFrame}>
           <View style={styles.duringSessionUpperSection}>
             <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>Stay Focused.</Text>
+              <Text style={styles.duringSessionTitleText}>Claim Break.</Text>
             </View>
           </View>
           <View style={styles.duringSessionTimeLeftContainer}>

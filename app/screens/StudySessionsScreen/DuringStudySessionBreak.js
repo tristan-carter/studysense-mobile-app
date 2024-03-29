@@ -19,19 +19,17 @@ function StudySessionsPage({ navigation }) {
 
   const currentSession = user.currentSession;
 
-  const now = Date.now();
   const [timeLeft, setTimeLeft] = useState();
 
   useEffect(() => {
-    const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
+    const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
     setTimeLeft(newTimeLeft);
     const intervalId = setInterval(() => {
-      const now = Date.now();
-      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
+      const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
       setTimeLeft(newTimeLeft);
     }, 10000); // updates every 10 seconds
     return () => clearInterval(intervalId);
-  }, []);
+  }, [currentSession]);
   return (
     <>
       <View style={[styles.container, {

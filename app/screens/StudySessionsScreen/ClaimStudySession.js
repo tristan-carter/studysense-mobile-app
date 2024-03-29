@@ -19,15 +19,13 @@ function StudySessionsPage({ navigation }) {
 
   const currentSession = user.currentSession;
 
-  const now = Date.now();
   const [timeLeft, setTimeLeft] = useState();
 
   useEffect(() => {
-    const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
+    const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
     setTimeLeft(newTimeLeft);
     const intervalId = setInterval(() => {
-      const now = Date.now();
-      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
+      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
       setTimeLeft(newTimeLeft);
     }, 10000); // updates every 10 seconds
     return () => clearInterval(intervalId);
@@ -73,7 +71,15 @@ function StudySessionsPage({ navigation }) {
             </View>
           </View>
           <TouchableOpacity style={styles.duringSessionTimeLeftContainer} onPress={()=>{
-            
+            const newUserData = {
+              ...user,
+              currentSession: {
+                ...currentSession,
+                hasClaimedSession: true,
+                breakStartTime: Date.now(),
+              },
+            };
+            dispatch(saveUser(newUserData));
           }}>
             <Text style={styles.sessionMainButtonText}>
               Start Break
