@@ -8,6 +8,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setCurrentSession, saveUser, setUser } from '../../../firebase/userSlice';
 
 import DuringStudySession from './DuringStudySession';
+import ClaimStudySession from './ClaimStudySession';
+import DuringStudySessionBreak from './DuringStudySessionBreak';
+import ClaimStudySessionBreak from './ClaimStudySessionBreak';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -225,11 +228,9 @@ function StudySessionsPage({ navigation }) {
               breakLength: data.currentSessionPreset.breakLength,
               focusMode: data.currentSessionPreset.focusMode,
               startTime: Date.now(),
+              breakStartTime: null,
 
-              hasFinishedSession: false,
               hasClaimedSession: false,
-
-              hasFinishedBreak: false,
               hasClaimedBreak: false,
             }));
             dispatch(saveUser("current"));
@@ -310,7 +311,9 @@ function StudySessionsPage({ navigation }) {
                 }
                 const intNewLength = parseInt(newLength.current);
                 if (newLengthType.current == 'Session') {
-                  if (intNewLength < 5) {
+                  //if (intNewLength < 5) {
+                  // NEEDS CHANGING BACK TO 5 FROM 1 AFTER TESTING FOR PRODUCTION
+                  if (intNewLength < 1) {
                     Alert.alert('Invalid Session Length', 'Please enter a session length of at least 5 minutes');
                     return;
                   }
@@ -377,37 +380,87 @@ function StudySessionsPage({ navigation }) {
 const Stack = createStackNavigator();
 
 function StudySessionsScreen({ navigation }) {
-    const user = useSelector((state) => state.user.data);
-    const screenHeight = Dimensions.get('window').height;
-    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
-    const inSession = user.currentSession != null && !user.currentSession.hasFinishedSession
-    return(
-      <Stack.Navigator initialRouteName='StudySessionsMainPage'
-      screenOptions={{
-        headerShadowVisible: false,
-      }}
-      >
-        {inSession ? (
-        <Stack.Screen name="DuringStudySession" component={DuringStudySession} 
-          options={{
-            headerShown: true,
-            title: "Study Sessions",
-            headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-            headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
-          }}
-        />
-        ) : (
-        <Stack.Screen name="StudySessionsMainPage" component={StudySessionsPage} 
-          options={{
-            headerShown: true,
-            title: "Study Sessions",
-            headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
-            headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
-          }}
-        /> 
-        )}
-      </Stack.Navigator>
-    )
+  const timeNow = Date.now();
+  const user = useSelector((state) => state.user.data);
+  const currentSession = user.currentSession;
+  const screenHeight = Dimensions.get('window').height;
+  const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+  const inSession = currentSession != null && !currentSession.hasClaimedBreak
+  const sessionFinished = currentSession != null
+  && currentSession.startTime != null
+  && timeNow - currentSession.startTime >= currentSession.length * 60000;
+
+  const breakFinished = currentSession != null
+  && currentSession.breakStartTime != null 
+  && timeNow - currentSession.breakStartTime >= currentSession.breakLength * 60000;
+  return(
+    <Stack.Navigator initialRouteName='StudySessionsMainPage'
+    screenOptions={{
+      headerShadowVisible: false,
+    }}
+    >
+      {inSession ? (
+
+
+          !currentSession.hasClaimedSession ? (
+
+              sessionFinished ? (
+                <Stack.Screen name="ClaimStudySession" component={ClaimStudySession} 
+                  options={{
+                    headerShown: true,
+                    title: "Study Sessions",
+                    headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                    headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
+                  }}
+                />
+              ) : (
+                <Stack.Screen name="DuringStudySession" component={DuringStudySession} 
+                  options={{
+                    headerShown: true,
+                    title: "Study Sessions",
+                    headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                    headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
+                  }}
+                />
+              )
+
+          ) : (
+
+            !breakFinished ? (
+              <Stack.Screen name="ClaimStudySessionBreak" component={ClaimStudySessionBreak} 
+                options={{
+                  headerShown: true,
+                  title: "Study Sessions",
+                  headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                  headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
+                }}
+              />
+          ) : (
+            <Stack.Screen name="DuringStudySessionBreak" component={DuringStudySessionBreak} 
+              options={{
+                headerShown: true,
+                title: "Study Sessions",
+                headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
+              }}
+            />
+          )
+
+        )
+      ) : (
+
+
+      <Stack.Screen name="StudySessionsMainPage" component={StudySessionsPage} 
+        options={{
+          headerShown: true,
+          title: "Study Sessions",
+          headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+          headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
+        }}
+      /> 
+    )}
+    </Stack.Navigator>
+  )
 }
 
 export default StudySessionsScreen;

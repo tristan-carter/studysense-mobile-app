@@ -37,9 +37,8 @@ function StudySessionsPage({ navigation }) {
       <View style={[styles.container, {
         gap: 0,
       }]}>
-        {/* Page which user sees during a study session */}
         <LottieView
-          source={require('../../assets/CatSleepingAnimation.json')}
+          source={require('../../assets/CelebrationAnimation.json')}
           autoPlay
           loop
           style={{
@@ -50,7 +49,7 @@ function StudySessionsPage({ navigation }) {
           }}
         />
         
-        <View style={[styles.duringSessionFrame, {marginTop: -135}]}>
+        <View style={styles.duringSessionFrame}>
           <View style={styles.duringSessionUpperSection}>
             <View style={styles.duringSessionTextContainer}>
               <Text style={styles.duringSessionTitleText}>Stay Focused.</Text>
@@ -90,7 +89,7 @@ function StudySessionsPage({ navigation }) {
               ]
             );
           }}>
-            <Text style={styles.duringSessionCancelSessionText}>Give Up</Text>
+            <Text style={styles.duringSessionCancelSessionText}>Skip Break</Text>
           </TouchableOpacity>
         </View>
       </View>

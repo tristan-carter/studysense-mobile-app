@@ -163,7 +163,6 @@ const styles = {
         justifyContent: 'space-evenly',
         alignItems: 'center',
         gap: 10,
-        marginTop: -135,
     },
     duringSessionUpperSection: {
         width: '90%',

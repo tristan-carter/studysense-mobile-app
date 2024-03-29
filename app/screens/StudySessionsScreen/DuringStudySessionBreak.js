@@ -50,7 +50,7 @@ function StudySessionsPage({ navigation }) {
           }}
         />
         
-        <View style={[styles.duringSessionFrame, {marginTop: -135}]}>
+        <View style={styles.duringSessionFrame}>
           <View style={styles.duringSessionUpperSection}>
             <View style={styles.duringSessionTextContainer}>
               <Text style={styles.duringSessionTitleText}>Stay Focused.</Text>
