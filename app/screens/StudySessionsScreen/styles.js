@@ -239,5 +239,22 @@ const styles = {
         fontSize: 18,
         fontFamily: 'Lato',
     },
+
+    sessionMainButtonText: {
+        color: colours.white,
+        fontSize: 34,
+        fontFamily: 'Lato-Bold',
+        fontWeight: '800',
+        textShadowOffset: {width: 0, height: 3.7},
+        textShadowRadius: 6,
+        textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    },
+    rewardAnimationContainer: {
+        position: 'absolute',
+        width: '160%',
+        height: '55%',
+        alignItems: 'center',
+        justifyContent: 'center',
+    }
 }
 export default styles;

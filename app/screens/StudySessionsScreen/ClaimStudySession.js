@@ -33,67 +33,86 @@ function StudySessionsPage({ navigation }) {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <>
-      <View style={[styles.container, {
-        gap: 0,
-      }]}>
+    <View style={[styles.container, {
+      gap: 0,
+    }]}>
+      <View style={styles.rewardAnimationContainer}>
         <LottieView
           source={require('../../assets/CelebrationAnimation.json')}
           autoPlay
           loop
           style={{
-              width: '130%',
-              height: '60%',
-              alignSelf: 'center',
-              zIndex: 5,
+              width: '150%',
+              height: '150%',
+              position: 'absolute',
           }}
         />
-        
+        <LottieView
+          source={require('../../assets/CatCelebratingAnimation.json')}
+          autoPlay
+          loop
+          style={{
+              width: '100%',
+              height: '100%',
+              position: 'absolute',
+          }}
+        />
+      </View>
+
+      <View style={{
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'absolute',
+      }}>
         <View style={styles.duringSessionFrame}>
           <View style={styles.duringSessionUpperSection}>
             <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>Stay Focused.</Text>
+              <Text style={styles.duringSessionTitleText}>You Finished, Well Done!</Text>
             </View>
           </View>
           <TouchableOpacity style={styles.duringSessionTimeLeftContainer} onPress={()=>{
-            dispatch(setCreatingNewSetFromduringSession(true));
+            
           }}>
-            <Text style={styles.duringSessionTimeLeftText}>
-              {timeLeft}
+            <Text style={styles.sessionMainButtonText}>
+              Start Break
             </Text>
-            <Text style={styles.duringSessionTimeLeftMinutesText}> minutes left</Text>
-          </TouchableOpacity>
-        </View>
-
-        <View style={{
-          width: '100%',
-          alignItems: 'center',
-          flex: 1,
-          justifyContent: 'flex-end',
-          marginBottom: 20,
-        }}>
-          <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
-            Alert.alert(
-              "Shhh... Ending Will Wake the Cat",
-              "Are You a Monster? Cat is So Peaceful",
-              [
-                {
-                  text: "Cancel",
-                  onPress: () => console.log("Cancel Pressed"),
-                  style: "cancel"
-                },
-                { text: "End Session", onPress: () => {
-                  dispatch(setCurrentSession(null));
-                  dispatch(saveUser("current"));
-                } }
-              ]
-            );
-          }}>
-            <Text style={styles.duringSessionCancelSessionText}>Skip Break</Text>
           </TouchableOpacity>
         </View>
       </View>
-    </>
+
+      <View style={{
+        width: '100%',
+        alignItems: 'center',
+        flex: 1,
+        justifyContent: 'flex-end',
+        marginBottom: 20,
+      }}>
+        <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
+          Alert.alert(
+            "",
+            "",
+            [
+              {
+                text: "Cancel",
+                onPress: () => console.log("Cancel Pressed"),
+                style: "cancel"
+              },
+              { text: "End Session", onPress: () => {
+                const newUserData = {
+                  ...user,
+                  currentSession: null,
+                };
+                dispatch(saveUser(newUserData));
+              } }
+            ]
+          );
+        }}>
+          <Text style={styles.duringSessionCancelSessionText}>Skip Break</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
   );
 }
 

@@ -56,14 +56,12 @@ function StudySessionsPage({ navigation }) {
               <Text style={styles.duringSessionTitleText}>Stay Focused.</Text>
             </View>
           </View>
-          <TouchableOpacity style={styles.duringSessionTimeLeftContainer} onPress={()=>{
-            dispatch(setCreatingNewSetFromduringSession(true));
-          }}>
+          <View style={styles.duringSessionTimeLeftContainer}>
             <Text style={styles.duringSessionTimeLeftText}>
               {timeLeft}
             </Text>
             <Text style={styles.duringSessionTimeLeftMinutesText}> minutes left</Text>
-          </TouchableOpacity>
+          </View>
         </View>
 
         <View style={{

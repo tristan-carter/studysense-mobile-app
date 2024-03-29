@@ -17,6 +17,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './styles';
 import colours from '../../config/colours'
 
+const MINUTE_IN_MILLISECONDS = 60000;
+
 function StudySessionsPage({ navigation }) {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.user);
@@ -380,19 +382,37 @@ function StudySessionsPage({ navigation }) {
 const Stack = createStackNavigator();
 
 function StudySessionsScreen({ navigation }) {
-  const timeNow = Date.now();
-  const user = useSelector((state) => state.user.data);
-  const currentSession = user.currentSession;
+  const currentSession = useSelector((state) => state.user.data.currentSession);
   const screenHeight = Dimensions.get('window').height;
-  const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
   const inSession = currentSession != null && !currentSession.hasClaimedBreak
-  const sessionFinished = currentSession != null
-  && currentSession.startTime != null
-  && timeNow - currentSession.startTime >= currentSession.length * 60000;
+  
+  const [sessionFinished, setSessionFinished] = useState(false);
+  const [breakFinished, setBreakFinished] = useState(false);
 
-  const breakFinished = currentSession != null
-  && currentSession.breakStartTime != null 
-  && timeNow - currentSession.breakStartTime >= currentSession.breakLength * 60000;
+  const calcWhatsFinished = () => {
+    const timeNow = Date.now();
+    if (currentSession != null && currentSession.startTime != null) {
+      const newSessionFinished = timeNow - currentSession.startTime >= currentSession.length * MINUTE_IN_MILLISECONDS;
+      if ( newSessionFinished !== sessionFinished ) {
+        setSessionFinished(newSessionFinished);
+      }
+    }
+
+    if (currentSession != null && currentSession.breakStartTime != null) {
+      const newBreakFinished = timeNow - currentSession.breakStartTime >= currentSession.breakLength * MINUTE_IN_MILLISECONDS
+      if ( newBreakFinished !== breakFinished ) {
+        setBreakFinished(newBreakFinished);
+      }
+    }
+  }
+
+  useEffect(() => {
+    calcWhatsFinished();
+    const intervalId = setInterval(() => {
+      calcWhatsFinished();
+    }, 10000); // updates every 10 seconds
+    return () => clearInterval(intervalId);
+  }, [currentSession]);
   return(
     <Stack.Navigator initialRouteName='StudySessionsMainPage'
     screenOptions={{
@@ -403,8 +423,8 @@ function StudySessionsScreen({ navigation }) {
 
 
           !currentSession.hasClaimedSession ? (
-
-              sessionFinished ? (
+            
+            sessionFinished ? (
                 <Stack.Screen name="ClaimStudySession" component={ClaimStudySession} 
                   options={{
                     headerShown: true,

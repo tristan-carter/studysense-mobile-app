@@ -84,8 +84,11 @@ function StudySessionsPage({ navigation }) {
                   style: "cancel"
                 },
                 { text: "End Session", onPress: () => {
-                  dispatch(setCurrentSession(null));
-                  dispatch(saveUser("current"));
+                  const newUserData = {
+                    ...user,
+                    currentSession: null,
+                  };
+                  dispatch(saveUser(newUserData));
                 } }
               ]
             );
