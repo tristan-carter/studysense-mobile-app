@@ -66,7 +66,7 @@ function StudySessionsPage({ navigation }) {
             <Text style={styles.duringSessionTimeLeftText}>
               {timeLeft}
             </Text>
-            <Text style={styles.duringSessionTimeLeftMinutesText}> minutes left</Text>
+            <Text style={styles.duringSessionTimeLeftMinutesText}> minute{timeLeft !== 1 && "s"} left</Text>
           </TouchableOpacity>
         </View>
 

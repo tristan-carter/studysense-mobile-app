@@ -83,7 +83,7 @@ function StudySessionsPage({ navigation }) {
         <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
           Alert.alert(
             "Are you sure you would like to skip your break?",
-            "Your session will still be counted as complete if you choose to skip your break.",
+            "Your session will still be counted as complete.",
             [
               {
                 text: "Cancel",

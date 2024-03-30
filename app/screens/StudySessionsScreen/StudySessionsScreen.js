@@ -317,7 +317,8 @@ function StudySessionsPage({ navigation }) {
                 }
                 const intNewLength = parseInt(newLength.current);
                 if (newLengthType.current == 'Session') {
-                  if (intNewLength < 5) {
+                  //if (intNewLength < 5) {
+                  if (false) { // for testing purposes (change back to 5 later)
                     Alert.alert('Invalid Session Length', 'Please enter a session length of at least 5 minutes');
                     return;
                   }
@@ -392,12 +393,12 @@ function StudySessionsScreen({ navigation }) {
   const [breakFinished, setBreakFinished] = useState(false);
 
   const calcWhatsFinished = () => {
-    if (currentSession !== null && currentSession.startTime !== null) {
+    if (currentSession != null && currentSession.startTime != null) {
       const newSessionFinished = Date.now() - currentSession.startTime >= currentSession.length * MINUTE_IN_MILLISECONDS;
       setSessionFinished(newSessionFinished);
     }
 
-    if (currentSession !== null && currentSession.breakStartTime !== null) {
+    if (currentSession != null && currentSession.breakStartTime != null) {
       const newBreakFinished = Date.now() - currentSession.breakStartTime >= currentSession.breakLength * MINUTE_IN_MILLISECONDS
       setBreakFinished(newBreakFinished);
     }

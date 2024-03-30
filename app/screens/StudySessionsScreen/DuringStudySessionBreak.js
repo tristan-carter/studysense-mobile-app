@@ -39,12 +39,12 @@ function StudySessionsPage({ navigation }) {
       }]}>
         {/* Page which user sees during a study session */}
         <LottieView
-          source={require('../../assets/CatSleepingAnimation.json')}
+          source={require('../../assets/DuringBreakAnimation.json')}
           autoPlay
           loop
           style={{
               width: '130%',
-              height: '60%',
+              height: '50%',
               alignSelf: 'center',
               zIndex: 5,
           }}
@@ -53,7 +53,7 @@ function StudySessionsPage({ navigation }) {
         <View style={styles.duringSessionFrame}>
           <View style={styles.duringSessionUpperSection}>
             <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>Break.</Text>
+              <Text style={styles.duringSessionTitleText}>Brain Break in Progress...</Text>
             </View>
           </View>
           <View style={styles.duringSessionTimeLeftContainer}>
@@ -73,15 +73,15 @@ function StudySessionsPage({ navigation }) {
         }}>
           <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
             Alert.alert(
-              "Shhh... Ending Will Wake the Cat",
-              "Are You a Monster? Cat is So Peaceful",
+              "Are you sure you would like to end your break early?",
+              "Your session will still be counted as complete.",
               [
                 {
                   text: "Cancel",
                   onPress: () => console.log("Cancel Pressed"),
                   style: "cancel"
                 },
-                { text: "End Session", onPress: () => {
+                { text: "End Break", onPress: () => {
                   dispatch(saveUser({
                     ...user,
                     currentSession: null,
@@ -90,7 +90,7 @@ function StudySessionsPage({ navigation }) {
               ]
             );
           }}>
-            <Text style={styles.duringSessionCancelSessionText}>Give Up</Text>
+            <Text style={styles.duringSessionCancelSessionText}>End Break</Text>
           </TouchableOpacity>
         </View>
       </View>

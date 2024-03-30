@@ -19,22 +19,12 @@ function StudySessionsPage({ navigation }) {
     }]}>
       <View style={styles.rewardAnimationContainer}>
         <LottieView
-          source={require('../../assets/CelebrationAnimation.json')}
+          source={require('../../assets/CatWritingAnimation.json')}
           autoPlay
           loop
           style={{
               width: '150%',
-              height: '150%',
-              position: 'absolute',
-          }}
-        />
-        <LottieView
-          source={require('../../assets/CatCelebratingAnimation.json')}
-          autoPlay
-          loop
-          style={{
-              width: '100%',
-              height: '100%',
+              height: '140%',
               position: 'absolute',
           }}
         />
