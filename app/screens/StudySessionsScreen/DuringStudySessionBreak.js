@@ -26,7 +26,7 @@ function StudySessionsPage({ navigation }) {
     }
     const intervalId = setInterval(() => {
       const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
-      if (newTimeLeft >= 0) {
+      if (newTimeLeft > 0) {
         setTimeLeft(newTimeLeft);
       }
     }, 10000); // updates every 10 seconds

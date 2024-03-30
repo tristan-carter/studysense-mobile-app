@@ -59,26 +59,24 @@ function StudySessionsPage({ navigation }) {
 
   const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
 
-  const currentSession = state.currentSession;
-
   function getDayLabel(date) {
-    const days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+    const days = ['SU', 'M', 'T', 'W', 'T', 'F', 'SA'];
     return days[date.getDay()];
-  }
+}
 
-  function getLast7Days() {
+function getLast7Days() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const today = new Date();
+    today.setHours(0, 0, 0, 0); // set the time to the start of the day
     const last7Days = [];
   
-    for (let i = 0; i < 7; i++) {
-      const day = new Date(today);
-      day.setDate(today.getDate() - i);
-      last7Days.unshift(days[day.getDay()].charAt(0).toUpperCase());
+    for (let i = 6; i >= 0; i--) {
+        const day = new Date(today.getTime() - i * 24 * 60 * 60 * 1000);
+        last7Days.push(days[day.getDay()].substring(0, 2).toUpperCase());
     }
   
     return last7Days;
-  }
+}
 
   function getPastStudySessionsForLast7Days() {
     const now = Date.now();
@@ -86,11 +84,11 @@ function StudySessionsPage({ navigation }) {
 
     // Get last 7 days of sessions
     const last7Days = getLast7Days();
-    const past7DaysSessions = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay);
+    const past7DaysSessions = data.pastStudySessions.filter(session => now - session.startTime < 7 * oneDay);
 
     const sessionsList = last7Days.map(day => ({ label: day, value: 0 }));
     past7DaysSessions.forEach(session => {
-        const dayLabel = getDayLabel(new Date(session.date));
+        const dayLabel = getDayLabel(new Date(session.startTime));
         const existingDay = sessionsList.find(item => item.label === dayLabel);
         existingDay.value += session.length;
     });
@@ -101,11 +99,12 @@ function StudySessionsPage({ navigation }) {
   function getPastSessionsFormatted() {
     sessionsList = getPastStudySessionsForLast7Days();
     for (let i = 0; i < sessionsList.length; i++) {
-      if (sessionsList[i].value > data.studySessionsGoals.daily) {
+      sessionsList[i].label = sessionsList[i].label.substring(0, 1);
+      if (sessionsList[i].value >= data.studySessionsGoals.daily) {
         sessionsList[i].frontColor = colours.primary;
       }
       else if (sessionsList[i].value == 0) {
-        sessionsList[i].value = 1;
+        sessionsList[i].value = 0.7;
       }
     }
     return sessionsList;
@@ -117,27 +116,83 @@ function StudySessionsPage({ navigation }) {
   const now = Date.now();
   const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
 
-  var totalToday = data.pastStudySessions.filter(session => now - session.date < oneDay).reduce((acc, session) => acc + session.value, 0);
-  var totalThisWeek = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay).reduce((acc, session) => acc + session.value, 0);
-  var totalThisMonth = data.pastStudySessions.filter(session => now - session.date < 30 * oneDay).reduce((acc, session) => acc + session.value, 0);
-  var totalThisYear = data.pastStudySessions.filter(session => now - session.date < 365 * oneDay).reduce((acc, session) => acc + session.value, 0);
+  var totalToday = {
+    value: data.pastStudySessions.filter(session => now - session.startTime < oneDay).reduce((acc, session) => acc + session.length, 0),
+    type: "minutes",
+  };
+  var totalThisWeek = {
+    value: data.pastStudySessions.filter(session => now - session.startTime < 7 * oneDay).reduce((acc, session) => acc + session.length, 0),
+    type: "minutes",
+  };
+  var totalThisMonth = {
+    value: data.pastStudySessions.filter(session => now - session.startTime < 30 * oneDay).reduce((acc, session) => acc + session.length, 0),
+    type: "minutes",
+  };
+  var totalThisYear = {
+    value: data.pastStudySessions.filter(session => now - session.startTime < 365 * oneDay).reduce((acc, session) => acc + session.length, 0),
+    type: "minutes",
+  };
 
-  // divide by 60 to get hours and rounds to 3 significant figures but without trailing zeros
-  totalToday = (totalToday / 60).toFixed(3).replace(/\.?0*$/, '');
-  totalThisWeek = (totalThisWeek / 60).toFixed(3).replace(/\.?0*$/, '');
-  totalThisMonth = (totalThisMonth / 60).toFixed(3).replace(/\.?0*$/, '');
-  totalThisYear = (totalThisYear / 60).toFixed(3).replace(/\.?0*$/, '');
-
-  var maxDayThisWeek = data.pastStudySessions.filter(session => now - session.date < 7 * oneDay).reduce((acc, session) => {session.value > acc ? acc = session.value : null}, 0);;
-  if (maxDayThisWeek < data.studySessionsGoals.daily) {
-    maxDayThisWeek = data.studySessionsGoals.daily;
+  // converts totals to either hours if more than 60 minutes or to minutes if less than 60 minutes
+  if (totalToday >= 60) {
+    totalToday = {
+      value: (totalToday / 60),
+      type: "hours",
+    };
   }
-  // round maxDayThisWeek up to the nearest 40
-  maxDayThisWeek = Math.ceil(maxDayThisWeek / 40) * 40;
+  if (totalThisWeek >= 60) {
+    totalThisWeek = {
+      value: (totalThisWeek / 60),
+      type: "hours",
+    };
+  }
+  if (totalThisMonth >= 60) {
+    totalThisMonth = {
+      value: (totalThisMonth / 60),
+      type: "hours",
+    };
+  }
+  if (totalThisYear >= 60) {
+    totalThisYear = {
+      value: (totalThisYear / 60),
+      type: "hours",
+    };
+  }
+  // rounds to 2 significant figures but without trailing zeros
+  totalToday.value = totalToday.value.toFixed(2).replace(/\.?0+$/, '');
+  totalThisWeek.value = totalThisWeek.value.toFixed(2).replace(/\.?0+$/, '');
+  totalThisMonth.value = totalThisMonth.value.toFixed(2).replace(/\.?0+$/, '');
+  totalThisYear.value = totalThisYear.value.toFixed(2).replace(/\.?0+$/, '');
 
   const [showLengthModal, setShowLengthModal] = useState(false);
+  const [dailyGoal, setDailyGoal] = useState(data.studySessionsGoals.daily);
   const newLength = useRef();
   const newLengthType = useRef();
+
+  let newMaxDayThisWeek = data.pastStudySessions
+  .filter(session => now - new Date(session.startTime).getTime() < 7 * oneDay)
+  .reduce((acc, session) => session.length > acc ? session.length : acc, 0);
+  if (newMaxDayThisWeek < data.studySessionsGoals.daily) {
+    newMaxDayThisWeek = data.studySessionsGoals.daily;
+  }
+  // round maxDayThisWeek up to the nearest 40
+  newMaxDayThisWeek = Math.ceil(newMaxDayThisWeek / 40) * 40;
+  const [maxDayThisWeek, setMaxDayThisWeek] = useState(newMaxDayThisWeek);
+
+  // calculate the max day this week if dailt goal or past sessions is changed 
+
+  useEffect(() => {
+    let newMaxDayThisWeek = data.pastStudySessions
+    .filter(session => now - new Date(session.startTime).getTime() < 7 * oneDay)
+    .reduce((acc, session) => session.length > acc ? session.length : acc, 0);
+    if (newMaxDayThisWeek < data.studySessionsGoals.daily) {
+      newMaxDayThisWeek = data.studySessionsGoals.daily;
+    }
+    // round maxDayThisWeek up to the nearest 40
+    newMaxDayThisWeek = Math.ceil(newMaxDayThisWeek / 40) * 40;
+    setMaxDayThisWeek(newMaxDayThisWeek);
+  }, [data.studySessionsGoals.daily, data.pastStudySessions]);
+
   return (
     <>
       <View style={styles.container}>
@@ -201,6 +256,7 @@ function StudySessionsPage({ navigation }) {
         </View>
 
         <BarChart
+          key={maxDayThisWeek}
           barWidth={23}
           noOfSections={4}
           barBorderRadius={4}
@@ -211,15 +267,13 @@ function StudySessionsPage({ navigation }) {
           maxValue={maxDayThisWeek}
           hideRules
           showReferenceLine1
-          referenceLine1Position={data.studySessionsGoals.daily}
+          referenceLine1Position={dailyGoal}
           referenceLine1Config={{
-            color: 'gray',
-            dashWidth: 2,
-            dashGap: 3,
-            dashThickness: 2,
+            color: colours.blue,
+            dashWidth: 8,
+            dashGap: 5,
+            dashThickness: 5,
           }}
-          
-          yAxisStep={30}
         />
         
         <TouchableOpacity
@@ -263,16 +317,16 @@ function StudySessionsPage({ navigation }) {
           
           <Text
             style={styles.currentSessionText}
-          >today: {totalToday} hours</Text>
+          >today: {totalToday.value} {totalToday.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >this week: {totalThisWeek} hours</Text>
+          >this week: {totalThisWeek.value} {totalThisWeek.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >this month: {totalThisMonth} hours</Text>
+          >this month: {totalThisMonth.value} {totalThisMonth.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >this year: {totalThisYear} hours</Text>
+          >this year: {totalThisYear.value} {totalThisYear.type}</Text>
         </View>
       </View>
 
@@ -317,8 +371,7 @@ function StudySessionsPage({ navigation }) {
                 }
                 const intNewLength = parseInt(newLength.current);
                 if (newLengthType.current == 'Session') {
-                  //if (intNewLength < 5) {
-                  if (false) { // for testing purposes (change back to 5 later)
+                  if (intNewLength < 5) {
                     Alert.alert('Invalid Session Length', 'Please enter a session length of at least 5 minutes');
                     return;
                   }
@@ -335,6 +388,10 @@ function StudySessionsPage({ navigation }) {
                   }));
                 }
                 else if (newLengthType.current == 'Break') {
+                  if (intNewLength < 1) {
+                    Alert.alert('Invalid Break Length', 'Please enter a break length of at least 1 minute');
+                    return;
+                  }
                   if (intNewLength > 60) {
                     Alert.alert('Invalid Break Length', 'Please enter a break length of 60 minutes or less');
                     return;
@@ -363,6 +420,7 @@ function StudySessionsPage({ navigation }) {
                       daily: parseInt(newLength.current),
                     }
                   }));
+                  setDailyGoal(parseInt(newLength.current));
                 }
                 setShowLengthModal(false);
               }}
