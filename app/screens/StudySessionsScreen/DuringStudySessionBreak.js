@@ -3,9 +3,7 @@ import { View, TouchableOpacity, Text, TextInput, Alert } from 'react-native';
 import LottieView from 'lottie-react-native';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setCurrentSession, saveUser } from '../../../firebase/userSlice';
-
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { saveUser } from '../../../firebase/userSlice';
 
 import styles from './styles';
 import colours from '../../config/colours'
@@ -22,11 +20,15 @@ function StudySessionsPage({ navigation }) {
   const [timeLeft, setTimeLeft] = useState();
 
   useEffect(() => {
-    const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
-    setTimeLeft(newTimeLeft);
-    const intervalId = setInterval(() => {
+    if (currentSession !== null) {
       const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
       setTimeLeft(newTimeLeft);
+    }
+    const intervalId = setInterval(() => {
+      const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
+      if (newTimeLeft >= 0) {
+        setTimeLeft(newTimeLeft);
+      }
     }, 10000); // updates every 10 seconds
     return () => clearInterval(intervalId);
   }, [currentSession]);
@@ -80,8 +82,10 @@ function StudySessionsPage({ navigation }) {
                   style: "cancel"
                 },
                 { text: "End Session", onPress: () => {
-                  dispatch(setCurrentSession(null));
-                  dispatch(saveUser("current"));
+                  dispatch(saveUser({
+                    ...user,
+                    currentSession: null,
+                  }));
                 } }
               ]
             );

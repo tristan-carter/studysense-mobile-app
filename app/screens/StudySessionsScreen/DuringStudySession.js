@@ -23,12 +23,16 @@ function StudySessionsPage({ navigation }) {
   const [timeLeft, setTimeLeft] = useState();
 
   useEffect(() => {
-    const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
-    setTimeLeft(newTimeLeft);
+    if (currentSession !== null) {
+      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
+      setTimeLeft(newTimeLeft);
+    }
     const intervalId = setInterval(() => {
       const now = Date.now();
       const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
-      setTimeLeft(newTimeLeft);
+      if (newTimeLeft >= 0) {
+        setTimeLeft(newTimeLeft);
+      }
     }, 10000); // updates every 10 seconds
     return () => clearInterval(intervalId);
   }, [currentSession]);

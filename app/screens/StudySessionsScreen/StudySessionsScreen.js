@@ -5,7 +5,7 @@ import CheckBox from '@react-native-community/checkbox';
 import { BarChart } from "react-native-gifted-charts";
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setCurrentSession, saveUser, setUser } from '../../../firebase/userSlice';
+import { saveUser, setUser } from '../../../firebase/userSlice';
 
 import DuringStudySession from './DuringStudySession';
 import ClaimStudySession from './ClaimStudySession';
@@ -225,17 +225,21 @@ function StudySessionsPage({ navigation }) {
         <TouchableOpacity
           style={styles.button}
           onPress={()=>{
-            dispatch(setCurrentSession({
-              length: data.currentSessionPreset.length,
-              breakLength: data.currentSessionPreset.breakLength,
-              focusMode: data.currentSessionPreset.focusMode,
-              startTime: Date.now(),
-              breakStartTime: null,
-
-              hasClaimedSession: false,
-              hasClaimedBreak: false,
-            }));
-            dispatch(saveUser("current"));
+            dispatch(saveUser(
+              {
+                ...data,
+                currentSession: {
+                  length: data.currentSessionPreset.length,
+                  breakLength: data.currentSessionPreset.breakLength,
+                  focusMode: data.currentSessionPreset.focusMode,
+                  startTime: Date.now(),
+                  breakStartTime: null,
+    
+                  hasClaimedSession: false,
+                  hasClaimedBreak: false,
+                }
+              }
+            ));
           }}>
           <Text
             style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
@@ -313,9 +317,7 @@ function StudySessionsPage({ navigation }) {
                 }
                 const intNewLength = parseInt(newLength.current);
                 if (newLengthType.current == 'Session') {
-                  //if (intNewLength < 5) {
-                  // NEEDS CHANGING BACK TO 5 FROM 1 AFTER TESTING FOR PRODUCTION
-                  if (intNewLength < 1) {
+                  if (intNewLength < 5) {
                     Alert.alert('Invalid Session Length', 'Please enter a session length of at least 5 minutes');
                     return;
                   }
@@ -390,19 +392,14 @@ function StudySessionsScreen({ navigation }) {
   const [breakFinished, setBreakFinished] = useState(false);
 
   const calcWhatsFinished = () => {
-    const timeNow = Date.now();
-    if (currentSession != null && currentSession.startTime != null) {
-      const newSessionFinished = timeNow - currentSession.startTime >= currentSession.length * MINUTE_IN_MILLISECONDS;
-      if ( newSessionFinished !== sessionFinished ) {
-        setSessionFinished(newSessionFinished);
-      }
+    if (currentSession !== null && currentSession.startTime !== null) {
+      const newSessionFinished = Date.now() - currentSession.startTime >= currentSession.length * MINUTE_IN_MILLISECONDS;
+      setSessionFinished(newSessionFinished);
     }
 
-    if (currentSession != null && currentSession.breakStartTime != null) {
-      const newBreakFinished = timeNow - currentSession.breakStartTime >= currentSession.breakLength * MINUTE_IN_MILLISECONDS
-      if ( newBreakFinished !== breakFinished ) {
-        setBreakFinished(newBreakFinished);
-      }
+    if (currentSession !== null && currentSession.breakStartTime !== null) {
+      const newBreakFinished = Date.now() - currentSession.breakStartTime >= currentSession.breakLength * MINUTE_IN_MILLISECONDS
+      setBreakFinished(newBreakFinished);
     }
   }
 
@@ -410,7 +407,7 @@ function StudySessionsScreen({ navigation }) {
     calcWhatsFinished();
     const intervalId = setInterval(() => {
       calcWhatsFinished();
-    }, 10000); // updates every 10 seconds
+    }, 5000); // updates every 10 seconds
     return () => clearInterval(intervalId);
   }, [currentSession]);
   return(

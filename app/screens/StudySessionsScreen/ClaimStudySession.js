@@ -3,33 +3,18 @@ import { View, TouchableOpacity, Text, TextInput, Alert } from 'react-native';
 import LottieView from 'lottie-react-native';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setCurrentSession, saveUser } from '../../../firebase/userSlice';
+import { saveUser } from '../../../firebase/userSlice';
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 import colours from '../../config/colours'
 
-const MINUTE_IN_MILLISECONDS = 60000;
 
 function StudySessionsPage({ navigation }) {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.user);
   const user = state.data;
-
   const currentSession = user.currentSession;
-
-  const [timeLeft, setTimeLeft] = useState();
-
-  useEffect(() => {
-    const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
-    setTimeLeft(newTimeLeft);
-    const intervalId = setInterval(() => {
-      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
-      setTimeLeft(newTimeLeft);
-    }, 10000); // updates every 10 seconds
-    return () => clearInterval(intervalId);
-  }, []);
   return (
     <View style={[styles.container, {
       gap: 0,
@@ -97,18 +82,22 @@ function StudySessionsPage({ navigation }) {
       }}>
         <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
           Alert.alert(
-            "",
-            "",
+            "Are you sure you would like to skip your break?",
+            "Your session will still be counted as complete if you choose to skip your break.",
             [
               {
                 text: "Cancel",
                 onPress: () => console.log("Cancel Pressed"),
                 style: "cancel"
               },
-              { text: "End Session", onPress: () => {
+              { text: "Skip Break", onPress: () => {
+                // saves session to past sessions and refreshes currentSession to null
+                const newPastSessions = [...user.pastStudySessions];
+                newPastSessions.push(currentSession);
                 const newUserData = {
                   ...user,
                   currentSession: null,
+                  pastStudySessions: newPastSessions,
                 };
                 dispatch(saveUser(newUserData));
               } }
