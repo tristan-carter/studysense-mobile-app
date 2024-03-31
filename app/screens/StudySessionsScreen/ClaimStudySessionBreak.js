@@ -82,15 +82,15 @@ function StudySessionsPage({ navigation }) {
       }}>
         <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
           Alert.alert(
-            "",
-            "",
+            "Take a Well-Deserved Rest?",
+            "You can always come back and continue later.",
             [
               {
                 text: "Cancel",
                 onPress: () => console.log("Cancel Pressed"),
                 style: "cancel"
               },
-              { text: "End Session", onPress: () => {
+              { text: "Finish", onPress: () => {
                 const newPastSessions = [...user.pastStudySessions];
                 const updatedCurrentSession = {
                   ...currentSession,

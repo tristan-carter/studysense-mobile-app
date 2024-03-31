@@ -15,7 +15,7 @@ export default StyleSheet.create({
         borderRadius: 11,
         backgroundColor: colours.backgroundAccent,
         borderWidth: 1.5,
-        borderColor: `rgba(0, 0, 0, 0.03)`,
+        borderColor: `rgba(0, 0, 0, 0.005)`,
         marginVertical: 5.5,
         paddingVertical: 4,
         paddingLeft: 16,

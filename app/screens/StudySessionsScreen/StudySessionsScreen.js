@@ -117,9 +117,15 @@ function getLast7Days() {
   const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
 
   var totalToday = {
-    value: data.pastStudySessions.filter(session => now - session.startTime < oneDay).reduce((acc, session) => acc + session.length, 0),
+    value: data.pastStudySessions.filter(session => {
+        var today = new Date();
+        today.setHours(0,0,0,0);
+        var sessionDate = new Date(session.startTime);
+        sessionDate.setHours(0,0,0,0);
+        return +today === +sessionDate;
+    }).reduce((acc, session) => acc + session.length, 0),
     type: "minutes",
-  };
+};
   var totalThisWeek = {
     value: data.pastStudySessions.filter(session => now - session.startTime < 7 * oneDay).reduce((acc, session) => acc + session.length, 0),
     type: "minutes",
@@ -179,7 +185,7 @@ function getLast7Days() {
   newMaxDayThisWeek = Math.ceil(newMaxDayThisWeek / 40) * 40;
   const [maxDayThisWeek, setMaxDayThisWeek] = useState(newMaxDayThisWeek);
 
-  // calculate the max day this week if dailt goal or past sessions is changed 
+  // calculate the max day this week if daily goal or past sessions is changed 
 
   useEffect(() => {
     let newMaxDayThisWeek = data.pastStudySessions
@@ -320,13 +326,13 @@ function getLast7Days() {
           >today: {totalToday.value} {totalToday.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >this week: {totalThisWeek.value} {totalThisWeek.type}</Text>
+          >past week: {totalThisWeek.value} {totalThisWeek.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >this month: {totalThisMonth.value} {totalThisMonth.type}</Text>
+          >past month: {totalThisMonth.value} {totalThisMonth.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >this year: {totalThisYear.value} {totalThisYear.type}</Text>
+          >past year: {totalThisYear.value} {totalThisYear.type}</Text>
         </View>
       </View>
 
