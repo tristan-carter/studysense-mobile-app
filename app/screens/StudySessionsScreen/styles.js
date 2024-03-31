@@ -64,10 +64,9 @@ const styles = {
         width: '100%',
         
         shadowOffset: {height: 4},
-        shadowOpacity: 0.3,
-        shadowRadius: 3,
-        shadowColor: colours.shadowDarkColour,
+        shadowOpacity: 0.4,
         elevation: 8,
+        shadowRadius: 10,
     },
     buttonText: {
         color: 'white',

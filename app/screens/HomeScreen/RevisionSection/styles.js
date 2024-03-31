@@ -35,7 +35,7 @@ export default StyleSheet.create({
         gap: 10,
         borderWidth: 1.5,
         borderColor: `rgba(0, 0, 0, 0.005)`,
-        shadowOffset: {width: -1, height: 2},
+        shadowOffset: {height: 2},
         shadowOpacity: 0.01,
         shadowRadius: 3,
         shadowColor: colours.shadowColour,

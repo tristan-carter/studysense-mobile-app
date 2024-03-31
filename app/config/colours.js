@@ -34,8 +34,8 @@ export default {
 
     oldBackgroundColour: '#FFF9F5',
 
-    shadowColour: '#D0D0D0',
-    shadowDarkColour: '#737373',
+    shadowColour: '#838383',
+    shadowDarkColour: '#3C3C3C',
 }
 //dark-#8D5742
 //#FF9E77

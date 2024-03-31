@@ -29,7 +29,7 @@ export default StyleSheet.create({
 
         shadowColor: colours.shadowColour,
         elevation: 5,
-        shadowOffset: {width: -2, height: 4},
+        shadowOffset: {height: 4},
         shadowOpacity: 0.2,
         shadowRadius: 5,
     },

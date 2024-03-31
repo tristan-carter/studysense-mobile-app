@@ -125,11 +125,7 @@ const donutChartComponent = (cards) => {
         <View
           style={{
             width: '100%',
-            padding: 16,
-            borderRadius: 20,
-            backgroundColor: colours.backgroundAccent,
-            borderWidth: 1,
-            borderColor: `rgba(0, 0, 0, 0.02)`,
+            padding: 10,
           }}>
           <Text style={{color: colours.black, fontSize: 16, fontFamily: 'Lato-Bold', fontWeight: '600'}}>
             Smart Study Progress
@@ -143,7 +139,7 @@ const donutChartComponent = (cards) => {
                 sectionAutoFocus
                 radius={112}
                 innerRadius={77}
-                innerCircleColor={colours.backgroundAccent}
+                innerCircleColor={colours.backgroundColour}
                 centerLabelComponent={() => {
                   return (
                     <View style={{justifyContent: 'center', alignItems: 'center'}}>
