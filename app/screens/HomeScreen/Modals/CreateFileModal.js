@@ -133,6 +133,9 @@ export function CreateFileModal ({
                                         onPress: () => {
                                             // updates cards to be unlearned
                                             const resetCards = set.cards.map(card => {
+                                                if (card == "null") {
+                                                    return card;
+                                                }
                                                 const newCard = {...card};
                                                 newCard.levelLearned = 0;
                                                 newCard.correct = 0;
@@ -141,8 +144,7 @@ export function CreateFileModal ({
                                                 newCard.totalIncorrect = 0;
                                                 return newCard
                                             });
-                                            console.log("setid: " + set.id)
-                                            dispatch(editSet(set.id, {cards: resetCards}));
+                                            dispatch(editSet({setId: set.id, editedValues: { cards: resetCards }}));
                                         }
                                     }
                                 ]

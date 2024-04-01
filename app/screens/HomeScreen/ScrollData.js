@@ -180,8 +180,6 @@ export default function ScrollData(props) {
                     editingId.current = item.id;
                     editingCards.current = item.cards;
                     newName.current = item.name;
-                    console.log("Test Options line 183")
-                    console.log(item.testOptions)
                     setAnswerWithTerm(item.testOptions.answerWithTerm);
                     setAnswerWithDefinition(item.testOptions.answerWithDefinition);
                     setIsPrivate(item.isPrivate);
@@ -216,8 +214,6 @@ export default function ScrollData(props) {
             editingId.current = data.item.id; 
             editingCards.current = data.item.cards;
             newName.current = data.item.name;
-            console.log("Test Options line 219")
-            console.log(data.item.testOptions)
             setAnswerWithTerm(data.item.testOptions.answerWithTerm);
             setAnswerWithDefinition(data.item.testOptions.answerWithDefinition);
             setIsPrivate(data.item.isPrivate); 
