@@ -157,7 +157,7 @@ function Flashcards({ navigation }) {
   allCards = [...currentSet.cards];
   allCards.shift()
   return (
-    allCards.length >= 2 ? (
+    allCards.length >= 1 ? (
       currentQuestion.current ? (
         showRoundReview ? (
         <RoundReview

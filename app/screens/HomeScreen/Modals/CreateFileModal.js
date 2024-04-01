@@ -115,46 +115,50 @@ export function CreateFileModal ({
                             />
                         </View>
 
-                        <TouchableOpacity
-                        style={[styles.createButton, {
-                            backgroundColor: colours.secondary,
-                            marginTop: 20,
-                        }]}
-                        onPress={() => {
-                            Alert.alert(
-                                "Reset Progress",
-                                "Are you sure you want to reset your progress on this set? This will set all cards to unlearned.",
-                                [
-                                    {
-                                        text: "Cancel",
-                                    },
-                                    {
-                                        text: "Reset",
-                                        onPress: () => {
-                                            // updates cards to be unlearned
-                                            const resetCards = set.cards.map(card => {
-                                                if (card == "null") {
-                                                    return card;
+                        {
+                            editOrCreate == "Edit" ? (
+
+                                <TouchableOpacity
+                                style={[styles.createButton, {
+                                    backgroundColor: colours.incorrectRed,
+                                    marginTop: 20,
+                                    opacity: 0.96,
+                                }]}
+                                onPress={() => {
+                                    Alert.alert(
+                                        "Reset Progress",
+                                        "Are you sure you want to reset your progress on this set? This will set all cards to unlearned.",
+                                        [
+                                            {
+                                                text: "Cancel",
+                                            },
+                                            {
+                                                text: "Reset",
+                                                onPress: () => {
+                                                    // updates cards to be unlearned
+                                                    const resetCards = set.cards.map(card => {
+                                                        if (card == "null") {
+                                                            return card;
+                                                        }
+                                                        const newCard = {...card};
+                                                        newCard.levelLearned = 0;
+                                                        newCard.correct = 0;
+                                                        newCard.totalCorrect = 0;
+                                                        newCard.incorrect = 0;
+                                                        newCard.totalIncorrect = 0;
+                                                        return newCard
+                                                    });
+                                                    dispatch(editSet({setId: set.id, editedValues: { cards: resetCards }}));
                                                 }
-                                                const newCard = {...card};
-                                                newCard.levelLearned = 0;
-                                                newCard.correct = 0;
-                                                newCard.totalCorrect = 0;
-                                                newCard.incorrect = 0;
-                                                newCard.totalIncorrect = 0;
-                                                return newCard
-                                            });
-                                            dispatch(editSet({setId: set.id, editedValues: { cards: resetCards }}));
-                                        }
-                                    }
-                                ]
-                            );
-                        }}
-                        >
-                            <Text style={[styles.createButtonText, {
-                                color: colours.shadowColour,
-                            }]}>Reset Progress</Text>
-                        </TouchableOpacity>
+                                            }
+                                        ]
+                                    );
+                                }}
+                                >
+                                    <Text style={styles.createButtonText}>Reset Progress</Text>
+                                </TouchableOpacity>
+                            ) : <View></View>
+                        }
 
                         <TouchableOpacity style={styles.createButton} onPress={handleCreate}>
                             <Text style={styles.createButtonText}>{editOrCreate == "Edit" ? "Save" : "Create"}</Text>
