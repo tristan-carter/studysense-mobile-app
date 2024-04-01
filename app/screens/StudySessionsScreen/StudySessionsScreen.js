@@ -60,23 +60,42 @@ function StudySessionsPage({ navigation }) {
   const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
 
   function getDayLabel(date) {
-    const days = ['SU', 'M', 'T', 'W', 'T', 'F', 'SA'];
+    const days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
     return days[date.getDay()];
-}
+  }
 
-function getLast7Days() {
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+/*function getLast7Days() {
     const today = new Date();
-    today.setHours(0, 0, 0, 0); // set the time to the start of the day
+    today.setHours(0, 0, 0, 0); 
+
+    const daysToSubtract = today.getDay();
     const last7Days = [];
-  
-    for (let i = 6; i >= 0; i--) {
-        const day = new Date(today.getTime() - i * 24 * 60 * 60 * 1000);
-        last7Days.push(days[day.getDay()].substring(0, 2).toUpperCase());
+
+    for (let i = 0; i < 7; i++) { 
+        const day = new Date(today.getTime() - (daysToSubtract + i) * 24 * 60 * 60 * 1000);
+        last7Days.unshift(getDayLabel(day)); 
     }
-  
+
     return last7Days;
-}
+}*/
+  function getLast7Days() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 1); 
+    const todayLabel = getDayLabel(today);
+
+    const last7Days = [];
+    for (let i = 0; i < 7; i++) {
+        const day = new Date(today.getTime() - i * 23 * 60 * 60 * 1000);
+        last7Days.unshift(getDayLabel(day));
+    }
+    console.log("")
+    console.log("Last 7 Days")
+    console.log(last7Days)
+    console.log("")
+
+    return last7Days;
+  }
+
 
   function getPastStudySessionsForLast7Days() {
     const now = Date.now();
