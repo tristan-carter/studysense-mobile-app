@@ -14,6 +14,8 @@ const importIcon = require('../../../assets/ImportIcon.png')
 import { useSelector, useDispatch } from 'react-redux';
 import { saveSharedSet } from '../../../../firebase/service.js';
 
+import { editSet } from '../../../../firebase/setsSlice.js';
+
 export function CreateFileModal ({ 
     newName,
     setShowModal,
@@ -59,6 +61,8 @@ export function CreateFileModal ({
                                 autoFocus={true}
                             />
                         </View>
+                        
+                        {/* Tagged out for now, to reduce clutter of the modal, can easily be added back in if needed
                         <View style={{
                             flexDirection: 'row',
                             justifyContent: 'space-between',
@@ -71,6 +75,7 @@ export function CreateFileModal ({
                                 onValueChange={() => {setIsPrivate((prev) => !prev);}}
                             />
                         </View>
+                         */}
 
                         <View style={{
                             flexDirection: 'row',
@@ -110,6 +115,45 @@ export function CreateFileModal ({
                             />
                         </View>
 
+                        <TouchableOpacity
+                        style={[styles.createButton, {
+                            backgroundColor: colours.secondary,
+                            marginTop: 20,
+                        }]}
+                        onPress={() => {
+                            Alert.alert(
+                                "Reset Progress",
+                                "Are you sure you want to reset your progress on this set? This will set all cards to unlearned.",
+                                [
+                                    {
+                                        text: "Cancel",
+                                    },
+                                    {
+                                        text: "Reset",
+                                        onPress: () => {
+                                            // updates cards to be unlearned
+                                            const resetCards = set.cards.map(card => {
+                                                const newCard = {...card};
+                                                newCard.levelLearned = 0;
+                                                newCard.correct = 0;
+                                                newCard.totalCorrect = 0;
+                                                newCard.incorrect = 0;
+                                                newCard.totalIncorrect = 0;
+                                                return newCard
+                                            });
+                                            console.log("setid: " + set.id)
+                                            dispatch(editSet(set.id, {cards: resetCards}));
+                                        }
+                                    }
+                                ]
+                            );
+                        }}
+                        >
+                            <Text style={[styles.createButtonText, {
+                                color: colours.shadowColour,
+                            }]}>Reset Progress</Text>
+                        </TouchableOpacity>
+
                         <TouchableOpacity style={styles.createButton} onPress={handleCreate}>
                             <Text style={styles.createButtonText}>{editOrCreate == "Edit" ? "Save" : "Create"}</Text>
                         </TouchableOpacity>
@@ -127,7 +171,7 @@ export function CreateFileModal ({
                                 </View>
                             </TouchableOpacity>
                         </>
-        */}
+                        */}
                         {editOrCreate != "Edit" && !creatingFolder ?
                         <>
                             <View style={styles.divider} />

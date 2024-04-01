@@ -66,6 +66,9 @@ export const editSet = createAsyncThunk(
     if (currentFolder === null) {
       const updatedSets = data.sets.map((set) => {
         if (set.id === setId) {
+          const answerWithTerm = editedValues.answerWithTerm != null ? editedValues.answerWithTerm : set.testOptions.answerWithTerm;
+          const answerWithDefinition = editedValues.answerWithDefinition !== null ? editedValues.answerWithDefinition : set.testOptions.answerWithDefinition;
+          console.log(setId)
           return {
             ...set,
             name: editedValues.name != null ? editedValues.name : set.name,
@@ -73,10 +76,10 @@ export const editSet = createAsyncThunk(
             icon: editedValues.icon != null ? editedValues.icon : set.icon,
             cards: editedValues.cards != null ? editedValues.cards : set.cards,
             isPrivate: editedValues.isPrivate != null ? editedValues.isPrivate : set.isPrivate,
-            testOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
-            flashcardOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
-            refresherOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
-            smartStudyOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
+            testOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
+            flashcardOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
+            refresherOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
+            smartStudyOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
           };
         }
         return set;
