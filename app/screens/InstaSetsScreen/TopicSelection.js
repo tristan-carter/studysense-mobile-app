@@ -53,22 +53,8 @@ export default function TopicSelection(props) {
       icon: "null",
       isFolder: false,
       isPrivate: false,
-      refresherOptions: {
-        answerWithDefinition: true,
-        answerWithTerm: false,
-      },
-      smartStudyOptions: {
-        answerWithDefinition: true,
-        answerWithTerm: false,
-      },
-      testOptions: {
-        answerWithDefinition: true,
-        answerWithTerm: false,
-      },
-      flashcardOptions: {
-        answerWithDefinition: true,
-        answerWithTerm: false,
-      },
+      answerWithDefinition: true,
+      answerWithTerm: false,
     }
 
     navigation.navigate('CreateCardsPage', {

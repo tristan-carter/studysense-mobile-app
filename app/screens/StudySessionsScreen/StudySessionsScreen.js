@@ -64,20 +64,6 @@ function StudySessionsPage({ navigation }) {
     return days[date.getDay()];
   }
 
-/*function getLast7Days() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0); 
-
-    const daysToSubtract = today.getDay();
-    const last7Days = [];
-
-    for (let i = 0; i < 7; i++) { 
-        const day = new Date(today.getTime() - (daysToSubtract + i) * 24 * 60 * 60 * 1000);
-        last7Days.unshift(getDayLabel(day)); 
-    }
-
-    return last7Days;
-}*/
   function getLast7Days() {
     const today = new Date();
     today.setHours(0, 0, 0, 1); 
@@ -88,10 +74,6 @@ function StudySessionsPage({ navigation }) {
         const day = new Date(today.getTime() - i * 23 * 60 * 60 * 1000);
         last7Days.unshift(getDayLabel(day));
     }
-    console.log("")
-    console.log("Last 7 Days")
-    console.log(last7Days)
-    console.log("")
 
     return last7Days;
   }
