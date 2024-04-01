@@ -3,7 +3,7 @@ import { setUser } from './userSlice';
 
 export const addSet = createAsyncThunk(
   'sets/addSet',
-  async ({ setId, name, icon, cards, description, isPrivate }, { getState, dispatch }) => {
+  async ({ setId, name, icon, cards, description, isPrivate, answerWithTerm, answerWithDefinition }, { getState, dispatch }) => {
     const { data, currentFolder } = getState().user;
     const newSet = {
       id: setId,
@@ -14,20 +14,20 @@ export const addSet = createAsyncThunk(
       isFolder: false,
       lastRevised: null,
       smartStudyOptions: {
-        answerWithTerm: false,
-        answerWithDefinition: true,
+        answerWithTerm: answerWithTerm,
+        answerWithDefinition: answerWithDefinition,
       },
       refresherOptions: {
-        answerWithTerm: false,
-        answerWithDefinition: true,
+        answerWithTerm: answerWithTerm,
+        answerWithDefinition: answerWithDefinition,
       },
       testOptions: {
-        answerWithTerm: false,
-        answerWithDefinition: true,
+        answerWithTerm: answerWithTerm,
+        answerWithDefinition: answerWithDefinition,
       },
       flashcardOptions: {
-        answerWithTerm: false,
-        answerWithDefinition: true,
+        answerWithTerm: answerWithTerm,
+        answerWithDefinition: answerWithDefinition,
       },
       isPrivate: isPrivate,
     };
@@ -73,6 +73,10 @@ export const editSet = createAsyncThunk(
             icon: editedValues.icon != null ? editedValues.icon : set.icon,
             cards: editedValues.cards != null ? editedValues.cards : set.cards,
             isPrivate: editedValues.isPrivate != null ? editedValues.isPrivate : set.isPrivate,
+            testOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
+            flashcardOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
+            refresherOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
+            smartStudyOptions: { answerWithTerm: editedValues.answerWithTerm, answerWithDefinition: editedValues.answerWithDefinition },
           };
         }
         return set;

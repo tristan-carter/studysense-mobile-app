@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import { View, Text, TouchableOpacity, Modal, Image, TextInput, KeyboardAvoidingView, Alert, Switch, SafeAreaView } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, Image, TextInput, Alert, Switch, SafeAreaView } from 'react-native';
+import CheckBox from '@react-native-community/checkbox';
 
 import { Clipboard } from '@react-native-clipboard/clipboard';
 import styles from '.././styles.js';
 
-const brainIcon = require('../../../assets/StudySmartRevisionIcon.png');
+import colours from '../../../config/colours.js';
+
 const shareIcon = require('../../../assets/ShareIcon.png')
 const importIcon = require('../../../assets/ImportIcon.png')
 
@@ -13,23 +15,27 @@ import { useSelector, useDispatch } from 'react-redux';
 import { saveSharedSet } from '../../../../firebase/service.js';
 
 export function CreateFileModal ({ 
-    newName, 
-    setShowModal, 
-    showModal, 
-    creatingFolder, 
-    handleCreate, 
-    handleGenerateSmartSet, 
-    showGenerateSmartSet, 
-    setOrFolderText, 
-    editOrCreate, 
-    inputRef, 
-    isPrivate, 
-    setIsPrivate, 
+    newName,
+    setShowModal,
+    showModal,
+    creatingFolder,
+    handleCreate,
+    handleGenerateSmartSet,
+    showGenerateSmartSet,
+    setOrFolderText,
+    editOrCreate,
+    inputRef,
+    isPrivate,
+    setIsPrivate,
     setCode,
     setShowImportModal,
     set,
     saveSharedSetSetCode,
     importingSet,
+    answerWithTerm,
+    setAnswerWithTerm,
+    answerWithDefinition,
+    setAnswerWithDefinition
 }) {
     const dispatch = useDispatch();
     return(
@@ -65,6 +71,45 @@ export function CreateFileModal ({
                                 onValueChange={() => {setIsPrivate((prev) => !prev);}}
                             />
                         </View>
+
+                        <View style={{
+                            flexDirection: 'row',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            width: '80%',
+                        }}>
+                            <Text>Answer with Term</Text>
+                            <CheckBox
+                                value={answerWithTerm}
+                                onValueChange={() => {
+                                    if (!answerWithDefinition) {
+                                        setAnswerWithDefinition(true);
+                                    }
+                                    setAnswerWithTerm((prev) => !prev);
+                                }}
+                                tintColors={{true: colours.primary, false: colours.incorrectRed}}
+                            />
+                        </View>
+
+                        <View style={{
+                            flexDirection: 'row',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            width: '80%',
+                        }}>
+                            <Text>Answer with Definition</Text>
+                            <CheckBox
+                                value={answerWithDefinition}
+                                onValueChange={() => {
+                                    if (!answerWithTerm) {
+                                        setAnswerWithTerm(true);
+                                    }
+                                    setAnswerWithDefinition((prev) => !prev);
+                                }}
+                                tintColors={{true: colours.primary, false: colours.incorrectRed}}
+                            />
+                        </View>
+
                         <TouchableOpacity style={styles.createButton} onPress={handleCreate}>
                             <Text style={styles.createButtonText}>{editOrCreate == "Edit" ? "Save" : "Create"}</Text>
                         </TouchableOpacity>

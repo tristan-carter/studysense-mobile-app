@@ -1,20 +1,11 @@
 import 'react-native-gesture-handler';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { SwipeListView } from 'react-native-swipe-list-view';
-import { Text, View, TouchableOpacity, Image, TouchableWithoutFeedback, Alert, FlatList } from 'react-native';
+import { Text, View, TouchableOpacity, Image, FlatList } from 'react-native';
 
 import styles from './styles.js';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import colours from '../../config/colours.js';
-
-import { useDispatch, useSelector } from 'react-redux';
-
-import { deleteFolder, editFolder } from '../../../firebase/foldersSlice.js';
-import { deleteSet } from '../../../firebase/setsSlice.js';
-import { setCurrentFolder, setCurrentSet, setCreatingNewSetFromNoSets } from '../../../firebase/userSlice.js';
-
-import { CreateFileModal } from '../HomeScreen/Modals/CreateFileModal.js';
 
 import SetsList from './SetsList.json';
 

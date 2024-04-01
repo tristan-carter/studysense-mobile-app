@@ -105,6 +105,8 @@ function HomeTabs(props) {
   const newName = useRef("");
   const newDescription = useRef("null");
   const newIcon = useRef("null");
+  const [answerWithTerm, setAnswerWithTerm] = useState(false);
+  const [answerWithDefinition, setAnswerWithDefinition] = useState(false);
   const [isPrivate, setIsPrivate] = useState(false);
   const inputRef = useRef(null);
 
@@ -129,7 +131,7 @@ function HomeTabs(props) {
               icon: newIcon.current,
           }));
       } else {
-          navigation.push('CreateCardsPage', {set: { setId: newid, name: newName.current, cards: importingSet.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate }, editOrCreate: "Create"});
+          navigation.push('CreateCardsPage', {set: { setId: newid, name: newName.current, cards: importingSet.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Create"});
       };
     } else {
         alert("Please enter a name for your " + setOrFolderText.toLowerCase());
@@ -148,6 +150,8 @@ function HomeTabs(props) {
     newIcon.current="null";
     importingSet.current=["null"];
     setIsPrivate(false);
+    setAnswerWithTerm(false);
+    setAnswerWithDefinition(true);
     setShowModal(true);
   }
   const showActionSheet = async () => {
@@ -258,6 +262,10 @@ function HomeTabs(props) {
         setIsPrivate={setIsPrivate}
         setShowImportModal={setShowImportModal}
         importingSet={importingSet}
+        answerWithTerm={answerWithTerm}
+        setAnswerWithTerm={setAnswerWithTerm}
+        answerWithDefinition={answerWithDefinition}
+        setAnswerWithDefinition={setAnswerWithDefinition}
       />
       <SetImportModal
         visible={showImportModal}

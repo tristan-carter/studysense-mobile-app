@@ -52,9 +52,6 @@ export default function RegistrationScreen({navigation}) {
                     folders: ["null"],
                     sets: ["null"],
 
-                    following: ["null"],
-                    followers: ["null"],
-
                     pastStudySessions: ["null"],
                     studySessionsGoals: {
                         daily: 120,

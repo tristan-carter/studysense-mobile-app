@@ -33,6 +33,8 @@ export default function ScrollData(props) {
     const newName = useRef("");
     const newDescription = useRef("null");
     const newIcon = useRef("null");
+    const [answerWithTerm, setAnswerWithTerm] = useState(false);
+    const [answerWithDefinition, setAnswerWithDefinition] = useState(false);
     const inputRef = useRef(null);
     const [isPrivate, setIsPrivate] = useState(false);
 
@@ -50,7 +52,7 @@ export default function ScrollData(props) {
                 editedValues: {name : newName.current},
             }));
         } else {
-            navigation.push('CreateCardsPage', {set: { setId: editingId.current, name: newName.current, cards: editingCards.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate }, editOrCreate: "Edit"});
+            navigation.push('CreateCardsPage', {set: { setId: editingId.current, name: newName.current, cards: editingCards.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Edit"});
         };
       } else {
         alert("Please enter a name for your " + setOrFolderText.toLowerCase());
@@ -178,6 +180,8 @@ export default function ScrollData(props) {
                     editingId.current = item.id;
                     editingCards.current = item.cards;
                     newName.current = item.name;
+                    setAnswerWithTerm(item.testOptions.answerWithTerm);
+                    setAnswerWithDefinition(item.testOptions.answerWithDefinition);
                     setIsPrivate(item.isPrivate);
                     setEditingFolder(item.isFolder);
                     setShowModal(true);
@@ -206,10 +210,12 @@ export default function ScrollData(props) {
         <TouchableOpacity
           style={[styles.scrollDataButton, { backgroundColor: colours.blue, marginRight: 0.5 }]}
           onPress={() => {
-            editingSet.current = data.item; 
+            editingSet.current = data.item;
             editingId.current = data.item.id; 
-            editingCards.current = data.item.cards; 
-            newName.current = data.item.name; 
+            editingCards.current = data.item.cards;
+            newName.current = data.item.name;
+            setAnswerWithTerm(data.item.testOptions.answerWithTerm);
+            setAnswerWithDefinition(data.item.testOptions.answerWithDefinition);
             setIsPrivate(data.item.isPrivate); 
             setEditingFolder(data.item.isFolder); 
             setShowModal(true);
@@ -278,6 +284,10 @@ export default function ScrollData(props) {
             setIsPrivate={setIsPrivate}
             saveSharedSetSetCode={editingId.current}
             set={editingSet.current}
+            answerWithTerm={answerWithTerm}
+            answerWithDefinition={answerWithDefinition}
+            setAnswerWithTerm={setAnswerWithTerm}
+            setAnswerWithDefinition={setAnswerWithDefinition}
           />
         </View>
         {!isFolder && data.current[1].title == "Sets" && data.current[1].data.length == 0 || data.current[0].data.length == 0 && data.current[0].title == "Sets" ? <NoSetsComponent /> : 
