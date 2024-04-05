@@ -7,7 +7,7 @@ const styles = {
     newFileActionSheetText: {
         fontWeight: '600',
         fontSize: 20,
-        color: colours.darkPrimary,
+        color: colours.primary,
     },
     newFileActionSheetTextCancel: {
         fontWeight: '600',

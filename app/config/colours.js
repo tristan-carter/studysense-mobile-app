@@ -1,25 +1,28 @@
 export default {
-    primary: '#ED7C5A',
-    //darkPrimary: '#EC7856',
-    darkPrimary: '#E95F35',
-    primarytext: "#FF4500",
-    secondary: '#FFE9DC',
+    // orange primary: '#E76F51',
+    // orange darkPrimary: '#E95F35',
+    // orange titletext: '#E76F51',
+
+    // old purple: '#7764EF',
+    
+
+    primary: '#6E44FF',
+    darkPrimary: '#5E45B', // same as primaryAccent
+    primaryAccent: '#5E45B5',
+    secondary: '#5B527A',
+    accentGray: "#ABABA9",
 
     backgroundAccent: '#FFFFFF',
     backgroundColour: '#F9F8F7',
 
-    black: '#000',
+    black: '#2E2D29',
     white: '#ffffff',
     text: 'white',
-    //secondarytext: '#7E6A5B',
-    secondarytext: '#999999',
-    //subtitletext: '#6D544A',
+    secondarytext: '#767674',
     subtitletext: '#000',
-    //backgroundColour: '#FFF9F5',
-    //titletext: '#FF7D54',
-    titletext: '#ED7C5A',
-    purple: '#7764EF',
-    blue: '#5D8AA8',
+
+    titletext: '#5E45B5', // same as primaryAccent
+
     darkgray: '#A9A9A8',
     gray: '#D9D9D9',
 
@@ -29,16 +32,8 @@ export default {
     notLearned: '#D9D9D9',
 
     correctGreen: '#77FFA6',
-    //incorrectRed: '#FF7777', old red
     incorrectRed: '#FF4444',
-
-    oldBackgroundColour: '#FFF9F5',
 
     shadowColour: '#838383',
     shadowDarkColour: '#3C3C3C',
 }
-//dark-#8D5742
-//#FF9E77
-//#FF7D54
-//#FFDFD2
-//#FFBEA4

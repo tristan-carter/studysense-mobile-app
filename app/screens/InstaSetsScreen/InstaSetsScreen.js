@@ -36,7 +36,7 @@ const SVGBackButton = (props) => (
       left={8}
       top={8}
       fill="none"
-      stroke="salmon"
+      stroke={colours.primaryAccent}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={3}
@@ -61,7 +61,7 @@ function InstaSetsScreen() {
         options={{
           headerShown: true,
           title: "InstaSets",
-          headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 
@@ -70,7 +70,7 @@ function InstaSetsScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible: false,
         title: "InstaSets",
-        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
 
@@ -78,7 +78,7 @@ function InstaSetsScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible: false,
         title: "InstaSets",
-        headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
       
@@ -86,7 +86,7 @@ function InstaSetsScreen() {
           headerBackImage:()=>(<SVGBackButton/>), 
           headerBackTitleVisible: false,
           title: "InstaSets",
-          headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
     </Stack.Navigator>

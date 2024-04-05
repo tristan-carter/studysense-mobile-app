@@ -92,7 +92,7 @@ export function CreateFileModal ({
                                     }
                                     setAnswerWithTerm((prev) => !prev);
                                 }}
-                                tintColors={{true: colours.primary, false: colours.incorrectRed}}
+                                tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
                             />
                         </View>
 
@@ -111,7 +111,7 @@ export function CreateFileModal ({
                                     }
                                     setAnswerWithDefinition((prev) => !prev);
                                 }}
-                                tintColors={{true: colours.primary, false: colours.incorrectRed}}
+                                tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
                             />
                         </View>
 

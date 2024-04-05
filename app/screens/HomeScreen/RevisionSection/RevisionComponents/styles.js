@@ -167,7 +167,7 @@ export default StyleSheet.create({
         fontFamily: 'Lato',
     },
     changeGotQCorrectButton: {
-        backgroundColor: colours.blue,
+        backgroundColor: colours.secondary,
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -218,7 +218,7 @@ export default StyleSheet.create({
         borderRadius: 9,
         borderWidth: 2,
         borderColor: `rgba(0, 0, 0, 0.03)`,
-        backgroundColor: colours.blue,
+        backgroundColor: colours.primaryAccent,
     },
     inspirationalQuoteLabel: {
         width: '100%',

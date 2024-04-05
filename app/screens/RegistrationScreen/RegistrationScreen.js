@@ -13,6 +13,8 @@ import { createSharedSetsList } from '../../../firebase/service';
 
 import { getAnalytics, logEvent } from "@react-native-firebase/analytics";
 
+import { getCountry } from "react-native-localize";
+
 export default function RegistrationScreen({navigation}) {
     const dispatch = useDispatch();
     const [username, setUsername] = useState('')
@@ -30,6 +32,14 @@ export default function RegistrationScreen({navigation}) {
             return
         }
 
+        userCountry = "Initial"
+
+        try {
+            userCountry = getCountry();
+        } catch (error) {
+            userCountry = "NA"
+        }
+
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -39,6 +49,7 @@ export default function RegistrationScreen({navigation}) {
                     id: uid,
                     username: username,
                     email: email,
+                    country: userCountry,
 
                     accountCreatedOnApp: true,
                     accountCreatedOnAndroid: true,

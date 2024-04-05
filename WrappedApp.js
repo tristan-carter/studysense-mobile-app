@@ -10,6 +10,7 @@ import { getHeaderTitle } from '@react-navigation/elements';
 import { TouchableOpacity, View, Text, ActivityIndicator, AppState, Image } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 
+import { getCountry } from "react-native-localize";
 import { saveUser, fetchSharedSetData, setBottomNavShown, setCreatingNewSetFromNoSets } from './firebase/userSlice';
 import { addFolder } from './firebase/foldersSlice';
 //import { Configuration, OpenAIApi } from "openai";
@@ -203,6 +204,27 @@ function HomeTabs(props) {
 
   const startTime = useRef(Date.now());
   useEffect(() => {
+    let userCountry = "Initial";
+    try {
+      userCountry = getCountry();
+    } catch (error) {
+      userCountry = "NA";
+    }
+    if ( data.country == "NA"
+    || data.country == "Initial"
+    || data.country == null
+    || (data.country != userCountry && userCountry != "NA" && userCountry != "Initial") ) {
+      try {
+        userCountry = getCountry();
+        dispatch(saveUser({
+          ...data,
+          country: userCountry
+
+        }));
+      } catch (error) {
+        data.country = "NA";
+      }
+    }
     const subscription = AppState.addEventListener('change', nextAppState => {
       const currentTimeStamp = Date.now();
       const timeSpent = Math.floor((currentTimeStamp - startTime.current) / 1000 );
@@ -308,7 +330,7 @@ function HomeTabs(props) {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: 'tomato',
+        tabBarActiveTintColor: colours.primary,
         tabBarInactiveTintColor: 'darkgray',
       })}
       >
@@ -362,6 +384,7 @@ export default function WrappedApp() {
   }, []);
 
   const state = useSelector((state) => state.user);
+  
   if (isLoading || state.loading || state.loading === undefined || (state.data == null && stateLoggedIn)) {	
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF9F5' }}>

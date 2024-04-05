@@ -102,7 +102,7 @@ function StudySessionsPage({ navigation }) {
     for (let i = 0; i < sessionsList.length; i++) {
       sessionsList[i].label = sessionsList[i].label.substring(0, 1);
       if (sessionsList[i].value >= data.studySessionsGoals.daily) {
-        sessionsList[i].frontColor = colours.primary;
+        sessionsList[i].frontColor = colours.primaryAccent;
       }
       else if (sessionsList[i].value == 0) {
         sessionsList[i].value = 0.7;
@@ -209,31 +209,31 @@ function StudySessionsPage({ navigation }) {
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>session length: {data.currentSessionPreset.length} mins</Text>
+            <Text style={styles.currentSessionText}>Session length: {data.currentSessionPreset.length} mins</Text>
             <TouchableOpacity
             onPress={()=>{
               newLengthType.current = 'Session';
               newLength.current = data.currentSessionPreset.length.toString();
               setShowLengthModal(true);
             }}>
-              <Ionicons name="create-outline" size={23} color={colours.darkgray} />
+              <Ionicons name="create-outline" size={24} color={colours.darkgray} />
             </TouchableOpacity>
           </View>
 
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionText}>break length: {data.currentSessionPreset.breakLength} mins</Text>
+            <Text style={styles.currentSessionText}>Break length: {data.currentSessionPreset.breakLength} mins</Text>
             <TouchableOpacity
             onPress={()=>{
               newLengthType.current = 'Break';
               newLength.current = data.currentSessionPreset.breakLength.toString();
               setShowLengthModal(true);
             }}>
-              <Ionicons name="create-outline" size={23} color={colours.darkgray} />
+              <Ionicons name="create-outline" size={24} color={colours.darkgray} />
             </TouchableOpacity>
           </View>
 
           <View style={[styles.currentSessionTextContainer, {gap: 0}]}>
-              <Text style={styles.currentSessionText}>focus mode: </Text>
+              <Text style={styles.currentSessionText}>Focus mode: </Text>
               <CheckBox
                 value={focus}
                 onValueChange={() => {
@@ -257,7 +257,7 @@ function StudySessionsPage({ navigation }) {
                   
                   }
                 }}
-                tintColors={{true: colours.darkPrimary, false: colours.incorrectRed}}
+                tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
               />
           </View>
         </View>
@@ -276,7 +276,7 @@ function StudySessionsPage({ navigation }) {
           showReferenceLine1
           referenceLine1Position={dailyGoal}
           referenceLine1Config={{
-            color: colours.blue,
+            color: colours.darkgray,
             dashWidth: 8,
             dashGap: 5,
             dashThickness: 5,
@@ -308,14 +308,14 @@ function StudySessionsPage({ navigation }) {
         </TouchableOpacity>
           
         <TouchableOpacity
-          style={[styles.button, {backgroundColor: colours.blue}]}
+          style={[styles.button, {backgroundColor: colours.backgroundAccent}]}
           onPress={()=>{
             newLengthType.current = 'Daily Goal';
             newLength.current = data.studySessionsGoals.daily.toString();
             setShowLengthModal(true);
           }}>
           <Text
-            style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
+            style={{color: colours.black, fontSize: 20}}
           >Set New Goal</Text>
         </TouchableOpacity>
 
@@ -324,16 +324,16 @@ function StudySessionsPage({ navigation }) {
           
           <Text
             style={styles.currentSessionText}
-          >today: {totalToday.value} {totalToday.type}</Text>
+          >Today: {totalToday.value} {totalToday.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >past week: {totalThisWeek.value} {totalThisWeek.type}</Text>
+          >Past week: {totalThisWeek.value} {totalThisWeek.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >past month: {totalThisMonth.value} {totalThisMonth.type}</Text>
+          >Past month: {totalThisMonth.value} {totalThisMonth.type}</Text>
           <Text
             style={styles.currentSessionText}
-          >past year: {totalThisYear.value} {totalThisYear.type}</Text>
+          >Past year: {totalThisYear.value} {totalThisYear.type}</Text>
         </View>
       </View>
 
@@ -492,7 +492,7 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -501,7 +501,7 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -514,7 +514,7 @@ function StudySessionsScreen({ navigation }) {
                 options={{
                   headerShown: true,
                   title: "Study Sessions",
-                  headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                  headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
                   headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                 }}
               />
@@ -523,7 +523,7 @@ function StudySessionsScreen({ navigation }) {
               options={{
                 headerShown: true,
                 title: "Study Sessions",
-                headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
                 headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
               }}
             />
@@ -537,7 +537,7 @@ function StudySessionsScreen({ navigation }) {
         options={{
           headerShown: true,
           title: "Study Sessions",
-          headerTitleStyle: { color: colours.titletext, fontSize: 28, fontFamily: 'Lato-Bold', fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 

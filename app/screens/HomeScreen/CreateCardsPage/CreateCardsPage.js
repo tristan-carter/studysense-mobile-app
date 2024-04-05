@@ -185,7 +185,7 @@ function CreateCardsPage (props) {
                         <Text style={[styles.buttonText, {color: colours.white}]}>Done</Text>
                     </TouchableOpacity>
                     <View style={styles.divider} />
-                    <TouchableOpacity style={[styles.button, {backgroundColor: colours.blue}]} onPress={addCard}>
+                    <TouchableOpacity style={[styles.button, {backgroundColor: colours.primaryAccent}]} onPress={addCard}>
                         <Text style={[styles.buttonText, {color: colours.backgroundColour}]}>Add Card</Text>
                         <Ionicons name={'add-circle-outline'} size={40} color={colours.backgroundColour} />
                     </TouchableOpacity>

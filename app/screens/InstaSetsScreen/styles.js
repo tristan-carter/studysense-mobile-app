@@ -196,7 +196,7 @@ export default StyleSheet.create({
         fontFamily: 'Lato',
     },
     generateButton: {
-        backgroundColor: colours.purple,
+        backgroundColor: colours.primary,
         padding: 8,
         borderRadius: 10,
         alignItems: 'center',

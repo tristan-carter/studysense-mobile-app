@@ -159,13 +159,13 @@ export default function ScrollData(props) {
               </Text>
             </View>
               <Dropdown
-                style={[styles.dropdown, isFocus && { paddingHorizontal: 50 }]}
+                style={[styles.dropdown, { paddingHorizontal: 30 }]}
                 placeholderStyle={styles.placeholderStyle}
                 selectedTextStyle={styles.selectedTextStyle}
                 itemTextStyle={styles.dropdownLabel}
                 iconStyle={styles.dropdownIcon}
                 data={[
-                  { label: 'Edit', value: 'edit' },
+                  { label: 'Edit', value: 'edit'},
                   { label: 'Delete', value: 'delete' },
                 ]}
                 maxHeight={150}
@@ -208,7 +208,7 @@ export default function ScrollData(props) {
       <View style={styles.scrollDataButtonContainer}>
         <View style={{flex: 1}}/>
         <TouchableOpacity
-          style={[styles.scrollDataButton, { backgroundColor: colours.blue, marginRight: 0.5 }]}
+          style={[styles.scrollDataButton, { backgroundColor: colours.primaryAccent, marginRight: 0.5 }]}
           onPress={() => {
             editingSet.current = data.item;
             editingId.current = data.item.id; 

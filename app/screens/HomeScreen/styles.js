@@ -172,7 +172,7 @@ export default StyleSheet.create({
         backgroundColor: '#ccc',
     },
     generateButton: {
-        backgroundColor: colours.purple,
+        backgroundColor: colours.primary,
         padding: 8,
         borderRadius: 10,
         alignItems: 'center',
@@ -189,7 +189,7 @@ export default StyleSheet.create({
         fontFamily: 'Lato',
     },
     importButton: {
-        backgroundColor: colours.blue,
+        backgroundColor: colours.primaryAccent,
         padding: 8,
         borderRadius: 10,
         alignItems: 'center',
@@ -210,7 +210,7 @@ export default StyleSheet.create({
         width: '100%',
         height: 170,
         padding: 12,
-        backgroundColor: colours.blue,
+        backgroundColor: colours.primaryAccent,
         shadowOffset: {height: 4},
         shadowOpacity: 0.3,
         shadowColor: colours.shadowColour,
@@ -271,10 +271,10 @@ export default StyleSheet.create({
     },
     dropdownLabel: {
         zIndex: 999,
-        fontSize: 17,
+        fontSize: 16,
         fontFamily: 'Lato',
-        color: colours.darkPrimary,
-        fontWeight: '500',
+        color: colours.primary,
+        fontWeight: '600',
     },
     dropdownIcon: {
         zIndex: 999,

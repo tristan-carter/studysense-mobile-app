@@ -160,7 +160,7 @@ export default function TopicSelection(props) {
       </TouchableOpacity>
       <View style={styles.divider} />
       <TouchableOpacity
-        style={[styles.button, {backgroundColor: colours.blue}]}
+        style={[styles.button, {backgroundColor: colours.secondary}]}
         onPress={()=>{
           for (let i = 0; i < selectionTopics.length; i++) {
             selectionTopics[i].setSelection(!allSelected);
@@ -197,7 +197,7 @@ export default function TopicSelection(props) {
                   onValueChange={() => {
                     item.setSelection(!item.selected);
                   }}
-                  tintColors={{true: colours.primary, false: colours.incorrectRed}}
+                  tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
                 />
                 <View style={{flexDirection: 'column', flex: 1}}>
                   <Text style={{

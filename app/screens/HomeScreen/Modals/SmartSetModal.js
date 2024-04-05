@@ -139,7 +139,7 @@ export function SmartSetModal ({ setShowModal, showModal, handleCreate, generate
                             <>
                                 {!isGenerating && 
                                     <TouchableOpacity
-                                        style={[styles.createButton, {backgroundColor: colours.blue}]}
+                                        style={[styles.createButton, {backgroundColor: colours.primaryAccent}]}
                                         onPress={generateMoreCards}
                                     >
                                         <Text style={styles.createButtonText}>Generate More Cards</Text>
