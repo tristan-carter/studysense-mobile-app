@@ -77,9 +77,9 @@ const styles = {
         borderColor: `rgba(0, 0, 0, 0.005)`,
     },
     buttonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     modalContainer: {
         flex: 1,
@@ -92,7 +92,7 @@ const styles = {
         maxWidth: 300,
         borderWidth: 1.5,
         borderColor: colours.backgroundColour,
-        backgroundColor: 'white',
+        backgroundColor: colours.white,
         marginHorizontal: 20,
         paddingVertical: 20,
         paddingHorizontal: 18,
@@ -103,7 +103,8 @@ const styles = {
     modalText: {
         fontSize: 18,
         marginBottom: 20,
-        fontFamily: 'Lato',
+        
+        color: colours.subtitletext,
     },
     divider: {
         height: 1.5,
@@ -126,7 +127,7 @@ const styles = {
         paddingHorizontal: 10,
         paddingVertical: 8,
         fontSize: 15,
-        fontFamily: 'Lato',
+        
         textAlignVertical: 'top'
     },
     createButton: {
@@ -138,9 +139,9 @@ const styles = {
         justifyContent: 'center',
     },
     createButtonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     cancelButton: {
         alignItems: 'center',
@@ -153,7 +154,7 @@ const styles = {
     cancelButtonText: {
         color: '#7B6B5C',
         fontSize: 16,
-        fontFamily: 'Lato',
+        
     },
 
     duringSessionFrame: {
@@ -187,7 +188,7 @@ const styles = {
     duringSessionTitleText: {
         color: colours.backgroundColour, 
         fontSize: 26, 
-        fontFamily: 'Lato-Bold',
+        
         fontWeight: '800',
     },
     duringSessionTimeLeftContainer: {
@@ -208,7 +209,7 @@ const styles = {
     duringSessionTimeLeftText: {
         color: colours.white,
         fontSize: 65,
-        fontFamily: 'Lato-Bold',
+        
         fontWeight: '800',
         textShadowOffset: {width: 0, height: 3.7},
         textShadowRadius: 6,
@@ -217,7 +218,7 @@ const styles = {
     duringSessionTimeLeftMinutesText: {
         color: colours.white,
         fontSize: 26,
-        fontFamily: 'Lato-Bold',
+        
         fontWeight: '800',
         textShadowOffset: {width: 0, height: 3.7},
         textShadowRadius: 6,
@@ -240,13 +241,13 @@ const styles = {
     duringSessionCancelSessionText: {
         color: colours.white,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
 
     sessionMainButtonText: {
         color: colours.white,
         fontSize: 34,
-        fontFamily: 'Lato-Bold',
+        
         fontWeight: '800',
         textShadowOffset: {width: 0, height: 3.7},
         textShadowRadius: 6,

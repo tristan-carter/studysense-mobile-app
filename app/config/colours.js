@@ -19,7 +19,7 @@ export default {
     white: '#ffffff',
     text: 'white',
     secondarytext: '#767674',
-    subtitletext: '#000',
+    subtitletext: '#2E2D29',
 
     titletext: '#5E45B5', // same as primaryAccent
 

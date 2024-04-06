@@ -68,18 +68,30 @@ function QuestionFeedbackModal({ showFeedback, setShowFeedback, setFinalGotQCorr
                         />
                     </View>
                     <View style={styles.modalTextContainer}>
-                        <Text style={styles.modalTextLabel}>Question:</Text>
-                        <Text style={styles.modalText}>{question.question}</Text>
+                        <Text style={[styles.modalTextLabel, {
+                            fontSize: question.question.length > 100 ? 14 : 16,
+                        }]}>Question:</Text>
+                        <Text style={[styles.modalText, {
+                            fontSize: question.question.length > 100 ? 14 : 16,
+                        }]}>{question.question}</Text>
                     </View>
                     <View style={styles.modalTextContainer}>
-                        <Text style={styles.modalTextLabel}>Correct Answer:</Text>
-                        <Text style={styles.modalText}>{question.answer}</Text>
+                        <Text style={[styles.modalTextLabel, {
+                            fontSize: question.answer.length > 100 ? 14 : 16,
+                        }]}>Correct answer:</Text>
+                        <Text style={[styles.modalText, {
+                            fontSize: question.answer.length > 100 ? 14 : 16,
+                        }]}>{question.answer}</Text>
                     </View>
                     {!isFlashcardFeedback && (
                         gotQCorrect.showTypedAnswer && (
                             <View style={styles.modalTextContainer}>
-                                <Text style={styles.modalTextLabel}>Your Answer:</Text>
-                                <Text style={styles.modalText}>{gotQCorrect.answer}</Text>
+                                <Text style={[styles.modalTextLabel, {
+                                    fontSize: gotQCorrect.answer.length > 100 ? 14 : 16,
+                                }]}>Your answer:</Text>
+                                <Text style={[styles.modalText, {
+                                    fontSize: gotQCorrect.answer.length > 100 ? 14 : 16,
+                                }]}>{gotQCorrect.answer}</Text>
                             </View>
                         )
                     )}
@@ -94,7 +106,7 @@ function QuestionFeedbackModal({ showFeedback, setShowFeedback, setFinalGotQCorr
                     </TouchableOpacity>
                     {!isFlashcardFeedback && (
                         <TouchableOpacity style={styles.changeGotQCorrectButton} onPress={handleChangeGotQCorrect}>
-                            <Text style={styles.changeGotQCorrectButtonText}>Change to {gotQCorrect.correct ? "Incorrect" : "Correct"}</Text>
+                            <Text style={styles.changeGotQCorrectButtonText}>Change to {gotQCorrect.correct ? "incorrect" : "correct"}</Text>
                         </TouchableOpacity>
                     )}
                 </View>

@@ -64,11 +64,15 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
             }}>
                 <Animated.View style={[styles.flashcardFront, frontAnimatedStyle]}>
                     <Text style={styles.flashcardTitleText}>Front</Text>
-                    <Text style={styles.question}>{question}</Text>
+                    <Text style={[styles.question, {
+                        fontSize: 19,
+                    }]}>{question}</Text>
                 </Animated.View>
                 <Animated.View style={[styles.flashcardBack, backAnimatedStyle]}>
                     <Text style={styles.flashcardTitleText}>Back</Text>
-                    <Text style={styles.question}>{answer}</Text>
+                    <Text style={[styles.question, {
+                        fontSize: 19,
+                    }]}>{answer}</Text>
                 </Animated.View>
             </TouchableOpacity>
 

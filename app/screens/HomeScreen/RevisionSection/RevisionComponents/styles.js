@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     subtitleText: {
         fontSize: 20,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+        fontWeight: '500',
         color: colours.subtitletext,
         marginBottom: 10,
     },
@@ -17,9 +17,9 @@ export default StyleSheet.create({
         height: 10,
         flexDirection: "row",
         width: '80%',
-        backgroundColor: colours.secondary,
+        backgroundColor: colours.backgroundAccent,
         borderWidth: 0.8,
-        borderColor: `rgba(0, 0, 0, 0.03)`,
+        borderColor: `rgba(0, 0, 0, 0.1)`,
         borderRadius: 5
     },
     progressBarFiller: {
@@ -43,7 +43,7 @@ export default StyleSheet.create({
         marginTop: 20,
         textAlign: 'left',
         color: '#333',
-        fontFamily: 'Lato',
+        
     },
 
     // Multiple Choice Styles
@@ -70,7 +70,7 @@ export default StyleSheet.create({
         flexDirection: 'column',
         alignSelf: 'stretch',
         color: colours.subtitletext,
-        fontSize: 19,
+        fontSize: 17,
         fontFamily: 'Lato'
     },
 
@@ -87,14 +87,14 @@ export default StyleSheet.create({
         width: '100%',
         minHeight: 50,
         paddingHorizontal: 10,
-        fontSize: 19,
-        fontFamily: 'Lato',
+        fontSize: 17,
+        
         textAlignVertical: 'top',
     },
     underline: {
         width: '100%',
         height: 4,
-        backgroundColor: '#FF9E77',
+        backgroundColor: colours.primary,
         marginTop: 10,
         marginHorizontal: 30,
         borderRadius: 10,
@@ -120,7 +120,7 @@ export default StyleSheet.create({
         maxWidth: 400,
         borderWidth: 1.5,
         borderColor: colours.backgroundColour,
-        backgroundColor: 'white',
+        backgroundColor: colours.white,
         marginHorizontal: 15,
         paddingVertical: 20,
         paddingHorizontal: 18,
@@ -131,7 +131,7 @@ export default StyleSheet.create({
     modalTitle: {
         fontSize: 20,
         marginBottom: 10,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+        fontWeight: '600',
         color: colours.subtitletext,
     },
     modalTextContainer: {
@@ -144,12 +144,12 @@ export default StyleSheet.create({
     modalTextLabel: {
         fontSize: 16,
         color: colours.secondarytext,
-        fontFamily: 'Lato',
+        
     },
     modalText: {
         textAlign: 'right',
         fontSize: 19,
-        fontFamily: 'Lato',
+        
         color: colours.subtitletext,
         flex: 1,
     },
@@ -162,12 +162,13 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
     modalButtonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
-        fontFamily: 'Lato',
     },
     changeGotQCorrectButton: {
-        backgroundColor: colours.secondary,
+        backgroundColor: colours.backgroundColour,
+        borderWidth: 1.5,
+        borderColor: 'rgba(0, 0, 0, 0.01)',
         padding: 8,
         gap: 1,
         borderRadius: 10,
@@ -175,9 +176,9 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
     changeGotQCorrectButtonText: {
-        color: colours.white,
+        color: colours.black,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
 
     // Round Review Styles
@@ -206,7 +207,7 @@ export default StyleSheet.create({
     },
     roundReviewCorrectText: {
         fontSize: 18,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+        fontWeight: '500',
         color: colours.subtitletext,
     },
     inspirationalQuoteContainer: {
@@ -224,13 +225,13 @@ export default StyleSheet.create({
         width: '100%',
         color: colours.gray,
         fontSize: 16,
-        fontFamily: 'Lato',
+        
     },
     inspirationalQuoteText: {
         width: '100%',
         color: colours.white,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     nextRoundButton: {
         width: '100%',
@@ -247,13 +248,15 @@ export default StyleSheet.create({
     nextRoundButtonText: {
         color: colours.white,
         fontSize: 21,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+         fontWeight: '600',
     },
 
     // Flashcard Styles
     flashcardFront: {
         width: '82%',
-        backgroundColor: colours.secondary,
+        backgroundColor: colours.backgroundAccent,
+        borderWidth: 1.5,
+        borderColor: `rgba(0, 0, 0, 0.05)`,
         borderRadius: 18,
         padding: 20,
         backfaceVisibility: "hidden",
@@ -268,7 +271,9 @@ export default StyleSheet.create({
      },
      flashcardBack: {
         width: '82%',
-        backgroundColor: colours.secondary,
+        backgroundColor: colours.backgroundAccent,
+        borderWidth: 1.5,
+        borderColor: `rgba(0, 0, 0, 0.05)`,
         borderRadius: 18,
         padding: 20,
         backfaceVisibility: "hidden",
@@ -282,9 +287,8 @@ export default StyleSheet.create({
      },
      flashcardTitleText: {
         fontSize: 24,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+        fontWeight: '500',
         color: colours.subtitletext,
-        marginBottom: 10,
         width: '100%',
         textAlign: 'center',
      },

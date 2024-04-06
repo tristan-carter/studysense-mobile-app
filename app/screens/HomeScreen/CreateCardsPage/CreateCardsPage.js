@@ -141,7 +141,7 @@ function CreateCardsPage (props) {
         });
     }
 
-    const renderItem = ({ item, index }) => (
+    const renderItem = ({ item, index }) => ( 
         <View style={styles.card}>
             <View style={styles.cardSubContainer}>
                 <View style={styles.cardTextContainer}>
@@ -180,22 +180,33 @@ function CreateCardsPage (props) {
             enabled
         >
             <View style={styles.container}>
-                    <Text style={styles.subtitleText}>{editOrCreate} Cards</Text>
-                    <TouchableOpacity style={[styles.button, {backgroundColor: colours.primary}]} onPress={handleDoneSet}>
-                        <Text style={[styles.buttonText, {color: colours.white}]}>Done</Text>
-                    </TouchableOpacity>
-                    <View style={styles.divider} />
-                    <TouchableOpacity style={[styles.button, {backgroundColor: colours.primaryAccent}]} onPress={addCard}>
-                        <Text style={[styles.buttonText, {color: colours.backgroundColour}]}>Add Card</Text>
-                        <Ionicons name={'add-circle-outline'} size={40} color={colours.backgroundColour} />
-                    </TouchableOpacity>
+                    <Text style={[styles.subtitleText, {
+                        marginBottom: 15,
+                    }]}>{editOrCreate} cards</Text>
                     <FlatList
                         ref={flatListRef}
                         data={cards}
                         renderItem={renderItem}
                         keyExtractor={(item) => item.id}
-                        style={{width: '100%', marginTop: 10}}
+                        style={{width: '100%'}}
                     />
+                    <TouchableOpacity style={[styles.button, {
+                            backgroundColor: colours.backgroundAccent,
+                            gap: 3,
+                            marginTop: 7,
+                        }]} onPress={addCard}>
+                        <Text style={[styles.buttonText, {color: colours.black}]}>Add Card</Text>
+                        <Ionicons name={'add-circle-outline'} size={34} color={colours.black} />
+                    </TouchableOpacity>
+
+                    <View style={styles.divider} />
+                    
+                    <TouchableOpacity style={[styles.button, {
+                            backgroundColor: colours.primary,
+                            marginBottom: 40,
+                        }]} onPress={handleDoneSet}>
+                        <Text style={[styles.buttonText, {color: colours.white}]}>Done</Text>
+                    </TouchableOpacity>
             </View>
         </KeyboardAvoidingView>
     );

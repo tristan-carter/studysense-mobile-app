@@ -44,16 +44,21 @@ export default function ScrollData(props) {
     const currentRowMap = useRef({});
 
     const handleEdit = () => {
-      if (newName.current != "") {
-        setShowModal(false);
+      if (newName.current != "" ) {
         if (editingFolder) {
-            dispatch(editFolder({
-                folderId: editingId.current,
-                editedValues: {name : newName.current},
-            }));
+          setShowModal(false);
+          dispatch(editFolder({
+              folderId: editingId.current,
+              editedValues: {name : newName.current},
+          }));
         } else {
-            navigation.push('CreateCardsPage', {set: { setId: editingId.current, name: newName.current, cards: editingCards.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Edit"});
-        };
+              if (!answerWithDefinition && !answerWithTerm) {
+                alert("Please select at least one of 'Answer with Term' or 'Answer with Definition'");
+              } else {
+                setShowModal(false);
+                navigation.push('CreateCardsPage', {set: { setId: editingId.current, name: newName.current, cards: editingCards.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Edit"});
+              }
+            }
       } else {
         alert("Please enter a name for your " + setOrFolderText.toLowerCase());
         inputRef.current.focus();
@@ -142,7 +147,7 @@ export default function ScrollData(props) {
             <View style={{flexDirection: 'column', gap: 4}}>
               <Text numberOfLines={1} style={{
                 paddingRight: 50,
-                fontFamily: 'Lato-Bold', fontWeight: 'normal',
+                 fontWeight: 'normal',
                 fontSize: 19,
                 color: colours.black,
                 overflow: 'hidden',
@@ -150,7 +155,7 @@ export default function ScrollData(props) {
                 {item.name}
               </Text>
               <Text numberOfLines={1} style={{
-                  fontFamily: 'Lato',
+                  
                   fontSize: 13,
                   color: colours.secondarytext,
                   overflow: 'hidden',
@@ -180,8 +185,13 @@ export default function ScrollData(props) {
                     editingId.current = item.id;
                     editingCards.current = item.cards;
                     newName.current = item.name;
-                    setAnswerWithTerm(item.testOptions.answerWithTerm);
-                    setAnswerWithDefinition(item.testOptions.answerWithDefinition);
+                    if (item.testOptions) {
+                      setAnswerWithTerm(item.testOptions.answerWithTerm);
+                      setAnswerWithDefinition(item.testOptions.answerWithDefinition);
+                    } else {
+                      setAnswerWithTerm(false);
+                      setAnswerWithDefinition(true);
+                    }
                     setIsPrivate(item.isPrivate);
                     setEditingFolder(item.isFolder);
                     setShowModal(true);
@@ -214,8 +224,13 @@ export default function ScrollData(props) {
             editingId.current = data.item.id; 
             editingCards.current = data.item.cards;
             newName.current = data.item.name;
-            setAnswerWithTerm(data.item.testOptions.answerWithTerm);
-            setAnswerWithDefinition(data.item.testOptions.answerWithDefinition);
+            if (data.item.testOptions) {
+              setAnswerWithTerm(data.item.testOptions.answerWithTerm);
+              setAnswerWithDefinition(data.item.testOptions.answerWithDefinition);
+            } else {
+              setAnswerWithTerm(false);
+              setAnswerWithDefinition(true);
+            }
             setIsPrivate(data.item.isPrivate); 
             setEditingFolder(data.item.isFolder); 
             setShowModal(true);
@@ -255,14 +270,14 @@ export default function ScrollData(props) {
       <TouchableOpacity style={styles.noSetsCreateButton} onPress={()=>{
         dispatch(setCreatingNewSetFromNoSets(true));
       }}>
-        <Text style={[styles.createButtonText, {fontFamily: "Lato-Bold", fontSize: 19}]}>Create</Text>
+        <Text style={[styles.createButtonText, {fontSize: 19}]}>Create</Text>
       </TouchableOpacity>
     </View>
   )
 
   const renderSectionHeader=({ section }) => (
     (section.data.length > 0 &&
-      <Text style={{ paddingVertical: 5, fontFamily: 'Lato-Bold', fontWeight: '600', color: colours.subtitletext, fontSize: 20}}>{section.title}</Text>
+      <Text style={{ paddingVertical: 5,  fontWeight: '600', color: colours.subtitletext, fontSize: 20}}>{section.title}</Text>
       )
     );
   

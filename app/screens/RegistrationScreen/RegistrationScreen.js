@@ -52,7 +52,7 @@ export default function RegistrationScreen({navigation}) {
                     country: userCountry,
 
                     accountCreatedOnApp: true,
-                    accountCreatedOnAndroid: true,
+                    accountCreatedOn: "ios",
                     accountCreationDateTime: new Date().toString(),
                     settings: {
                         downloadSetsToUseOffline: true,

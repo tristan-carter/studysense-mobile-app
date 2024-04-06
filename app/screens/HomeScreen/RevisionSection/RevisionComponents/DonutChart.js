@@ -50,7 +50,7 @@ const renderLegendComponent = (pieData) => {
                       marginBottom: 10,
                   }}>
                     {renderDot(colours.learned)}
-                    <Text style={{color: colours.black, fontFamily: 'Lato'}}>Learned: {pieData[3].value}</Text>
+                    <Text style={{color: colours.black}}>Learned: {pieData[3].value}</Text>
                 </View>
                 <View
                   style={{
@@ -58,7 +58,7 @@ const renderLegendComponent = (pieData) => {
                     alignItems: 'center', 
                   }}>
                     {renderDot(colours.learning)}
-                    <Text style={{color: colours.black, fontFamily: 'Lato'}}>Learning: {pieData[1].value}</Text>
+                    <Text style={{color: colours.black}}>Learning: {pieData[1].value}</Text>
                 </View>
             </View>
             <View 
@@ -72,7 +72,7 @@ const renderLegendComponent = (pieData) => {
                     marginBottom: 10,
                 }}>
                   {renderDot(colours.partiallyLearned)}
-                  <Text style={{color: colours.black, fontFamily: 'Lato'}}>Partially Learned: {pieData[2].value}</Text>
+                  <Text style={{color: colours.black}}>Partially Learned: {pieData[2].value}</Text>
                 </View>
                 <View
                   style={{
@@ -80,7 +80,7 @@ const renderLegendComponent = (pieData) => {
                     alignItems: 'center', 
                   }}>
                   {renderDot(colours.notLearned)}
-                  <Text style={{color: colours.black, fontFamily: 'Lato'}}>Not Learned: {pieData[0].value}</Text>
+                  <Text style={{color: colours.black}}>Not Learned: {pieData[0].value}</Text>
                 </View>
             </View>
         </View>
@@ -127,7 +127,7 @@ const donutChartComponent = (cards) => {
             width: '100%',
             padding: 10,
           }}>
-          <Text style={{color: colours.black, fontSize: 16, fontFamily: 'Lato-Bold', fontWeight: '600'}}>
+          <Text style={{color: colours.black, fontSize: 16,  fontWeight: '500'}}>
             Smart Study Progress
           </Text>
           { screenHeight <= 800 ? (<></>) : (
@@ -144,10 +144,10 @@ const donutChartComponent = (cards) => {
                   return (
                     <View style={{justifyContent: 'center', alignItems: 'center'}}>
                       <Text
-                        style={{fontSize: 21, color: colours.black, fontFamily: 'Lato-Bold', fontWeight: '600'}}>
+                        style={{fontSize: 21, color: colours.black,  fontWeight: '600'}}>
                         {donutCenterValue === null ? "No Cards" : donutCenterValue + "%"}
                       </Text>
-                      <Text style={{fontSize: 14, color: colours.black, fontFamily: 'Lato'}}>{donutCenterName}</Text>
+                      <Text style={{fontSize: 14, color: colours.black}}>{donutCenterName}</Text>
                     </View>
                   );
                 }}

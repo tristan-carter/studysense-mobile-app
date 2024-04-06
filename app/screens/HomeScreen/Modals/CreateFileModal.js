@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-import { View, Text, TouchableOpacity, Modal, Image, TextInput, Alert, Switch, SafeAreaView } from 'react-native';
-import CheckBox from '@react-native-community/checkbox';
-
-import { Clipboard } from '@react-native-clipboard/clipboard';
+import { View, Text, TouchableOpacity, Modal, Image, TextInput, Alert, Switch, SafeAreaView, Clipboard } from 'react-native';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 import styles from '.././styles.js';
 
 import colours from '../../../config/colours.js';
@@ -11,7 +9,7 @@ import colours from '../../../config/colours.js';
 const shareIcon = require('../../../assets/ShareIcon.png')
 const importIcon = require('../../../assets/ImportIcon.png')
 
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { saveSharedSet } from '../../../../firebase/service.js';
 
 import { editSet } from '../../../../firebase/setsSlice.js';
@@ -84,15 +82,14 @@ export function CreateFileModal ({
                             width: '80%',
                         }}>
                             <Text>Answer with Term</Text>
-                            <CheckBox
-                                value={answerWithTerm}
-                                onValueChange={() => {
-                                    if (!answerWithDefinition) {
-                                        setAnswerWithDefinition(true);
-                                    }
+                            <BouncyCheckbox
+                                size={22}
+                                isChecked={answerWithTerm}
+                                onPress={() => {
                                     setAnswerWithTerm((prev) => !prev);
                                 }}
-                                tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
+                                fillColor={colours.primaryAccent}
+                                unfillColor={colours.backgroundAccent}
                             />
                         </View>
 
@@ -103,15 +100,14 @@ export function CreateFileModal ({
                             width: '80%',
                         }}>
                             <Text>Answer with Definition</Text>
-                            <CheckBox
-                                value={answerWithDefinition}
-                                onValueChange={() => {
-                                    if (!answerWithTerm) {
-                                        setAnswerWithTerm(true);
-                                    }
+                            <BouncyCheckbox
+                                size={22}
+                                isChecked={answerWithDefinition}
+                                onPress={() => {
                                     setAnswerWithDefinition((prev) => !prev);
                                 }}
-                                tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
+                                fillColor={colours.primaryAccent}
+                                unfillColor={colours.backgroundAccent}
                             />
                         </View>
 

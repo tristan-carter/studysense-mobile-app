@@ -38,7 +38,7 @@ export default function ScrollLevels(props) {
                 <View style={{flexDirection: 'column', gap: 4}}>
                   <Text numberOfLines={1} style={{
                     paddingRight: 50,
-                    fontFamily: 'Lato-Bold', fontWeight: '600',
+                    fontWeight: '500',
                     fontSize: 21,
                     color: colours.black,
                     overflow: 'hidden',

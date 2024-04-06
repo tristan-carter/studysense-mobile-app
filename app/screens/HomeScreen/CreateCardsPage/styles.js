@@ -11,7 +11,7 @@ export default StyleSheet.create({
     },
     subtitleText: {
         fontSize: 20,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+        fontWeight: '500',
         color: colours.subtitletext,
         marginBottom: 23,
     },
@@ -35,7 +35,7 @@ export default StyleSheet.create({
     },
     buttonText: {
         fontSize: 21,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
+        fontWeight: '600',
     },
     divider: {
         height: 1.5,
@@ -84,13 +84,13 @@ export default StyleSheet.create({
     },
     cardTitleText: {
         width: 95,
-        fontFamily: 'Lato',
+        
         fontSize: 19,
         color: colours.secondarytext,
         overflow: 'hidden',
     },
     cardText: {
-        fontFamily: 'Lato',
+        
         fontSize: 19,
         color: colours.subtitletext,
         overflow: 'hidden',
@@ -118,8 +118,8 @@ export default StyleSheet.create({
         marginBottom: 5,
     },
     swipeButtonText: {
-        fontFamily: 'Lato',
-        color: 'white',
+        
+        color: colours.text,
         fontSize: 15,
     },
 }) 

@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { SwipeListView } from 'react-native-swipe-list-view';
 import { Text, View, TouchableOpacity, Image, TouchableWithoutFeedback, Alert, FlatList } from 'react-native';
 
-import CheckBox from '@react-native-community/checkbox';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 import styles from './styles.js';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -87,6 +87,7 @@ export default function TopicSelection(props) {
       setSelection: setSelection,
       cards: topics[i].cards,
       paper: paper,
+      checkmarkRef: useRef(),
     });
   }
 
@@ -127,9 +128,80 @@ export default function TopicSelection(props) {
       paddingHorizontal: 13,
       gap: 4,
     }}>
-      <Text style={[styles.subtitleText, {marginBottom: 11}]}>Choose topics for {Subject.setname}</Text>
+      <Text style={styles.subtitleText}>{Subject.setname} topics</Text>
+
+      <FlatList
+        data={setHasPapers ? paperSelectionTopics : selectionTopics}
+        keyExtractor={(item) => item.title}
+        style={{width: '100%', marginTop: 3.5}}
+        renderItem={({ item }) => {
+          return (
+            item.isPaperLabel ? (
+              <Text style={{
+                fontFamily: 'Lato-SemiBold',
+                fontWeight: '500',
+                fontSize: 20,
+                color: colours.black,
+                display: 'flex',
+                marginBottom: 10,
+              }}>{item.title}</Text>
+            ) : (
+              <TouchableOpacity
+                style={styles.scrollDataTopicButton}
+                onPress={() => {
+                  item.setSelection(!item.selected);
+                }}
+              >
+                <BouncyCheckbox
+                  ref={item.checkmarkRef}
+                  size={22}
+                  isChecked={item.selected}
+                  onPress={() => {
+                      item.setSelection(!item.selected);
+                  }}
+                  fillColor={colours.primaryAccent}
+                  unfillColor={colours.backgroundAccent}
+                />
+                <View style={{flexDirection: 'column', flex: 1}}>
+                  <Text style={{
+                    paddingRight: 12,
+                    fontFamily: 'Lato-SemiBold',
+                    fontWeight: '500',
+                    fontSize: 18,
+                    color: colours.black,
+                    display: 'flex',
+                  }}>
+                    {item.title}
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            )
+          );
+        }}
+      />
+      
       <TouchableOpacity
-        style={[styles.button, {backgroundColor: colours.primary}]}
+        style={[styles.button, {
+          backgroundColor: colours.backgroundAccent,
+          borderWidth: 1.5,
+          borderColor: 'rgba(0, 0, 0, 0.005);',
+          marginTop: 7,
+        }]}
+        onPress={()=>{
+          for (let i = 0; i < selectionTopics.length; i++) {
+            if (selectionTopics[i].selected === allSelected) {
+              selectionTopics[i].checkmarkRef.current.onPress();
+            }
+          }
+        }}
+      >
+          <Text style={[styles.buttonText, {color: colours.black}]}>{allSelected ? "Deselect all" : "Select all"}</Text>
+      </TouchableOpacity>
+      <View style={styles.divider} />
+      <TouchableOpacity
+        style={[styles.button, {
+          backgroundColor: colours.primary,
+        }]}
         onPress={() => {
           var selectedTopics = [];
           for (let i = 0; i < selectionTopics.length; i++) {
@@ -158,64 +230,6 @@ export default function TopicSelection(props) {
       >
         <Text style={[styles.buttonText, {color: colours.white}]}>Done</Text>
       </TouchableOpacity>
-      <View style={styles.divider} />
-      <TouchableOpacity
-        style={[styles.button, {backgroundColor: colours.secondary}]}
-        onPress={()=>{
-          for (let i = 0; i < selectionTopics.length; i++) {
-            selectionTopics[i].setSelection(!allSelected);
-          }
-        }}
-      >
-          <Text style={[styles.buttonText, {color: colours.backgroundColour}]}>{allSelected ? "Deselect All" : "Select All"}</Text>
-      </TouchableOpacity>
-
-      <FlatList
-        data={setHasPapers ? paperSelectionTopics : selectionTopics}
-        keyExtractor={(item) => item.title}
-        style={{width: '100%', marginTop: 10}}
-        renderItem={({ item }) => {
-          return (
-            item.isPaperLabel ? (
-              <Text style={{
-                fontFamily: 'Lato-SemiBold',
-                fontWeight: '600',
-                fontSize: 20,
-                color: colours.black,
-                display: 'flex',
-                marginBottom: 10,
-              }}>{item.title}</Text>
-            ) : (
-              <TouchableOpacity
-                style={styles.scrollDataTopicButton}
-                onPress={() => {
-                  item.setSelection(!item.selected);
-                }}
-              >
-                <CheckBox
-                  value={item.selected}
-                  onValueChange={() => {
-                    item.setSelection(!item.selected);
-                  }}
-                  tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
-                />
-                <View style={{flexDirection: 'column', flex: 1}}>
-                  <Text style={{
-                    paddingRight: 12,
-                    fontFamily: 'Lato-SemiBold',
-                    fontWeight: '600',
-                    fontSize: 20,
-                    color: colours.black,
-                    display: 'flex',
-                  }}>
-                    {item.title}
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            )
-          );
-        }}
-      />
     </View>
   );
 }

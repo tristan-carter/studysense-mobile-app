@@ -122,21 +122,26 @@ function HomeTabs(props) {
   };
 
   const handleCreate = () => {
-    if (newName.current != "") {
-      setShowModal(false);
+    if (newName.current != "" ) {
       const newid = generateID();
       if (creatingFolder) {
-          dispatch(addFolder({
-              folderId: newid,
-              name: newName.current,
-              icon: newIcon.current,
-          }));
+        setShowModal(false);
+        dispatch(addFolder({
+          folderId: newid,
+          name: newName.current,
+          icon: newIcon.current,
+      }));
       } else {
-          navigation.push('CreateCardsPage', {set: { setId: newid, name: newName.current, cards: importingSet.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Create"});
-      };
+            if (!answerWithDefinition && !answerWithTerm) {
+              alert("Please select at least one of 'Answer with Term' or 'Answer with Definition'");
+            } else {
+              setShowModal(false);
+              navigation.push('CreateCardsPage', {set: { setId: newid, name: newName.current, cards: importingSet.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Create"});
+            }
+          }
     } else {
-        alert("Please enter a name for your " + setOrFolderText.toLowerCase());
-        inputRef.current.focus();
+      alert("Please enter a name for your " + setOrFolderText.toLowerCase());
+      inputRef.current.focus();
     }
   };
   

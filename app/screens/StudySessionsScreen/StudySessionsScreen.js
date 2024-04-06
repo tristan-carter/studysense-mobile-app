@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { View, Dimensions, TouchableOpacity, Text, Modal, TextInput, Alert } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import CheckBox from '@react-native-community/checkbox';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { BarChart } from "react-native-gifted-charts";
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -232,11 +232,12 @@ function StudySessionsPage({ navigation }) {
             </TouchableOpacity>
           </View>
 
-          <View style={[styles.currentSessionTextContainer, {gap: 0}]}>
+          <View style={styles.currentSessionTextContainer}>
               <Text style={styles.currentSessionText}>Focus mode: </Text>
-              <CheckBox
-                value={focus}
-                onValueChange={() => {
+              <BouncyCheckbox
+                size={22}
+                isChecked={focus}
+                onPress={() => {
                   setFocus(!focus);
                   if (data.currentSessionPreset.focusMode != null) {
                     dispatch(setUser({
@@ -257,7 +258,8 @@ function StudySessionsPage({ navigation }) {
                   
                   }
                 }}
-                tintColors={{true: colours.primaryAccent, false: colours.accentGray}}
+                fillColor={colours.primaryAccent}
+                unfillColor={colours.backgroundAccent}
               />
           </View>
         </View>
@@ -303,7 +305,7 @@ function StudySessionsPage({ navigation }) {
             ));
           }}>
           <Text
-            style={{color: colours.white, fontSize: 20, fontFamily: 'Lato-Bold'}}
+            style={{color: colours.white, fontSize: 20}}
           >Start Session</Text>
         </TouchableOpacity>
           
@@ -492,7 +494,7 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -501,7 +503,7 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -514,7 +516,7 @@ function StudySessionsScreen({ navigation }) {
                 options={{
                   headerShown: true,
                   title: "Study Sessions",
-                  headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                  headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
                   headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                 }}
               />
@@ -523,7 +525,7 @@ function StudySessionsScreen({ navigation }) {
               options={{
                 headerShown: true,
                 title: "Study Sessions",
-                headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
+                headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
                 headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
               }}
             />
@@ -537,7 +539,7 @@ function StudySessionsScreen({ navigation }) {
         options={{
           headerShown: true,
           title: "Study Sessions",
-          headerTitleStyle: { color: colours.titletext, fontSize: 24, fontFamily: 'Lato-Bold', fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 

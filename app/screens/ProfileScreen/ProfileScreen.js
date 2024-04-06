@@ -61,10 +61,10 @@ function ProfileScreen({ navigation }) {
   return (
       <Stack.Navigator>
           <Stack.Screen name="Profile" component={ProfilePage}
-          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false, headerTitleStyle: { color: colours.titletext, fontSize: 24, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'Lato-Bold', fontWeight: '600' }, headerStyle: { height: 90, backgroundColor: colours.backgroundColour }})}
+          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false, headerTitleStyle: { color: colours.titletext, fontSize: 24, fontWeight: 'Bold', fontWeight: '600' }, headerStyle: { height: 90, backgroundColor: colours.backgroundColour }})}
           />
           <Stack.Screen name="Settings" component={SettingsPage} 
-          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false,  headerTitleStyle: { color: colours.titletext, fontSize: 24, fontWeight: 'Bold', fontWeight: '600', fontFamily: 'Lato-Bold', fontWeight: '600' }, headerStyle: { height: 90, backgroundColor: colours.backgroundColour }})}
+          options={({route}) => ({ headerBackImage:()=>(<SVGBackButton/>), headerBackTitleVisible:false,  headerTitleStyle: { color: colours.titletext, fontSize: 24, fontWeight: 'Bold', fontWeight: '600' }, headerStyle: { height: 90, backgroundColor: colours.backgroundColour }})}
         />
       </Stack.Navigator>
   );

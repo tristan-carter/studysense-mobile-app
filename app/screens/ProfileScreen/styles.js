@@ -11,12 +11,12 @@ export default StyleSheet.create({
     },
     title: {
       fontSize: 24,
-      fontFamily: 'Lato-Bold', fontWeight: '600',
+      fontWeight: '600',
       color: colours.subtitletext,
     },
     text: {
       fontSize: 18,
-      fontFamily: 'Lato',
+      
       color: colours.subtitletext,
     },
     settingsButton: {
@@ -32,9 +32,9 @@ export default StyleSheet.create({
         width: '80%',
     },
     buttonText: {
-      color: 'white',
+      color: colours.text,
       fontSize: 18,
-      fontFamily: 'Lato',
+      
     },
     button: {
       backgroundColor: colours.primary,
@@ -53,7 +53,7 @@ export default StyleSheet.create({
       maxWidth: 300,
       borderWidth: 1.5,
       borderColor: colours.backgroundColour,
-      backgroundColor: 'white',
+      backgroundColor: colours.white,
       marginHorizontal: 20,
       paddingVertical: 20,
       paddingHorizontal: 18,
@@ -64,7 +64,8 @@ export default StyleSheet.create({
     modalText: {
       fontSize: 18,
       marginBottom: 20,
-      fontFamily: 'Lato',
+      
+      color: colours.subtitletext,
     },
     divider: {
       height: 1.5,
@@ -87,7 +88,7 @@ export default StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 8,
         fontSize: 15,
-        fontFamily: 'Lato',
+        
         textAlignVertical: 'top'
     },
     createButton: {
@@ -99,9 +100,9 @@ export default StyleSheet.create({
         justifyContent: 'center',
     },
     createButtonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     cancelButton: {
         alignItems: 'center',
@@ -114,6 +115,6 @@ export default StyleSheet.create({
     cancelButtonText: {
         color: '#7B6B5C',
         fontSize: 16,
-        fontFamily: 'Lato',
+        
     },
 });

@@ -20,7 +20,7 @@ export default StyleSheet.create({
         height: 48,
         borderRadius: 5,
         overflow: 'hidden',
-        backgroundColor: 'white',
+        backgroundColor: colours.white,
         marginTop: 10,
         marginBottom: 10,
         marginLeft: 30,
@@ -38,7 +38,7 @@ export default StyleSheet.create({
         justifyContent: 'center'
     },
     buttonTitle: {
-        color: 'white',
+        color: colours.text,
         fontSize: 16,
         fontWeight: "bold"
     },

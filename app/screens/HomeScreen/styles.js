@@ -44,8 +44,8 @@ export default StyleSheet.create({
         marginBottom: 5,
     },
     scrollDataButtonText: {
-        fontFamily: 'Lato',
-        color: 'white',
+        
+        color: colours.text,
         fontSize: 15,
     },
     scrollDataModalButton: {
@@ -72,7 +72,7 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     buttonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
     },
     button: {
@@ -101,7 +101,7 @@ export default StyleSheet.create({
         maxWidth: 300,
         borderWidth: 1.5,
         borderColor: colours.backgroundColour,
-        backgroundColor: 'white',
+        backgroundColor: colours.white,
         marginHorizontal: 20,
         paddingVertical: 20,
         paddingHorizontal: 18,
@@ -112,7 +112,6 @@ export default StyleSheet.create({
     modalTitle: {
         fontSize: 20,
         marginBottom: 10,
-        fontFamily: 'Lato-Bold', fontWeight: '600',
         fontWeight: '600',
         color: colours.subtitletext,
     },
@@ -132,7 +131,7 @@ export default StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 8,
         fontSize: 15,
-        fontFamily: 'Lato',
+        
         textAlignVertical: 'top'
     },
     createButton: {
@@ -150,9 +149,9 @@ export default StyleSheet.create({
         elevation: 5,
     },
     createButtonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     cancelButton: {
         alignItems: 'center',
@@ -165,7 +164,7 @@ export default StyleSheet.create({
     cancelButtonText: {
         color: '#7B6B5C',
         fontSize: 16,
-        fontFamily: 'Lato',
+        
     },
     divider: {
         height: 1,
@@ -179,31 +178,33 @@ export default StyleSheet.create({
         flexDirection: 'row',
     },
     generateButtonText: {
-        color: 'white',
+        color: colours.text,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     generateButtonSubText: {
         color: colours.backgroundAccent,
         fontSize: 12,
-        fontFamily: 'Lato',
+        
     },
     importButton: {
-        backgroundColor: colours.primaryAccent,
+        backgroundColor: colours.backgroundColour,
         padding: 8,
         borderRadius: 10,
         alignItems: 'center',
         flexDirection: 'row',
+        borderWidth: 1.5,
+        borderColor: 'rgba(0, 0, 0, 0.005);',
     },
     importButtonText: {
-        color: colours.white,
+        color: colours.black,
         fontSize: 18,
-        fontFamily: 'Lato',
+        
     },
     importButtonSubText: {
-        color: colours.white,
+        color: colours.secondarytext,
         fontSize: 12,
-        fontFamily: 'Lato',
+        
     },
     
     noSetsFrame: {
@@ -239,14 +240,12 @@ export default StyleSheet.create({
     noSetsTitleText: {
         color: colours.backgroundColour, 
         fontSize: 26, 
-        fontFamily: 'Lato-Bold', fontWeight: '600',
         fontWeight: '600',
     },
     noSetsSubText: {
         color: '#F5EEE9', 
         fontSize: 13, 
-        fontFamily: 'Lato', 
-        fontWeight: '600', 
+        fontWeight: '500', 
     },
     noSetsCreateButton: {
         backgroundColor: colours.primary,
@@ -272,9 +271,9 @@ export default StyleSheet.create({
     dropdownLabel: {
         zIndex: 999,
         fontSize: 16,
-        fontFamily: 'Lato',
-        color: colours.primary,
-        fontWeight: '600',
+        
+        color: colours.incorrectRed,
+        fontWeight: '500',
     },
     dropdownIcon: {
         zIndex: 999,
