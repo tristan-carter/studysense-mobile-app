@@ -37,13 +37,9 @@ function StudySessionsPage({ navigation }) {
         justifyContent: 'center',
         position: 'absolute',
       }}>
-        <View style={styles.duringSessionFrame}>
-          <View style={styles.duringSessionUpperSection}>
-            <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>Brain break done. Study time!</Text>
-            </View>
-          </View>
-          <TouchableOpacity style={styles.duringSessionTimeLeftContainer} onPress={()=>{
+        <View style={styles.claimFrame}>
+          <Text style={styles.claimTitleText} numberOfLines={1}>Brain break done. Study time!</Text>
+          <TouchableOpacity style={styles.claimButtonContainer} onPress={()=>{
             const newPastSessions = [...user.pastStudySessions];
             const updatedCurrentSession = {
               ...currentSession,
@@ -66,12 +62,14 @@ function StudySessionsPage({ navigation }) {
             };
             dispatch(saveUser(newUserData));
           }}>
-            <Text style={styles.sessionMainButtonText}>
+            <Text style={styles.claimButtonText} numberOfLines={1}>
               Repeat Session
             </Text>
           </TouchableOpacity>
         </View>
       </View>
+
+     
 
       <View style={{
         width: '100%',

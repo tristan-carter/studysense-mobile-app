@@ -164,7 +164,6 @@ export default StyleSheet.create({
     cancelButtonText: {
         color: '#7B6B5C',
         fontSize: 16,
-        
     },
     divider: {
         height: 1,
@@ -180,12 +179,10 @@ export default StyleSheet.create({
     generateButtonText: {
         color: colours.text,
         fontSize: 18,
-        
     },
     generateButtonSubText: {
         color: colours.backgroundAccent,
-        fontSize: 12,
-        
+        fontSize: 12
     },
     importButton: {
         backgroundColor: colours.backgroundColour,
@@ -199,12 +196,10 @@ export default StyleSheet.create({
     importButtonText: {
         color: colours.black,
         fontSize: 18,
-        
     },
     importButtonSubText: {
         color: colours.secondarytext,
         fontSize: 12,
-        
     },
     
     noSetsFrame: {
@@ -271,13 +266,12 @@ export default StyleSheet.create({
     dropdownLabel: {
         zIndex: 999,
         fontSize: 16,
-        
         color: colours.incorrectRed,
         fontWeight: '500',
     },
     dropdownIcon: {
         zIndex: 999,
-        marginLeft: 5,
+        marginLeft: 20,
         marginTop: 2,
     },
 })

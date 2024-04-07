@@ -37,7 +37,10 @@ function StudySessionsPage({ navigation }) {
       <View style={[styles.container, {
         gap: 0,
       }]}>
-        {/* Page which user sees during a study session */}
+        <Text style={[styles.duringSessionTitleText, {
+          marginTop: 20,
+        }]}>Brain Break in Progress...</Text>
+
         <LottieView
           source={require('../../assets/DuringBreakAnimation.json')}
           autoPlay
@@ -49,18 +52,13 @@ function StudySessionsPage({ navigation }) {
               zIndex: 5,
           }}
         />
-        
+
         <View style={styles.duringSessionFrame}>
-          <View style={styles.duringSessionUpperSection}>
-            <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>Brain Break in Progress...</Text>
-            </View>
-          </View>
           <View style={styles.duringSessionTimeLeftContainer}>
             <Text style={styles.duringSessionTimeLeftText}>
               {timeLeft}
             </Text>
-            <Text style={styles.duringSessionTimeLeftMinutesText}> minutes left</Text>
+            <Text style={styles.duringSessionTimeLeftMinutesText}> min{timeLeft !== 1 && "s"} left</Text>
           </View>
         </View>
 

@@ -48,14 +48,16 @@ function StudySessionsPage({ navigation }) {
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',
+        zIndex: 10,
       }}>
-        <View style={styles.duringSessionFrame}>
-          <View style={styles.duringSessionUpperSection}>
+        <View style={styles.claimFrame}>
+          <View style={styles.claimUpperSection}>
             <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>You Finished, Well Done!</Text>
+              <Text style={styles.claimTitleText}>You Finished, Well Done!</Text>
             </View>
           </View>
-          <TouchableOpacity style={styles.duringSessionTimeLeftContainer} onPress={()=>{
+          <TouchableOpacity style={styles.claimButtonContainer} onPress={()=>{
+            console.log('Claimed session');
             const newUserData = {
               ...user,
               currentSession: {
@@ -66,7 +68,7 @@ function StudySessionsPage({ navigation }) {
             };
             dispatch(saveUser(newUserData));
           }}>
-            <Text style={styles.sessionMainButtonText}>
+            <Text style={styles.claimButtonText}>
               Start Break
             </Text>
           </TouchableOpacity>

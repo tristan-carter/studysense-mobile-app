@@ -141,7 +141,6 @@ const styles = {
     createButtonText: {
         color: colours.text,
         fontSize: 18,
-        
     },
     cancelButton: {
         alignItems: 'center',
@@ -154,30 +153,24 @@ const styles = {
     cancelButtonText: {
         color: '#7B6B5C',
         fontSize: 16,
-        
     },
 
     duringSessionFrame: {
-        width: '100%',
-        padding: 12,
-        paddingVertical: 22,
-        backgroundColor: colours.primaryAccent,
+        width: '90%',
+        paddingVertical: 10,
+        backgroundColor: colours.backgroundAccent,
         shadowColor: 'rgba(0, 0, 0, 0.1)',
         shadowOpacity: 0.8,
         elevation: 6,
-        shadowRadius: 15 ,
+        shadowRadius: 15,
         shadowOffset : { width: 1, height: 13},
-        borderRadius: 12,
+        borderRadius: 15,
         flexDirection: 'column',
         justifyContent: 'space-evenly',
         alignItems: 'center',
         gap: 10,
-    },
-    duringSessionUpperSection: {
-        width: '90%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
+        borderWidth: 1.5,
+        borderColor: `rgba(0, 0, 0, 0.05)`,
     },
     duringSessionTextContainer: {
         flex: 1,
@@ -186,49 +179,33 @@ const styles = {
         alignItems: 'flex-start', 
     },
     duringSessionTitleText: {
-        color: colours.backgroundColour, 
+        color: colours.primaryAccent, 
         fontSize: 26, 
-        
-        fontWeight: '800',
+        fontWeight: '700',
+        marginTop: 15,
     },
     duringSessionTimeLeftContainer: {
-        backgroundColor: colours.primary,
-        width: "90%",
-        paddingVertical: 10,
-        borderRadius: 12,
+        backgroundColor: colours.backgroundAccent,
+        width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
         flexDirection: 'row',
-        shadowColor: 'rgba(0, 0, 0, 0.1)',
-        shadowOpacity: 0.8,
-        elevation: 6,
-        shadowRadius: 15 ,
-        shadowOffset : { width: 1, height: 13},
     },
     duringSessionTimeLeftText: {
-        color: colours.white,
-        fontSize: 65,
-        
+        color: colours.primary,
+        fontSize: 110,
         fontWeight: '800',
-        textShadowOffset: {width: 0, height: 3.7},
-        textShadowRadius: 6,
-        textShadowColor: 'rgba(0, 0, 0, 0.25)',
     },
     duringSessionTimeLeftMinutesText: {
-        color: colours.white,
+        color: colours.primaryAccent,
         fontSize: 26,
-        
-        fontWeight: '800',
-        textShadowOffset: {width: 0, height: 3.7},
-        textShadowRadius: 6,
-        textShadowColor: 'rgba(0, 0, 0, 0.25)',
+        fontWeight: '700',
     },
     duringSessionCancelSessionButton: {
         backgroundColor: colours.incorrectRed,
-        paddingVertical: 7,
-        paddingHorizontal: 22,
-        borderRadius: 11,
+        padding: 10,
+        borderRadius: 10,
         alignItems: 'center',
         justifyContent: 'center',
         shadowColor: 'rgba(0, 0, 0, 0.1)',
@@ -241,17 +218,12 @@ const styles = {
     duringSessionCancelSessionText: {
         color: colours.white,
         fontSize: 18,
-        
+        fontWeight: '500',
     },
-
     sessionMainButtonText: {
         color: colours.white,
         fontSize: 34,
-        
         fontWeight: '800',
-        textShadowOffset: {width: 0, height: 3.7},
-        textShadowRadius: 6,
-        textShadowColor: 'rgba(0, 0, 0, 0.25)',
     },
     rewardAnimationContainer: {
         position: 'absolute',
@@ -259,6 +231,45 @@ const styles = {
         height: '55%',
         alignItems: 'center',
         justifyContent: 'center',
-    }
+    },
+    claimFrame: {
+        width: '100%',
+        paddingVertical: 24,
+        backgroundColor: colours.backgroundAccent,
+        shadowColor: 'rgba(0, 0, 0, 0.1)',
+        shadowOpacity: 0.8,
+        elevation: 6,
+        shadowRadius: 15 ,
+        shadowOffset : { width: 1, height: 13},
+        borderRadius: 12,
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        gap: 12,
+        borderWidth: 1.5,
+        borderColor: `rgba(0, 0, 0, 0.05)`,
+    },
+    claimUpperSection: {
+        width: '90%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    claimButtonContainer: {
+        backgroundColor: colours.primary,
+        padding: 20,
+        borderRadius: 13,
+    },
+    claimTitleText: {
+        color: colours.secondary, 
+        fontSize: 26,
+        alignSelf: 'center', 
+        fontWeight: '700',
+    },
+    claimButtonText: {
+        color: colours.white,
+        fontSize: 40,
+        fontWeight: '800',
+    },
 }
 export default styles;

@@ -362,7 +362,7 @@ const SVGBackButton = (props) => (
     left={8}
     top={8}
     fill="none"
-    stroke="salmon"
+    stroke={colours.primaryAccent}
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={3}
@@ -393,7 +393,7 @@ export default function WrappedApp() {
   if (isLoading || state.loading || state.loading === undefined || (state.data == null && stateLoggedIn)) {	
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF9F5' }}>
-        <Image source={require('./app/assets/StudySenseAppLogo.png')} style={{ width: '80%', aspectRatio: 1/1, height: undefined }}/>
+        <Image source={require('./app/assets/StudySenseLogoTransparent.png')} style={{ width: '80%', aspectRatio: 1/1, height: undefined }}/>
         <ActivityIndicator size="large" color={colours.primary} />
       </View>
     )

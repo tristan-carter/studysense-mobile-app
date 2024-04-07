@@ -33,7 +33,7 @@ const RevisionOptionsList = [
         key: 3,
         title: 'Smart Flashcards',
         description: 'Effective for more detailed terms and definitions',
-        icon: require('../../../assets/DefaultSetIcon.png'),
+        icon: require('../../../assets/OldDefaultSetIcon.png'),
     },
 ];
 

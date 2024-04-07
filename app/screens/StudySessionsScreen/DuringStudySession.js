@@ -44,7 +44,6 @@ function StudySessionsPage({ navigation }) {
       <View style={[styles.container, {
         gap: 0,
       }]}>
-        {/* Page which user sees during a study session */}
         <View
         onLayout={(event) => {
           const {height} = event.nativeEvent.layout;
@@ -70,20 +69,13 @@ function StudySessionsPage({ navigation }) {
           />
         </View>
         
-        <View style={[styles.duringSessionFrame, {marginTop: -animationHeight * 0.311}]}>
-          <View style={styles.duringSessionUpperSection}>
-            <View style={styles.duringSessionTextContainer}>
-              <Text style={styles.duringSessionTitleText}>Stay Focused.</Text>
-            </View>
-          </View>
-          <TouchableOpacity style={styles.duringSessionTimeLeftContainer} onPress={()=>{
-            dispatch(setCreatingNewSetFromduringSession(true));
-          }}>
+        <View style={[styles.duringSessionFrame, {marginTop: -animationHeight * 0.307}]}>
+          <View style={styles.duringSessionTimeLeftContainer}>
             <Text style={styles.duringSessionTimeLeftText}>
               {timeLeft}
             </Text>
-            <Text style={styles.duringSessionTimeLeftMinutesText}> minute{timeLeft !== 1 && "s"} left</Text>
-          </TouchableOpacity>
+            <Text style={styles.duringSessionTimeLeftMinutesText}> min{timeLeft !== 1 && "s"} left</Text>
+          </View>
         </View>
 
         <View style={{

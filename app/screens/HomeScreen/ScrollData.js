@@ -164,7 +164,7 @@ export default function ScrollData(props) {
               </Text>
             </View>
               <Dropdown
-                style={[styles.dropdown, { paddingHorizontal: 30 }]}
+                style={[styles.dropdown, { paddingHorizontal: 25 }]}
                 placeholderStyle={styles.placeholderStyle}
                 selectedTextStyle={styles.selectedTextStyle}
                 itemTextStyle={styles.dropdownLabel}
