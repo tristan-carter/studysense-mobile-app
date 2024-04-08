@@ -12,8 +12,7 @@ export default StyleSheet.create({
         borderColor: `rgba(0, 0, 0, 0.005)`,
         marginVertical: 5,
         paddingVertical: 4,
-        paddingLeft: 16,
-        paddingRight: 4,
+        paddingHorizontal: 16,
         height: 75,
         gap: 12,
         alignSelf: 'stretch',
@@ -260,7 +259,6 @@ export default StyleSheet.create({
     },
     dropdown: {
         height: 10,
-        paddingHorizontal: 12,
         marginLeft: 'auto',
     },
     dropdownLabel: {
@@ -271,7 +269,6 @@ export default StyleSheet.create({
     },
     dropdownIcon: {
         zIndex: 999,
-        marginLeft: 20,
-        marginTop: 2,
+        marginLeft: 60,
     },
 })

@@ -163,50 +163,43 @@ export default function ScrollData(props) {
                 {item.isFolder ? item.sets.length - 1 + ' sets' : item.cards.length - 1 + ' cards'}
               </Text>
             </View>
-              <Dropdown
-                style={[styles.dropdown, { paddingHorizontal: 25 }]}
-                placeholderStyle={styles.placeholderStyle}
-                selectedTextStyle={styles.selectedTextStyle}
-                itemTextStyle={styles.dropdownLabel}
-                iconStyle={styles.dropdownIcon}
-                data={[
-                  { label: 'Edit', value: 'edit'},
-                  { label: 'Delete', value: 'delete' },
-                ]}
-                maxHeight={150}
-                labelField="label"
-                valueField="value"
-                onFocus={() => setIsFocus(true)}
-                onBlur={() => setIsFocus(false)}
-                onChange={value => {
-                  setIsFocus(false);
-                  if (value.value == 'edit') {
-                    editingSet.current = item;
-                    editingId.current = item.id;
-                    editingCards.current = item.cards;
-                    newName.current = item.name;
-                    if (item.testOptions) {
-                      setAnswerWithTerm(item.testOptions.answerWithTerm);
-                      setAnswerWithDefinition(item.testOptions.answerWithDefinition);
-                    } else {
-                      setAnswerWithTerm(false);
-                      setAnswerWithDefinition(true);
-                    }
-                    setIsPrivate(item.isPrivate);
-                    setEditingFolder(item.isFolder);
-                    setShowModal(true);
-                  } else if (value.value == 'delete') {
-                    confirmDeleteRow(currentRowMap.current, item.id, item.name, item.isFolder);
+            <Dropdown
+              style={[styles.dropdown, { paddingHorizontal: 5 }]}
+              placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              itemTextStyle={styles.dropdownLabel}
+              iconStyle={styles.dropdownIcon}
+              data={[
+                { label: 'Edit', value: 'edit'},
+                { label: 'Delete', value: 'delete' },
+              ]}
+              maxHeight={150}
+              labelField="label"
+              valueField="value"
+              onFocus={() => setIsFocus(true)}
+              onBlur={() => setIsFocus(false)}
+              onChange={value => {
+                setIsFocus(false);
+                if (value.value == 'edit') {
+                  editingSet.current = item;
+                  editingId.current = item.id;
+                  editingCards.current = item.cards;
+                  newName.current = item.name;
+                  if (item.testOptions) {
+                    setAnswerWithTerm(item.testOptions.answerWithTerm);
+                    setAnswerWithDefinition(item.testOptions.answerWithDefinition);
+                  } else {
+                    setAnswerWithTerm(false);
+                    setAnswerWithDefinition(true);
                   }
-                }}
-              />
-              {/*renderLeftIcon={() => (
-                <Ionicons name="ellipsis-vertical" color={colours.secondarytext} size={30} />
-              }*/}
-            {//item.isFolder && (
-              //<Ionicons name="folder" style={{ alignSelf: 'flex-end', marginLeft: 'auto' }} color={colours.secondarytext} size={40} />
-            //)
-          }
+                  setIsPrivate(item.isPrivate);
+                  setEditingFolder(item.isFolder);
+                  setShowModal(true);
+                } else if (value.value == 'delete') {
+                  confirmDeleteRow(currentRowMap.current, item.id, item.name, item.isFolder);
+                }
+              }}
+            />
           </View>
         </TouchableWithoutFeedback>  
       )
