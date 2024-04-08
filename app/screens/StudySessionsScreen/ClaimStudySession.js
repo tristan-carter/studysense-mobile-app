@@ -42,14 +42,7 @@ function StudySessionsPage({ navigation }) {
         />
       </View>
 
-      <View style={{
-        width: '100%',
-        height: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'absolute',
-        zIndex: 10,
-      }}>
+      <View style={styles.claimButtonGroupContainer}>
         <View style={styles.claimFrame}>
           <View style={styles.claimUpperSection}>
             <View style={styles.duringSessionTextContainer}>
@@ -57,7 +50,6 @@ function StudySessionsPage({ navigation }) {
             </View>
           </View>
           <TouchableOpacity style={styles.claimButtonContainer} onPress={()=>{
-            console.log('Claimed session');
             const newUserData = {
               ...user,
               currentSession: {
@@ -73,41 +65,35 @@ function StudySessionsPage({ navigation }) {
             </Text>
           </TouchableOpacity>
         </View>
-      </View>
 
-      <View style={{
-        width: '100%',
-        alignItems: 'center',
-        flex: 1,
-        justifyContent: 'flex-end',
-        marginBottom: 20,
-      }}>
-        <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
-          Alert.alert(
-            "Are you sure you would like to skip your break?",
-            "Your session will still be counted as complete.",
-            [
-              {
-                text: "Cancel",
-                onPress: () => console.log("Cancel Pressed"),
-                style: "cancel"
-              },
-              { text: "Skip Break", onPress: () => {
-                // saves session to past sessions and refreshes currentSession to null
-                const newPastSessions = [...user.pastStudySessions];
-                newPastSessions.push(currentSession);
-                const newUserData = {
-                  ...user,
-                  currentSession: null,
-                  pastStudySessions: newPastSessions,
-                };
-                dispatch(saveUser(newUserData));
-              } }
-            ]
-          );
-        }}>
-          <Text style={styles.duringSessionCancelSessionText}>Skip Break</Text>
-        </TouchableOpacity>
+        <View style={styles.claimSkipContainer}>
+          <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
+            Alert.alert(
+              "Are you sure you would like to skip your break?",
+              "Your session will still be counted as complete.",
+              [
+                {
+                  text: "Cancel",
+                  onPress: () => console.log("Cancel Pressed"),
+                  style: "cancel"
+                },
+                { text: "Skip Break", onPress: () => {
+                  // saves session to past sessions and refreshes currentSession to null
+                  const newPastSessions = [...user.pastStudySessions];
+                  newPastSessions.push(currentSession);
+                  const newUserData = {
+                    ...user,
+                    currentSession: null,
+                    pastStudySessions: newPastSessions,
+                  };
+                  dispatch(saveUser(newUserData));
+                } }
+              ]
+            );
+          }}>
+            <Text style={styles.duringSessionCancelSessionText}>Skip Break</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

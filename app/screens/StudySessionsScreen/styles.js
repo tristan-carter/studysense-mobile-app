@@ -248,6 +248,7 @@ const styles = {
         gap: 12,
         borderWidth: 1.5,
         borderColor: `rgba(0, 0, 0, 0.05)`,
+        marginTop: '100%',
     },
     claimUpperSection: {
         width: '90%',
@@ -262,14 +263,26 @@ const styles = {
     },
     claimTitleText: {
         color: colours.secondary, 
-        fontSize: 26,
+        fontSize: 24,
         alignSelf: 'center', 
-        fontWeight: '700',
+        fontWeight: '600',
     },
     claimButtonText: {
         color: colours.white,
-        fontSize: 40,
-        fontWeight: '800',
+        fontSize: 36,
+        fontWeight: '700',
+    },
+    claimSkipContainer: {
+        flex: 1, 
+        justifyContent: 'flex-end', 
+        marginBottom: 20
+    },
+    claimButtonGroupContainer: { 
+        position: 'absolute',
+        width: '100%', 
+        height: '100%', 
+        alignItems: 'center',
+        justifyContent: 'center' 
     },
 }
 export default styles;

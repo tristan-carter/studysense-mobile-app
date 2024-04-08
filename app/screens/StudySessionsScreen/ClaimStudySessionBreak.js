@@ -30,15 +30,9 @@ function StudySessionsPage({ navigation }) {
         />
       </View>
 
-      <View style={{
-        width: '100%',
-        height: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'absolute',
-      }}>
+      <View style={styles.claimButtonGroupContainer}>
         <View style={styles.claimFrame}>
-          <Text style={styles.claimTitleText} numberOfLines={1}>Brain break done. Study time!</Text>
+          <Text style={styles.claimTitleText}>Brain break done. Study time!</Text>
           <TouchableOpacity style={styles.claimButtonContainer} onPress={()=>{
             const newPastSessions = [...user.pastStudySessions];
             const updatedCurrentSession = {
@@ -67,46 +61,38 @@ function StudySessionsPage({ navigation }) {
             </Text>
           </TouchableOpacity>
         </View>
-      </View>
 
-     
-
-      <View style={{
-        width: '100%',
-        alignItems: 'center',
-        flex: 1,
-        justifyContent: 'flex-end',
-        marginBottom: 20,
-      }}>
-        <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
-          Alert.alert(
-            "Take a Well-Deserved Rest?",
-            "You can always come back and continue later.",
-            [
-              {
-                text: "Cancel",
-                onPress: () => console.log("Cancel Pressed"),
-                style: "cancel"
-              },
-              { text: "Finish", onPress: () => {
-                const newPastSessions = [...user.pastStudySessions];
-                const updatedCurrentSession = {
-                  ...currentSession,
-                  hasClaimedBreak: true,
-                };
-                newPastSessions.push(updatedCurrentSession);
-                const newUserData = {
-                  ...user,
-                  pastStudySessions: newPastSessions,
-                  currentSession: null,
-                };
-                dispatch(saveUser(newUserData));
-              } }
-            ]
-          );
-        }}>
-          <Text style={styles.duringSessionCancelSessionText}>Finish Studying</Text>
-        </TouchableOpacity>
+        <View style={styles.claimSkipContainer}>
+          <TouchableOpacity style={styles.duringSessionCancelSessionButton} onPress={() => {
+            Alert.alert(
+              "Take a Well-Deserved Rest?",
+              "You can always come back and continue later.",
+              [
+                {
+                  text: "Cancel",
+                  onPress: () => console.log("Cancel Pressed"),
+                  style: "cancel"
+                },
+                { text: "Finish", onPress: () => {
+                  const newPastSessions = [...user.pastStudySessions];
+                  const updatedCurrentSession = {
+                    ...currentSession,
+                    hasClaimedBreak: true,
+                  };
+                  newPastSessions.push(updatedCurrentSession);
+                  const newUserData = {
+                    ...user,
+                    pastStudySessions: newPastSessions,
+                    currentSession: null,
+                  };
+                  dispatch(saveUser(newUserData));
+                } }
+              ]
+            );
+          }}>
+            <Text style={styles.duringSessionCancelSessionText}>Finish Studying</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

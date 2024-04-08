@@ -36,7 +36,10 @@ import { SetImportModal } from './app/screens/HomeScreen/Modals/SetImportModal';
 import { SheetManager } from 'react-native-actions-sheet';
 
 import {PermissionsAndroid} from 'react-native';
-PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+// checks if on android and requests permission
+if (Platform.OS === 'android') {
+  PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+}
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -320,7 +323,7 @@ function HomeTabs(props) {
         headerShown: false,
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-          size = 35;
+          size = 33;
 
           if (route.name === 'Home') {
             iconName = focused ? 'home' : 'home-outline';
