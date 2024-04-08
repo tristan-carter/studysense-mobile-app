@@ -27,11 +27,11 @@ export default StyleSheet.create({
         borderColor: `rgba(0, 0, 0, 0.03)`,
         flexDirection: 'row',
 
-        shadowColor: colours.shadowColour,
-        elevation: 5,
-        shadowOffset: {height: 4},
-        shadowOpacity: 0.2,
-        shadowRadius: 5,
+        shadowColor: 'rgba(0, 0, 0, 0.1)',
+        shadowOpacity: 0.25,
+        elevation: 6,
+        shadowRadius: 3,
+        shadowOffset : { width: 1, height: 6},
     },
     buttonText: {
         fontSize: 21,

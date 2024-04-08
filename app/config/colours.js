@@ -33,7 +33,4 @@ export default {
 
     correctGreen: '#77FFA6',
     incorrectRed: '#FF4444',
-
-    shadowColour: '#838383',
-    shadowDarkColour: '#3C3C3C',
 }

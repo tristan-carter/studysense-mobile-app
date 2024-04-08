@@ -286,7 +286,10 @@ function StudySessionsPage({ navigation }) {
         />
         
         <TouchableOpacity
-          style={styles.button}
+          style={[styles.button, {
+            shadowOpacity: 1,
+            shadowColor: 'rgba(0, 0, 0, 0.15)',
+          }]}
           onPress={()=>{
             dispatch(saveUser(
               {
