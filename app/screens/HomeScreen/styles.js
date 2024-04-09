@@ -7,9 +7,9 @@ export default StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         borderRadius: 11,
-        backgroundColor: colours.backgroundAccent,
         borderWidth: 1.5,
         borderColor: `rgba(0, 0, 0, 0.005)`,
+        backgroundColor: colours.backgroundAccent,
         marginVertical: 5,
         paddingVertical: 4,
         paddingHorizontal: 16,
@@ -44,12 +44,11 @@ export default StyleSheet.create({
         marginBottom: 5,
     },
     scrollDataButtonText: {
-        
         color: colours.text,
         fontSize: 15,
     },
     scrollDataModalButton: {
-        borderWidth: 0.75,
+        borderWidth: 1.5,
         borderColor: colours.secondarytext,
         borderRadius: 10,
         width: 70,
@@ -247,7 +246,6 @@ export default StyleSheet.create({
         width: "90%",
         paddingVertical: 10,
         gap: 1,
-        borderRadius: 10,
         alignItems: 'center',
         justifyContent: 'center',
         shadowColor: 'rgba(0, 0, 0, 0.1)',

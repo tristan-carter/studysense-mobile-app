@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 // external packages
-import { firebase } from "@react-native-firebase/database";
+import firestore from '@react-native-firebase/firestore';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -236,7 +237,8 @@ function HomeTabs(props) {
     const subscription = AppState.addEventListener('change', nextAppState => {
       const currentTimeStamp = Date.now();
       const timeSpent = Math.floor((currentTimeStamp - startTime.current) / 1000 );
-      const userId = firebase.auth().currentUser.uid;
+      const userId = data.id;
+      console.log("Time spent userId: " + userId)
       /*if (data && (nextAppState === 'background')) {
         updateTotalTimeSpent(userId, timeSpent);
         if (currentTimeStamp - lastSavedTimestamp.current >= 5000) {
@@ -268,12 +270,21 @@ function HomeTabs(props) {
 
   const updateTotalTimeSpent = (userId, timeSpent) => {
     console.log(timeSpent)
-    firebase.database().ref(`timeRecords/${userId}`).transaction((totalTime) => {
+    firestore().collection('timeRecords').doc(userId).set({
+      timeSpent: firestore.FieldValue.increment(timeSpent)
+    }, { merge: true })
+    .then(() => {
+        console.log("Time spent updated successfully!");
+    })
+    .catch((error) => {
+        console.error("Error updating time spent: ", error);
+    });
+    /*firebase.database().ref(`timeRecords/${userId}`).transaction((totalTime) => {
       if (totalTime == null) {
         return timeSpent;
       }
       return (totalTime || 0) + timeSpent;
-    });
+    });*/
   };
 
   return(
