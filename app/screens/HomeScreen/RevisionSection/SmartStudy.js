@@ -206,8 +206,7 @@ function SmartStudy() {
         setRoundNumber(roundNumber + 1);
       }
     }, [finishRoundReview]);
-    isSetFinished = true;
-    allCards = [...currentSet.cards];
+    allCards = currentSet ? [...currentSet.cards] : [];
     allCards.shift()
     return (
       allCards.length >= 4 ? (

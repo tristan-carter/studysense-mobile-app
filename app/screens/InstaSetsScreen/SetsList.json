@@ -2,8 +2,1770 @@
     "studylevels": [
         {
             "title": "A Level",
-            "examboards": [
-
+            "subjects": [
+                {
+                    "title": "Computer Science",
+                    "examboards": [
+                        {
+                            "title": "OCR",
+                            "setname": "Computer Science OCR A Level",
+                            "topics": [
+                                {
+                                    "title": "1.1.3. Input, Output and Storage: Characteristics of Contemporary Processors: Computer Science A-Level OCR (paper1)",
+                                    "cards": [
+                                        {
+                                            "term": "Give two types of magnetic storage.",
+                                            "definition": "Two from:\\xe2\\x97\\x8f Hard disk drive\\xe2\\x97\\x8f Floppy disk\\xe2\\x97\\x8f Magnetic tape"
+                                        },
+                                        {
+                                            "term": "Give three examples of input devices.",
+                                            "definition": "Three from:- Keyboard- Mouse- Microphone- Webcam- Touchpad- Barcode reader- Magnetic stripe reader, etc."
+                                        },
+                                        {
+                                            "term": "Give an example of a device which is used for both input and output",
+                                            "definition": "Touchscreen"
+                                        },
+                                        {
+                                            "term": "What name is given to the areas on a CD\\xe2\\x80\\x99s surface which have been burned into grooves by a laser?",
+                                            "definition": "Pits"
+                                        },
+                                        {
+                                            "term": "What does CD stand for?",
+                                            "definition": "Compact Disc"
+                                        },
+                                        {
+                                            "term": "Give three examples of output devices.",
+                                            "definition": "Three from:\\xe2\\x97\\x8f Speaker\\xe2\\x97\\x8f Monitor\\xe2\\x97\\x8f Printer\\xe2\\x97\\x8f Projector"
+                                        },
+                                        {
+                                            "term": "Which has the highest typical storage capacity: CD, DVD or Blu-Ray?",
+                                            "definition": "Blu-Ray"
+                                        },
+                                        {
+                                            "term": "In a hard disk drive, what is mounted at the end of the actuating arm?",
+                                            "definition": "Read / write head"
+                                        },
+                                        {
+                                            "term": "Give two types of magnetic storage.",
+                                            "definition": "Two from:\\xe2\\x97\\x8f Hard disk drive\\xe2\\x97\\x8f Floppy disk\\xe2\\x97\\x8f Magnetic tape"
+                                        },
+                                        {
+                                            "term": "Which storage device has typical capacities in the range 500GB-5TB?",
+                                            "definition": "Hard disk drive"
+                                        },
+                                        {
+                                            "term": "Give two disadvantages of SSDs.",
+                                            "definition": "\\xe2\\x97\\x8f High cost per GB\\xe2\\x97\\x8f Limited lifespan"
+                                        },
+                                        {
+                                            "term": "What does ROM stand for?",
+                                            "definition": "Read Only Memory"
+                                        },
+                                        {
+                                            "term": "Describe the structure in which information is stored in flash memory",
+                                            "definition": "Information is stored in blocks, which are combined to form pages."
+                                        },
+                                        {
+                                            "term": "What is meant by non-volatile?",
+                                            "definition": "A non-volatile storage medium does not lose its information when power is lost."
+                                        },
+                                        {
+                                            "term": "Which two types of logic gate are used in flash storage?",
+                                            "definition": "NAND and NOR"
+                                        },
+                                        {
+                                            "term": "What does RISC mean?",
+                                            "definition": "Reduced Instruction Set Computer"
+                                        },
+                                        {
+                                            "term": "What does CISC mean?",
+                                            "definition": "Complex Instruction Set Computer"
+                                        },
+                                        {
+                                            "term": "What are the properties of RISC?",
+                                            "definition": "- Small instruction set- Each instruction is one line of machine code- Used in everyday devices"
+                                        },
+                                        {
+                                            "term": "What are the properties of CISC?",
+                                            "definition": "- A large instruction set- Instructions are built into hardware- Used in embedded systems and microprocessors"
+                                        },
+                                        {
+                                            "term": "What are the benefits of RISC processors?",
+                                            "definition": "Pipelining is possible since each instruction takes one clock cycle."
+                                        },
+                                        {
+                                            "term": "What are the benefits of CISC processors?",
+                                            "definition": "- Compilers have to do less work.- They require less RAM since instructions are smaller."
+                                        },
+                                        {
+                                            "term": "What is a graphics processing unit?",
+                                            "definition": "A co-processor made up of lots of independent parallel processors."
+                                        },
+                                        {
+                                            "term": "What are GPUs used for now?",
+                                            "definition": "GPUs are used for image processing and machine learning."
+                                        },
+                                        {
+                                            "term": "What are multi-core systems?",
+                                            "definition": "Systems where there are multiple cores that separate fetch-execute cycles."
+                                        },
+                                        {
+                                            "term": "What are parallel systems?",
+                                            "definition": "Systems where multiple instructions can be completed at any given time, doesn\\xe2\\x80\\x99t require multiple cores, it can use threading and pipelining instead."
+                                        },
+                                        {
+                                            "term": "What does the Arithmetic and Logic unitdo?",
+                                            "definition": "The ALU completes all the arithmeticaland logical operations."
+                                        },
+                                        {
+                                            "term": "What is the Control Unit?",
+                                            "definition": "A part of the processor which directsoperations inside the CPU."
+                                        },
+                                        {
+                                            "term": "What are registers?",
+                                            "definition": "Small memory cells that operate at highspeeds."
+                                        },
+                                        {
+                                            "term": "Where do all the arithmetic, logic, or shiftoperations occur?",
+                                            "definition": "They occur in registers."
+                                        },
+                                        {
+                                            "term": "What does the Program Counter (PC)do?",
+                                            "definition": "The Program Counter holds the addressof the next instruction."
+                                        },
+                                        {
+                                            "term": "In which part of the CPU do allcalculations take place?",
+                                            "definition": "The Arithmetic and Logic Unit (ALU)."
+                                        },
+                                        {
+                                            "term": "Where are intermediate arithmetic andlogic results stored?",
+                                            "definition": "In the accumulator (ACC)."
+                                        },
+                                        {
+                                            "term": "What does the Memory Address Register do?",
+                                            "definition": "Holds the address of a location that is to be read from or written to."
+                                        },
+                                        {
+                                            "term": "What does the Memory Data Registerdo?",
+                                            "definition": "Temporarily stores the data that has justbeen read from or the data needs to bewritten."
+                                        },
+                                        {
+                                            "term": "What does the Current InstructionRegister do?",
+                                            "definition": "Holds the current instruction divided upinto opcode and operand."
+                                        },
+                                        {
+                                            "term": "What is a Bus?",
+                                            "definition": "A set of parallel wires connecting two or more components together."
+                                        },
+                                        {
+                                            "term": "What is the system bus?",
+                                            "definition": "The collection of the data bus, address bus, and control bus is called the system bus."
+                                        },
+                                        {
+                                            "term": "What is the width of a bus?",
+                                            "definition": "The number of parallel wires it has."
+                                        },
+                                        {
+                                            "term": "What is the data bus?",
+                                            "definition": "A bidirectional bus used to transport data and instructions between components."
+                                        },
+                                        {
+                                            "term": "What is the control bus?",
+                                            "definition": "The bi-directional bus used to transmit control signals between internal and external components."
+                                        },
+                                        {
+                                            "term": "Accumulator (ACC)",
+                                            "definition": "A special register to temporarily store the results of operationsperformed by the ALU."
+                                        },
+                                        {
+                                            "term": "Address Bus",
+                                            "definition": "Carries the memory location address of the register the data is being carriedto or from."
+                                        },
+                                        {
+                                            "term": "Arithmetic and Logic Unit (ALU)",
+                                            "definition": "A part of the CPU that performs arithmetic calculationsand logical operations on data for the computer programs."
+                                        },
+                                        {
+                                            "term": "Buses",
+                                            "definition": "A physical set of parallel wires connecting and carrying groups of bits between several components of a computer."
+                                        },
+                                        {
+                                            "term": "Cache",
+                                            "definition": "A small and fast but expensive memory in the CPU used to store instructions and data that are accessed regularly."
+                                        },
+                                        {
+                                            "term": "Clock Speed",
+                                            "definition": "The frequency at which the internal clock generates signals switching between 0 and 1. It controls how often instructions are executed and data is fetched."
+                                        },
+                                        {
+                                            "term": "Contemporary Processor Architecture",
+                                            "definition": "A modern computer architecture combining elements of both Von Neumann and Harvard architectures."
+                                        },
+                                        {
+                                            "term": "Control Bus",
+                                            "definition": "A bi-directional bus carrying control signals from the CU to synchronise access and use of data."
+                                        },
+                                        {
+                                            "term": "Control Unit",
+                                            "definition": "A part of the CPU that controls and manages the execution of instructions. It sends control signals to coordinate execution and controls Fetch-Decode-Execute cycles and buses."
+                                        },
+                                        {
+                                            "term": "Current Instruction Register (CIR)",
+                                            "definition": "A special register that stores the current instruction being executed and decoded. The instructions are divided into operand and opcode."
+                                        },
+                                        {
+                                            "term": "Data Bus",
+                                            "definition": "A bi-directional bus for carrying data and instructions between the processor and memory."
+                                        },
+                                        {
+                                            "term": "Fetch-Decode-Execute Cycles",
+                                            "definition": "The process of fetching from memory (supplying the address and retrieving the instruction from memory), decoding (interpreting the instruction and then reading and retrieving the required data from their addresses), and executing the instruction (CPU carries out the required actions)."
+                                        },
+                                        {
+                                            "term": "Harvard Architecture",
+                                            "definition": "A computer architecture that stores data and instructions in separate memories to allow the next instruction to be read while data is currently being read or written."
+                                        },
+                                        {
+                                            "term": "Memory Address Register (MAR)",
+                                            "definition": "A special register that stores the memory address of the next instruction to load or data to use."
+                                        },
+                                        {
+                                            "term": "Memory Data Register (MDR)",
+                                            "definition": "A special register that temporarily stores data to be read from or written to the computer\\xe2\\x80\\x99s memory."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "1.2.4. Types of Programming Language: 1.2 Software and Software Developments: Computer Science A-Level OCR (paper1)",
+                                    "cards": [
+                                        {
+                                            "term": "What are programming paradigms?",
+                                            "definition": "Different approaches to using a programming language to solve a problem."
+                                        },
+                                        {
+                                            "term": "Which two broad categories are programming paradigms split into?",
+                                            "definition": "- Imperative- Declarative"
+                                        },
+                                        {
+                                            "term": "State the advantages of procedural programming",
+                                            "definition": "- Can be applied to a wide range of problems.- Relatively easy to write and interpret."
+                                        },
+                                        {
+                                            "term": "State a use of declarative programming",
+                                            "definition": "- Expert Systems/ Knowledge-based Systems.- Artificial Intelligence."
+                                        },
+                                        {
+                                            "term": "Identify the four main programming structures used in structured programming.",
+                                            "definition": "- Sequence- Selection- Iteration- Recursion"
+                                        },
+                                        {
+                                            "term": "How does assembly language differ from machine code?",
+                                            "definition": "Assembly language uses mnemonics rather than binary. One line in assembly language is equal to one line in machine code."
+                                        },
+                                        {
+                                            "term": "What is the function of the STA mnemonic?",
+                                            "definition": "Storing the value in the Accumulator at the given memory address."
+                                        },
+                                        {
+                                            "term": "What is the function of the BRP mnemonic?",
+                                            "definition": "Branches to a given address if the value in the Accumulator is positive. It is a conditional branch."
+                                        },
+                                        {
+                                            "term": "State the function of the opcode and operand.",
+                                            "definition": "The opcode specifies the instruction to be performed and the addressing mode. The operand holds a value which is related to the data on which the instruction is to be performed."
+                                        },
+                                        {
+                                            "term": "State four addressing modes.",
+                                            "definition": "- Immediate Addressing- Direct Addressing- Indirect Addressing- Indexed Addressing"
+                                        },
+                                        {
+                                            "term": "What is a class?",
+                                            "definition": "A template for an object that defines the state and behaviour of an object. An object is an instance of a class."
+                                        },
+                                        {
+                                            "term": "Give one disadvantage of Object Oriented Languages.",
+                                            "definition": "- Requires a different style of thinking which can be difficult for programmers accustomed to other paradigms to pick up.- OOP may not be suited to all types of problems.- Generally unsuitable for smaller problems."
+                                        },
+                                        {
+                                            "term": "Identify the common stages of softwaredevelopment life cycles (SDLCs).",
+                                            "definition": "Analysis, Design, Development, Testing, Implementation, Evaluation and Maintenance."
+                                        },
+                                        {
+                                            "term": "Define white box testing.",
+                                            "definition": "A form of testing carried out by software development teams in which the test plan is based on the internal structure of the program. All of the possible routes through the program are tested."
+                                        },
+                                        {
+                                            "term": "What is TELOS?",
+                                            "definition": "A method of analysis used by designers to evaluate the feasibility of a project. It considers technical, economic, legal, and operational aspects of the project, as well as scheduling."
+                                        },
+                                        {
+                                            "term": "What are agile methodologies?",
+                                            "definition": "A collection of methodologies which aim to improve the flexibility of software development. They respond quickly to changes in user requirements."
+                                        },
+                                        {
+                                            "term": "Identify the advantages of waterfall programming methodologies.",
+                                            "definition": "- Straightforward to manage.- Clear structure.- Clearly documented."
+                                        },
+                                        {
+                                            "term": "Give three disadvantages of extremeprogramming methodologies.",
+                                            "definition": "- High cost due to two people working on one project.- Teamwork and good communication is essential.- End-user must be present throughout the durationof the project."
+                                        },
+                                        {
+                                            "term": "What type of projects are spiral programming methodologies suited to?",
+                                            "definition": "Large, risk-intensive projects with a high budget."
+                                        },
+                                        {
+                                            "term": "What type of projects are RapidApplication Development (RAD) programming methodologies suited to?",
+                                            "definition": "Projects where high usability is required and user requirement  may not be clear from the outset or are continually changing. Suited to projects of a small to medium size with a relatively low budget and short time-frame."
+                                        },
+                                        {
+                                            "term": "Define an algorithm.",
+                                            "definition": "A set of instructions used to solve a problem."
+                                        },
+                                        {
+                                            "term": "State three key qualities or considerations good algorithms should make.",
+                                            "definition": "\\xe2\\x97\\x8f Inputs must be clearly defined - what is valid and what is invalid?\\xe2\\x97\\x8f Must always produce a valid output for any defined input.\\xe2\\x97\\x8f Must be able to deal with invalid inputs.\\xe2\\x97\\x8f Must always reach a stopping condition.\\xe2\\x97\\x8f Must be well-documented for reference.\\xe2\\x97\\x8f Must be well-commented so modifications can easily be made."
+                                        },
+                                        {
+                                            "term": "What is the difference between applications and systems software?",
+                                            "definition": "Applications software is utilised directly by the end-user whereas systems software ensures the high performance of the computer."
+                                        },
+                                        {
+                                            "term": "Give 3 examples of utilities.",
+                                            "definition": "Three from:- Compression- Disk defragmentation- Antivirus- Automatic backup- Automatic updating"
+                                        },
+                                        {
+                                            "term": "Give one advantage of using closed source code.",
+                                            "definition": "- Thorough, regular and well-tested updates.- Expert support and user manuals from company.- High levels of security as it is developed in a professional, controlled environment."
+                                        },
+                                        {
+                                            "term": "State two features of open source code",
+                                            "definition": "- Does not require a license to be used.- Distributed with the source code.- Can be modified and sold on."
+                                        },
+                                        {
+                                            "term": "Give two advantages of using compiled code over interpreted code.",
+                                            "definition": "- Faster to execute.- Does not require compiler to run."
+                                        },
+                                        {
+                                            "term": "Give two advantages of using interpreted code over compiled code",
+                                            "definition": "Two from:- Is platform independent.- Runs instantly without time waiting for compilation.- Useful for debugging."
+                                        },
+                                        {
+                                            "term": "What is assembly language?",
+                                            "definition": "A low-level language that has almost a one-to-one relationship with machine code. It is platform specific."
+                                        },
+                                        {
+                                            "term": "What are the stages of compilation?",
+                                            "definition": "\\xe2\\x97\\x8f Lexical analysis\\xe2\\x97\\x8f Syntax analysis\\xe2\\x97\\x8f Code generation\\xe2\\x97\\x8f Optimisation"
+                                        },
+                                        {
+                                            "term": "What happens during syntax analysis?",
+                                            "definition": "- Tokens are compared to the rules of the programming language.- Syntax errors are identified.- Symbol table updated with more details.- Semantic analysis (finding logic errors)."
+                                        },
+                                        {
+                                            "term": "What are the similarities and differencesbetween static and dynamic linkers?",
+                                            "definition": "Similarities: Both link external modules and libraries to main program.Static: Library code copied into the file. File size increased.Dynamic: Addresses of libraries included within file. External updates automatically feed through to main program."
+                                        },
+                                        {
+                                            "term": "Give three advantages of using libraries.",
+                                            "definition": "- Error-free- Save time- Re-usable- No need to \\xe2\\x80\\x98reinvent the wheel\\xe2\\x80\\x99- Designed by experts"
+                                        },
+                                        {
+                                            "term": "Describe the function of a loader.",
+                                            "definition": "Provided by the operating system, a loader retrieves the library or subroutine from the given memory location."
+                                        },
+                                        {
+                                            "term": "What is the purpose of the optimisation stage of compilation?",
+                                            "definition": "\\xe2\\x97\\x8f Reduce execution time\\xe2\\x97\\x8f Reduce inefficient sections of code\\xe2\\x97\\x8f Remove redundant code"
+                                        },
+                                        {
+                                            "term": "What is an operating system?",
+                                            "definition": "A collection of programs that work together to provide an interface between the user and the computer."
+                                        },
+                                        {
+                                            "term": "Give 3 functions of an operating system.",
+                                            "definition": "Three from:- Memory management- Resource management- I/Output management- Interrupt management- Security- User interface- Utility software"
+                                        },
+                                        {
+                                            "term": "What are the similarities and differences between paging and segmentation?",
+                                            "definition": "Both: Are used when RAM space is insufficient, can cause disk thrashing.Paging: Uses equal-sized sections called pages.Segmentation: Uses variable-sized, logical sections called segments."
+                                        },
+                                        {
+                                            "term": "Describe how virtual memory is used when there is not enough RAM.",
+                                            "definition": "A section of the hard drive is used to act as RAM. Sections of programs not currently being used are temporarily moved into virtual memory through paging. This frees up memory for other programs in RAM."
+                                        },
+                                        {
+                                            "term": "What is an interrupt?",
+                                            "definition": "A signal generated by software or hardware to indicate to the processor that a process needs attention."
+                                        },
+                                        {
+                                            "term": "Explain the stages of the Interrupt Service Routine.",
+                                            "definition": "\\xe2\\x97\\x8f Interrupt register checked at the end of each Fetch-Decode-Execute cycle.\\xe2\\x97\\x8f If there is an interrupt exists with a higher priority to the current process, the current contents of the registersin the CPU are transferred into a stack.\\xe2\\x97\\x8f The relevant interrupt service routine (ISR) is loaded into RAM.\\xe2\\x97\\x8f A flag is set to signal the ISR has begun.\\xe2\\x97\\x8f The flag is reset once the ISR has finished.\\xe2\\x97\\x8f Interrupt register checked again. If interrupts are of a higher priority, the process is repeated.\\xe2\\x97\\x8f If there are no interrupts with a higher priority, the contents of the stack are popped and place back into the special memory registers.\\xe2\\x97\\x8f The fetch-Decode-Execute cycle renews as before."
+                                        },
+                                        {
+                                            "term": "Are these scheduling algorithms pre-emptive or non pre-emptive?FCFS, SRT, SJF, MLFQ, RR",
+                                            "definition": "Pre-emptive: RR, SRT, MLFQNon-preemptive: FCFS, SJF"
+                                        },
+                                        {
+                                            "term": "What are the advantages and disadvantages of using Multilevel Feedback Queues for scheduling?",
+                                            "definition": "Advantage: Services most urgent interrupts first.Disadvantage: Hard to implement."
+                                        },
+                                        {
+                                            "term": "Define a real-time operating system and when it may be used.",
+                                            "definition": "Real-time operating systems perform a task within a guaranteed time frame. They are used in systems were a response within a given time frame is critical eg. life support systems, self-driving cars, power systems."
+                                        },
+                                        {
+                                            "term": "Describe three functions of the BIOS.",
+                                            "definition": "Running tests upon the computer\\xe2\\x80\\x99s start-up:\\xe2\\x97\\x8f POST (Power-on self test) which ensures that all hardware is correctly connected and functional.\\xe2\\x97\\x8f Checking the CPU clock, memory and processor.\\xe2\\x97\\x8f Testing for external memory devices."
+                                        },
+                                        {
+                                            "term": "What is the role of a device driver?",
+                                            "definition": "Enable the operating system to interact with hardware devices."
+                                        },
+                                        {
+                                            "term": "Describe an instance in which a Virtual Machine may be used.",
+                                            "definition": "\\xe2\\x97\\x8f Testing programs.\\xe2\\x97\\x8f Protection from malware.\\xe2\\x97\\x8f Running software compatible with different versions and types of operating systems."
+                                        },
+                                        {
+                                            "term": "Give one advantage and one disadvantage of intermediate code.",
+                                            "definition": "Advantage: Platform independent, portableDisadvantage: Slower execution"
+                                        },
+                                        {
+                                            "term": "Basic Input Output System (BIOS)",
+                                            "definition": "A program that initialises and tests whether system hardware is functional and then loads the operating system from the hard disk into RAM when the computer is turned on."
+                                        },
+                                        {
+                                            "term": "Device Drivers",
+                                            "definition": "A program supplied with a peripheral device that allows the OS to control and communicate with the device."
+                                        },
+                                        {
+                                            "term": "Distributed Operating Systems",
+                                            "definition": "The operating system is spread over multiple computer servers on a network, acting as a single system to parallel process a job."
+                                        },
+                                        {
+                                            "term": "Embedded Operating Systems",
+                                            "definition": "A specialised operating system with limited resources and functionality, built in to control a single machine."
+                                        },
+                                        {
+                                            "term": "First Come First Served",
+                                            "definition": "A scheduling algorithm where processes are dealt with in the order they arrive (a queue)."
+                                        },
+                                        {
+                                            "term": "Intermediate Code",
+                                            "definition": "Code partly translated between high-level and machine language produced by a compiler."
+                                        },
+                                        {
+                                            "term": "Interrupts",
+                                            "definition": "A signal from hardware, software or the clock to alert the CPU. If the interrupt is a higher priority than the current task, the  current routine pauses and resumes after the interrupt is executed."
+                                        },
+                                        {
+                                            "term": "Interrupt Service Routines (ISR)",
+                                            "definition": "If an interrupt is a higher priority than the current task, register contents are temporarily transferred onto the system stack at the end of the current FDE cycle and the interrupt is handled."
+                                        },
+                                        {
+                                            "term": "Memory Management",
+                                            "definition": "The efficient organisation and allocation of main memory to the programs in use."
+                                        },
+                                        {
+                                            "term": "Multi-level Feedback Queues",
+                                            "definition": "A scheduling algorithm that uses multiple queues, each with a different priority. Jobs can be moved between queues."
+                                        },
+                                        {
+                                            "term": "Multi-tasking Operating Systems",
+                                            "definition": "An operating system capable of running multiple tasks simultaneously."
+                                        },
+                                        {
+                                            "term": "Multi-User Operating Systems",
+                                            "definition": "An operating system consisting of one mainframe computer with multiple terminals that allow multiple users to access the computer\\xe2\\x80\\x99s resources. Each user is given a time slice of the mainframe processor."
+                                        },
+                                        {
+                                            "term": "Operating System",
+                                            "definition": "A set of programs managing the operation of the computer that is loaded into RAM everytime the computer is turned on. It bridges the user to the hardware."
+                                        },
+                                        {
+                                            "term": "Paging",
+                                            "definition": "Partitioning memory into fixed sized physical divisions called pages. Processes in memory will be assigned an appropriate number of pages."
+                                        },
+                                        {
+                                            "term": "Real Time Operating Systems",
+                                            "definition": "An operating system where data is processed as it comes, with responses generated with a guaranteed timeframe."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "1.3.4. Web Technologies: Exchanging Data: Computer Science A-Level OCR (paper1)",
+                                    "cards": [
+                                        {
+                                            "term": "What is HTML?",
+                                            "definition": "HTML is the language/script that web pages are written in."
+                                        },
+                                        {
+                                            "term": "What does HTML do?",
+                                            "definition": "HTML allows a browser to interpret and render a webpage."
+                                        },
+                                        {
+                                            "term": "What is a tag in HTML?",
+                                            "definition": "HTML code is made up of tags, tags are the names given to values written within angle brackets i.e. <h1>"
+                                        },
+                                        {
+                                            "term": "What is an identifier selector?",
+                                            "definition": "An identifier selector is a value that follows a hashtag."
+                                        },
+                                        {
+                                            "term": "What is a class selector?",
+                                            "definition": "A class selector is a value that follows a full stop."
+                                        },
+                                        {
+                                            "term": "What is CSS?",
+                                            "definition": "CSS is a script/language like HTML except it\\xe2\\x80\\x99s used to describe the style of a webpage."
+                                        },
+                                        {
+                                            "term": "What are the names of the two methods of applying CSS?",
+                                            "definition": "Internal/embedded CSS, External CSS."
+                                        },
+                                        {
+                                            "term": "Where do you write internal CSS?",
+                                            "definition": "It\\xe2\\x80\\x99s placed inside the style tags and is entered directly within the HTML document."
+                                        },
+                                        {
+                                            "term": "Where do you write external CSS?",
+                                            "definition": "You write it in a separate document."
+                                        },
+                                        {
+                                            "term": "How do you use external CSS in your HTML code?",
+                                            "definition": "You use the <link> tag."
+                                        },
+                                        {
+                                            "term": "What is JavaScript?",
+                                            "definition": "JavaScript is a language used on webpages to add interactivity."
+                                        },
+                                        {
+                                            "term": "Is JavaScript interpreted or compiled?",
+                                            "definition": "Interpreted"
+                                        },
+                                        {
+                                            "term": "What is a search engine?",
+                                            "definition": "A search engine is a program that searches through a database of internet addresses looking for a resource based on a criteria set by the client/user."
+                                        },
+                                        {
+                                            "term": "What software does search engines use?",
+                                            "definition": "Web Crawlers"
+                                        },
+                                        {
+                                            "term": "What does a Web Crawler do?",
+                                            "definition": "Travels across the internet collecting keywords and phrases from a web page and adding it to an index of web resources."
+                                        },
+                                        {
+                                            "term": "What is a network?",
+                                            "definition": "Two or more computers connected together that transmit data."
+                                        },
+                                        {
+                                            "term": "What is physical topology?",
+                                            "definition": "Physical topology is the physical layout of the network."
+                                        },
+                                        {
+                                            "term": "What is logical topology?",
+                                            "definition": "The topology that describes the flow of data through a network."
+                                        },
+                                        {
+                                            "term": "What is bus topology?",
+                                            "definition": "Topology in which all terminals are connected to a backbone cable."
+                                        },
+                                        {
+                                            "term": "Name an advantage of the bus topology.",
+                                            "definition": "- Cheaper to set up.- Doesn\\xe2\\x80\\x99t require any additional hardware."
+                                        },
+                                        {
+                                            "term": "Give a disadvantage of the bus topology.",
+                                            "definition": "- If backbone cable fails, entire network gets disconnected.- As traffic increases, performance decreases.- All computers can see data transmission."
+                                        },
+                                        {
+                                            "term": "What is star topology?",
+                                            "definition": "A network which uses a central node to direct the flow of data, each terminal is connected to the central node."
+                                        },
+                                        {
+                                            "term": "Name two advantages of the star topology.",
+                                            "definition": "Two from:- Performance is consistent with heavy network usage,- If one cable fails only that station is affected,- Transmits data faster, so it gives better performance,- It\\xe2\\x80\\x99s not difficult to add new stations,- No data collisions."
+                                        },
+                                        {
+                                            "term": "Name a disadvantage of the star topology.",
+                                            "definition": "- Expensive due to switch and cabling.- If the central switch fails the rest of the network fails."
+                                        },
+                                        {
+                                            "term": "What is a mesh topology?",
+                                            "definition": "A topology in which every node is connected to every other, most commonly found with wireless technology."
+                                        },
+                                        {
+                                            "term": "Name two advantages of the mesh topology.",
+                                            "definition": "Two from:- No cabling cost.- As number of nodes increase, reliability and speed increases.- New nodes automatically get incorporated.- Faster since data doesn\\xe2\\x80\\x99t travel through a central switch."
+                                        },
+                                        {
+                                            "term": "Give a disadvantage of the mesh topology.",
+                                            "definition": "- Need to purchase devices with wireless capabilities.- Maintaining the network is difficult."
+                                        },
+                                        {
+                                            "term": "What are protocols?",
+                                            "definition": "Sets of rules defining how two devices communicate with each other."
+                                        },
+                                        {
+                                            "term": "Why are protocols standard?",
+                                            "definition": "Protocols are standard so devices from different manufacturers don\\xe2\\x80\\x99t have problems communicating."
+                                        },
+                                        {
+                                            "term": "Describe the structure of the Internet.",
+                                            "definition": "The Internet is a global network of interconnected networks."
+                                        },
+                                        {
+                                            "term": "What is a relational database?",
+                                            "definition": "A database which recognises the difference between entities and uses different tables for each entity."
+                                        },
+                                        {
+                                            "term": "What is an entity?",
+                                            "definition": "An item of interest about which information is stored."
+                                        },
+                                        {
+                                            "term": "What is a flat file?",
+                                            "definition": "A database that consists of a single file, usually about one entity."
+                                        },
+                                        {
+                                            "term": "What is a primary key?",
+                                            "definition": "A unique identifier for each record in a table."
+                                        },
+                                        {
+                                            "term": "What is a foreign key?",
+                                            "definition": "The attribute which links two tables together."
+                                        },
+                                        {
+                                            "term": "What is a secondary key?",
+                                            "definition": "An index other than the primary key used to search and sort through the database with more convenience and speed."
+                                        },
+                                        {
+                                            "term": "What does capturing data mean?",
+                                            "definition": "The process of getting the information that will be stored in the database."
+                                        },
+                                        {
+                                            "term": "What method do banks use to capture data from cheques?",
+                                            "definition": "Magnetic Ink Character Recognition (MICR) is used for all of the details apart from the amount which must be entered manually."
+                                        },
+                                        {
+                                            "term": "What does selecting data mean?",
+                                            "definition": "Selecting data is the process of removing excess information to extract only the data you require."
+                                        },
+                                        {
+                                            "term": "What does managing the data mean?",
+                                            "definition": "To manipulate the information collected in any type of way such as through sorting through it or selecting certain parts using SQL."
+                                        },
+                                        {
+                                            "term": "What is the most common language used to manipulate data in databases?",
+                                            "definition": "SQL (Structured Query Language)"
+                                        },
+                                        {
+                                            "term": "What name is given to the public and private keys used in asymmetric encryption?",
+                                            "definition": "Key Pair"
+                                        },
+                                        {
+                                            "term": "Name the two categories of compression.",
+                                            "definition": "Lossy and lossless."
+                                        },
+                                        {
+                                            "term": "In which type of compression is the quality of a file not degraded?",
+                                            "definition": "Lossless"
+                                        },
+                                        {
+                                            "term": "What is the purpose of encryption?",
+                                            "definition": "To keep data secure during transmission."
+                                        },
+                                        {
+                                            "term": "Name one type of lossless compression.",
+                                            "definition": "One from:\\xe2\\x97\\x8f Run length encoding.\\xe2\\x97\\x8f Dictionary encoding."
+                                        },
+                                        {
+                                            "term": "In which form of encryption do the sender and receiver share the same private key?",
+                                            "definition": "Symmetric Encryption"
+                                        },
+                                        {
+                                            "term": "How many keys are used in asymmetric encryption?",
+                                            "definition": "Two (one public and one private)."
+                                        },
+                                        {
+                                            "term": "If person A wants to send a message to person B using asymmetric encryption, which key should they use to encrypt the message?a) A\\xe2\\x80\\x99s public keyb) A\\xe2\\x80\\x99s private keyc) B\\xe2\\x80\\x99s public keyd) B\\xe2\\x80\\x99s private key",
+                                            "definition": "c) B\\xe2\\x80\\x99s public keyA message encrypted with B\\xe2\\x80\\x99s public key can only be decrypted with B\\xe2\\x80\\x99s private key, which only B has access to."
+                                        },
+                                        {
+                                            "term": "What is said to have occurred when two keys map to the same hash?",
+                                            "definition": "A collision."
+                                        },
+                                        {
+                                            "term": "In which kind of lossless compression are repeated characters replaced by one occurrence and the number of times to repeat the character?",
+                                            "definition": "Run length encoding."
+                                        },
+                                        {
+                                            "term": "What name is given to the process of turning an input into a fixed-size value?",
+                                            "definition": "Hashing"
+                                        },
+                                        {
+                                            "term": "Which data structure uses hashing to store information with constant lookup time?",
+                                            "definition": "Hash Table"
+                                        },
+                                        {
+                                            "term": "What is meant by compression?",
+                                            "definition": "The process of reducing the space required to store a file."
+                                        },
+                                        {
+                                            "term": "Name two properties that a hashing algorithm should have.",
+                                            "definition": "Two from:\\xe2\\x97\\x8f Low chance of collision.\\xe2\\x97\\x8f Quick to calculate.\\xe2\\x97\\x8f Output smaller than input."
+                                        },
+                                        {
+                                            "term": "Asymmetric Encryption",
+                                            "definition": "An encryption technique where a public key available to everyone is used to encrypt the data, and the data is decrypted by the paired private key known only by the recipient."
+                                        },
+                                        {
+                                            "term": "Dictionary Coding",
+                                            "definition": "A type of lossless compression where text is searched for entries that match the entries in a dictionary. Entries are substituted by a unique code which can then be translated."
+                                        },
+                                        {
+                                            "term": "Hashing",
+                                            "definition": "A one-way transformation of data into an abbreviated form called a hash value. The hash value is used to validate login credentials like passwords or PINs without revealing the original data to hackers."
+                                        },
+                                        {
+                                            "term": "Lossless Compression",
+                                            "definition": "A compression algorithm that retains all the data in the file by only storing the instructions needed to reconstruct the original file. No data is lost."
+                                        },
+                                        {
+                                            "term": "Lossy Compression",
+                                            "definition": "A compression algorithm that removes non-essential data from a file leading to a noticeable decrease in accuracy of the data. Data lost is non-recoverable."
+                                        },
+                                        {
+                                            "term": "Ren-Length Encoding",
+                                            "definition": "A type of lossless compression where repeated occurrences of the same data (like several pixels of the same colour in an image) are stored as single data values with their counts."
+                                        },
+                                        {
+                                            "term": "Symmetric Encryption",
+                                            "definition": "An encryption technique where the same key is used to encrypt and decrypt data. A copy of the key must be transferred between both parties."
+                                        },
+                                        {
+                                            "term": "Atomicity",
+                                            "definition": "Each transaction must obey the defined validation rules of the database to maintain referential integrity."
+                                        },
+                                        {
+                                            "term": "Durability",
+                                            "definition": "Once a transaction has begun, it must be completed under all circumstances."
+                                        },
+                                        {
+                                            "term": "Entity-Relationship Modelling",
+                                            "definition": "A method of abstractly describing the data tables and the relationships between them visually. They can be used to reduce redundancy and construct a relational database."
+                                        },
+                                        {
+                                            "term": "First Normal Form (1NF)",
+                                            "definition": "A table with no repeating attributes. The intersection of each record and attribute produces exactly one value."
+                                        },
+                                        {
+                                            "term": "Flat File Database",
+                                            "definition": "A database where a single table data structure is used to store all the data."
+                                        },
+                                        {
+                                            "term": "Foreign Key",
+                                            "definition": "A linking attribute that joins two tables in a relational database by being a primary key in one and a foreign key in the other."
+                                        },
+                                        {
+                                            "term": "Indexing",
+                                            "definition": "The process of creating an index of primary keys such that the location of any record can be retrieved given its primary key."
+                                        },
+                                        {
+                                            "term": "Isolation",
+                                            "definition": "No transaction should overwrite other transactions that are simultaneously occurring. The same results must be obtained if transactions are concurrently or sequentially processed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "1.4.3. Boolean Algebra: Data Types, Data Structures and Algorithms: Computer Science A-Level OCR (paper1)",
+                                    "cards": [
+                                        {
+                                            "term": "What Boolean operation is represented with an overline?",
+                                            "definition": "NOT"
+                                        },
+                                        {
+                                            "term": "Which has highest order of precedence: AND, OR or NOT?",
+                                            "definition": "NOT"
+                                        },
+                                        {
+                                            "term": "Complete the Boolean identity:C \\xe2\\x80\\xa2 C = ____",
+                                            "definition": "C"
+                                        },
+                                        {
+                                            "term": "Which Boolean operation is represented with a dot?",
+                                            "definition": "AND"
+                                        },
+                                        {
+                                            "term": "Complete the Boolean identity:B \\xe2\\x80\\xa2 1 = _____",
+                                            "definition": "B"
+                                        },
+                                        {
+                                            "term": "Which Boolean operation is represented with a plus?",
+                                            "definition": "OR"
+                                        },
+                                        {
+                                            "term": "Apply a distributive rule to the following Boolean expression:B \\xe2\\x80\\xa2 (A + C)",
+                                            "definition": "B \\xe2\\x80\\xa2 A + B \\xe2\\x80\\xa2 C"
+                                        },
+                                        {
+                                            "term": "What is an array?",
+                                            "definition": "An ordered, finite set of elements of a single type."
+                                        },
+                                        {
+                                            "term": "What type of array is a linear array?",
+                                            "definition": "A one dimensional array."
+                                        },
+                                        {
+                                            "term": "How can you visualise a two dimensional array?",
+                                            "definition": "You can visualise it as a spreadsheet/table."
+                                        },
+                                        {
+                                            "term": "How can you visualise a three dimensional array?",
+                                            "definition": "A three dimensional array can be visualised as a multi-page spreadsheet."
+                                        },
+                                        {
+                                            "term": "What is a record also known as?",
+                                            "definition": "A row in a file."
+                                        },
+                                        {
+                                            "term": "What is a record made up of?",
+                                            "definition": "A record is made up of fields."
+                                        },
+                                        {
+                                            "term": "How can you identify a field from a record using programming?",
+                                            "definition": "recordName.fieldName"
+                                        },
+                                        {
+                                            "term": "What is the definition of a list?",
+                                            "definition": "A data structure consisting of a number of items, where the items can occur more than once."
+                                        },
+                                        {
+                                            "term": "What are the main differences between arrays and lists?",
+                                            "definition": "- Lists can store data non-contiguously whereas arrays store data in order.- Lists can store data of more than one data type."
+                                        },
+                                        {
+                                            "term": "What is a tuple?",
+                                            "definition": "An immutable, ordered set of values of any type."
+                                        },
+                                        {
+                                            "term": "What is the difference between a tuple and an array?",
+                                            "definition": "Tuples are initialised using regular brackets instead of square brackets."
+                                        },
+                                        {
+                                            "term": "What is a stack?",
+                                            "definition": "A last in first out data structure, where items can only be removed from and added to the top of the list."
+                                        },
+                                        {
+                                            "term": "Give an example of where stacks may be used.",
+                                            "definition": "- Back button in a web page- Undo buttons"
+                                        },
+                                        {
+                                            "term": "What is a queue?",
+                                            "definition": "A first in first out data structure, where items are added to the end of the queue and removed from the front of the queue."
+                                        },
+                                        {
+                                            "term": "What does the operation isEmpty() do?",
+                                            "definition": "Checks to see if the stack is empty"
+                                        },
+                                        {
+                                            "term": "What data type should be used for storing a phone number like 07886756443?",
+                                            "definition": "StringNumeric types would omit the leading 0."
+                                        },
+                                        {
+                                            "term": "Perform an AND mask on the binary numbers:1010110101011011",
+                                            "definition": "00001001"
+                                        },
+                                        {
+                                            "term": "Which data type stores a collection of characters?",
+                                            "definition": "String"
+                                        },
+                                        {
+                                            "term": "Add the two binary numbers:0101101100111010Give your answer in decimal.",
+                                            "definition": "1490 1 0 1 1 0 1 1+ 0 0 1 1 1 0 1 0------------------1 0 0 1 0 1 0 1"
+                                        },
+                                        {
+                                            "term": "What is the decimal 45 in binary? Give your answer as a byte.",
+                                            "definition": "00101101"
+                                        },
+                                        {
+                                            "term": "What is the hexadecimal 2E in decimal?",
+                                            "definition": "(2\\xc3\\x9716) + (14\\xc3\\x971) = 46"
+                                        },
+                                        {
+                                            "term": "What is the hexadecimal 45 in binary? Give your answer as a byte.",
+                                            "definition": "01000101"
+                                        },
+                                        {
+                                            "term": "Which data type stores just True and False?",
+                                            "definition": "Boolean"
+                                        },
+                                        {
+                                            "term": "What is -5 in sign magnitude binary? Give your answer as a nybble.",
+                                            "definition": "1101"
+                                        },
+                                        {
+                                            "term": "What does the binary 01101100 represent in hexadecimal?",
+                                            "definition": "6C"
+                                        },
+                                        {
+                                            "term": "What is the effect of a logical shift left by one place?",
+                                            "definition": "The value is doubled."
+                                        },
+                                        {
+                                            "term": "What is the two\\xe2\\x80\\x99s complement binary 10101101 in decimal?",
+                                            "definition": "-83"
+                                        },
+                                        {
+                                            "term": "The binary 0011010000110 is a floating point number with a single-bit sign, 8-bit mantissa and 4-bit exponent. What is the number in decimal?",
+                                            "definition": "52"
+                                        },
+                                        {
+                                            "term": "Perform a logical shift right by two places on the binary number 01101010 and convert your result to decimal.",
+                                            "definition": "26.5"
+                                        },
+                                        {
+                                            "term": "Perform an XOR mask on the binary numbers:0101010110111011",
+                                            "definition": "11101110"
+                                        },
+                                        {
+                                            "term": "AND (\\xe2\\x88\\xa7)",
+                                            "definition": "A logical operator which returns TRUE (or 1) if and only if all inputs are TRUE (or 1)."
+                                        },
+                                        {
+                                            "term": "ASCII",
+                                            "definition": "A character set used to represent alphanumeric characters or symbols as a set of 8 bits."
+                                        },
+                                        {
+                                            "term": "Binary",
+                                            "definition": "A number system that only uses ones and zeros to represent numbers (a base 2 system)."
+                                        },
+                                        {
+                                            "term": "Bitwise Manipulation",
+                                            "definition": "Operations performed on a set of bits."
+                                        },
+                                        {
+                                            "term": "Boolean",
+                                            "definition": "A data type that can only store one of two possible values(1 or 0, TRUE or FALSE etc.)"
+                                        },
+                                        {
+                                            "term": "Character",
+                                            "definition": "A data type for storing a letter, number or special character."
+                                        },
+                                        {
+                                            "term": "Denary",
+                                            "definition": "A number system that only uses 10 characters (0 to 9) to represent numbers (a base 10 system)."
+                                        },
+                                        {
+                                            "term": "Floating Point Arithmetic",
+                                            "definition": "Performing arithmetic operations on floating point numbers in binary."
+                                        },
+                                        {
+                                            "term": "Hexadecimal",
+                                            "definition": "A number system that only uses 16 characters (0 to 9 and A to F) to represent numbers (a base 16 system)."
+                                        },
+                                        {
+                                            "term": "Integer",
+                                            "definition": "A data type for storing whole number values (positive or negative) with no decimal parts."
+                                        },
+                                        {
+                                            "term": "OR (\\xe2\\x88\\xa8)",
+                                            "definition": "A logical operator which returns TRUE (or 1) if and only if any one of the inputs are TRUE (or 1)."
+                                        },
+                                        {
+                                            "term": "Primitive Data Type",
+                                            "definition": "A basic built-in data type provided by a programming language."
+                                        },
+                                        {
+                                            "term": "Real/Floating Point:",
+                                            "definition": "A data type for storing numbers with decimal or fractional parts."
+                                        },
+                                        {
+                                            "term": "Shifts",
+                                            "definition": "A bitwise manipulation where a set of bits are all moved by one place in a given direction, and the end bit may be taken as a carry or appended to the other end depending on the shift method."
+                                        },
+                                        {
+                                            "term": "String",
+                                            "definition": "A data type for storing a sequence of alphanumeric characters or symbols, typically within quotation marks."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "1.5.2. Moral and Ethical Issues: Legal, Moral, Cultural and Ethical Issues: Computer Science A-Level OCR (paper1)",
+                                    "cards": [
+                                        {
+                                            "term": "Give two effects on businesses of computers becoming part of the workforce.",
+                                            "definition": "- Higher productivity.- Lower unit costs.- Lower costs of renting.- Lower labour costs."
+                                        },
+                                        {
+                                            "term": "Give two uses of automated decision-making.",
+                                            "definition": "- Targeted feeds (social media).- Application processes (jobs, mortgages, loans).- Power distribution systems.- Driverless cars.- Stock trading.- Plant automation systems."
+                                        },
+                                        {
+                                            "term": "Define artificial intelligence.",
+                                            "definition": "The ability of a computer to replicate human intelligence, cognitive ability and grasp abstract concepts."
+                                        },
+                                        {
+                                            "term": "Describe how expert systems work.",
+                                            "definition": "Expert systems consist of a knowledge base made up of a set of facts and rules. This is used to build an inference engine which is interrogated to find diagnoses."
+                                        },
+                                        {
+                                            "term": "Give two applications of AI.",
+                                            "definition": "- Neural networks.- Expert systems.- Voice recognition."
+                                        },
+                                        {
+                                            "term": "State two negative environmental effects of computers.",
+                                            "definition": "- Toxic e-waste contaminating water.- E-waste in third world countries.- Greenhouse gases from greater electricity consumption.- Reduced biodiversity.- Impact of climate change on future generation."
+                                        },
+                                        {
+                                            "term": "Give two ways in which technology can be used to protect the environment.",
+                                            "definition": "- Smart home systems (sensors).- Sleep and Stand-by features on devices.- Smart engine designs."
+                                        },
+                                        {
+                                            "term": "Define censorship.",
+                                            "definition": "The act of suppressing the content that people are able to view, publish and access."
+                                        },
+                                        {
+                                            "term": "What is the Free Internet?",
+                                            "definition": "The idea of an Internet where nothing is filtered at all, in line with the principle of freedom of speech."
+                                        },
+                                        {
+                                            "term": "How is censorship used within schools?",
+                                            "definition": "Pupils may be prevented from accessing unsuitable material. May be used to maintain high productivity and prevent distractions."
+                                        },
+                                        {
+                                            "term": "Give arguments in favour of surveillance systems.",
+                                            "definition": "Useful for social security purposes and detecting crime. Needed to trace and punish criminal activity."
+                                        },
+                                        {
+                                            "term": "What is the name given to the process of analysing large data sets to uncover hidden trends?",
+                                            "definition": "Data Mining"
+                                        },
+                                        {
+                                            "term": "Name three things web designers must take into account when designing a website.",
+                                            "definition": "Colour paradigms, layout, character set."
+                                        },
+                                        {
+                                            "term": "What is meant by personal data?",
+                                            "definition": "Any data which can be used to identify a living person or which can be used in combination with other data to identify a living person."
+                                        },
+                                        {
+                                            "term": "Which act concerns the malicious use of computers?",
+                                            "definition": "The computer misuse act 1990."
+                                        },
+                                        {
+                                            "term": "Which act protects people\\xe2\\x80\\x99s property online?",
+                                            "definition": "The copyright, designs and patents act 1988."
+                                        },
+                                        {
+                                            "term": "Which act covers the use of personal data?",
+                                            "definition": "The Data Protection Act 1998."
+                                        },
+                                        {
+                                            "term": "Name two of the three primary offences under the computer misuse act 1990",
+                                            "definition": "Two from:1. Unauthorised access to computer materials.2. Unauthorised access with intent to commit further offences.3. Unauthorised modification of computer material."
+                                        },
+                                        {
+                                            "term": "Which act covers investigation and surveillance by public bodies?",
+                                            "definition": "The regulation of investigatory powers act 2000."
+                                        },
+                                        {
+                                            "term": "Which act prevents computer programs from being copied?",
+                                            "definition": "The copyright, designs and patents act 1988."
+                                        },
+                                        {
+                                            "term": "What name is given to an individual who can be identified by personal data?",
+                                            "definition": "Data Subject"
+                                        },
+                                        {
+                                            "term": "The Computer Misuse Act 1990.",
+                                            "definition": "Legislation by the UK Parliament to prevent unauthorised access of data by recognising and defining electronic vandalism, unauthorised access or modification to computer systems and information theft."
+                                        },
+                                        {
+                                            "term": "The Copyright Design and Patents Act 1988.",
+                                            "definition": "Legislation by the UK Parliament which prevents the illegal copying or redistribution of literary, dramatic, musical or artistic works by establishing that copyright exists until 70 years after the passing of the creator or 70 years after the creation of the work if the creator is unknown."
+                                        },
+                                        {
+                                            "term": "The Data Protection Act 1998.",
+                                            "definition": "Legislation by the UK Parliament which requires secure, accurate and concise storage of personal data (both on computer and paper systems) to protect individuals from any unreasonable use of their data."
+                                        },
+                                        {
+                                            "term": "The Regulation of Investigatory Powers Act 2000.",
+                                            "definition": "Legislation by the UK Parliament to regulate the power of public bodies to carry out surveillance and investigation, and covering the interception of communication."
+                                        },
+                                        {
+                                            "term": "Artificial Intelligence",
+                                            "definition": "The capability of a machine to perceive its environment and take the appropriate steps to maximise the success of its programmed goals."
+                                        },
+                                        {
+                                            "term": "Internet Censorship",
+                                            "definition": "The suppression or control of content that can be accessed, viewed or published on the internet."
+                                        },
+                                        {
+                                            "term": "Piracy",
+                                            "definition": "The illegal access or use of copyrighted work without the permission of the copyright holder."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "2.1.5. Thinking Concurrently: Elements of Computational Thinking: Computer Science A-Level OCR (paper2)",
+                                    "cards": [
+                                        {
+                                            "term": "What is concurrent thinking?",
+                                            "definition": "Concurrent thinking is completing more than one task at any given time."
+                                        },
+                                        {
+                                            "term": "Are concurrent processing and concurrent thinking the same thing?",
+                                            "definition": "No."
+                                        },
+                                        {
+                                            "term": "What is parallel processing?",
+                                            "definition": "Parallel processing is completing multiple tasks simultaneously at any given time."
+                                        },
+                                        {
+                                            "term": "What is concurrent processing?",
+                                            "definition": "Concurrent processing is giving a slice of processor time to tasks to give the illusion of parallel processing."
+                                        },
+                                        {
+                                            "term": "What are the benefits of concurrent processing?",
+                                            "definition": "- More tasks can be completed in a given time.- Other tasks can be completed while waiting for an input/ user interaction."
+                                        },
+                                        {
+                                            "term": "What are the drawbacks of concurrent processing?",
+                                            "definition": "If lots of users are requesting for tasks to be completed, it takes longer for everyone to complete their tasks."
+                                        },
+                                        {
+                                            "term": "What is a decision?",
+                                            "definition": "A decision is a result reached after consideration."
+                                        },
+                                        {
+                                            "term": "When are decisions made?",
+                                            "definition": "A decision is made whenever you have to choice to make."
+                                        },
+                                        {
+                                            "term": "What is the shape used to indicate a decision in a flow chart?",
+                                            "definition": "A diamond."
+                                        },
+                                        {
+                                            "term": "In a flow chart how many many options stem from a decision?",
+                                            "definition": "2 different options - yes or no/ true or false."
+                                        },
+                                        {
+                                            "term": "How do you make effective decisions?",
+                                            "definition": "By evaluating the importance of different factors and selecting options which satisfy the needs of the task the most appropriately."
+                                        },
+                                        {
+                                            "term": "How does the result of a decision affect the flow of a program?",
+                                            "definition": "The program will follow a different route depending on the decision made by the user."
+                                        },
+                                        {
+                                            "term": "What is the first stage of thinking procedurally?",
+                                            "definition": "Taking the problem defined by the user and breaking it down into its constituent parts."
+                                        },
+                                        {
+                                            "term": "What is the purpose of problem decomposition?",
+                                            "definition": "To make complex problems easier to solve and more manageable by allowing tasks to be divided between a group of people according to individual skill sets."
+                                        },
+                                        {
+                                            "term": "State another name given to top-down design.",
+                                            "definition": "Stepwise Refinement"
+                                        },
+                                        {
+                                            "term": "What is the purpose of top-down design?",
+                                            "definition": "Continually break problems down into subproblems until each subproblem can be represented as a single task and ideally a self-contained subroutine."
+                                        },
+                                        {
+                                            "term": "What are the benefits of using top-down design?",
+                                            "definition": "\\xe2\\x97\\x8f Problems can be solved and modules developed by different people.\\xe2\\x97\\x8f Tasks can be tested separately. Modules are self-contained."
+                                        },
+                                        {
+                                            "term": "What sort of problems is top-down design suited to?",
+                                            "definition": "Large, complex problems."
+                                        },
+                                        {
+                                            "term": "What is the second stage of thinking procedurally in software development?",
+                                            "definition": "Identifying components of a solution."
+                                        },
+                                        {
+                                            "term": "How can the lowest level subproblems in top-down design in code?",
+                                            "definition": "As self-contained modules or subroutines."
+                                        },
+                                        {
+                                            "term": "What do software developers need to consider when recombining components of a solution?",
+                                            "definition": "The order in which subroutines are executed, and how they interact with each other, based on their role in solving the problem."
+                                        },
+                                        {
+                                            "term": "What must a software developer do before designing a subroutine to solve aparticular problem?",
+                                            "definition": "See whether it is possible for an already existing subroutine or module to be used."
+                                        },
+                                        {
+                                            "term": "State two advantages of utilising reusable components.",
+                                            "definition": "\\xe2\\x97\\x8f More reliable than newly-coded components, as they have already been tested.\\xe2\\x97\\x8f This saves time, money and resources."
+                                        },
+                                        {
+                                            "term": "What is the purpose of thinking ahead?",
+                                            "definition": "To make programs easy and intuitive for users to use."
+                                        },
+                                        {
+                                            "term": "Define inputs.",
+                                            "definition": "Any data that is required to solve a problem, usually entered into the system by the user."
+                                        },
+                                        {
+                                            "term": "Define outputs.",
+                                            "definition": "The results that are passed back once the inputs have been processed and the problem solved."
+                                        },
+                                        {
+                                            "term": "What three considerations do programmers need to make regarding inputs and outputs when thinking ahead?",
+                                            "definition": "- Method of input/output (device used).- Data structures used.- Data types used.- Order of data."
+                                        },
+                                        {
+                                            "term": "What are preconditions?",
+                                            "definition": "Requirements which must be met before a program can be executed."
+                                        },
+                                        {
+                                            "term": "Where can preconditions be defined?",
+                                            "definition": "Within the code or within documentation."
+                                        },
+                                        {
+                                            "term": "Give an example where preconditions are required.",
+                                            "definition": "- Stack functions- Check that a stack is not empty when popping an element from a stack.- Check that a stack is not full when pushing an element onto a stack.- Factorial function- The number passed to the function cannot be negative."
+                                        },
+                                        {
+                                            "term": "State two advantages of including preconditions within the documentation accompanying a subroutine.",
+                                            "definition": "- Reduces the length of the program.- Reduces the complexity of the program.- Saves time needed to debug and maintain a longer program.- Makes subroutine more reusable."
+                                        },
+                                        {
+                                            "term": "Define caching.",
+                                            "definition": "The process of storing instructions or values in cache memory after they have been used, as they may be used again."
+                                        },
+                                        {
+                                            "term": "How is caching used in storing web pages?",
+                                            "definition": "Web pages that a user frequently accesses are cached, so the next time one of these pages is accessed, content can be loaded without any delay."
+                                        },
+                                        {
+                                            "term": "What are the advantages of caching web pages?",
+                                            "definition": "- Content can be loaded without delay.- Images and text do not have to be downloaded again multiple times.- Frees bandwidth for other tasks on a network.- Less time is spent waiting."
+                                        },
+                                        {
+                                            "term": "What is the name given to the technique in which instructions are fetched based on algorithms which predict which instructions are likely to soon be used?",
+                                            "definition": "Prefetching"
+                                        },
+                                        {
+                                            "term": "Give a limitation of caching.",
+                                            "definition": "- Accuracy of the algorithms used.- Effectiveness of algorithm in managing the cache.- Size of the cache."
+                                        },
+                                        {
+                                            "term": "Give three advantages of using reusable program components.",
+                                            "definition": "- More reliable than new components, as they have already been tested.- As developing from scratch is not required, this saves time, money and resources."
+                                        },
+                                        {
+                                            "term": "Give two examples of reusable program components.",
+                                            "definition": "- Abstract data structures eg. queues and stacks.- Classes- Subroutines"
+                                        },
+                                        {
+                                            "term": "What is representational abstraction?",
+                                            "definition": "A technique in which excessive details are removed to arrive at a representation of a problem that consists of only the key features."
+                                        },
+                                        {
+                                            "term": "Which form of abstraction involves grouping together similarities within a problem to identify what kind of problem it is?",
+                                            "definition": "Abstraction by generalisation."
+                                        },
+                                        {
+                                            "term": "What is meant by data abstraction?",
+                                            "definition": "A form of abstraction in which details about how data is being stored are hidden."
+                                        },
+                                        {
+                                            "term": "What kind of problems make use of multiple levels of abstraction?",
+                                            "definition": "Large, complex problems."
+                                        },
+                                        {
+                                            "term": "How does abstraction allow non-experts to make use of a system?",
+                                            "definition": "Hides complex and irrelevant information in abstract models."
+                                        },
+                                        {
+                                            "term": "State two advantages of using abstraction in software development.",
+                                            "definition": "Two from:- Easier for programmers to focus on core elements.- Reduces the time needed to be spent on the project.- Prevents program from getting unnecessarily large."
+                                        },
+                                        {
+                                            "term": "Give two applications of layers of abstraction.",
+                                            "definition": "- Networking (TCP/IP layer).- Programming languages."
+                                        },
+                                        {
+                                            "term": "State two advantages of using abstraction in programming languages.",
+                                            "definition": "- Easier to remember syntax in high-level languages as it is closer to natural language.- Coding becomes accessible to beginners."
+                                        },
+                                        {
+                                            "term": "How does object-oriented programming use abstraction?",
+                                            "definition": "Objects are an abstraction for real-world entities. Attributes are an abstraction for the characteristics of an object.Methods are an abstraction for the actions a real-world object is able to perform."
+                                        },
+                                        {
+                                            "term": "What is the difference between abstraction and reality?",
+                                            "definition": "Abstraction is a simplified representation of reality"
+                                        },
+                                        {
+                                            "term": "Abstraction",
+                                            "definition": "Simplifying a problem by only taking into consideration the necessary details required to obtain a solution, leaving a representation without any unnecessary details."
+                                        },
+                                        {
+                                            "term": "Data Abstraction",
+                                            "definition": "The storage and representation of data in a computer system along with its logical description and interaction with operators. E.g. Stacks, queues, integers."
+                                        },
+                                        {
+                                            "term": "Graph Theory",
+                                            "definition": "A branch of mathematics that can be used to abstractly represent problems using a collection of nodes connected by edges."
+                                        },
+                                        {
+                                            "term": "Caching",
+                                            "definition": "The temporary storage of data by the system in cache or memory for the benefit of faster retrieval if it is needed again in future."
+                                        },
+                                        {
+                                            "term": "Inputs",
+                                            "definition": "Any information relevant to the problem that is required by the system for processing according to an algorithm."
+                                        },
+                                        {
+                                            "term": "Outputs",
+                                            "definition": "The result returned by a system for a given input after running the entire process or part of a process."
+                                        },
+                                        {
+                                            "term": "Preconditions",
+                                            "definition": "A prerequisite or state of a system and its surroundings required to run a use case return a valid solution."
+                                        },
+                                        {
+                                            "term": "Reusable Program Components",
+                                            "definition": "Components that have already been written, debugged and tested that can be transplanted into new systems to save development time in project completion."
+                                        },
+                                        {
+                                            "term": "Procedural Abstraction",
+                                            "definition": "Achieving a task by relying on a procedure of sequential steps."
+                                        },
+                                        {
+                                            "term": "Components of a Problem",
+                                            "definition": "The smaller, simpler series of tasks and sub-procedures a problem can be broken down into to be completed modularly."
+                                        },
+                                        {
+                                            "term": "Flowcharts",
+                                            "definition": "A diagrammatic representation of the flow of a program that includes all the points where a decision needs to be taken in order to obtain a solution."
+                                        },
+                                        {
+                                            "term": "Logical Conditions",
+                                            "definition": "Conditions which may depend on one or more variables used to determine the next step whenever a system has to make a decision. They are typically implemented using control structures such as sequences, selections and iterations."
+                                        },
+                                        {
+                                            "term": "Concurrent Processing",
+                                            "definition": "Processing where the system appears to perform multiple tasks simultaneously."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "2.2.2. Computational Methods: Problem Solving and Programming: Computer Science A-Level OCR (paper2)",
+                                    "cards": [
+                                        {
+                                            "term": "What is meant by a computable problem?",
+                                            "definition": "A problem that can be solved using an algorithm."
+                                        },
+                                        {
+                                            "term": "Give three limiting factors to computable problems",
+                                            "definition": "Three from:\\xe2\\x97\\x8f Processing power\\xe2\\x97\\x8f Processor speed\\xe2\\x97\\x8f Computer memory\\xe2\\x97\\x8f Time"
+                                        },
+                                        {
+                                            "term": "State two factors which may be considered during the Problem Definition phase",
+                                            "definition": "- Strengths and weaknesses of current solution.- Volume/type/frequency/nature of.- Inputs- Outputs- Stored data"
+                                        },
+                                        {
+                                            "term": "What is the name given to the process in which problems are continually broken down until each subproblem can be represented as a subroutine?",
+                                            "definition": "Problem Decomposition"
+                                        },
+                                        {
+                                            "term": "State two purposes of problem decomposition",
+                                            "definition": "Two from:- Identify sections which can make use of pre-coded modules or libraries.- Save timecoding.- Simplify project management.- Simplify testing and maintenance.- Faster project delivery.- Develop sections in parallel."
+                                        },
+                                        {
+                                            "term": "Describe how the Divide and Conquer technique works",
+                                            "definition": "The problem size is halved with every iteration. Each individual subproblem is then solved recursively. The solutions to the subproblems are then recombined to form the final solution to the problem."
+                                        },
+                                        {
+                                            "term": "Give two applications of divide and conquer",
+                                            "definition": "Two from:- Merge sort- Binary search- Quick sort"
+                                        },
+                                        {
+                                            "term": "Which programming construct do many problems solved using Divide and Conquer use?",
+                                            "definition": "Recursion"
+                                        },
+                                        {
+                                            "term": "What is representational abstraction?",
+                                            "definition": "A computational technique in which excessive details are removed to simplify a problem."
+                                        },
+                                        {
+                                            "term": "What type of abstraction is used to group together sections of the problem based on their functionality?",
+                                            "definition": "Abstraction by generalisation."
+                                        },
+                                        {
+                                            "term": "State two problem solving techniques",
+                                            "definition": "Two from:- Backtracking- Data mining- Abstraction- Divide and conquer- Visualisation- Performance modelling- Pipelining- Visualisation"
+                                        },
+                                        {
+                                            "term": "Describe how backtracking works.",
+                                            "definition": "The backtracking algorithm works by methodically visiting each path and building a solution based on the paths found to be correct. If a path is found to be invalid at any point, it backtracks to the previous stage and visits an alternate path."
+                                        },
+                                        {
+                                            "term": "When might heuristics be used in problem-solving?",
+                                            "definition": "When the standard way to solve the problem is unreasonably time-consuming or resource-intensive."
+                                        },
+                                        {
+                                            "term": "State two advantages of using performance modelling.",
+                                            "definition": "Two from:- Safe- Relatively inexpensive- Less time-consuming"
+                                        },
+                                        {
+                                            "term": "What is pipelining?",
+                                            "definition": "A process in which tasks are developed in parallel. The output of one process in pipelining becomes the input of another, resembling a production line."
+                                        },
+                                        {
+                                            "term": "Name the three programming constructs.",
+                                            "definition": "Sequence, branching and iteration."
+                                        },
+                                        {
+                                            "term": "Which two categories of loop is iteration split up into?",
+                                            "definition": "- Count-controlled.- Condition-controlled."
+                                        },
+                                        {
+                                            "term": "Describe how the branching programming construct works",
+                                            "definition": "A certain block of code is run if a specific condition is met, using IF statements."
+                                        },
+                                        {
+                                            "term": "What is recursion?",
+                                            "definition": "A programming construct in which a subroutine calls itself during its execution until the stopping condition is met."
+                                        },
+                                        {
+                                            "term": "What is the base case in recursion?",
+                                            "definition": "A condition that must be met in order for the recursion to end."
+                                        },
+                                        {
+                                            "term": "State two advantages of recursion.",
+                                            "definition": "\\xe2\\x97\\x8f Can be represented in fewer lines of code.\\xe2\\x97\\x8f Easier to express some functions recursively than using iteration."
+                                        },
+                                        {
+                                            "term": "State a disadvantage of recursion.",
+                                            "definition": "- Inefficient use of memory.- Danger of stack overflow.- Difficult to trace."
+                                        },
+                                        {
+                                            "term": "Give two pieces of information that are stored on the call stack.",
+                                            "definition": "Two form:- Parameters- Return addresses- Local variables"
+                                        },
+                                        {
+                                            "term": "Define scope",
+                                            "definition": "The section of the program in which a variable is accessible."
+                                        },
+                                        {
+                                            "term": "Give two advantages of using local variables over global variables.",
+                                            "definition": "Two from:- Less memory is used.- Self-contained so unaffected by code outside of the subroutine.- Take precedence over global variables with the same name."
+                                        },
+                                        {
+                                            "term": "What is top-down design?",
+                                            "definition": "A technique used to modularise programs in which the problem is continually broken down into sub-problems, until each can be represented as an individual, self-contained module which performs a certain task."
+                                        },
+                                        {
+                                            "term": "State two advantages of a modular design.",
+                                            "definition": "Two from:- Makes a problem easier to understand and approach.- Simpler to divide tasks between a team.- Easier to manage project.- Self-contained modules simplify testing and maintenance.- Greater reusability."
+                                        },
+                                        {
+                                            "term": "Give another name for top-down design.",
+                                            "definition": "Stepwise refinement"
+                                        },
+                                        {
+                                            "term": "What is the difference between procedures and functions?",
+                                            "definition": "Functions must always return a single value while a procedure does not always have to return a value."
+                                        },
+                                        {
+                                            "term": "What does it mean to pass a parameter to a subroutine by reference?",
+                                            "definition": "The address in memory of the parameter is passed to the subroutine so its value outside of the subroutine will be updated."
+                                        },
+                                        {
+                                            "term": "Branching",
+                                            "definition": "A programming control structure where the code selects one or more alternative paths depending on the evaluation of a boolean expression."
+                                        },
+                                        {
+                                            "term": "Functions",
+                                            "definition": "A subroutine that can be called to perform a task or calculation and always return a value. Functions can be called in an expression, or be assigned to a variable."
+                                        },
+                                        {
+                                            "term": "Global Variables",
+                                            "definition": "A variable declared in the main program which exists outside any of the subroutines, but can be used anywhere in the program."
+                                        },
+                                        {
+                                            "term": "Integrated Development Environment (IDE)",
+                                            "definition": "A software package that allows a user to develop and implement code more easily, with features for editing, debugging, version control, testing and compilation."
+                                        },
+                                        {
+                                            "term": "Iterations",
+                                            "definition": "A programming control structure where a set of statements is repeated either a fixed number of times or until a condition is met."
+                                        },
+                                        {
+                                            "term": "Local Variables",
+                                            "definition": "A variable declared within a subroutine of a program, which only exists and can be used within that subroutine."
+                                        },
+                                        {
+                                            "term": "Modularity",
+                                            "definition": "The technique of breaking down a complex problem into simpler, self-contained components called modules, where each module is an implementation of a specific subtask required to solve a problem."
+                                        },
+                                        {
+                                            "term": "Object Oriented Programming",
+                                            "definition": "A programming paradigm where the system is viewed as a set of objects, each with their own data (attributes) and procedures (methods), that can interact with each other. All processing is done by objects."
+                                        },
+                                        {
+                                            "term": "Parameter passing by reference",
+                                            "definition": "Passing the address or pointer of the required value into a procedure."
+                                        },
+                                        {
+                                            "term": "Parameter passing by value",
+                                            "definition": "Creating a temporary local copy of the actual value of a variable and passing it into the procedure."
+                                        },
+                                        {
+                                            "term": "Parameters",
+                                            "definition": "The data structures required to be passed into a subroutine."
+                                        },
+                                        {
+                                            "term": "Procedures",
+                                            "definition": "A subroutine that is called by simply writing its name in the code. Procedures do not have to return a value in the program."
+                                        },
+                                        {
+                                            "term": "Recursion",
+                                            "definition": "A programming subroutine where a section of code calls itself until a base case is met. The base case must be chosen to avoid any possibility of an infinite loop."
+                                        },
+                                        {
+                                            "term": "Sequences",
+                                            "definition": "A programming control structure in which statements are executed one after another as they appear in the script."
+                                        },
+                                        {
+                                            "term": "Subroutines",
+                                            "definition": "A uniquely named section of code that is written to perform a specific task within a program."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "2.3.5. Path Finding Algorithms: 2.3 Algorithms - Computer Science A-level OCR (paper2)",
+                                    "cards": [
+                                        {
+                                            "term": "What is dijkstra's algorithm?",
+                                            "definition": "A shortest path algorithm used to find shortest distance between two nodes in a network."
+                                        },
+                                        {
+                                            "term": "How is Dijkstra's algorithm implemented?",
+                                            "definition": "You use a priority queue which has the shortest lengths at the front of the queue."
+                                        },
+                                        {
+                                            "term": "What is the A* algorithm?",
+                                            "definition": "The A* algorithm is a general path-finding algorithm which has two cost functions: actual cost and an approximate cost."
+                                        },
+                                        {
+                                            "term": "How does the A* algorithm differ from Dijkstra's algorithm?",
+                                            "definition": "A* algorithm has two cost functions: the actual cost and the approximate cost."
+                                        },
+                                        {
+                                            "term": "Why are heuristics used in the A* algorithm?",
+                                            "definition": "To calculate an approximate cost from node x to the final node. This aims to make the shortest path finding process more efficient."
+                                        },
+                                        {
+                                            "term": "What data structure can be used to implement Dijkstra's algorithm?",
+                                            "definition": "Priority Queue"
+                                        },
+                                        {
+                                            "term": "State a disadvantage of using the A* algorithm.",
+                                            "definition": "The speed of the algorithm is constrained by the accuracy of the heuristic."
+                                        },
+                                        {
+                                            "term": "Which searching algorithm requires data to be sorted before starting?",
+                                            "definition": "Binary Search"
+                                        },
+                                        {
+                                            "term": "What is the time complexity of binary search?",
+                                            "definition": "O(log n)"
+                                        },
+                                        {
+                                            "term": "Which searching algorithm has a time complexity of O(n)?",
+                                            "definition": "Linear Search"
+                                        },
+                                        {
+                                            "term": "Which sorting algorithm makes comparisons and swaps betweenpairs of elements?",
+                                            "definition": "Bubble Sort"
+                                        },
+                                        {
+                                            "term": "Which sorting algorithm can be improved by adding a flag to record whether or not a swap has occurred?",
+                                            "definition": "Bubble Sort"
+                                        },
+                                        {
+                                            "term": "Name the two functions in merge sort",
+                                            "definition": "MergeSort()Merge()"
+                                        },
+                                        {
+                                            "term": "In which sorting algorithm is the largest element in place after the first pass?",
+                                            "definition": "Bubble Sort"
+                                        },
+                                        {
+                                            "term": "Which sorting algorithm uses pivots?",
+                                            "definition": "Quick Sort"
+                                        },
+                                        {
+                                            "term": "Which of our sorting algorithms is the most efficient?",
+                                            "definition": "Merge Sort"
+                                        },
+                                        {
+                                            "term": "Are stacks FIFO or FILO?",
+                                            "definition": "FILO"
+                                        },
+                                        {
+                                            "term": "Which function adds an item to a stack?",
+                                            "definition": "Push"
+                                        },
+                                        {
+                                            "term": "Which function removes an element from a stack?",
+                                            "definition": "Pop"
+                                        },
+                                        {
+                                            "term": "What is the significance of the back pointer in the array representation of a queue?",
+                                            "definition": "Holds the location of the next available space in the queue."
+                                        },
+                                        {
+                                            "term": "Which function returns the item at the front of a queue without removing it?",
+                                            "definition": "Peek"
+                                        },
+                                        {
+                                            "term": "What is the purpose of the front pointer in the array representation of a queue?",
+                                            "definition": "Points to the space containing the first item in the queue."
+                                        },
+                                        {
+                                            "term": "What value is the top pointer initialised to in the array representation of a stack?",
+                                            "definition": "-1"
+                                        },
+                                        {
+                                            "term": "Which function returns the item at the top of a stack without removing it?",
+                                            "definition": "Peek"
+                                        },
+                                        {
+                                            "term": "What two pieces of information allow you to analyse an algorithm?",
+                                            "definition": "\\xe2\\x97\\x8f Time Complexity.\\xe2\\x97\\x8f Space Complexity."
+                                        },
+                                        {
+                                            "term": "What is meant by the time complexity of an algorithm?",
+                                            "definition": "The amount of time required to solve a particular problem."
+                                        },
+                                        {
+                                            "term": "How do you measure of the time complexity?",
+                                            "definition": "Big-O Notation"
+                                        },
+                                        {
+                                            "term": "What does the big-O notation show?",
+                                            "definition": "The effectiveness of an algorithm."
+                                        },
+                                        {
+                                            "term": "What is the Big-O notation good for?",
+                                            "definition": "It allows you to predict the amount of time taken to solve an algorithm given the number of items stored."
+                                        },
+                                        {
+                                            "term": "What does a linear time complexity mean?",
+                                            "definition": "The amount of time taken to complete an algorithm is independent from the number of elements inputted."
+                                        },
+                                        {
+                                            "term": "What does a constant time complexity mean?",
+                                            "definition": "The amount of time taken to complete an algorithm is independent to the number of inputted elements."
+                                        },
+                                        {
+                                            "term": "What does a polynomial time complexity mean?",
+                                            "definition": "The amount of time taken to complete an algorithm is proportional to the number of items inputted to the power of n."
+                                        },
+                                        {
+                                            "term": "What does an exponential time complexity mean?",
+                                            "definition": "The amount of time taken to complete an algorithm is proportional to 2 to the power of the number of items inputted."
+                                        },
+                                        {
+                                            "term": "What does a logarithmic time complexity mean?",
+                                            "definition": "The time taken to complete an algorithm will increase at a smaller rate as the number of elements inputted."
+                                        },
+                                        {
+                                            "term": "What is a logarithm?",
+                                            "definition": "How many times a certain number (base) is multiplied together to reach another number."
+                                        },
+                                        {
+                                            "term": "What is space complexity?",
+                                            "definition": "The space complexity is the amount of storage space an algorithm takes up."
+                                        },
+                                        {
+                                            "term": "What is an algorithm?",
+                                            "definition": "An algorithm is a series of steps that complete a task."
+                                        },
+                                        {
+                                            "term": "How do you reduce the space complexity?",
+                                            "definition": "Try to complete all of the operations on the same data set."
+                                        },
+                                        {
+                                            "term": "How do you reduce the time complexity of an algorithm?",
+                                            "definition": "You reduce the amount of embedded for loops, and then reduce the amount of items you complete the operations on i.e. divide and conquer."
+                                        },
+                                        {
+                                            "term": "A* Algorithm",
+                                            "definition": "A generalisation of Dijkstra\\xe2\\x80\\x99s algorithm that approximately finds the shortest path between two nodes by keeping track of the distance travelled from the source to the current node (cost function) and the approximate distance from the next node to the destination (heuristic function)."
+                                        },
+                                        {
+                                            "term": "Big O Notation",
+                                            "definition": "A way of classifying algorithms based on their complexity by setting an upper bound for the worst case space or time complexity as a mathematical function of input size."
+                                        },
+                                        {
+                                            "term": "Binary Search",
+                                            "definition": "A O(log(n)) algorithm to search a sorted list for a particular item by repeatedly halving the sublist which could contain the item."
+                                        },
+                                        {
+                                            "term": "Breadth-First Traversal",
+                                            "definition": "A method of traversing a graph by using a queue to visit all the neighbours of the current node before doing the same to each of the neighbours until the entire graph has been explored."
+                                        },
+                                        {
+                                            "term": "Bubble Sort",
+                                            "definition": "A O(n 2) sorting algorithm that iterates through a list, comparing each element to its successor and swapping elements if the successor is greater than the current element. This is repeated until no more swaps can be made."
+                                        },
+                                        {
+                                            "term": "Depth-First Traversal",
+                                            "definition": "A method of traversing a graph by using a stack to travel as far along one route as possible and then backtracking and doing the same for the remaining routes until the entire graph has been explored."
+                                        },
+                                        {
+                                            "term": "Dijkstra\\xe2\\x80\\x99s Shortest Path Algorithm",
+                                            "definition": "An algorithm to find the shortest path between two nodes on a graph by using a priority queue to keep track of the shortest distance (cost) to each node from the starting node until the destination node is found."
+                                        },
+                                        {
+                                            "term": "Insertion Sort",
+                                            "definition": "A O(n 2) sorting algorithm that divides a list into a sorted and unsorted section. Elements from the unsorted section are compared with and placed in the right position in the sorted section one by one until the sorted section spans the entire list."
+                                        },
+                                        {
+                                            "term": "Linear Search",
+                                            "definition": "A O(n) algorithm to search a list for a particular item by iterating through the list and checking each element until the required item is located, or the end of the list is reached."
+                                        },
+                                        {
+                                            "term": "Merge Sort",
+                                            "definition": "A O(n log(n)) divide-and-conquer sorting algorithm that recursively halves the list into sublists until all sublists are of length 1. The sublists are then merged back together in such away that they are always sorted, until the full single list is obtained."
+                                        },
+                                        {
+                                            "term": "O(1) (Constant time/space)",
+                                            "definition": "An algorithm that always takes a constant amount of time or memory space to execute, regardless of the input size."
+                                        },
+                                        {
+                                            "term": "O(2n) (Exponential time/space)",
+                                            "definition": "An algorithm whose execution time or required memoryspace grows exponentially with input size (higher complexity than polynomial)."
+                                        },
+                                        {
+                                            "term": "O(log(n)) (Logarithmic time/space)",
+                                            "definition": "An algorithm whose execution time or required memory space grows logarithmically with input size (lower complexity than polynomial)."
+                                        },
+                                        {
+                                            "term": "O(n) (Linear time/space)",
+                                            "definition": "An algorithm whose execution time or required memory space is directly proportional to the size of its input."
+                                        },
+                                        {
+                                            "term": "O(nk) (Polynomial time/space)",
+                                            "definition": "An algorithm whose execution time or required memory space is proportional to the input size raised to the power of a constant (k). Eg. O(n2), O(n3), etc."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {

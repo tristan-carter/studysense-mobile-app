@@ -238,7 +238,6 @@ function HomeTabs(props) {
       const currentTimeStamp = Date.now();
       const timeSpent = Math.floor((currentTimeStamp - startTime.current) / 1000 );
       const userId = data.id;
-      console.log("Time spent userId: " + userId)
       /*if (data && (nextAppState === 'background')) {
         updateTotalTimeSpent(userId, timeSpent);
         if (currentTimeStamp - lastSavedTimestamp.current >= 5000) {
@@ -251,8 +250,7 @@ function HomeTabs(props) {
         // App has come to the foreground, update session start time
         startTime.current = Date.now();
       } else if (appState.current === 'active' && nextAppState.match(/inactive|background/)) {
-        // App has gone to the background, update total time spent
-        console.log("updating time spent");
+        // App has gone to the background, save data
         updateTotalTimeSpent(userId, timeSpent);
         if (currentTimeStamp - lastSavedTimestamp.current >= 5000) {
           dispatch(saveUser("current"));
@@ -269,7 +267,6 @@ function HomeTabs(props) {
   }, []);
 
   const updateTotalTimeSpent = (userId, timeSpent) => {
-    console.log(timeSpent)
     firestore().collection('timeRecords').doc(userId).set({
       timeSpent: firestore.FieldValue.increment(timeSpent)
     }, { merge: true })

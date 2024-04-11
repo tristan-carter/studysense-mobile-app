@@ -153,8 +153,7 @@ function Flashcards({ navigation }) {
       setRoundNumber(roundNumber + 1);
     }
   }, [finishRoundReview]);
-  isSetFinished = true;
-  allCards = [...currentSet.cards];
+  const allCards = currentSet ? [...currentSet.cards] : [];
   allCards.shift()
   return (
     allCards.length >= 1 ? (

@@ -163,9 +163,7 @@ function Refresher({ navigation }) {
       setRoundNumber(roundNumber + 1);
     }
   }, [finishRoundReview]);
-  isSetFinished = true;
-  allCards = [...currentSet.cards.filter((card) => card.totalIncorrect * 4 > card.totalCorrect)];
-
+  allCards = currentSet ? [...currentSet.cards.filter((card) => card.totalIncorrect * 4 > card.totalCorrect)] : [];
   return (
     allCards.length >= 1 ? (
         currentQuestion.current ? (
