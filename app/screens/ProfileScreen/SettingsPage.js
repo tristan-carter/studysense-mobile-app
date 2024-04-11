@@ -62,15 +62,11 @@ const deleteAccount = (dispatch) => {
         style: 'destructive',
         text: "Confirm",
         onPress: () => {
-          // deletes user from database, if deleting their account fails, readds them to the database
-          const userId = auth().currentUser.uid;
-          const backupUserData = { ...user.data, accountDeleted: false };
-          dispatch(deleteAccountData(userId));
+          // deletes user's account, firebase extension will delete user's data
           auth().currentUser.delete().then(() => {
             dispatch(setLoggedIn(false));
             console.log("User deleted successfully.")
           }).catch((error) => {
-            dispatch(saveUser(backupUserData));
             const errorMessage = error.message;
             alert(errorMessage)
             console.log(errorMessage)
@@ -93,6 +89,8 @@ const SettingsPage = () => {
   const informationToShow = useRef("");
   const newEmail = useRef("");
 
+  const isGoogleUser = user.data.isGoogleUser;
+
   const toggleNotifications = () => {
     setNotificationsEnabled((prev) => !prev);
     // Implement logic to toggle notifications setting in the app
@@ -106,7 +104,6 @@ const SettingsPage = () => {
   return (
     <> 
       <View style={styles.container}>
-        <Text style={styles.title}>Account</Text>
         {/*<View style={styles.settingItem}>
           <Text>Enable Notifications</Text>
           <Switch
@@ -118,6 +115,11 @@ const SettingsPage = () => {
           <Text>Dark Mode</Text>
           <Switch value={darkModeEnabled} onValueChange={toggleDarkMode} />
   </View>*/}
+  {
+    isGoogleUser ? null :
+    (
+      <>
+        <Text style={styles.title}>Account</Text>
         <TouchableOpacity
           onPress={() => {resetPassword(setShowInformationModal, informationToShow)}}
           style={styles.button}
@@ -131,6 +133,9 @@ const SettingsPage = () => {
           <Text style={styles.buttonText}>Change Email</Text>
         </TouchableOpacity>
         <View style={styles.divider} />
+      </>
+    )
+  }
         <Text style={styles.title}>Danger Zone</Text>
         <TouchableOpacity
           onPress={() => logout(dispatch)}

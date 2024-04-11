@@ -30,6 +30,20 @@ export default StyleSheet.create({
         marginRight: 30,
         paddingLeft: 16
     },
+    divider: {
+        height: 1.5,
+        backgroundColor: '#ccc',
+        flex: 1,
+        alignSelf: 'center',
+        marginHorizontal: 5
+    },
+    dividerWrapper: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical: 25,
+        marginHorizontal: 25
+    },
     button: {
         backgroundColor: colours.primary,
         marginLeft: 30,
@@ -48,7 +62,7 @@ export default StyleSheet.create({
     footerView: {
         flex: 1,
         alignItems: "center",
-        marginTop: 20
+        marginTop: 25
     },
     footerText: {
         fontSize: 16,

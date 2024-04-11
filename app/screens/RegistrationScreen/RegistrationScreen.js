@@ -37,7 +37,7 @@ export default function RegistrationScreen({navigation}) {
         try {
             userCountry = getCountry();
         } catch (error) {
-            userCountry = "NA"
+            userCountry = "Unavailable"
         }
 
         const auth = getAuth();
@@ -51,14 +51,12 @@ export default function RegistrationScreen({navigation}) {
                     email: email,
                     country: userCountry,
 
-                    accountCreatedOnApp: true,
                     accountCreatedOn: "ios",
                     accountCreationDateTime: new Date().toString(),
                     settings: {
                         downloadSetsToUseOffline: true,
                         accountType: "default",
                     },
-                    accountDeleted: false,
 
                     folders: ["null"],
                     sets: ["null"],
@@ -67,7 +65,6 @@ export default function RegistrationScreen({navigation}) {
                     studySessionsGoals: {
                         daily: 120,
                         weekly: 840,
-                        monthly: 0,
                     },
                     currentSessionPreset: {
                         length: 30,
@@ -82,7 +79,6 @@ export default function RegistrationScreen({navigation}) {
                 dispatch(saveUser(data));
                 dispatch(createSharedSetsList(uid));
                 dispatch(setLoggedIn(true));
-                //dispatch(keepStateUpdated());
             })
             .catch((error) => {
                 alert(error)
@@ -160,8 +156,7 @@ export default function RegistrationScreen({navigation}) {
                 </TouchableOpacity>*/}
                 <View style={styles.footerView}>
                     <Text style={styles.footerText}>
-                        Already got an account?
-                        <Text onPress={onFooterLinkPress} style={styles.footerLink}>Log in</Text>
+                        Already got an account? <Text onPress={onFooterLinkPress} style={styles.footerLink}>Log in</Text>
                     </Text>
                 </View>
             </KeyboardAwareScrollView>

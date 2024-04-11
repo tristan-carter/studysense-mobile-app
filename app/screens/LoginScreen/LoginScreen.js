@@ -7,9 +7,15 @@ import auth from "@react-native-firebase/auth";
 import styles from './styles';
 import colours from '../../config/colours.js';
 
+import {
+    GoogleSignin,
+    GoogleSigninButton,
+    statusCodes,
+} from '@react-native-google-signin/google-signin';
+
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchUser, setLoggedIn } from '../../../firebase/userSlice';
-import { keepStateUpdated } from '../../../firebase/service';
+import { createSharedSetsList } from '../../../firebase/service';
+import { fetchUser, saveUser, setLoggedIn } from '../../../firebase/userSlice';
 
 import analytics from "@react-native-firebase/analytics";
 
@@ -29,7 +35,6 @@ export default function LoginScreen({navigation}) {
     const onLoginPress = () => {
         auth().signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
-            console.log(userCredential.user)
             dispatch(fetchUser());
             analytics().logEvent('login', {
                 method: 'email',
@@ -51,6 +56,89 @@ export default function LoginScreen({navigation}) {
             alert("An email has been sent to your email address if an account is associated with it. Please follow the instructions in the email to reset your password.");
         });
     }
+
+    async function onGoogleButtonPress() {
+        try {
+            // Check for Google Play services
+            await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
+    
+            // Get ID token
+            const { idToken } = await GoogleSignin.signIn();
+    
+            // Create Google credential
+            const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+    
+            // Sign-in 
+            const userCredential = await auth().signInWithCredential(googleCredential);
+
+            // Checks if user is new
+            if (userCredential.additionalUserInfo.isNewUser) {
+                console.log("New User")
+
+                userCountry = "Initial"
+
+                try {
+                    userCountry = getCountry();
+                } catch (error) {
+                    userCountry = "Unavailable"
+                }
+
+                const uid = userCredential.user.uid
+                console.log(userCredential)
+                const username = userCredential.additionalUserInfo.profile.given_name
+                const email = userCredential.additionalUserInfo.profile.email
+                const data = {
+                    id: uid,
+                    username: username,
+                    email: email,
+                    country: userCountry,
+
+                    isGoogleUser: true,
+                    accountCreatedOn: "ios",
+                    accountCreationDateTime: new Date().toString(),
+                    settings: {
+                        downloadSetsToUseOffline: true,
+                        accountType: "default",
+                    },
+
+                    folders: ["null"],
+                    sets: ["null"],
+
+                    pastStudySessions: ["null"],
+                    studySessionsGoals: {
+                        daily: 120,
+                        weekly: 840,
+                    },
+                    currentSessionPreset: {
+                        length: 30,
+                        breakLength: 5,
+                        focusMode: false,
+                    }
+                };
+
+                console.log(data);
+
+                analytics().logEvent('sign_up', {
+                    method: 'google',
+                });
+                dispatch(saveUser(data));
+                dispatch(createSharedSetsList(uid));
+                dispatch(setLoggedIn(true));
+            } else {
+                console.log("Existing User")
+
+                // Fetch user data
+                dispatch(fetchUser());
+                analytics().logEvent('login', {
+                    method: 'google',
+                });
+                dispatch(setLoggedIn(true));
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    
 
     return (
         <>
@@ -83,14 +171,40 @@ export default function LoginScreen({navigation}) {
                         autoCapitalize="none"
                         autoComplete='password'
                     />
+                    <TouchableOpacity style={{
+                        alignSelf: 'flex-end',
+                        marginTop: 3,
+                        marginRight: 32,
+                    }} onPress={()=>setShowResetPasswordModal(true)}>
+                        <Text style={styles.forgotPasswordText}>Forgot password?</Text>
+                    </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => onLoginPress()}>
                         <Text style={styles.buttonTitle}>Log in</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.footerView} onPress={()=>setShowResetPasswordModal(true)}>
-                        <Text style={styles.forgotPasswordText}>Forgot password?</Text>
-                    </TouchableOpacity>
+
+                    <View style={styles.dividerWrapper}>
+                        <View style={[styles.divider, {
+
+                        }]}/>
+                        <Text style={styles.dividerText}>OR</Text>
+                        <View style={[styles.divider, {
+
+                        }]}/>
+                    </View>
+
+
+
+                    <GoogleSigninButton
+                        size={GoogleSigninButton.Size.Wide}
+                        color={GoogleSigninButton.Color.Dark}
+                        style={{
+                            alignSelf: 'center',
+                        }}
+                        onPress={onGoogleButtonPress}
+                    />
+
                     <View style={styles.footerView}>
                         <Text style={styles.footerText}>Don't have an account? <Text onPress={onFooterLinkPress} style={styles.footerLink}>Sign up</Text></Text>
                     </View>

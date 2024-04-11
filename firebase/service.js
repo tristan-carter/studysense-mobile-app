@@ -22,7 +22,7 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
                 resolve(userData);
             } else {
                 console.log("No data available");
-                resolve(null);
+                resolve("No data available");
             }
         })
         .catch(error => {
@@ -89,8 +89,8 @@ export const saveSharedSet = createAsyncThunk(
         console.log("SharedSetData saved successfully.");
         return setCode;
     } catch (error) {
-        console.error("Error saving data:", error);
-        alert("Error saving data: " + error);
+        console.error("Error saving shared data:", error);
+        alert("Error saving shared data: " + error);
     }
   }
 );
@@ -127,8 +127,8 @@ export const createSharedSetsList = createAsyncThunk(
       console.log("Created SharedSetsData Successfully.");
       return userId; 
     } catch (error) {
-      console.error("Error saving data:", error);
-      alert("Error saving data: " + error);
+      console.error("Error creating shared data:", error);
+      alert("Error creating shared data: " + error);
     }
   }
 );

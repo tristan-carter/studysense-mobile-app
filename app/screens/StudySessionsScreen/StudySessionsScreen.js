@@ -203,7 +203,9 @@ function StudySessionsPage({ navigation }) {
   return (
     <>
       <View style={styles.container}>
-        <View style={styles.currentSessionView}>
+        <View style={[styles.currentSessionView, {
+          marginTop: 8,
+        }]}>
           <View style={styles.currentSessionTextContainer}>
             <Text style={styles.currentSessionTitle}>Edit Session</Text>
           </View>

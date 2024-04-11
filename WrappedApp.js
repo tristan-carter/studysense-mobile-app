@@ -37,10 +37,15 @@ import { SetImportModal } from './app/screens/HomeScreen/Modals/SetImportModal';
 import { SheetManager } from 'react-native-actions-sheet';
 
 import {PermissionsAndroid} from 'react-native';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
 // checks if on android and requests permission
 if (Platform.OS === 'android') {
   PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
 }
+
+GoogleSignin.configure({
+  webClientId: '351626845911-17f4gp97b0kihnfu0hlpth0t19uk6t8v.apps.googleusercontent.com',
+});
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -217,12 +222,12 @@ function HomeTabs(props) {
     try {
       userCountry = getCountry();
     } catch (error) {
-      userCountry = "NA";
+      userCountry = "Unavailable";
     }
-    if ( data.country == "NA"
+    if ( data.country == "Unavailable"
     || data.country == "Initial"
     || data.country == null
-    || (data.country != userCountry && userCountry != "NA" && userCountry != "Initial") ) {
+    || (data.country != userCountry && userCountry != "Unavailable" && userCountry != "Initial") ) {
       try {
         userCountry = getCountry();
         dispatch(saveUser({
@@ -231,7 +236,7 @@ function HomeTabs(props) {
 
         }));
       } catch (error) {
-        data.country = "NA";
+        data.country = "Unavailable";
       }
     }
     const subscription = AppState.addEventListener('change', nextAppState => {
@@ -250,7 +255,7 @@ function HomeTabs(props) {
         // App has come to the foreground, update session start time
         startTime.current = Date.now();
       } else if (appState.current === 'active' && nextAppState.match(/inactive|background/)) {
-        // App has gone to the background, save data
+        // App has gone to the background, update total time spent and save user data
         updateTotalTimeSpent(userId, timeSpent);
         if (currentTimeStamp - lastSavedTimestamp.current >= 5000) {
           dispatch(saveUser("current"));
