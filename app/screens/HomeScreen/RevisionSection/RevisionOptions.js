@@ -13,8 +13,8 @@ import NotEnoughCards from './NotEnoughCards/NotEnoughCards.js';
 const RevisionOptionsList = [
     {
         key: 0,
-        title: 'Smart Study',
-        description: 'Mixing multiple choice questions and written questions',
+        title: 'Smart study',
+        description: 'A mix of multiple choice Qs and written Qs',
         icon: require('../../../assets/StudySmartRevisionIcon.png'),
     },
     {
@@ -26,12 +26,12 @@ const RevisionOptionsList = [
     {
         key: 2,
         title: 'Test',
-        description: 'Only written questions, best for reviewing knowledge',
+        description: 'Only written Qs, best for reviewing knowledge',
         icon: require('../../../assets/TestRevisionIcon.png'),
     },
     {
         key: 3,
-        title: 'Smart Flashcards',
+        title: 'Smart flashcards',
         description: 'Effective for more detailed terms and definitions',
         icon: require('../../../assets/OldDefaultSetIcon.png'),
     },
@@ -63,7 +63,7 @@ function RevisionOptions({ navigation }) {
     if (currentSet==null) {
         return (
             <View style={styles.container}>
-                <Text style={styles.subtitleText}>Study Options</Text>
+                <Text style={styles.subtitleText}>Study options</Text>
                 <Text style={styles.subtitleText}>No set selected</Text>
             </View>
         );
@@ -72,11 +72,11 @@ function RevisionOptions({ navigation }) {
     return (
         currentSet.cards.length > 1 ? (
             /*<ScrollView contentContainerStyle={{alignItems: 'center'}} style={styles.container}>*/
-                <View style={[styles.container, {paddingHorizontal: 18}]}>
-                    <Text style={[styles.subtitleText, {marginBottom: 11}]}>Study Options</Text>
+                <View style={styles.container}>
+                    <Text style={styles.subtitleText}>Study options</Text>
                     {donutChartComponent(currentSet.cards)}
                     <View style={styles.revisionOptionsContainer}>
-                        {RevisionOptionsList.map((revisionOption, index) => (
+                        {RevisionOptionsList.map((revisionOption) => (
                             <TouchableOpacity style={styles.revisionOption} key={revisionOption.key} onPress={()=>navigation.push(revisionOption.title, {set: currentSet})}>
                                 <Image style={styles.revisionOptionIcon} source={revisionOption.icon} />
                                 <View style={styles.revisionOptionsTextContainer}>

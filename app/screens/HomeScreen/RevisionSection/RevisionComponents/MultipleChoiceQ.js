@@ -15,7 +15,7 @@ function MultipleChoiceQ({ question, incorrectAnswers, answer, setGotQCorrect, p
 
     return (
         <View style={styles.container}>
-            <Text style={styles.subtitleText}>Smart Study</Text>
+            <Text style={styles.subtitleText}>Study</Text>
             <View style={styles.progressBar}>
                 <View style={[styles.progressBarFiller, { width: `${progress * 100}%` }]} />
             </View>

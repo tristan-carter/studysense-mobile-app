@@ -3,8 +3,9 @@ import colours from '../../config/colours.js';
 
 export default StyleSheet.create({
     subtitleText: {
+        fontFamily: 'Lato',
         fontSize: 21,
-        fontWeight: '500',
+        fontWeight: '400',
         color: colours.subtitletext,
         marginBottom: 11,
         alignSelf: 'center',
@@ -29,6 +30,7 @@ export default StyleSheet.create({
         shadowRadius: 3,
         shadowOffset : { width: 1, height: 6},
         minHeight: 75,
+        maxWidth: 500,
     },
     scrollDataButtonContainer: {
         flex: 1,
@@ -73,9 +75,12 @@ export default StyleSheet.create({
         marginBottom: 5,
     },
     scrollDataButtonText: {
-        
-        color: colours.text,
-        fontSize: 15,
+        paddingRight: 50,
+        fontWeight: '400',
+        fontFamily: 'Lato',
+        fontSize: 21,
+        color: colours.black,
+        overflow: 'hidden',
     },
     scrollDataModalButton: {
         borderWidth: 0.75,
@@ -102,6 +107,7 @@ export default StyleSheet.create({
     },
     buttonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
     },
     button: {
@@ -139,6 +145,7 @@ export default StyleSheet.create({
         display: 'flex',
     },
     modalTitle: {
+        fontFamily: 'Lato',
         fontSize: 20,
         marginBottom: 10,
         fontWeight: '600',
@@ -149,6 +156,7 @@ export default StyleSheet.create({
         display: 'flex',
     },
     inputLabel: {
+        fontFamily: 'Lato',
         fontSize: 16,
         color: colours.subtitletext,
     },
@@ -159,8 +167,8 @@ export default StyleSheet.create({
         borderRadius: 4,
         paddingHorizontal: 10,
         paddingVertical: 8,
+        fontFamily: 'Lato',
         fontSize: 15,
-        
         textAlignVertical: 'top'
     },
     createButton: {
@@ -179,8 +187,9 @@ export default StyleSheet.create({
     },
     createButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
-        
+        fontWeight: '500',
     },
     cancelButton: {
         alignItems: 'center',
@@ -192,8 +201,8 @@ export default StyleSheet.create({
     },
     cancelButtonText: {
         color: '#7B6B5C',
+        fontFamily: 'Lato',
         fontSize: 16,
-        
     },
     generateButton: {
         backgroundColor: colours.primary,
@@ -204,13 +213,13 @@ export default StyleSheet.create({
     },
     generateButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
-        
     },
     generateButtonSubText: {
         color: colours.backgroundAccent,
+        fontFamily: 'Lato',
         fontSize: 12,
-        
     },
     button: {
         width: '100%',
@@ -231,6 +240,7 @@ export default StyleSheet.create({
         shadowOffset : { width: 1, height: 6},
     },
     buttonText: {
+        fontFamily: 'Lato',
         fontSize: 21,
         fontWeight: '600',
     },

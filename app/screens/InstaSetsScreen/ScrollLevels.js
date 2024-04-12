@@ -20,7 +20,7 @@ export default function ScrollLevels(props) {
 
   return (
     <View style={{ backgroundColor: colours.backgroundColour, flex: 1, justifyContent: "center", paddingHorizontal: 13}}>
-      <Text style={[styles.subtitleText, {marginBottom: 11}]}>Elite level, ready-made study sets</Text>
+      <Text style={styles.subtitleText}>Elite level, ready-made study sets</Text>
       <FlatList
         data={levels}
         keyExtractor={(item) => item.title}
@@ -36,13 +36,7 @@ export default function ScrollLevels(props) {
               >
                 <Image style={{ width: 40, height: 40 }} source={iconPath} />
                 <View style={{flexDirection: 'column', gap: 4}}>
-                  <Text numberOfLines={1} style={{
-                    paddingRight: 50,
-                    fontWeight: '500',
-                    fontSize: 21,
-                    color: colours.black,
-                    overflow: 'hidden',
-                  }}>
+                  <Text numberOfLines={1} style={styles.scrollDataButtonText}>
                     {item.title}
                   </Text>
                 </View>

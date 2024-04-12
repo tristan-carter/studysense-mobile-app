@@ -81,7 +81,7 @@ export function CreateFileModal ({
                             alignItems: 'center',
                             width: '80%',
                         }}>
-                            <Text>Answer with Term</Text>
+                            <Text>Answer with term</Text>
                             <BouncyCheckbox
                                 size={22}
                                 isChecked={answerWithTerm}
@@ -99,7 +99,7 @@ export function CreateFileModal ({
                             alignItems: 'center',
                             width: '80%',
                         }}>
-                            <Text>Answer with Definition</Text>
+                            <Text>Answer with definition</Text>
                             <BouncyCheckbox
                                 size={22}
                                 isChecked={answerWithDefinition}
@@ -151,7 +151,7 @@ export function CreateFileModal ({
                                     );
                                 }}
                                 >
-                                    <Text style={styles.createButtonText}>Reset Progress</Text>
+                                    <Text style={styles.createButtonText}>Reset progress</Text>
                                 </TouchableOpacity>
                             ) : <View></View>
                         }

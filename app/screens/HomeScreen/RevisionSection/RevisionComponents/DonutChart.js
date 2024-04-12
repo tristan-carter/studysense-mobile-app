@@ -26,7 +26,7 @@ const renderDot = color => {
             width: 10,
             borderRadius: 5,
             backgroundColor: color,
-            marginRight: 10,
+            marginRight: 8,
         }}
         />
     );
@@ -34,10 +34,22 @@ const renderDot = color => {
 
 const renderLegendComponent = (pieData) => {
     return (
+      <View style={{
+        flexDirection: 'column',
+        display: 'flex',
+        alignSelf: 'center',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        {/*<Text style={{color: colours.black, fontFamily: 'Lato', marginBottom: 10}}>
+          Study progress
+    </Text>*/}
         <View style={{
             flexDirection: 'row',
             width: '100%',
             justifyContent: 'space-around',
+            alignSelf: 'center',
         }}>
             <View
               style={{
@@ -50,7 +62,7 @@ const renderLegendComponent = (pieData) => {
                       marginBottom: 10,
                   }}>
                     {renderDot(colours.learned)}
-                    <Text style={{color: colours.black}}>Learned: {pieData[3].value}</Text>
+                    <Text style={{color: colours.black, fontFamily: 'Lato'}}>Learned {pieData[3].value}</Text>
                 </View>
                 <View
                   style={{
@@ -58,7 +70,7 @@ const renderLegendComponent = (pieData) => {
                     alignItems: 'center', 
                   }}>
                     {renderDot(colours.learning)}
-                    <Text style={{color: colours.black}}>Learning: {pieData[1].value}</Text>
+                    <Text style={{color: colours.black, fontFamily: 'Lato'}}>Learning {pieData[1].value}</Text>
                 </View>
             </View>
             <View 
@@ -72,7 +84,7 @@ const renderLegendComponent = (pieData) => {
                     marginBottom: 10,
                 }}>
                   {renderDot(colours.partiallyLearned)}
-                  <Text style={{color: colours.black}}>Partially Learned: {pieData[2].value}</Text>
+                  <Text style={{color: colours.black, fontFamily: 'Lato'}}>Partially learned {pieData[2].value}</Text>
                 </View>
                 <View
                   style={{
@@ -80,10 +92,11 @@ const renderLegendComponent = (pieData) => {
                     alignItems: 'center', 
                   }}>
                   {renderDot(colours.notLearned)}
-                  <Text style={{color: colours.black}}>Not Learned: {pieData[0].value}</Text>
+                  <Text style={{color: colours.black, fontFamily: 'Lato'}}>Not learned {pieData[0].value}</Text>
                 </View>
             </View>
-        </View>
+          </View>
+      </View>
     );
 };
 
@@ -93,10 +106,10 @@ const donutChartComponent = (cards) => {
     const levelCounts = countLevels(cards);
 
     const pieData = [
-        { name: "Not Learnt", value: levelCounts[0], color: colours.notLearned },
-        { name: "Learning", value: levelCounts[1], color: colours.learning },
-        { name: "Partially Learned", value: levelCounts[2], color: colours.partiallyLearned },
-        { name: "Learned", value: levelCounts[3], color: colours.learned },
+        { name: "not learned", value: levelCounts[0], color: colours.notLearned },
+        { name: "learning", value: levelCounts[1], color: colours.learning },
+        { name: "partially learned", value: levelCounts[2], color: colours.partiallyLearned },
+        { name: "learned", value: levelCounts[3], color: colours.learned },
     ];
     let maxNonZeroValue = 0;
     let maxNonZeroValueIndex = -1;
@@ -125,11 +138,7 @@ const donutChartComponent = (cards) => {
         <View
           style={{
             width: '100%',
-            padding: 10,
           }}>
-          <Text style={{color: colours.black, fontSize: 16,  fontWeight: '500'}}>
-            Smart Study Progress
-          </Text>
           { screenHeight <= 800 ? (<></>) : (
             <View style={{marginTop: 0, marginBottom: 3, alignItems: 'center'}}>
               <PieChart
@@ -137,17 +146,17 @@ const donutChartComponent = (cards) => {
                 donut
                 showGradient
                 sectionAutoFocus
-                radius={112}
+                radius={108}
                 innerRadius={77}
                 innerCircleColor={colours.backgroundColour}
                 centerLabelComponent={() => {
                   return (
                     <View style={{justifyContent: 'center', alignItems: 'center'}}>
                       <Text
-                        style={{fontSize: 21, color: colours.black,  fontWeight: '600'}}>
+                        style={{fontFamily: 'Lato', fontSize: 21, color: colours.black,  fontWeight: '400'}}>
                         {donutCenterValue === null ? "No Cards" : donutCenterValue + "%"}
                       </Text>
-                      <Text style={{fontSize: 14, color: colours.black}}>{donutCenterName}</Text>
+                      <Text style={{fontFamily: 'Lato', fontSize: 14, color: colours.black, fontWeight: '400'}}>{donutCenterName}</Text>
                     </View>
                   );
                 }}

@@ -45,7 +45,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
         style={[styles.container, { justifyContent: 'flex-start'}]}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         >
-            <Text style={styles.subtitleText}>Smart Study</Text>
+            <Text style={styles.subtitleText}>Smart Flashcards</Text>
             <View style={styles.progressBar}>
                 <View style={[styles.progressBarFiller, { width: `${progress * 100}%` }]} />
             </View>
@@ -65,13 +65,13 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                 <Animated.View style={[styles.flashcardFront, frontAnimatedStyle]}>
                     <Text style={styles.flashcardTitleText}>Front</Text>
                     <Text style={[styles.question, {
-                        fontSize: 19,
+                        marginTop: 10,
                     }]}>{question}</Text>
                 </Animated.View>
                 <Animated.View style={[styles.flashcardBack, backAnimatedStyle]}>
                     <Text style={styles.flashcardTitleText}>Back</Text>
                     <Text style={[styles.question, {
-                        fontSize: 19,
+                        marginTop: 10,
                     }]}>{answer}</Text>
                 </Animated.View>
             </TouchableOpacity>

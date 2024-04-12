@@ -10,8 +10,9 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     subtitleText: {
+        fontFamily: 'Lato',
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '400',
         color: colours.subtitletext,
         marginBottom: 23,
     },
@@ -34,6 +35,7 @@ export default StyleSheet.create({
         shadowOffset : { width: 1, height: 6},
     },
     buttonText: {
+        fontFamily: 'Lato',
         fontSize: 21,
         fontWeight: '600',
     },
@@ -84,14 +86,14 @@ export default StyleSheet.create({
     },
     cardTitleText: {
         width: 95,
-        
-        fontSize: 19,
+        fontFamily: 'Lato',
+        fontSize: 18,
         color: colours.secondarytext,
         overflow: 'hidden',
     },
     cardText: {
-        
-        fontSize: 19,
+        fontFamily: 'Lato',
+        fontSize: 18,
         color: colours.subtitletext,
         overflow: 'hidden',
         display: 'flex',
@@ -120,6 +122,7 @@ export default StyleSheet.create({
     swipeButtonText: {
         
         color: colours.text,
-        fontSize: 15,
+                fontFamily: 'Lato',
+fontSize: 15,
     },
 }) 

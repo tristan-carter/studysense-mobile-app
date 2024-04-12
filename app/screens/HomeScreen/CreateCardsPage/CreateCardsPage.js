@@ -195,8 +195,8 @@ function CreateCardsPage (props) {
                             gap: 3,
                             marginTop: 7,
                         }]} onPress={addCard}>
-                        <Text style={[styles.buttonText, {color: colours.black}]}>Add Card</Text>
-                        <Ionicons name={'add-circle-outline'} size={34} color={colours.black} />
+                        <Text style={[styles.buttonText, {color: colours.black, fontWeight: '400'}]}>Add card</Text>
+                        <Ionicons name={'add-circle-outline'} size={31} color={colours.black} />
                     </TouchableOpacity>
 
                     <View style={styles.divider} />

@@ -45,17 +45,17 @@ const styles = {
     },
     currentSessionEditText: {
         color: colours.black,
-        fontSize: 12,
-        fontFamily: 'Lato-Regular',
+                fontFamily: 'Lato',
+fontSize: 12,
     },
     currentSessionTitle: {
-        fontSize: 19,
-        fontFamily: 'Lato-Regular',
+                fontFamily: 'Lato',
+fontSize: 19,
         color: colours.black,
     },
     currentSessionText: {
-        fontSize: 14,
-        fontFamily: 'Lato-Regular',
+                fontFamily: 'Lato',
+fontSize: 14,
         color: colours.secondarytext,
     },
 
@@ -78,7 +78,8 @@ const styles = {
     },
     buttonText: {
         color: colours.text,
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
         
     },
     modalContainer: {
@@ -101,7 +102,8 @@ const styles = {
         display: 'flex',
     },
     modalText: {
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
         marginBottom: 20,
         
         color: colours.subtitletext,
@@ -116,6 +118,7 @@ const styles = {
         display: 'flex',
     },
     inputLabel: {
+        fontFamily: 'Lato',
         fontSize: 16,
         color: colours.subtitletext,
     },
@@ -126,6 +129,7 @@ const styles = {
         borderRadius: 4,
         paddingHorizontal: 10,
         paddingVertical: 8,
+        fontFamily: 'Lato',
         fontSize: 15,
         
         textAlignVertical: 'top'
@@ -140,7 +144,9 @@ const styles = {
     },
     createButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
+        fontWeight: '500',
     },
     cancelButton: {
         alignItems: 'center',
@@ -152,6 +158,7 @@ const styles = {
     },
     cancelButtonText: {
         color: '#7B6B5C',
+        fontFamily: 'Lato',
         fontSize: 16,
     },
 
@@ -180,6 +187,7 @@ const styles = {
     },
     duringSessionTitleText: {
         color: colours.primaryAccent, 
+        fontFamily: 'Lato',
         fontSize: 26, 
         fontWeight: '700',
         marginTop: 15,
@@ -194,11 +202,13 @@ const styles = {
     },
     duringSessionTimeLeftText: {
         color: colours.primary,
+        fontFamily: 'Lato',
         fontSize: 110,
         fontWeight: '800',
     },
     duringSessionTimeLeftMinutesText: {
         color: colours.primaryAccent,
+        fontFamily: 'Lato',
         fontSize: 26,
         fontWeight: '700',
     },
@@ -217,11 +227,13 @@ const styles = {
     },
     duringSessionCancelSessionText: {
         color: colours.white,
+        fontFamily: 'Lato',
         fontSize: 18,
         fontWeight: '500',
     },
     sessionMainButtonText: {
         color: colours.white,
+        fontFamily: 'Lato',
         fontSize: 34,
         fontWeight: '800',
     },
@@ -263,14 +275,16 @@ const styles = {
     },
     claimTitleText: {
         color: colours.secondary, 
-        fontSize: 24,
+                fontFamily: 'Lato',
+fontSize: 24,
         alignSelf: 'center', 
         fontWeight: '600',
     },
     claimButtonText: {
         color: colours.white,
-        fontSize: 36,
-        fontWeight: '700',
+                fontFamily: 'Lato',
+fontSize: 36,
+        fontWeight: '600',
     },
     claimSkipContainer: {
         flex: 1, 

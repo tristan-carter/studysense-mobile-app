@@ -15,14 +15,16 @@ export default StyleSheet.create({
         marginBottom: 20,
     },
     title: {
-        fontSize: 24,
+                fontFamily: 'Lato',
+fontSize: 24,
         fontWeight: 'Bold', fontWeight: '600',
         marginBottom: 10,
         textAlign: 'center',
         color: colours.subtitletext,
     },
     description: {
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         marginBottom: 20,
         textAlign: 'center',
         color: colours.secondarytext,
@@ -35,7 +37,8 @@ export default StyleSheet.create({
     },
     buttonText: {
         color: colours.white,
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
         fontWeight: 'Bold', fontWeight: '600',
     },
 });

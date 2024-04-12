@@ -125,19 +125,19 @@ function StudySessionsPage({ navigation }) {
         sessionDate.setHours(0,0,0,0);
         return +today === +sessionDate;
     }).reduce((acc, session) => acc + session.length, 0),
-    type: "minutes",
+    type: "mins",
 };
   var totalThisWeek = {
     value: data.pastStudySessions.filter(session => now - session.startTime < 7 * oneDay).reduce((acc, session) => acc + session.length, 0),
-    type: "minutes",
+    type: "mins",
   };
   var totalThisMonth = {
     value: data.pastStudySessions.filter(session => now - session.startTime < 30 * oneDay).reduce((acc, session) => acc + session.length, 0),
-    type: "minutes",
+    type: "mins",
   };
   var totalThisYear = {
     value: data.pastStudySessions.filter(session => now - session.startTime < 365 * oneDay).reduce((acc, session) => acc + session.length, 0),
-    type: "minutes",
+    type: "mins",
   };
 
   // converts totals to either hours if more than 60 minutes or to minutes if less than 60 minutes
@@ -207,7 +207,7 @@ function StudySessionsPage({ navigation }) {
           marginTop: 8,
         }]}>
           <View style={styles.currentSessionTextContainer}>
-            <Text style={styles.currentSessionTitle}>Edit Session</Text>
+            <Text style={styles.currentSessionTitle}>Edit session</Text>
           </View>
 
           <View style={styles.currentSessionTextContainer}>
@@ -310,8 +310,13 @@ function StudySessionsPage({ navigation }) {
             ));
           }}>
           <Text
-            style={{color: colours.white, fontSize: 20}}
-          >Start Session</Text>
+            style={{
+              color: colours.white,
+              fontFamily: 'Lato',
+              fontSize: 21,
+              fontWeight: '500',
+            }}
+          >Start session</Text>
         </TouchableOpacity>
           
         <TouchableOpacity
@@ -322,12 +327,17 @@ function StudySessionsPage({ navigation }) {
             setShowLengthModal(true);
           }}>
           <Text
-            style={{color: colours.black, fontSize: 20}}
-          >Set New Goal</Text>
+            style={{
+              color: colours.black,
+              fontFamily: 'Lato',
+              fontSize: 21,
+              fontWeight: '400',
+            }}
+          >Set new goal</Text>
         </TouchableOpacity>
 
         <View style={styles.currentSessionView}>
-          <Text style={styles.currentSessionTitle}>You've Studied</Text>
+          <Text style={styles.currentSessionTitle}>You've studied</Text>
           
           <Text
             style={styles.currentSessionText}
@@ -499,7 +509,8 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -508,7 +519,8 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -521,7 +533,8 @@ function StudySessionsScreen({ navigation }) {
                 options={{
                   headerShown: true,
                   title: "Study Sessions",
-                  headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+                  headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
                   headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                 }}
               />
@@ -530,7 +543,8 @@ function StudySessionsScreen({ navigation }) {
               options={{
                 headerShown: true,
                 title: "Study Sessions",
-                headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+                headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
                 headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
               }}
             />
@@ -544,7 +558,8 @@ function StudySessionsScreen({ navigation }) {
         options={{
           headerShown: true,
           title: "Study Sessions",
-          headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 

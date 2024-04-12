@@ -8,7 +8,8 @@ export default StyleSheet.create({
         backgroundColor: colours.backgroundColour,
     },
     title: {
-        fontSize: 24,
+                fontFamily: 'Lato',
+fontSize: 24,
          fontWeight: '600',
         color: colours.subtitletext,
     },
@@ -56,7 +57,8 @@ export default StyleSheet.create({
     },
     buttonTitle: {
         color: colours.text,
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         fontWeight: "bold"
     },
     footerView: {
@@ -65,16 +67,19 @@ export default StyleSheet.create({
         marginTop: 25
     },
     footerText: {
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         color: '#2e2e2d'
     },
     footerLink: {
         color: colours.primary,
         fontWeight: "bold",
-        fontSize: 16
+                fontFamily: 'Lato',
+fontSize: 16
     },
     forgotPasswordText: {
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         color: colours.primary,
         fontWeight: "bold"
     },
@@ -98,7 +103,8 @@ export default StyleSheet.create({
         display: 'flex',
     },
     modalText: {
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
         marginBottom: 20,
         
         color: colours.subtitletext,
@@ -108,7 +114,8 @@ export default StyleSheet.create({
         display: 'flex',
     },
     inputLabel: {
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         color: colours.subtitletext,
     },
     textInput: {
@@ -118,7 +125,8 @@ export default StyleSheet.create({
         borderRadius: 4,
         paddingHorizontal: 10,
         paddingVertical: 8,
-        fontSize: 15,
+                fontFamily: 'Lato',
+fontSize: 15,
         
         textAlignVertical: 'top'
     },
@@ -132,8 +140,9 @@ export default StyleSheet.create({
     },
     createButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
-        
+        fontWeight: '500',
     },
     cancelButton: {
         alignItems: 'center',
@@ -145,7 +154,8 @@ export default StyleSheet.create({
     },
     cancelButtonText: {
         color: '#7B6B5C',
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         
     },
 })

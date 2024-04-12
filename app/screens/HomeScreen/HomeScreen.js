@@ -104,7 +104,7 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible:false,
         title: currentFolderName,
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24, fontWeight: '500' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           beforeRemove: () => {
@@ -116,7 +116,8 @@ function HomeScreen() {
         headerBackImage:()=>(<SVGBackButton/>),
         headerBackTitleVisible:false,
         title: currentSetName,
-        headerTitleStyle: { color: colours.titletext, fontSize: screenHeight <= 700 ? 24 : 24,  fontWeight: '600', alignSelf: 'flex-start' }, 
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: screenHeight <= 700 ? 24 : 24,  fontWeight: '500', alignSelf: 'flex-start' }, 
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
@@ -133,7 +134,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '500' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
@@ -141,12 +143,13 @@ function HomeScreen() {
           },
         }}
       />
-      <Stack.Screen name="Smart Study" component={SmartStudy} options={({route}) => ({
+      <Stack.Screen name="Smart study" component={SmartStudy} options={({route}) => ({
         headerBackImage:()=>(<SVGBackButton/>),
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '500' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
@@ -164,7 +167,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '500' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
@@ -182,7 +186,8 @@ function HomeScreen() {
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '500' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {
@@ -195,12 +200,12 @@ function HomeScreen() {
           },
         }}
       />
-      <Stack.Screen name="Smart Flashcards" component={Flashcards} options={({route}) => ({
+      <Stack.Screen name="Smart flashcards" component={Flashcards} options={({route}) => ({
         headerBackImage:()=>(<SVGBackButton/>),
         gestureEnabled: false,
         headerBackTitleVisible:false,
         title: route.params?.set.name || "Unknown Set",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24,  fontWeight: '500' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
         listeners={{
           focus: () => {

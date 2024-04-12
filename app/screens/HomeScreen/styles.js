@@ -33,7 +33,7 @@ export default StyleSheet.create({
     },
     scrollDataButton: {
         borderRadius: 11,
-        width: 75,
+        width: 70,
         marginLeft: 0.5,
         justifyContent: 'center',
         alignItems: 'center',
@@ -45,7 +45,8 @@ export default StyleSheet.create({
     },
     scrollDataButtonText: {
         color: colours.text,
-        fontSize: 15,
+                fontFamily: 'Lato',
+fontSize: 15,
     },
     scrollDataModalButton: {
         borderWidth: 1.5,
@@ -72,7 +73,8 @@ export default StyleSheet.create({
     },
     buttonText: {
         color: colours.text,
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
     },
     button: {
         backgroundColor: colours.primary,
@@ -109,7 +111,8 @@ export default StyleSheet.create({
         display: 'flex',
     },
     modalTitle: {
-        fontSize: 20,
+                fontFamily: 'Lato',
+fontSize: 20,
         marginBottom: 10,
         fontWeight: '600',
         color: colours.subtitletext,
@@ -119,7 +122,8 @@ export default StyleSheet.create({
         display: 'flex',
     },
     inputLabel: {
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         color: colours.subtitletext,
     },
     textInput: {
@@ -129,7 +133,8 @@ export default StyleSheet.create({
         borderRadius: 4,
         paddingHorizontal: 10,
         paddingVertical: 8,
-        fontSize: 15,
+                fontFamily: 'Lato',
+fontSize: 15,
         
         textAlignVertical: 'top'
     },
@@ -149,8 +154,9 @@ export default StyleSheet.create({
     },
     createButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
-        
+        fontWeight: '500',
     },
     cancelButton: {
         alignItems: 'center',
@@ -162,7 +168,8 @@ export default StyleSheet.create({
     },
     cancelButtonText: {
         color: '#7B6B5C',
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
     },
     divider: {
         height: 1,
@@ -177,11 +184,13 @@ export default StyleSheet.create({
     },
     generateButtonText: {
         color: colours.text,
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
     },
     generateButtonSubText: {
         color: colours.backgroundAccent,
-        fontSize: 12
+                fontFamily: 'Lato',
+fontSize: 12
     },
     importButton: {
         backgroundColor: colours.backgroundColour,
@@ -194,20 +203,22 @@ export default StyleSheet.create({
     },
     importButtonText: {
         color: colours.black,
-        fontSize: 18,
+                fontFamily: 'Lato',
+fontSize: 18,
     },
     importButtonSubText: {
         color: colours.secondarytext,
+        fontFamily: 'Lato',
         fontSize: 12,
     },
     
     noSetsFrame: {
         alignSelf: 'center',
-        width: '98%',
+        width: '96%',
         maxWidth: 450,
         display: 'flex',
-        padding: 20,
-        gap: 20,
+        padding: 25,
+        gap: 30,
         backgroundColor: colours.backgroundAccent,
         shadowColor: 'rgba(0, 0, 0, 0.1)',
         shadowOpacity: 0.25,
@@ -224,31 +235,35 @@ export default StyleSheet.create({
     },
     noSetsFeatureTitleText: {
         color: colours.black, 
-        fontSize: 19, 
-        fontWeight: '500',
+        fontFamily: 'Lato',
+        fontSize: 20, 
+        fontWeight: '400',
     },
     noSetsFeatureSubText: {
         color: colours.secondarytext, 
+        fontFamily: 'Lato',
         fontSize: 14, 
-        fontWeight: '500', 
+        fontWeight: '400', 
     },
     noSetsFeatureButton: {
         backgroundColor: colours.primary,
-        padding: 8,
+        padding: 11,
         alignItems: 'center',
         justifyContent: 'center',
         shadowColor: 'rgba(0, 0, 0, 0.1)',
-        shadowOpacity: 0.25,
+        shadowOpacity: 0.5,
         elevation: 6,
         shadowRadius: 3,
         shadowOffset : { width: 1, height: 6},
-        borderRadius: 11,
+        borderRadius: 10,
         display: 'flex',
     },
     noSetsFeatureButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 21,
-        fontWeight: '600',
+        fontWeight: '500',
+        fontFamily: 'Lato',
     },
     dropdown: {
         height: 10,
@@ -256,6 +271,7 @@ export default StyleSheet.create({
     },
     dropdownLabel: {
         zIndex: 999,
+        fontFamily: 'Lato',
         fontSize: 16,
         color: colours.incorrectRed,
         fontWeight: '500',

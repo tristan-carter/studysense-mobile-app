@@ -142,7 +142,7 @@ function HomeTabs(props) {
       }));
       } else {
             if (!answerWithDefinition && !answerWithTerm) {
-              alert("Please select at least one of 'Answer with Term' or 'Answer with Definition'");
+              alert("Please select at least one of 'Answer with term' or 'Answer with definition'");
             } else {
               setShowModal(false);
               navigation.push('CreateCardsPage', {set: { setId: newid, name: newName.current, cards: importingSet.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Create"});

@@ -53,7 +53,7 @@ export default function ScrollData(props) {
           }));
         } else {
               if (!answerWithDefinition && !answerWithTerm) {
-                alert("Please select at least one of 'Answer with Term' or 'Answer with Definition'");
+                alert("Please select at least one of 'Answer with term' or 'Answer with definition'");
               } else {
                 setShowModal(false);
                 navigation.push('CreateCardsPage', {set: { setId: editingId.current, name: newName.current, cards: editingCards.current, icon: newIcon.current, description: newDescription.current, isPrivate: isPrivate, answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition }, editOrCreate: "Edit"});
@@ -148,7 +148,8 @@ export default function ScrollData(props) {
               <Text numberOfLines={1} style={{
                 paddingRight: 50,
                  fontWeight: 'normal',
-                fontSize: 19,
+                        fontFamily: 'Lato',
+fontSize: 19,
                 color: colours.black,
                 overflow: 'hidden',
               }}>
@@ -156,7 +157,8 @@ export default function ScrollData(props) {
               </Text>
               <Text numberOfLines={1} style={{
                   
-                  fontSize: 13,
+                          fontFamily: 'Lato',
+fontSize: 13,
                   color: colours.secondarytext,
                   overflow: 'hidden',
               }}>
@@ -294,7 +296,8 @@ export default function ScrollData(props) {
 
   const renderSectionHeader=({ section }) => (
     (section.data.length > 0 &&
-      <Text style={{ paddingVertical: 5,  fontWeight: '600', color: colours.subtitletext, fontSize: 20}}>{section.title}</Text>
+      <Text style={{ paddingVertical: 5,  fontWeight: '600', color: colours.subtitletext,         fontFamily: 'Lato',
+fontSize: 20}}>{section.title}</Text>
       )
     );
   

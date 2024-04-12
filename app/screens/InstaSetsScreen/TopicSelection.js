@@ -138,8 +138,8 @@ export default function TopicSelection(props) {
           return (
             item.isPaperLabel ? (
               <Text style={{
-                fontFamily: 'Lato-SemiBold',
-                fontWeight: '500',
+                fontWeight: '400',
+                fontFamily: 'Lato',
                 fontSize: 20,
                 color: colours.black,
                 display: 'flex',
@@ -165,8 +165,8 @@ export default function TopicSelection(props) {
                 <View style={{flexDirection: 'column', flex: 1}}>
                   <Text style={{
                     paddingRight: 12,
-                    fontFamily: 'Lato-SemiBold',
-                    fontWeight: '500',
+                    fontWeight: '400',
+                    fontFamily: 'Lato',
                     fontSize: 18,
                     color: colours.black,
                     display: 'flex',
@@ -195,7 +195,7 @@ export default function TopicSelection(props) {
           }
         }}
       >
-          <Text style={[styles.buttonText, {color: colours.black}]}>{allSelected ? "Deselect all" : "Select all"}</Text>
+          <Text style={[styles.buttonText, {color: colours.black, fontWeight: '400'}]}>{allSelected ? "Deselect all" : "Select all"}</Text>
       </TouchableOpacity>
       <View style={styles.divider} />
       <TouchableOpacity
@@ -228,7 +228,7 @@ export default function TopicSelection(props) {
           }
         }}
       >
-        <Text style={[styles.buttonText, {color: colours.white}]}>Done</Text>
+        <Text style={[styles.buttonText, {color: colours.white}]}>Import Set</Text>
       </TouchableOpacity>
     </View>
   );

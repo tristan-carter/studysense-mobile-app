@@ -69,28 +69,34 @@ function QuestionFeedbackModal({ showFeedback, setShowFeedback, setFinalGotQCorr
                     </View>
                     <View style={styles.modalTextContainer}>
                         <Text style={[styles.modalTextLabel, {
-                            fontSize: question.question.length > 100 ? 14 : 16,
+                                    fontFamily: 'Lato',
+fontSize: question.question.length > 200 ? 14 : 18,
                         }]}>Question:</Text>
                         <Text style={[styles.modalText, {
-                            fontSize: question.question.length > 100 ? 14 : 16,
+                                    fontFamily: 'Lato',
+fontSize: question.question.length > 200 ? 14 : 18,
                         }]}>{question.question}</Text>
                     </View>
                     <View style={styles.modalTextContainer}>
                         <Text style={[styles.modalTextLabel, {
-                            fontSize: question.answer.length > 100 ? 14 : 16,
+                                    fontFamily: 'Lato',
+fontSize: question.answer.length > 200 ? 14 : 18,
                         }]}>Correct answer:</Text>
                         <Text style={[styles.modalText, {
-                            fontSize: question.answer.length > 100 ? 14 : 16,
+                                    fontFamily: 'Lato',
+fontSize: question.answer.length > 200 ? 14 : 18,
                         }]}>{question.answer}</Text>
                     </View>
                     {!isFlashcardFeedback && (
                         gotQCorrect.showTypedAnswer && (
                             <View style={styles.modalTextContainer}>
                                 <Text style={[styles.modalTextLabel, {
-                                    fontSize: gotQCorrect.answer.length > 100 ? 14 : 16,
+                                            fontFamily: 'Lato',
+fontSize: gotQCorrect.answer.length > 200 ? 14 : 18,
                                 }]}>Your answer:</Text>
                                 <Text style={[styles.modalText, {
-                                    fontSize: gotQCorrect.answer.length > 100 ? 14 : 16,
+                                            fontFamily: 'Lato',
+fontSize: gotQCorrect.answer.length > 200 ? 14 : 18,
                                 }]}>{gotQCorrect.answer}</Text>
                             </View>
                         )

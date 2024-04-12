@@ -6,11 +6,13 @@ const styles = {
     },
     newFileActionSheetText: {
         fontWeight: '600',
+        fontFamily: 'Lato',
         fontSize: 20,
         color: colours.primary,
     },
     newFileActionSheetTextCancel: {
         fontWeight: '600',
+        fontFamily: 'Lato',
         fontSize: 20,
         color: colours.secondarytext,
     },

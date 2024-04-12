@@ -61,7 +61,8 @@ function InstaSetsScreen() {
         options={{
           headerShown: true,
           title: "InstaSets",
-          headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 
@@ -70,7 +71,8 @@ function InstaSetsScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible: false,
         title: "InstaSets",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
 
@@ -78,7 +80,8 @@ function InstaSetsScreen() {
         headerBackImage:()=>(<SVGBackButton/>), 
         headerBackTitleVisible: false,
         title: "InstaSets",
-        headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+        headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
         headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
       
@@ -86,7 +89,8 @@ function InstaSetsScreen() {
           headerBackImage:()=>(<SVGBackButton/>), 
           headerBackTitleVisible: false,
           title: "InstaSets",
-          headerTitleStyle: { color: colours.titletext, fontSize: 24,  fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
+fontSize: 24,  fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour }})}
       />
     </Stack.Navigator>

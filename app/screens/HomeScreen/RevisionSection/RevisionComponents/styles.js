@@ -8,13 +8,14 @@ export default StyleSheet.create({
         backgroundColor: colours.backgroundColour,
     },
     subtitleText: {
+        fontFamily: 'Lato',
         fontSize: 20,
-        fontWeight: '500',
+        fontWeight: '400',
         color: colours.subtitletext,
         marginBottom: 10,
     },
     progressBar: {
-        height: 10,
+        height: 11,
         flexDirection: "row",
         width: '80%',
         backgroundColor: colours.backgroundAccent,
@@ -23,7 +24,7 @@ export default StyleSheet.create({
         borderRadius: 5
     },
     progressBarFiller: {
-        height: 10,
+        height: 9,
         backgroundColor: colours.primary,
         borderRadius: 5,
     },
@@ -39,11 +40,10 @@ export default StyleSheet.create({
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
-        fontSize: 24,
-        marginTop: 20,
+        fontFamily: 'Lato',
+        fontSize: 19,
         textAlign: 'left',
-        color: '#333',
-        
+        color: colours.black,
     },
 
     // Multiple Choice Styles
@@ -70,8 +70,8 @@ export default StyleSheet.create({
         flexDirection: 'column',
         alignSelf: 'stretch',
         color: colours.subtitletext,
+        fontFamily: 'Lato',
         fontSize: 17,
-        fontFamily: 'Lato'
     },
 
     // Written Styles
@@ -87,6 +87,7 @@ export default StyleSheet.create({
         width: '100%',
         minHeight: 50,
         paddingHorizontal: 10,
+        fontFamily: 'Lato',
         fontSize: 17,
         
         textAlignVertical: 'top',
@@ -129,7 +130,8 @@ export default StyleSheet.create({
         flexDirection: 'column',
     },
     modalTitle: {
-        fontSize: 20,
+                fontFamily: 'Lato',
+fontSize: 20,
         marginBottom: 10,
         fontWeight: '600',
         color: colours.subtitletext,
@@ -142,13 +144,15 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     modalTextLabel: {
-        fontSize: 16,
+                fontFamily: 'Lato',
+fontSize: 16,
         color: colours.secondarytext,
         
     },
     modalText: {
         textAlign: 'right',
-        fontSize: 19,
+                fontFamily: 'Lato',
+fontSize: 19,
         
         color: colours.subtitletext,
         flex: 1,
@@ -163,6 +167,7 @@ export default StyleSheet.create({
     },
     modalButtonText: {
         color: colours.text,
+        fontFamily: 'Lato',
         fontSize: 18,
     },
     changeGotQCorrectButton: {
@@ -177,8 +182,8 @@ export default StyleSheet.create({
     },
     changeGotQCorrectButtonText: {
         color: colours.black,
+        fontFamily: 'Lato',
         fontSize: 18,
-        
     },
 
     // Round Review Styles
@@ -206,8 +211,9 @@ export default StyleSheet.create({
         gap: 10,
     },
     roundReviewCorrectText: {
+        fontFamily: 'Lato',
         fontSize: 18,
-        fontWeight: '500',
+        fontWeight: '400',
         color: colours.subtitletext,
     },
     inspirationalQuoteContainer: {
@@ -224,14 +230,15 @@ export default StyleSheet.create({
     inspirationalQuoteLabel: {
         width: '100%',
         color: colours.gray,
+        fontFamily: 'Lato',
         fontSize: 16,
         
     },
     inspirationalQuoteText: {
         width: '100%',
         color: colours.white,
+        fontFamily: 'Lato',
         fontSize: 18,
-        
     },
     nextRoundButton: {
         width: '100%',
@@ -247,6 +254,7 @@ export default StyleSheet.create({
     },
     nextRoundButtonText: {
         color: colours.white,
+        fontFamily: 'Lato',
         fontSize: 21,
          fontWeight: '600',
     },
@@ -284,11 +292,11 @@ export default StyleSheet.create({
         shadowOffset : { width: 1, height: 6},
      },
      flashcardTitleText: {
-        fontSize: 24,
+        fontFamily: 'Lato',
+        fontSize: 20,
         fontWeight: '500',
-        color: colours.subtitletext,
-        width: '100%',
-        textAlign: 'center',
+        color: colours.black,
+        alignSelf: 'center',
      },
     gotQCorrectImage: {
         width: 75,
