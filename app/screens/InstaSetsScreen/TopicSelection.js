@@ -67,7 +67,7 @@ export default function TopicSelection(props) {
     const [isSelected, setSelection] = useState(true);
     title = topics[i].title;
 
-    if (title.includes("1")) {
+    if (title.includes("paper")) {
       setHasPapers = true;
     }
 
@@ -82,7 +82,7 @@ export default function TopicSelection(props) {
     }
 
     selectionTopics.push({
-      title: title.substring(0, title.indexOf("(")),
+      title: setHasPapers ? title.substring(0, title.indexOf("(")) : title,
       selected: isSelected,
       setSelection: setSelection,
       cards: topics[i].cards,

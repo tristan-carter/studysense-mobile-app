@@ -8,10 +8,10 @@
                     "examboards": [
                         {
                             "title": "OCR",
-                            "setname": "Computer Science OCR A Level",
+                            "setname": "Computer Science OCR A-Level",
                             "topics": [
                                 {
-                                    "title": "1.1.3. Input, Output and Storage: Characteristics of Contemporary Processors: Computer Science A-Level OCR (paper1)",
+                                    "title": "1.1 Characteristics of Contemporary Processors",
                                     "cards": [
                                         {
                                             "term": "Give two types of magnetic storage.",
@@ -236,7 +236,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "1.2.4. Types of Programming Language: 1.2 Software and Software Developments: Computer Science A-Level OCR (paper1)",
+                                    "title": "1.2: Software and Software Development",
                                     "cards": [
                                         {
                                             "term": "What are programming paradigms?",
@@ -493,7 +493,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "1.3.4. Web Technologies: Exchanging Data: Computer Science A-Level OCR (paper1)",
+                                    "title": "1.3: Exchanging Data",
                                     "cards": [
                                         {
                                             "term": "What is HTML?",
@@ -778,7 +778,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "1.4.3. Boolean Algebra: Data Types, Data Structures and Algorithms: Computer Science A-Level OCR (paper1)",
+                                    "title": "1.4: Data Types, Data Structures and Algorithms",
                                     "cards": [
                                         {
                                             "term": "What Boolean operation is represented with an overline?",
@@ -991,7 +991,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "1.5.2. Moral and Ethical Issues: Legal, Moral, Cultural and Ethical Issues: Computer Science A-Level OCR (paper1)",
+                                    "title": "1.5: Legal, Moral, Cultural and Ethical Issues",
                                     "cards": [
                                         {
                                             "term": "Give two effects on businesses of computers becoming part of the workforce.",
@@ -1108,7 +1108,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "2.1.5. Thinking Concurrently: Elements of Computational Thinking: Computer Science A-Level OCR (paper2)",
+                                    "title": "2.1: Elements of Computational Thinking",
                                     "cards": [
                                         {
                                             "term": "What is concurrent thinking?",
@@ -1357,7 +1357,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "2.2.2. Computational Methods: Problem Solving and Programming: Computer Science A-Level OCR (paper2)",
+                                    "title": "2.2: Problem Solving and Programming",
                                     "cards": [
                                         {
                                             "term": "What is meant by a computable problem?",
@@ -1542,7 +1542,7 @@
                                     ]
                                 },
                                 {
-                                    "title": "2.3.5. Path Finding Algorithms: 2.3 Algorithms - Computer Science A-level OCR (paper2)",
+                                    "title": "2.3: Algorithms",
                                     "cards": [
                                         {
                                             "term": "What is dijkstra's algorithm?",
@@ -1763,6 +1763,937 @@
                                     ]
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Economics",
+                    "examboards": [
+                        {
+                            "title": "AQA",
+                            "setname": "Economics AQA A-Level",
+                            "topics": [
+                                {
+                                    "title": "1. Economic Methodology & the Economic Problem",
+                                    "cards": [
+                                        {
+                                            "term": "Production Possibility Diagrams",
+                                            "definition": "The Production Possibility Curve (PPC) depicts a country's maximum potential production output using all its factors of production for just two goods or services. This model illustrates the trade-offs between different goods or services within resource constraints, offering a versatile tool for analysing economic choices."
+                                        },
+                                        {
+                                            "term": "Production Possibility Diagram Example",
+                                            "definition": "In diagram explanation, the Production Possibility Curve (PPC) serves to illustrate the maximum productive potential of an economy. This curve showcases the various combinations of output that the economy can produce utilising all available resources, known as factors of production. At point A on the curve, the economy allocates its resources solely to produce consumer goods, yielding a quantity of 300. Conversely, point B represents the allocation of resources exclusively to capital goods production, resulting in a quantity of 200. Points C and D, situated along the curve, signify the efficient use of the economy's resources, with point C producing 150 capital goods and 120 consumer goods."
+                                        },
+                                        {
+                                            "term": "The use of PPC to depict opportunity cost",
+                                            "definition": "1. Producing one additional unit of capital goods necessitates sacrificing the production of some units of consumer goods due to limited resources.2. Transitioning from point C (120, 150) to D (225, 100) on the Production Possibility Curve (PPC) incurs an opportunity cost of 50 capital goods for an additional 105 units of consumer goods.3. Movement along the PPC signifies any reallocation of existing resources within an economy, as demonstrated by the shift from point C to D."
+                                        },
+                                        {
+                                            "term": "Productive Efficiency on a PPC",
+                                            "definition": "1. Production at any point along the PPC signifies productive efficiency, indicating the maximum output achievable using available factors of production for goods and services.2. No scarce resources are wasted in this optimal allocation.3. Any point inside the curve, such as point E, signifies inefficiency, as it fails to utilise all possible combinations of factors of production for goods and services."
+                                        },
+                                        {
+                                            "term": "Allocative Efficiency on a PPC",
+                                            "definition": "1. Utilises scarce resources optimally to produce combinations of goods and services, thereby reducing resource wastage.2. Not all points along the PPC demonstrate allocative efficiency.3. This inefficiency arises because increasing the production of one good or service necessitates decreasing output of another.4. Any alteration in resource allocation within this market could result in either excess demand or excess supply, thereby detrimentally impacting either consumers or producers."
+                                        },
+                                        {
+                                            "term": "Changes in Production Possibilities",
+                                            "definition": "The Production Possibility Curve (PPC) of an economy can undergo shifts either inwards or outwards, thereby altering its production possibilities. Economic growth is evidenced by an increase in the productive potential of an economy, illustrated by an outward shift of the entire curve. With this expansion, more consumer goods and capital goods can be produced utilising all available resources. Conversely, economic decline ensues when factors adversely affect the economy, diminishing the quantity or quality of available factors of production."
+                                        },
+                                        {
+                                            "term": "Scarcity as an Economic Problem",
+                                            "definition": "The core economic issue stems from the scarcity of resources, termed factors of production in economics. Human desires are boundless, contrasting with the finite availability of resources. Essential needs, like shelter, food, and clothing, are imperative for survival, while wants, such as lavish housing or yachts, represent non-essential desires. Consequently, decisions must be made by producers, consumers, workers, and governments regarding the most efficient allocation of these limited resources. Economics explores the study of scarcity and its implications for resource distribution within society, aiming to comprehend and tackle these intricate dynamics."
+                                        },
+                                        {
+                                            "term": "How consumers cope with shortages?",
+                                            "definition": "In a free market economy, scarcity directly impacts prices. The scarcer a resource or product becomes, the higher the price consumers are willing to pay for it. This correlation between scarcity and price is a fundamental principle of market dynamics. When resources or products are abundant, their prices tend to be lower due to greater availability. However, as scarcity increases, prices rise accordingly as consumers compete for limited supplies. This mechanism ensures that resources are allocated efficiently, with prices serving as signals to producers and consumers about the relative scarcity of goods and services."
+                                        },
+                                        {
+                                            "term": "How producers cope with shortages?",
+                                            "definition": "Producers using scarce resources face higher production costs compared to those with more abundant resources. It leads to increased pricing for consumers. Conversely, producers with access to plentiful resources enjoy lower production costs, enabling them to offer competitive prices while remaining profitable. It emphasises the profound impact of resource availability on production economics and consumer affordability."
+                                        },
+                                        {
+                                            "term": "How workers cope with shortages?",
+                                            "definition": "Workers may desire a more comfortable and safer working environment, but their employers might lack the resources to provide it. This discrepancy between worker preferences and employer capabilities can create tension in the workplace. Despite the best intentions, financial constraints may limit working conditions improve. Thus, compromises may need to be made to balance worker needs with business feasibility."
+                                        },
+                                        {
+                                            "term": "How government cope with shortages?",
+                                            "definition": "Governments must choose between providing certain goods and services themselves or delegating to private firms. This decision heavily influences resource allocation in society. Government provision often involves taxpayer funding for services like healthcare and education. Alternatively, private firms can introduce competition and increase efficiency. Balancing factors like cost, quality, and equity guides this decision-making process."
+                                        },
+                                        {
+                                            "term": "Opportunity Cost",
+                                            "definition": "Opportunity cost is the loss of the next best alternative when making a decision due to scarcity. Choices about resource allocation incur opportunity costs. For example, choosing to buy a new phone means forgoing the opportunity to purchase new jeans, representing the next best alternative."
+                                        },
+                                        {
+                                            "term": "Opportunity Cost in Consumers",
+                                            "definition": "Understanding opportunity cost can significantly influence decisions made by various stakeholders, leading to different resource allocations. For example, Ashika faces a dilemma when planning her trip to Iceland. Comparing flight prices, she initially considers the cheaper Thursday night option at \\xc2\\xa350, but realises that taking this flight would mean sacrificing a day's work on Friday, resulting in a loss of \\xc2\\xa3130 income. Factoring in this opportunity cost, Ashika opts for the more expensive Friday night flight to avoid the income loss associated with missing work."
+                                        },
+                                        {
+                                            "term": "Opportunity Cost in Workers",
+                                            "definition": "Understanding opportunity cost can significantly influence decisions made by consumers, workers, firms, and governments, leading to different resource allocations. Take Ric's situation, for example, who must choose between two job offers. While Job A offers a higher salary, Job B allows for remote work. Considering the value of his time, Ric opts for Job B, as the combined cost of commuting and the value of lost hours spent commuting for Job A exceeds the additional salary offered."
+                                        },
+                                        {
+                                            "term": "Factors of Production",
+                                            "definition": "The production of goods and services relies on four essential factors: land, labour, capital, and enterprise. These resources, which encompass space, human effort, tools, and organisational coordination, are crucial in creating both tangible goods like mobile phones and intangible services like manicures and car washes. Each product or service requires a unique combination of these factors to be produced efficiently and effectively, driving economic activity and growth."
+                                        },
+                                        {
+                                            "term": "Factor of Production: Land",
+                                            "definition": "Land comprises non-man-made natural resources available for production, such as fertile soil and mineral deposits. Certain countries with abundant specific resources, like oil, specialise in their production. This specialisation allows nations to leverage their natural endowments for economic growth, capitalising on comparative advantages to enhance productivity and global trade."
+                                        },
+                                        {
+                                            "term": "Factor of Production: Labour",
+                                            "definition": "Labour constitutes the human input into production, involving mental and physical effort, with distinctions between skilled and unskilled labour based on expertise and training. This classification of labour quality influences the efficiency and effectiveness of production processes across different industries and sectors."
+                                        },
+                                        {
+                                            "term": "Factor of Production: Capital",
+                                            "definition": "Capital refers to any man-made resource utilised in the production of goods and services. Examples include tools, buildings, machinery, and computers\\xe2\\x80\\x94essential assets that enhance productivity and efficiency within various industries. These capital resources are essential in facilitating the production process, enabling businesses to streamline operations and achieve economies of scale."
+                                        },
+                                        {
+                                            "term": "Factor of Production: Enterprise",
+                                            "definition": "Enterprise involves taking risks in business operations. Entrepreneurs decide on the combination of factors of production required to produce goods or services, aiming to generate profit. This entrepreneurial drive fuels innovation and economic growth by identifying opportunities and organising resources efficiently."
+                                        },
+                                        {
+                                            "term": "How Households Receive Income for the Production Factors?",
+                                            "definition": "Households receive the following financial rewards (factor income) for selling their factors of production: rent for land, wages for labour, interest for capital, and profit for entrepreneurship."
+                                        },
+                                        {
+                                            "term": "Environment as a Scare Resource",
+                                            "definition": "Environmental resources, such as gas, water, soil, and wood, are vital for production but are at risk due to increased economic activity. Overconsumption by current generations leads to scarcity and degradation, especially with non-renewable resources like coal or oil, which deplete quickly. Even renewable resources, like water and air, can become scarce if mismanaged, as seen with clean water. It underscores the importance of sustainability: meeting current needs without compromising future generations."
+                                        },
+                                        {
+                                            "term": "What is the Purpose of Economic Activity?",
+                                            "definition": "The essence of economic activity is to produce goods and services that cater to both needs and wants, distinguishing between essential items like food and shelter and desires such as electronics. Despite the infinite demand for these commodities, resources for production are limited. Businesses primarily aim to meet market demands by offering goods and services, enhancing customer loyalty and revenue. Moreover, they strive to add value to their offerings through superior features, fostering competitive advantage and customer satisfaction."
+                                        },
+                                        {
+                                            "term": "What are the Three Fundamental Economic Questions?",
+                                            "definition": "In every economy, key decisions revolve around three crucial economic questions: what to produce, how to produce it, and who should benefit. These questions delve into resource allocation, production methods, and access to goods and services, shaping the economic and social landscape of a nation."
+                                        },
+                                        {
+                                            "term": "Three Economic Questions in the Market System",
+                                            "definition": "Market System:What to Produce: Goods and services driven by demand and supply dynamics.How to Produce: Through the price mechanism, aiming for maximum efficiency and profitability.For Whom: Targeted towards those who can afford it, determined by purchasing power."
+                                        },
+                                        {
+                                            "term": "Three Economic Questions in the Mixed System",
+                                            "definition": "Mixed System:What to Produce: Goods and services determined by demand, supply, and government intervention.How to Produce: Utilising a mix of market forces and government regulations, with a focus on both efficiency and welfare.For Whom: Primarily accessible to those who can afford it, with provisions made for those who cannot afford it through government intervention."
+                                        },
+                                        {
+                                            "term": "Three Economic Questions in the Planned System",
+                                            "definition": "Planned System:What to Produce: Goods and services dictated by the government.How to Produce: Centralised planning by the government to ensure everyone has a job and essential needs are met.For Whom: Aimed at providing for everyone within the society, with an emphasis on equitable distribution and full employment."
+                                        },
+                                        {
+                                            "term": "Why is economics a social science?",
+                                            "definition": "Social sciences dissect societal interactions, navigating their complexities. They encompass Psychology, Politics, Geography, and Business Studies. Analysing myriad variables, they unveil the intricacies of human behaviour. Through rigorous scrutiny, they offer invaluable insights into societal dynamics."
+                                        },
+                                        {
+                                            "term": "Why economist build models ?",
+                                            "definition": "Economists construct models to grasp societal complexities, offering simplified insights. Models, like the circular flow of income, distil complex concepts for analysis. Assumptions underpin these models, reflecting generalisations about human behaviour and outcomes. Recognising the necessity of assumptions accommodates diverse human behaviours and evolving variables. Critically evaluating underlying assumptions is vital when assessing different economic models."
+                                        },
+                                        {
+                                            "term": "How to think like an economist?",
+                                            "definition": "In economics, thinking like an economist involves discerning relevant variables and their relationships, distinguishing between causation and correlation. Economists may argue for including or excluding certain variables, providing justifications for their choices. Consequently, interpretations of the same data can vary greatly between economists due to their differing focuses. This complexity is relevant of the challenges within the social sciences."
+                                        },
+                                        {
+                                            "term": "The Social Scientific Method",
+                                            "definition": "Economics, a social science, grapples with the intricacies of human interactions. Unlike in science or mathematics, establishing consistent conclusions in economic relationships is challenging. However, tools in economic analysis aid in formulating reliable positive statements. These tools provide valuable insights into the complex dynamics of human behaviour and societal structures."
+                                        },
+                                        {
+                                            "term": "The use of logic",
+                                            "definition": "Market analysis in economics relies on assumptions about the rationality of economic agents involved in transactions. In classical economic theory, rationality implies agents can assess outcomes and recognise the net benefits of choices. Rational actors, including consumers, producers, workers, and governments, seek to maximise their respective gains. Consumers strive to optimise utility, producers aim for profit maximisation, and workers balance welfare with pay and benefits. Governments, in turn, prioritise the welfare of the populace to maximise societal well-being. These assumptions underpin economic analysis, shaping our understanding of market dynamics and decision-making processes."
+                                        },
+                                        {
+                                            "term": "The use of hypotheses, models and theories",
+                                            "definition": "In the social sciences, the social scientific method, a variation of the scientific approach, faces challenges due to the complexity of human behaviour and the multitude of social interactions in economies. While empirical research, gathered through observations and surveys, is crucial, outcomes can vary significantly across different researchers, time periods, and cultures. Refutation, on the other hand, based on empirical evidence, helps determine the validity of economic statements. Economists develop models to simplify reality after repeated testing of hypotheses, relying on assumptions about behaviour and outcomes. These assumptions are essential to account for complex human behaviour and changing variables. When evaluating models, it's crucial to consider the underlying assumptions."
+                                        },
+                                        {
+                                            "term": "What we understand by ceteris paribus?",
+                                            "definition": "Economists utilise ceteris paribus, Latin for 'all else equal', to simplify economic models by isolating specific variables. For instance, when analysing unemployment, they may focus solely on factors like interest rates, disregarding other influences. While this simplification aids in understanding cause and effect, it comes with inherent limitations due to the assumptions made. Ceteris paribus allows for clearer analysis but may overlook real-world complexities."
+                                        },
+                                        {
+                                            "term": "Positive and Normative Economics",
+                                            "definition": "Positive economics concerns itself with objective statements regarding the workings of markets or economies. These statements are grounded in empirical evidence, presenting facts that can be proven true or false. Examples include observations such as fluctuations in unemployment rates or the impact of policy changes on wage inequality. In contrast, normative economics delves into value judgements revolving around opinions on the best economic policies or solutions. These judgements, known as normative economic statements, form the basis of political manifestos and differing economic agendas. Examples include assertions about ideal policies such as universal healthcare provision or preferences for taxation structures."
+                                        },
+                                        {
+                                            "term": "Role of Value Judgements",
+                                            "definition": "Value judgements play a crucial role in shaping governments' decisions regarding economic policies and expenditure allocation. For instance, while the USA invests more in incarcerating drug users than in rehabilitation programs, the UK government has recently increased spending on rehabilitation. Comparing these approaches involves normative evaluations, while factual observations, like the UK's higher per capita spending on rehabilitation, fall under positive economics. Ultimately, public perceptions of policy outcomes and preferences shape economic decision-making."
+                                        },
+                                        {
+                                            "term": "Influences on Individuals' Decision-Making",
+                                            "definition": "Individual decision-making is influenced by positive outcomes and moral considerations, with divergent views on equity and equality. While positive outcomes often prioritise self-interest, moral judgements vary, shaping perceptions of fairness. Consumers hold differing views on access to healthcare, reflecting varied societal norms. Inequality statistics, like the gender pay gap, fall under positive economics, prompting debates on the role of markets versus governments in addressing equity and equality."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "2. Individual Economic Decision Making",
+                                    "cards": [
+                                        {
+                                            "term": "Choice Architecture",
+                                            "definition": "Choice architecture pertains to the deliberate design of how choices are presented, with the aim of influencing decision-making. By shaping the context in which choices are made, choice architecture seeks to streamline the decision-making process, making it simpler and more accessible for individuals."
+                                        },
+                                        {
+                                            "term": "Types of Choice Architecture: Default Choice",
+                                            "definition": "Default options, happens when individuals are automatically signed up for a choice without actively opting in, reducing the range of options available. Research shows people seldom deviate from default choices, such as 'organ donation' being pre-selected by driver licence agencies for new licences."
+                                        },
+                                        {
+                                            "term": "Types of Choice Architecture: Restricted Choice",
+                                            "definition": "Choice architecture involves limiting the available choices to aid individuals in making more rational decisions. For example, in a cafeteria, removing unhealthy options such as sugary drinks and replacing them with healthier alternatives like water can influence consumers to opt for the latter. By strategically shaping the available options, decision-makers can guide individuals towards choices that align with their best interests, promoting healthier and more rational decision-making."
+                                        },
+                                        {
+                                            "term": "Types of Choice Architecture: Mandated Choices",
+                                            "definition": "Mandated choices compel individuals to make specific decisions or actions by imposing obligations, ensuring compliance with regulations or societal norms."
+                                        },
+                                        {
+                                            "term": "Advantages of Choice Architecture",
+                                            "definition": "1. Influences Behaviour: Choice architecture nudges individuals towards decisions that benefit them or align with desired outcomes.2. Simplifies Decision-Making: Well-designed choice architecture makes complex decisions clearer and easier to understand.3. Improved Outcomes: Effective choice architecture promotes healthier habits and addresses issues like obesity.4. Enhance Decision Quality: Carefully structuring choices provides guidance, reduces biases, and improves decision-making."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Choice Architecture",
+                                            "definition": "1. Manipulation: Choice architecture may be seen as manipulative, influencing decisions without explicit consent and potentially undermining free choice.2. Ethical Concerns: Individuals may not realise their choices are influenced or understand the consequences due to how options are presented.3. Potential Bias: Choice architecture is prone to design biases and can be exploited by companies to increase profits.4. Unintended Consequences: Changes in choice presentation can lead to unforeseen outcomes not aligned with original goals."
+                                        },
+                                        {
+                                            "term": "Nudge Theory",
+                                            "definition": "Revolves around subtly influencing the decisions made by economic agents through small prompts. By employing gentle nudges, this theory aims to shape behaviour in desired directions, often without individuals being fully aware of the influence."
+                                        },
+                                        {
+                                            "term": "Consumer Nudges",
+                                            "definition": "Consumer nudges guide individuals towards certain decisions or actions while maintaining their freedom of choice. Based on behavioural economics principles, these interventions aim to nudge individuals towards choices beneficial for themselves and society. They should be designed with transparency, respect for autonomy, and clear societal benefits in mind."
+                                        },
+                                        {
+                                            "term": "Advantages of Nudge Theory",
+                                            "definition": "1. Cost effective: Nudges are relatively low-cost compared to other marketing measures.2. Preserves freedom of choice: They guide individuals towards certain choices while allowing them to retain their freedom of choice.3. Improved public health: Nudges can effectively encourage healthier behaviours such as exercising, consuming nutritious food, or quitting smoking.4. Better decision making: They aid individuals in making better decisions by simplifying complex information, providing reminders, or structuring choices."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Nudge Theory",
+                                            "definition": "1. Ethical concerns: Critics argue nudges can be manipulative, raising issues of autonomy, consent, and governmental abuse.2. Lack of transparency: Nudges operate subtly, making it hard for individuals to question their influences.3. Unintended consequences: Familiarity may lead to resistance, as seen with organ donor databases in the UK.4. Variable success rates: Nudges may not equally affect everyone due to cognitive biases or cultural differences."
+                                        },
+                                        {
+                                            "term": "Behavioural Economics",
+                                            "definition": "Behavioural economics blends psychology and economics to explore how individuals make decisions and behave in economic contexts. By merging insights from both disciplines, it offers a deeper understanding of consumer behaviour, market dynamics, and policy effectiveness."
+                                        },
+                                        {
+                                            "term": "Traditional Versus Behavioural Economics",
+                                            "definition": "Traditional economics views individuals as robotic, driven solely by logic and self-interest, making long-term plans and committing to them without hesitation. In contrast, behavioural economics recognises human tendencies for procrastination, indecision, and impulsiveness, acknowledging our capacity for caring about others and succumbing to immediate desires."
+                                        },
+                                        {
+                                            "term": "Bounded Rationality Theory",
+                                            "definition": "Individuals often make decisions without fully gathering the requisite information needed to make a rational choice within a given timeframe. They may find themselves baffled by the technical jargon associated with selecting insurance or pensions, leading to suboptimal decision-making outcomes."
+                                        },
+                                        {
+                                            "term": "Aspects that limit rational decision-making",
+                                            "definition": "It suggests that rational decision-making is hindered by limited cognitive capacity, information availability, time constraints, and choice overload, leading to irrational decisions."
+                                        },
+                                        {
+                                            "term": "Bounded Self-Control",
+                                            "definition": "The theory of bounded self-control suggests that individuals have a limited capacity to regulate their behaviour and make decisions amidst conflicting desires. It recognises self-control as a finite resource influenced by emotions and social factors. Businesses utilise marketing to exploit this limited self-control, targeting emotions to maximise sales."
+                                        },
+                                        {
+                                            "term": "The Influence of Biases on Decision Making",
+                                            "definition": "Biases greatly impact decision-making, affecting how we process information. These biases, stemming from common sense, intuition, emotions, and societal norms, often hinder rationality in decision-making."
+                                        },
+                                        {
+                                            "term": "Type of Bias: Rule of Thumb",
+                                            "definition": "This occurs when individuals default to familiar choices based on past experiences. For instance, someone might consistently order the same pizza from a specific Pizza Shop without considering other options, even if a new and more appealing choice is available at a significant discount of 50%."
+                                        },
+                                        {
+                                            "term": "Type of Bias: Anchoring and Framing",
+                                            "definition": "Anchoring bias manifests when individuals place disproportionate weight on an initial piece of information, known as the \"anchor,\" shaping their subsequent judgments or decisions. On the other hand, framing pertains to how information is presented or worded, exerting a substantial influence on people's choices or judgments."
+                                        },
+                                        {
+                                            "term": "Type of Bias: Availability",
+                                            "definition": "Availability bias occurs when individuals rely on easily accessible information, leading them to overestimate the likelihood or importance of events based on their vividness in memory. Influenced by personal experiences, media exposure, and emotional impact, this bias can distort perceptions and decision-making."
+                                        },
+                                        {
+                                            "term": "The Influence of Altruism on Rational Choice",
+                                            "definition": "Altruism, where behaviour benefits a group at the individual's expense, explains decisions not solely driven by personal gain, contrary to rational self-interest theory. Social norms exert pressure on altruistic decision-making, revealing the intricacies of human behaviour."
+                                        },
+                                        {
+                                            "term": "The Influence of Perception on Rational Choice",
+                                            "definition": "The perception of fairness, encompassing what individuals and societies consider right or wrong, plays a crucial role in shaping attitudes and actions. People may prioritise equitable outcomes for society over their own self-interest, reflecting a broader concern for justice and societal well-being."
+                                        },
+                                        {
+                                            "term": "Free Markets Assumptions",
+                                            "definition": "One assumption underlying free markets is the existence of a flawless flow of information. It encompasses various aspects such as pricing details, the substitutes availability, and the veracity of product claims."
+                                        },
+                                        {
+                                            "term": "Symmetric Information",
+                                            "definition": "Implies that both buyers and sellers possess identical knowledge regarding the goods or services being exchanged. This condition, ensures a level playing field where all parties are equally informed about a product or service."
+                                        },
+                                        {
+                                            "term": "Asymmetric Information",
+                                            "definition": "Asymmetric Information occurs when a disparity in information levels between buyers and sellers is prevalent within numerous markets."
+                                        },
+                                        {
+                                            "term": "Asymmetric information side effects",
+                                            "definition": "Asymmetric information, a prevalent occurrence in markets, leads to distortions in socially optimal prices and quantities, resulting in either over or under-provision of goods or services. For instance, if buyers were fully aware of the dangerous side effects associated with certain products or services, they would likely demand fewer of these items. Consequently, fewer factors of production would be allocated towards the production of such goods or services, aligning with societal preferences and safety concerns."
+                                        },
+                                        {
+                                            "term": "Asymmetric information in extra benefits",
+                                            "definition": "Goods and services endowed with additional benefits would likely increased sales if buyers were fully informed about them. This heightened demand would necessitate the allocation of more factors of production towards their production, ensuring the supply aligns with consumer preferences and needs."
+                                        },
+                                        {
+                                            "term": "Rational Economics & Incentives",
+                                            "definition": "Individual economic decisions are guided by rationality, incentives, and marginal utility. When studying markets, analysts make assumptions about the rationality of economic agents involved in transactions. These assumptions are crucial for understanding how individuals respond to incentives and allocate resources efficiently within the market system."
+                                        },
+                                        {
+                                            "term": "What does Rational mean?",
+                                            "definition": "In classical economic theory, the term 'rational' implies that economic agents can assess the consequences of their choices and discern the net benefits of each option."
+                                        },
+                                        {
+                                            "term": "What motivates rational agents to choose options with the highest benefits?",
+                                            "definition": "In economic analysis, individuals and institutions are presumed to act rationally. Consumers aim to maximise their utility, producers seek to maximise profits, workers balance welfare with pay and benefits, and governments prioritise the welfare of their citizens. This rational behaviour underpins economic models, providing insights into decision-making across different sectors of the economy."
+                                        },
+                                        {
+                                            "term": "Utility",
+                                            "definition": "Utility, defined as the satisfaction derived from consumption, is a fundamental concept in economics."
+                                        },
+                                        {
+                                            "term": "Marginal Utility",
+                                            "definition": "Represents the added satisfaction derived from consuming an extra product, with the initial unit typically yielding greater utility than subsequent units."
+                                        },
+                                        {
+                                            "term": "How to Calculate Total Utility?",
+                                            "definition": "Total utility is computed by summing the marginal utility of each unit consumed, resulting in a continuous increase in total utility even as marginal utility diminishes."
+                                        },
+                                        {
+                                            "term": "Law of Diminishing Marginal Utility",
+                                            "definition": "The satisfaction obtained from each additional unit consumed diminishes, meaning the utility gained from the next unit is less than that gained from the previous one."
+                                        },
+                                        {
+                                            "term": "How the Law of Diminishing Marginal Utility explain a downward sloping demand curve?",
+                                            "definition": "1. At the point of purchasing the first unit, the utility is notably high, prompting consumers to be willing to pay a premium price.2. Subsequent units offer diminishing utility, leading to decreased willingness to pay the initial price.3. Lowering the price makes continued consumption more appealing to the consumer.4. Hence, firms often offer discounts like '50% off the second item' to incentivise further purchases."
+                                        },
+                                        {
+                                            "term": "Utility Maximisation",
+                                            "definition": "A consumer attains utility maximisation by allocating their finite income in a manner that ensures they derive the utmost satisfaction from their expenditure."
+                                        },
+                                        {
+                                            "term": "Marginal Analysis on Choices",
+                                            "definition": "Rational consumers aim to maximise satisfaction with their limited income. When deciding at the margin, they weigh the extra happiness gained from consuming each additional unit (marginal benefit) against the additional cost incurred (marginal cost). This process continues until the additional happiness matches the extra cost, reflecting decisions made at the margin. Therefore, every consumer choice involves balancing benefits and costs while considering each additional unit consumed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "3. Price Determination in Competitive Markets",
+                                    "cards": [
+                                        {
+                                            "term": "Joint Demand",
+                                            "definition": "Joint demand refers to a situation where two or more goods are demanded together because they are complementary in a particular activity or purpose. When there is joint demand for goods, an increase or decrease in the demand for one good affects the demand for the other goods."
+                                        },
+                                        {
+                                            "term": "Competitive Demand",
+                                            "definition": "When two goods serve similar purposes and can be used interchangeably, they are referred to as substitute goods. When the price of one of these goods changes, it affects the demand for the other good."
+                                        },
+                                        {
+                                            "term": "Composite Demand",
+                                            "definition": "Composite demand refers to a situation where a good or service is demanded for multiple uses or purposes. An increase in production of one good may result in a decrease in the supply of another good if there is a limited availability of the common input."
+                                        },
+                                        {
+                                            "term": "Derived Demand",
+                                            "definition": "Derived demand refers to the phenomenon where the demand for a particular good or service arises as a result of the demand for another related good or service. The demand for inputs used in the production process is derived from the final product demand."
+                                        },
+                                        {
+                                            "term": "Joint Supply",
+                                            "definition": "Joint supply refers to the production of two different goods originating from the same source. An increase in the production of one good leads to a simultaneous increase in the production of another. It often results in the second good being a by-product of the production process of the first. For example, in the dairy industry, milk production leads to the generation of cream."
+                                        },
+                                        {
+                                            "term": "Law of Supply",
+                                            "definition": "The law of supply dictates that when the price of a good or service rises, assuming all other factors remain constant (ceteris paribus), producers will respond by increasing the quantity they are willing and able to supply."
+                                        },
+                                        {
+                                            "term": "Price elasticity of supply (PES)",
+                                            "definition": "Price elasticity of supply (PES) indicate the degree of responsiveness of the quantity supplied to changes in price. The responsiveness varies across different types of products and industries."
+                                        },
+                                        {
+                                            "term": "Price elasticity of supply (PES) Formula",
+                                            "definition": "The PES formula measures the percentage change in quantity supplied divided by the percentage change in price, providing a numerical value representing the elasticity of supply."
+                                        },
+                                        {
+                                            "term": "PES Values: Perfectly Inelastic",
+                                            "definition": "Perfectly Inelastic goods have a value of 0. This means that the quantity supplied remains constant regardless of changes in price. An example of this would be a fixed number of seats in a theatre."
+                                        },
+                                        {
+                                            "term": "PES Values: Relatively Inelastic",
+                                            "definition": "Relatively Inelastic goods have a value between 0 and 1. This indicates that the quantity supplied changes by a smaller percentage than the change in price. Examples include products with limited production capacity or those with long production times."
+                                        },
+                                        {
+                                            "term": "PES Values: Relatively Elastic",
+                                            "definition": "Relatively elastic goods have a value greater than 1. It indicates that the quantity supplied changes by a greater percentage than the change in price. Examples include easily produced goods or those with many available substitutes."
+                                        },
+                                        {
+                                            "term": "PES Values: Perfectly Elastic",
+                                            "definition": "Perfectly elastic goods have a value of infinity. It indicates that even a slight change in price will lead to an infinite change in quantity supplied. This situation is theoretical and rarely occurs in real-world markets."
+                                        },
+                                        {
+                                            "term": "Factors that Influence PES: Mobility of the factors of production",
+                                            "definition": "If producers can swiftly reallocate their resources between products, the price elasticity of supply (PES) will be more elastic. For instance, if the prices of hiking boots rise and shoe manufacturers can readily redirect their resources from producing trainers to boots, then boots will exhibit price elasticity in supply."
+                                        },
+                                        {
+                                            "term": "Factors that Influence PES: The rate at which costs of production increase",
+                                            "definition": "When the cost of producing each additional unit of output, known as marginal cost, increases at a slow rate, the quantity supplied becomes more elastic. Conversely, if marginal costs escalate rapidly, the quantity supplied becomes more inelastic."
+                                        },
+                                        {
+                                            "term": "Factors that Influence PES: Ability to store goods",
+                                            "definition": "If products can be easily stored, the price elasticity of supply (PES) will be higher (elastic) because producers can quickly increase supply (e.g., tinned food products). Conversely, if products cannot be stored easily, this results in lower PES (inelastic)."
+                                        },
+                                        {
+                                            "term": "Factors that Influence PES: Spare capacity",
+                                            "definition": "If prices increase for a product and there is capacity to produce more in the factories that make those products, then supply will be elastic. However, if there is no spare capacity to increase production, then supply will be inelastic."
+                                        },
+                                        {
+                                            "term": "Factors that Influence PES: Time period",
+                                            "definition": "In the short run, producers may find it harder to respond to a price increase as it takes time to produce the product (e.g. avocados). However, in the long run, they can change any of their factors of production to produce more and thus respond more effectively to price changes."
+                                        },
+                                        {
+                                            "term": "Interpreting YED Values",
+                                            "definition": "YED stands for \"Income Elasticity of Demand.\" It measures the responsiveness of the quantity demanded of a good to changes in consumer income. - If YED is positive, it indicates that demand for the good increases as consumer income rises, suggesting it is a normal good. - If YED is negative, it implies that demand for the good decreases as consumer income rises, indicating it is an inferior good."
+                                        },
+                                        {
+                                            "term": "Income Elasticity of Demand (YED) Formula",
+                                            "definition": "The YED (Income Elasticity of Demand) can be calculated using the following formula:"
+                                        },
+                                        {
+                                            "term": "Type of Good: Normal Necessity",
+                                            "definition": "A \"normal necessity\" refers to a good with an income elasticity of demand (YED) value between 0 and 1. In this context:Demand for the good increases when income rises, indicating it's a normal good.However, its YED value being less than 1 signifies that demand is relatively unresponsive to changes in income, making it income-inelastic."
+                                        },
+                                        {
+                                            "term": "Type of Good: Normal Luxury",
+                                            "definition": "A \"normal luxury\" is a term used to describe a good with a YED greater than 1. Essentially:- Demand for this luxury rises significantly with income increases, reflecting its status as a normal good.- It's income elastic, meaning it's relatively responsive to changes in income."
+                                        },
+                                        {
+                                            "term": "Type of Good: Inferior Good",
+                                            "definition": "An \"inferior good\" refers to a product with a negative income elasticity of demand (YED) value. It indicates:- As consumer income rises, demand for this good decreases, marking it as an inferior good.- The negative YED suggests that the good is income-inelastic, signifying that it is relatively unresponsive to changes in income. Thus, as consumers' incomes increase, they shift away from purchasing this inferior good towards higher-quality alternatives."
+                                        },
+                                        {
+                                            "term": "Cross Elasticity of Demand (XED)",
+                                            "definition": "Cross Price Elasticity of Demand (XED) measures how the quantity demanded for one good (A) responds to a change in the price of another good (B). This responsiveness varies among different types of products."
+                                        },
+                                        {
+                                            "term": "Complementary goods",
+                                            "definition": "Complementary goods have a negative Cross Price Elasticity of Demand (XED), indicating that as the price of one good increases, the demand for the other good decreases. The higher the negative value, the stronger the complementary relationship between the two goods."
+                                        },
+                                        {
+                                            "term": "Substitutes goods",
+                                            "definition": "Substitutes goods have a positive Cross Price Elasticity of Demand (XED), suggesting that as the price of one good increases, the demand for the other good increases. The higher the positive value, the stronger the substitutability between the two goods."
+                                        },
+                                        {
+                                            "term": "Unrelated goods",
+                                            "definition": "Unrelated goods exhibit a Cross Price Elasticity of Demand (XED) equal to zero, signifying no relationship between the two goods regarding changes in their prices. The closer the value is to zero, the weaker the relationship between the goods."
+                                        },
+                                        {
+                                            "term": "XED (Cross Price Elasticity of Demand) Formula",
+                                            "definition": "XED, or Cross Price Elasticity of Demand, can be calculated using the following formula. This formula measures the percentage change in the quantity demanded of good A in response to a percentage change in the price of good B."
+                                        },
+                                        {
+                                            "term": "Price Elasticity of Demand (PED)",
+                                            "definition": "Price elasticity of demand measures the sensitivity of quantity demanded to changes in price. This responsiveness varies across different types of products, reflecting the diversity in consumer preferences and market dynamics."
+                                        },
+                                        {
+                                            "term": "Calculation of PED",
+                                            "definition": "The price elasticity of demand (PED) can be determined using the following formula, where QD is the quantity demanded and P it is the price."
+                                        },
+                                        {
+                                            "term": "Interpreting PED Values: Perfectly Inelastic",
+                                            "definition": "Perfectly inelastic demand, represented by a value of 0, indicates that the quantity demanded remains entirely unresponsive to changes in price."
+                                        },
+                                        {
+                                            "term": "Interpreting PED Values: Relatively Inelastic",
+                                            "definition": "Relatively inelastic demand, signified by a value between 0 and 1, suggests that the percentage change in quantity demanded (%\\xe2\\x88\\x86 in QD) is less than proportional to the percentage change in price (%\\xe2\\x88\\x86 in P). This characteristic is often observed in products with addictive qualities."
+                                        },
+                                        {
+                                            "term": "Interpreting PED Values: Unitary Elasticity",
+                                            "definition": "Unitary elasticity, indicated by a value of 1, denotes that the percentage change in quantity demanded (% \\xe2\\x88\\x86 in Quantity Demanded) is precisely equal to the percentage change in price (% \\xe2\\x88\\x86 in P)."
+                                        },
+                                        {
+                                            "term": "Interpreting PED Values: Relatively Elastic",
+                                            "definition": "Relatively elastic demand refers to a situation where the price elasticity of demand (PED) has a value greater than 1. This indicates that the percentage change in Quantity Demanded is greater than the percentage change in price."
+                                        },
+                                        {
+                                            "term": "Interpreting PED Values: Perfectly Elastic",
+                                            "definition": "Perfectly elastic demand describes a scenario where the price elasticity of demand (PED) is infinite, represented by a value of infinity. In this case, any change in price, no matter how small, results in an infinite change in Quantity Demanded."
+                                        },
+                                        {
+                                            "term": "Factors that Influence PED",
+                                            "definition": "1. Availability of substitutes: Influences PED, with greater availability resulting in higher elasticity.2. Addictiveness of the product: Highly addictive products have lower PED (relatively inelastic).3. Product Price as a Proportion of Income: Lower-priced products have lower PED (relatively inelastic).4. Time period: Short-term leads to lower PED, while longer-term results in higher PED (relatively elastic)."
+                                        },
+                                        {
+                                            "term": "PED & Total Revenue",
+                                            "definition": "Understanding the price elasticity of demand (PED) is crucial for firms aiming to optimise their revenue. By knowing PED:- Firms can maximise sales revenue by adjusting prices accordingly.- If a product is price inelastic, meaning demand doesn't significantly change with price, firms can increase prices to maximise revenue.- Conversely, if a product is price elastic, meaning demand is highly responsive to price changes, firms should lower prices to boost revenue."
+                                        },
+                                        {
+                                            "term": "Causes & Consequences of Price Changes",
+                                            "definition": "1. Real-world markets are continuously evolving and are often referred to as dynamic markets.2. Market equilibrium can fluctuate frequently, changing every few minutes in highly volatile markets such as stocks and shares, or every few weeks or months in more stable sectors like clothing.3. Any alteration to the conditions of demand or supply can disrupt equilibrium temporarily, leading to disequilibrium."
+                                        },
+                                        {
+                                            "term": "Changes to Demand that Increase Price: Increase in Demand",
+                                            "definition": "Due to the Covid-mandated shift to remote work, there was a surge in demand for desks as consumers sought to set up comfortable home offices (D1 to D2). It resulted in excess demand at the original market-clearing price (P1), prompting suppliers to raise prices. Consequently, there was a contraction in demand and an expansion of supply, leading to a new equilibrium at P2 - Q2, with both the price and quantity higher than before. Ultimately, the excess demand was cleared."
+                                        },
+                                        {
+                                            "term": "Changes to Supply that Increase Price: Decrease in Supply",
+                                            "definition": "Due to Hurricane Fiona, Puerto Rico faces a supply shock in its plantain market, resulting in a decrease in supply from S1 to S2. This disruption leads to excess demand at the original market-clearing price of P1, creating a shortage as demand surpasses supply. In response, sellers in Puerto Rico raise prices. This price increase triggers a contraction in demand and an expansion of supply, culminating in a new market equilibrium at P2 - Q2. Here, the equilibrium price (P2) is higher, and the equilibrium quantity (Q2) is lower than before. Ultimately, the excess demand in the market is resolved."
+                                        },
+                                        {
+                                            "term": "Changes to Demand that Decrease Price: Decrease in Demand",
+                                            "definition": "In recent months, the USA has seen rising inflation rates, which reduce consumers' purchasing power and real income. Consequently, there's been a decrease in demand for luxury items like lobsters (from D1 to D2), leading to excess supply at the original market-clearing price (P1). Suppliers respond by gradually lowering prices, causing a contraction of supply and an expansion of demand. This establishes a new equilibrium at P2 - Q2, with both price and quantity lower than before, ultimately clearing the excess supply in the market."
+                                        },
+                                        {
+                                            "term": "Changes to Supply that Decrease Price: Increase in Supply",
+                                            "definition": "The EU has subsidised solar panel retailers to meet climate targets and lower household energy bills, increasing supply from S1 to S2. It leads to excess supply (surplus) at the original price (P1). Sellers respond by lowering prices, prompting an expansion of demand and a contraction of supply, establishing a new equilibrium at P2 - Q2. Here, the price (P2) is lower, and the quantity (Q2) is higher, clearing the excess supply."
+                                        },
+                                        {
+                                            "term": "Market",
+                                            "definition": "A market refers to any venue or platform where buyers and sellers convene to engage in transactions. This could encompass physical locations such as traditional marketplaces, retail stores, or auction houses, as well as virtual spaces like online marketplaces and trading platforms."
+                                        },
+                                        {
+                                            "term": "Price Determination in Markets",
+                                            "definition": "Price determination in markets hinges on the interplay between demand and supply within a market system. This dynamic interaction between buyers and sellers dictates the prices of goods and services."
+                                        },
+                                        {
+                                            "term": "Buyers and Sellers Interaction",
+                                            "definition": "Buyers and sellers convene to engage in trade, settling on an agreed-upon price for goods or services. Buyers signal their acceptance of the price by making purchases, while disagreements over price result in non-purchases, demonstrating consumer sovereignty. In response to buyer interactions, sellers gradually adjust their prices until reaching an equilibrium price and quantity that satisfies both parties."
+                                        },
+                                        {
+                                            "term": "Market Equilibrium",
+                                            "definition": "Equilibrium in a market is achieved when the quantity demanded equals the quantity supplied, signifying a balance between demand and supply forces."
+                                        },
+                                        {
+                                            "term": "Market Equilibrium: Diagram",
+                                            "definition": "Equilibrium in the market is achieved at point PQ, where the market-clearing price (P) and quantity (Q) intersect. Any deviation from this price creates disequilibrium in the market. Disequilibrium arises when there is either excess demand or excess supply in the market."
+                                        },
+                                        {
+                                            "term": "Market Disequilibrium",
+                                            "definition": "Disequilibrium arises when demand does not align with supply within a market. If demand exceeds supply, the market experiences excess demand, leading to shortages of goods or services. Conversely, if demand falls short of supply, the market encounters excess supply, resulting in surpluses."
+                                        },
+                                        {
+                                            "term": "Disequilibrium: Excess Demand",
+                                            "definition": "Excess demand arises when the quantity demanded exceeds the quantity supplied within a market. This imbalance can occur due to low prices or exceptionally high demand outpacing available supply. For instance, at a price of P1, the quantity demanded (Qd) of electric scooters surpasses the quantity supplied (Qs), resulting in a shortage or excess demand equivalent to Qs - Qd in the market."
+                                        },
+                                        {
+                                            "term": "Excess Demand: Market Response",
+                                            "definition": "Sellers become frustrated when products sell rapidly at prices deemed too low, while some buyers lament their inability to secure the product. Recognising the opportunity for increased revenue and profits, sellers gradually raise prices. Consequently, a contraction in quantity demanded occurs as some buyers baulk at the higher prices. Meanwhile, an extension in quantity supplied arises as other sellers are incentivised to offer more goods at elevated prices. Over time, the market reconciles excess demand, reaching an equilibrium position at Pe - Qe. The duration required to resolve disequilibrium varies across different markets."
+                                        },
+                                        {
+                                            "term": "Disequilibrium: Excess Supply",
+                                            "definition": "Excess supply arises when the quantity supplied surpasses the quantity demanded, often due to high prices or unexpected declines in demand. At a price of P1, the quantity supplied of an specific product (Qs) exceeds the quantity demanded (Qd), resulting in a surplus within the market, equivalent to Qd - Qs."
+                                        },
+                                        {
+                                            "term": "Excess Supply: Market Response",
+                                            "definition": "The market is in disequilibrium. Sellers lower prices gradually to increase revenue, leading to a contraction in quantity supplied (Qs) as some sellers are less willing to supply masks. Meanwhile, an extension in quantity demanded (Qd) occurs as buyers become more willing to purchase masks at lower prices. Eventually, the market clears excess supply and reaches equilibrium at Pe - Qe."
+                                        },
+                                        {
+                                            "term": "Supply",
+                                            "definition": "Supply refers to the quantity of a good or service that producers are ready and able to offer for sale at a specified price during a particular period."
+                                        },
+                                        {
+                                            "term": "Supply Curve",
+                                            "definition": "A supply curve serves as a visual representation of the relationship between the price of a good or service and the quantity supplied by producers."
+                                        },
+                                        {
+                                            "term": "Supply Curve Slope",
+                                            "definition": "The supply curve slopes upward, reflecting a positive relationship between price and quantity supplied. Rational producers aim to maximise profits by increasing supply when prices rise. This illustrates their response to market dynamics and pursuit of economic incentives."
+                                        },
+                                        {
+                                            "term": "The Law of Supply",
+                                            "definition": "The law of supply dictates a positive correlation between the quantity supplied and the price of a good or service, all other factors held constant (ceteris paribus). In essence, when the price of a product increases, producers are inclined to supply more, and conversely, when the price decreases, the quantity supplied tends to decrease as well."
+                                        },
+                                        {
+                                            "term": "Individual and Market Supply",
+                                            "definition": "Market supply combines all individual supplies for a specific good or service. It's calculated by summing up individual supply quantities at various price levels."
+                                        },
+                                        {
+                                            "term": "Individual & Market Supply Curves Diagram",
+                                            "definition": "In December, the market supply of smartphones in New York City is primarily a blend of Phone 1 and Phone 2 supplies. At a price of $1000, Phone 1's supply amounts to 300 units, while Phone 2's supply is 320 units. Consequently, at this price point, the collective market supply of smartphones in New York City totals 620 units for the month of December."
+                                        },
+                                        {
+                                            "term": "Movements Along a Supply Curve",
+                                            "definition": "If only the price changes (ceteris paribus), there will be a corresponding adjustment in the quantity supplied, shown by a movement along the supply curve."
+                                        },
+                                        {
+                                            "term": "Movements Along a Supply Curve: Diagram",
+                                            "definition": "When the price rises from \\xc2\\xa37 to \\xc2\\xa39, an upward movement along the supply curve occurs, shifting from point A to B. Consequently, the quantity supplied increases from 10 to 14 units. This movement is termed an extension in quantity supplied. Conversely, a decrease in price from \\xc2\\xa37 to \\xc2\\xa34 prompts a downward movement along the supply curve, moving from point A to C. Due to the price decrease, the quantity supplied decreases from 10 to 7 units, referred to as a contraction in quantity Supplied."
+                                        },
+                                        {
+                                            "term": "Conditions of Demand: Changes in Real Income",
+                                            "definition": "Real income influences consumer purchasing power and correlates directly with demand for goods and services. Normal goods see demand rise with income increases, while inferior goods experience demand decrease as income rises."
+                                        },
+                                        {
+                                            "term": "Conditions of Demand: Changes in taste/preferences",
+                                            "definition": "When goods or services become more desirable, their demand increases accordingly. This phenomenon underscores a direct relationship between shifts in taste or preferences and changes in demand. Notably, advertising or branding efforts have the capacity to alter consumer tastes or preferences, thereby influencing demand patterns."
+                                        },
+                                        {
+                                            "term": "Conditions of Demand: Changes in the prices of substitute goods",
+                                            "definition": "Fluctuations in the price of substitute goods have a notable impact on the demand for a particular product or service. When the price of substitute goods increases, consumers may shift towards the cheaper alternative, resulting in a decrease in demand for the original product. Conversely, if the price of substitute goods decreases, consumers may be more inclined to choose the original product, leading to an increase in demand."
+                                        },
+                                        {
+                                            "term": "Conditions of Demand: Changes in the prices of complementary goods",
+                                            "definition": "Variations in the price of complementary goods have a notable effect on the demand for a particular product or service. When the price of complementary goods rises, consumers may be deterred from purchasing the associated product, resulting in a decrease in demand for the original product or service. Conversely, if the price of complementary goods falls, consumers may be more inclined to purchase both items together, leading to an increase in demand."
+                                        },
+                                        {
+                                            "term": "Conditions of Demand: Changes in the number of consumers",
+                                            "definition": "Changes in a country's population size over time directly impact the demand for goods and services, with a larger population typically correlating to higher demand. Similarly, alterations in the age distribution within a country can lead to changes in demand patterns, reflecting shifts in consumer preferences and needs across different demographic groups."
+                                        },
+                                        {
+                                            "term": "Conditions of Demand: Future price expectations",
+                                            "definition": "Consumer expectations regarding future price changes significantly influence the present demand for goods and services. If consumers anticipate an increase in prices, they are more likely to purchase the item immediately, resulting in an increase in demand. Conversely, if consumers expect prices to decrease in the future, they may delay their purchases, leading to a decrease in demand for the time being."
+                                        },
+                                        {
+                                            "term": "Demand",
+                                            "definition": "Demand is the quantity of a good or service consumers are willing and able to buy at a given price within a specific time frame. It reflects how consumer behaviour responds to market conditions and influences business decisions and market forecasting."
+                                        },
+                                        {
+                                            "term": "Effective Demand",
+                                            "definition": "Effective demand is demand backed by purchasing power. If a consumer is willing to buy but cannot afford to, it isn't effective demand."
+                                        },
+                                        {
+                                            "term": "Demand Curve",
+                                            "definition": "A demand curve serves as a visual depiction of the relationship between price and quantity demanded (QD) by consumers. Although, if the data were plotted, it would form a curve, economists often simplify the analysis by representing it with straight lines. This approach aids in making the analysis more manageable and facilitates the study of various economic concepts, such as elasticity and equilibrium, related to demand."
+                                        },
+                                        {
+                                            "term": "The Law of Demand",
+                                            "definition": "The law of demand states that all else being equal, there is an inverse relationship between the price of a good or service and the quantity demanded (QD). As prices rise, the quantity demanded falls, and as prices fall, the quantity demanded rises."
+                                        },
+                                        {
+                                            "term": "Individual and Market Demand",
+                                            "definition": "Market demand represents the collective sum of all individual demands for a particular good or service within a given market. This aggregate demand is determined by adding together the quantities of the good or service that individuals are willing and able to purchase at various price levels."
+                                        },
+                                        {
+                                            "term": "Movements Along a Demand Curve",
+                                            "definition": "When price changes alone (ceteris paribus), the quantity demanded (QD) changes, represented by movement along the demand curve."
+                                        },
+                                        {
+                                            "term": "Movements Along a Demand Curve: Diagram Explanation",
+                                            "definition": "When the price rises from \\xc2\\xa310 to \\xc2\\xa315, the demand curve shifts upwards from point A to point B. Consequently, the quantity demanded declines from 10 to 7 units, resulting in what's known as a contraction in quantity demanded. Conversely, when the price decreases from \\xc2\\xa310 to \\xc2\\xa35, the demand curve shifts downwards from point A to point C. It leads to a quantity demanded increase from 10 to 15 units, termed an extension in quantity demanded."
+                                        },
+                                        {
+                                            "term": "The Conditions of Demand",
+                                            "definition": "The conditions of demand encompass various factors beyond price that can influence the demand for a good or service. Changes to these factors shift the entire demand curve rather than causing a movement along it."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "4. Production, Costs & Revenue",
+                                    "cards": [
+                                        {
+                                            "term": "The Distinction Between Invention & Innovation",
+                                            "definition": "Invention involves creating entirely new products or processes, while innovation focuses on improving existing ones or introducing new features. Both are essential drivers of progress and advancement across industries."
+                                        },
+                                        {
+                                            "term": "Technological Change in Production",
+                                            "definition": "Technological advancements have the potential to revolutionize production methods, productivity, and efficiency. By leveraging new technologies, firms can enhance their operational processes and ultimately reduce production costs."
+                                        },
+                                        {
+                                            "term": "Advantages of Technological Change on Production: New methods",
+                                            "definition": "Technology has transformed the landscape of business operations, particularly in processing and manufacturing products. This evolution has significantly boosted the speed of production, enabling businesses to streamline their processes and meet market demands more efficiently."
+                                        },
+                                        {
+                                            "term": "Advantages of Technological Change on Production: Productivity",
+                                            "definition": "Firms benefit from increased productivity as technology boosts output per unit, raising marginal revenue and ultimately maximizing profit. Leveraging technological innovations optimizes efficiency and revenue streams, enhancing profitability in today's competitive landscape."
+                                        },
+                                        {
+                                            "term": "Advantages of Technological Change on Production: Efficiency",
+                                            "definition": "Technological advancements bring efficiency gains to businesses by automating processes, reducing waste, and optimizing resource allocation. This enhances operational effectiveness, cuts costs, and boosts competitiveness in the market."
+                                        },
+                                        {
+                                            "term": "Advantages of Technological Change on Production: Costs",
+                                            "definition": "Technological advancements have lowered production costs for firms, primarily by enabling economies of scale more efficiently. This integration of technology optimizes production processes, enhances efficiency, and reduces overall costs."
+                                        },
+                                        {
+                                            "term": "The Impact of Technological Change on Existing Markets",
+                                            "definition": "Technological advancements impact existing markets by enabling businesses to innovate and stay competitive. Technology facilitates the creation of new products and updates features to meet evolving consumer needs, while also streamlining the design and development process. This agility allows businesses to respond quickly to market demands and maintain their relevance in competitive environments."
+                                        },
+                                        {
+                                            "term": "The Impact of Technological Change on Creating New Markets",
+                                            "definition": "Technological advancements like smartphones and social media platforms enable businesses to access new markets through mobile apps and digital marketing strategies. This expansion into digital platforms allows companies to engage with consumers more effectively, fostering growth in previously untapped markets."
+                                        },
+                                        {
+                                            "term": "Impact of Technology on Market: Reduce barriers to entry",
+                                            "definition": "Technology has the potential to lower barriers to entry, presenting opportunities for small businesses to enter markets typically dominated by larger firms. By leveraging technological tools and platforms, small businesses can compete more effectively, reaching customers and establishing their presence in industries that were previously inaccessible to them."
+                                        },
+                                        {
+                                            "term": "Impact of Technology on Market: Reduce information asymmetry",
+                                            "definition": "Technology diminishes information imbalance in markets by promptly harnessing, scrutinizing, and presenting extensive data. This accessibility to information, encompassing pricing and product particulars, empowers consumers with enhanced transparency and fosters market efficiency."
+                                        },
+                                        {
+                                            "term": "Impact of Technology on Market: Increase competition",
+                                            "definition": "Technology increases market competition by granting more firms access to e-commerce platforms, digital marketing, and online marketplaces. It allows businesses to enter larger markets, intensifying competition as companies vie for market share and customer attention."
+                                        },
+                                        {
+                                            "term": "Impact of Technology on Market: Increase market power",
+                                            "definition": "Technology can enhance market influence, potentially giving rise to the establishment of additional oligopolies or monopolies. For instance, tech giants such as Google and Amazon have achieved considerable dominance, capitalizing on factors like brand allegiance and economies of scale."
+                                        },
+                                        {
+                                            "term": "Explicit and Implicit Costs",
+                                            "definition": "In production costs, firms face both explicit (e.g., raw materials, wages) and implicit costs (opportunity costs). Implicit costs reflect the value of resources allocated elsewhere. Entrepreneurs must consider these costs, as they may reallocate resources for higher profits."
+                                        },
+                                        {
+                                            "term": "Profit Definition",
+                                            "definition": "Profit refers to the financial gain obtained by a business after deducting all expenses from its total revenue. It represents the surplus remaining once all costs, including both explicit (e.g., raw materials, wages) and implicit (opportunity costs), have been subtracted from the revenue generated through sales or other income streams."
+                                        },
+                                        {
+                                            "term": "Profit Calculation",
+                                            "definition": "Profit is calculated as the difference between total revenue (TR) and total costs (TC). Total costs encompass both explicit costs, such as raw materials and wages, and implicit costs, representing opportunity costs."
+                                        },
+                                        {
+                                            "term": "Normal profit, Abnormal profit, and Loss",
+                                            "definition": "Normal profit refers to the level of profit that allows a business to cover all of its explicit and implicit costs, including the opportunity cost of the entrepreneur's time and capital. Abnormal profit occurs when a business earns more than just enough to cover its total costs, including normal profit. Loss, on the other hand, occurs when a business's total costs exceed its total revenue."
+                                        },
+                                        {
+                                            "term": "The role of Profit in a Market Economy: Incentive for innovation",
+                                            "definition": "Profit incentivises entrepreneurship and innovation, serving as a reward for successful ventures. Entrepreneurs undertake risks with the expectation of making profits, driving innovation and economic growth, and ultimately improving living standards."
+                                        },
+                                        {
+                                            "term": "The role of Profit in a Market Economy: Allocation of resources",
+                                            "definition": "In a market economy, profit signals efficient resource allocation by indicating businesses' success in meeting consumer demands. It encourages reallocating resources towards producing goods and services consumers value most, enhancing economic efficiency."
+                                        },
+                                        {
+                                            "term": "The role of Profit in a Market Economy: Competition",
+                                            "definition": "In competitive markets, profit measures business success and efficiency. Firms strive to maximise profit by improving productivity, lowering costs, or enhancing goods and services. This benefits consumers by providing better goods and services at lower prices."
+                                        },
+                                        {
+                                            "term": "The role of Profit in a Market Economy: Wealth creation",
+                                            "definition": "Profit generation drives wealth creation for businesses, shareholders, and employees. It enables capital accumulation for reinvestment or dividends. Employees may benefit from profit-sharing or bonuses. However, excessive focus on profit maximisation can lead to negative externalities like environmental degradation and income inequality. Hence, pursuing profit should align with ethical and sustainable business practices."
+                                        },
+                                        {
+                                            "term": "Causes of Diseconomies of Scale: Management diseconomy of scale",
+                                            "definition": "It occurs when managers prioritise their interests over the firm's, hindering efficiency and increasing average costs (AC). For example, they may become territorial and obstructive, disrupting operations and driving up costs."
+                                        },
+                                        {
+                                            "term": "Causes of Diseconomies of Scale: Communication diseconomy of scale",
+                                            "definition": "It arises when firms with complex management structures and widespread geographic operations struggle to communicate efficiently, leading to delayed responses and increased average costs (AC)."
+                                        },
+                                        {
+                                            "term": "Causes of Diseconomies of Scale: Geographical diseconomy of scale",
+                                            "definition": "It arises when firms operate across widespread areas, leading to logistical and communication obstacles that raise average costs (AC)."
+                                        },
+                                        {
+                                            "term": "Causes of Diseconomies of Scale: Cultural diseconomy of scale",
+                                            "definition": "It arises when a firm expands into foreign markets where workers adhere to significantly different cultural work and productivity norms. This variance in cultural practices can lead to challenges in coordinating and managing workforce performance, ultimately resulting in increased average costs (AC)."
+                                        },
+                                        {
+                                            "term": "Increasing and Decreasing Returns to Scale Diagram",
+                                            "definition": "Initially, as firms grow in size and output, they often experience increasing returns to scale due to economies of scale, leading to cost efficiencies and enhanced productivity. However, as growth progresses, firms reach a critical juncture known as the minimum efficient scale, where they achieve constant returns to scale. Beyond this point, further expansion may lead to decreasing returns to scale, as diseconomies of scale emerge, resulting in increased average costs (AC)."
+                                        },
+                                        {
+                                            "term": "Short-run & Long-run Relationships",
+                                            "definition": "Firms operate in the short run on a day-to-day basis, constrained by existing conditions. However, in the long run, they can plan to expand production scale, such as by enlarging factory facilities. It leads to higher output and lower average unit costs on a new Short Run Average Cost (SRAC) curve. Over time, growing firms repeat this process, generating more efficient SRAC curves through strategic expansion."
+                                        },
+                                        {
+                                            "term": "The L-shaped Long-run Average cost Curve",
+                                            "definition": "The L-shaped long-run average cost curve challenges the conventional U-shaped curve by suggesting that diseconomies of scale may not always cause the Long Run Average Cost (LRAC) to increase. In certain industries, the LRAC curve can remain relatively flat, deviating from the expected upward turn. It results in a loosely shaped L-shaped long-run cost curve, highlighting the diverse dynamics of cost structures across sectors."
+                                        },
+                                        {
+                                            "term": "The L-shaped Long-run Average cost Curve Diagram",
+                                            "definition": "The L-shaped Long-run Average Cost Curve illustrates the cost dynamics faced by utility companies, for instance, when expanding their delivery network. Initially, substantial investments are made, leading to high average total costs (ATC). However, as economies of scale are realised, these costs decline. Eventually, the firm reaches its minimum efficient scale, operating at the lowest possible cost level. From this point onwards, they continue to operate efficiently at this scale, exemplifying the unique cost trajectory captured by the L-shaped LRAC curve."
+                                        },
+                                        {
+                                            "term": "Economies of Scale",
+                                            "definition": "Economies of scale mark the efficiency gains as firms expand. With growth, firms increase output scale and lower the average production costs (AC). These efficiencies, known as economies of scale, give larger firms a cost-reduction edge over smaller ones. They underpin the generation of increasing returns to scale in the long run, highlighting the strategic advantage of size in economic optimisation."
+                                        },
+                                        {
+                                            "term": "Diseconomies of Scale",
+                                            "definition": "In economics, diseconomies of scale arise as firms expand output, leading to a point where average costs (AC) start to rise. These increased costs, known as diseconomies of scale, contribute to decreasing returns to scale over time. Diseconomies of scale highlight the challenges firms face in balancing growth with cost efficiency."
+                                        },
+                                        {
+                                            "term": "Long-run Average Cost Curve Diagram",
+                                            "definition": "Economies of scale and diseconomies of scale represent opposing forces in a firm's cost structure. Initially, with low output levels, average costs are high. However, as output increases, economies of scale lead to a decline in average costs per unit. This efficiency peaks at productive efficiency, beyond which the onset of diseconomies of scale sees costs rise again. This interplay underscores the fine line between expansion and cost management in business operations."
+                                        },
+                                        {
+                                            "term": "Types of Internal Economies of Scale: Financial economy of scale",
+                                            "definition": "Large firms often enjoy lower interest rates on loans than smaller ones, as they're seen as less risky. Cheaper loans directly lower average costs (AC)."
+                                        },
+                                        {
+                                            "term": "Types of Internal Economies of Scale: Managerial economy of scale",
+                                            "definition": "Managerial economies of scale arise as large firms employ specialised managers, driving efficiency and lowering average costs (AC). In contrast, managers in smaller firms juggle multiple roles, lacking the specialisation seen in larger organisations. This discrepancy highlights the efficiency advantage of larger firms, ultimately reducing costs and enhancing competitiveness."
+                                        },
+                                        {
+                                            "term": "Types of Internal Economies of Scale: Marketing economy of scale",
+                                            "definition": "It occur when large firms distribute advertising costs across numerous sales, reducing average costs (AC). Moreover, they can reuse marketing materials across different regions, further lowering costs. This approach enhances brand visibility and market reach, giving larger companies a competitive edge."
+                                        },
+                                        {
+                                            "term": "Types of Internal Economies of Scale: Purchasing economy of scale",
+                                            "definition": "Purchasing economies of scale arise when large firms buy raw materials in bulk volumes, leading to discounted rates and reduced unit costs."
+                                        },
+                                        {
+                                            "term": "Types of Internal Economies of Scale: Technical economy of scale",
+                                            "definition": "Technical economies of scale occur when a firm operates its machinery at higher capacities due to increased output, thus spreading machinery costs over more units and lowering average costs (AC). This optimisation enhances production efficiency, reducing costs and boosting competitiveness."
+                                        },
+                                        {
+                                            "term": "Types of Internal Economies of Scale: Risk bearing economy of scale",
+                                            "definition": "It occurs when a firm diversifies its product range, spreading the risk of failure across more products. This strategy lowers average costs (AC) by reducing the impact of individual product failures."
+                                        },
+                                        {
+                                            "term": "Sources of External Economies of Scale: Geographic cluster",
+                                            "definition": "Geographic clustering sees ancillary firms gravitating towards major manufacturers to cut costs and enhance business. This practice, exemplified by the case of car manufacturers in Sunderland, where over 2,500 ancillary firms support production, drives down average costs (AC) and fosters a competitive industry ecosystem."
+                                        },
+                                        {
+                                            "term": "Sources of External Economies of Scale: Transport links",
+                                            "definition": "Enhanced transportation infrastructure evolves around expanding industries to ease employee commuting and enhance logistical operations, resulting in decreased average costs (AC). Bangalore, often referred to as India's tech hub, illustrates this phenomenon, where successful transportation initiatives have revolutionised the mobility of individuals and goods."
+                                        },
+                                        {
+                                            "term": "Sources of External Economies of Scale: Skilled labour",
+                                            "definition": "An upsurge in skilled labour can slash its costs, thereby reducing average expenses (AC). Moreover, in larger geographic clusters, there's a greater pool of skilled labour available, amplifying this effect."
+                                        },
+                                        {
+                                            "term": "Sources of External Economies of Scale: Favourable legislation",
+                                            "definition": "Favourable legislation can significantly reduce average costs (AC) as governments support specific industries to achieve broader objectives."
+                                        },
+                                        {
+                                            "term": "Connecting the Shapes of the Short Run Cost Curves",
+                                            "definition": "Understanding production costs is crucial in economics. Average variable cost (AVC) converges with average cost (AC) as average fixed cost (AFC) decreases. Initially, adding workers lowers AVC and marginal cost (MC). However, as diminishing returns set in, MC rises. At their lowest points, MC intersects AVC and AC. When MC is below the average, it pulls the average down; when above, it pulls it up. This dynamic reflects production efficiency and cost optimisation."
+                                        },
+                                        {
+                                            "term": "The Impact of Costs & Productivity on Factor Inputs",
+                                            "definition": "In business economics, factor prices and productivity steer a firm's production costs and dictate its choice between capital-intensive and labour-intensive inputs. Whether it's the cost of raw materials or wages, these factors profoundly influence operational strategies, with capital and labour playing pivotal roles. This delicate balance is crucial for shaping a company's competitive standing in the market."
+                                        },
+                                        {
+                                            "term": "The influence of factor prices on costs",
+                                            "definition": "Factor prices significantly impact production costs for firms. Higher prices, such as increased wages due to labour market conditions, elevate labour costs, thus inflating overall production expenses. Conversely, lower prices, like decreased capital costs resulting from interest rate reductions, alleviate financial burdens, reducing production outlay. To maintain competitiveness, firms strategically select input combinations that maximise output while minimising costs."
+                                        },
+                                        {
+                                            "term": "The influence of productivity on costs",
+                                            "definition": "Productivity is key to a firm's production costs, reflecting how efficiently inputs are used to generate output. Higher productivity means achieving more with less, thus lowering costs, while lower productivity increases costs by demanding more inputs for the same output level. This factor is crucial in cost management, influencing resource allocation and business competitiveness."
+                                        },
+                                        {
+                                            "term": "The Influence of factor price and productivity on input",
+                                            "definition": "Firms strategically balance factor prices and productivity levels when choosing between capital and labour inputs. If capital costs are low relative to labour expenses and capital is highly productive, they may favour capital-intensive methods. Conversely, when labour costs are modest, and labour is highly productive, a preference for labour-intensive approaches emerges. This astute alignment with factor prices and productivity underscores the nuanced decision-making involved in optimising production processes for economic efficiency."
+                                        },
+                                        {
+                                            "term": "Fixed costs (FC)",
+                                            "definition": "Fixed costs remain constant regardless of output changes, whether it's zero or $4000. Examples include rent and salaries."
+                                        },
+                                        {
+                                            "term": "Variable costs (VC)",
+                                            "definition": "Variable costs (VC) vary with output levels, increasing as production increases and decreasing vice versa. Examples include raw material expenses and wages for production workers. Managing variable costs is crucial for businesses to assess their cost structure effectively."
+                                        },
+                                        {
+                                            "term": "Total Cost (TC)",
+                                            "definition": "Are the sum of the total variable + fixed costs"
+                                        },
+                                        {
+                                            "term": "The distinction between short run and long run costs",
+                                            "definition": "The distinction between short-run and long-run costs lies in input flexibility. In the short run, fixed inputs like capital equipment remain unchanged, while variable inputs can be adjusted. Short-run costs include both fixed and variable expenses, with capital state unaltered. Conversely, in the long-run, all inputs are adaptable, allowing firms to optimise production efficiency by adjusting their input mix."
+                                        },
+                                        {
+                                            "term": "Cost Calculation",
+                                            "definition": null
+                                        },
+                                        {
+                                            "term": "The short-run period",
+                                            "definition": "In the short run, at least one factor of production remains fixed, making it challenging to adjust certain elements such as machinery or the number of factories. Typically, the variable factor of production introduced during the short run is labour, as it offers flexibility through the ease of hiring new workers."
+                                        },
+                                        {
+                                            "term": "The long-run period",
+                                            "definition": "In the long run, all factors of production are variable, enabling firms to plan for increased capacity and production. This period offers flexibility for adjusting resources according to changing needs, allowing companies to strategise and adapt their operations accordingly."
+                                        },
+                                        {
+                                            "term": "Marginal returns",
+                                            "definition": "Marginal returns denote the additional output obtained by increasing one unit of input, typically labour, while holding all other inputs constant."
+                                        },
+                                        {
+                                            "term": "Total returns",
+                                            "definition": "Total returns represent the overall output achieved from a specific level of input, typically measured in units of labour."
+                                        },
+                                        {
+                                            "term": "Average returns",
+                                            "definition": "Average returns, calculated by dividing the total output by the total input (usually measured in units of labour), offer a measure of efficiency or productivity over a specific period."
+                                        },
+                                        {
+                                            "term": "Short run: The Law of Diminishing Returns",
+                                            "definition": "The Law of Diminishing Marginal Returns states that initially, adding more of a variable factor of production, like labour, to fixed factors such as capital, increases productivity. However, beyond a certain point, further additions of the variable factor, such as hiring extra workers, lead to diminishing returns due to the relationship between labour and capital."
+                                        },
+                                        {
+                                            "term": "The Law of Diminishing Returns Example",
+                                            "definition": "Consider a farmer with a fixed plot of land who hires additional workers to tend to crops. Initially, each new worker boosts crop output significantly. However, as more workers are hired, the additional output per worker decreases due to the limited land and resources becoming increasingly crowded relative to the growing labour force, leading to diminishing returns."
+                                        },
+                                        {
+                                            "term": "The Law of Diminishing Marginal Returns Diagram",
+                                            "definition": "In the short term, marginal return (MR) increases with three additional workers before diminishing returns set in. For instance, at a music festival, a small burger van sees productivity rise until a third worker is added. Beyond this point, workers begin to hinder each other due to limited grill space, causing marginal returns to stagnate. Further hiring leads to declining marginal returns. Nonetheless, employing up to the seventh worker continues to increase total returns until marginal return turns negative, reducing the overall product."
+                                        },
+                                        {
+                                            "term": "Long run: Returns to Scale",
+                                            "definition": "Long run returns to scale assess how changes in production scale impact output levels when all inputs can be adjusted. This analysis helps firms determine the optimal scale and production size for long-term profitability and efficiency decisions."
+                                        },
+                                        {
+                                            "term": "Possibilities regarding long-run returns to scale: Increasing returns to scale",
+                                            "definition": "Increasing returns to scale occur when enlarging all inputs results in a greater-than-proportional increase in output, signifying economies of scale. This efficiency improvement accompanies the firm's growth, enhancing productivity and competitive edge."
+                                        },
+                                        {
+                                            "term": "Possibilities regarding long-run returns to scale: Constant returns to scale",
+                                            "definition": "Constant returns to scale occur when increasing all inputs proportionally results in a corresponding increase in output, maintaining the firm's efficiency as production scales up."
+                                        },
+                                        {
+                                            "term": "Possibilities regarding long-run returns to scale: Decreasing returns to scale",
+                                            "definition": "Decreasing returns to scale arise when increasing all inputs proportionally results in a smaller-than-proportional increase in output. This signifies diseconomies of scale, where production becomes less efficient with expansion."
+                                        },
+                                        {
+                                            "term": "Adam Smith",
+                                            "definition": "Adam Smith revolutionised economic thought with his seminal work 'The Wealth of Nations', published in March 1776. Within its pages, Smith expounded upon enduring economic principles, focusing on enhancing productivity and fostering wealth accumulation."
+                                        },
+                                        {
+                                            "term": "Adam Smith ideas of specialisation and the division of labour",
+                                            "definition": "Adam Smith highlighted the significance of the division of labour by illustrating its impact on pin manufacturing. While a single worker could only produce around 20 pins a day due to the complexity of the process, Smith estimated that with specialisation, just ten workers could collectively manufacture an impressive 48,000 pins daily."
+                                        },
+                                        {
+                                            "term": "Division of Labour",
+                                            "definition": "By breaking down tasks and allowing workers to specialise, Smith showed that even a small number of workers could vastly increase output. This concept remains a cornerstone of economic theory, highlighting the efficiency gained through specialisation."
+                                        },
+                                        {
+                                            "term": "Specialisation",
+                                            "definition": "By focusing on specific tasks, individuals become skilled and proficient, leading to increased output. Smith's insights into specialisation remain influential in modern economic theory, emphasising the importance of efficient resource allocation for societal welfare and economic growth."
+                                        },
+                                        {
+                                            "term": "Benefits of Specialisation & Division of Labour for Consumers",
+                                            "definition": "Specialisation and division of labour benefit consumers by lowering costs, resulting in reduced prices, and by increasing the variety of goods through international trade, offering a wider selection to meet diverse preferences and needs."
+                                        },
+                                        {
+                                            "term": "Benefits of Specialisation & Division of Labour for Firms",
+                                            "definition": "Specialisation and division of labour benefit firms by lowering costs, potentially leading to higher profits and allowing for increased investment or wages for workers. Additionally, higher labour productivity resulting from specialisation makes goods more competitive internationally, fostering export opportunities and expansion."
+                                        },
+                                        {
+                                            "term": "Benefits of Specialisation & Division of Labour for Society",
+                                            "definition": "Specialisation and division of labour offer society various advantages. Increased exports stimulate economic growth, while the creation of low-skilled jobs addresses unemployment. Additionally, income from exports enables the buying of diverse goods from abroad, enriching local variety and improving living standards."
+                                        },
+                                        {
+                                            "term": "Functions of Money: A Medium of Exchange",
+                                            "definition": "Money serves as a vital medium of exchange in economic transactions. Without it, bartering would be necessary, posing challenges due to the requirement of a double coincidence of wants. Money eliminates this need, facilitating transactions efficiently and contributing to the smooth functioning of the economy."
+                                        },
+                                        {
+                                            "term": "Functions of Money: A Measure of Value",
+                                            "definition": "Money acts as a crucial medium of exchange, providing a standard measure of value for goods and services. Understanding prices in monetary terms empowers consumers and producers to make informed decisions. Without this measure, arranging exchanges becomes challenging for buyers and sellers, highlighting the essential role of money in facilitating transactions and promoting economic efficiency."
+                                        },
+                                        {
+                                            "term": "Functions of Money: A Store of Value",
+                                            "definition": "Money functions as a crucial store of value, maintaining its worth over time, though subject to inflation. This characteristic allows individuals to save money, ensuring its continued value for future transactions."
+                                        },
+                                        {
+                                            "term": "Functions of Money: A Method of Deferred Payment",
+                                            "definition": "Money serves as a method of deferred payment, allowing individuals to arrange credit terms and settle future debts efficiently. This flexibility enables both producers and consumers to acquire goods in the present and defer payment until a later date, facilitating economic transactions."
+                                        },
+                                        {
+                                            "term": "The Purpose of Business Activity",
+                                            "definition": "The purpose of business activity is to create goods or services that satisfy customer needs. This involves efficient production, combining factors of production to minimise costs and maximise sales revenue. Adding value is crucial, transforming inputs into products that customers find more valuable than the raw materials used, thus justifying higher prices and ensuring business sustainability and competitiveness."
+                                        },
+                                        {
+                                            "term": "The Production Process Diagram",
+                                            "definition": "- Business aims to add value to inputs, creating products that meet customer needs.- Raw materials and other factors are used for production.- Costs are incurred, and sales revenue is gained upon product sale.- Profit arises when costs are less than sales revenue; loss occurs when costs exceed revenue."
+                                        },
+                                        {
+                                            "term": "Productivity",
+                                            "definition": "Productivity stands as a crucial gauge of efficiency within industries, quantifying the volume of outputs generated about the inputs expended. This metric delves into the effectiveness with which resources are utilised in the production of goods and services, offering a tangible measure for benchmarking and comparison across various sectors."
+                                        },
+                                        {
+                                            "term": "Labour productivity",
+                                            "definition": "Labour productivity, the output per worker, is crucial for evaluating efficiency. For instance, after training, workers became 27% more efficient."
+                                        },
+                                        {
+                                            "term": "Importance of Higher Productivity",
+                                            "definition": "- Lowers costs and improves competitiveness.- Enables increased output with the same input, leading to economies of scale.- Boosts profits, potentially allowing for higher wages and increased government revenue.- Enhances competitiveness in international markets, fostering economic growth."
+                                        },
+                                        {
+                                            "term": "Production",
+                                            "definition": "Production entails enhancing the value of factors like capital and labour to create goods or services. Changes in demand conditions directly affect production, while alterations in supply conditions influence outcomes. Thus, the interplay between demand and supply shapes production activities."
+                                        }
+                                    ]
+                                }
+                            ]                            
                         }
                     ]
                 }
