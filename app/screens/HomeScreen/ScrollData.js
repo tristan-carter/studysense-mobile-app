@@ -245,26 +245,50 @@ export default function ScrollData(props) {
           <Text style={styles.scrollDataButtonText}>Delete</Text>
         </TouchableOpacity>
       </View>
-    )
+    ) 
   };
 
   const NoSetsComponent = () => (
     <View style={styles.noSetsFrame}>
-      <View style={styles.noSetsUpperSection}>
-        <Image style={{ 
-          width: 70, 
-          height: 75,
-        }} source={CreateFirstSetIcon} />
-        <View style={styles.noSetsTextContainer}>
-          <Text style={styles.noSetsTitleText}>Create your first set!</Text>
-          <Text style={styles.noSetsSubText}>The best time to study was yesterday, the next best time is now.</Text>
-        </View>
+      <View style={styles.noSetsFeature}>
+        <Text style={styles.noSetsFeatureTitleText}>
+          InstaSets
+        </Text>
+        <Text style={styles.noSetsFeatureSubText}>
+          The study shortcut you've been wishing for.
+        </Text>
+        <TouchableOpacity
+        style={styles.noSetsFeatureButton}
+        onPress={() => {
+          // navigates to the InstaSets page
+          navigation.navigate('InstaSets');
+        }}
+        >
+          <Text style={styles.noSetsFeatureButtonText}>
+            Discover InstaSets
+          </Text>
+        </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.noSetsCreateButton} onPress={()=>{
-        dispatch(setCreatingNewSetFromNoSets(true));
-      }}>
-        <Text style={[styles.createButtonText, {fontSize: 19}]}>Create</Text>
-      </TouchableOpacity>
+
+      <View style={styles.noSetsFeature}>
+        <Text style={styles.noSetsFeatureTitleText}>
+          StudySessions
+        </Text>
+        <Text style={styles.noSetsFeatureSubText}>
+          Beat distractions and track your progress.
+        </Text>
+        <TouchableOpacity
+        style={styles.noSetsFeatureButton}
+        onPress={() => {
+          // navigates to the StudySessions page
+          navigation.navigate('StudySessions');
+        }}
+        >
+          <Text style={styles.noSetsFeatureButtonText}>
+            Upgrade Your Focus
+          </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 
