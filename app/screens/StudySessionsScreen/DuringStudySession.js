@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Text, Alert, Dimensions } from 'react-native';
 import LottieView from 'lottie-react-native';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setCurrentSession, saveUser } from '../../../firebase/userSlice';
+import { saveUser } from '../../../firebase/userSlice';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -19,26 +19,10 @@ function StudySessionsPage({ navigation }) {
   const state = useSelector((state) => state.user);
   const user = state.data;
 
-  const currentSession = user.currentSession;
+  const timeLeft = state.studySessionsTimeLeft;
 
   const now = Date.now();
-  const [timeLeft, setTimeLeft] = useState();
   const [animationHeight, setAnimationHeight] = useState(0);
-
-  useEffect(() => {
-    if (currentSession !== null) {
-      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
-      setTimeLeft(newTimeLeft);
-    }
-    const intervalId = setInterval(() => {
-      const now = Date.now();
-      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (now - currentSession.startTime)) / MINUTE_IN_MILLISECONDS);
-      if (newTimeLeft > 0) {
-        setTimeLeft(newTimeLeft);
-      }
-    }, 10000); // updates every 10 seconds
-    return () => clearInterval(intervalId);
-  }, [currentSession]);
   return (
     <>
       <View style={[styles.container, {
@@ -71,10 +55,10 @@ function StudySessionsPage({ navigation }) {
         
         <View style={[styles.duringSessionFrame, {marginTop: -animationHeight * 0.307}]}>
           <View style={styles.duringSessionTimeLeftContainer}>
+            {/* Displays time left in format minutes:seconds */}
             <Text style={styles.duringSessionTimeLeftText}>
-              {timeLeft}
+              {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}
             </Text>
-            <Text style={styles.duringSessionTimeLeftMinutesText}> min{timeLeft !== 1 && "s"} left</Text>
           </View>
         </View>
 

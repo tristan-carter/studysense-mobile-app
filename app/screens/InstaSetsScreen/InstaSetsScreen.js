@@ -17,9 +17,6 @@ import TopicsSelection from './TopicSelection.js';
 
 import Svg, { Path } from "react-native-svg";
 
-import { setCurrentFolder, setCurrentSet } from '../../../firebase/userSlice';
-import { setBottomNavShown } from '../../../firebase/userSlice.js';
-
 function InstaSetsPage({ navigation }) {
     return (
       <View style={styles.scrollDataContainer}>

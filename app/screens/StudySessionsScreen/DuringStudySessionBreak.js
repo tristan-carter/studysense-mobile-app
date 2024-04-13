@@ -15,23 +15,7 @@ function StudySessionsPage({ navigation }) {
   const state = useSelector((state) => state.user);
   const user = state.data;
 
-  const currentSession = user.currentSession;
-
-  const [timeLeft, setTimeLeft] = useState();
-
-  useEffect(() => {
-    if (currentSession !== null) {
-      const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
-      setTimeLeft(newTimeLeft);
-    }
-    const intervalId = setInterval(() => {
-      const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / MINUTE_IN_MILLISECONDS);
-      if (newTimeLeft > 0) {
-        setTimeLeft(newTimeLeft);
-      }
-    }, 10000); // updates every 10 seconds
-    return () => clearInterval(intervalId);
-  }, [currentSession]);
+  const timeLeft = state.studySessionsTimeLeft;
   return (
     <>
       <View style={[styles.container, {
@@ -55,10 +39,10 @@ function StudySessionsPage({ navigation }) {
 
         <View style={styles.duringSessionFrame}>
           <View style={styles.duringSessionTimeLeftContainer}>
+            {/* Displays time left in format minutes:seconds */}
             <Text style={styles.duringSessionTimeLeftText}>
-              {timeLeft}
+              {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}
             </Text>
-            <Text style={styles.duringSessionTimeLeftMinutesText}> min{timeLeft !== 1 && "s"} left</Text>
           </View>
         </View>
 

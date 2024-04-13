@@ -64,6 +64,7 @@ const userSlice = createSlice({
         error: null,
         currentFolder: null,
         currentSet: null,
+        studySessionsTimeLeft: null,
         loggedIn: false,
         bottomNavShown: true,
         creatingNewSetFromNoSets: false,
@@ -95,7 +96,11 @@ const userSlice = createSlice({
     },
     setCurrentSession: (state, action) => {
       state.data.currentSession = action.payload;
-    }
+    },
+    setStudySessionsTimeLeft: (state, action) => {
+      state.studySessionsTimeLeft = action.payload;
+      console.log("(payload) Time Left: ", action.payload)
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -127,5 +132,5 @@ const userSlice = createSlice({
   },
 });
 
-export const { setUser, setBottomNavShown, setCreatingNewSetFromNoSets, setLoading, setError, setLoggedIn, setCurrentFolder, setCurrentSet, setCurrentSession } = userSlice.actions;
+export const { setUser, setBottomNavShown, setCreatingNewSetFromNoSets, setLoading, setError, setLoggedIn, setCurrentFolder, setCurrentSet, setCurrentSession, setStudySessionsTimeLeft } = userSlice.actions;
 export default userSlice.reducer;

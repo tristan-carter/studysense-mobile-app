@@ -6,6 +6,7 @@ import { BarChart } from "react-native-gifted-charts";
 
 import { useDispatch, useSelector } from 'react-redux';
 import { saveUser, setUser } from '../../../firebase/userSlice';
+import { setStudySessionsTimeLeft } from '../../../firebase/userSlice';
 
 import DuringStudySession from './DuringStudySession';
 import ClaimStudySession from './ClaimStudySession';
@@ -18,6 +19,7 @@ import styles from './styles';
 import colours from '../../config/colours'
 
 const MINUTE_IN_MILLISECONDS = 60000;
+const SECOND_IN_MILLISECONDS = 1000;
 
 function StudySessionsPage({ navigation }) {
   const dispatch = useDispatch();
@@ -467,6 +469,7 @@ function StudySessionsPage({ navigation }) {
 const Stack = createStackNavigator();
 
 function StudySessionsScreen({ navigation }) {
+  const dispatch = useDispatch();
   const currentSession = useSelector((state) => state.user.data.currentSession);
   const screenHeight = Dimensions.get('window').height;
   const inSession = currentSession != null && !currentSession.hasClaimedBreak
@@ -476,13 +479,25 @@ function StudySessionsScreen({ navigation }) {
 
   const calcWhatsFinished = () => {
     if (currentSession != null && currentSession.startTime != null) {
-      const newSessionFinished = Date.now() - currentSession.startTime >= currentSession.length * MINUTE_IN_MILLISECONDS;
-      setSessionFinished(newSessionFinished);
+      // calculates time left in seconds
+      const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / SECOND_IN_MILLISECONDS);
+      if (newTimeLeft <= 0) {
+        setSessionFinished(true);
+      } else {
+        setSessionFinished(false);
+        dispatch(setStudySessionsTimeLeft(newTimeLeft));
+      }
     }
 
     if (currentSession != null && currentSession.breakStartTime != null) {
-      const newBreakFinished = Date.now() - currentSession.breakStartTime >= currentSession.breakLength * MINUTE_IN_MILLISECONDS
-      setBreakFinished(newBreakFinished);
+      // calculates time left in seconds
+      const newTimeLeft = Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / SECOND_IN_MILLISECONDS);
+      if (newTimeLeft <= 0) {
+        setBreakFinished(true);
+      } else {
+        setBreakFinished(false);
+        dispatch(setStudySessionsTimeLeft(newTimeLeft));
+      }
     }
   }
 
@@ -490,7 +505,7 @@ function StudySessionsScreen({ navigation }) {
     calcWhatsFinished();
     const intervalId = setInterval(() => {
       calcWhatsFinished();
-    }, 5000); // updates every 10 seconds
+    }, 1000); // updates every second
     return () => clearInterval(intervalId);
   }, [currentSession]);
   return(
@@ -509,8 +524,7 @@ function StudySessionsScreen({ navigation }) {
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
-fontSize: 24,  fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24, fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -519,8 +533,7 @@ fontSize: 24,  fontWeight: '600' },
                   options={{
                     headerShown: true,
                     title: "Study Sessions",
-                    headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
-fontSize: 24,  fontWeight: '600' },
+                    headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24, fontWeight: '600' },
                     headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                   }}
                 />
@@ -533,8 +546,7 @@ fontSize: 24,  fontWeight: '600' },
                 options={{
                   headerShown: true,
                   title: "Study Sessions",
-                  headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
-fontSize: 24,  fontWeight: '600' },
+                  headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24, fontWeight: '600' },
                   headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
                 }}
               />
@@ -543,8 +555,7 @@ fontSize: 24,  fontWeight: '600' },
               options={{
                 headerShown: true,
                 title: "Study Sessions",
-                headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
-fontSize: 24,  fontWeight: '600' },
+                headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24, fontWeight: '600' },
                 headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
               }}
             />
@@ -558,8 +569,7 @@ fontSize: 24,  fontWeight: '600' },
         options={{
           headerShown: true,
           title: "Study Sessions",
-          headerTitleStyle: { color: colours.titletext,         fontFamily: 'Lato',
-fontSize: 24,  fontWeight: '600' },
+          headerTitleStyle: { color: colours.titletext, fontFamily: 'Lato', fontSize: 24, fontWeight: '600' },
           headerStyle: { height: screenHeight <= 800 ? 50 : 90, backgroundColor: colours.backgroundColour },
         }}
       /> 
