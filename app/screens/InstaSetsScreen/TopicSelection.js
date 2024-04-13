@@ -22,6 +22,7 @@ export default function TopicSelection(props) {
   const topics = Subject.topics;
   const navigation = props.navigation;
   const selectionTopics = []
+  const longCards = Subject.longCards;
   var setHasPapers = false;
   var paperSelectionTopics = [];
 
@@ -222,13 +223,24 @@ export default function TopicSelection(props) {
               ]
             );
           } else {
+
+            // If the set has longCards, then show an alert suggesting to use smart flashcards
+            if (longCards) {
+              Alert.alert(
+                "Smart flashcards study mode suggested",
+                "This set contains long cards so we recommend using the Smart Flashcards study mode.",
+                [
+                  { text: "Ok" }
+                ]
+              );
+            }
             navigation.goBack();
             navigation.goBack();
             handleSetImport(selectedTopics);
           }
         }}
       >
-        <Text style={[styles.buttonText, {color: colours.white}]}>Import Set</Text>
+        <Text style={[styles.buttonText, {color: colours.white}]}>Create Set</Text>
       </TouchableOpacity>
     </View>
   );

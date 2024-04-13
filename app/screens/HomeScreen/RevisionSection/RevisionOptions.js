@@ -32,7 +32,7 @@ const RevisionOptionsList = [
     {
         key: 3,
         title: 'Smart flashcards',
-        description: 'Recommended for longer terms and definitions and for InstaSets',
+        description: 'Recommended for longer terms and definitions',
         icon: require('../../../assets/OldDefaultSetIcon.png'),
     },
 ];

@@ -9,6 +9,7 @@
                         {
                             "title": "OCR",
                             "setname": "Computer Science OCR A-Level",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "1.1 Characteristics of Contemporary Processors",
@@ -1768,10 +1769,12 @@
                 },
                 {
                     "title": "Economics",
+                    "longCards": true,
                     "examboards": [
                         {
                             "title": "AQA",
                             "setname": "Economics AQA A-Level",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "1. Economic Methodology & the Economic Problem",
@@ -2708,6 +2711,7 @@
                         {
                             "title": "AQA",
                             "setname": "Biology AQA GCSE ",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "Cell Biology (paper1)",
@@ -4845,6 +4849,7 @@
                         {
                             "title": "Edexcel",
                             "setname": "Biology Edexcel GCSE",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "Key Concepts in Biology (paper1)",
@@ -8137,6 +8142,7 @@
                         {
                             "title": "AQA",
                             "setname": "Chemistry AQA GCSE ",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "Atomic Structure and the Periodic Table (paper1)",
@@ -9327,6 +9333,7 @@
                         {
                             "title": "Edexcel",
                             "setname": "Chemistry Edexcel GCSE",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "Key Concepts in Chemistry (paper1)",
@@ -11700,6 +11707,7 @@
                         {
                             "title": "AQA",
                             "setname": "Physics AQA GCSE ",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "Energy (paper1)",
@@ -13440,6 +13448,7 @@
                         {
                             "title": "Edexcel",
                             "setname": "Physics Edexcel GCSE",
+                            "longCards": true,
                             "topics": [
                                 {
                                     "title": "Motion and Forces (paper1)",
