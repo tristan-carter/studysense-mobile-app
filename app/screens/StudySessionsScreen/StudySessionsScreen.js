@@ -1,8 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Dimensions, TouchableOpacity, Text, Modal, TextInput, Alert } from 'react-native';
+import { View, Dimensions, TouchableOpacity, Text, Modal, TextInput, Alert, PermissionsAndroid, NativeModules } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { BarChart } from "react-native-gifted-charts";
+import notifee, { AndroidImportance } from '@notifee/react-native';
+import BackgroundTimer from 'react-native-background-timer';
+
 
 import { useDispatch, useSelector } from 'react-redux';
 import { saveUser, setUser } from '../../../firebase/userSlice';
@@ -17,6 +20,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 import colours from '../../config/colours'
+
 
 const MINUTE_IN_MILLISECONDS = 60000;
 const SECOND_IN_MILLISECONDS = 1000;
@@ -202,6 +206,10 @@ function StudySessionsPage({ navigation }) {
     setMaxDayThisWeek(newMaxDayThisWeek);
   }, [data.studySessionsGoals.daily, data.pastStudySessions]);
 
+  async function requestUserPermissionIOS() {
+    await notifee.requestPermission()
+  }
+
   return (
     <>
       <View style={styles.container}>
@@ -295,6 +303,12 @@ function StudySessionsPage({ navigation }) {
             shadowColor: 'rgba(0, 0, 0, 0.15)',
           }]}
           onPress={()=>{
+            // checks if on android and requests permission
+            if (Platform.OS === 'android') {
+              PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+            } else {
+              requestUserPermissionIOS();
+            }
             dispatch(saveUser(
               {
                 ...data,
@@ -468,15 +482,21 @@ function StudySessionsPage({ navigation }) {
 
 const Stack = createStackNavigator();
 
+const { StudyCountdownWidgetModule } = NativeModules;
+
 function StudySessionsScreen({ navigation }) {
   const dispatch = useDispatch();
-  const currentSession = useSelector((state) => state.user.data.currentSession);
+  const state = useSelector((state) => state.user);
+  const currentSession = state.data.currentSession;
+  const timeLeft = state.timeLeft;
   const screenHeight = Dimensions.get('window').height;
   const inSession = currentSession != null && !currentSession.hasClaimedBreak
-  
+
   const [sessionFinished, setSessionFinished] = useState(false);
   const [breakFinished, setBreakFinished] = useState(false);
 
+
+  // calculates whether the session or break is finished, and updates the time left state for those screens
   const calcWhatsFinished = () => {
     if (currentSession != null && currentSession.startTime != null) {
       // calculates time left in seconds
@@ -508,6 +528,89 @@ function StudySessionsScreen({ navigation }) {
     }, 1000); // updates every second
     return () => clearInterval(intervalId);
   }, [currentSession]);
+
+  // IOS Live Activities
+  useEffect(() => {
+    if (currentSession && currentSession.startTime && currentSession.startTime != null && currentSession.hasClaimedSession !== true) {
+      StudyCountdownWidgetModule.startLiveActivity(currentSession.startTime / 1000 + currentSession.length * 60);
+    }
+    else if (currentSession && currentSession.breakStartTime && currentSession.hasClaimedSession === true && currentSession.hasClaimedBreak !== true) {
+      StudyCountdownWidgetModule.startLiveActivity(currentSession.breakStartTime / 1000 + currentSession.breakLength * 60);
+    }
+  }, [currentSession]);
+
+  // Android only notifications, incomplete, for ios using live activities
+  /*
+  const displayNotification = async (timerSeconds) => {
+    const channelId = await notifee.createChannel({
+      id: 'timer',
+      name: 'Timer Notifications',
+      importance: AndroidImportance.HIGH,
+      sound: 'none',
+      vibration: false, 
+    });
+  
+    notifee.displayNotification({
+      title: 'Session time left',
+      body: formatTime(timerSeconds),
+      android: {
+        channelId,
+        ongoing: true, // Keep notification persistent
+        showTimestamp: false,
+        color: colours.primary,
+      },
+      ios: {
+        _displayInForeground: false,
+        vibration: false,
+        sound: 'default',
+      },
+    });
+  }
+  
+  // Formats the time in seconds to MM:SS
+  const formatTime = (seconds) => { 
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  }
+
+
+  // background timer for notifications
+  useEffect(() => {
+    // Checks if the session or break is in progress
+    let sentFinishedNotification = false;
+    if (inSession === true && !(timeLeft <= 0 || currentSession.hasClaimedSession === true)) {
+      sentFinishedNotification = false;
+      BackgroundTimer.runBackgroundTimer(() => {
+        // Checks if the time left is in 10 second intervals
+        const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / SECOND_IN_MILLISECONDS);
+        console.log(newTimeLeft);
+        console.log("sent finished notification: " + sentFinishedNotification)
+        if ((newTimeLeft <= 0 || inSession === false) && sentFinishedNotification === false) {
+          BackgroundTimer.stopBackgroundTimer();
+          sentFinishedNotification = true;
+          // Trigger final notification for timer completion
+          notifee.displayNotification({
+            title: 'Session finished',
+            body: 'Time to take a break!',
+            android: {
+              channelId: 'timer',
+              ongoing: false,
+              showTimestamp: false,
+              color: colours.primary,
+              showChronometer: false,
+            },
+          });
+        } else if (newTimeLeft % 10 === 0) {
+          displayNotification(newTimeLeft);
+        }
+      }, 5000); // Update every second
+      return () => {
+        BackgroundTimer.stopBackgroundTimer();
+      };
+    }
+  }, [inSession, sessionFinished, breakFinished]);*/
+
   return(
     <Stack.Navigator initialRouteName='StudySessionsMainPage'
     screenOptions={{

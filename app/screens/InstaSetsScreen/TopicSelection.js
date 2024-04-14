@@ -68,14 +68,14 @@ export default function TopicSelection(props) {
     const [isSelected, setSelection] = useState(true);
     title = topics[i].title;
 
-    if (title.includes("paper")) {
+    if (title.includes("(paper")) {
       setHasPapers = true;
     }
 
     paper = ""
     if (setHasPapers) {
       for (let i = 0; i < 8; i++) {
-        if (title.includes(i)) {
+        if (title.includes("paper" + i)) {
           paper = i
           break
         }

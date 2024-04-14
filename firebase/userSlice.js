@@ -99,7 +99,6 @@ const userSlice = createSlice({
     },
     setStudySessionsTimeLeft: (state, action) => {
       state.studySessionsTimeLeft = action.payload;
-      console.log("(payload) Time Left: ", action.payload)
     },
   },
   extraReducers: (builder) => {
