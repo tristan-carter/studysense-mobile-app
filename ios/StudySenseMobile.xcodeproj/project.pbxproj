@@ -175,6 +175,7 @@
 		6A6F263B2BCC46E000423DED /* StudyCountdownWidgetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCountdownWidgetModule.swift; sourceTree = "<group>"; };
 		6A6F263E2BCC473F00423DED /* StudyCountdownWidgetBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyCountdownWidgetBridge.m; sourceTree = "<group>"; };
 		6A6F26402BCC483D00423DED /* StudySenseMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudySenseMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		6AD20ECC2BCF06D800A772C2 /* StudyCountdownWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyCountdownWidgetExtension.entitlements; sourceTree = "<group>"; };
 		6AE2EAB52BCB3175006FF9A2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6AE2EAB72BCB3175006FF9A2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		758C410B57E34CC9A9937428 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../app/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
@@ -388,6 +389,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6AD20ECC2BCF06D800A772C2 /* StudyCountdownWidgetExtension.entitlements */,
 				07E92EBA2B35EC38006F5BFD /* fonts */,
 				07C2A0BC2B33448700DBAB2B /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* StudySenseMobile */,
@@ -978,6 +980,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = StudyCountdownWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1021,6 +1024,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = StudyCountdownWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;

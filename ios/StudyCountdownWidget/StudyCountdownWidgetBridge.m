@@ -13,7 +13,7 @@
   return NO;
 }
 
-RCT_EXTERN_METHOD(startLiveActivity:(nonnull double *)timestamp)
+RCT_EXTERN_METHOD(startLiveActivity:(nonnull double *)timestamp isBreak:(BOOL)isBreak)
 RCT_EXTERN_METHOD(stopLiveActivity)
 
 @end

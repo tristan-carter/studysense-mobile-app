@@ -12,12 +12,17 @@ import SwiftUI
 struct StudyCountdownWidgetAttributes: ActivityAttributes {
   public struct ContentState: Codable, Hashable {
     var finishesAt: Date?
+    var isBreak: Bool = false
     func getTimeIntervalSinceNow() -> Double {
       guard let finishesAt = self.finishesAt else {
         return 0
       }
       let timeRemaining = finishesAt.timeIntervalSince1970 - Date().timeIntervalSince1970
-      return timeRemaining > 0 ? timeRemaining : -1 // Check if countdown is over
+      if finishesAt > Date() {  // Check if 'finishesAt' is in the future
+          return timeRemaining  // Positive if in the future
+      } else {
+          return -1   // Negative if in the past
+      }
     }
   }
 }
@@ -26,50 +31,73 @@ struct StudyCountdownWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: StudyCountdownWidgetAttributes.self) { context in
             // Lock screen/banner UI goes here
-            HStack {
-              Image("AppIcon")
+          HStack(alignment: .center) { // Ensure centered vertical alignment
+              Image("StudySenseLogo")
                   .resizable()
                   .scaledToFit()
-                  .frame(width: 30, height: 30)
-              if context.state.getTimeIntervalSinceNow() > 0 {
-                  Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()),
-                       style: .timer)
-                      .font(.title)
-                      .fontWeight(.medium)
-                      .monospacedDigit()
-                      .padding()
-              } else {
-                  Text("Finished")
-                      .font(.title)
-                      .fontWeight(.medium)
-                      .padding()
+                  .frame(width: 70, height: 70)
+                  .padding(13)
+
+              VStack(alignment: .leading) { // Align timer & text to the left
+                  if context.state.getTimeIntervalSinceNow() > 0 {
+                      Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()), style: .timer)
+                          .font(.largeTitle)
+                          .fontWeight(.semibold)
+                          .monospacedDigit()
+
+                      Spacer()
+
+                      if context.state.isBreak {
+                          Text("Brain break in progress...")
+                          .font(.callout)                      } else {
+                          Text("Stay focused.")
+                          .font(.callout)
+                      }
+                  } else {
+                      Text("Finished")
+                          .font(.title)
+                          .fontWeight(.medium)
+                  }
               }
-            }
-            .activityBackgroundTint(Color.white.opacity(0.5))
+              .padding(.trailing)
+              .padding(.vertical, 18)
+              
+              Spacer()
+          }
+          .activityBackgroundTint(Color.white.opacity(0.5))
 
         } dynamicIsland: { context in
-            DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
-                DynamicIslandExpandedRegion(.leading) {
-                    Text("DI L")
-                }
-                DynamicIslandExpandedRegion(.trailing) {
-                    Text("DI T")
-                }
-                DynamicIslandExpandedRegion(.bottom) {
-                    Text("DI B")
-                    // more content
-                }
-            } compactLeading: {
-                Text("CL")
-            } compactTrailing: {
-                Text("CT")
-            } minimal: {
-                Text("Min")
+          DynamicIsland {
+            DynamicIslandExpandedRegion(.leading) {
+              Image("StudySenseLogo")
+                .resizable()
+                .frame(width: 50, height: 50)
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
+            DynamicIslandExpandedRegion(.center) {
+              if context.state.getTimeIntervalSinceNow() > 0 {
+                Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()), style: .timer)
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .monospacedDigit()
+                    .foregroundColor(Color("PrimaryColor"))
+                    .padding(10)
+              }
+            }
+          } compactLeading: {
+            Image("StudySenseLogo")
+              .resizable()
+              .frame(width: 35, height: 35, alignment: .trailing)
+              .padding(5)
+          } compactTrailing: {
+            Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()), style: .timer)
+              .monospacedDigit()
+              .foregroundColor(Color("PrimaryColor"))
+              .font(.title)
+              .fontWeight(.medium)
+              .frame(maxWidth: .minimum(50, 50), alignment: .leading)
+          } minimal: {
+            Image("StudySenseLogo")
+          }
         }
     }
 }
@@ -82,7 +110,7 @@ extension StudyCountdownWidgetAttributes {
 
 extension StudyCountdownWidgetAttributes.ContentState {
   fileprivate static var initState: StudyCountdownWidgetAttributes.ContentState {
-    StudyCountdownWidgetAttributes.ContentState(finishesAt: Date())
+    StudyCountdownWidgetAttributes.ContentState(finishesAt: Date(), isBreak: false)
   }
 }
 
