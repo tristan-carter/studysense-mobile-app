@@ -14,6 +14,7 @@
 }
 
 RCT_EXTERN_METHOD(startLiveActivity:(nonnull double *)timestamp isBreak:(BOOL)isBreak)
+RCT_EXTERN_METHOD(finishSession)
 RCT_EXTERN_METHOD(stopLiveActivity)
 
 @end

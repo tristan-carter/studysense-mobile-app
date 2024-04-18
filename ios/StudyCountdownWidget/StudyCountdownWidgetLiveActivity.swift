@@ -13,16 +13,12 @@ struct StudyCountdownWidgetAttributes: ActivityAttributes {
   public struct ContentState: Codable, Hashable {
     var finishesAt: Date?
     var isBreak: Bool = false
+    var isFinished: Bool = false
     func getTimeIntervalSinceNow() -> Double {
       guard let finishesAt = self.finishesAt else {
         return 0
       }
-      let timeRemaining = finishesAt.timeIntervalSince1970 - Date().timeIntervalSince1970
-      if finishesAt > Date() {  // Check if 'finishesAt' is in the future
-          return timeRemaining  // Positive if in the future
-      } else {
-          return -1   // Negative if in the past
-      }
+      return self.finishesAt!.timeIntervalSince(Date())
     }
   }
 }
@@ -31,19 +27,38 @@ struct StudyCountdownWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: StudyCountdownWidgetAttributes.self) { context in
             // Lock screen/banner UI goes here
-          HStack(alignment: .center) { // Ensure centered vertical alignment
+          HStack(alignment: .center) {
               Image("StudySenseLogo")
                   .resizable()
                   .scaledToFit()
                   .frame(width: 70, height: 70)
                   .padding(13)
 
-              VStack(alignment: .leading) { // Align timer & text to the left
-                  if context.state.getTimeIntervalSinceNow() > 0 {
-                      Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()), style: .timer)
+              VStack(alignment: .leading) {
+                var timeLeft = context.state.getTimeIntervalSinceNow()
+
+                if context.state.finishesAt!.timeIntervalSince(Date()) <= 0 {
+                  if context.state.isBreak {
+                      Text("Break finished")
+                      .font(.callout)
+                      .fontWeight(.semibold)               } else {
+                      Text("Session finished, well done!")
+                      .font(.callout)
+                      .fontWeight(.semibold)
+                  }
+                  Text("Finished")
+                      .font(.title)
+                      .fontWeight(.medium)
+                } else {
+                      Text(Date(timeIntervalSinceNow: timeLeft), style: .timer)
                           .font(.largeTitle)
                           .fontWeight(.semibold)
                           .monospacedDigit()
+                          .onAppear { // Add an onAppear modifier
+                              Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+                                  timeLeft = context.state.getTimeIntervalSinceNow() // Update timeLeft
+                              }
+                          }
 
                       Spacer()
 
@@ -53,10 +68,6 @@ struct StudyCountdownWidgetLiveActivity: Widget {
                           Text("Stay focused.")
                           .font(.callout)
                       }
-                  } else {
-                      Text("Finished")
-                          .font(.title)
-                          .fontWeight(.medium)
                   }
               }
               .padding(.trailing)
