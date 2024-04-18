@@ -13,11 +13,10 @@ struct StudyCountdownWidgetAttributes: ActivityAttributes {
   public struct ContentState: Codable, Hashable {
     var finishesAt: Date?
     var isBreak: Bool = false
-    var isFinished: Bool = false
+    var timeLeft: Double {
+      return finishesAt!.timeIntervalSince(Date())
+    }
     func getTimeIntervalSinceNow() -> Double {
-      guard let finishesAt = self.finishesAt else {
-        return 0
-      }
       return self.finishesAt!.timeIntervalSince(Date())
     }
   }
@@ -37,28 +36,30 @@ struct StudyCountdownWidgetLiveActivity: Widget {
               VStack(alignment: .leading) {
                 var timeLeft = context.state.getTimeIntervalSinceNow()
 
-                if context.state.finishesAt!.timeIntervalSince(Date()) <= 0 {
+                if context.state.timeLeft <= 0 {
                   if context.state.isBreak {
-                      Text("Break finished")
+                    Text("Break finished")
                       .font(.callout)
-                      .fontWeight(.semibold)               } else {
+                      .fontWeight(.semibold)
+                  } else {
                       Text("Session finished, well done!")
                       .font(.callout)
                       .fontWeight(.semibold)
                   }
-                  Text("Finished")
-                      .font(.title)
-                      .fontWeight(.medium)
                 } else {
                       Text(Date(timeIntervalSinceNow: timeLeft), style: .timer)
                           .font(.largeTitle)
                           .fontWeight(.semibold)
                           .monospacedDigit()
-                          .onAppear { // Add an onAppear modifier
-                              Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                                  timeLeft = context.state.getTimeIntervalSinceNow() // Update timeLeft
-                              }
-                          }
+                          .onAppear {
+                            Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+                                timeLeft = max(0, context.state.getTimeIntervalSinceNow())
+                                // Stop the timer if time has reached zero
+                                if timeLeft <= 0 {
+                                    timer.invalidate()
+                                }
+                            }
+                        }
 
                       Spacer()
 

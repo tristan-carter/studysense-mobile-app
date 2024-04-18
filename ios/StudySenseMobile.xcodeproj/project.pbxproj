@@ -44,7 +44,6 @@
 		6A6F26412BCC487500423DED /* StudyCountdownWidgetBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F263E2BCC473F00423DED /* StudyCountdownWidgetBridge.m */; };
 		6A6F26432BCC684D00423DED /* StudyCountdownWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F262E2BCC43EA00423DED /* StudyCountdownWidgetLiveActivity.swift */; };
 		6A6F26452BCC6E1900423DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F26322BCC43EB00423DED /* Assets.xcassets */; };
-		6AC1580D2BD1A67A002F9AD5 /* StudyCountdownWidgetIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1580C2BD1A67A002F9AD5 /* StudyCountdownWidgetIntent.swift */; };
 		6C3A7CBA30D545B0A06E83F6 /* OpenSans_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6745316B75541698B08E57E /* OpenSans_Condensed-Bold.ttf */; };
 		6C6E3ADE3C474557A4B4684D /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E54521FD840B4AB68B7D8A4F /* Montserrat-ExtraBoldItalic.ttf */; };
 		7604F3369F4F490E8FD041FC /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FF6005E4BC44B199FE58493 /* OpenSans-Regular.ttf */; };
@@ -176,7 +175,6 @@
 		6A6F263B2BCC46E000423DED /* StudyCountdownWidgetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCountdownWidgetModule.swift; sourceTree = "<group>"; };
 		6A6F263E2BCC473F00423DED /* StudyCountdownWidgetBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyCountdownWidgetBridge.m; sourceTree = "<group>"; };
 		6A6F26402BCC483D00423DED /* StudySenseMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudySenseMobile-Bridging-Header.h"; sourceTree = "<group>"; };
-		6AC1580C2BD1A67A002F9AD5 /* StudyCountdownWidgetIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCountdownWidgetIntent.swift; sourceTree = "<group>"; };
 		6AD20ECC2BCF06D800A772C2 /* StudyCountdownWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyCountdownWidgetExtension.entitlements; sourceTree = "<group>"; };
 		6AE2EAB52BCB3175006FF9A2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6AE2EAB72BCB3175006FF9A2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -306,7 +304,6 @@
 				6A6F263B2BCC46E000423DED /* StudyCountdownWidgetModule.swift */,
 				6A6F263E2BCC473F00423DED /* StudyCountdownWidgetBridge.m */,
 				6A6F26402BCC483D00423DED /* StudySenseMobile-Bridging-Header.h */,
-				6AC1580C2BD1A67A002F9AD5 /* StudyCountdownWidgetIntent.swift */,
 			);
 			path = StudyCountdownWidget;
 			sourceTree = "<group>";
@@ -821,7 +818,6 @@
 			files = (
 				6A6F262F2BCC43EA00423DED /* StudyCountdownWidgetLiveActivity.swift in Sources */,
 				6A6F262D2BCC43EA00423DED /* StudyCountdownWidgetBundle.swift in Sources */,
-				6AC1580D2BD1A67A002F9AD5 /* StudyCountdownWidgetIntent.swift in Sources */,
 				6A6F263D2BCC46E000423DED /* StudyCountdownWidgetModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

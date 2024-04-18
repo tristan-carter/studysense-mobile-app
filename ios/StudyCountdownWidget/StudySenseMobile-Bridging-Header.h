@@ -10,6 +10,4 @@
 
 #import <React/RCTBridgeModule.h>
 
-
-
 #endif /* StudySenseMobile_Bridging_Header_h */

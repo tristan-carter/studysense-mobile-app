@@ -12,7 +12,6 @@ import ActivityKit
 class StudyCountdownWidgetModule: NSObject {
   private var finishesAt: Date?
   private var isBreak: Bool = false
-  var isFinished: Bool = false
 
   private func areActivitiesEnabled() -> Bool {
     return ActivityAuthorizationInfo().areActivitiesEnabled
@@ -43,7 +42,6 @@ class StudyCountdownWidgetModule: NSObject {
     // It helps to avoid blocking the main thread
     finishesAt = nil
     isBreak = false
-    isFinished = false
     Task {
       for activity in Activity<StudyCountdownWidgetAttributes>.activities {
         await activity.end(nil, dismissalPolicy: .immediate)

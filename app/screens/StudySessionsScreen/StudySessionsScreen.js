@@ -536,8 +536,9 @@ function StudySessionsScreen({ navigation }) {
   useEffect(() => {
     // stops live activities for session or break
     if (!currentSession || currentSession.hasClaimedBreak === true 
-      || (currentSession.hasClaimedSession === true && currentSession.breakStartTime === null)
+      || (currentSession.hasClaimedSession === true && !currentSession.breakStartTime)
       || timeLeft <= 0
+      || (sessionFinished === true && breakFinished === false) || breakFinished === true
       || (Date.now() - currentSession.startTime > currentSession.length * MINUTE_IN_MILLISECONDS) ) {
         console.log("stopping live activity");
         liveActivityShown.current = false;
@@ -562,7 +563,7 @@ function StudySessionsScreen({ navigation }) {
         liveActivityShown.current = true;
         StudyCountdownWidgetModule.startLiveActivity(currentSession.breakStartTime / 1000 + currentSession.breakLength * 60, true);
     }
-  }, [currentSession, timeLeft]);
+  }, [currentSession, timeLeft, sessionFinished, breakFinished]);
 
   // Android only notifications, incomplete, for ios using live activities
   /*
