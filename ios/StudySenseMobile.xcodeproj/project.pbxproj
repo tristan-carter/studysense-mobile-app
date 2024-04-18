@@ -851,7 +851,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = StudySenseMobileTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -880,7 +880,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 55X67CGZDV;
 				INFOPLIST_FILE = StudySenseMobileTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -912,7 +912,7 @@
 				INFOPLIST_FILE = StudySenseMobile/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StudySense;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -947,7 +947,7 @@
 				INFOPLIST_FILE = StudySenseMobile/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StudySense;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -991,7 +991,7 @@
 				INFOPLIST_FILE = StudyCountdownWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StudyCountdownWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1036,7 +1036,7 @@
 				INFOPLIST_FILE = StudyCountdownWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StudyCountdownWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1117,7 +1117,7 @@
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -1203,7 +1203,7 @@
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
 					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",

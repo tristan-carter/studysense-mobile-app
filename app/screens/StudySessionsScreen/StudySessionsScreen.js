@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Dimensions, TouchableOpacity, Text, Modal, TextInput, Alert, PermissionsAndroid, NativeModules } from 'react-native';
+import { View, Dimensions, TouchableOpacity, Text, Modal, TextInput, Alert, PermissionsAndroid, NativeModules, Platform } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { BarChart } from "react-native-gifted-charts";
 import notifee, { AndroidImportance } from '@notifee/react-native';
-import BackgroundTimer from 'react-native-background-timer';
 
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -534,35 +533,37 @@ function StudySessionsScreen({ navigation }) {
 
   // IOS Live Activities
   useEffect(() => {
-    // stops live activities for session or break
-    if (!currentSession || currentSession.hasClaimedBreak === true 
-      || (currentSession.hasClaimedSession === true && !currentSession.breakStartTime)
-      || timeLeft <= 0
-      || (sessionFinished === true && breakFinished === false) || breakFinished === true
-      || (Date.now() - currentSession.startTime > currentSession.length * MINUTE_IN_MILLISECONDS) ) {
-        console.log("stopping live activity");
-        liveActivityShown.current = false;
-        StudyCountdownWidgetModule.stopLiveActivity();
-    }
-
-    // starts live activities for session or break
-    if (currentSession && currentSession.startTime
-      && currentSession.hasClaimedSession !== true
-      && liveActivityShown.current === false
-      && Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / SECOND_IN_MILLISECONDS) > 0) {
-        console.log("starting live activity");
-        liveActivityShown.current = true;
-        StudyCountdownWidgetModule.startLiveActivity(currentSession.startTime / 1000 + currentSession.length * 60, false);
-    }
-    else if (currentSession && currentSession.breakStartTime
-      && currentSession.hasClaimedSession === true
-      && currentSession.hasClaimedBreak !== true
-      && liveActivityShown.current === false
-      && Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / SECOND_IN_MILLISECONDS) > 0) {
-        console.log("starting live activity break");
-        liveActivityShown.current = true;
-        StudyCountdownWidgetModule.startLiveActivity(currentSession.breakStartTime / 1000 + currentSession.breakLength * 60, true);
-    }
+    if (Platform.OS === 'ios' && Platform.Version >= 16.1) {
+      // stops live activities for session or break
+      if (!currentSession || currentSession.hasClaimedBreak === true 
+        || (currentSession.hasClaimedSession === true && !currentSession.breakStartTime)
+        || timeLeft <= 0
+        || (sessionFinished === true && breakFinished === false) || breakFinished === true
+        || (Date.now() - currentSession.startTime > currentSession.length * MINUTE_IN_MILLISECONDS) ) {
+          console.log("stopping live activity");
+          liveActivityShown.current = false;
+          StudyCountdownWidgetModule.stopLiveActivity();
+      }
+  
+      // starts live activities for session or break
+      if (currentSession && currentSession.startTime
+        && currentSession.hasClaimedSession !== true
+        && liveActivityShown.current === false
+        && Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / SECOND_IN_MILLISECONDS) > 0) {
+          console.log("starting live activity");
+          liveActivityShown.current = true;
+          StudyCountdownWidgetModule.startLiveActivity(currentSession.startTime / 1000 + currentSession.length * 60, false);
+      }
+      else if (currentSession && currentSession.breakStartTime
+        && currentSession.hasClaimedSession === true
+        && currentSession.hasClaimedBreak !== true
+        && liveActivityShown.current === false
+        && Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / SECOND_IN_MILLISECONDS) > 0) {
+          console.log("starting live activity break");
+          liveActivityShown.current = true;
+          StudyCountdownWidgetModule.startLiveActivity(currentSession.breakStartTime / 1000 + currentSession.breakLength * 60, true);
+        }
+      }
   }, [currentSession, timeLeft, sessionFinished, breakFinished]);
 
   // Android only notifications, incomplete, for ios using live activities

@@ -83,17 +83,23 @@ struct StudyCountdownWidgetLiveActivity: Widget {
             DynamicIslandExpandedRegion(.leading) {
               Image("StudySenseLogo")
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 70, height: 70)
             }
             DynamicIslandExpandedRegion(.center) {
-              if context.state.getTimeIntervalSinceNow() > 0 {
-                Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()), style: .timer)
-                    .font(.title)
-                    .fontWeight(.medium)
-                    .monospacedDigit()
-                    .foregroundColor(Color("PrimaryColor"))
-                    .padding(10)
-              }
+              VStack(alignment: .center) { // Center the timer vertically
+                if context.state.getTimeIntervalSinceNow() > 0 {
+                    Text(Date(timeIntervalSinceNow: context.state.getTimeIntervalSinceNow()), style: .timer)
+                        .font(.title2) // Slightly smaller font
+                        .fontWeight(.semibold)
+                        .monospacedDigit()
+                        .foregroundColor(.white) // Better contrast
+                        .padding(8)
+                        .background(Color("PrimaryColor")) // Subtle background
+                        .clipShape(Capsule()) // Rounded shape
+                } else {
+                   // Handle negative timer scenarios
+                }
+            }
             }
           } compactLeading: {
             Image("StudySenseLogo")
@@ -124,10 +130,4 @@ extension StudyCountdownWidgetAttributes.ContentState {
   fileprivate static var initState: StudyCountdownWidgetAttributes.ContentState {
     StudyCountdownWidgetAttributes.ContentState(finishesAt: Date(), isBreak: false)
   }
-}
-
-#Preview("Notification", as: .content, using: StudyCountdownWidgetAttributes.preview) {
-   StudyCountdownWidgetLiveActivity()
-} contentStates: {
-    StudyCountdownWidgetAttributes.ContentState.initState
 }
