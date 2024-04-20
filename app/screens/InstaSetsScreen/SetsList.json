@@ -36057,6 +36057,2493 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "title": "French",
+                    "examboards": [
+                        {
+                            "title": "AQA",
+                            "setname": "French AQA GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Main Vocab",
+                                    "cards": [
+                                        {
+                                            "term": "Accrocher",
+                                            "definition": "To hang"
+                                        },
+                                        {
+                                            "term": "Assister",
+                                            "definition": "To attend"
+                                        },
+                                        {
+                                            "term": "Avoir h\\xc3\\xa2te de",
+                                            "definition": "To be eager/anxious to"
+                                        },
+                                        {
+                                            "term": "Barbant",
+                                            "definition": "Boring"
+                                        },
+                                        {
+                                            "term": "Conserver",
+                                            "definition": "To keep"
+                                        },
+                                        {
+                                            "term": "Consommer",
+                                            "definition": "To consume"
+                                        },
+                                        {
+                                            "term": "Co\\xc3\\xbbter",
+                                            "definition": "To cost"
+                                        },
+                                        {
+                                            "term": "D\\xc3\\xa9corer",
+                                            "definition": "To decorate"
+                                        },
+                                        {
+                                            "term": "Dormir",
+                                            "definition": "To sleep"
+                                        },
+                                        {
+                                            "term": "Durer",
+                                            "definition": "To last"
+                                        },
+                                        {
+                                            "term": "\\xc3\\x8atre croyant",
+                                            "definition": "To be a believer"
+                                        },
+                                        {
+                                            "term": "F\\xc3\\xaater",
+                                            "definition": "To celebrate"
+                                        },
+                                        {
+                                            "term": "Juif/juive",
+                                            "definition": "Jewish"
+                                        },
+                                        {
+                                            "term": "L\\'anniversaire",
+                                            "definition": "Birthday"
+                                        },
+                                        {
+                                            "term": "L\\'\\xc3\\xa9glise",
+                                            "definition": "Church"
+                                        },
+                                        {
+                                            "term": "L\\'hu\\xc3\\xaetre",
+                                            "definition": "Oyster"
+                                        },
+                                        {
+                                            "term": "L\\'organisation caritative",
+                                            "definition": "Charity, charitable organisation"
+                                        },
+                                        {
+                                            "term": "La blague",
+                                            "definition": "Joke"
+                                        },
+                                        {
+                                            "term": "La boule de No\\xc3\\xabl",
+                                            "definition": "Bauble"
+                                        },
+                                        {
+                                            "term": "La b\\xc3\\xbbche de No\\xc3\\xabl",
+                                            "definition": "Christmas log"
+                                        },
+                                        {
+                                            "term": "La Chandeleur",
+                                            "definition": "Pancake day"
+                                        },
+                                        {
+                                            "term": "La communaut\\xc3\\xa9",
+                                            "definition": "Community"
+                                        },
+                                        {
+                                            "term": "La cr\\xc3\\xaape",
+                                            "definition": "Pancake"
+                                        },
+                                        {
+                                            "term": "La dinde",
+                                            "definition": "Turkey"
+                                        },
+                                        {
+                                            "term": "La f\\xc3\\xaate",
+                                            "definition": "Festival/celebration /party"
+                                        },
+                                        {
+                                            "term": "La f\\xc3\\xaate des m\\xc3\\xa8res",
+                                            "definition": "Mother\\'s Day"
+                                        },
+                                        {
+                                            "term": "La f\\xc3\\xaate des Rois",
+                                            "definition": "Twelfth Night/ Epiphany"
+                                        },
+                                        {
+                                            "term": "La f\\xc3\\xaate du travail",
+                                            "definition": "May Day"
+                                        },
+                                        {
+                                            "term": "La fin",
+                                            "definition": "End"
+                                        },
+                                        {
+                                            "term": "La lumi\\xc3\\xa8re",
+                                            "definition": "Light"
+                                        },
+                                        {
+                                            "term": "La messe",
+                                            "definition": "Mass"
+                                        },
+                                        {
+                                            "term": "La messe de minuit",
+                                            "definition": "Midnight mass"
+                                        },
+                                        {
+                                            "term": "La mosqu\\xc3\\xa9e",
+                                            "definition": "Mosque"
+                                        },
+                                        {
+                                            "term": "La p\\xc3\\xa2te",
+                                            "definition": "Dough"
+                                        },
+                                        {
+                                            "term": "La pentec\\xc3\\xb4te",
+                                            "definition": "Whitsuntide"
+                                        },
+                                        {
+                                            "term": "La r\\xc3\\xa9union",
+                                            "definition": "Meeting"
+                                        },
+                                        {
+                                            "term": "La Saint Valentin",
+                                            "definition": "Valentine\\'s Day"
+                                        },
+                                        {
+                                            "term": "La Saint-Sylvestre",
+                                            "definition": "New Year\\'s Eve"
+                                        },
+                                        {
+                                            "term": "La soci\\xc3\\xa9t\\xc3\\xa9 de consommation",
+                                            "definition": "Consumer society"
+                                        },
+                                        {
+                                            "term": "La Toussaint",
+                                            "definition": "All Saints\\' Day"
+                                        },
+                                        {
+                                            "term": "La veille de No\\xc3\\xabl",
+                                            "definition": "Christmas Eve"
+                                        },
+                                        {
+                                            "term": "Le cadeau",
+                                            "definition": "Present"
+                                        },
+                                        {
+                                            "term": "Le cirque",
+                                            "definition": "Circus"
+                                        },
+                                        {
+                                            "term": "Le d\\xc3\\xa9fil\\xc3\\xa9",
+                                            "definition": "Procession"
+                                        },
+                                        {
+                                            "term": "Le Jour de l\\'An",
+                                            "definition": "New Year\\'s Day"
+                                        },
+                                        {
+                                            "term": "Le jour f\\xc3\\xa9ri\\xc3\\xa9",
+                                            "definition": "Public holiday"
+                                        },
+                                        {
+                                            "term": "Le repas",
+                                            "definition": "Meal"
+                                        },
+                                        {
+                                            "term": "Le r\\xc3\\xa9veillon de No\\xc3\\xabl",
+                                            "definition": "Christmas Eve"
+                                        },
+                                        {
+                                            "term": "Le sapin",
+                                            "definition": "Christmas tree"
+                                        },
+                                        {
+                                            "term": "Le spectacle de rue",
+                                            "definition": "Street show"
+                                        },
+                                        {
+                                            "term": "Les feux d\\'artifice",
+                                            "definition": "Fireworks"
+                                        },
+                                        {
+                                            "term": "Les gens",
+                                            "definition": "People"
+                                        },
+                                        {
+                                            "term": "Les jeunes",
+                                            "definition": "Young people"
+                                        },
+                                        {
+                                            "term": "Musulman",
+                                            "definition": "Muslim"
+                                        },
+                                        {
+                                            "term": "Offrir",
+                                            "definition": "To offer"
+                                        },
+                                        {
+                                            "term": "Ouvrir",
+                                            "definition": "To open"
+                                        },
+                                        {
+                                            "term": "P\\xc3\\xa2ques",
+                                            "definition": "Easter"
+                                        },
+                                        {
+                                            "term": "Partager",
+                                            "definition": "To share"
+                                        },
+                                        {
+                                            "term": "Passer",
+                                            "definition": "To spend"
+                                        },
+                                        {
+                                            "term": "Poisson d\\'avril",
+                                            "definition": "April fools\\' Day, April Fool!"
+                                        },
+                                        {
+                                            "term": "Recevoir",
+                                            "definition": "To receive"
+                                        },
+                                        {
+                                            "term": "Religieux/religieuse",
+                                            "definition": "Religious"
+                                        },
+                                        {
+                                            "term": "R\\xc3\\xa9server",
+                                            "definition": "To book, to reserve"
+                                        },
+                                        {
+                                            "term": "R\\xc3\\xa9unir",
+                                            "definition": "To gather"
+                                        },
+                                        {
+                                            "term": "Rigolo",
+                                            "definition": "Funny"
+                                        },
+                                        {
+                                            "term": "S\\'entendre",
+                                            "definition": "To get on"
+                                        },
+                                        {
+                                            "term": "S\\'installer",
+                                            "definition": "To settle in"
+                                        },
+                                        {
+                                            "term": "Se passer",
+                                            "definition": "To take place"
+                                        },
+                                        {
+                                            "term": "Se reposer",
+                                            "definition": "To relax"
+                                        },
+                                        {
+                                            "term": "Se retrouver",
+                                            "definition": "To meet"
+                                        },
+                                        {
+                                            "term": "Tout le monde",
+                                            "definition": "Everyone"
+                                        },
+                                        {
+                                            "term": "Voir",
+                                            "definition": "To see"
+                                        },
+                                        {
+                                            "term": "Voyager",
+                                            "definition": "To travel"
+                                        },
+                                        {
+                                            "term": "Donner",
+                                            "definition": "To give"
+                                        },
+                                        {
+                                            "term": "S\\'amuser",
+                                            "definition": "To have fun"
+                                        },
+                                        {
+                                            "term": "aimable",
+                                            "definition": "kind"
+                                        },
+                                        {
+                                            "term": "a\\xc3\\xaen\\xc3\\xa9",
+                                            "definition": "elder"
+                                        },
+                                        {
+                                            "term": "l\\'amour (m)",
+                                            "definition": "love"
+                                        },
+                                        {
+                                            "term": "avoir...ans",
+                                            "definition": "to be...years old"
+                                        },
+                                        {
+                                            "term": "la bague",
+                                            "definition": "ring"
+                                        },
+                                        {
+                                            "term": "la barbe",
+                                            "definition": "beard"
+                                        },
+                                        {
+                                            "term": "bavard",
+                                            "definition": "chatty/talkative"
+                                        },
+                                        {
+                                            "term": "le beau-p\\xc3\\xa8re",
+                                            "definition": "step-father"
+                                        },
+                                        {
+                                            "term": "beau/belle/bel",
+                                            "definition": "beautiful"
+                                        },
+                                        {
+                                            "term": "la belle-m\\xc3\\xa8re",
+                                            "definition": "step-mother"
+                                        },
+                                        {
+                                            "term": "b\\xc3\\xaate",
+                                            "definition": "stupid, silly"
+                                        },
+                                        {
+                                            "term": "boucl\\xc3\\xa9",
+                                            "definition": "curly"
+                                        },
+                                        {
+                                            "term": "le bouton",
+                                            "definition": "spot, pimple"
+                                        },
+                                        {
+                                            "term": "c\\xc3\\xa9libataire",
+                                            "definition": "single"
+                                        },
+                                        {
+                                            "term": "les cheveux (m)",
+                                            "definition": "hair"
+                                        },
+                                        {
+                                            "term": "compr\\xc3\\xa9hensif/compr\\xc3\\xa9hensive",
+                                            "definition": "understanding"
+                                        },
+                                        {
+                                            "term": "la confiance",
+                                            "definition": "trust"
+                                        },
+                                        {
+                                            "term": "conna\\xc3\\xaetre",
+                                            "definition": "to know (a person)"
+                                        },
+                                        {
+                                            "term": "le copain/la copine",
+                                            "definition": "friend, mate"
+                                        },
+                                        {
+                                            "term": "court",
+                                            "definition": "short"
+                                        },
+                                        {
+                                            "term": "de mauvaise humeur",
+                                            "definition": "bad tempered"
+                                        },
+                                        {
+                                            "term": "de taille moyenne",
+                                            "definition": "medium height"
+                                        },
+                                        {
+                                            "term": "le demi-fr\\xc3\\xa8re",
+                                            "definition": "half-brother"
+                                        },
+                                        {
+                                            "term": "la demi-s\\xc5\\x93ur",
+                                            "definition": "half-sister"
+                                        },
+                                        {
+                                            "term": "dire",
+                                            "definition": "to say, tell"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Edexcel",
+                            "setname": "French Edexcel GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Main Vocab",
+                                    "cards": [
+                                        {
+                                            "term": "J\\'ai achet\\xc3\\xa9",
+                                            "definition": "I bought"
+                                        },
+                                        {
+                                            "term": "Je vais utiliser",
+                                            "definition": "I\\'m going to use"
+                                        },
+                                        {
+                                            "term": "J\\'ai pris",
+                                            "definition": "I took"
+                                        },
+                                        {
+                                            "term": "Je vais aller",
+                                            "definition": "I\\'m going to go"
+                                        },
+                                        {
+                                            "term": "Je partage",
+                                            "definition": "I share"
+                                        },
+                                        {
+                                            "term": "Je vais partager",
+                                            "definition": "I\\'m going to share"
+                                        },
+                                        {
+                                            "term": "une emission",
+                                            "definition": "a programme"
+                                        },
+                                        {
+                                            "term": "mon vieux portable",
+                                            "definition": "my old mobile"
+                                        },
+                                        {
+                                            "term": "tous les jours",
+                                            "definition": "every day"
+                                        },
+                                        {
+                                            "term": "hier",
+                                            "definition": "yesterday"
+                                        },
+                                        {
+                                            "term": "plus tard",
+                                            "definition": "in future (later)"
+                                        },
+                                        {
+                                            "term": "Il ne faut pas",
+                                            "definition": "You mustn\\'t"
+                                        },
+                                        {
+                                            "term": "gaspiller de l\\'eau",
+                                            "definition": "waste water"
+                                        },
+                                        {
+                                            "term": "trop",
+                                            "definition": "too much"
+                                        },
+                                        {
+                                            "term": "Il faut",
+                                            "definition": "You must"
+                                        },
+                                        {
+                                            "term": "acheter des produits bios",
+                                            "definition": "buy organic products"
+                                        },
+                                        {
+                                            "term": "les journaux",
+                                            "definition": "newspapers"
+                                        },
+                                        {
+                                            "term": "le verre",
+                                            "definition": "glass"
+                                        },
+                                        {
+                                            "term": "les canettes",
+                                            "definition": "cans"
+                                        },
+                                        {
+                                            "term": "le ch\\xc3\\xb4mage",
+                                            "definition": "unemployment"
+                                        },
+                                        {
+                                            "term": "les d\\xc3\\xa9chets",
+                                            "definition": "litter"
+                                        },
+                                        {
+                                            "term": "les distractions",
+                                            "definition": "entertainment"
+                                        },
+                                        {
+                                            "term": "en banlieue",
+                                            "definition": "in the suburbs"
+                                        },
+                                        {
+                                            "term": "\\xc3\\xa0 la campagne",
+                                            "definition": "in the countryside"
+                                        },
+                                        {
+                                            "term": "loin de",
+                                            "definition": "far from"
+                                        },
+                                        {
+                                            "term": "Il y a des espaces verts",
+                                            "definition": "There are parks"
+                                        },
+                                        {
+                                            "term": "C\\'est trop bruyant",
+                                            "definition": "It\\'s too noisy"
+                                        },
+                                        {
+                                            "term": "Il y a trop de circulation",
+                                            "definition": "There\\'s too much traffic"
+                                        },
+                                        {
+                                            "term": "le sida",
+                                            "definition": "AIDS"
+                                        },
+                                        {
+                                            "term": "la faim",
+                                            "definition": "hunger"
+                                        },
+                                        {
+                                            "term": "la guerre",
+                                            "definition": "war"
+                                        },
+                                        {
+                                            "term": "la pauvret\\xc3\\xa9",
+                                            "definition": "poverty"
+                                        },
+                                        {
+                                            "term": "On peut",
+                                            "definition": "You can"
+                                        },
+                                        {
+                                            "term": "Je veux",
+                                            "definition": "I want"
+                                        },
+                                        {
+                                            "term": "tomber amoureux",
+                                            "definition": "to fall in love"
+                                        },
+                                        {
+                                            "term": "avoir des enfants",
+                                            "definition": "to have children"
+                                        },
+                                        {
+                                            "term": "devenir",
+                                            "definition": "to become"
+                                        },
+                                        {
+                                            "term": "gagner de l\\'argent",
+                                            "definition": "to earn some money"
+                                        },
+                                        {
+                                            "term": "Je n\\'ai jamais fum\\xc3\\xa9",
+                                            "definition": "I\\'ve never smoked"
+                                        },
+                                        {
+                                            "term": "C\\'est d\\xc3\\xa9go\\xc3\\xbbtant",
+                                            "definition": "It\\'s disgusting"
+                                        },
+                                        {
+                                            "term": "co\\xc3\\xbbter tr\\xc3\\xa8s cher",
+                                            "definition": "to be very expensive"
+                                        },
+                                        {
+                                            "term": "C\\'est d\\xc3\\xa9stressant",
+                                            "definition": "It relaxes you"
+                                        },
+                                        {
+                                            "term": "\\xc3\\x87a me donne confiance",
+                                            "definition": "It gives me confidence"
+                                        },
+                                        {
+                                            "term": "Je le trouve",
+                                            "definition": "I think it\\'s"
+                                        },
+                                        {
+                                            "term": "mourir d\\'un cancer des poumons",
+                                            "definition": "to die of lung cancer"
+                                        },
+                                        {
+                                            "term": "Ce n\\'est pas bon pour la sant\\xc3\\xa9",
+                                            "definition": "It\\'s not good for your health"
+                                        },
+                                        {
+                                            "term": "Je fume depuis un an",
+                                            "definition": "I\\'ve been smoking for a year"
+                                        },
+                                        {
+                                            "term": "il y a six mois",
+                                            "definition": "six months ago"
+                                        },
+                                        {
+                                            "term": "le probl\\xc3\\xa8me le plus grave",
+                                            "definition": "the most serious problem"
+                                        },
+                                        {
+                                            "term": "l\\'alcoolisme",
+                                            "definition": "alcoholism"
+                                        },
+                                        {
+                                            "term": "le tabagisme",
+                                            "definition": "smoking"
+                                        },
+                                        {
+                                            "term": "la drogue",
+                                            "definition": "drugs"
+                                        },
+                                        {
+                                            "term": "Je mange sainement",
+                                            "definition": "I eat healthily"
+                                        },
+                                        {
+                                            "term": "Je bois beaucoup d\\'eau",
+                                            "definition": "I drink lots of water"
+                                        },
+                                        {
+                                            "term": "Je me couche t\\xc3\\xb4t",
+                                            "definition": "I go to bed early"
+                                        },
+                                        {
+                                            "term": "mal \\xc3\\xa0 la t\\xc3\\xaate",
+                                            "definition": "a headache"
+                                        },
+                                        {
+                                            "term": "mal au dos",
+                                            "definition": "a sore back"
+                                        },
+                                        {
+                                            "term": "mal \\xc3\\xa0 l\\'\\xc3\\xa9paule",
+                                            "definition": "a sore shoulder"
+                                        },
+                                        {
+                                            "term": "de la fi\\xc3\\xa8vre",
+                                            "definition": "a fever"
+                                        },
+                                        {
+                                            "term": "la grippe",
+                                            "definition": "flu"
+                                        },
+                                        {
+                                            "term": "un rhume",
+                                            "definition": "a cold"
+                                        },
+                                        {
+                                            "term": "Je tousse",
+                                            "definition": "I\\'m coughing"
+                                        },
+                                        {
+                                            "term": "J\\'ai vomi",
+                                            "definition": "I\\'ve been sick"
+                                        },
+                                        {
+                                            "term": "rester au lit",
+                                            "definition": "stay in bed"
+                                        },
+                                        {
+                                            "term": "prendre des comprim\\xc3\\xa9s",
+                                            "definition": "take some pill"
+                                        },
+                                        {
+                                            "term": "sucer des pastilles",
+                                            "definition": "suck some throat sweets"
+                                        },
+                                        {
+                                            "term": "deux fois par jour",
+                                            "definition": "twice a day"
+                                        },
+                                        {
+                                            "term": "le bras",
+                                            "definition": "arm"
+                                        },
+                                        {
+                                            "term": "le coude",
+                                            "definition": "elbow"
+                                        },
+                                        {
+                                            "term": "le doigt",
+                                            "definition": "finger"
+                                        },
+                                        {
+                                            "term": "le dos",
+                                            "definition": "back"
+                                        },
+                                        {
+                                            "term": "le genou",
+                                            "definition": "knee"
+                                        },
+                                        {
+                                            "term": "le nez",
+                                            "definition": "nose"
+                                        },
+                                        {
+                                            "term": "le pied",
+                                            "definition": "foot"
+                                        },
+                                        {
+                                            "term": "le ventre",
+                                            "definition": "stomach"
+                                        },
+                                        {
+                                            "term": "la gorge",
+                                            "definition": "throat"
+                                        },
+                                        {
+                                            "term": "la jambe",
+                                            "definition": "leg"
+                                        },
+                                        {
+                                            "term": "la main",
+                                            "definition": "hand"
+                                        },
+                                        {
+                                            "term": "la t\\xc3\\xaate",
+                                            "definition": "head"
+                                        },
+                                        {
+                                            "term": "l\\'\\xc3\\xa9paule",
+                                            "definition": "shoulder"
+                                        },
+                                        {
+                                            "term": "les dents",
+                                            "definition": "teeth"
+                                        },
+                                        {
+                                            "term": "les oreilles",
+                                            "definition": "ears"
+                                        },
+                                        {
+                                            "term": "Pour le petit d\\xc3\\xa9jeuner",
+                                            "definition": "For breakfast"
+                                        },
+                                        {
+                                            "term": "Pour le d\\xc3\\xa9jeuner",
+                                            "definition": "For lunch"
+                                        },
+                                        {
+                                            "term": "Pour le go\\xc3\\xbbter",
+                                            "definition": "For a snack"
+                                        },
+                                        {
+                                            "term": "Pour le d\\xc3\\xaener",
+                                            "definition": "For dinner"
+                                        },
+                                        {
+                                            "term": "une tartine",
+                                            "definition": "a slice of bread and butter"
+                                        },
+                                        {
+                                            "term": "du pain",
+                                            "definition": "bread"
+                                        },
+                                        {
+                                            "term": "du pain grill\\xc3\\xa9",
+                                            "definition": "toast"
+                                        },
+                                        {
+                                            "term": "Je bois",
+                                            "definition": "I drink"
+                                        },
+                                        {
+                                            "term": "du lait",
+                                            "definition": "milk"
+                                        },
+                                        {
+                                            "term": "du th\\xc3\\xa9",
+                                            "definition": "tea"
+                                        },
+                                        {
+                                            "term": "du fromage",
+                                            "definition": "cheese"
+                                        },
+                                        {
+                                            "term": "du jambon",
+                                            "definition": "ham"
+                                        },
+                                        {
+                                            "term": "du poisson",
+                                            "definition": "fish"
+                                        },
+                                        {
+                                            "term": "du poulet",
+                                            "definition": "chicken"
+                                        },
+                                        {
+                                            "term": "du riz",
+                                            "definition": "rice"
+                                        },
+                                        {
+                                            "term": "de la viande",
+                                            "definition": "meat"
+                                        },
+                                        {
+                                            "term": "des champignons",
+                                            "definition": "mushrooms"
+                                        },
+                                        {
+                                            "term": "des chips",
+                                            "definition": "crisps"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Spanish",
+                    "examboards": [
+                        {
+                            "title": "AQA",
+                            "setname": "Spanish AQA GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Main Vocab",
+                                    "cards": [
+                                        {
+                                            "term": "me he roto",
+                                            "definition": "I\\'ve broken my..."
+                                        },
+                                        {
+                                            "term": "frutas y verduras",
+                                            "definition": "fruits and vegetables"
+                                        },
+                                        {
+                                            "term": "minerales",
+                                            "definition": "minerals"
+                                        },
+                                        {
+                                            "term": "ilegal",
+                                            "definition": "illegal"
+                                        },
+                                        {
+                                            "term": "me fascina",
+                                            "definition": "I am fascinated by"
+                                        },
+                                        {
+                                            "term": "prefiero",
+                                            "definition": "i prefer"
+                                        },
+                                        {
+                                            "term": "el ingl\\xc3\\xa9s",
+                                            "definition": "english"
+                                        },
+                                        {
+                                            "term": "el dibujo",
+                                            "definition": "art"
+                                        },
+                                        {
+                                            "term": "la biolog\\xc3\\xada",
+                                            "definition": "biology"
+                                        },
+                                        {
+                                            "term": "la qu\\xc3\\xadmica",
+                                            "definition": "chemistry"
+                                        },
+                                        {
+                                            "term": "la f\\xc3\\xadsica",
+                                            "definition": "physics"
+                                        },
+                                        {
+                                            "term": "los idiomas",
+                                            "definition": "languages"
+                                        },
+                                        {
+                                            "term": "el franc\\xc3\\xa9s",
+                                            "definition": "french"
+                                        },
+                                        {
+                                            "term": "el alem\\xc3\\xa1n",
+                                            "definition": "german"
+                                        },
+                                        {
+                                            "term": "aBuRRido",
+                                            "definition": "boring"
+                                        },
+                                        {
+                                            "term": "dif\\xc3\\xadcil",
+                                            "definition": "difficult"
+                                        },
+                                        {
+                                            "term": "duro/a",
+                                            "definition": "hard"
+                                        },
+                                        {
+                                            "term": "f\\xc3\\xa1cil",
+                                            "definition": "easy"
+                                        },
+                                        {
+                                            "term": "\\xc3\\xbatil",
+                                            "definition": "useful"
+                                        },
+                                        {
+                                            "term": "exigente",
+                                            "definition": "challenging"
+                                        },
+                                        {
+                                            "term": "el aula",
+                                            "definition": "classroom"
+                                        },
+                                        {
+                                            "term": "el laboratorio",
+                                            "definition": "lab"
+                                        },
+                                        {
+                                            "term": "la cantina",
+                                            "definition": "canteen"
+                                        },
+                                        {
+                                            "term": "el taller",
+                                            "definition": "workshop"
+                                        },
+                                        {
+                                            "term": "la sala de profesores",
+                                            "definition": "staff room"
+                                        },
+                                        {
+                                            "term": "el patio",
+                                            "definition": "playground"
+                                        },
+                                        {
+                                            "term": "clase de inform\\xc3\\xa1tica",
+                                            "definition": "ICT classroom"
+                                        },
+                                        {
+                                            "term": "la cancha de baloncesto",
+                                            "definition": "basketball court"
+                                        },
+                                        {
+                                            "term": "el sal\\xc3\\xb3n de actos",
+                                            "definition": "assembly hall"
+                                        },
+                                        {
+                                            "term": "c\\xc3\\xb3modo/a",
+                                            "definition": "comfortable"
+                                        },
+                                        {
+                                            "term": "moderno/a",
+                                            "definition": "modern"
+                                        },
+                                        {
+                                            "term": "amplio",
+                                            "definition": "wide"
+                                        },
+                                        {
+                                            "term": "espacioso",
+                                            "definition": "spacious"
+                                        },
+                                        {
+                                            "term": "oscuro/a",
+                                            "definition": "dark"
+                                        },
+                                        {
+                                            "term": "luminoso/a",
+                                            "definition": "bright"
+                                        },
+                                        {
+                                            "term": "sucio/a",
+                                            "definition": "dirty"
+                                        },
+                                        {
+                                            "term": "limpio/a",
+                                            "definition": "clean"
+                                        },
+                                        {
+                                            "term": "agradable",
+                                            "definition": "pleasant"
+                                        },
+                                        {
+                                            "term": "me emociona/a",
+                                            "definition": "i am excited"
+                                        },
+                                        {
+                                            "term": "me parece que",
+                                            "definition": "it seems to me that"
+                                        },
+                                        {
+                                            "term": "desde mi punto de vista",
+                                            "definition": "from my point of view"
+                                        },
+                                        {
+                                            "term": "m\\xc3\\xa1s... que",
+                                            "definition": "more than"
+                                        },
+                                        {
+                                            "term": "tan... como",
+                                            "definition": "the same as"
+                                        },
+                                        {
+                                            "term": "menos... que",
+                                            "definition": "less than"
+                                        },
+                                        {
+                                            "term": "mejor",
+                                            "definition": "better/best"
+                                        },
+                                        {
+                                            "term": "mayor",
+                                            "definition": "bigger/greater"
+                                        },
+                                        {
+                                            "term": "menor",
+                                            "definition": "smaller/ lesser"
+                                        },
+                                        {
+                                            "term": "peor",
+                                            "definition": "worst/worst"
+                                        },
+                                        {
+                                            "term": "no...ni...ni",
+                                            "definition": "neither.... nor"
+                                        },
+                                        {
+                                            "term": "nada",
+                                            "definition": "nothing"
+                                        },
+                                        {
+                                            "term": "nadie",
+                                            "definition": "nobody"
+                                        },
+                                        {
+                                            "term": "ya no",
+                                            "definition": "no longer"
+                                        },
+                                        {
+                                            "term": "cuando era joven",
+                                            "definition": "when i was young"
+                                        },
+                                        {
+                                            "term": "cuando era m\\xc3\\xa1s joven",
+                                            "definition": "when i was younger"
+                                        },
+                                        {
+                                            "term": "hace cinco a\\xc3\\xb1os",
+                                            "definition": "5 years ago"
+                                        },
+                                        {
+                                            "term": "hace diez a\\xc3\\xb1os",
+                                            "definition": "10 years ago"
+                                        },
+                                        {
+                                            "term": "hace mucho tiempo",
+                                            "definition": "a long time ago"
+                                        },
+                                        {
+                                            "term": "de ni\\xc3\\xb1o",
+                                            "definition": "as a child"
+                                        },
+                                        {
+                                            "term": "se debe",
+                                            "definition": "one must"
+                                        },
+                                        {
+                                            "term": "se puede",
+                                            "definition": "one could"
+                                        },
+                                        {
+                                            "term": "por lo tanto",
+                                            "definition": "therefore"
+                                        },
+                                        {
+                                            "term": "por un lado",
+                                            "definition": "on one hand"
+                                        },
+                                        {
+                                            "term": "por el otro lado",
+                                            "definition": "on the other hand"
+                                        },
+                                        {
+                                            "term": "un poco",
+                                            "definition": "a bit"
+                                        },
+                                        {
+                                            "term": "a veces",
+                                            "definition": "sometimes"
+                                        },
+                                        {
+                                            "term": "extremadamente",
+                                            "definition": "extremely"
+                                        },
+                                        {
+                                            "term": "verdaderamente",
+                                            "definition": "truely"
+                                        },
+                                        {
+                                            "term": "vergenzoso/a",
+                                            "definition": "shy"
+                                        },
+                                        {
+                                            "term": "comprensivo",
+                                            "definition": "understanding"
+                                        },
+                                        {
+                                            "term": "maduro/a",
+                                            "definition": "mature"
+                                        },
+                                        {
+                                            "term": "amistoso",
+                                            "definition": "friendly"
+                                        },
+                                        {
+                                            "term": "amable",
+                                            "definition": "kind"
+                                        },
+                                        {
+                                            "term": "ant\\xc3\\xadp\\xc3\\xa1tico",
+                                            "definition": "unkind"
+                                        },
+                                        {
+                                            "term": "compartir",
+                                            "definition": "to share"
+                                        },
+                                        {
+                                            "term": "concocer",
+                                            "definition": "to get to know"
+                                        },
+                                        {
+                                            "term": "mandar",
+                                            "definition": "to send"
+                                        },
+                                        {
+                                            "term": "los pasatiempos",
+                                            "definition": "hobbies"
+                                        },
+                                        {
+                                            "term": "los actividades de ocio",
+                                            "definition": "leisure activities"
+                                        },
+                                        {
+                                            "term": "a la hora de comer",
+                                            "definition": "lunchtime"
+                                        },
+                                        {
+                                            "term": "despu\\xc3\\xa9s del insti",
+                                            "definition": "after school"
+                                        },
+                                        {
+                                            "term": "descansar",
+                                            "definition": "to rest"
+                                        },
+                                        {
+                                            "term": "escuchar m\\xc3\\xbasica",
+                                            "definition": "to listen to music"
+                                        },
+                                        {
+                                            "term": "leer libros",
+                                            "definition": "to read books"
+                                        },
+                                        {
+                                            "term": "leer revistas",
+                                            "definition": "to read magazines"
+                                        },
+                                        {
+                                            "term": "ir al cine",
+                                            "definition": "to go the cinema"
+                                        },
+                                        {
+                                            "term": "hacer deporte",
+                                            "definition": "to do sport"
+                                        },
+                                        {
+                                            "term": "hacer el vago",
+                                            "definition": "to laze about"
+                                        },
+                                        {
+                                            "term": "montar en bici",
+                                            "definition": "to ride a bike"
+                                        },
+                                        {
+                                            "term": "ir de compras",
+                                            "definition": "to go shopping"
+                                        },
+                                        {
+                                            "term": "a menudo",
+                                            "definition": "often"
+                                        },
+                                        {
+                                            "term": "de vez en cuando",
+                                            "definition": "from time to time"
+                                        },
+                                        {
+                                            "term": "b\\xc3\\xa1dminton",
+                                            "definition": "badminton"
+                                        },
+                                        {
+                                            "term": "b\\xc3\\xa9isbol",
+                                            "definition": "baseball"
+                                        },
+                                        {
+                                            "term": "tenis",
+                                            "definition": "tennis"
+                                        },
+                                        {
+                                            "term": "voleibol",
+                                            "definition": "volleyball"
+                                        },
+                                        {
+                                            "term": "rugby",
+                                            "definition": "rugby"
+                                        },
+                                        {
+                                            "term": "hockey",
+                                            "definition": "hockey"
+                                        },
+                                        {
+                                            "term": "equitaci\\xc3\\xb3n",
+                                            "definition": "horse riding"
+                                        },
+                                        {
+                                            "term": "baile",
+                                            "definition": "dancing"
+                                        },
+                                        {
+                                            "term": "ciclismo",
+                                            "definition": "cycling"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Edexcel",
+                            "setname": "Spanish Edexcel GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Main Vocab",
+                                    "cards": [
+                                        {
+                                            "term": "a pie",
+                                            "definition": "on foot"
+                                        },
+                                        {
+                                            "term": "aburrido/a",
+                                            "definition": "boring"
+                                        },
+                                        {
+                                            "term": "afueras (f)",
+                                            "definition": "outskirts"
+                                        },
+                                        {
+                                            "term": "amar",
+                                            "definition": "to love"
+                                        },
+                                        {
+                                            "term": "aparcamiento (m)",
+                                            "definition": "car park"
+                                        },
+                                        {
+                                            "term": "\\xc3\\xa1rbol (m)",
+                                            "definition": "tree"
+                                        },
+                                        {
+                                            "term": "ascensor (m)",
+                                            "definition": "lift"
+                                        },
+                                        {
+                                            "term": "aviso (m)",
+                                            "definition": "notice"
+                                        },
+                                        {
+                                            "term": "ayuntamiento (m)",
+                                            "definition": "town hall"
+                                        },
+                                        {
+                                            "term": "biblioteca (f)",
+                                            "definition": "library"
+                                        },
+                                        {
+                                            "term": "caballo (m)",
+                                            "definition": "horse"
+                                        },
+                                        {
+                                            "term": "calle (f)",
+                                            "definition": "street"
+                                        },
+                                        {
+                                            "term": "campo (m)",
+                                            "definition": "countryside"
+                                        },
+                                        {
+                                            "term": "carretera (nacional) (f)",
+                                            "definition": "road"
+                                        },
+                                        {
+                                            "term": "castillo (m)",
+                                            "definition": "castle"
+                                        },
+                                        {
+                                            "term": "centro (m)",
+                                            "definition": "centre"
+                                        },
+                                        {
+                                            "term": "cerdo (m)",
+                                            "definition": "pig"
+                                        },
+                                        {
+                                            "term": "c\\xc3\\xa9sped (m)",
+                                            "definition": "grass"
+                                        },
+                                        {
+                                            "term": "ciudad (f)",
+                                            "definition": "city"
+                                        },
+                                        {
+                                            "term": "colina (f)",
+                                            "definition": "hill"
+                                        },
+                                        {
+                                            "term": "comisar\\xc3\\xada (f)",
+                                            "definition": "police station"
+                                        },
+                                        {
+                                            "term": "cruce (m)",
+                                            "definition": "crossing"
+                                        },
+                                        {
+                                            "term": "distrito (m)",
+                                            "definition": "district/zone"
+                                        },
+                                        {
+                                            "term": "divertido/a",
+                                            "definition": "funny/entertaining"
+                                        },
+                                        {
+                                            "term": "edificio (m)",
+                                            "definition": "building"
+                                        },
+                                        {
+                                            "term": "en el extranjero",
+                                            "definition": "overseas/abroad"
+                                        },
+                                        {
+                                            "term": "estadio (m)",
+                                            "definition": "stadium"
+                                        },
+                                        {
+                                            "term": "estar situado/a",
+                                            "definition": "to be situated"
+                                        },
+                                        {
+                                            "term": "flor (f)",
+                                            "definition": "flower"
+                                        },
+                                        {
+                                            "term": "fuego (m)",
+                                            "definition": "fire"
+                                        },
+                                        {
+                                            "term": "fuente (f)",
+                                            "definition": "fountain"
+                                        },
+                                        {
+                                            "term": "galer\\xc3\\xada (f)",
+                                            "definition": "gallery"
+                                        },
+                                        {
+                                            "term": "gallina (f)",
+                                            "definition": "hen"
+                                        },
+                                        {
+                                            "term": "gallo (m)",
+                                            "definition": "cockerel"
+                                        },
+                                        {
+                                            "term": "gato (m)",
+                                            "definition": "cat"
+                                        },
+                                        {
+                                            "term": "granja (f)",
+                                            "definition": "farm"
+                                        },
+                                        {
+                                            "term": "granjero/a (m/f)",
+                                            "definition": "farmer"
+                                        },
+                                        {
+                                            "term": "guapo/a",
+                                            "definition": "handsome, beautiful"
+                                        },
+                                        {
+                                            "term": "habitante (m/f)",
+                                            "definition": "inhabitant"
+                                        },
+                                        {
+                                            "term": "hist\\xc3\\xb3rico/a",
+                                            "definition": "historic"
+                                        },
+                                        {
+                                            "term": "industrial",
+                                            "definition": "industrial"
+                                        },
+                                        {
+                                            "term": "jard\\xc3\\xadn p\\xc3\\xbablico (m)",
+                                            "definition": "public garden"
+                                        },
+                                        {
+                                            "term": "lago (m)",
+                                            "definition": "lake"
+                                        },
+                                        {
+                                            "term": "lejos",
+                                            "definition": "far"
+                                        },
+                                        {
+                                            "term": "lento/a",
+                                            "definition": "slow"
+                                        },
+                                        {
+                                            "term": "lugar de inter\\xc3\\xa9s tur\\xc3\\xadstico (m)",
+                                            "definition": "sight, place of interest"
+                                        },
+                                        {
+                                            "term": "metro (m)",
+                                            "definition": "underground"
+                                        },
+                                        {
+                                            "term": "monta\\xc3\\xb1a (f)",
+                                            "definition": "mountain"
+                                        },
+                                        {
+                                            "term": "mosquito (m)",
+                                            "definition": "mosquito"
+                                        },
+                                        {
+                                            "term": "museo (m)",
+                                            "definition": "museum"
+                                        },
+                                        {
+                                            "term": "oveja (f)",
+                                            "definition": "sheep"
+                                        },
+                                        {
+                                            "term": "paisaje (m)",
+                                            "definition": "scenery"
+                                        },
+                                        {
+                                            "term": "palacio (m)",
+                                            "definition": "palace"
+                                        },
+                                        {
+                                            "term": "parque (m)",
+                                            "definition": "park"
+                                        },
+                                        {
+                                            "term": "pasatiempo (m)",
+                                            "definition": "pastime"
+                                        },
+                                        {
+                                            "term": "pato (m)",
+                                            "definition": "duck"
+                                        },
+                                        {
+                                            "term": "peat\\xc3\\xb3n (m)",
+                                            "definition": "pedestrian"
+                                        },
+                                        {
+                                            "term": "(ir de) pesca",
+                                            "definition": "(to go) fishing"
+                                        },
+                                        {
+                                            "term": "pie (m)",
+                                            "definition": "foot"
+                                        },
+                                        {
+                                            "term": "pintoresco/a",
+                                            "definition": "picturesque, pretty"
+                                        },
+                                        {
+                                            "term": "piscina (f)",
+                                            "definition": "swimming pool"
+                                        },
+                                        {
+                                            "term": "planta (f)",
+                                            "definition": "floor/storey"
+                                        },
+                                        {
+                                            "term": "plaza (f)",
+                                            "definition": "square"
+                                        },
+                                        {
+                                            "term": "plaza del mercado (f)",
+                                            "definition": "market square"
+                                        },
+                                        {
+                                            "term": "polideportivo (m)",
+                                            "definition": "sports centre"
+                                        },
+                                        {
+                                            "term": "pollo (m)",
+                                            "definition": "chicken"
+                                        },
+                                        {
+                                            "term": "pueblo (m)",
+                                            "definition": "village/town"
+                                        },
+                                        {
+                                            "term": "puente (m)",
+                                            "definition": "bridge"
+                                        },
+                                        {
+                                            "term": "puerto (m)",
+                                            "definition": "port"
+                                        },
+                                        {
+                                            "term": "quiosco (m)",
+                                            "definition": "news stand"
+                                        },
+                                        {
+                                            "term": "regi\\xc3\\xb3n (f)",
+                                            "definition": "region"
+                                        },
+                                        {
+                                            "term": "r\\xc3\\xado (m)",
+                                            "definition": "river"
+                                        },
+                                        {
+                                            "term": "sem\\xc3\\xa1foro (m)",
+                                            "definition": "traffic lights"
+                                        },
+                                        {
+                                            "term": "sitio (m)",
+                                            "definition": "place"
+                                        },
+                                        {
+                                            "term": "taberna (f)",
+                                            "definition": "inn"
+                                        },
+                                        {
+                                            "term": "tienda (f)",
+                                            "definition": "shop"
+                                        },
+                                        {
+                                            "term": "torre (f)",
+                                            "definition": "tower"
+                                        },
+                                        {
+                                            "term": "tr\\xc3\\xa1fico (m)",
+                                            "definition": "traffic"
+                                        },
+                                        {
+                                            "term": "tranquilo/a (m/f)",
+                                            "definition": "quiet"
+                                        },
+                                        {
+                                            "term": "vaca (f)",
+                                            "definition": "cow"
+                                        },
+                                        {
+                                            "term": "vivir",
+                                            "definition": "to live"
+                                        },
+                                        {
+                                            "term": "zona peatonal (f)",
+                                            "definition": "pedestrian area"
+                                        },
+                                        {
+                                            "term": "abrigo (m)",
+                                            "definition": "coat"
+                                        },
+                                        {
+                                            "term": "buen/o/a",
+                                            "definition": "fine/good"
+                                        },
+                                        {
+                                            "term": "bufanda (f)",
+                                            "definition": "scarf"
+                                        },
+                                        {
+                                            "term": "calcetines (m)",
+                                            "definition": "socks"
+                                        },
+                                        {
+                                            "term": "calor (m)",
+                                            "definition": "heat"
+                                        },
+                                        {
+                                            "term": "caluroso/a",
+                                            "definition": "hot"
+                                        },
+                                        {
+                                            "term": "cambiar",
+                                            "definition": "to change"
+                                        },
+                                        {
+                                            "term": "chubasco (m)",
+                                            "definition": "shower"
+                                        },
+                                        {
+                                            "term": "cielo (m)",
+                                            "definition": "sky"
+                                        },
+                                        {
+                                            "term": "claro",
+                                            "definition": "clear/bright"
+                                        },
+                                        {
+                                            "term": "clima (m)",
+                                            "definition": "weather/climate"
+                                        },
+                                        {
+                                            "term": "condado (m)",
+                                            "definition": "county"
+                                        },
+                                        {
+                                            "term": "costa (f)",
+                                            "definition": "coast"
+                                        },
+                                        {
+                                            "term": "est\\xc3\\xa1 a XX grados",
+                                            "definition": "it is X degrees"
+                                        },
+                                        {
+                                            "term": "est\\xc3\\xa1 nevando",
+                                            "definition": "it is snowing"
+                                        },
+                                        {
+                                            "term": "estaci\\xc3\\xb3n (f)",
+                                            "definition": "season"
+                                        },
+                                        {
+                                            "term": "este (m)",
+                                            "definition": "east"
+                                        },
+                                        {
+                                            "term": "estrella (f)",
+                                            "definition": "star"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "German",
+                    "examboards": [
+                        {
+                            "title": "AQA",
+                            "setname": "German AQA GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Main Vocab",
+                                    "cards": [
+                                        {
+                                            "term": "\\xc3\\xa4hnlich",
+                                            "definition": "similar"
+                                        },
+                                        {
+                                            "term": "anders",
+                                            "definition": "different(ly)"
+                                        },
+                                        {
+                                            "term": "Gegenteil das",
+                                            "definition": "opposite"
+                                        },
+                                        {
+                                            "term": "gleich",
+                                            "definition": "same, equal"
+                                        },
+                                        {
+                                            "term": "hoch; h\\xc3\\xb6her; h\\xc3\\xb6chst",
+                                            "definition": "high; higher; highest"
+                                        },
+                                        {
+                                            "term": "im Gro\\xc3\\x9fen und Ganzen",
+                                            "definition": "by and large"
+                                        },
+                                        {
+                                            "term": "so ... wie",
+                                            "definition": "as ... as"
+                                        },
+                                        {
+                                            "term": "so viel(e) ... wie",
+                                            "definition": "as much/many ... as"
+                                        },
+                                        {
+                                            "term": "Unterschied der",
+                                            "definition": "difference"
+                                        },
+                                        {
+                                            "term": "unterschiedlich",
+                                            "definition": "different"
+                                        },
+                                        {
+                                            "term": "vergleichen",
+                                            "definition": "to compare"
+                                        },
+                                        {
+                                            "term": "Vergleich der",
+                                            "definition": "comparison"
+                                        },
+                                        {
+                                            "term": "verschieden",
+                                            "definition": "different"
+                                        },
+                                        {
+                                            "term": "viel; mehr; am meisten",
+                                            "definition": "much; more; most"
+                                        },
+                                        {
+                                            "term": "wenigstens",
+                                            "definition": "at least"
+                                        },
+                                        {
+                                            "term": "als",
+                                            "definition": "when"
+                                        },
+                                        {
+                                            "term": "als ob",
+                                            "definition": "as if"
+                                        },
+                                        {
+                                            "term": "bevor",
+                                            "definition": "before"
+                                        },
+                                        {
+                                            "term": "bis",
+                                            "definition": "until, to"
+                                        },
+                                        {
+                                            "term": "da",
+                                            "definition": "as, because"
+                                        },
+                                        {
+                                            "term": "damit",
+                                            "definition": "so that, in order that"
+                                        },
+                                        {
+                                            "term": "denn",
+                                            "definition": "as, since"
+                                        },
+                                        {
+                                            "term": "entweder ... oder ...",
+                                            "definition": "either ... or ..."
+                                        },
+                                        {
+                                            "term": "nachdem",
+                                            "definition": "after, afterwards"
+                                        },
+                                        {
+                                            "term": "nicht nur ... sondern auch",
+                                            "definition": "not only ... but also"
+                                        },
+                                        {
+                                            "term": "ob",
+                                            "definition": "whether"
+                                        },
+                                        {
+                                            "term": "obwohl",
+                                            "definition": "although"
+                                        },
+                                        {
+                                            "term": "seitdem",
+                                            "definition": "since"
+                                        },
+                                        {
+                                            "term": "sodass (so...dass)",
+                                            "definition": "so ... that"
+                                        },
+                                        {
+                                            "term": "sowohl ... als auch ...",
+                                            "definition": "both ... and..."
+                                        },
+                                        {
+                                            "term": "um ... zu",
+                                            "definition": "(in order) to"
+                                        },
+                                        {
+                                            "term": "w\\xc3\\xa4hrend",
+                                            "definition": "while"
+                                        },
+                                        {
+                                            "term": "weder ... noch",
+                                            "definition": "neither ... nor"
+                                        },
+                                        {
+                                            "term": "abgesehen davon",
+                                            "definition": "apart from this"
+                                        },
+                                        {
+                                            "term": "angenommen dass",
+                                            "definition": "assuming that"
+                                        },
+                                        {
+                                            "term": "au\\xc3\\x9fer",
+                                            "definition": "besides, apart from, except"
+                                        },
+                                        {
+                                            "term": "au\\xc3\\x9ferdem",
+                                            "definition": "besides, furthermore"
+                                        },
+                                        {
+                                            "term": "danach",
+                                            "definition": "afterwards"
+                                        },
+                                        {
+                                            "term": "das hei\\xc3\\x9ft (d.h.)",
+                                            "definition": "that is (ie)"
+                                        },
+                                        {
+                                            "term": "dennoch",
+                                            "definition": "nevertheless"
+                                        },
+                                        {
+                                            "term": "deshalb",
+                                            "definition": "therefore, because of that"
+                                        },
+                                        {
+                                            "term": "deswegen",
+                                            "definition": "therefore, because of that"
+                                        },
+                                        {
+                                            "term": "doch",
+                                            "definition": "after all, on the contrary, yes"
+                                        },
+                                        {
+                                            "term": "drittens",
+                                            "definition": "thirdly"
+                                        },
+                                        {
+                                            "term": "eigentlich",
+                                            "definition": "actually, really"
+                                        },
+                                        {
+                                            "term": "erstens",
+                                            "definition": "firstly"
+                                        },
+                                        {
+                                            "term": "jedoch",
+                                            "definition": "however"
+                                        },
+                                        {
+                                            "term": "leider",
+                                            "definition": "unfortunately"
+                                        },
+                                        {
+                                            "term": "nat\\xc3\\xbcrlich",
+                                            "definition": "of course, naturally"
+                                        },
+                                        {
+                                            "term": "ohne Zweifel",
+                                            "definition": "without a doubt"
+                                        },
+                                        {
+                                            "term": "schlie\\xc3\\x9flich",
+                                            "definition": "eventually, in the end, finally"
+                                        },
+                                        {
+                                            "term": "sonst",
+                                            "definition": "otherwise, or else"
+                                        },
+                                        {
+                                            "term": "sowieso",
+                                            "definition": "anyway, anyhow, in any case"
+                                        },
+                                        {
+                                            "term": "trotzdem",
+                                            "definition": "nevertheless"
+                                        },
+                                        {
+                                            "term": "vorausgesetzt dass",
+                                            "definition": "provided that"
+                                        },
+                                        {
+                                            "term": "zuerst",
+                                            "definition": "(at) first"
+                                        },
+                                        {
+                                            "term": "zuf\\xc3\\xa4llig",
+                                            "definition": "by chance"
+                                        },
+                                        {
+                                            "term": "zweitens",
+                                            "definition": "secondly"
+                                        },
+                                        {
+                                            "term": "ab",
+                                            "definition": "from"
+                                        },
+                                        {
+                                            "term": "an",
+                                            "definition": "at, to, on, close by"
+                                        },
+                                        {
+                                            "term": "auf",
+                                            "definition": "on, upon, onto, on top of"
+                                        },
+                                        {
+                                            "term": "aus",
+                                            "definition": "from, out of"
+                                        },
+                                        {
+                                            "term": "bei",
+                                            "definition": "near, at"
+                                        },
+                                        {
+                                            "term": "durch",
+                                            "definition": "through"
+                                        },
+                                        {
+                                            "term": "entlang",
+                                            "definition": "along"
+                                        },
+                                        {
+                                            "term": "gegen",
+                                            "definition": "against, at about, around"
+                                        },
+                                        {
+                                            "term": "gegen\\xc3\\xbcber",
+                                            "definition": "opposite"
+                                        },
+                                        {
+                                            "term": "hinter",
+                                            "definition": "behind"
+                                        },
+                                        {
+                                            "term": "nach",
+                                            "definition": "after, to, according to"
+                                        },
+                                        {
+                                            "term": "neben",
+                                            "definition": "next to"
+                                        },
+                                        {
+                                            "term": "ohne",
+                                            "definition": "without"
+                                        },
+                                        {
+                                            "term": "\\xc3\\xbcber",
+                                            "definition": "over, above"
+                                        },
+                                        {
+                                            "term": "um",
+                                            "definition": "around, at"
+                                        },
+                                        {
+                                            "term": "unter",
+                                            "definition": "under, below"
+                                        },
+                                        {
+                                            "term": "von",
+                                            "definition": "from, by, of"
+                                        },
+                                        {
+                                            "term": "vor",
+                                            "definition": "in front of, before, ago"
+                                        },
+                                        {
+                                            "term": "vorbei",
+                                            "definition": "over, past, by"
+                                        },
+                                        {
+                                            "term": "w\\xc3\\xa4hrend",
+                                            "definition": "during"
+                                        },
+                                        {
+                                            "term": "wegen",
+                                            "definition": "because of"
+                                        },
+                                        {
+                                            "term": "zu",
+                                            "definition": "to, at, for"
+                                        },
+                                        {
+                                            "term": "zwischen",
+                                            "definition": "between"
+                                        },
+                                        {
+                                            "term": "gar nicht",
+                                            "definition": "not at all"
+                                        },
+                                        {
+                                            "term": "nicht einmal",
+                                            "definition": "not even"
+                                        },
+                                        {
+                                            "term": "nicht mehr",
+                                            "definition": "no longer"
+                                        },
+                                        {
+                                            "term": "nichts",
+                                            "definition": "nothing"
+                                        },
+                                        {
+                                            "term": "nie",
+                                            "definition": "never"
+                                        },
+                                        {
+                                            "term": "niemals",
+                                            "definition": "never"
+                                        },
+                                        {
+                                            "term": "niemand",
+                                            "definition": "nobody"
+                                        },
+                                        {
+                                            "term": "nirgend...",
+                                            "definition": "no..."
+                                        },
+                                        {
+                                            "term": "noch nicht",
+                                            "definition": "not yet, still not"
+                                        },
+                                        {
+                                            "term": "\\xc3\\xbcberhaupt nicht",
+                                            "definition": "not at all"
+                                        },
+                                        {
+                                            "term": "Buchstabe der",
+                                            "definition": "letter"
+                                        },
+                                        {
+                                            "term": "buchstabieren",
+                                            "definition": "to spell"
+                                        },
+                                        {
+                                            "term": "Dutzend das",
+                                            "definition": "dozen"
+                                        },
+                                        {
+                                            "term": "Nummer die",
+                                            "definition": "number"
+                                        },
+                                        {
+                                            "term": "Paar das",
+                                            "definition": "pair"
+                                        },
+                                        {
+                                            "term": "Zahl die",
+                                            "definition": "number, figure, digit"
+                                        },
+                                        {
+                                            "term": "Bargeld das",
+                                            "definition": "cash"
+                                        },
+                                        {
+                                            "term": "ein 1/2/5 - Euro-St\\xc3\\xbcck",
+                                            "definition": "a 1/2/5 Euro coin"
+                                        },
+                                        {
+                                            "term": "ein 10/20/50 - Euro-Schein",
+                                            "definition": "a 10/20/50 Euro note"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Edexcel",
+                            "setname": "German Edexcel GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Main Vocab",
+                                    "cards": [
+                                        {
+                                            "term": "die Unterkunft",
+                                            "definition": "accomodation"
+                                        },
+                                        {
+                                            "term": "leugnen",
+                                            "definition": "to deny"
+                                        },
+                                        {
+                                            "term": "diving",
+                                            "definition": "das Tauchen"
+                                        },
+                                        {
+                                            "term": "boat",
+                                            "definition": "boot"
+                                        },
+                                        {
+                                            "term": "addicted",
+                                            "definition": "s\\xc3\\xbcchtig"
+                                        },
+                                        {
+                                            "term": "addictive",
+                                            "definition": "suchterzeugend"
+                                        },
+                                        {
+                                            "term": "appalling",
+                                            "definition": "f\\xc3\\xbcrchterlich"
+                                        },
+                                        {
+                                            "term": "thought-provoking",
+                                            "definition": "nachdenklich stimmend"
+                                        },
+                                        {
+                                            "term": "stimulating",
+                                            "definition": "anregend"
+                                        },
+                                        {
+                                            "term": "cutting edge",
+                                            "definition": "topaktuell"
+                                        },
+                                        {
+                                            "term": "tempting",
+                                            "definition": "verlockend"
+                                        },
+                                        {
+                                            "term": "i suppose",
+                                            "definition": "ich vermute"
+                                        },
+                                        {
+                                            "term": "its worth noticing",
+                                            "definition": "es ist zu bemerken"
+                                        },
+                                        {
+                                            "term": "it sends you to sleep",
+                                            "definition": "es ist zum einschlafen"
+                                        },
+                                        {
+                                            "term": "significantly",
+                                            "definition": "wesentlich"
+                                        },
+                                        {
+                                            "term": "zugeben",
+                                            "definition": "to admit"
+                                        },
+                                        {
+                                            "term": "it is really irritating",
+                                            "definition": "es ist zum verzweifeln"
+                                        },
+                                        {
+                                            "term": "brand new",
+                                            "definition": "nagelneu"
+                                        },
+                                        {
+                                            "term": "umbrella",
+                                            "definition": "der Regenschirm"
+                                        },
+                                        {
+                                            "term": "grapes",
+                                            "definition": "Trauben"
+                                        },
+                                        {
+                                            "term": "to compensate",
+                                            "definition": "entsch\\xc3\\xa4digen"
+                                        },
+                                        {
+                                            "term": "former",
+                                            "definition": "ehemalig"
+                                        },
+                                        {
+                                            "term": "storage room",
+                                            "definition": "der Abstellraum"
+                                        },
+                                        {
+                                            "term": "savings bank",
+                                            "definition": "die Sparkasse"
+                                        },
+                                        {
+                                            "term": "to announce",
+                                            "definition": "ank\\xc3\\xbcndigen"
+                                        },
+                                        {
+                                            "term": "rush hour",
+                                            "definition": "Hauptverkehrszeit"
+                                        },
+                                        {
+                                            "term": "alsbald",
+                                            "definition": "straight away"
+                                        },
+                                        {
+                                            "term": "alsbaldig",
+                                            "definition": "immediate"
+                                        },
+                                        {
+                                            "term": "Chemist(shop)",
+                                            "definition": "die Drogerie"
+                                        },
+                                        {
+                                            "term": "chemist",
+                                            "definition": "Drogist/in"
+                                        },
+                                        {
+                                            "term": "cost of living",
+                                            "definition": "Lebenshaltungskosten"
+                                        },
+                                        {
+                                            "term": "a multistorey building",
+                                            "definition": "ein mehrst\\xc3\\xb6ckiges Geb\\xc3\\xa4ude"
+                                        },
+                                        {
+                                            "term": "Gemeinschaft",
+                                            "definition": "community"
+                                        },
+                                        {
+                                            "term": "reusable",
+                                            "definition": "wiederverwendbar"
+                                        },
+                                        {
+                                            "term": "Obdachslos(-igkeit)",
+                                            "definition": "Homeless(-ness)"
+                                        },
+                                        {
+                                            "term": "erstaunlich",
+                                            "definition": "astonishing"
+                                        },
+                                        {
+                                            "term": "Hungersnot",
+                                            "definition": "starvation"
+                                        },
+                                        {
+                                            "term": "Lehrplatz vs. Lehrling",
+                                            "definition": "Apprenticeship vs. Apprentice"
+                                        },
+                                        {
+                                            "term": "Bereichen",
+                                            "definition": "Field(of study)"
+                                        },
+                                        {
+                                            "term": "soweit",
+                                            "definition": "so far"
+                                        },
+                                        {
+                                            "term": "unh\\xc3\\xb6flich",
+                                            "definition": "inhospitable"
+                                        },
+                                        {
+                                            "term": "in der Tat",
+                                            "definition": "indeed"
+                                        },
+                                        {
+                                            "term": "abhauen",
+                                            "definition": "to run away, escape"
+                                        },
+                                        {
+                                            "term": "Atomkraftwerke",
+                                            "definition": "nuclear power stations"
+                                        },
+                                        {
+                                            "term": "to cut",
+                                            "definition": "abschneiden, schneiden"
+                                        },
+                                        {
+                                            "term": "abschneiden(past tense)",
+                                            "definition": "abgeschnitten"
+                                        },
+                                        {
+                                            "term": "kehren",
+                                            "definition": "to sweep/brush"
+                                        },
+                                        {
+                                            "term": "feststellen",
+                                            "definition": "to determine"
+                                        },
+                                        {
+                                            "term": "festlegen vs. feststellen",
+                                            "definition": "festlegen = determine as in specify, definefeststellen = determine as in establish"
+                                        },
+                                        {
+                                            "term": "studies show",
+                                            "definition": "Studien zeigen"
+                                        },
+                                        {
+                                            "term": "a long distance",
+                                            "definition": "eine lange Strecke"
+                                        },
+                                        {
+                                            "term": "der Schlips",
+                                            "definition": "tie"
+                                        },
+                                        {
+                                            "term": "liebensw\\xc3\\xbcrdigerweise",
+                                            "definition": "graciously"
+                                        },
+                                        {
+                                            "term": "Bewertungen",
+                                            "definition": "reviews, assessments"
+                                        },
+                                        {
+                                            "term": "Aula, Saal",
+                                            "definition": "Hall"
+                                        },
+                                        {
+                                            "term": "verkaufen",
+                                            "definition": "to sell"
+                                        },
+                                        {
+                                            "term": "so far, as yet, till now",
+                                            "definition": "bischer"
+                                        },
+                                        {
+                                            "term": "combine",
+                                            "definition": "verbinden"
+                                        },
+                                        {
+                                            "term": "Erm\\xc3\\xa4\\xc3\\x9figung",
+                                            "definition": "reduction"
+                                        },
+                                        {
+                                            "term": "erledigen",
+                                            "definition": "to deal with"
+                                        },
+                                        {
+                                            "term": "fragile",
+                                            "definition": "zerbrechlich"
+                                        },
+                                        {
+                                            "term": "fitting, tight",
+                                            "definition": "anliegend"
+                                        },
+                                        {
+                                            "term": "ertragen",
+                                            "definition": "to bear"
+                                        },
+                                        {
+                                            "term": "thin",
+                                            "definition": "schlank"
+                                        },
+                                        {
+                                            "term": "to shed tears",
+                                            "definition": "Tr\\xc3\\xa4nen vergie\\xc3\\x9fen"
+                                        },
+                                        {
+                                            "term": "pale",
+                                            "definition": "blass"
+                                        },
+                                        {
+                                            "term": "happened",
+                                            "definition": "geschehen"
+                                        },
+                                        {
+                                            "term": "to deepen, intensity, further",
+                                            "definition": "vertiefen"
+                                        },
+                                        {
+                                            "term": "do a tour round the city",
+                                            "definition": "einen Stadtrundgang machen"
+                                        },
+                                        {
+                                            "term": "Starry Sky",
+                                            "definition": "Sternenhimmel"
+                                        },
+                                        {
+                                            "term": "Himmel(pl)",
+                                            "definition": "Himmel"
+                                        },
+                                        {
+                                            "term": "well-furnished",
+                                            "definition": "gut eingerichtet"
+                                        },
+                                        {
+                                            "term": "to update (on news)",
+                                            "definition": "aktualisieren"
+                                        },
+                                        {
+                                            "term": "has broken",
+                                            "definition": "is kaputt gegangen"
+                                        },
+                                        {
+                                            "term": "lend a hand to under-privelleged people",
+                                            "definition": "benachteiligte Leute eine Hand reichen"
+                                        },
+                                        {
+                                            "term": "11 German Cities",
+                                            "definition": "BerlinHamburgD\\xc3\\xbcsseldorfEssenStuttgart Munich FrankfurtLeverkusenK\\xc3\\xb6lnLeipzigDortmund"
+                                        },
+                                        {
+                                            "term": "incidents, occurances",
+                                            "definition": "Vorkomnisse"
+                                        },
+                                        {
+                                            "term": "das Gewitter",
+                                            "definition": "Thunderstorm"
+                                        },
+                                        {
+                                            "term": "gewisserma\\xc3\\x9fen",
+                                            "definition": "sort of, kinda"
+                                        },
+                                        {
+                                            "term": "gewissenhaft",
+                                            "definition": "conscientious"
+                                        },
+                                        {
+                                            "term": "das Gewissen",
+                                            "definition": "conscience"
+                                        },
+                                        {
+                                            "term": "ein Verbrechen zu begehen",
+                                            "definition": "to commit a crime"
+                                        },
+                                        {
+                                            "term": "den falschen Weg einschlagen",
+                                            "definition": "to take the wrong path"
+                                        },
+                                        {
+                                            "term": "sich ausgeschlossen f\\xc3\\xbchlen",
+                                            "definition": "to feel excluded"
+                                        },
+                                        {
+                                            "term": "sich eingeschlossen f\\xc3\\xbchlen",
+                                            "definition": "to feel included"
+                                        },
+                                        {
+                                            "term": "ein Zugeh\\xc3\\xb6rigkeitsgef\\xc3\\xbchl haben",
+                                            "definition": "to have a sense of belonging"
+                                        },
+                                        {
+                                            "term": "gewiss",
+                                            "definition": "certain"
+                                        },
+                                        {
+                                            "term": "der Gegend",
+                                            "definition": "area, region"
+                                        },
+                                        {
+                                            "term": "behindert",
+                                            "definition": "disabled"
+                                        },
+                                        {
+                                            "term": "der Unfall",
+                                            "definition": "accident"
+                                        },
+                                        {
+                                            "term": "das Betragen",
+                                            "definition": "behaviour"
+                                        },
+                                        {
+                                            "term": "k\\xc3\\xa4mpfen",
+                                            "definition": "to fight"
+                                        },
+                                        {
+                                            "term": "Der Kampf",
+                                            "definition": "The Fight"
+                                        },
+                                        {
+                                            "term": "betteln",
+                                            "definition": "to beg"
+                                        },
+                                        {
+                                            "term": "betroffen",
+                                            "definition": "shocked, upset"
+                                        },
+                                        {
+                                            "term": "betrunken",
+                                            "definition": "drunk"
+                                        },
+                                        {
+                                            "term": "Br\\xc3\\xbccken",
+                                            "definition": "bridges"
+                                        },
+                                        {
+                                            "term": "Sitzb\\xc3\\xa4nken",
+                                            "definition": "benches"
+                                        },
+                                        {
+                                            "term": "der Schlafsack",
+                                            "definition": "sleeping bag"
+                                        },
+                                        {
+                                            "term": "Druckerpatronen recyceln",
+                                            "definition": "recycle printer cartridges"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
