@@ -11406,6 +11406,988 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "title": "OCR A",
+                            "setname": "Physics OCR A A-Level",
+                            "longCards": true,
+                            "topics": [
+                                {
+                                    "title": "Medical Imaging",
+                                    "cards": [
+                                        {
+                                            "term": "What provides the energy of the X-rays in an X-ray tube?",
+                                            "definition": "The kinetic energy of the accelerated electrons."
+                                        },
+                                        {
+                                            "term": "What is an X-ray?",
+                                            "definition": "A photon produced by the deceleration of a fast moving electron"
+                                        },
+                                        {
+                                            "term": "What is the typical p.d. of an X-ray tube for medical imaging?",
+                                            "definition": "30-100kV"
+                                        },
+                                        {
+                                            "term": "What causes the emission of electrons from the cathode in an X-ray tube?",
+                                            "definition": "It is heated to produce thermionic emission."
+                                        },
+                                        {
+                                            "term": "What name is given to the anode in an X-ray tube?",
+                                            "definition": "The target metal."
+                                        },
+                                        {
+                                            "term": "What is an essential property for the target metal in an X-ray tube?",
+                                            "definition": "High melting point."
+                                        },
+                                        {
+                                            "term": "What causes the production of X-rays in an X-ray tube?",
+                                            "definition": "The deceleration of electrons when they hit the target metal/anode."
+                                        },
+                                        {
+                                            "term": "In an X-ray tube what happens to most of the kinetic energy lost by the electrons when they hit the anode?",
+                                            "definition": "It is transferred to thermal energy of the anode."
+                                        },
+                                        {
+                                            "term": "What measures can be taken to prevent an anode melting in an X-ray tube?",
+                                            "definition": "It is cooled by oil or rotated"
+                                        },
+                                        {
+                                            "term": "What feature of X-ray tubes protects the radiographer?",
+                                            "definition": "Lead lining."
+                                        },
+                                        {
+                                            "term": "What determines the maximum frequency of X-rays produced in an X-ray tube?",
+                                            "definition": "The maximum kinetic energy of a single electron."
+                                        },
+                                        {
+                                            "term": "When is the equation \\xce\\xbb = hc/eV used?",
+                                            "definition": "To find the minimum wavelengths of X-ray produced (by an X-ray tube)"
+                                        },
+                                        {
+                                            "term": "What is V in the equation \\xce\\xbb = hc/eV?",
+                                            "definition": "The accelerating potential difference."
+                                        },
+                                        {
+                                            "term": "Describe the beam used by CAT scanners.",
+                                            "definition": "A thin (1-10mm) fan."
+                                        },
+                                        {
+                                            "term": "What happens to the position of the X-ray tube during a CAT scan?",
+                                            "definition": "It rotates around the patient."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Capacitors",
+                                    "cards": [
+                                        {
+                                            "term": "What is the relationship between charge stored and pd across a capacitor?",
+                                            "definition": "Charge is proportional to voltage"
+                                        },
+                                        {
+                                            "term": "Describe what happens to the two plates of an uncharged capacitor when a p.d. is applied to it?",
+                                            "definition": "Electrons/charge flows off of one plate and flows on to the other causing one to become positive and the other negative."
+                                        },
+                                        {
+                                            "term": "What units are equivalent to a Farad?",
+                                            "definition": "CV^-1 or coulombs per volt"
+                                        },
+                                        {
+                                            "term": "How do you calauclte the total capacitance for capacitors in parallel?",
+                                            "definition": "CT = C1 + C2 + C3 + ...."
+                                        },
+                                        {
+                                            "term": "How do you calculte the total capacitance for capacitors in series?",
+                                            "definition": "1/CT = 1/C1 + 1/C2 + 1/C3...."
+                                        },
+                                        {
+                                            "term": "If capcitors are connected in series what quantitiy is the same for all capacitors?",
+                                            "definition": "Charge stored"
+                                        },
+                                        {
+                                            "term": "If capcitors are connected in parallel what quantitiy is the same for all capacitors?",
+                                            "definition": "p.d."
+                                        },
+                                        {
+                                            "term": "What is representd by the area under a p.d. - charge graphs?",
+                                            "definition": "Electrical energy transferred OR work done."
+                                        },
+                                        {
+                                            "term": "What is represented by the gradient of a charge-p.d. graph for a capacitor?",
+                                            "definition": "Capacitance"
+                                        },
+                                        {
+                                            "term": "What is the relationship between energy stored and p.d. on a capcitor?",
+                                            "definition": "Energy stored is proportional to p.d. squared"
+                                        },
+                                        {
+                                            "term": "What is the relationship between energy stored and charge on a capcitor?",
+                                            "definition": "Energy stored is proportional to charge squared"
+                                        },
+                                        {
+                                            "term": "Out of Q, V and I which variable(s) follow the relationship x = x0 e^-(t/RC) when discharging a capacitor?",
+                                            "definition": "Q, V and I"
+                                        },
+                                        {
+                                            "term": "Out of Q, V and I which variable(s) follow the relationship x = x0 e^-(t/RC) when charging a capacitor?",
+                                            "definition": "I"
+                                        },
+                                        {
+                                            "term": "Out of Q, V and I which variable(s) follow the relationship x = x0 (1 - e^-(t/RC) ) when charging a capacitor?",
+                                            "definition": "Q and V"
+                                        },
+                                        {
+                                            "term": "How do you calculate time constant in a capcitor circuit?",
+                                            "definition": "RC"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Electric Fields",
+                                    "cards": [
+                                        {
+                                            "term": "What is an electric field?",
+                                            "definition": "A region of space where a charge will experience an electrostatic force."
+                                        },
+                                        {
+                                            "term": "What is the definition of electric field strength?",
+                                            "definition": "The force per unit charge on a positive test charge placed at that point"
+                                        },
+                                        {
+                                            "term": "What are the units of electric field strength?",
+                                            "definition": "NC\\xe2\\x81\\xbb\\xc2\\xb9 (or Vm\\xe2\\x81\\xbb\\xc2\\xb9)"
+                                        },
+                                        {
+                                            "term": "What does \\xce\\xb50 represent?",
+                                            "definition": "permittivity of free space"
+                                        },
+                                        {
+                                            "term": "What does \\xce\\xb5r represent?",
+                                            "definition": "Relative permittivity (of a dielectric)."
+                                        },
+                                        {
+                                            "term": "What does the direction of an electric field line show?",
+                                            "definition": "The direction of the force exerted on a positive test charge."
+                                        },
+                                        {
+                                            "term": "What does the spacing of electric field lines show?",
+                                            "definition": "Field strength."
+                                        },
+                                        {
+                                            "term": "Are test charges positive or negative?",
+                                            "definition": "positive"
+                                        },
+                                        {
+                                            "term": "What units equivalent to Vm\\xe2\\x81\\xbb\\xc2\\xb9",
+                                            "definition": "N C\\xe2\\x81\\xbb\\xc2\\xb9"
+                                        },
+                                        {
+                                            "term": "When is the equation E = V/d used?",
+                                            "definition": "To find the uniform field strength between two parallel plates."
+                                        },
+                                        {
+                                            "term": "What is a dipole?",
+                                            "definition": "A pair of opposite sign charges separated by a small distance (e.g. a polar molecule like HCl)"
+                                        },
+                                        {
+                                            "term": "State Coulomb's law in words.",
+                                            "definition": "The force between two point charges is proportional to the product of the two charges and inversely proportional to the square of their separation distance."
+                                        },
+                                        {
+                                            "term": "What is electric potential difference?",
+                                            "definition": "The work done per unit positive charge in moving between two points"
+                                        },
+                                        {
+                                            "term": "What is the definition of absolute electric potential of a point?",
+                                            "definition": "The work done per unit positive charge to move from infinity to that point in the field."
+                                        },
+                                        {
+                                            "term": "What is the absolute electric potential an infinite distance from a 1C charge?",
+                                            "definition": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Particle Physics and Radioactivity",
+                                    "cards": [
+                                        {
+                                            "term": "What material was used as a target in Rutherford's scattering experiment?",
+                                            "definition": "Gold foil, a few atoms thick"
+                                        },
+                                        {
+                                            "term": "What was measured in Rutherford's scattering experiment?",
+                                            "definition": "The angle of deflection of the alpha particles."
+                                        },
+                                        {
+                                            "term": "What happened to most of the alpha particle in Rutherford's scattering experiment?",
+                                            "definition": "They passed straight through the foil (with very little scattering)."
+                                        },
+                                        {
+                                            "term": "What proportion of alpha particles were scattered in Rutherford's scattering experiment?",
+                                            "definition": "Around 1 in 2000"
+                                        },
+                                        {
+                                            "term": "What proportion of alpha particles were deflected by more than 90\\xc2\\xb0 in Rutherford's scattering experiment?",
+                                            "definition": "Around 1 in 10,000"
+                                        },
+                                        {
+                                            "term": "What was concluded due to most of the alpha particles passing straight through the gold foil Rutherford's scattering experiment?",
+                                            "definition": "Most of the atom is empty space with most of the mass concentrated in a small nucleus."
+                                        },
+                                        {
+                                            "term": "What was concluded due to some alpha particles being scattered in Rutherford's scattering experiment?",
+                                            "definition": "The nucleus is positively charged."
+                                        },
+                                        {
+                                            "term": "How did Rutherford estimate the maximum radius of the nucleus?",
+                                            "definition": "He equated the KE of the alpha particle to the electric potential energy at closest approach to the nucleus."
+                                        },
+                                        {
+                                            "term": "What is a nucleon?",
+                                            "definition": "A proton or neutron."
+                                        },
+                                        {
+                                            "term": "What is an isotope?",
+                                            "definition": "A nucleus of an element with the same number of protons but a different number of neutrons."
+                                        },
+                                        {
+                                            "term": "What is an atomic mass unit?",
+                                            "definition": "One twelfth of the mass of a neutral carbon 12 atom."
+                                        },
+                                        {
+                                            "term": "How has the radius of the nucleus been measured?",
+                                            "definition": "By the diffraction of fast moving electron."
+                                        },
+                                        {
+                                            "term": "What is R in R = r\\xe2\\x82\\x80A^(1/3)?",
+                                            "definition": "The radius of the nucleus."
+                                        },
+                                        {
+                                            "term": "What is r\\xe2\\x82\\x80 in R = r\\xe2\\x82\\x80A^(1/3) roughly equivalent to?",
+                                            "definition": "The radius of a proton."
+                                        },
+                                        {
+                                            "term": "What is A in R = r\\xe2\\x82\\x80A^(1/3)",
+                                            "definition": "Nucleon number."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Electromagnetism",
+                                    "cards": [
+                                        {
+                                            "term": "How is magnetic flux defined?",
+                                            "definition": "It is the total component of the magnetic flux density passing at right angles through a surface of area A OR \\xe2\\x88\\x85 = BA cos\\xce\\xb8"
+                                        },
+                                        {
+                                            "term": "What are the SI units of flux?",
+                                            "definition": "Wb (Weber)"
+                                        },
+                                        {
+                                            "term": "What is represented by \\xe2\\x88\\x85 in the equations \\xe2\\x88\\x85 = BA cos\\xce\\xb8?",
+                                            "definition": "Flux"
+                                        },
+                                        {
+                                            "term": "What is the relationship between flux and flux linkage?",
+                                            "definition": "Flux linkage is flux multiplied by the number of turns on the coil"
+                                        },
+                                        {
+                                            "term": "What is represented by \\xce\\xb8 in the equations \\xe2\\x88\\x85 = BA cos\\xce\\xb8?",
+                                            "definition": "The angle between the flux/field and the normal/perpendicular to the surface."
+                                        },
+                                        {
+                                            "term": "How is flux linkage calculated?",
+                                            "definition": "N\\xe2\\x88\\x85 where N is the number of turns on the coil and \\xe2\\x88\\x85 is the flux passing through the coil."
+                                        },
+                                        {
+                                            "term": "What is the relationship between flux and flux density?",
+                                            "definition": "Flux density is the flux per unit area perpendicular to the field."
+                                        },
+                                        {
+                                            "term": "How is flux represented in a field line diagram?",
+                                            "definition": "The total number of field lines passing through the object/surface."
+                                        },
+                                        {
+                                            "term": "How is flux density represented in a field line diagram?",
+                                            "definition": "The spacing of field lines."
+                                        },
+                                        {
+                                            "term": "What other units are Tesla commonly expressed in?",
+                                            "definition": "Wbm\\xe2\\x81\\xbb\\xc2\\xb2 (or Nm\\xe2\\x81\\xbb\\xc2\\xb9A\\xe2\\x81\\xbb\\xc2\\xb9)"
+                                        },
+                                        {
+                                            "term": "State Faraday's law.",
+                                            "definition": "The magnitude of an induced EMF is directly proportional to the rate of change of flux linkage."
+                                        },
+                                        {
+                                            "term": "What is represented by \\xce\\xb5 in the equation \\xce\\xb5 = -\\xe2\\x88\\x86(N\\xe2\\x88\\x85)/\\xe2\\x88\\x86t?",
+                                            "definition": "Induced EMF."
+                                        },
+                                        {
+                                            "term": "What is law is represented by the proportionality \\xce\\xb5 \\xce\\xb1 \\xe2\\x88\\x86(N\\xe2\\x88\\x85)/\\xe2\\x88\\x86t?",
+                                            "definition": "Faraday's Law (of electromagnetic induction)."
+                                        },
+                                        {
+                                            "term": "State Lenz's law.",
+                                            "definition": "The direction of an induced EMF or current is always in such a direction as to oppose the change that created it."
+                                        },
+                                        {
+                                            "term": "What principle leads to Lenz's law?",
+                                            "definition": "Conservation of energy."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Waves",
+                                    "cards": [
+                                        {
+                                            "term": "What is a progressive wave?",
+                                            "definition": "A progressive wave that transfers energy through space."
+                                        },
+                                        {
+                                            "term": "What is a transverse wave?",
+                                            "definition": "A wave in which the oscillations are perpendicular to the direction of wave propagation"
+                                        },
+                                        {
+                                            "term": "What is a longitudinal wave?",
+                                            "definition": "A wave in which the oscillations are parallel to the direction of wave propagation"
+                                        },
+                                        {
+                                            "term": "Give an example of a longitudinal wave",
+                                            "definition": "Sound, primary seismic waves"
+                                        },
+                                        {
+                                            "term": "Give an example of a transverse waves",
+                                            "definition": "Waves on a stretched string, secondary seismic waves, electromagnetic radiation"
+                                        },
+                                        {
+                                            "term": "What are the regions of high pressure in a longitudinal wave called?",
+                                            "definition": "Compressions"
+                                        },
+                                        {
+                                            "term": "What are the regions of low pressure in a longitudinal wave called?",
+                                            "definition": "Rarefactions"
+                                        },
+                                        {
+                                            "term": "What is the displacement of a wave?",
+                                            "definition": "The distance of a particle in the medium from it's equilibrium position in a particular direction."
+                                        },
+                                        {
+                                            "term": "What is the equilibrium position in wave motion?",
+                                            "definition": "The position of the medium when undisturbed by a wave."
+                                        },
+                                        {
+                                            "term": "What is the amplitude of a wave?",
+                                            "definition": "Maximum displacement of the medium from the equilibrium position."
+                                        },
+                                        {
+                                            "term": "What is the frequency of a wave?",
+                                            "definition": "The number of wave cycles per second OR the number of waves passing a point per unit time"
+                                        },
+                                        {
+                                            "term": "What is the time period of a wave?",
+                                            "definition": "Time taken for one complete oscillation OR time for a whole wavelength to pass a fixed point."
+                                        },
+                                        {
+                                            "term": "What is the relationship between frequency and time period?",
+                                            "definition": "f = 1/T or inverse proportionality"
+                                        },
+                                        {
+                                            "term": "How many radians of phase are there in one complete wave cycle?",
+                                            "definition": "2\\xcf\\x80 rad"
+                                        },
+                                        {
+                                            "term": "What term describes a phase difference of zero between two points on a wave?",
+                                            "definition": "In phase"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Mechanics",
+                                    "cards": [
+                                        {
+                                            "term": "What is a scalar quantity?",
+                                            "definition": "A quantity with magnitude but no direction."
+                                        },
+                                        {
+                                            "term": "What is a vector quantity?",
+                                            "definition": "A quantity with magnitude and direction."
+                                        },
+                                        {
+                                            "term": "When adding two perpendicular vectors what can you use to find the direction of the resultant?",
+                                            "definition": "Trigonometry"
+                                        },
+                                        {
+                                            "term": "When adding two perpendicular vectors what can you use to find the magnitude of the resultant?",
+                                            "definition": "Pythagoras' Theorem"
+                                        },
+                                        {
+                                            "term": "What is vector resolution?",
+                                            "definition": "The process of splitting a vector into two perpendicular components."
+                                        },
+                                        {
+                                            "term": "What is a resultant vector?",
+                                            "definition": "The sum of two or more individual vectors."
+                                        },
+                                        {
+                                            "term": "How is the resultant found in a vector diagram when adding several vectors together?",
+                                            "definition": "Join the vectors nose to tail and the resultant is from the tail of the first to the nose of the last vector."
+                                        },
+                                        {
+                                            "term": "What is displacement?",
+                                            "definition": "The distance of an object from a point in a specific direction (vector)"
+                                        },
+                                        {
+                                            "term": "What is velocity?",
+                                            "definition": "Rate of change of displacement (vector) \\xe2\\x88\\x86s/\\xe2\\x88\\x86t if constant"
+                                        },
+                                        {
+                                            "term": "What is speed?",
+                                            "definition": "Change in distance traveled per unit time (scalar)"
+                                        },
+                                        {
+                                            "term": "What is acceleration?",
+                                            "definition": "Rate of change of velocity (vector) \\xe2\\x88\\x86v/\\xe2\\x88\\x86t if constant"
+                                        },
+                                        {
+                                            "term": "What are the units of acceleration?",
+                                            "definition": "ms\\xe2\\x81\\xbb\\xc2\\xb2"
+                                        },
+                                        {
+                                            "term": "What is meant by constant velocity?",
+                                            "definition": "Speed and direction of motion don't change"
+                                        },
+                                        {
+                                            "term": "What is represented by the gradient of a distance-time graph?",
+                                            "definition": "Speed"
+                                        },
+                                        {
+                                            "term": "What is represented by the gradient of a displacement-time graph?",
+                                            "definition": "Velocity"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Electricity",
+                                    "cards": [
+                                        {
+                                            "term": "What is a charge carrier?",
+                                            "definition": "A charged particle capable of transferring electric current."
+                                        },
+                                        {
+                                            "term": "What do we mean when we say charge is quantised?",
+                                            "definition": "It can only take certain values (always ne)"
+                                        },
+                                        {
+                                            "term": "If n electrons are removed from a neutral object what is its charge?",
+                                            "definition": "ne"
+                                        },
+                                        {
+                                            "term": "What is an electrolyte?",
+                                            "definition": "A liquid containing charged ions."
+                                        },
+                                        {
+                                            "term": "What is a metallic conductor?",
+                                            "definition": "A material comprising a lattice of positive ions and delocalised electrons that carry electrical current"
+                                        },
+                                        {
+                                            "term": "Which direction does conventional current flow?",
+                                            "definition": "From positive to negative."
+                                        },
+                                        {
+                                            "term": "Which direction do electrons flow in a circuit?",
+                                            "definition": "From negative to positive."
+                                        },
+                                        {
+                                            "term": "What is an ion?",
+                                            "definition": "A non-neutral atom or molecule."
+                                        },
+                                        {
+                                            "term": "What is a cation?",
+                                            "definition": "A positively charged ion"
+                                        },
+                                        {
+                                            "term": "What is an anion?",
+                                            "definition": "A negatively charged ion."
+                                        },
+                                        {
+                                            "term": "What is an anode?",
+                                            "definition": "A positive electrode."
+                                        },
+                                        {
+                                            "term": "What is a cathode?",
+                                            "definition": "A negative electrode."
+                                        },
+                                        {
+                                            "term": "How is an ammeter connected?",
+                                            "definition": "In series"
+                                        },
+                                        {
+                                            "term": "What is the resistance of an ideal ammeter?",
+                                            "definition": "Zero."
+                                        },
+                                        {
+                                            "term": "State Kirchoff's first law.",
+                                            "definition": "At any point in a circuit the sum of the currents entering that point is equal to sum of the currents leaving."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Materials",
+                                    "cards": [
+                                        {
+                                            "term": "What is a tensile force?",
+                                            "definition": "A force produces an extension of the object."
+                                        },
+                                        {
+                                            "term": "What is a compressive force?",
+                                            "definition": "A force that reduces the length of an object."
+                                        },
+                                        {
+                                            "term": "What is Hooke's Law?",
+                                            "definition": "Force is proportional to extension so long as the elastic limit is not exceeded."
+                                        },
+                                        {
+                                            "term": "What is elastic deformation?",
+                                            "definition": "When an object will return to its original shape when the load is removed."
+                                        },
+                                        {
+                                            "term": "What is plastic deformation?",
+                                            "definition": "A permanent change in shape that remains once the load is removed."
+                                        },
+                                        {
+                                            "term": "What is k in F = kx",
+                                            "definition": "The force constant."
+                                        },
+                                        {
+                                            "term": "What are the units of force constant (k)",
+                                            "definition": "Nm\\xe2\\x81\\xbb\\xc2\\xb9"
+                                        },
+                                        {
+                                            "term": "What is represented by the area under a force-extension graph?",
+                                            "definition": "The work done stretching the object."
+                                        },
+                                        {
+                                            "term": "What is meant by an elastic material?",
+                                            "definition": "A material which can be significantly deformed and will return to it's original shape."
+                                        },
+                                        {
+                                            "term": "What is tensile stress?",
+                                            "definition": "The force applied per unit cross sectional area."
+                                        },
+                                        {
+                                            "term": "What is tensile strain?",
+                                            "definition": "The fractional change in length of an object."
+                                        },
+                                        {
+                                            "term": "What is a ductile material?",
+                                            "definition": "A material which ccan be drawn into a wire of hammered into thin sheets."
+                                        },
+                                        {
+                                            "term": "What is the limit of proportionality of a material?",
+                                            "definition": "The point at which a material stops obeying Hooke's Law"
+                                        },
+                                        {
+                                            "term": "What is the elastic limit of a material?",
+                                            "definition": "The point at which a material starts to plastically deform."
+                                        },
+                                        {
+                                            "term": "What is the yield point of a material?",
+                                            "definition": "The point at which the material starts to extend rapidly as stress increases."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Quantum Physics",
+                                    "cards": [
+                                        {
+                                            "term": "What determines the energy of a photon?",
+                                            "definition": "The frequency/wavelength"
+                                        },
+                                        {
+                                            "term": "What is a photon?",
+                                            "definition": "A quantum of energy of electromagnetic radiation"
+                                        },
+                                        {
+                                            "term": "How do you calculate the energy of a photon?",
+                                            "definition": "E = hf OR E =hc/\\xce\\xbb"
+                                        },
+                                        {
+                                            "term": "What is an electron volt?",
+                                            "definition": "The energy gained or lost by an electron passing through a potential difference of 1V"
+                                        },
+                                        {
+                                            "term": "How do convert from eV to J?",
+                                            "definition": "multiply by 1.6x10^-19"
+                                        },
+                                        {
+                                            "term": "How do convert from J to eV?",
+                                            "definition": "divide by 1.6x10^-19"
+                                        },
+                                        {
+                                            "term": "What is the threshold p.d. of an LED?",
+                                            "definition": "The minimum potential difference required for the LED to produce light."
+                                        },
+                                        {
+                                            "term": "How can the threshold p.d. of an LED be used to find photon energy?",
+                                            "definition": "The energy transferred by the electrons (e x V) is equal to the energy of the photons produced (hf)."
+                                        },
+                                        {
+                                            "term": "What is meant by wave particle duality?",
+                                            "definition": "It describes how all matter can display both wave and particle properties."
+                                        },
+                                        {
+                                            "term": "What is the key piece of evidence for wave particle duality?",
+                                            "definition": "When an electron beam passes through polycrystaline graphite it produces a diffraction and interference pattern pattern."
+                                        },
+                                        {
+                                            "term": "What does the De Broglie wave equation apply to?",
+                                            "definition": "Everything"
+                                        },
+                                        {
+                                            "term": "What is the relationship between momentum and wavelength?",
+                                            "definition": "Inverse proportionality"
+                                        },
+                                        {
+                                            "term": "What is the photoelectric effect?",
+                                            "definition": "The emission of electrons from a metal surface when illuminated with light."
+                                        },
+                                        {
+                                            "term": "What is the atomic structure of a metal?",
+                                            "definition": "A lattice of positive ions surrounded by a sea of free electrons."
+                                        },
+                                        {
+                                            "term": "What is a photoelectron?",
+                                            "definition": "An electron that has been removed from a metal by absorbing a photon"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Thermal Physics",
+                                    "cards": [
+                                        {
+                                            "term": "What is thermal equilibrium?",
+                                            "definition": "When two objects at the same temperature so no heat flows between them."
+                                        },
+                                        {
+                                            "term": "What is absolute zero temperature?",
+                                            "definition": "The temperature at which the internal energy of a system is at its lowest possible value"
+                                        },
+                                        {
+                                            "term": "What is 0\\xe2\\x81\\xb0C in Kelvin?",
+                                            "definition": "273 K"
+                                        },
+                                        {
+                                            "term": "What is the relationship between absolute temperature and the average KE of particles in a substance?",
+                                            "definition": "Absolute temperature is proportional to average kinetic energy of the particles in a substance."
+                                        },
+                                        {
+                                            "term": "What is the triple point of a substance?",
+                                            "definition": "The temperature and pressure at which a substance can exist in all three phases in thermal equilibrium."
+                                        },
+                                        {
+                                            "term": "Describe the kinetic model of a solid.",
+                                            "definition": "A regular arrangement of particles that are strongly attracted to each other. Particles vibrate but can't change positions in the structure."
+                                        },
+                                        {
+                                            "term": "Describe the kinetic model of a liquid.",
+                                            "definition": "Particles are attracted to each other but are free to move around."
+                                        },
+                                        {
+                                            "term": "Describe the kinetic model of a gas.",
+                                            "definition": "Particles are far apart and there are no forces of attraction between them."
+                                        },
+                                        {
+                                            "term": "What is the internal energy of a substance?",
+                                            "definition": "The sum of the randomly distributed kinetic and potential energy of the particles in an object"
+                                        },
+                                        {
+                                            "term": "Why doesn't the temperature of a substance change whilst it is changing state?",
+                                            "definition": "The electrostatic potential of the particles is changing rather than the kinetic energy."
+                                        },
+                                        {
+                                            "term": "Why is the electrostatic potential energy of liquids and solids negative?",
+                                            "definition": "Energy must be supplied to the substance to break the bonds between particles."
+                                        },
+                                        {
+                                            "term": "What effect does increasing the temperature have on the particles in a substance?",
+                                            "definition": "It increases their average kinetic energy."
+                                        },
+                                        {
+                                            "term": "What is the specific heat capacity (c) of a material?",
+                                            "definition": "The energy needed to raise the temperature of 1kg of the material by 1 degree Celsius/Kelvin without any change of state."
+                                        },
+                                        {
+                                            "term": "What are the units of specific heat capacity (c)",
+                                            "definition": "J kg\\xe2\\x81\\xbb\\xc2\\xb9 K\\xe2\\x81\\xbb\\xc2\\xb9"
+                                        },
+                                        {
+                                            "term": "What is \\xe2\\x88\\x86Q in \\xe2\\x88\\x86Q = mc\\xe2\\x88\\x86\\xce\\xb8",
+                                            "definition": "Thermal energy gained (or lost if negative) by an object (provided no change in state)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Circular Motion \\\\u0026 Oscillations",
+                                    "cards": [
+                                        {
+                                            "term": "How many radians are there is 360 degrees?",
+                                            "definition": "2 pi"
+                                        },
+                                        {
+                                            "term": "What are the SI units of angular velocity?",
+                                            "definition": "Radians per second."
+                                        },
+                                        {
+                                            "term": "What is the definition of angular velocity?",
+                                            "definition": "The rate of change of angle."
+                                        },
+                                        {
+                                            "term": "How do you calculate angular velocity from time period (T)?",
+                                            "definition": "Angular velocity = 2 pi / T"
+                                        },
+                                        {
+                                            "term": "How do you calculate angular velocity from frequency (f)?",
+                                            "definition": "Angular velocity = 2 pi f"
+                                        },
+                                        {
+                                            "term": "What is required for uniform circular motion?",
+                                            "definition": "A force that always acts perpendicular to velocity."
+                                        },
+                                        {
+                                            "term": "Why doesn't a centripetal force do any work on an object in circular motion!",
+                                            "definition": "The force has no component in the dircetion of motion/is always perpendicular to motion."
+                                        },
+                                        {
+                                            "term": "How do you calculate linear velocity from the time period (T) of an object in circular motion?",
+                                            "definition": "v = 2 pi r / T"
+                                        },
+                                        {
+                                            "term": "How do you calculate linear velocity from angular velocity?",
+                                            "definition": "v = angular velocity x radius"
+                                        },
+                                        {
+                                            "term": "How is it possible for an object to experience an acceleration but travel at a constant speed?",
+                                            "definition": "If acceleration is perpendicular to velocity, the velocity will change direction whilst speed is constant."
+                                        },
+                                        {
+                                            "term": "What provides the centripetal force for a car turning a corner?",
+                                            "definition": "Friction from the road on the tyres."
+                                        },
+                                        {
+                                            "term": "What provides the centripetal force on the moon?",
+                                            "definition": "The gravitational attraction of the Earth."
+                                        },
+                                        {
+                                            "term": "Apart from friction what contributes to the centripetal force on a banked track?",
+                                            "definition": "The horizontal component of the normal reaction."
+                                        },
+                                        {
+                                            "term": "If a mass on a string is swung in a vertical circle where is the tension greatest?",
+                                            "definition": "At the bottom of the circle."
+                                        },
+                                        {
+                                            "term": "If a mass on a string is swung in a vertical circle where is the tension least?",
+                                            "definition": "At the top of the circle."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Gravitational Fields",
+                                    "cards": [
+                                        {
+                                            "term": "What is a gravitational field?",
+                                            "definition": "A region in which a mass will experience a gravitational force."
+                                        },
+                                        {
+                                            "term": "What is gravitational field strength?",
+                                            "definition": "The force per unit mass exerted on test mass at that point in the field."
+                                        },
+                                        {
+                                            "term": "What are the units of gravitational field strength?",
+                                            "definition": "N kg\\xe2\\x81\\xbb\\xc2\\xb9"
+                                        },
+                                        {
+                                            "term": "What does the direction of a gravitational field line show?",
+                                            "definition": "The direction of force on a test mass at that point in the field."
+                                        },
+                                        {
+                                            "term": "What is represented by the spacing of field lines in a field line diagram?",
+                                            "definition": "Field strength."
+                                        },
+                                        {
+                                            "term": "What is a radial gravitational field?",
+                                            "definition": "A gravitational field produced by a spherical (or point) mass in which the field lines all point towards the centre of mass of the object causing the field."
+                                        },
+                                        {
+                                            "term": "What is a uniform gravitational field?",
+                                            "definition": "A region in which the gravitational field strength is constant."
+                                        },
+                                        {
+                                            "term": "How is a uniform gravitational field shown in a field line diagram?",
+                                            "definition": "Parallel, equally spaced field lines."
+                                        },
+                                        {
+                                            "term": "What is a point mass?",
+                                            "definition": "A idealised mass with zero size. The field outside a spherical mass can be modelled as the field around a point mass."
+                                        },
+                                        {
+                                            "term": "State Newton's Law of Gravitation.",
+                                            "definition": "The gravitational attraction between two objects is proportional to the product of their masses and inversely proportional to the sqaure of the distance between their centres of mass"
+                                        },
+                                        {
+                                            "term": "State Kepler's 1st Law.",
+                                            "definition": "A planet's orbit is an ellipse with the Sun at one of the two foci"
+                                        },
+                                        {
+                                            "term": "What is an aphelion?",
+                                            "definition": "The point in an orbit when an object is furthest from the sun and travelling slowest."
+                                        },
+                                        {
+                                            "term": "What is a perihelion?",
+                                            "definition": "The point in an orbit when an object is closest to the sun and travelling fastest."
+                                        },
+                                        {
+                                            "term": "State Kepler's 2nd Law.",
+                                            "definition": "A line segment joining the planet to the Sun sweeps out equal areas in equal time intervals."
+                                        },
+                                        {
+                                            "term": "State Kepler's 3rd Law.",
+                                            "definition": "For planets in the solar system the square of the orbital period is proportional to the cube of the average orbital radius."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Astrophysics",
+                                    "cards": [
+                                        {
+                                            "term": "What is the universe?",
+                                            "definition": "Everything that exists."
+                                        },
+                                        {
+                                            "term": "What is a Nebula?",
+                                            "definition": "A large cloud of gas (mainly hydrogen) and dust in space"
+                                        },
+                                        {
+                                            "term": "What is protostar?",
+                                            "definition": "A hot dense sphere of gas prior to the ignition of nuclear fusion in the core that creates a star"
+                                        },
+                                        {
+                                            "term": "What provides the energy required for a protostar to begin fusion?",
+                                            "definition": "Gravitation energy is transferred to thermal energy."
+                                        },
+                                        {
+                                            "term": "What is nuclear fusion?",
+                                            "definition": "The fusing of light nuclei to produce heavier nuclei releasing energy in the process."
+                                        },
+                                        {
+                                            "term": "What is required for nuclear fusion to occur?",
+                                            "definition": "Extremely high temperatures and pressures."
+                                        },
+                                        {
+                                            "term": "What prevents gravity from causing stars to collapse?",
+                                            "definition": "The radiation and gas pressure pushing outward."
+                                        },
+                                        {
+                                            "term": "Why do large stars tend to remain stable for less time than smaller starts?",
+                                            "definition": "The pressure and temperature in the core is higher so they fuse hydrogen more quickly."
+                                        },
+                                        {
+                                            "term": "What is radiation pressure in a star?",
+                                            "definition": "Pressure from the photons created by fusion in the core of a star."
+                                        },
+                                        {
+                                            "term": "What is the gas pressure in a stars?",
+                                            "definition": "Pressure of the nuclei in the star's core pusing outwards."
+                                        },
+                                        {
+                                            "term": "What is a main sequence star?",
+                                            "definition": "A stable star fusing hydrogen in helium."
+                                        },
+                                        {
+                                            "term": "What causes a star to leave the main sequence?",
+                                            "definition": "It runs low on hydrogen, affecting the stability of the star."
+                                        },
+                                        {
+                                            "term": "What is a Red Giant?",
+                                            "definition": "The stage after the main sequence for a star with insufficient mass to go supernova."
+                                        },
+                                        {
+                                            "term": "Describe the structure of a red giant.",
+                                            "definition": "An inert core surronded by shells fusing elements heavier then Hydrogen."
+                                        },
+                                        {
+                                            "term": "What is a white dwarf?",
+                                            "definition": "The very hot, dense remnant core of a red giant star."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Magnetic Fields",
+                                    "cards": [
+                                        {
+                                            "term": "What creates a magnetic field?",
+                                            "definition": "Moving charges and permanent magnets."
+                                        },
+                                        {
+                                            "term": "What is shown by the direction of a magnetic field line?",
+                                            "definition": "The direction of force on a free north pole."
+                                        },
+                                        {
+                                            "term": "Which direction do magnetic field lines flow in?",
+                                            "definition": "From north to south."
+                                        },
+                                        {
+                                            "term": "How is a uniform magnetic field represented by field lines?",
+                                            "definition": "Parallel"
+                                        },
+                                        {
+                                            "term": "What does the spacing of magnetic field lines show?",
+                                            "definition": "Magnetic field strength/flux density."
+                                        },
+                                        {
+                                            "term": "How do you find the direction of the field lines around a current?",
+                                            "definition": "Using the right hand grip rule."
+                                        },
+                                        {
+                                            "term": "How is a field line or current running into the paper shown?",
+                                            "definition": "\\xe2\\x8a\\x97"
+                                        },
+                                        {
+                                            "term": "How is a field line or current running out of the paper shown?",
+                                            "definition": ". in a circle"
+                                        },
+                                        {
+                                            "term": "Why does a current experience a force in a magnetic field?",
+                                            "definition": "The current's magnetic field interacts with the external one."
+                                        },
+                                        {
+                                            "term": "What is represented by the thumb in Fleming's Left Hand rule.",
+                                            "definition": "(Direction of) force"
+                                        },
+                                        {
+                                            "term": "What is represented by the first finger in Fleming's Left Hand rule.",
+                                            "definition": "(Direction of the) magnetic field"
+                                        },
+                                        {
+                                            "term": "What is represented by the second finger in Fleming's LHR?",
+                                            "definition": "(Direction of) current"
+                                        },
+                                        {
+                                            "term": "When is Fleming's Left Hand Rule used?",
+                                            "definition": "To find the direction of a current/moving charge in a magnetic field."
+                                        },
+                                        {
+                                            "term": "When is the equation F = BIL sin\\xce\\xb8 used?",
+                                            "definition": "To find the magnitude of force on a wire (carrying current) in a magnetic field."
+                                        },
+                                        {
+                                            "term": "What is represented by \\xce\\xb8 in the equation F = BIL sin\\xce\\xb8?",
+                                            "definition": "The angle between the current and the field direction."
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
