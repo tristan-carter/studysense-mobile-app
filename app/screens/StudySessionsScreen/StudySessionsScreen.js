@@ -314,6 +314,13 @@ function StudySessionsPage({ navigation }) {
             // checks if on android and requests permission
             if (Platform.OS === 'android') {
               PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+              const settings = notifee.getNotificationSettings();
+
+              if (settings.android.alarm !== AndroidNotificationSetting.ENABLED) {
+                Alert.alert('Alarm permission required', 'Please enable alarm permission so we can inform you when your session is finished.');
+                notifee.openAlarmPermissionSettings();
+              }
+
             } else {
               requestUserPermissionIOS();
             }
@@ -543,7 +550,7 @@ function StudySessionsScreen({ navigation }) {
 
   // IOS Live Activities
   useEffect(() => {
-    if (Platform.OS === 'ios' && Platform.Version >= 16.1) {
+    if (Platform.OS === 'ios' && Platform.Version >= 16.2) {
       // stops live activities for session or break
       if (!currentSession || currentSession.hasClaimedBreak === true 
         || (currentSession.hasClaimedSession === true && !currentSession.breakStartTime)
@@ -572,48 +579,11 @@ function StudySessionsScreen({ navigation }) {
         }
       }
   }, [currentSession, timeLeft, sessionFinished, breakFinished]);
-
-  // Notification with timer, unlikely to be used
-  /*
-  const displayNotification = async (timerSeconds) => {
-    const channelId = await notifee.createChannel({
-      id: 'timer',
-      name: 'Timer Notifications',
-      importance: AndroidImportance.HIGH,
-      sound: 'none',
-      vibration: false, 
-    });
-  
-    notifee.displayNotification({
-      title: 'Session time left',
-      body: formatTime(timerSeconds),
-      android: {
-        channelId,
-        ongoing: true, // Keep notification persistent
-        showTimestamp: false,
-        color: colours.primary,
-      },
-      ios: {
-        _displayInForeground: false,
-        vibration: false,
-        sound: 'default',
-      },
-    });
-  }
-  
-  // Formats the time in seconds to MM:SS
-  const formatTime = (seconds) => { 
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
-  }
-
-  */
   // background timer for notifications
   async function startTimedNotification(finishDate, isBreak) {
     const trigger = {
       type: TriggerType.TIMESTAMP,
-      timestamp: finishDate.getTime()
+      timestamp: finishDate.getTime(),
     };
 
     let titleText = isBreak ? 'Break Finished' : 'Session Finished';
@@ -626,16 +596,32 @@ function StudySessionsScreen({ navigation }) {
         body: bodyText,
         android: {
           channelId: 'timer-notifications-id',
+          onlyAlertOnce: true,
+          importance: AndroidImportance.HIGH,
+          priority: AndroidImportance.HIGH,
         },
       },
       trigger,
     );
+
+    setTimeout(() => {
+      if (Platform.OS === 'ios') {
+        // updates live activity for session or break to finished
+        StudyCountdownWidgetModule.stopLiveActivity();
+      }
+  }, finishDate.getTime() - Date.now()); 
   }
 
   // trigger for background notifications
   const latestSessionId = useRef();
   const latestBreakId = useRef();
   useEffect(() => {
+    if (currentSession == null) {
+      latestSessionId.current = null;
+      latestBreakId.current = null;
+
+      notifee.cancelNotification('timer-notification');
+    }
     if (currentSession != null && currentSession.startTime != null && currentSession.id !== latestSessionId.current) {
       latestSessionId.current = currentSession.id;
       const finishDate = new Date(currentSession.startTime + currentSession.length * MINUTE_IN_MILLISECONDS);
