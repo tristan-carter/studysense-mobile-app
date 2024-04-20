@@ -603,13 +603,6 @@ function StudySessionsScreen({ navigation }) {
       },
       trigger,
     );
-
-    setTimeout(() => {
-      if (Platform.OS === 'ios') {
-        // updates live activity for session or break to finished
-        StudyCountdownWidgetModule.stopLiveActivity();
-      }
-  }, finishDate.getTime() - Date.now()); 
   }
 
   // trigger for background notifications
