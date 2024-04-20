@@ -34816,6 +34816,1247 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "title": "Computer Science",
+                    "examboards": [
+                        {
+                            "title": "AQA",
+                            "setname": "Computer Science AQA GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Everything",
+                                    "cards": [
+                                        {
+                                            "term": "Data",
+                                            "definition": "Consists of raw facts and figures without context or meaning."
+                                        },
+                                        {
+                                            "term": "Information",
+                                            "definition": "What exists when data has been given context or meaning."
+                                        },
+                                        {
+                                            "term": "Variable",
+                                            "definition": "Space for a single piece of data, each variable has a data type. You can change variables once they have been set."
+                                        },
+                                        {
+                                            "term": "Constant",
+                                            "definition": "Space for a single piece of data, each constant has a data type. You cannot change constants once they have been set."
+                                        },
+                                        {
+                                            "term": "Boolean",
+                                            "definition": "A data type, can be either true or false and requires only one bit of storage."
+                                        },
+                                        {
+                                            "term": "Character",
+                                            "definition": "A data type, a single letter, number, punctuation mark, space etc. - requires one byte."
+                                        },
+                                        {
+                                            "term": "String",
+                                            "definition": "A data type, stores any number of characters, such as a person\\'s name, address and postcode."
+                                        },
+                                        {
+                                            "term": "Integer",
+                                            "definition": "A data type, whole numbers, such as a person\\'s age or how much stock a shop has."
+                                        },
+                                        {
+                                            "term": "Real",
+                                            "definition": "A data type, decimal numbers, such as distances and fractions."
+                                        },
+                                        {
+                                            "term": "Boolean Operator - AND",
+                                            "definition": "If you see AND between two Boolean expressions, the whole expression is true only if both of the smaller expressions are true. For example: age <= 16 AND age >= 5"
+                                        },
+                                        {
+                                            "term": "Boolean Operator - OR",
+                                            "definition": "If either of the expressions either side of the OR is true, then the entire expression is true."
+                                        },
+                                        {
+                                            "term": "Boolean Operator - NOT",
+                                            "definition": "Adding NOT to an expression simply makes it the opposite of what it was before. For example: NOT (age <= 11). This covers all other ages, 12 and up."
+                                        },
+                                        {
+                                            "term": "The meaning of the following operators:>=<=!=",
+                                            "definition": ">= Greater than or equal to< Less than= Equal to!= Not equal to"
+                                        },
+                                        {
+                                            "term": "Array",
+                                            "definition": "An array is a space in memory reserved for more than one item of the same data type."
+                                        },
+                                        {
+                                            "term": "Two Dimensional Array",
+                                            "definition": "Table of items and elements, with columns and rows. Data stored in this way can be considered as if it were in a spreadsheet, where each row and each column stands for something."
+                                        },
+                                        {
+                                            "term": "Record",
+                                            "definition": "Records can combine different data types, and each record would be about one person, or one building or one book."
+                                        },
+                                        {
+                                            "term": "Why we use Data Structures",
+                                            "definition": "Using data structures instead of lots of individual variables can reduce the amount of code you need to write in order to solve a problem. Arrays also reduce the likelihood of errors occurring, as there are fewer places in the code in which errors could exist."
+                                        },
+                                        {
+                                            "term": "When programs are designed, why are they broken down into smaller tasks and each task is addressed individually?",
+                                            "definition": "For large programs, different tasks can be assigned to different programmers, with clear understanding of who is to code what.Each component can be tested separately as it is coded, which means the complete program, when all the parts are assembled, will possibly contain fewer errors.If the program needs updating later, the individual component can be updated, leaving the rest of the program unchanged."
+                                        },
+                                        {
+                                            "term": "Why Computer Programs are Written",
+                                            "definition": "To solve a problem."
+                                        },
+                                        {
+                                            "term": "Algorithm",
+                                            "definition": "A step-by-step set of instructions to allow a computer to solve a problem in a finite number of steps."
+                                        },
+                                        {
+                                            "term": "Structure Diagrams",
+                                            "definition": "Shows how a program, or a potential program, is broken down into individual processes."
+                                        },
+                                        {
+                                            "term": "Flow Charts",
+                                            "definition": "A way of showing, within a program, what tasks are to happen in what order. This is done using shapes and arrows."
+                                        },
+                                        {
+                                            "term": "Terminator (Flow Chart)",
+                                            "definition": "Used to mark the start and another is used to mark the end of a flowchart."
+                                        },
+                                        {
+                                            "term": "Input (Flow Chart)",
+                                            "definition": "Input boxes show data entering the system, possibly typed by the user."
+                                        },
+                                        {
+                                            "term": "Arrows (Flow Chart)",
+                                            "definition": "Shows which instruction should take place next. --->"
+                                        },
+                                        {
+                                            "term": "Process (Flow Chart)",
+                                            "definition": "Each process contains a single instruction, so complex tasks usually incorporate several processes."
+                                        },
+                                        {
+                                            "term": "Decision (Flow Chart)",
+                                            "definition": "Asks a question, determining which path the program should next take. It is in the shape of a diamond."
+                                        },
+                                        {
+                                            "term": "Sequence (Flow Charts)",
+                                            "definition": "When instructions in an algorithm each need to be executed only once, and in the order in which they are written."
+                                        },
+                                        {
+                                            "term": "Selection (Flow Charts)",
+                                            "definition": "When one sequence of instructions or another, but not both, is executed. The sequence that is executed will depend on what happened in earlier instructions. Words such as IF or CASE mean that selection is taking place."
+                                        },
+                                        {
+                                            "term": "Iteration (Flow Charts)",
+                                            "definition": "Takes place when one or more instructions are executed more than once. Also known as repetition. It is taking place when program code contains the words LOOP, FOR, WHILE or REPEAT."
+                                        },
+                                        {
+                                            "term": "Function",
+                                            "definition": "Carries out a subtask of a larger task for which the program is responsible. It then returns a value. It also has a data type."
+                                        },
+                                        {
+                                            "term": "Procedure",
+                                            "definition": "Carries out a subtask of a larger task for which the program is responsible. It does not return a value."
+                                        },
+                                        {
+                                            "term": "Parameter",
+                                            "definition": "A piece of data that is needed in order for a procedure or function to run. (Input)"
+                                        },
+                                        {
+                                            "term": "Argument",
+                                            "definition": "What a piece of data is called as it is passed to a function or procedure."
+                                        },
+                                        {
+                                            "term": "Built-In Functions",
+                                            "definition": "Functions which have been written by other people, you can call them without even seeing the code."
+                                        },
+                                        {
+                                            "term": "Modular Programming",
+                                            "definition": "Breaking your program into separate procedures and functions. It can simplify your coded solutions in two ways:You get to choose the name of your procedure/function, which helps you to create code that makes sense. If a particular task is required multiple times, the code for that task can simply be placed into a procedure or function, which can be called multiple times.Since calling a function or procedure only requires a single line, this reduces the amount of code needed, which reduces the likelihood of errors in the code."
+                                        },
+                                        {
+                                            "term": "Scope",
+                                            "definition": "The visibility of a variable, constant, function or procedure in a program. When you are writing code you can see or alter some variables and constants, but not others. You can also call some functions or procedures, but not necessarily all of them."
+                                        },
+                                        {
+                                            "term": "Local",
+                                            "definition": "Variables and constants can be local. Only visible within the function or procedure in which it was declared. As soon as the function or procedure ends, the variable/constant is gone."
+                                        },
+                                        {
+                                            "term": "Global",
+                                            "definition": "Variables and constants can be global. They are visible throughout the entire program. This variable/constant is only gone when the program has finished running."
+                                        },
+                                        {
+                                            "term": "Private",
+                                            "definition": "Functions and procedures can be private. This means it can only be called from within the form, or class in which they exist."
+                                        },
+                                        {
+                                            "term": "Public",
+                                            "definition": "Functions and procedures can be public. They can be called from beyond their own form or class."
+                                        },
+                                        {
+                                            "term": "Syntax Error",
+                                            "definition": "Happens when you do not follow the rules of the language you are writing in. If your code contains a syntax error, it will either not compile or it will crash when the erroneous line is reached."
+                                        },
+                                        {
+                                            "term": "Logic Error",
+                                            "definition": "Does not cause the program to crash, although it does cause the program to do something it shouldn\\'t. It might, for example, produce an incorrect result to a calculation. They are harder to find than syntax errors and they are only usually identified by detailed testing."
+                                        },
+                                        {
+                                            "term": "Run-Time Error",
+                                            "definition": "Might or might not cause a program to crash at some point, but it will not prevent it from running. The error will not become apparent until the program is executing."
+                                        },
+                                        {
+                                            "term": "Trace Tables",
+                                            "definition": "A tool used for checking that a program will behave as you intend it to by examining the value of each variable as it changes. They are usually used to resolve logical errors."
+                                        },
+                                        {
+                                            "term": "Try Catch Block",
+                                            "definition": "The program is told, rather than to execute some code, to try to execute some code. This would then provide an alternative set of instructions to be followed in case the attempt fails."
+                                        },
+                                        {
+                                            "term": "Bug",
+                                            "definition": "In a piece of software, is a fault or error of some kind that prevents the software from working as it should."
+                                        },
+                                        {
+                                            "term": "Debugging",
+                                            "definition": "The process by which bugs are removed. There are tools available to developers to help identify bugs, break points and variable watch. Trace tables and the use of try catch blocks would be used alongside these tools."
+                                        },
+                                        {
+                                            "term": "Break Points",
+                                            "definition": "Inserted at a line of source code at which execution will pause (break). The developer can then examine the state of the program at this particular point in execution. Multiple break point can be set throughout the code, which is a useful feature as it allows the developer to view the execution of the program in something resembling slow motion."
+                                        },
+                                        {
+                                            "term": "Stepping",
+                                            "definition": "Moving from one break point to another, essentially watching program execution in slow motion."
+                                        },
+                                        {
+                                            "term": "Variable Watch",
+                                            "definition": "This feature allows the developer to keep track of a variable or expression. This tool allows you to track the life of a variable expression to see if it is correctly manipulated by the program."
+                                        },
+                                        {
+                                            "term": "Computer System",
+                                            "definition": "A combination of hardware (physical components) and software (the programs) working together to provide a solution to a problem. They are important because they play a part in almost every aspect of human life: in commerce, health care, education and communication. It is important that they are reliable (do what is expected of them) and robust (provide resistance against failure and remain available)."
+                                        },
+                                        {
+                                            "term": "Four Key Elements Computer Systems Consist of",
+                                            "definition": "Input devices - Are used to get data onto the system, Keyboard, mouse, magnetic tripe reader, light pen, OMR, scanner, OCR, sensors.Output devices - Which present data in a human-friendly form, Monitor, speakers, printer, servomechanism.Storage devices - Used to contain data.Processor - Follows instructions and performs calculations."
+                                        },
+                                        {
+                                            "term": "Hybrid Devices (Both Input and Output)",
+                                            "definition": "Touch screens because you input data by touching the screen and the device outputs data by displaying it on the screen.Games controllers, you input by using the controls and they output by vibrating."
+                                        },
+                                        {
+                                            "term": "The CPU and the Two Main Components",
+                                            "definition": "A component that performs calculations and fetches and executes program instructions. There are two main components: The Arithmetic Logic Unit (ALU) - carries out calculations and numeric functions such as comparing two numbers together to see which is the largest.The Control Unit - Responsible for retrieving data and instructions from the correct location in memory and executing those instructions."
+                                        },
+                                        {
+                                            "term": "Buses",
+                                            "definition": "How the processor communicates with other parts of the system. Buses are wires or collections of wires that connect components together. Signals pass between these components which may contain data or instructions."
+                                        },
+                                        {
+                                            "term": "Clock Speed",
+                                            "definition": "The clock speed of a CPU is measured in Hertz (Hz). One Hz means one operation per second."
+                                        },
+                                        {
+                                            "term": "Factors which can Influence the Speed of a CPU",
+                                            "definition": "The speed of other components, the CPU might be waiting for a hard disk or printer to perform some task before the next instruction is addressed.The size of the cache, the larger the cache, the more it scan store, and the faster the CPU appears to work because it is not waiting as long to receive data or instructions.The number of cores, each core can fetch, decode and execute. More cores mean a faster CPU."
+                                        },
+                                        {
+                                            "term": "Cache Memory",
+                                            "definition": "High-speed memory that stores frequently needed instructions or data. Stores copies of data or instructions from the RAM that are accessed very regularly."
+                                        },
+                                        {
+                                            "term": "RAM",
+                                            "definition": "Random access memory. The RAM is volatile, when the computer is turned off or subject to a loss of power, the content of the RAM is lost. When a program is loaded from a computer hard disk, its data and instructions are loaded into the RAM."
+                                        },
+                                        {
+                                            "term": "ROM",
+                                            "definition": "Read-only memory. Means that the content cannot be edited or deleted. It stores data or instructions that will not need to be updated."
+                                        },
+                                        {
+                                            "term": "Flash Memory",
+                                            "definition": "Uses electronic chips as storage but, it is non-volatile. This means it continues to store data without a source of electricity. Flash drives are portable and are often used to transfer data from one computer to another."
+                                        },
+                                        {
+                                            "term": "Virtual Memory",
+                                            "definition": "Sometimes a computer does not have enough RAM to run programs as it is required to. In these circumstances, the operating system will treat some part of secondary storage as if it were the RAM. This is called virtual memory."
+                                        },
+                                        {
+                                            "term": "Magnetic Storage Devices",
+                                            "definition": "Include the internal hard disk as well as floppy disks, which are no longer widely used."
+                                        },
+                                        {
+                                            "term": "Optical Storage Media",
+                                            "definition": "CDs, DVDs, Blu Ray Disks are written to and read using lasers. The surface of the disk will have billions of locations where holes can be either physically burned by a laser, or not burned, to represent either 1 or 0. Capacity: CDs 700MB, DVDs 4.7GB, Blu-Rays 25GB. Speed is highly variable. Small and light but not as easy to carry as a USB flash drive. Sturdy, although the surface can be scratched and make the data irretrievable. Useful for posting data from one location to another."
+                                        },
+                                        {
+                                            "term": "Solid-State Storage Devices",
+                                            "definition": "Use electronic circuits and no moving parts to store data electronically. Ranges from 1GB to 64GB. Transmits data at a rate of 5 million bits per second. Very small and light, designed to be moved between computers. Sturdy. Used by students who always need to access work on different computers."
+                                        },
+                                        {
+                                            "term": "Cloud Storage",
+                                            "definition": "Refers to data being stored away from the computer it is accessed on, typically accessible over the internet. Capacity, virtually unlimited. Speed, depends on the internet connection speed but it is generally slower than storing data on the computer which will be used to access it. You can access your data anywhere in the world. Data is backed up multiple times so durability is not an issue."
+                                        },
+                                        {
+                                            "term": "Internal Hard Disk",
+                                            "definition": "Keeps programs and data stored when the computer is turned off. Capable of storing more than its main memory. Capacity, variable, data transfer is usually far quicker than from any external device. Difficult and time consuming to move an internal drive from one machine to another. Well protected inside the computer. Most programs are stored on here."
+                                        },
+                                        {
+                                            "term": "Units of Data",
+                                            "definition": "(Size and Example of Storage)Bit - Single binary digit. Either a \\'1\\' or \\'0\\'. Nibble - A sequence of four bits. A whole number between 0 and 15.Byte - A sequence of eight bits. An individual keyboard character such as \\'k\\' or \\'#\\'.Kilobyte - Approximately 1,000 bytes. A paragraph of text.Megabyte - Approximately 1,000 kilobytes. Around one minute of MP3 music.Gigabyte - Approximately 1,000 megabytes. About 90 minutes of video.Terabyte - Approximately 1,000 gigabytes. Several hundred hours of video."
+                                        },
+                                        {
+                                            "term": "ASCII",
+                                            "definition": "ASCII characters, requiring only seven bits, need less storage space but can only store 128 different characters."
+                                        },
+                                        {
+                                            "term": "How Dates can be Stored",
+                                            "definition": "As a sequence of ASCII characters, every individual character can be stored using its ASCII code.As a series of numbers.There are more commonly stored as numbers, because this requires less storage space and two dates can easily be compared to see which is earlier or later."
+                                        },
+                                        {
+                                            "term": "Images",
+                                            "definition": "An image is divided into pixels. A pixel can only be one colour at a time, and when a picture is saved, the colour of each pixel must be stored in binary. The more bits that are used to store each pixel, the more colours are potentially available."
+                                        },
+                                        {
+                                            "term": "Sound",
+                                            "definition": "When converting sound to digital format, two things influence how much storage space is needed:Sampling rate - Refers to how often the computer takes a measure of the sound, including the volume and frequency. A higher sampling rate results in better sound quality, but requires more storage space.Bit rate - How many bits are used to each sample and this can vary widely. Again, higher bit rates result in higher quality of sound but also higher storage requirements."
+                                        },
+                                        {
+                                            "term": "Software Development Life Cycle",
+                                            "definition": "Spells out what steps take place in the process of developing software and the order in which they take place. There are several models of the life cycle."
+                                        },
+                                        {
+                                            "term": "Cyclical Model (Definition, Advantages and Disadvantages)",
+                                            "definition": "The processes happen repeatedly, and in the same order during each cycle. + It is easy to arrange subtasks and set milestones. + Clearly defined stages make management straightforward.- A testable program is not available until late in the cycle.- It is difficult to accommodate change once you have passed the relevant process."
+                                        },
+                                        {
+                                            "term": "Waterfall Model (Definition, Advantages and Disadvantages)",
+                                            "definition": "Each process takes place, from top to bottom, to completion before the next process begins. + It is easy to manage, as the whole process is readily divisible into smaller processes.+ It is easily understood and used.- Unsuitable for larger projects or projects with changing requirements.- Not all projects can be so easily broken down into processes like this, some processes may overlap."
+                                        },
+                                        {
+                                            "term": "Spiral Model (Definition, Advantages and Disadvantages)",
+                                            "definition": "Similar to the cyclical mode, except each process is visited multiple times in that sequence. Each time a process occurs, it occurs in a more developed way than the last time it occurred.+ Good approach for larger projects, as changes can be implemented throughout the project.+ A working prototype can be made available fairly early.- Each spiral model approach will be different, meaning less reusability.- Not appropriate for smaller projects where multiple passes may be unnecessary."
+                                        },
+                                        {
+                                            "term": "Feasibility Study",
+                                            "definition": "The main purpose of this is to examine an existing system to find out whether or not it is worthwhile replacing it with a different system. Replacing a system has certain costs:Money for software developers, hardware etc.Time, designing and installing the new system is time consuming.Human resources, specialist staff are needed to design and install the system and existing staff would need to be retrained to operate it. Benefits of replacing a system:May be possible to do a job faster.May be cheaper to operate, requiring less staff."
+                                        },
+                                        {
+                                            "term": "Analysis",
+                                            "definition": "The main purpose is to understand the existing system as well as the requirements of the proposed system. The following steps may be taken:Using the current system as a current user might use it.Studying system documentation.Interviews/questionnaires of customers/staff to seek their opinion.Observing the current system in use.Exploring data requirements.Producing diagrams showing processing and entities."
+                                        },
+                                        {
+                                            "term": "Design",
+                                            "definition": "Designing a new system is split into a number of sections. A design is simply a detailed plan for the proposed system.Designing algorithms - They must be well designed otherwise it can affect the speed of a process, such as searching or sorting.Designing HCI - Involves the design of how the computer and human will interact with each other, involving hardware and software.Designing data structures - Records, arrays, variables etc. need to be decide upon."
+                                        },
+                                        {
+                                            "term": "Testing",
+                                            "definition": "Is the point at which the program is checked to address two main questions:Does the program do what it was intended to do?Does the program function correctly?"
+                                        },
+                                        {
+                                            "term": "Changeover",
+                                            "definition": "Is the point where at which the user moves from the old system to the new system. There are several ways in which this can take place:Direct - Where the changeover is sudden and complete.Parallel - Both systems run at the same time for a while, this is beneficial because in the event of a problem, the old system is still available for use.Phased - Elements of the new system as introduced one at a time.Pilot - A single department may change to the new system in a company, and then the rest of the organisation would follow later.When choosing, it is important to consider the cost of implementing it and the disruption that could be caused."
+                                        },
+                                        {
+                                            "term": "Maintenance",
+                                            "definition": "When the changeover is complete, the work of the developer is not complete. Maintenance means ensuring the product continues to be beneficial to the customer.Perfective maintenance - Making the system easier to use or adding new features, making the system as good as it can be for the purpose.Adaptive maintenance - Making changes to the system as the needs of the customer change.Corrective maintenance - Solving problems that occurred during the creation of the new system that wee not discovered at the time."
+                                        },
+                                        {
+                                            "term": "Documentation",
+                                            "definition": "At various points during the life cycle, documentation needs to be provided by the developer for a variety of purposes:Design documentation, of the interface and the processes, are needed by the end user as soon as possible to check what is going to be produced is what is required. Program documentation, including annotated code and design of data structures, must be available to the developer during testing and maintenance.During testing, a log of results will be produced in an ongoing cycle, until the system is deemed to be working correctly.User manuals must be available to the customer to provide details on how to operate the system. Technical manuals are also needed to detail things such as security procedures, backup procedures and system recovery procedures."
+                                        },
+                                        {
+                                            "term": "Prototyping",
+                                            "definition": "One way of developing solutions in which a basic version of the finished product is created quickly. End user uses prototype --> Feedback from end user is obtained --> Prototype is updated.+ Because the end user is always involved, time spent on unnecessary features is minimized.+ There are multiple opportunities for errors to be detected, so they are usually detected sooner. + Testing of the solution can begin far sooner than in the cyclical development model, allowing more time to find errors.- It is quite easy for the solution to become more complex than initial plans.- Beginning the process by producing a prototype might mean the analysis stage is not completed as thoroughly as it should be. - Lots of opportunities exist for the end user to change their minds, which can result in higher costs in terms of money and time."
+                                        },
+                                        {
+                                            "term": "Unit/Modular Testing",
+                                            "definition": "Solutions can be broken down into modules. This makes the solution easier to understand and allows straightforward distribution of tasks among a team of programmers."
+                                        },
+                                        {
+                                            "term": "Alpha Testing",
+                                            "definition": "Carried out by the developer. Individual algorithms tested, with the values of variables being traced through the program, often line by line. This type of testing makes use of trace tables, where expected variable values are compared with the actual outcome."
+                                        },
+                                        {
+                                            "term": "Beta Testing",
+                                            "definition": "Carried out by prospective purchasers of the finished product. Users use it as they would normally use such a program, reporting any errors back to the developers."
+                                        },
+                                        {
+                                            "term": "Acceptance Testing",
+                                            "definition": "Carried out by the end user. This type of testing is intended to answer the question \\'does the program do what I wanted it to do\\' rather than \\'does the program work\\'."
+                                        },
+                                        {
+                                            "term": "Network",
+                                            "definition": "Collection of computers and other hardware that has been connected together in order to allow communication and sharing of resources. Also, networks allow software to be installed and controlled across the network from a single computer, rather than individually on every machine."
+                                        },
+                                        {
+                                            "term": "LAN",
+                                            "definition": "Local area network, which might occupy an office or building."
+                                        },
+                                        {
+                                            "term": "WAN",
+                                            "definition": "Wide area network, the largest of which is the internet."
+                                        },
+                                        {
+                                            "term": "Advantages of Networks",
+                                            "definition": "Communication - Email, instant messaging and the transferring of files is possible across a network.Sharing of resources - Files on one computer can be accessed by others, multiple computers on a network can share a single printer and within a LAN, a connection to the Internet can be shared.Network management - You may be able to log onto any computer within a LAN and have access to your own files, which is particularly useful in schools and colleges."
+                                        },
+                                        {
+                                            "term": "Disadvantages of Networks",
+                                            "definition": "Viruses and other malware can only move from computer to computer via shared disks or through a network. A network computer is more likely to become infected compared to a stand alone computer.Failure of a single resource can impact upon all computers on a network. If a logon server fails, it may be nobody can access their account."
+                                        },
+                                        {
+                                            "term": "Bus Topology",
+                                            "definition": "All devices are attached to a common connection medium, known as the backbone. Any communication must travel through this medium. A server may be attached, or a printer or a router if the network needs to provide access to the internet. At either end of the backbone is a terminator, which marks the end of a network."
+                                        },
+                                        {
+                                            "term": "Star Topology",
+                                            "definition": "All devices are connected to a single central device, such as a switch or a hub. Communications must go via this central device. Servers, printers and routers would also be connected to this device."
+                                        },
+                                        {
+                                            "term": "Ring Topology",
+                                            "definition": "Each device is connected to two other devices, so that the devices and connection media make up a shape of a ring. To communicate with a particular device, a signal often has to pass through several other devices en route."
+                                        },
+                                        {
+                                            "term": "Advantages and Disadvantages of a Bus Topology",
+                                            "definition": "Very cheap, as it requires minimal amount of cabling.Easy to add or remove computers.Failure in the main cable will cause failure of the network.The network can be significantly slowed by high network traffic."
+                                        },
+                                        {
+                                            "term": "Advantages and Disadvantages of a Star Topology",
+                                            "definition": "If one cable fails, only the device attached to it is isolated from the network.Faults are easy to find.It is easy to add extra devices.The system is secure, as data is only sent to devices that need that data.Lots of cable, which means more expensive to install than other topologies."
+                                        },
+                                        {
+                                            "term": "Advantages and Disadvantages of a Ring Topology",
+                                            "definition": "No collisions, as there is typically only one batch of data allowed on the network at any one time.Very high rates of transmission are possible.Failure of a single cable can bring down the entire network.Failure of a single device can bring down the entire network.Security is not ensured, as data passes through other devices en route to its final destination."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Edexcel",
+                            "setname": "Computer Science Edexcel GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Everything",
+                                    "cards": [
+                                        {
+                                            "term": "IMAP",
+                                            "definition": "Internet Message Access Protocol - handles inbound emails, keeps the client and server in sync and only a copy is downloaded."
+                                        },
+                                        {
+                                            "term": "POP",
+                                            "definition": "Post Office Protocol - used to retrieve email from a server, doesn\\'t keep the user and server in sync, after the mail is downloaded it\\'s deleted."
+                                        },
+                                        {
+                                            "term": "SMTP",
+                                            "definition": "Simple Mail Transfer Protocol - used to send emails between servers, directly linked to the DNS."
+                                        },
+                                        {
+                                            "term": "Structured database",
+                                            "definition": "Fixed field and data types with metadata. Can be queried."
+                                        },
+                                        {
+                                            "term": "relational database",
+                                            "definition": "Tables linked by key fields, with a primary key."
+                                        },
+                                        {
+                                            "term": "primary key",
+                                            "definition": "A field (or group of fields) that uniquely identifies a given entity in a table"
+                                        },
+                                        {
+                                            "term": "foreign key",
+                                            "definition": "A primary key from one table that is used in another table."
+                                        },
+                                        {
+                                            "term": "control unit",
+                                            "definition": "Component of a processor that directs and coordinates most of the operations in the computer."
+                                        },
+                                        {
+                                            "term": "system clock",
+                                            "definition": "controls the timing of all computer operations"
+                                        },
+                                        {
+                                            "term": "clock speed",
+                                            "definition": "the pace of the system clock"
+                                        },
+                                        {
+                                            "term": "buses",
+                                            "definition": "collection of wires that transmit data from main memory and the CPU"
+                                        },
+                                        {
+                                            "term": "address bus",
+                                            "definition": "pathway from CPU to memory that carries the memory address, so RAM can fetch the data < unidirectional"
+                                        },
+                                        {
+                                            "term": "data bus",
+                                            "definition": "used to transfer actual data"
+                                        },
+                                        {
+                                            "term": "control bus",
+                                            "definition": "carries commands from the CPU and messages from other hardware."
+                                        },
+                                        {
+                                            "term": "operating system",
+                                            "definition": "essential software that controls the execution of computer programs and links hardware and software"
+                                        },
+                                        {
+                                            "term": "operating system tasks",
+                                            "definition": "user management, file management, peripheral management and multitasking"
+                                        },
+                                        {
+                                            "term": "user management (OS)",
+                                            "definition": "responsible for account control"
+                                        },
+                                        {
+                                            "term": "multitasking (OS)",
+                                            "definition": "allocated CPU time for each task and prioritises them / moves necessary parts of an application to memory"
+                                        },
+                                        {
+                                            "term": "peripheral management (OS)",
+                                            "definition": "uses device drivers that convert peripheral and OS signals"
+                                        },
+                                        {
+                                            "term": "file management (OS)",
+                                            "definition": "maintains records of all files / manages hard disk and splits it into sectors"
+                                        },
+                                        {
+                                            "term": "Interpreter",
+                                            "definition": "high level > machine code works line by line, every time you want to execute the code it must be retranslated, stops when it reaches an error, source code is needed"
+                                        },
+                                        {
+                                            "term": "compiler",
+                                            "definition": "high level > machine codesource code isn\\'t need after translation, error messages are displayed after, translates whole code"
+                                        },
+                                        {
+                                            "term": "assembler",
+                                            "definition": "assembly code > machine code uses the processor\\'s instructions optimisation will occur - removes some detail to improve efficacy"
+                                        },
+                                        {
+                                            "term": "low level code",
+                                            "definition": "little to no abstraction"
+                                        },
+                                        {
+                                            "term": "machine code",
+                                            "definition": "specific to a processor and corresponds to its instruction set"
+                                        },
+                                        {
+                                            "term": "assembly code",
+                                            "definition": "specific to hardware, 1 to 1 relationship with machine code"
+                                        },
+                                        {
+                                            "term": "utility software",
+                                            "definition": "systems software that perform tasks related to managing the computer\\'s resources, file management, diagnostics, and other specialised tasks"
+                                        },
+                                        {
+                                            "term": "peer to peer networks",
+                                            "definition": "no central node, each computer is equal and has the ability to be the client or server"
+                                        },
+                                        {
+                                            "term": "client-server network",
+                                            "definition": "A network that uses centrally administered computers, known as servers, to enable resource sharing for and to facilitate communication between the other computers on the network."
+                                        },
+                                        {
+                                            "term": "validation",
+                                            "definition": "ensuring data is correct before processing"
+                                        },
+                                        {
+                                            "term": "authentication",
+                                            "definition": "ensuring an entity is genuine"
+                                        },
+                                        {
+                                            "term": "latency",
+                                            "definition": "how fast signals travel"
+                                        },
+                                        {
+                                            "term": "bandwidth",
+                                            "definition": "maximum rate of data transfer"
+                                        },
+                                        {
+                                            "term": "error rate",
+                                            "definition": "rate of corruption"
+                                        },
+                                        {
+                                            "term": "White box penetration testing",
+                                            "definition": "stimulates an insider attack with some knowledge of the system"
+                                        },
+                                        {
+                                            "term": "Black box penetration testing",
+                                            "definition": "stimulates an outsider attack"
+                                        },
+                                        {
+                                            "term": "security threats",
+                                            "definition": "unpatched software, misconfiguration, social engineering, USB devices, portable devices and eaves dropping"
+                                        },
+                                        {
+                                            "term": "protocol layers",
+                                            "definition": "applicationtransport network link"
+                                        },
+                                        {
+                                            "term": "TCP",
+                                            "definition": "Transmission control protocol - splits data into packets and reassembles them. Acknowledgement is send to the sender when received - or retransmitted. Operates at transport layer"
+                                        },
+                                        {
+                                            "term": "IP",
+                                            "definition": "Internet protocol - addresses packets with the source and destination IP addresses. Then at the other end removes IP addresses when received. Operates at the network level."
+                                        },
+                                        {
+                                            "term": "HTTP",
+                                            "definition": "hyper text transfer protocol - used for accessing a webpage from a web server. Operates at the application layer"
+                                        },
+                                        {
+                                            "term": "ethical hacking",
+                                            "definition": "legal but they need permissions and notify admins of results"
+                                        },
+                                        {
+                                            "term": "firewalls",
+                                            "definition": "monitor network traffic and filter packets based on rules"
+                                        },
+                                        {
+                                            "term": "merge sort",
+                                            "definition": "Divide and conquer (divide array in half and sort each half, then merge back together)"
+                                        },
+                                        {
+                                            "term": "casting",
+                                            "definition": "Changing the data type of a value"
+                                        },
+                                        {
+                                            "term": "channel overlap",
+                                            "definition": "when channel frequencies are too close or the same and need to be spread out to prevent inferences."
+                                        },
+                                        {
+                                            "term": "WWW",
+                                            "definition": "world wide web - collection of web pages, hosted using HTTP"
+                                        },
+                                        {
+                                            "term": "IP address",
+                                            "definition": "A number that uniquely identifies each computer or device connected on a network to a geographical location"
+                                        },
+                                        {
+                                            "term": "Packet Switching",
+                                            "definition": "a mode of data transmission in which a message is broken into a number of parts that are sent independently, over whatever route is optimum for each packet, and reassembled at the destination."
+                                        },
+                                        {
+                                            "term": "packet switching detail",
+                                            "definition": "header - information about data; packet number, MAC and IP address data - actual datatrailer - may contain a checksum - validation to error check"
+                                        },
+                                        {
+                                            "term": "constants",
+                                            "definition": "remain fixed / better for readability, updates and complier optimisation. need to be declared"
+                                        },
+                                        {
+                                            "term": "subprograms",
+                                            "definition": "performs a specific task, used and reused by \\'calling\\' and is \\'passed in\\' through parameters < user written or pre-existing"
+                                        },
+                                        {
+                                            "term": "procedures and functions",
+                                            "definition": "small sections of code that are used to perform a particular task. procedures return a value and functions don\\'t"
+                                        },
+                                        {
+                                            "term": "security measures",
+                                            "definition": "commercial analysis tool, disaster recovery, fall over(backup devices), design stage planning, audit trails(records of user and system events)"
+                                        },
+                                        {
+                                            "term": "securing os",
+                                            "definition": "limit user accounts, strong hidden passwords, update and limitation of outrun software."
+                                        },
+                                        {
+                                            "term": "good programming habitats",
+                                            "definition": "code reviews, modular testing, established design patterns and models, parameter validation and error handling"
+                                        },
+                                        {
+                                            "term": "sequence construct",
+                                            "definition": "all lines are executed"
+                                        },
+                                        {
+                                            "term": "selection construct",
+                                            "definition": "decisions are made that determine execution"
+                                        },
+                                        {
+                                            "term": "iteration construct",
+                                            "definition": "code is repeated until a condition is met"
+                                        },
+                                        {
+                                            "term": "local variables",
+                                            "definition": "- declared inside a method - accessible only within that method-take precedence over global variables"
+                                        },
+                                        {
+                                            "term": "global variables",
+                                            "definition": "can be used in ANY part of a program"
+                                        },
+                                        {
+                                            "term": "array",
+                                            "definition": "Stored data with a fixed length, same type under an index position (one less than actual position)1D - horizontal2D - horizontal and vertical"
+                                        },
+                                        {
+                                            "term": "text files",
+                                            "definition": "characters structured as lines of text - records. must be opened before use and closed afterwards. closing frees resources, prevents corruption and frees buffer.different data types"
+                                        },
+                                        {
+                                            "term": "MOD",
+                                            "definition": "remainder"
+                                        },
+                                        {
+                                            "term": "DIV",
+                                            "definition": "whole number"
+                                        },
+                                        {
+                                            "term": "substring() does what?",
+                                            "definition": "extracts characters from a string between two specified #\\'s and returns it as a new string."
+                                        },
+                                        {
+                                            "term": "ASC( )",
+                                            "definition": "gives ASCII characters"
+                                        },
+                                        {
+                                            "term": "CHR ( )",
+                                            "definition": "gives character code"
+                                        },
+                                        {
+                                            "term": "+",
+                                            "definition": "concatenation"
+                                        },
+                                        {
+                                            "term": "logic error",
+                                            "definition": "program runs but does the wrong thing"
+                                        },
+                                        {
+                                            "term": "syntax error",
+                                            "definition": "An error that results when an instruction does not follow the syntax rules or grammar of the programming language."
+                                        },
+                                        {
+                                            "term": "runtime error",
+                                            "definition": "becomes apparent when the program is executed"
+                                        },
+                                        {
+                                            "term": "normal data",
+                                            "definition": "Entering data that should be acceptable to the solution."
+                                        },
+                                        {
+                                            "term": "boundary data",
+                                            "definition": "Values at the limit of what the program should be able to handle"
+                                        },
+                                        {
+                                            "term": "erroneous data",
+                                            "definition": "Data that is ridiculous or totally unsuitable."
+                                        },
+                                        {
+                                            "term": "sanitisation",
+                                            "definition": "modifying an input to make it valid"
+                                        },
+                                        {
+                                            "term": "readability/maintainability",
+                                            "definition": "-comments-identifiers-indentation"
+                                        },
+                                        {
+                                            "term": "signed binary",
+                                            "definition": "Binary with a positive or negative sign"
+                                        },
+                                        {
+                                            "term": "postive",
+                                            "definition": "0"
+                                        },
+                                        {
+                                            "term": "negative",
+                                            "definition": "1"
+                                        },
+                                        {
+                                            "term": "two\\'s complement",
+                                            "definition": "1. write it in positive 2. write down until a 13. flip the rest"
+                                        },
+                                        {
+                                            "term": "logic shift",
+                                            "definition": "use for unsigned binary"
+                                        },
+                                        {
+                                            "term": "arithmetic shift",
+                                            "definition": "Used for signed binary numbers. When performing a right shift the bit at the left are replaced by copies of the most significant bit."
+                                        },
+                                        {
+                                            "term": "ASCII",
+                                            "definition": "American Standard Code for Information Interchange - developed to solve compatibility issues"
+                                        },
+                                        {
+                                            "term": "unicode",
+                                            "definition": "A character code that enables most of the languages of the world to be symbolized with a special character identification."
+                                        },
+                                        {
+                                            "term": "bitmap",
+                                            "definition": "an image composed of pixels with a fixed resolution"
+                                        },
+                                        {
+                                            "term": "analogue to digital pictures",
+                                            "definition": "1. grid is placed over the image2. an average colour is found for each pixel"
+                                        },
+                                        {
+                                            "term": "colour depth",
+                                            "definition": "The number of bits used for each pixel"
+                                        },
+                                        {
+                                            "term": "file size equation (bits)",
+                                            "definition": "size (bits) = width x height x depth"
+                                        },
+                                        {
+                                            "term": "metadata",
+                                            "definition": "data about data"
+                                        },
+                                        {
+                                            "term": "digital signals",
+                                            "definition": "discrete values representing a series of bits"
+                                        },
+                                        {
+                                            "term": "analogue to digital sound",
+                                            "definition": "1. samples are taken at sections of the analogue sound 2. converted to digits"
+                                        },
+                                        {
+                                            "term": "sampling frequency",
+                                            "definition": "how often the analog signal is reproduced in its discrete digitized form"
+                                        },
+                                        {
+                                            "term": "bit rate",
+                                            "definition": "The number of bits used per second of audio"
+                                        },
+                                        {
+                                            "term": "bit rate equation",
+                                            "definition": "sampling frequency x sample size"
+                                        },
+                                        {
+                                            "term": "file size equation (sound)",
+                                            "definition": "sampling fr\\xc3\\xa9quente x sample size x time"
+                                        },
+                                        {
+                                            "term": "bus topology",
+                                            "definition": "A LAN configuration in which all nodes share a common line. data collisios"
+                                        },
+                                        {
+                                            "term": "ring topology",
+                                            "definition": "A LAN configuration in which all nodes are connected in a closed loop. if a node falls the whole network will be affected."
+                                        },
+                                        {
+                                            "term": "star topology",
+                                            "definition": "A topology with one central node that has each computer or network device attached to the central node. All data first goes into the central node and then is sent out to its destination. no data collisions, if there\\'s a problem with the switch the whole network will go down"
+                                        },
+                                        {
+                                            "term": "mesh topology",
+                                            "definition": "full mesh - every node connected to every other node, provides backup but more expensive and complex."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "OCR",
+                            "setname": "Computer Science OCR GCSE",
+                            "longcards": true,
+                            "topics": [
+                                {
+                                    "title": "Everything",
+                                    "cards": [
+                                        {
+                                            "term": "Arithmetic Logic Unit (ALU)",
+                                            "definition": "Performs operations on data e.g. Addition, subtraction"
+                                        },
+                                        {
+                                            "term": "Control Unit (CU)",
+                                            "definition": "Coordinating activities of the CPU"
+                                        },
+                                        {
+                                            "term": "Registers",
+                                            "definition": "Quick, small stores of data within the CPU"
+                                        },
+                                        {
+                                            "term": "Memory Address Register (MAR)",
+                                            "definition": "Holds memory address for data or a instruction about to be used by the CPU"
+                                        },
+                                        {
+                                            "term": "Memory Data Register (MDR)",
+                                            "definition": "Holds actual data or instruction"
+                                        },
+                                        {
+                                            "term": "Accumulator",
+                                            "definition": "Stores results of calculations in the ALU"
+                                        },
+                                        {
+                                            "term": "Program Counter (PC)",
+                                            "definition": "Holds memory address of the instruction for each cycle"
+                                        },
+                                        {
+                                            "term": "Fetch",
+                                            "definition": "The next instruction is retrieved by CPU from main memory"
+                                        },
+                                        {
+                                            "term": "Decode",
+                                            "definition": "The instruction is broken down and decided so computer can understand"
+                                        },
+                                        {
+                                            "term": "Execute",
+                                            "definition": "The CPU performs what the instructions told"
+                                        },
+                                        {
+                                            "term": "Embedded System",
+                                            "definition": "A computer system built within a large device e.g. Camera, washer, car"
+                                        },
+                                        {
+                                            "term": "Volatile",
+                                            "definition": "Memory loses its data when power of"
+                                        },
+                                        {
+                                            "term": "Non-volatile",
+                                            "definition": "Memory retains its data when power is lost"
+                                        },
+                                        {
+                                            "term": "Random Access Memory (RAM)",
+                                            "definition": "Read/write - function is to load open programs and operating system data currently in use - volatile"
+                                        },
+                                        {
+                                            "term": "Read Only Memory (ROM)",
+                                            "definition": "Can only be read, can\\'t be changed, stores essential programs to be run in order to boot the computer - non-volatile"
+                                        },
+                                        {
+                                            "term": "Cache",
+                                            "definition": "A type memory that stores copies of frequently used data, much faster than RAM, lower capacity - closer to CPU"
+                                        },
+                                        {
+                                            "term": "Buses",
+                                            "definition": "Collection of wires that carry signals between various components of the computer system"
+                                        },
+                                        {
+                                            "term": "Central Processing Unit (CPU)",
+                                            "definition": "Processes all of the data and instructions that make the system work - can be effected by clock speed, number of cores, cache size"
+                                        },
+                                        {
+                                            "term": "Clock speed",
+                                            "definition": "How fast the computer does the FDE cycle"
+                                        },
+                                        {
+                                            "term": "virtual memory",
+                                            "definition": "A memory management procedure needed when the RAM is full so a temporary section is made which acts like a part of RAM"
+                                        },
+                                        {
+                                            "term": "Flash memory",
+                                            "definition": "Solid state storage, non-volatile, more reliable/durable but can only be overwritten a limited number of times"
+                                        },
+                                        {
+                                            "term": "Graphics Processing Unit (GPU)",
+                                            "definition": "Handles graphics and image processing"
+                                        },
+                                        {
+                                            "term": "Optical storage",
+                                            "definition": "CD, DVD, Blue-rayADV: cheap,easy to transportDIS: slow, less storage than hard drives, stored data degrades over time, cannot be written over"
+                                        },
+                                        {
+                                            "term": "Magnetic storage",
+                                            "definition": "Hard drivesADV: fast access, stores large amounts of data, low costDIS: not very portable, easily be broken"
+                                        },
+                                        {
+                                            "term": "Solid State storage",
+                                            "definition": "USB, flash memory, SDADV: fast, small, light, easily potable, quietDIS: more expensive, storage capacity less, limited number erase/write cycles"
+                                        },
+                                        {
+                                            "term": "Cloud stotage",
+                                            "definition": "Data is stored on multiple servers in a remote locationADV: secure, can be accessed anywhere, no need to buyDIS: needs internet, download and upload can be effected by internet connection, less control if data is held"
+                                        },
+                                        {
+                                            "term": "Operating System",
+                                            "definition": "essential software that links the hardware and other software together and generally manages the computer system"
+                                        },
+                                        {
+                                            "term": "Command-line Interface",
+                                            "definition": "Text commands where user has to type in command"
+                                        },
+                                        {
+                                            "term": "Graphical User Interface (GUI)",
+                                            "definition": "uses icons and other visual indicators to navigate and issue commands"
+                                        },
+                                        {
+                                            "term": "Utility Software",
+                                            "definition": "maintains a computer"
+                                        },
+                                        {
+                                            "term": "Defragmentation Software",
+                                            "definition": "reorganises data on the hard drive to put fragmented files back together and moves files to collect all the free space"
+                                        },
+                                        {
+                                            "term": "Backup Software",
+                                            "definition": "Full Backup - a copy is taken from from every file on the system Incremental Backup - only files created or edited since last backup are copied"
+                                        },
+                                        {
+                                            "term": "Compression Software",
+                                            "definition": "reduces file size so they take up less space on hard disk"
+                                        },
+                                        {
+                                            "term": "Encryption Software",
+                                            "definition": "scrambles data to stop others from accessing it"
+                                        },
+                                        {
+                                            "term": "Open Source Software",
+                                            "definition": "source code is made freely available and users can modify itADV: free, ,made for greater good, can be adapted DIS: small, buggy, security holes, no warranties, no customer support"
+                                        },
+                                        {
+                                            "term": "Proprietary Software",
+                                            "definition": "only the compiled code is released and the source code is kept a secretADV: warranties, well-tested, reliable, cheaperDIS: expensive, software may not fit user needs"
+                                        },
+                                        {
+                                            "term": "Personal Area Network (PAN)",
+                                            "definition": "within the range of an individual person"
+                                        },
+                                        {
+                                            "term": "Local Area Network (LAN)",
+                                            "definition": "a network that connects devices close to each other e.g. school, house"
+                                        },
+                                        {
+                                            "term": "Wide Area Network (WAN)",
+                                            "definition": "a network within a large geographical area e.g. internet"
+                                        },
+                                        {
+                                            "term": "Bandwidth",
+                                            "definition": "amount of data that can be transferred in a given time"
+                                        },
+                                        {
+                                            "term": "Network Interface Card (NIC)",
+                                            "definition": "allow a device to connect to a network"
+                                        },
+                                        {
+                                            "term": "Switch",
+                                            "definition": "connect devices on a LAN"
+                                        },
+                                        {
+                                            "term": "Router",
+                                            "definition": "responsible for transmitting data between networks"
+                                        },
+                                        {
+                                            "term": "Ethernet",
+                                            "definition": "a set of standards for connecting computers"
+                                        },
+                                        {
+                                            "term": "Client-server Network",
+                                            "definition": "client has connection to server, servers can backup and store centrally but can be expensive and difficult to maintain"
+                                        },
+                                        {
+                                            "term": "Peer-to-peer Network",
+                                            "definition": "no central server, each computer equal in responsibility, have to work as both server and a client."
+                                        },
+                                        {
+                                            "term": "Star Topology",
+                                            "definition": "ADV: better performance, rest of network not affected in one fails, simple to add more devicesDIS: wire needed for all devices, expensive"
+                                        },
+                                        {
+                                            "term": "Mesh Topology",
+                                            "definition": "ADV: fasterDIS: expensive"
+                                        },
+                                        {
+                                            "term": "MAC Address",
+                                            "definition": "assigned to all devices, unique to all devises and cannot be changed, permanent, identifies the actual device."
+                                        },
+                                        {
+                                            "term": "IP Adress",
+                                            "definition": "assigned either manually or automatic, the location of your device on the internet"
+                                        },
+                                        {
+                                            "term": "Packet Switching",
+                                            "definition": "split data into packets to be sent across the network, each packet given a number order of data, each router reads packet header and decides which way to send it according to IP rules, packets then arrive and reassemble them in the right order."
+                                        },
+                                        {
+                                            "term": "TCP/IP",
+                                            "definition": "sets of rules for how devices connect on the network."
+                                        },
+                                        {
+                                            "term": "Hyper Text Transfer Protocol (HTTP)",
+                                            "definition": "used to access websites and communicate with web servers"
+                                        },
+                                        {
+                                            "term": "HTTPS",
+                                            "definition": "more secure - encryption"
+                                        },
+                                        {
+                                            "term": "File Transfer Protocol (FTP)",
+                                            "definition": "used to access, edit and move files between devices"
+                                        },
+                                        {
+                                            "term": "Post Office Protocol (POP3)",
+                                            "definition": "used to retrieve emails from a server, holds until download - then deletes from server"
+                                        },
+                                        {
+                                            "term": "Internet Message Access (IMAP)",
+                                            "definition": "used to retrieve emails, server holds until you actually delete it- only download a copy"
+                                        },
+                                        {
+                                            "term": "Simple Mail Transfer Protocol (SMTP)",
+                                            "definition": "used to send emails, used to transfer emails between servers"
+                                        },
+                                        {
+                                            "term": "Layer",
+                                            "definition": "ADV: manageable pieces, self-contained can change without effecting others"
+                                        },
+                                        {
+                                            "term": "Application Layer",
+                                            "definition": "turning data into websites"
+                                        },
+                                        {
+                                            "term": "Transport Layer",
+                                            "definition": "controlling data flow - splitting data into packets"
+                                        },
+                                        {
+                                            "term": "Network Layer",
+                                            "definition": "making connections between networks"
+                                        },
+                                        {
+                                            "term": "Data link Layer",
+                                            "definition": "passing data over physical network-"
+                                        },
+                                        {
+                                            "term": "Domain Name Server (DNS)",
+                                            "definition": "translates websites\\' domain name into its IP address"
+                                        },
+                                        {
+                                            "term": "Virtual Network",
+                                            "definition": "network that is entirely software based, created by partitioning of some physical network"
+                                        },
+                                        {
+                                            "term": "Blagging",
+                                            "definition": "invented scenario to engage a targeted victim in a manner that increases the chance the victim will divulge information"
+                                        },
+                                        {
+                                            "term": "Phishing",
+                                            "definition": "used to gain personal information for purposes of identity theft, using fraudulent e-mail messages that appear to come from legitimate businesses."
+                                        },
+                                        {
+                                            "term": "Shouldering",
+                                            "definition": "used to obtain information such as personal identification numbers (PINs), passwords and other confidential data by looking over the victim\\'s shoulder."
+                                        },
+                                        {
+                                            "term": "Malware",
+                                            "definition": "malicious software - computer programs designed to infiltrate and damage computers without the users consent."
+                                        },
+                                        {
+                                            "term": "Virus",
+                                            "definition": "program loaded onto a user\\'s computer without the user\\'s knowledge and performs malicious actions. It can self-replicate, inserting itself onto other programs or files, infecting them in the process."
+                                        },
+                                        {
+                                            "term": "Worm",
+                                            "definition": "program that replicates itself in order to spread to other computers. Often, it uses a computer network to spread itself, relying on security failures on the target computer to access it."
+                                        },
+                                        {
+                                            "term": "Trojan Horse",
+                                            "definition": "program which misleads users of its true intent."
+                                        },
+                                        {
+                                            "term": "Spyware",
+                                            "definition": "aims to gather information about a person or organization without their knowledge"
+                                        },
+                                        {
+                                            "term": "Adware",
+                                            "definition": "unwanted advertisements to the user of a computer"
+                                        },
+                                        {
+                                            "term": "Brute Force Attack",
+                                            "definition": "trail and error to gain information"
+                                        },
+                                        {
+                                            "term": "Denial of Service Attack (DOS)",
+                                            "definition": "hacker stop users from accessing a part of a network, flooding network with useless traffic making computer very slow"
+                                        },
+                                        {
+                                            "term": "Data Interception And Theft",
+                                            "definition": "The unauthorized taking or interception of computer-based information. Data theft is the act of stealing computer-based information from an unknowing victim with the intent of compromising privacy or obtaining confidential information."
+                                        },
+                                        {
+                                            "term": "SQL Injection",
+                                            "definition": "programming language used to search and query databases."
+                                        },
+                                        {
+                                            "term": "Zero-day Attack",
+                                            "definition": "before software is released it is tested as much as possible"
+                                        },
+                                        {
+                                            "term": "Penetration Testing",
+                                            "definition": "organisations employ specialists to stimulate potential attacks on their network"
+                                        },
+                                        {
+                                            "term": "Anti-malware Software",
+                                            "definition": "designed to find and stop malware from damaging a network"
+                                        },
+                                        {
+                                            "term": "Encryption",
+                                            "definition": "data is translated into code which only someone with the correct key can access"
+                                        },
+                                        {
+                                            "term": "Data Protection Act",
+                                            "definition": "your data should be protected and kept safe from hackers"
+                                        },
+                                        {
+                                            "term": "Freedom of Information Act",
+                                            "definition": "allows members of the public to access information held by a public organisation"
+                                        },
+                                        {
+                                            "term": "Computer Misuse Act",
+                                            "definition": "stop hacking and cyber crime - stop unauthorized access to private network"
+                                        },
+                                        {
+                                            "term": "Copyright Act",
+                                            "definition": "protect intellectual property - anything someone has created"
+                                        },
+                                        {
+                                            "term": "alphanumeric",
+                                            "definition": "collective name for letters, digits, symbols"
+                                        },
+                                        {
+                                            "term": "analogue signal",
+                                            "definition": "a continuous signal which can\\'t be processed by a computer"
+                                        },
+                                        {
+                                            "term": "argument",
+                                            "definition": "a value that a parameter of a subprogram actually takes"
+                                        },
+                                        {
+                                            "term": "ALU",
+                                            "definition": "part of CPU that carries out arithmetic and Boolean operations"
+                                        },
+                                        {
+                                            "term": "array",
+                                            "definition": "data structure where all data is stored and defined under one variable name"
+                                        },
+                                        {
+                                            "term": "ASCII",
+                                            "definition": "A 7-bit character set consisting of 128 characters"
+                                        },
+                                        {
+                                            "term": "assembler",
+                                            "definition": "a program that turns assembly language into machine code"
+                                        },
+                                        {
+                                            "term": "assembly language",
+                                            "definition": "low-level langauge"
+                                        },
+                                        {
+                                            "term": "authentication",
+                                            "definition": "a process for checking user identity"
+                                        },
+                                        {
+                                            "term": "binary",
+                                            "definition": "a counting system using base-2 consisting of 0s and 1s"
+                                        },
+                                        {
+                                            "term": "binary shift",
+                                            "definition": "moving the bits in a binary number left or right and filling gaps with 0s"
+                                        },
+                                        {
+                                            "term": "BIOS",
+                                            "definition": "Basic Input Output System"
+                                        },
+                                        {
+                                            "term": "bitmap image",
+                                            "definition": "a graphic made up of pixels"
+                                        },
+                                        {
+                                            "term": "bit",
+                                            "definition": "a binary digit either 0 or 1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
