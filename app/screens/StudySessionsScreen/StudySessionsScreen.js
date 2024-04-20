@@ -3,7 +3,7 @@ import { View, Dimensions, TouchableOpacity, Text, Modal, TextInput, Alert, Perm
 import { createStackNavigator } from '@react-navigation/stack';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { BarChart } from "react-native-gifted-charts";
-import notifee, { AndroidImportance } from '@notifee/react-native';
+import notifee, { AndroidImportance, TimestampTrigger, TriggerType } from '@notifee/react-native';
 
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -19,6 +19,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 import colours from '../../config/colours'
+
+const generateID = () => {
+  const randomString = Math.random().toString(36).substr(2, 10); // Generate a random alphanumeric string
+  const timestamp = Date.now().toString(36); // Convert the current timestamp to base36
+  const ID = randomString + timestamp; // Concatenate the random string and timestamp
+  return ID;
+};
 
 
 const MINUTE_IN_MILLISECONDS = 60000;
@@ -62,7 +69,7 @@ function StudySessionsPage({ navigation }) {
     }))
   }
 
-  const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
+  //const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
 
   function getDayLabel(date) {
     const days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
@@ -243,6 +250,7 @@ function StudySessionsPage({ navigation }) {
             </TouchableOpacity>
           </View>
 
+          {/*
           <View style={styles.currentSessionTextContainer}>
               <Text style={styles.currentSessionText}>Focus mode: </Text>
               <BouncyCheckbox
@@ -273,6 +281,7 @@ function StudySessionsPage({ navigation }) {
                 unfillColor={colours.backgroundAccent}
               />
           </View>
+          */}
         </View>
 
         <BarChart
@@ -312,6 +321,7 @@ function StudySessionsPage({ navigation }) {
               {
                 ...data,
                 currentSession: {
+                  id: generateID(),
                   length: data.currentSessionPreset.length,
                   breakLength: data.currentSessionPreset.breakLength,
                   focusMode: data.currentSessionPreset.focusMode,
@@ -540,7 +550,6 @@ function StudySessionsScreen({ navigation }) {
         || timeLeft <= 0
         || (sessionFinished === true && breakFinished === false) || breakFinished === true
         || (Date.now() - currentSession.startTime > currentSession.length * MINUTE_IN_MILLISECONDS) ) {
-          console.log("stopping live activity");
           liveActivityShown.current = false;
           StudyCountdownWidgetModule.stopLiveActivity();
       }
@@ -550,7 +559,6 @@ function StudySessionsScreen({ navigation }) {
         && currentSession.hasClaimedSession !== true
         && liveActivityShown.current === false
         && Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / SECOND_IN_MILLISECONDS) > 0) {
-          console.log("starting live activity");
           liveActivityShown.current = true;
           StudyCountdownWidgetModule.startLiveActivity(currentSession.startTime / 1000 + currentSession.length * 60, false);
       }
@@ -559,14 +567,13 @@ function StudySessionsScreen({ navigation }) {
         && currentSession.hasClaimedBreak !== true
         && liveActivityShown.current === false
         && Math.ceil((currentSession.breakLength * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.breakStartTime)) / SECOND_IN_MILLISECONDS) > 0) {
-          console.log("starting live activity break");
           liveActivityShown.current = true;
           StudyCountdownWidgetModule.startLiveActivity(currentSession.breakStartTime / 1000 + currentSession.breakLength * 60, true);
         }
       }
   }, [currentSession, timeLeft, sessionFinished, breakFinished]);
 
-  // Android only notifications, incomplete, for ios using live activities
+  // Notification with timer, unlikely to be used
   /*
   const displayNotification = async (timerSeconds) => {
     const channelId = await notifee.createChannel({
@@ -601,42 +608,45 @@ function StudySessionsScreen({ navigation }) {
     return `${minutes < 10 ? '0' : ''}${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   }
 
-
+  */
   // background timer for notifications
+  async function startTimedNotification(finishDate, isBreak) {
+    const trigger = {
+      type: TriggerType.TIMESTAMP,
+      timestamp: finishDate.getTime()
+    };
+
+    let titleText = isBreak ? 'Break Finished' : 'Session Finished';
+    let bodyText = isBreak ? 'Time to get back to work!' : 'Brain break time!';
+
+    await notifee.createTriggerNotification(
+      {
+        id: 'timer-notification',
+        title: titleText,
+        body: bodyText,
+        android: {
+          channelId: 'timer-notifications-id',
+        },
+      },
+      trigger,
+    );
+  }
+
+  // trigger for background notifications
+  const latestSessionId = useRef();
+  const latestBreakId = useRef();
   useEffect(() => {
-    // Checks if the session or break is in progress
-    let sentFinishedNotification = false;
-    if (inSession === true && !(timeLeft <= 0 || currentSession.hasClaimedSession === true)) {
-      sentFinishedNotification = false;
-      BackgroundTimer.runBackgroundTimer(() => {
-        // Checks if the time left is in 10 second intervals
-        const newTimeLeft = Math.ceil((currentSession.length * MINUTE_IN_MILLISECONDS - (Date.now() - currentSession.startTime)) / SECOND_IN_MILLISECONDS);
-        console.log(newTimeLeft);
-        console.log("sent finished notification: " + sentFinishedNotification)
-        if ((newTimeLeft <= 0 || inSession === false) && sentFinishedNotification === false) {
-          BackgroundTimer.stopBackgroundTimer();
-          sentFinishedNotification = true;
-          // Trigger final notification for timer completion
-          notifee.displayNotification({
-            title: 'Session finished',
-            body: 'Time to take a break!',
-            android: {
-              channelId: 'timer',
-              ongoing: false,
-              showTimestamp: false,
-              color: colours.primary,
-              showChronometer: false,
-            },
-          });
-        } else if (newTimeLeft % 10 === 0) {
-          displayNotification(newTimeLeft);
-        }
-      }, 5000); // Update every second
-      return () => {
-        BackgroundTimer.stopBackgroundTimer();
-      };
+    if (currentSession != null && currentSession.startTime != null && currentSession.id !== latestSessionId.current) {
+      latestSessionId.current = currentSession.id;
+      const finishDate = new Date(currentSession.startTime + currentSession.length * MINUTE_IN_MILLISECONDS);
+      startTimedNotification(finishDate, false);
     }
-  }, [inSession, sessionFinished, breakFinished]);*/
+    if (currentSession != null && currentSession.breakStartTime != null && currentSession.id !== latestBreakId.current) {
+      latestBreakId.current = currentSession.id;
+      const finishDate = new Date(currentSession.breakStartTime + currentSession.breakLength * MINUTE_IN_MILLISECONDS);
+      startTimedNotification(finishDate, true);
+    }
+  }, [currentSession, sessionFinished, breakFinished]);
 
   return(
     <Stack.Navigator initialRouteName='StudySessionsMainPage'

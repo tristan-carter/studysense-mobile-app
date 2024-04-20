@@ -8,6 +8,13 @@ import { saveUser } from '../../../firebase/userSlice';
 import styles from './styles';
 import colours from '../../config/colours'
 
+const generateID = () => {
+  const randomString = Math.random().toString(36).substr(2, 10); // Generate a random alphanumeric string
+  const timestamp = Date.now().toString(36); // Convert the current timestamp to base36
+  const ID = randomString + timestamp; // Concatenate the random string and timestamp
+  return ID;
+};
+
 function StudySessionsPage({ navigation }) {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.user);
@@ -44,6 +51,7 @@ function StudySessionsPage({ navigation }) {
               ...user,
               pastStudySessions: newPastSessions,
               currentSession: {
+                id: generateID(),
                 length: user.currentSessionPreset.length,
                 breakLength: user.currentSessionPreset.breakLength,
                 focusMode: user.currentSessionPreset.focusMode,
