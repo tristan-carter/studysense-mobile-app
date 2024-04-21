@@ -15,7 +15,7 @@ import { editSet } from '../../../../firebase/setsSlice';
 import QuestionFeedbackModal from './RevisionComponents/QuestionFeedbackModal';
 import RoundReview from './RevisionComponents/RoundReview';
 
-const maxQuestions = 8;
+const maxQuestions = 20;
 
 function Flashcards({ navigation }) {
   const dispatch = useDispatch();

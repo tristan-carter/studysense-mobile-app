@@ -25,7 +25,7 @@ import RoundReview from './RevisionComponents/RoundReview';
 // rounds aim to get everything to partially learnt, choosing learning to be the first to be shown
 // once all are partially learnt, move onto turning them to learned
 
-const maxQuestions = 8;
+const maxQuestions = 20;
 
 function generateIncorrectAnswers(correctAnswer, sentAllAnswers, maxIncorrectAnswers = 3) {
   const incorrectAnswers = [];
