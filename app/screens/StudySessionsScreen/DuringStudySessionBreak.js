@@ -64,11 +64,18 @@ function StudySessionsPage({ navigation }) {
                   style: "cancel"
                 },
                 { text: "End Break", onPress: () => {
-                  dispatch(saveUser({
+                  // saves session to past sessions and refreshes currentSession to null
+                  const currentSession = user.currentSession;
+                  const newPastSessions = [...user.pastStudySessions];
+                  newPastSessions.push(currentSession);
+                  const newUserData = {
                     ...user,
                     currentSession: null,
-                  }));
-                } }
+                    pastStudySessions: newPastSessions,
+                  };
+                  dispatch(saveUser(newUserData));
+                  }
+                }
               ]
             );
           }}>

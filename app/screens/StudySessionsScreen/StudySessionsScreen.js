@@ -102,7 +102,15 @@ function StudySessionsPage({ navigation }) {
 
     // Get last 7 days of sessions
     const last7Days = getLast7Days();
-    const past7DaysSessions = data.pastStudySessions.filter(session => now - session.startTime < 7 * oneDay);
+
+    const today = new Date(); // Create a new Date object representing now
+    const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0, 0);
+    const sevenDaysAgo = todayStart - (7 * oneDay);  
+
+    const past7DaysSessions = data.pastStudySessions.filter(session => {
+      return session.startTime >= sevenDaysAgo;
+    });
+
 
     const sessionsList = last7Days.map(day => ({ label: day, value: 0 }));
     past7DaysSessions.forEach(session => {

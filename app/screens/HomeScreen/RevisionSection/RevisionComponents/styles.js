@@ -225,18 +225,18 @@ fontSize: 19,
         borderRadius: 9,
         borderWidth: 2,
         borderColor: `rgba(0, 0, 0, 0.03)`,
-        backgroundColor: colours.primaryAccent,
+        backgroundColor: colours.backgroundAccent, // colour needs checking if it looks fine
     },
     inspirationalQuoteLabel: {
         width: '100%',
-        color: colours.gray,
+        color: colours.darkgray,
         fontFamily: 'Lato',
         fontSize: 16,
         
     },
     inspirationalQuoteText: {
         width: '100%',
-        color: colours.white,
+        color: colours.black,
         fontFamily: 'Lato',
         fontSize: 18,
     },
