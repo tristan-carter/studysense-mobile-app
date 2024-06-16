@@ -86,9 +86,11 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                 <TouchableOpacity 
                 style={{marginRight: 15, padding: 20}} 
                 onPress={() => {
-                    setGotQCorrect({correct: false, answer: "Incorrect"});
-                    setCardFlippedYet(false);
-                    spin.value = 0;
+                    if (cardFlippedYet) {
+                        setGotQCorrect({correct: false, answer: "Incorrect"});
+                        setCardFlippedYet(false);
+                        spin.value = 0;
+                    }
                 }}>
                     <Svg
                         width="100px"
@@ -109,9 +111,11 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
                 <TouchableOpacity
                 style={{marginLeft: 15, padding: 20}}
                 onPress={() => {
-                    setGotQCorrect({correct: true, answer: "Correct"});
-                    setCardFlippedYet(false);
-                    spin.value = 0;
+                    if (cardFlippedYet) {
+                        setGotQCorrect({correct: true, answer: "Correct"});
+                        setCardFlippedYet(false);
+                        spin.value = 0;
+                    }
                 }}>
                     <Svg
                         width="110px"
