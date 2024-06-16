@@ -147,11 +147,8 @@ export default function TopicSelection(props) {
                 marginBottom: 10,
               }}>{item.title}</Text>
             ) : (
-              <TouchableOpacity
+              <View
                 style={styles.scrollDataTopicButton}
-                onPress={() => {
-                  item.setSelection(!item.selected);
-                }}
               >
                 <BouncyCheckbox
                   ref={item.checkmarkRef}
@@ -175,7 +172,7 @@ export default function TopicSelection(props) {
                     {item.title}
                   </Text>
                 </View>
-              </TouchableOpacity>
+              </View>
             )
           );
         }}
