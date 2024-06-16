@@ -23,7 +23,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
         return {
             transform: [
             {
-                rotateY: withTiming(`${spinVal}deg`, { duration: 500 }),
+                rotateY: withTiming(`${spinVal}deg`, { duration: 200 }),
             },
             ],
         };
@@ -34,7 +34,7 @@ function FlashcardQ({ question, answer, setGotQCorrect, gotQCorrect, progress })
         return {
             transform: [
             {
-                rotateY: withTiming(`${spinVal}deg`, { duration: 500 }),
+                rotateY: withTiming(`${spinVal}deg`, { duration: 200 }),
             },
             ],
         };

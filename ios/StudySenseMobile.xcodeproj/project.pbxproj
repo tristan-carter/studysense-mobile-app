@@ -44,6 +44,8 @@
 		6A6F26412BCC487500423DED /* StudyCountdownWidgetBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F263E2BCC473F00423DED /* StudyCountdownWidgetBridge.m */; };
 		6A6F26432BCC684D00423DED /* StudyCountdownWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F262E2BCC43EA00423DED /* StudyCountdownWidgetLiveActivity.swift */; };
 		6A6F26452BCC6E1900423DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F26322BCC43EB00423DED /* Assets.xcassets */; };
+		6ADAD4392C1F120F0055B342 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADAD4382C1F120F0055B342 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6ADAD43A2C1F12220055B342 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE2EAB52BCB3175006FF9A2 /* WidgetKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6C3A7CBA30D545B0A06E83F6 /* OpenSans_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6745316B75541698B08E57E /* OpenSans_Condensed-Bold.ttf */; };
 		6C6E3ADE3C474557A4B4684D /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E54521FD840B4AB68B7D8A4F /* Montserrat-ExtraBoldItalic.ttf */; };
 		7604F3369F4F490E8FD041FC /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FF6005E4BC44B199FE58493 /* OpenSans-Regular.ttf */; };
@@ -176,6 +178,7 @@
 		6A6F263E2BCC473F00423DED /* StudyCountdownWidgetBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyCountdownWidgetBridge.m; sourceTree = "<group>"; };
 		6A6F26402BCC483D00423DED /* StudySenseMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudySenseMobile-Bridging-Header.h"; sourceTree = "<group>"; };
 		6AD20ECC2BCF06D800A772C2 /* StudyCountdownWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyCountdownWidgetExtension.entitlements; sourceTree = "<group>"; };
+		6ADAD4382C1F120F0055B342 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
 		6AE2EAB52BCB3175006FF9A2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6AE2EAB72BCB3175006FF9A2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		758C410B57E34CC9A9937428 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../app/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADAD43A2C1F12220055B342 /* WidgetKit.framework in Frameworks */,
+				6ADAD4392C1F120F0055B342 /* ActivityKit.framework in Frameworks */,
 				989DDED862F550A74A4F35B7 /* Pods_StudySenseMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +290,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6ADAD4382C1F120F0055B342 /* ActivityKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				CD03ECF324478E1243D7F574 /* Pods_StudySenseMobile.framework */,
 				E02BBFCD380D70419CDEE7A0 /* Pods_StudySenseMobile_StudySenseMobileTests.framework */,
