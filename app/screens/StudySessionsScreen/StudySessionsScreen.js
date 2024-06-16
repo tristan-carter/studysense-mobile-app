@@ -76,19 +76,24 @@ function StudySessionsPage({ navigation }) {
 
   //const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
 
+  const now = Date.now();
+  const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
+  const today = new Date();
+  const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0, 0);
+  const sevenDaysAgo = todayStart - (7 * oneDay);  
+
   function getDayLabel(date) {
     const days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
     return days[date.getDay()];
   }
 
   function getLast7Days() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 1); 
-    const todayLabel = getDayLabel(today);
+    const newToday = new Date();
+    newToday.setHours(0, 0, 0, 1); 
 
     const last7Days = [];
     for (let i = 0; i < 7; i++) {
-        const day = new Date(today.getTime() - i * 23 * 60 * 60 * 1000);
+        const day = new Date(newToday.getTime() - i * 23 * 60 * 60 * 1000);
         last7Days.unshift(getDayLabel(day));
     }
 
@@ -102,10 +107,6 @@ function StudySessionsPage({ navigation }) {
 
     // Get last 7 days of sessions
     const last7Days = getLast7Days();
-
-    const today = new Date(); // Create a new Date object representing now
-    const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0, 0);
-    const sevenDaysAgo = todayStart - (7 * oneDay);  
 
     const past7DaysSessions = data.pastStudySessions.filter(session => {
       return session.startTime >= sevenDaysAgo;
@@ -139,8 +140,6 @@ function StudySessionsPage({ navigation }) {
   const barData = getPastSessionsFormatted();
 
   // calculate the total time studied today, this week, this month, this year
-  const now = Date.now();
-  const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
 
   var totalToday = {
     value: data.pastStudySessions.filter(session => {
@@ -153,7 +152,7 @@ function StudySessionsPage({ navigation }) {
     type: "mins",
 };
   var totalThisWeek = {
-    value: data.pastStudySessions.filter(session => now - session.startTime < 7 * oneDay).reduce((acc, session) => acc + session.length, 0),
+    value: data.pastStudySessions.filter(session => session.startTime >= sevenDaysAgo).reduce((acc, session) => acc + session.length, 0),
     type: "mins",
   };
   var totalThisMonth = {
