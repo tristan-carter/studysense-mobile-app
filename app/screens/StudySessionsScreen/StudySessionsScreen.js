@@ -37,6 +37,7 @@ function StudySessionsPage({ navigation }) {
   const data = state.data;
 
   if (data.currentSessionPreset == null) {
+    console.log("Setting current session preset")
     dispatch(saveUser({
       ...data,
       pastStudySessions: ["null"],
@@ -48,8 +49,6 @@ function StudySessionsPage({ navigation }) {
       studySessionsGoals: {
         daily: 120,
         weekly: 840,
-        monthly: 0,
-        yearly: 0,
       },
     }));
     dispatch(setUser({
@@ -63,10 +62,16 @@ function StudySessionsPage({ navigation }) {
       studySessionsGoals: {
         daily: 120,
         weekly: 840,
-        monthly: 0,
-        yearly: 0,
       },
     }))
+  }
+
+  if (data.currentSessionPreset == null) {
+    return (
+      <View style={styles.container}>
+        <Text>Loading...</Text>
+      </View>
+    )
   }
 
   //const [focus, setFocus] = useState(data.currentSessionPreset.focusMode);
@@ -427,15 +432,14 @@ function StudySessionsPage({ navigation }) {
                 }
                 const intNewLength = parseInt(newLength.current);
                 if (newLengthType.current == 'Session') {
-                  // MUST BE UNCOMMENTED FOR FINAL BUILD
-                  /*if (intNewLength < 5) {
+                  if (intNewLength < 5) {
                     Alert.alert('Invalid Session Length', 'Please enter a session length of at least 5 minutes');
                     return;
                   }
                   if (intNewLength > 120) {
                     Alert.alert('Invalid Session Length', 'Please enter a session length of 120 minutes or less');
                     return;
-                  }*/
+                  }
                   dispatch(setUser({
                     ...data,
                     currentSessionPreset: {

@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { setUser } from './userSlice';
+import { setUser, saveSet, deleteSetFromDatastore } from './userSlice';
 
 export const addSet = createAsyncThunk(
   'sets/addSet',
@@ -60,6 +60,7 @@ export const addSet = createAsyncThunk(
 export const editSet = createAsyncThunk(
   'sets/editset',
   async ({ setId, editedValues }, { getState, dispatch }) => {
+    let updatedSet;
     const { data, currentFolder } = getState().user;
     let updatedData;
     if (currentFolder === null) {
@@ -67,7 +68,7 @@ export const editSet = createAsyncThunk(
         if (set.id === setId) {
           const answerWithTerm = editedValues.answerWithTerm != null ? editedValues.answerWithTerm : set.testOptions.answerWithTerm;
           const answerWithDefinition = editedValues.answerWithDefinition != null ? editedValues.answerWithDefinition : set.testOptions.answerWithDefinition;
-          return {
+          updatedSet =  {
             ...set,
             name: editedValues.name != null ? editedValues.name : set.name,
             description: editedValues.description != null ? editedValues.description : set.description,
@@ -78,7 +79,8 @@ export const editSet = createAsyncThunk(
             flashcardOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
             refresherOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
             smartStudyOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
-          };
+          }
+          return updatedSet;
         }
         return set;
       });
@@ -93,7 +95,7 @@ export const editSet = createAsyncThunk(
             if (set.id === setId) {
               const answerWithTerm = editedValues.answerWithTerm != null ? editedValues.answerWithTerm : set.testOptions.answerWithTerm;
               const answerWithDefinition = editedValues.answerWithDefinition != null ? editedValues.answerWithDefinition : set.testOptions.answerWithDefinition;
-              return {
+              updatedSet = {
                 ...set,
                 name: editedValues.name != null ? editedValues.name : set.name,
                 description: editedValues.description != null ? editedValues.description : set.description,
@@ -104,7 +106,8 @@ export const editSet = createAsyncThunk(
                 flashcardOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
                 refresherOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
                 smartStudyOptions: { answerWithTerm: answerWithTerm, answerWithDefinition: answerWithDefinition },
-              };
+              }
+              return updatedSet;
             }
             return set;
           });
@@ -122,7 +125,8 @@ export const editSet = createAsyncThunk(
       };
     }
 
-    await dispatch(setUser(updatedData));  // Make sure setUser is defined and dispatched correctly
+    await dispatch(saveSet(updatedSet));
+    await dispatch(setUser(updatedData));
     return updatedData;
   }
 );
@@ -149,6 +153,7 @@ export const deleteSet = createAsyncThunk('sets/deleteSet', async (setId, { getS
         return folder;
       }),
     };
+    await dispatch(deleteSetFromDatastore(setId));
     await dispatch(setUser(updatedData));
     return setId;
   }

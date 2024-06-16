@@ -2,7 +2,7 @@ import React, { useReducer, useContext, createContext, useCallback, useState, us
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { fetchUserData, saveUserData, deleteAccount, fetchSharedSet } from './service';
+import { fetchUserData, saveUserData, deleteAccount, fetchSharedSet, saveSetData, deleteSetData } from './service';
 
 export const fetchUser = createAsyncThunk('user/fetchUser', async (_, { dispatch, rejectWithValue }) => {
     console.log("Fetching user data...")
@@ -42,6 +42,33 @@ export const deleteAccountData = createAsyncThunk('user/deleteAccountData', asyn
         console.log(error.message)
         throw error;
     }
+});
+
+export const saveSet = createAsyncThunk('user/saveSet', async (data, { dispatch, getState, rejectWithValue }) => {
+  if (data == "current") {
+      const state = getState();
+      data = state.user.data
+  }
+  if (data === undefined) {
+      alert('Invalid data');
+  }
+  try {
+      await dispatch(saveSetData(data));
+  } catch (error) {
+      alert(error.message);
+      throw error;
+  }
+});
+
+export const deleteSetFromDatastore = createAsyncThunk('user/deleteSet', async (setId, { dispatch, getState, rejectWithValue }) => {
+  try {
+      await dispatch(deleteSetData(setId));
+  } catch (error) {
+      alert(error.message);
+      console.log("Error Deleting Account")
+      console.log(error.message)
+      throw error;
+  }
 });
 
 export const fetchSharedSetData = createAsyncThunk('user/fetchSharedSetData', async (setCode, { dispatch, getState, rejectWithValue }) => {
