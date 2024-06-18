@@ -21,13 +21,18 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
 
           // Fetch sets and update userData
           await Promise.all(userData.sets.map(async (setId, i) => {
-              if (setId !== "null") {
+              if (setId !== "null" && setId !== null) {
                   const setDocRef = firestore().collection('sets').doc(setId);
                   const setDocSnapshot = await setDocRef.get();
                   if (setDocSnapshot.exists) {
+                    const data = setDocSnapshot.data();
+                    if (data) {
                       userData.sets[i] = setDocSnapshot.data();  
+                    }
                   } else {
                       console.log("No set data available");
+                      // Remove set if it doesn't exist
+                      userData.sets.splice(i, 1);
                   }
               } else {
                   userData.sets[i] = "null";
@@ -36,15 +41,20 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
 
           // Fetch sets within folders
           await Promise.all(userData.folders.map(async (folder, i) => {
-              if (folder !== "null") {
+              if (folder !== "null" && folder !== null) {
                   await Promise.all(folder.sets.map(async (setId, j) => {
-                      if (setId !== "null") {
+                      if (setId !== "null" && setId !== null) {
                           const setDocRef = firestore().collection('sets').doc(setId);
                           const setDocSnapshot = await setDocRef.get();
                           if (setDocSnapshot.exists) {
+                            const data = setDocSnapshot.data();
+                            if (data) {
                               folder.sets[j] = setDocSnapshot.data(); 
+                            }
                           } else {
                               console.log("No set data available");
+                              // Remove set from folder if it doesn't exist
+                              folder.sets.splice(j, 1);
                           }
                       }
                   }));
