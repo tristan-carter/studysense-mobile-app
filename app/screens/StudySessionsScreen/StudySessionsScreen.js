@@ -561,7 +561,7 @@ function StudySessionsScreen({ navigation }) {
 
   // IOS Live Activities
   useEffect(() => {
-    if (Platform.OS === 'ios' && Platform.Version >= 16.2) {
+    //if (Platform.OS === 'ios') {
       // stops live activities for session or break
       if (!currentSession || currentSession.hasClaimedBreak === true 
         || (currentSession.hasClaimedSession === true && !currentSession.breakStartTime)
@@ -588,7 +588,7 @@ function StudySessionsScreen({ navigation }) {
           liveActivityShown.current = true;
           StudyCountdownWidgetModule.startLiveActivity(currentSession.breakStartTime / 1000 + currentSession.breakLength * 60, true);
         }
-      }
+      //}
   }, [currentSession, timeLeft, sessionFinished, breakFinished]);
   // background timer for notifications
   async function startTimedNotification(finishDate, isBreak) {
