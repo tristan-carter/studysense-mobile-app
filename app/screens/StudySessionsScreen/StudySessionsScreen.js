@@ -298,7 +298,7 @@ function StudySessionsPage({ navigation }) {
 
         <BarChart
           key={maxDayThisWeek}
-          barWidth={23}
+          barWidth={21.5}
           noOfSections={4}
           barBorderRadius={4}
           frontColor="lightgray"
@@ -443,8 +443,8 @@ function StudySessionsPage({ navigation }) {
                     Alert.alert('Invalid Session Length', 'Please enter a session length of at least 5 minutes');
                     return;
                   }
-                  if (intNewLength > 120) {
-                    Alert.alert('Invalid Session Length', 'Please enter a session length of 120 minutes or less');
+                  if (intNewLength > 150) {
+                    Alert.alert('Invalid Session Length', 'Please enter a session length of 150 minutes or less');
                     return;
                   }
                   dispatch(setUser({

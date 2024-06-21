@@ -56,7 +56,9 @@ function StudySessionsPage({ navigation }) {
         <View style={[styles.duringSessionFrame, {marginTop: -animationHeight * 0.307}]}>
           <View style={styles.duringSessionTimeLeftContainer}>
             {/* Displays time left in format minutes:seconds */}
-            <Text style={styles.duringSessionTimeLeftText}>
+            <Text style={[styles.duringSessionTimeLeftText, {
+              fontSize: timeLeft/60 < 100 ? 100 : 90,
+            }]}>
               {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}
             </Text>
           </View>

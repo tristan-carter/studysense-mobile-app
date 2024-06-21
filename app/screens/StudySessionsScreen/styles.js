@@ -203,7 +203,7 @@ fontSize: 18,
     duringSessionTimeLeftText: {
         color: colours.primary,
         fontFamily: 'Lato',
-        fontSize: 110,
+        fontSize: 90,
         fontWeight: '800',
     },
     duringSessionTimeLeftMinutesText: {
