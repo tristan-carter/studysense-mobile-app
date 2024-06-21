@@ -14,61 +14,43 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
   const docRef = firestore().collection('users').doc(userId);
 
   try {
-      const docSnapshot = await docRef.get();
-      if (docSnapshot.exists) {
-          const userData = docSnapshot.data();
-          console.log("Fetched UserData Successfully.");
+    const docSnapshot = await docRef.get();
+    if (docSnapshot.exists) {
+      let userData = docSnapshot.data();
+      console.log("Fetched UserData Successfully.");
 
-          // Fetch sets and update userData
-          await Promise.all(userData.sets.map(async (setId, i) => {
-              if (setId !== "null" && setId !== null) {
-                  const setDocRef = firestore().collection('sets').doc(setId);
-                  const setDocSnapshot = await setDocRef.get();
-                  if (setDocSnapshot.exists) {
-                    const data = setDocSnapshot.data();
-                    if (data) {
-                      userData.sets[i] = setDocSnapshot.data();  
-                    }
-                  } else {
-                      console.log("No set data available");
-                      // Remove set if it doesn't exist
-                      userData.sets.splice(i, 1);
-                  }
-              } else {
-                  userData.sets[i] = "null";
-              }
-          }));
+      // Filter and fetch sets
+      const validSetIds = userData.sets.filter(setId => setId !== "null" && setId !== null);
+      const setsFetchPromises = validSetIds.map(async (setId) => {
+        const setDocRef = firestore().collection('sets').doc(setId);
+        const setDocSnapshot = await setDocRef.get();
+        return setDocSnapshot.exists ? setDocSnapshot.data() : null;
+      });
+      const fetchedSets = await Promise.all(setsFetchPromises);
+      userData.sets = fetchedSets.filter(set => set !== null);
 
-          // Fetch sets within folders
-          await Promise.all(userData.folders.map(async (folder, i) => {
-              if (folder !== "null" && folder !== null) {
-                  await Promise.all(folder.sets.map(async (setId, j) => {
-                      if (setId !== "null" && setId !== null) {
-                          const setDocRef = firestore().collection('sets').doc(setId);
-                          const setDocSnapshot = await setDocRef.get();
-                          if (setDocSnapshot.exists) {
-                            const data = setDocSnapshot.data();
-                            if (data) {
-                              folder.sets[j] = setDocSnapshot.data(); 
-                            }
-                          } else {
-                              console.log("No set data available");
-                              // Remove set from folder if it doesn't exist
-                              folder.sets.splice(j, 1);
-                          }
-                      }
-                  }));
-              }
-          }));
+      // Filter and fetch sets within folders
+      userData.folders = await Promise.all(userData.folders.map(async (folder) => {
+        if (folder !== "null" && folder !== null) {
+          const validFolderSetIds = folder.sets.filter(setId => setId !== "null" && setId !== null);
+          const folderSetsFetchPromises = validFolderSetIds.map(async (setId) => {
+            const setDocRef = firestore().collection('sets').doc(setId);
+            const setDocSnapshot = await setDocRef.get();
+            return setDocSnapshot.exists ? setDocSnapshot.data() : null;
+          });
+          const fetchedFolderSets = await Promise.all(folderSetsFetchPromises);
+          folder.sets = fetchedFolderSets.filter(set => set !== null);
+        }
+        return folder;
+      }));
 
-          return userData;  // Return the modified userData
-      } else {
-          console.log("No data available");
-          return "No data available"; 
-      }
+      return userData;  // Return the modified userData
+    } else {
+      console.log("No data available");
+    }
   } catch (error) {
-      console.error("Error fetching user data", error);
-      throw error; // Re-throw error for error handling in createAsyncThunk
+    console.error("Error fetching user data:", error);
+    throw error;
   }
 });
 
