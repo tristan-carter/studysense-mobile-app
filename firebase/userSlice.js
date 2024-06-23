@@ -13,7 +13,7 @@ export const fetchUser = createAsyncThunk('user/fetchUser', async (_, { dispatch
         alert(error.message)
         throw error;
     }
-});
+});  
 
 export const saveUser = createAsyncThunk('user/saveUser', async (data, { dispatch, getState, rejectWithValue }) => {
     console.log("Saving User Data...")

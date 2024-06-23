@@ -90,7 +90,6 @@ function CreateCardsPage (props) {
     const handleDoneSet = () => {
         if (editOrCreate === "Edit") {
             dispatch(editSet({ setId: set.setId, editedValues:  {cards: ["null", ...cards.slice()], name: set.name, isPrivate: set.isPrivate, answerWithTerm: set.answerWithTerm, answerWithDefinition: set.answerWithDefinition} }));
-            if (cardsChanged()) { dispatch(saveUser("current")); }
             creatingSet.current = true;
             navigation.goBack();
             if (notEnoughCards) { navigation.goBack(); }
@@ -105,7 +104,6 @@ function CreateCardsPage (props) {
                 answerWithTerm: set.answerWithTerm,
                 answerWithDefinition: set.answerWithDefinition,
             }));
-            if (cards.length>0) { dispatch(saveUser("current")); }
             creatingSet.current = true;
             navigation.goBack(); 
         }

@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { setUser, saveSet, deleteSetFromDatastore } from './userSlice';
+import { saveUser, setUser, saveSet, deleteSetFromDatastore } from './userSlice';
 
 export const addSet = createAsyncThunk(
   'sets/addSet',
@@ -52,7 +52,8 @@ export const addSet = createAsyncThunk(
         }),
       };
     }
-    await dispatch(setUser(updatedData));
+    await dispatch(saveUser(updatedData));
+    await dispatch(saveSet(newSet));
     return newSet;
   } 
 );
@@ -126,23 +127,16 @@ export const editSet = createAsyncThunk(
     }
 
     await dispatch(saveSet(updatedSet));
-    await dispatch(setUser(updatedData));
+    await dispatch(saveUser(updatedData));
     return updatedData;
   }
 );
 
 export const deleteSet = createAsyncThunk('sets/deleteSet', async (setId, { getState, dispatch }) => {
   const { data, currentFolder } = getState().user;
-  if (currentFolder == null) {
     const updatedData = {
       ...data,
       sets: data.sets.filter((set) => set.id != setId),
-    };
-    await dispatch(setUser(updatedData));
-    return setId;
-  } else {
-    const updatedData = {
-      ...data,
       folders: data.folders.map((folder) => {
         if (folder.id === currentFolder) {
           return {
@@ -154,9 +148,8 @@ export const deleteSet = createAsyncThunk('sets/deleteSet', async (setId, { getS
       }),
     };
     await dispatch(deleteSetFromDatastore(setId));
-    await dispatch(setUser(updatedData));
+    await dispatch(saveUser(updatedData));
     return setId;
-  }
 });
 
 const setsSlice = createSlice({
