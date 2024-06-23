@@ -300,7 +300,7 @@ fontSize: 13,
 fontSize: 20}}>{section.title}</Text>
       )
     );
-  
+  console.log(data.current)
   return(
     <View style={{ backgroundColor: colours.backgroundColour, flex: 1, justifyContent: "center", paddingHorizontal: 13}}>
         <View style={{paddingHorizontal: 3}}>
@@ -325,7 +325,7 @@ fontSize: 20}}>{section.title}</Text>
             setAnswerWithDefinition={setAnswerWithDefinition}
           />
         </View>
-        {!isFolder && data.current[1].title == "Sets" && data.current[1].data.length == 0 || data.current[0].data.length == 0 && data.current[0].title == "Sets" ? <NoSetsComponent /> : 
+        {!isFolder && data.current[1].data != null && data.current[0].data != null && data.current[1].data.length == 0 && data.current[0].data.length == 0 ? <NoSetsComponent /> : 
         (
           <SwipeListView
             sections={data.current}

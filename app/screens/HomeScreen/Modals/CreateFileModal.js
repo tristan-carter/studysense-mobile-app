@@ -75,41 +75,45 @@ export function CreateFileModal ({
                         </View>
                          */}
 
-                        <View style={{
-                            flexDirection: 'row',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            width: '80%',
-                        }}>
-                            <Text>Answer with term</Text>
-                            <BouncyCheckbox
-                                size={22}
-                                isChecked={answerWithTerm}
-                                onPress={() => {
-                                    setAnswerWithTerm((prev) => !prev);
-                                }}
-                                fillColor={colours.primaryAccent}
-                                unfillColor={colours.backgroundAccent}
-                            />
-                        </View>
+                        { creatingFolder ? <View></View> : (
+                            <>
+                            <View style={{
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                width: '80%',
+                            }}>
+                                <Text>Answer with term</Text>
+                                <BouncyCheckbox
+                                    size={22}
+                                    isChecked={answerWithTerm}
+                                    onPress={() => {
+                                        setAnswerWithTerm((prev) => !prev);
+                                    }}
+                                    fillColor={colours.primaryAccent}
+                                    unfillColor={colours.backgroundAccent}
+                                />
+                            </View>
 
-                        <View style={{
-                            flexDirection: 'row',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            width: '80%',
-                        }}>
-                            <Text>Answer with definition</Text>
-                            <BouncyCheckbox
-                                size={22}
-                                isChecked={answerWithDefinition}
-                                onPress={() => {
-                                    setAnswerWithDefinition((prev) => !prev);
-                                }}
-                                fillColor={colours.primaryAccent}
-                                unfillColor={colours.backgroundAccent}
-                            />
-                        </View>
+                            <View style={{
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                width: '80%',
+                            }}>
+                                <Text>Answer with definition</Text>
+                                <BouncyCheckbox
+                                    size={22}
+                                    isChecked={answerWithDefinition}
+                                    onPress={() => {
+                                        setAnswerWithDefinition((prev) => !prev);
+                                    }}
+                                    fillColor={colours.primaryAccent}
+                                    unfillColor={colours.backgroundAccent}
+                                />
+                            </View>
+                            </>
+                        )}
 
                         {
                             editOrCreate == "Edit" ? (
