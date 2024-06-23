@@ -324,7 +324,7 @@ fontSize: 20}}>{section.title}</Text>
             setAnswerWithDefinition={setAnswerWithDefinition}
           />
         </View>
-        {false && !isFolder && data.current[1].data != null && data.current[0].data != null && data.current[1].data.length == 0 && data.current[0].data.length == 0 ? <NoSetsComponent /> : 
+        {!isFolder && data.current[1].data != null && data.current[0].data != null && data.current[1].data.length == 0 && data.current[0].data.length == 0 ? <NoSetsComponent /> : 
         (
           <SwipeListView
             sections={data.current}

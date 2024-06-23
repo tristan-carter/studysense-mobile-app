@@ -51,7 +51,8 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
         }
       });
       const fetchedSets = await Promise.all(setsFetchPromises);
-      //userData.sets = fetchedSets.filter(set => set !== null);
+      userData.sets = ["null", ...fetchedSets];
+      console.log(userData.sets)
 
       // Filter and fetch sets within folders
       userData.folders = await Promise.all(userData.folders.map(async (folder) => {
@@ -63,12 +64,12 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
             return setDocSnapshot.exists ? setDocSnapshot.data() : null;
           });
           const fetchedFolderSets = await Promise.all(folderSetsFetchPromises);
-          folder.sets = fetchedFolderSets.filter(set => set !== null);
+          folder.sets = ["null", ...fetchedFolderSets];
         }
         return folder;
       }));
 
-      return userData;  // Return the modified userData
+      return userData;
     } else {
       console.log("No data available");
     }

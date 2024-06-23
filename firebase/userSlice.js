@@ -8,6 +8,7 @@ export const fetchUser = createAsyncThunk('user/fetchUser', async (_, { dispatch
     console.log("Fetching user data...")
     try {
         const userData = await dispatch(fetchUserData());
+        console.log(userData)
         return userData;
     } catch (error) {
         alert(error.message)
@@ -135,6 +136,8 @@ const userSlice = createSlice({
       })
       .addCase(fetchUserData.fulfilled, (state, action) => {
         state.loading = false;
+        console.log("Payload:")
+        console.log(action.payload)
         state.data = action.payload;
       })
       .addCase(fetchUserData.rejected, (state, action) => {
