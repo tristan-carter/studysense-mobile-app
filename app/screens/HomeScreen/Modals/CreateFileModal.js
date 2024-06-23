@@ -10,7 +10,6 @@ const shareIcon = require('../../../assets/ShareIcon.png')
 const importIcon = require('../../../assets/ImportIcon.png')
 
 import {  useDispatch } from 'react-redux';
-import { saveSharedSet } from '../../../../firebase/service.js';
 
 import { editSet } from '../../../../firebase/setsSlice.js';
 
@@ -218,7 +217,6 @@ export function CreateFileModal ({
                                                 text: "Ok",
                                                 onPress: () => {
                                                     Clipboard.setString(setCode);
-                                                    dispatch(saveSharedSet([saveSharedSetSetCode, set]));
                                                 },
                                             },
                                         ]

@@ -77,12 +77,9 @@ const AddFileIconButton = ({ onPress }) => {
   console.error("An error occurred:", error);
 }*/
 
-async function handleImport (wholeSetCode, newName, dispatch, importingSet) {
-  if (wholeSetCode != "") {
-    const parts = wholeSetCode.split("/");
-    const userId = parts[0];
-    const setCode = parts[1];
-    let set = await dispatch(fetchSharedSetData([setCode, userId]));
+async function handleImport (setCode, newName, dispatch, importingSet) {
+  if (setCode != "") {
+    let set = await dispatch(fetchSharedSetData(setCode));
     set = set.payload.payload;
     set = set.cards.map((card, index) => {
       const newCard = {...card};

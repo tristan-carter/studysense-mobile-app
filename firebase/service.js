@@ -194,80 +194,23 @@ export const deleteSetData = createAsyncThunk(
   }
 );
 
-export const saveSharedSet = createAsyncThunk(
-  'user/saveSharedSet',
-  async ([setCode, sharingSet]) => {
-    const userId = auth().currentUser.uid;
-    const db = firestore();
-
-    try {
-        await db.collection('sharedSets')
-        .doc(userId.toString())
-        .collection('userSets')
-        .doc(setCode)
-        .set(sharingSet);
-
-        console.log("SharedSetData saved successfully.");
-        return setCode;
-    } catch (error) {
-        console.error("Error saving shared data:", error);
-        alert("Error saving shared data: " + error);
-    }
-  }
-);
-
 export const fetchSharedSet = createAsyncThunk(
   'user/fetchSharedSet',
-  async ({ setCode, userId }) => {
+  async (setCode) => {
     const db = firestore();
 
     try {
-      const setDocRef = db.collection('sharedSets').doc(userId).doc(setCode);
+      const setDocRef = db.collection('sets').doc(setCode);
       const setDocSnapshot = await setDocRef.get();
 
-      if (setDocSnapshot.exists()) {
+      if (setDocSnapshot.exists) {
         return setDocSnapshot.data();
       } else {
         return null;
       }
     } catch (error) {
+      console.error("Error fetching shared set data:", error);
       throw error;
     }
   }
 );
-
-export const createSharedSetsList = createAsyncThunk(
-  'user/createSharedSetsList',
-  async (userId) => {
-    const db = firestore();
-
-    try {
-      const sharedSetsRef = db.collection('sharedSets').doc(userId);
-      await sharedSetsRef.set({ placeholder: 'placeholder' }); 
-
-      console.log("Created SharedSetsData Successfully.");
-      return userId; 
-    } catch (error) {
-      console.error("Error creating shared data:", error);
-      alert("Error creating shared data: " + error);
-    }
-  }
-);
-
-
-
-// keeps state up to date with database
-/*export const keepStateUpdated = () => {
-    const auth = getAuth();
-    const dispatch = useDispatch();
-    const db = getDatabase();
-    const userId = auth.currentUser.uid;
-    if (!userId) {
-        return;
-    }
-    const userRef = ref(db, `users/${userId}`);
-    onValue(userRef, (snapshot) => {
-      const userData = snapshot.val();
-      dispatch(setUser(userData));
-    });
-}*/
