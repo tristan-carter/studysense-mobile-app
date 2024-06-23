@@ -14,7 +14,6 @@ import {
 } from '@react-native-google-signin/google-signin';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { createSharedSetsList } from '../../../firebase/service';
 import { fetchUser, saveUser, setLoggedIn } from '../../../firebase/userSlice';
 
 import analytics from "@react-native-firebase/analytics";
@@ -63,11 +62,11 @@ export default function LoginScreen({navigation}) {
             await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
     
             // Get ID token
-            const { idToken } = await GoogleSignin.signIn();
-    
+            const { idToken, user } = await GoogleSignin.signIn();
+
             // Create Google credential
             const googleCredential = auth.GoogleAuthProvider.credential(idToken);
-    
+
             // Sign-in 
             const userCredential = await auth().signInWithCredential(googleCredential);
 
@@ -83,10 +82,8 @@ export default function LoginScreen({navigation}) {
                     userCountry = "Unavailable"
                 }
 
-                const uid = userCredential.user.uid
-                console.log(userCredential)
-                const username = userCredential.additionalUserInfo.profile.given_name
-                const email = userCredential.additionalUserInfo.profile.email
+                const { uid, email } = user;
+                const username = user.displayName || '';
                 const data = {
                     id: uid,
                     username: username,
@@ -116,13 +113,10 @@ export default function LoginScreen({navigation}) {
                     }
                 };
 
-                console.log(data);
-
                 analytics().logEvent('sign_up', {
                     method: 'google',
                 });
                 dispatch(saveUser(data));
-                dispatch(createSharedSetsList(uid));
                 dispatch(setLoggedIn(true));
             } else {
                 console.log("Existing User")

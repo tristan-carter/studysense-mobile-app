@@ -9,7 +9,6 @@ import colours from '../../config/colours.js';
 
 import { useDispatch } from 'react-redux';
 import { saveUser, setLoggedIn } from '../../../firebase/userSlice';
-import { createSharedSetsList } from '../../../firebase/service';
 
 import { getAnalytics, logEvent } from "@react-native-firebase/analytics";
 
@@ -77,7 +76,6 @@ export default function RegistrationScreen({navigation}) {
                     method: 'email',
                 });
                 dispatch(saveUser(data));
-                dispatch(createSharedSetsList(uid));
                 dispatch(setLoggedIn(true));
             })
             .catch((error) => {
