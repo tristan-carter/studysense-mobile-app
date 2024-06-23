@@ -9,25 +9,6 @@ const placeholderData = {
   folders: ["null"],
 }
 
-function fetchAllSets() {
-  return new Promise((resolve, reject) => {
-    const db = firestore();
-    const setsRef = db.collection('sets');
-
-    setsRef.get()
-      .then(querySnapshot => {
-        console.log("Fetched sets successfully.");
-        const sets = querySnapshot.docs.map(doc => doc.data());
-        console.log(sets);
-      })
-      .catch(error => {
-        console.error("Error fetching sets:", error);
-        reject(error);
-      });
-  });
-
-}
-
 export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => {
   const userId = auth().currentUser.uid;
   const docRef = firestore().collection('users').doc(userId);
@@ -37,7 +18,7 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
     if (docSnapshot.exists) {
       let userData = docSnapshot.data();
       console.log("Fetched UserData Successfully.");
-      //fetchAllSets();
+
       // Filter and fetch sets
       const validSetIds = userData.sets.filter(setId => setId !== "null" && setId !== null);
       const setsFetchPromises = validSetIds.map(async (setId) => {
@@ -52,7 +33,6 @@ export const fetchUserData = createAsyncThunk('user/fetchUserData', async () => 
       });
       const fetchedSets = await Promise.all(setsFetchPromises);
       userData.sets = ["null", ...fetchedSets];
-      console.log(userData.sets)
 
       // Filter and fetch sets within folders
       userData.folders = await Promise.all(userData.folders.map(async (folder) => {
@@ -89,7 +69,6 @@ export const saveUserData = createAsyncThunk(
       try {
           // Duplicates userData to avoid modifying the original object
           let updatedUserData = JSON.parse(JSON.stringify(userData));
-          console.log(updatedUserData)
 
           // Replaces all the sets and sets in folders with their set ids
           for (let i = 0; i < updatedUserData.sets.length; i++) {
