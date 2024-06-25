@@ -10,8 +10,9 @@ import colours from '../../config/colours.js';
 import {
     GoogleSignin,
     GoogleSigninButton,
-    statusCodes,
 } from '@react-native-google-signin/google-signin';
+
+import { AppleButton, appleAuth } from '@invertase/react-native-apple-authentication';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUser, saveUser, setLoggedIn } from '../../../firebase/userSlice';
@@ -56,6 +57,86 @@ export default function LoginScreen({navigation}) {
         });
     }
 
+    async function onAppleButtonPress() {
+        const appleAuthRequestResponse = await appleAuth.performRequest({
+            requestedOperation: appleAuth.Operation.LOGIN,
+            requestedScopes: [appleAuth.Scope.FULL_NAME, appleAuth.Scope.EMAIL],
+        });
+
+        // Ensure Apple returned a user identityToken
+        if (!appleAuthRequestResponse.identityToken) {
+            throw new Error('Apple Sign-In failed - no identify token returned');
+        }
+
+        // Create a Firebase credential from the response
+        const { identityToken, nonce } = appleAuthRequestResponse;
+        const appleCredential = auth.AppleAuthProvider.credential(identityToken, nonce);
+
+        // Sign the user in with the credential
+        const userCredential = await auth().signInWithCredential(appleCredential);
+
+        // Checks if user is new
+        if (userCredential.additionalUserInfo.isNewUser) {
+            console.log("New User")
+
+            userCountry = "Initial"
+
+            try {
+                userCountry = getCountry();
+            } catch (error) {
+                userCountry = "Unavailable"
+            }
+
+            console.log(userCredential)
+            const user = userCredential.user;
+            const { uid, email } = user;
+            const username = user.displayName || '';
+            const data = {
+                id: uid,
+                username: username,
+                email: email,
+                country: userCountry,
+
+                accountType: "Apple Account",
+                accountCreatedOn: "ios",
+                accountCreationDateTime: new Date().toString(),
+                settings: {
+                    downloadSetsToUseOffline: true,
+                    accountType: "default",
+                },
+
+                folders: ["null"],
+                sets: ["null"],
+
+                pastStudySessions: ["null"],
+                studySessionsGoals: {
+                    daily: 120,
+                    weekly: 840,
+                },
+                currentSessionPreset: {
+                    length: 30,
+                    breakLength: 5,
+                    focusMode: false,
+                }
+            };
+
+            analytics().logEvent('sign_up', {
+                method: 'apple',
+            });
+            dispatch(saveUser(data));
+            dispatch(setLoggedIn(true));
+        } else {
+            console.log("Existing User")
+
+            // Fetch user data
+            dispatch(fetchUser());
+            analytics().logEvent('login', {
+                method: 'apple',
+            });
+            dispatch(setLoggedIn(true));
+        }
+    }
+
     async function onGoogleButtonPress() {
         try {
             // Check for Google Play services
@@ -90,7 +171,7 @@ export default function LoginScreen({navigation}) {
                     email: email,
                     country: userCountry,
 
-                    isGoogleUser: true,
+                    accountType: "Google Account",
                     accountCreatedOn: "ios",
                     accountCreationDateTime: new Date().toString(),
                     settings: {
@@ -188,8 +269,6 @@ export default function LoginScreen({navigation}) {
                         }]}/>
                     </View>
 
-
-
                     <GoogleSigninButton
                         size={GoogleSigninButton.Size.Wide}
                         color={GoogleSigninButton.Color.Dark}
@@ -197,6 +276,18 @@ export default function LoginScreen({navigation}) {
                             alignSelf: 'center',
                         }}
                         onPress={onGoogleButtonPress}
+                    />
+
+                    <AppleButton
+                        buttonStyle={AppleButton.Style.BLACK}
+                        buttonType={AppleButton.Type.SIGN_IN}
+                        style={{
+                            width: 300,
+                            height: 40,
+                            alignSelf: 'center',
+                            marginTop: 15,
+                        }}
+                        onPress={() => onAppleButtonPress().then(() => onAppleButtonPress().catch((error) => console.log(error)))}
                     />
 
                     <View style={styles.footerView}>

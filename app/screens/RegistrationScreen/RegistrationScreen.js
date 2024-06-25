@@ -50,6 +50,7 @@ export default function RegistrationScreen({navigation}) {
                     email: email,
                     country: userCountry,
 
+                    accountType: "default",
                     accountCreatedOn: "ios",
                     accountCreationDateTime: new Date().toString(),
                     settings: {

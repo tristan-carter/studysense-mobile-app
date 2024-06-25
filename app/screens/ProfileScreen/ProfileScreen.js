@@ -38,12 +38,18 @@ const Stack = createStackNavigator();
 const ProfilePage = ({ navigation }) => {
   const user = useSelector((state) => state.user);
   const email = auth().currentUser && auth().currentUser.email ? auth().currentUser.email : "No email found";
-  const isGoogleUser = user.data.isGoogleUser;
+  var accountType = user.data.accountType;
+  if (accountType == undefined || accountType == null) {
+    accountType = "default";
+  }
+  if (user.data.isGoogleUser) {
+    accountType = "Google Account";
+  }
   return (
     <View style={styles.container}>
       {/* Display user information here */}
       <Text style={styles.text}>{user.data.username}</Text>
-      <Text style={styles.text}>{!isGoogleUser ? email : "Google Account"}</Text>
+      <Text style={styles.text}>{accountType == "default" ? email : accountType}</Text>
       <View style={styles.divider}/>
       <Text style={styles.text}>Account Since -</Text>
       <Text style={styles.text}>{user.data.accountCreationDateTime}</Text>
