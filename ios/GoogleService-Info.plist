@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>351626845911-isn50egrb7ptbk46rse24c6to0rk7ddt.apps.googleusercontent.com</string>
+	<string>351626845911-pl5o5k29sin2a8v02kna7mu68qg6pijk.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.351626845911-isn50egrb7ptbk46rse24c6to0rk7ddt</string>
+	<string>com.googleusercontent.apps.351626845911-pl5o5k29sin2a8v02kna7mu68qg6pijk</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAZRHgbt00illn46TDkwQ5aUNnqPC3-V74</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>app.studysense.StudySense</string>
+	<string>co.uk.StudySense</string>
 	<key>PROJECT_ID</key>
 	<string>studysense-29d39</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:351626845911:ios:2b5bf9cb210ef404ca1a92</string>
+	<string>1:351626845911:ios:abddf749b8514180ca1a92</string>
 	<key>DATABASE_URL</key>
 	<string>https://studysense-29d39-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>

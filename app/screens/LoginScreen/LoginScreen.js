@@ -71,6 +71,7 @@ export default function LoginScreen({navigation}) {
         // Create a Firebase credential from the response
         const { identityToken, nonce } = appleAuthRequestResponse;
         const appleCredential = auth.AppleAuthProvider.credential(identityToken, nonce);
+        console.log(appleCredential)
 
         // Sign the user in with the credential
         const userCredential = await auth().signInWithCredential(appleCredential);
