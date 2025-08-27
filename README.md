@@ -21,9 +21,6 @@ Built from the ground up as a comprehensive **study companion**, it combines **s
 - **Apple Live Activities**: real-time study session progress directly on the lock screen.  
 - Full **offline functionality**: study anywhere without internet; data syncs seamlessly with Firebase when online again.  
 
-### 👥 Scalable Design
-- Used by over **200 students** with reliable syncing and multi-device consistency.  
-
 ---
 
 ## 🛠️ Technical Overview
