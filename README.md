@@ -1,32 +1,7 @@
-# StudySense
+Study mobile app I programmed for me to revise with for my A Levels as the current offerings like Quizlet were expensive and didn't offer features/capabilities I wanted. 200 other students also downloaded it off the Apple App Store before I took it down after finishing my A Levels.
 
-**StudySense** is a student-focused productivity app designed to help learners analyse, optimise, and improve their study habits.  
-Built from the ground up as a comprehensive **study companion**, it combines **smart flashcards, analytics, and modern iOS integration** to make studying more efficient and engaging.
+Contains a few different study modes, from basic flashcards to more algorithmic based modes focusing on areas determined you need to revise the most alongside set sharing, account management, revision tracking (including for revision not done in the app) with some analytics and some cute cat timers.
 
----
+Saves data offline on device while staying in sync with the Firebase serverless backend when the user is online so their data is kept in sync accross all their devices.
 
-## ✨ Features
-
-### 📚 Smart Flashcards
-- **Spaced Repetition & Adaptive Quizzing**: maximises retention and recall.  
-- **Custom Flashcards**: students can easily create and organise their own sets.  
-- **InstaSets Library**: prebuilt flashcard sets tailored to specific exam boards, generated automatically by scraping freely available teacher content (via a custom scraping algorithm).  
-
-### 📊 Study Analytics
-- Custom study timers and tracking.  
-- Detailed analytics on revision patterns and efficiency.  
-- Actionable insights into when and how much to revise.  
-
-### 📱 iOS Native Features
-- **Apple Live Activities**: real-time study session progress directly on the lock screen.  
-- Full **offline functionality**: study anywhere without internet; data syncs seamlessly with Firebase when online again.  
-
----
-
-## 🛠️ Technical Overview
-
-- **Language/Frameworks:** Swift (iOS), Firebase (backend).  
-- **Architecture:** Offline-first design with background sync to cloud storage.  
-- **Algorithms:** Spaced repetition scheduling, adaptive quizzing, automatic flashcard generation from scraped resources.  
-- **Frontend:** SwiftUI with native iOS APIs (Live Activities).  
-- **Backend:** Firebase Realtime Database & Authentication for multi-device data sync.  
+<img width="1233" height="693" alt="image" src="https://github.com/user-attachments/assets/2fd1e11b-6d62-46d7-a0c9-5793f5c3ab58" />
